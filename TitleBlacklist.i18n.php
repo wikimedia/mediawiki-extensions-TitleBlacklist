@@ -3,7 +3,7 @@
 function efGetTitleBlacklistMessages()
 {
 	$messages = array(
-		"en" => array(
+		'en' => array(
 			'titleblacklist' =>
 "# That's a title blacklist
 # Every title that matches regex here are forbidden to create and edit
@@ -11,7 +11,13 @@ function efGetTitleBlacklistMessages()
 ",
 			'titleblacklist-forbidden' => "'''This page title is blacklisted.''' It matches following blacklist regex: '''''\$1'''''",
 		),
+		'nl' => array(
+			'titleblacklist' => '# Dit is een zwarte lijst voor paginanamen
+# Iedere paginanaam die voldoet aan de reguliere expressie kan niet aangemaakt en bewerkt worden
+# Gebruik "#" voor opmerkingen',
+			'titleblacklist-forbidden' => '\'\'\'Deze paginanaam staat op de zwarte lijst.\'\'\' Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: \'\'\'\'\'$1\'\'\'\'\'',
+		),
 	);
-	
+
 	return $messages;
 }
