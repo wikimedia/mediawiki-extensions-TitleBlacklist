@@ -11,6 +11,12 @@ function efGetTitleBlacklistMessages()
 ",
 			'titleblacklist-forbidden' => "'''This page title is blacklisted.''' It matches following blacklist regex: '''''\$1'''''",
 		),
+		'ar' => array(
+			'titleblacklist' => '# هذه قائمة سوداء للعناوين
+# كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
+# استخدم "#" للتعليقات',
+			'titleblacklist-forbidden' => '\'\'\'عنوان هذه الصفحة في القائمة السوداء.\'\'\' إنه يوافق التعبير المنتظم التالي في القائمة السوداء: \'\'\'\'\'$1\'\'\'\'\'',
+		),
 		'de' => array(
 			'titleblacklist' =>
 "# Dies ist die Schwarze Liste unerwünschter Seitennamen.
