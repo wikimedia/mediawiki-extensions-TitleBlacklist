@@ -28,6 +28,13 @@ function efGetTitleBlacklistMessages()
 			'titleblacklist-forbidden' => "'''Dieser Seitenname steht auf der Schwarzen Liste.''' Der folgende reguläre Ausdruck traf zu: '''''\$1'''''",
 		),
 
+		'fr' => array(
+			'titleblacklist' => '# Ceci est un titre mis en liste noire
+# Chaque titre qu\'indique ici le code regex est interdit à la création et à l\'édition
+# Utilisez « " » pour écrire des commentaires',
+			'titleblacklist-forbidden' => '\'\'\'Cette page est mise en liste noire.\'\'\'  Cette mise en liste noire est due au code regex : \'\'\'\'\'$1\'\'\'\'\'',
+		),
+
 		'gl' => array(
 			'titleblacklist' => '# É unha listaxe negra de títulos
 # Ningún título que coincida cunha destas expresións regulares se pode crear e editar
