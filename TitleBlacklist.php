@@ -11,6 +11,7 @@ $wgExtensionCredits['other'][] = array(
 
 $wgExtensionFunctions[] = 'efSetupTitleBlacklistMessages';
 $wgHooks['userCan'][] = 'efUserCanCreateTitle';
+$wgHooks['AbortMove'][] = 'efTitleBlacklistCanMove';
 
 $wgAvailableRights[] = 'tboverride';
 $wgGroupPermissions['sysop']['tboverride'] = true;
@@ -24,8 +25,7 @@ function efSetupTitleBlacklistMessages() {
 }
 
 function efGetTitleBlacklist() {
-	global $wgMessageCache;
-	return $wgMessageCache->get("titleblacklist");
+	return wfMsgForContent( 'titleblacklist' );
 }
 
 function efParseTitleBlacklist( $list ) {
@@ -41,22 +41,39 @@ function efParseTitleBlacklist( $list ) {
 	return $result;
 }
 
+function efIsBlacklistedTitle( $title ) {
+	if( $title instanceof Title ) {
+		$title = $title->getFullText();
+	}
+	$blacklist = efParseTitleBlacklist( efGetTitleBlacklist() );
+	foreach ( $blacklist as $item ) {
+		if( preg_match( "/^$item$/is", $title ) ) {
+			return $item;
+		}
+	}
+	return false;
+}
+
 function efUserCanCreateTitle( $title, $user, $action, &$result )
 {
-	if ( $action != 'create' && $action != 'move' )
-	{
+	if ( $action != 'create' || $user->isAllowed('tboverride') ) {
 		$result = true;
 		return $result;
 	}
-	$blacklist = efParseTitleBlacklist( efGetTitleBlacklist() );
-	foreach ( $blacklist as $item )
-	{
-		if( preg_match( "/^$item$/is", $title->getText() ) && !$user->isAllowed('tboverride')) {
-			$result = false;
-			return wfMsgWikiHtml( "titleblacklist-forbidden", $item );
-		}
+	$blacklisted = efIsBlacklistedTitle( $title );
+	if( is_string( $blacklisted ) ) {
+		return wfMsgWikiHtml( "titleblacklist-forbidden", $blacklisted, $title->getFullText() );
 	}
 
 	$result = true;
 	return $result;
+}
+
+function efTitleBlacklistCanMove( $old, $nt, $user, &$err ) {
+	$blacklisted = efIsBlacklistedTitle( $nt );
+	if( !$user->isAllowed( 'tboverride' ) && is_string( $blacklisted ) ) {
+		$err = wfMsgWikiHtml( "titleblacklist-forbidden-move", $blacklisted, $nt->getFullText(), $old->getFullText() );
+		return false;
+	}
+	return true;
 }
