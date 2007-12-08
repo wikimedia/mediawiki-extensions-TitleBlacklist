@@ -9,12 +9,21 @@ $wgExtensionCredits['other'][] = array(
 	'description' => 'Allows to forbide creation of pages with specified titles'
 );
 
-$wgExtensionFunctions[] = 'efSetupTitleBlacklistMessages';
-$wgHooks['userCan'][] = 'efUserCanCreateTitle';
-$wgHooks['AbortMove'][] = 'efTitleBlacklistCanMove';
+$wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
+$wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
+
+$wgExtensionFunctions[] = 'efInitTitleBlacklist';
+
 
 $wgAvailableRights[] = 'tboverride';
 $wgGroupPermissions['sysop']['tboverride'] = true;
+
+function efInitTitleBlacklist() {
+	global $wgTitleBlacklist;
+	$wgTitleBlacklist = new TitleBlacklist();
+	efSetupTitleBlacklistMessages();
+	efSetupTitleBlacklistHooks();
+}
 
 function efSetupTitleBlacklistMessages() {
 	global $wgMessageCache;
@@ -24,56 +33,10 @@ function efSetupTitleBlacklistMessages() {
 	}
 }
 
-function efGetTitleBlacklist() {
-	return wfMsgForContent( 'titleblacklist' );
-}
-
-function efParseTitleBlacklist( $list ) {
-	$lines = preg_split( "/\r?\n/", $list );
-	$result = array();
-	foreach ( $lines as $line )
-	{
-		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
-		$line = trim( $line );
-		if ($line) $result[] = $line;
-	}
-	
-	return $result;
-}
-
-function efIsBlacklistedTitle( $title ) {
-	if( $title instanceof Title ) {
-		$title = $title->getFullText();
-	}
-	$blacklist = efParseTitleBlacklist( efGetTitleBlacklist() );
-	foreach ( $blacklist as $item ) {
-		if( preg_match( "/^$item$/is", $title ) ) {
-			return $item;
-		}
-	}
-	return false;
-}
-
-function efUserCanCreateTitle( $title, $user, $action, &$result )
-{
-	if ( $action != 'create' || $user->isAllowed('tboverride') ) {
-		$result = true;
-		return $result;
-	}
-	$blacklisted = efIsBlacklistedTitle( $title );
-	if( is_string( $blacklisted ) ) {
-		return wfMsgWikiHtml( "titleblacklist-forbidden", $blacklisted, $title->getFullText() );
-	}
-
-	$result = true;
-	return $result;
-}
-
-function efTitleBlacklistCanMove( $old, $nt, $user, &$err ) {
-	$blacklisted = efIsBlacklistedTitle( $nt );
-	if( !$user->isAllowed( 'tboverride' ) && is_string( $blacklisted ) ) {
-		$err = wfMsgWikiHtml( "titleblacklist-forbidden-move", $blacklisted, $nt->getFullText(), $old->getFullText() );
-		return false;
-	}
-	return true;
+function efSetupTitleBlacklistHooks() {
+	global $wgHooks;
+	$titleBlacklistHooks = new TitleBlacklistHooks();
+	$wgHooks['userCan'][]   = array( $titleBlacklistHooks, 'userCan' );
+	$wgHooks['AbortMove'][] = array( $titleBlacklistHooks, 'abortMove' );
+	$wgHooks['UploadVerification'][] = array( $titleBlacklistHooks, 'verifyUpload' );
 }

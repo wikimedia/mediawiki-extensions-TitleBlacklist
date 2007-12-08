@@ -18,6 +18,9 @@ It matches the following blacklist regex: '''''\$1'''''
 '''A page titled \"\$2\" cannot be moved to \"\$3\"''' <br/>
 It matches the following blacklist regex: '''''\$1'''''
 </span>",
+			'titleblacklist-forbidden-upload' => "
+'''A file named \"\$2\" cannot be uploaded''' <br/>
+It matches the following blacklist regex: '''''\$1'''''",
 		),
 
 		'ar' => array(
