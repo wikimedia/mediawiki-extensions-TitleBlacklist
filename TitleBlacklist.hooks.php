@@ -20,7 +20,7 @@ class TitleBlacklistHooks {
 		}
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title );
 		if( is_string( $blacklisted ) ) {
-			return wfMsgWikiHtml( "titleblacklist-forbidden", $blacklisted, $title->getFullText() );
+			return wfMsgWikiHtml( "titleblacklist-forbidden-edit", $blacklisted, $title->getFullText() );
 		}
 
 		$result = true;
