@@ -28,6 +28,12 @@ It matches the following blacklist regex: '''''\$1'''''",
 # كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
 # استخدم "#" للتعليقات',
 			'titleblacklist-forbidden' => '\'\'\'عنوان هذه الصفحة في القائمة السوداء.\'\'\' إنه يوافق التعبير المنتظم التالي في القائمة السوداء: \'\'\'\'\'$1\'\'\'\'\'',
+			'titleblacklist-forbidden-move' => '<span class="error">
+\'\'\'الصفحة المعنونة "$2" لا يمكن نقلها إلى "$3"\'\'\' <br/>
+هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
+</span>',
+			'titleblacklist-forbidden-upload' => '\'\'\'الملف بالاسم "$2" لا يمكن رفعه\'\'\' <br/>
+هو يطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
 		'de' => array(
@@ -58,6 +64,12 @@ It matches the following blacklist regex: '''''\$1'''''",
 # Kóžde nastawkowe mjeno, kotrež so k regularnemu wurazej hodźi, njesmě so wutworjeć a wobdźěłować
 # Wužij "#" za komentary',
 			'titleblacklist-forbidden' => '\'\'\'Tuta stronowe mjeno je w čornej lisćinje.\'\'\' Hodźi so k slědowacemu regularnemu wurazej čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'',
+			'titleblacklist-forbidden-move' => '<span class="error">
+\'\'\'Strona z titulom "$2" njeda so do "$3"\'\'\' přesunyć.<br/>
+Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'
+</span>',
+			'titleblacklist-forbidden-upload' => '\'\'\'Dataja z mjenom "$2" njeda so nahrać\'\'\' <br/>
+Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
 		'la' => array(
