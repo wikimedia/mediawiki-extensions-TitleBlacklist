@@ -15,7 +15,7 @@ class TitleBlacklist {
 	public function load() {
 		global $wgTitleBlacklistSources;
 		$sources = $wgTitleBlacklistSources;
-		$sources[] = array( TBLSRC_MSG );
+		$sources[] = array( 'type' => TBLSRC_MSG );
 		$this->mBlacklist = array();
 		foreach( $sources as $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
@@ -27,10 +27,10 @@ class TitleBlacklist {
 			return '';	//Return empty string in error case
 		}
 
-		if( $source[0] == TBLSRC_MSG ) {
+		if( $source['type'] == TBLSRC_MSG ) {
 			return wfMsgForContent( 'titleblacklist' );
-		} elseif( $source[0] == TBLSRC_LOCALPAGE && count( $source ) >= 2 ) {
-			$title = Title::newFromText( $source[1] );
+		} elseif( $source['type'] == TBLSRC_LOCALPAGE && count( $source ) >= 2 ) {
+			$title = Title::newFromText( $source['src'] );
 			if( is_null( $title ) ) {
 				return '';
 			}
@@ -48,11 +48,11 @@ class TitleBlacklist {
 					return $article->getContent();
 				}
 			}
-		} elseif( $source[0] == TBLSRC_URL && count( $source ) >= 2 ) {
-			return Http::get( $source[1] );
-		} elseif( $source[0] == TBLSRC_FILE && count( $source ) >= 2 ) {
-			if( file_exists( $source[1] ) ) {
-				return file_get_contents( $source[1] );
+		} elseif( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
+			return Http::get( $source['src'] );
+		} elseif( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
+			if( file_exists( $source['src'] ) ) {
+				return file_get_contents( $source['src'] );
 			} else {
 				return '';
 			}
@@ -66,22 +66,24 @@ class TitleBlacklist {
 		$result = array();
 		foreach ( $lines as $line )
 		{
-			$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
-			$line = trim( $line );
-			if ($line) $result[] = $line;
+			$line = TitleBlacklistEntry :: newFromString( $line );
+			if ( $line ) {
+				$result[] = $line;
+			}
 		}
 
 		return $result;
 	}
 
-	public function isBlacklisted( $title ) {
-		if( $title instanceof Title ) {
-			$title = $title->getFullText();
+	public function isBlacklisted( $title, $action = 'edit' ) {
+		global $wgUser;
+		if( !($title instanceof Title) ) {
+			$title = Title::newFromString( $title );
 		}
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
-			if( preg_match( "/^$item$/is", $title ) ) {
-				return $item;
+			if( $item->userCan( $title, $wgUser, $action ) ) {
+				return $item->getRaw();
 			}
 		}
 		return false;
@@ -92,5 +94,76 @@ class TitleBlacklist {
 			$this->load();
 		}
 		return $this->mBlacklist;
+	}
+}
+
+class TitleBlacklistEntry {
+	private
+		$mRaw,
+		$mRegex,
+		$mParams;
+
+	public function __construct( $regex, $params, $raw ) {
+		$this->mRaw = $raw;
+		$this->mRegex = $regex;
+		$this->mParams = $params;
+	}
+
+	public function userCan( $title, $user, $action ) {
+		if( $user->isAllowed( 'tboverride' ) ) {
+			return true;
+		}
+		if( preg_match( "/^{$this->mRegex}$/is", $title->getFullText() ) ) {
+			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
+				return false;
+			}
+			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
+				return false;
+			}
+			return true;
+		}
+		return false;
+	}
+
+	public static function newFromString( $line ) {
+		$raw = $line;	#Keep line for raw data
+		$regex = "";
+		$options = array();
+		//Strip comments
+		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
+		$line = trim( $line );
+		//Parse the rest of message
+		preg_match( '/^(.*?)(\s*<(.*)>)?$/', $line, $pockets );
+		@list( $full, $regex, $null, $opts_str ) = $pockets;
+		$regex = trim( $regex );
+		$opts_str = trim( $opts_str );
+		//Parse opts
+		$opts = preg_split( '/\s*\|\s*/', $opts_str );
+		foreach( $opts as $opt ) {
+			if( $opt == 'autoconfirmed' ) {
+				$options['autoconfirmed'] = true;
+			}
+			if( $opt == 'noedit' ) {
+				$options['noedit'] = true;
+			}
+		}
+		//Return result
+		if( $regex ) {
+			return new TitleBlacklistEntry( $regex, $options, $raw );
+		} else {
+			return null;
+		}
+	}
+	
+	public function getRegex() {
+		return $this->mRegex;
+	}
+
+	public function getRaw() {
+		return $this->mRaw;
+	}
+
+	public function getOptions() {
+		return $this->mOptions;
 	}
 }

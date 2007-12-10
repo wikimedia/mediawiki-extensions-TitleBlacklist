@@ -14,24 +14,24 @@ class TitleBlacklistHooks {
 	public static function userCan( $title, $user, $action, &$result )
 	{
 		global $wgTitleBlacklist;
-		if ( ( $action != 'create' && $action != 'upload' ) || $user->isAllowed('tboverride') ) {
+		if ( $action != 'create' && $action != 'edit' ) {
 			$result = true;
 			return $result;
 		}
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title );
+		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 		if( is_string( $blacklisted ) ) {
-			return wfMsgWikiHtml( "titleblacklist-forbidden-edit", $blacklisted, $title->getFullText() );
+			//return wfMsgWikiHtml( "titleblacklist-forbidden-edit", htmlspecialchars( $blacklisted ), $title->getFullText() );
+			return $result = false;
 		}
 
-		$result = true;
-		return $result;
+		return $result = true;
 	}
 
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt );
-		if( !$user->isAllowed( 'tboverride' ) && is_string( $blacklisted ) ) {
-			$err = wfMsgWikiHtml( "titleblacklist-forbidden-move", $blacklisted, $nt->getFullText(), $old->getFullText() );
+		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt, 'move' );
+		if( is_string( $blacklisted ) ) {
+			$err = wfMsgWikiHtml( "titleblacklist-forbidden-move", htmlspecialchars( $blacklisted ), $nt->getFullText(), $old->getFullText() );
 			return false;
 		}
 		return true;
@@ -39,9 +39,9 @@ class TitleBlacklistHooks {
 	
 	public static function verifyUpload( $fname, $fpath, &$err ) {
 		global $wgTitleBlacklist, $wgUser;
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $fname );
-		if( !$wgUser->isAllowed( 'tboverride' ) && is_string( $blacklisted ) ) {
-			$err = wfMsgWikiHtml( "titleblacklist-forbidden-upload", $blacklisted, $fname );
+		$blacklisted = $wgTitleBlacklist->isBlacklisted( $fname, 'upload' );
+		if( is_string( $blacklisted ) ) {
+			$err = wfMsgWikiHtml( "titleblacklist-forbidden-upload", htmlspecialchars( $blacklisted ), $fname );
 			return false;
 		}
 		return true;

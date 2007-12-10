@@ -12,15 +12,15 @@ function efGetTitleBlacklistMessages()
 			'titleblacklist-forbidden-edit' => "
 <div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
 '''A page titled \"\$2\" cannot be created''' <br />
-It matches the following blacklist regex: '''''\$1'''''
+It matches the following blacklist entry: '''''\$1'''''
 </div>",
 			'titleblacklist-forbidden-move' => "<span class=\"error\">
 '''A page titled \"\$2\" cannot be moved to \"\$3\"''' <br />
-It matches the following blacklist regex: '''''\$1'''''
+It matches the following blacklist entry: '''''\$1'''''
 </span>",
 			'titleblacklist-forbidden-upload' => "
 '''A file named \"\$2\" cannot be uploaded''' <br />
-It matches the following blacklist regex: '''''\$1'''''",
+It matches the following blacklist entry: '''''\$1'''''",
 		),
 
 		'ar' => array(
@@ -28,10 +28,10 @@ It matches the following blacklist regex: '''''\$1'''''",
 # كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
 # استخدم "#" للتعليقات',
 			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'الصفحة المعنونة "$2" لا يمكن نقلها إلى "$3"\'\'\' <br />
+\'\'\'الصفحة المعنونة "$2" لا يمكن نقلها إلى "$3"\'\'\' <br/>
 هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
 </span>',
-			'titleblacklist-forbidden-upload' => '\'\'\'الملف بالاسم "$2" لا يمكن رفعه\'\'\' <br />
+			'titleblacklist-forbidden-upload' => '\'\'\'الملف بالاسم "$2" لا يمكن رفعه\'\'\' <br/>
 هو يطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
@@ -41,16 +41,6 @@ It matches the following blacklist regex: '''''\$1'''''",
 # Jeder Seitenname, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt und bearbeitet werden.
 # Text hinter einer Raute „#“ wird als Kommentar gesehen
 ",
-			'titleblacklist-forbidden-edit' => "
-<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.''' <br />
-Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</div>",
-			'titleblacklist-forbidden-move' => "<span class=\"error\">
-'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.''' <br />
-Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</span>",
-			'titleblacklist-forbidden-upload' => "
-'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.''' <br />
-Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 		),
 
 		'fr' => array(
@@ -70,41 +60,23 @@ Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 # Kóžde nastawkowe mjeno, kotrež so k regularnemu wurazej hodźi, njesmě so wutworjeć a wobdźěłować
 # Wužij "#" za komentary',
 			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'Strona z titulom "$2" njeda so do "$3"\'\'\' přesunyć.<br />
+\'\'\'Strona z titulom "$2" njeda so do "$3"\'\'\' přesunyć.<br/>
 Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'
 </span>',
-			'titleblacklist-forbidden-upload' => '\'\'\'Dataja z mjenom "$2" njeda so nahrać\'\'\' <br />
+			'titleblacklist-forbidden-upload' => '\'\'\'Dataja z mjenom "$2" njeda so nahrać\'\'\' <br/>
 Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
 		'la' => array(
 			'titleblacklist' => '# Hic est index titulorum prohibitorum
-# Tituli qui congruunt cum expressione regulari sequente nec creari nec recenseri possunt
+# Tituli qui congruunt cum expressione regulari sequente ni creari ni recenseri possunt
 # Utere "#" pro commentariis',
-			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'Pagina cum titulo "$2" nec creari nec recenseri potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'Pagina cum titulo "$2" non ad "$3" moveri potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'
-</span>',
-			'titleblacklist-forbidden-upload' => '\'\'\'Fasciculus cum titulo "$2" onerari non potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
 		'nl' => array(
 			'titleblacklist' => '# Dit is een zwarte lijst voor paginanamen
 # Iedere paginanaam die voldoet aan de reguliere expressie kan niet aangemaakt en bewerkt worden
 # Gebruik "#" voor opmerkingen',
-			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'Een pagina genaamd "$2" kan niet worden aangemaakt\'\'\' <br />
-Hij voldoet aan de volgende regex op de zwarte lijst: \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'Een pagina genaamd "$2" kan niet worden hernoemd naar "$3"\'\'\' <br />
-Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: \'\'\'\'\'$1\'\'\'\'\'
-</span>',
 		),
 	);
 
