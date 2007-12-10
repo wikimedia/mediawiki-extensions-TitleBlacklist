@@ -41,6 +41,16 @@ It matches the following blacklist regex: '''''\$1'''''",
 # Jeder Seitenname, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt und bearbeitet werden.
 # Text hinter einer Raute „#“ wird als Kommentar gesehen
 ",
+			'titleblacklist-forbidden-edit' => "
+<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.''' <br />
+Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</div>",
+			'titleblacklist-forbidden-move' => "<span class=\"error\">
+'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.''' <br />
+Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</span>",
+			'titleblacklist-forbidden-upload' => "
+'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.''' <br />
+Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 		),
 
 		'fr' => array(
