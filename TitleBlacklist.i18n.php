@@ -27,6 +27,10 @@ It matches the following blacklist regex: '''''\$1'''''",
 			'titleblacklist' => '# هذه قائمة سوداء للعناوين
 # كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
 # استخدم "#" للتعليقات',
+			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
+\'\'\'الصفحة المعنونة "$2" لا يمكن إنشاؤها\'\'\' <br />
+هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
+</div>',
 			'titleblacklist-forbidden-move' => '<span class="error">
 \'\'\'الصفحة المعنونة "$2" لا يمكن نقلها إلى "$3"\'\'\' <br />
 هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
@@ -57,6 +61,16 @@ Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 			'titleblacklist' => '# Ceci est un titre mis en liste noire
 # Chaque titre qu\'indique ici le code regex est interdit à la création et à l\'édition
 # Utilisez « " » pour écrire des commentaires',
+			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
+\'\'\'La page intitulée « $2 » ne peut être créée.\'\'\' <br />
+Dans la liste noire, elle correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'
+</div>',
+			'titleblacklist-forbidden-move' => '<span class="error">
+\'\'\'La page intitulée « $2 » ne peut être déplacée à « $3 ».\'\'\' <br />
+Dans la liste noire, elle correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'
+</span>',
+			'titleblacklist-forbidden-upload' => '\'\'\'Une fichier nommé « $2 » ne peut être téléchargé.\'\'\' <br />
+Dans la liste noire, il correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
 		'gl' => array(
