@@ -83,6 +83,10 @@ Dans la liste noire, il correspond à l\'expression rationnelle : \'\'\'\'\'$1\'
 			'titleblacklist' => '# To je čorna lisćina nastawkowych mjenow
 # Kóžde nastawkowe mjeno, kotrež so k regularnemu wurazej hodźi, njesmě so wutworjeć a wobdźěłować
 # Wužij "#" za komentary',
+			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
+\'\'\'Strona z titulom "$2" njehodźi so wutworić\'\'\' <br />
+Wotpowěduje slědowacemu regularnemu wurazej čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'
+</div>',
 			'titleblacklist-forbidden-move' => '<span class="error">
 \'\'\'Strona z titulom "$2" njeda so do "$3"\'\'\' přesunyć.<br />
 Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'
