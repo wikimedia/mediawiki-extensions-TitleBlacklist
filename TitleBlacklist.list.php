@@ -113,7 +113,7 @@ class TitleBlacklistEntry {
 		if( $user->isAllowed( 'tboverride' ) ) {
 			return true;
 		}
-		if( preg_match( "/^{$this->mRegex}$/is", $title->getFullText() ) ) {
+		if( preg_match( "/^{$this->mRegex}$/s" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() ) ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
 				return false;
 			}
@@ -140,11 +140,33 @@ class TitleBlacklistEntry {
 		//Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
 		foreach( $opts as $opt ) {
-			if( $opt == 'autoconfirmed' ) {
+			$opt2 = strtolower( $opt );
+			if( $opt2 == 'autoconfirmed' ) {
 				$options['autoconfirmed'] = true;
 			}
-			if( $opt == 'noedit' ) {
+			if( $opt2 == 'noedit' ) {
 				$options['noedit'] = true;
+			}
+			if( $opt2 == 'casesensitive' ) {
+				$options['casesensitive'] = true;
+			}
+		}
+		//Process magic words
+		preg_match_all( '/{{([a-z]+):(.+?)}}/', $regex, $magicwords, PREG_SET_ORDER );
+		foreach( $magicwords as $mword ) {
+			global $wgParser;	//Functions we're calling don't need, nevertheless let's use it
+			switch( strtolower( $mword[1] ) ) {
+				case 'ns':
+					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
+					if( is_string( $cpf_result ) ) {
+						$regex = str_replace( $mword[0], $cpf_result, $regex );	//All result will have the same value, so we can just use str_seplace()
+					}
+					break;
+				case 'int':
+					$cpf_result = CoreParserFunctions::intFunction( $wgParser, $mword[2] );
+					if( is_string( $cpf_result ) ) {
+						$regex = str_replace( $mword[0], $cpf_result, $regex );
+					}
 			}
 		}
 		//Return result
