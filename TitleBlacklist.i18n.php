@@ -111,19 +111,26 @@ Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'
 Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'',
 		),
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ * @author SPQRobin
+ */
 		'nl' => array(
-			'titleblacklist' => '# Dit is een zwarte lijst voor paginanamen
+			'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen
 # Iedere paginanaam die voldoet aan de reguliere expressie kan niet aangemaakt en bewerkt worden
 # Gebruik "#" voor opmerkingen',
-			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'Een pagina genaamd "$2" kan niet worden aangemaakt\'\'\' <br />
-Hij voldoet aan de volgende regex op de zwarte lijst: \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'Een pagina genaamd "$2" kan niet worden hernoemd naar "$3"\'\'\' <br />
-Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: \'\'\'\'\'$1\'\'\'\'\'
-</span>',
-		),
+			'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''Een pagina genaamd \"\$2\" kan niet worden aangemaakt''' <br />
+Hij voldoet aan de volgende regex op de zwarte lijst: '''''\$1'''''
+</div>",
+			'titleblacklist-forbidden-move'   => "<span class=\"error\">
+'''Een pagina genaamd \"\$2\" kan niet worden hernoemd naar \"\$3\"''' <br />
+Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''
+</span>",
+			'titleblacklist-forbidden-upload' => "'''Het bestand \"\$2\" kan niet toegevoegd worden''' <br />
+Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''",
+
+),
 	);
 
 	return $messages;
