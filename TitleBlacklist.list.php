@@ -82,7 +82,7 @@ class TitleBlacklist {
 		}
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
-			if( $item->userCan( $title, $wgUser, $action ) ) {
+			if( !$item->userCan( $title, $wgUser, $action ) ) {
 				return $item->getRaw();
 			}
 		}
@@ -115,14 +115,14 @@ class TitleBlacklistEntry {
 		}
 		if( preg_match( "/^{$this->mRegex}$/s" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() ) ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
-				return false;
+				return true;
 			}
 			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
-				return false;
+				return true;
 			}
-			return true;
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 	public static function newFromString( $line ) {
