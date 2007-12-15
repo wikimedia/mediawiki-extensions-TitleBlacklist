@@ -43,8 +43,7 @@ function efSetupTitleBlacklistMessages() {
 
 function efSetupTitleBlacklistHooks() {
 	global $wgHooks;
-	$titleBlacklistHooks = new TitleBlacklistHooks();
-	$wgHooks['userCan'][]   = array( $titleBlacklistHooks, 'userCan' );
-	$wgHooks['AbortMove'][] = array( $titleBlacklistHooks, 'abortMove' );
-	$wgHooks['UploadVerification'][] = array( $titleBlacklistHooks, 'verifyUpload' );
+	$wgHooks['getUserPermissionsErrors'][]   = 'TitleBlacklistHooks::userCan';
+	$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
+	$wgHooks['UploadVerification'][] = 'TitleBlacklistHooks::verifyUpload';
 }
