@@ -131,6 +131,19 @@ Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1''''
 Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''",
 
 ),
+
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
+		'oc' => array(
+			'titleblacklist'                  => "# Aquò es un títol mes en lista negra 
+# Cada títol qu'indica aicí lo còde regex es interdich a la creacion e a l'edicion 
+# Utilizatz « \" » per escriure de comentaris",
+			'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\"> '''La pagina intitolada « \$2 » pòt pas èsser creada.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </div>",
+			'titleblacklist-forbidden-move'   => "<span class=\"error\"> '''La page intitolada « \$2 » pòt pas èsser deplaçada a « \$3 ».''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </span>",
+			'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat « $2 » pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''$1'''''",
+		),
+
 	);
 
 	return $messages;
