@@ -5,8 +5,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Title Blacklist',
-	'version' => '1.1',
-        'url' => 'http://www.mediawiki.org/wiki/Extension:TitleBlacklist',
 	'author' => 'VasilievVV',
 	'description' => 'Allows to forbide creation of pages with specified titles'
 );
