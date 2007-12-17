@@ -83,7 +83,7 @@ class TitleBlacklist {
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
 			if( !$item->userCan( $title, $wgUser, $action ) ) {
-				return $item->getRaw();
+				return $item;
 			}
 		}
 		return false;
@@ -150,9 +150,12 @@ class TitleBlacklistEntry {
 			if( $opt2 == 'casesensitive' ) {
 				$options['casesensitive'] = true;
 			}
+			if( preg_match( '/errmsg\s*=\s*(.+)/i', $opt, $matches ) ) {
+				$options['errmsg'] = $matches[1];
+			}
 		}
 		//Process magic words
-		preg_match_all( '/{{([a-z]+):(.+?)}}/', $regex, $magicwords, PREG_SET_ORDER );
+		preg_match_all( '/{{\s*([a-z]+)\s*:\s*(.+?)\s*}}/', $regex, $magicwords, PREG_SET_ORDER );
 		foreach( $magicwords as $mword ) {
 			global $wgParser;	//Functions we're calling don't need, nevertheless let's use it
 			switch( strtolower( $mword[1] ) ) {
@@ -163,7 +166,7 @@ class TitleBlacklistEntry {
 					}
 					break;
 				case 'int':
-					$cpf_result = CoreParserFunctions::intFunction( $wgParser, $mword[2] );
+					$cpf_result = wfMsgForContent( $mword[2] );
 					if( is_string( $cpf_result ) ) {
 						$regex = str_replace( $mword[0], $cpf_result, $regex );
 					}
@@ -187,5 +190,9 @@ class TitleBlacklistEntry {
 
 	public function getOptions() {
 		return $this->mOptions;
+	}
+
+	public function getCustomMessage() {
+		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
 	}
 }

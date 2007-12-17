@@ -19,8 +19,11 @@ class TitleBlacklistHooks {
 			return $result;
 		}
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
-		if( is_string( $blacklisted ) ) {
-			$result = array( 'titleblacklist-forbidden-edit', htmlspecialchars( $blacklisted ), $title->getFullText() );
+		if( $blacklisted instanceof TitleBlacklistEntry ) {
+			$message = $blacklisted->getCustomMessage();
+			if( is_null( $message ) )
+				$message = 'titleblacklist-forbidden-edit';
+			$result = array( $message, htmlspecialchars( $blacklisted->getRaw() ), $title->getFullText() );
 			return false;
 		}
 
@@ -30,8 +33,13 @@ class TitleBlacklistHooks {
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt, 'move' );
-		if( is_string( $blacklisted ) ) {
-			$err = wfMsgWikiHtml( "titleblacklist-forbidden-move", htmlspecialchars( $blacklisted ), $nt->getFullText(), $old->getFullText() );
+		if( !$blacklisted )
+			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
+		if( $blacklisted instanceof TitleBlacklistEntry ) {
+			$message = $blacklisted->getCustomMessage();
+			if( is_null( $message ) )
+				$message = 'titleblacklist-forbidden-move';
+			$err = wfMsgWikiHtml( $message, htmlspecialchars( $blacklisted->getRaw() ), $nt->getFullText(), $old->getFullText() );
 			return false;
 		}
 		return true;
@@ -39,9 +47,12 @@ class TitleBlacklistHooks {
 	
 	public static function verifyUpload( $fname, $fpath, &$err ) {
 		global $wgTitleBlacklist, $wgUser;
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $fname, 'upload' );
-		if( is_string( $blacklisted ) ) {
-			$err = wfMsgWikiHtml( "titleblacklist-forbidden-upload", htmlspecialchars( $blacklisted ), $fname );
+		$blacklisted = $wgTitleBlacklist->isBlacklisted( Title::newFromText( $fname, NS_IMAGE ), 'upload' );
+		if( $blacklisted instanceof TitleBlacklistEntry ) {
+			$message = $blacklisted->getCustomMessage();
+			if( is_null( $message ) )
+				$message = 'titleblacklist-forbidden-upload';
+			$err = wfMsgWikiHtml( $message, htmlspecialchars( $blacklisted->getRaw() ), $fname );
 			return false;
 		}
 		return true;
