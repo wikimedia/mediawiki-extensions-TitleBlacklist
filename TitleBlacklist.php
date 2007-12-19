@@ -6,6 +6,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Title Blacklist',
 	'author' => 'VasilievVV',
+	'version' => '1.3',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'description' => 'Allows to forbide creation of pages with specified titles'
 );
 
@@ -20,6 +22,12 @@ define( 'TBLSRC_LOCALPAGE', 1 );	//Local wiki page
 define( 'TBLSRC_URL',	      2 );	//Load blacklist from URL
 define( 'TBLSRC_FILE',      3 );	//Load from file
 $wgTitleBlacklistSources = array();
+
+$wgTitleBlacklistCaching = array(
+	'warningchance' => 100,
+	'expiry' => 900,
+	'warningexpiry' => 600,
+);
 
 $wgAvailableRights[] = 'tboverride';
 $wgGroupPermissions['sysop']['tboverride'] = true;

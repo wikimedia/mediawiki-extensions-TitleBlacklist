@@ -11,15 +11,24 @@
  */
 class TitleBlacklist {
 	private $mBlacklist = null;
+	const VERSION = 1;	//Blacklist format
 
 	public function load() {
-		global $wgTitleBlacklistSources;
+		global $wgTitleBlacklistSources, $wgMemc, $wgDBname, $wgTitleBlacklistCaching;
+		//Try to find something in the cache
+		$cachedBlacklist = $wgMemc->get( "{$wgDBname}:title_blacklist_entries" );
+		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 1 && ( $cachedBlacklist[0]->getFormatVersion() != self::VERSION ) ) {
+			
+			$this->mBlacklist = $cachedBlacklist;
+			return;
+		}
 		$sources = $wgTitleBlacklistSources;
 		$sources[] = array( 'type' => TBLSRC_MSG );
 		$this->mBlacklist = array();
 		foreach( $sources as $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
 		}
+		$wgMemc->set( "{$wgDBname}:title_blacklist_entries", $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 	}
 	
 	public function getBlacklistText( $source ) {
@@ -49,7 +58,7 @@ class TitleBlacklist {
 				}
 			}
 		} elseif( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
-			return Http::get( $source['src'] );
+			return $this->getHttp( $source['src'] );
 		} elseif( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
 			if( file_exists( $source['src'] ) ) {
 				return file_get_contents( $source['src'] );
@@ -95,13 +104,28 @@ class TitleBlacklist {
 		}
 		return $this->mBlacklist;
 	}
+	
+	public function getHttp( $url ) {
+		global $messageMemc, $wgDBname, $wgTitleBlacklistCaching;
+		$key = "title_blacklist_source:" . md5( $url );
+		$warnkey = "{$wgDBname}:titleblacklistwarning:";
+		$result = $messageMemc->get( $key );
+		$warn = $messageMemc->get( $warnkey );
+		if ( !is_string( $result ) || ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) ) ) {
+			$result = Http::get( $url );
+			$messageMemc->set( $warnkey, 1, $wgTitleBlacklistCaching['warningexpiry'] );
+			$messageMemc->set( $key, $result, $wgTitleBlacklistCaching['expiry'] );
+		}
+		return $result;
+	}
 }
 
 class TitleBlacklistEntry {
 	private
 		$mRaw,
 		$mRegex,
-		$mParams;
+		$mParams,
+		$mFormatVersion;
 
 	public function __construct( $regex, $params, $raw ) {
 		$this->mRaw = $raw;
@@ -195,4 +219,7 @@ class TitleBlacklistEntry {
 	public function getCustomMessage() {
 		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
 	}
+	
+	public function getFormatVersion() { return $this->mFormatVersion; }
+	public function setFormatVersion( $v ) { $this->mFormatVersion = $v; }
 }
