@@ -57,4 +57,28 @@ class TitleBlacklistHooks {
 		}
 		return true;
 	}
+	
+	public static function validateBlacklist( $editor, $text, $section, $error ) {
+		global $wgTitleBlacklist;
+		$title = $editor->mTitle;
+		if( $title->getNamespace() != NS_MEDIAWIKI && $title->getDbKey() != 'Titleblacklist' )
+			return true;
+
+		$bl = $wgTitleBlacklist->parseBlacklist( $text );
+		$ok = $wgTitleBlacklist->validate( $bl );
+		if( count( $ok ) == 0 ) {
+			$wgTitleBlacklist->invalidate();
+			return true;
+		}
+
+		$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
+		$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
+		$error = '<div class="errorbox">' .
+			$errmsg .
+			"\n" .
+			$errlines .
+			"</div>\n" .
+			"<br clear='all' />\n";
+		return true;
+	}
 }

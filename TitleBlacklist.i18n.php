@@ -21,6 +21,7 @@ It matches the following blacklist entry: '''''\$1'''''
 			'titleblacklist-forbidden-upload' => "
 '''A file named \"\$2\" cannot be uploaded''' <br />
 It matches the following blacklist entry: '''''\$1'''''",
+			'titleblacklist-invalid' => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid; please correct {{PLURAL:$1|it|them}} before saving:',
 		),
 
 		'ar' => array(
@@ -138,10 +139,33 @@ Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1''''
 		'oc' => array(
 			'titleblacklist'                  => "# Aquò es un títol mes en lista negra 
 # Cada títol qu'indica aicí lo còde regex es interdich a la creacion e a l'edicion 
-# Utilizatz « \" » per escriure de comentaris",
+# Utilizatz « # » per escriure de comentaris",
 			'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\"> '''La pagina intitolada « \$2 » pòt pas èsser creada.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </div>",
 			'titleblacklist-forbidden-move'   => "<span class=\"error\"> '''La page intitolada « \$2 » pòt pas èsser deplaçada a « \$3 ».''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </span>",
 			'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat « $2 » pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''$1'''''",
+		),
+/** Russian (Русский)
+ * @author VasilievVV
+ */
+'ru' => array(
+			'titleblacklist' =>
+"# Это список запрещённый названий
+# Любая статья, название которой попадает под этот список, не может быть создана
+# Используйте « # » для комментариев
+",
+			'titleblacklist-forbidden-edit' => "
+<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''Страница с названием \"\$2\" не может быть создана''' <br />
+Она попадает под следующую запись списка запрещенных названий: '''''\$1'''''
+</div>",
+			'titleblacklist-forbidden-move' => "<span class=\"error\">
+'''Страница с названием \"\$2\" не может быть перемещена''' <br />
+Она попадает под следующую запись списка запрещенных названий: '''''\$1'''''
+</span>",
+			'titleblacklist-forbidden-upload' => "
+'''Файл с названием \"\$2\" не может быть загружен''' <br />
+Он попадает под следующую запись списка запрещенных названий: '''''\$1'''''",
+			'titleblacklist-invalid' => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещенный названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
 		),
 
 	);

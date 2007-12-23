@@ -22,6 +22,7 @@ class TitleBlacklist {
 			$this->mBlacklist = $cachedBlacklist;
 			return;
 		}
+
 		$sources = $wgTitleBlacklistSources;
 		$sources[] = array( 'type' => TBLSRC_MSG );
 		$this->mBlacklist = array();
@@ -108,7 +109,7 @@ class TitleBlacklist {
 	public function getHttp( $url ) {
 		global $messageMemc, $wgDBname, $wgTitleBlacklistCaching;
 		$key = "title_blacklist_source:" . md5( $url );
-		$warnkey = "{$wgDBname}:titleblacklistwarning:";
+		$warnkey = "{$wgDBname}:titleblacklistwarning:" . md5( $url );
 		$result = $messageMemc->get( $key );
 		$warn = $messageMemc->get( $warnkey );
 		if ( !is_string( $result ) || ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) ) ) {
@@ -117,6 +118,23 @@ class TitleBlacklist {
 			$messageMemc->set( $key, $result, $wgTitleBlacklistCaching['expiry'] );
 		}
 		return $result;
+	}
+	
+	public function invalidate() {
+		global $wgMemc, $wgDBname;
+		$wgMemc->delete( "{$wgDBname}:title_blacklist_entries" );
+	}
+	
+	public function validate( $blacklist ) {
+		$badEntries = array();
+		foreach( $blacklist as $e ) {
+			wfSuppressWarnings();
+			$regex = $e->getRegex();
+			if( preg_match( "/{$regex}/u", '' ) === false )
+				$badEntries[] = $e->getRaw();
+			wfRestoreWarnings();
+		}
+		return $badEntries;
 	}
 }
 
@@ -137,7 +155,10 @@ class TitleBlacklistEntry {
 		if( $user->isAllowed( 'tboverride' ) ) {
 			return true;
 		}
-		if( preg_match( "/^{$this->mRegex}$/s" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() ) ) {
+		wfSuppressWarnings();
+		$match = preg_match( "/^{$this->mRegex}$/s" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
+		wfRestoreWarnings();
+		if( $match ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
 				return true;
 			}

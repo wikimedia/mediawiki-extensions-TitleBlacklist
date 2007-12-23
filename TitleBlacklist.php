@@ -19,7 +19,7 @@ $wgExtensionFunctions[] = 'efInitTitleBlacklist';
 // Sources of TitleBlacklist
 define( 'TBLSRC_MSG',       0 );	//For internal usage
 define( 'TBLSRC_LOCALPAGE', 1 );	//Local wiki page
-define( 'TBLSRC_URL',	      2 );	//Load blacklist from URL
+define( 'TBLSRC_URL',	    2 );	//Load blacklist from URL
 define( 'TBLSRC_FILE',      3 );	//Load from file
 $wgTitleBlacklistSources = array();
 
@@ -52,4 +52,5 @@ function efSetupTitleBlacklistHooks() {
 	$wgHooks['getUserPermissionsErrors'][]   = 'TitleBlacklistHooks::userCan';
 	$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
 	$wgHooks['UploadVerification'][] = 'TitleBlacklistHooks::verifyUpload';
+	$wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 }
