@@ -24,20 +24,25 @@ It matches the following blacklist entry: '''''\$1'''''",
 			'titleblacklist-invalid' => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid; please correct {{PLURAL:$1|it|them}} before saving:',
 		),
 
+/** Arabic (العربية)
+ * @author Meno25
+ * @author SPQRobin
+ */
 		'ar' => array(
-			'titleblacklist' => '# هذه قائمة سوداء للعناوين
+			'titleblacklist'                  => '# هذه قائمة سوداء للعناوين
 # كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
 # استخدم "#" للتعليقات',
-			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'الصفحة المعنونة "$2" لا يمكن إنشاؤها\'\'\' <br />
-هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'الصفحة المعنونة "$2" لا يمكن نقلها إلى "$3"\'\'\' <br />
-هي تطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'
-</span>',
-			'titleblacklist-forbidden-upload' => '\'\'\'الملف بالاسم "$2" لا يمكن رفعه\'\'\' <br />
-هو يطابق ريجيكس القائمة السوداء التالي: \'\'\'\'\'$1\'\'\'\'\'',
+			'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''الصفحة المعنونة \"\$2\" لا يمكن إنشاؤها''' <br />
+هي تطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''
+</div>",
+			'titleblacklist-forbidden-move'   => "<span class=\"error\">
+'''الصفحة المعنونة \"\$2\" لا يمكن نقلها إلى \"\$3\"''' <br />
+هي تطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''
+</span>",
+			'titleblacklist-forbidden-upload' => "'''الملف بالاسم \"\$2\" لا يمكن رفعه''' <br />
+هو يطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''",
+			'titleblacklist-invalid'          => '{{PLURAL:$1|السطر|السطور}} التالية في قائمة العناوين السوداء {{PLURAL:$1|غير صحيح|غير صحيحة}}؛ من فضلك {{PLURAL:$1|صححه|صححهم}} قبل الحفظ:',
 		),
 
 		'de' => array(
@@ -58,20 +63,25 @@ Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</span>",
 Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 		),
 
+/** French (Français)
+ * @author Sherbrooke
+ * @author Grondin
+ */
 		'fr' => array(
-			'titleblacklist' => '# Ceci est un titre mis en liste noire
-# Chaque titre qu\'indique ici le code regex est interdit à la création et à l\'édition
-# Utilisez « " » pour écrire des commentaires',
-			'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'La page intitulée « $2 » ne peut être créée.\'\'\' <br />
-Dans la liste noire, elle correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-			'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'La page intitulée « $2 » ne peut être déplacée à « $3 ».\'\'\' <br />
-Dans la liste noire, elle correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'
-</span>',
-			'titleblacklist-forbidden-upload' => '\'\'\'Une fichier nommé « $2 » ne peut être téléchargé.\'\'\' <br />
-Dans la liste noire, il correspond à l\'expression rationnelle : \'\'\'\'\'$1\'\'\'\'\'',
+			'titleblacklist'                  => "# Ceci est un titre mis en liste noire
+# Chaque titre qu'indique ici le code regex est interdit à la création et à l'édition
+# Utilisez « \" » pour écrire des commentaires",
+			'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''La page intitulée « \$2 » ne peut être créée.''' <br />
+Dans la liste noire, elle correspond à l'expression rationnelle : '''''\$1'''''
+</div>",
+			'titleblacklist-forbidden-move'   => "<span class=\"error\">
+'''La page intitulée « \$2 » ne peut être déplacée à « \$3 ».''' <br />
+Dans la liste noire, elle correspond à l'expression rationnelle : '''''\$1'''''
+</span>",
+			'titleblacklist-forbidden-upload' => "'''Une fichier nommé « $2 » ne peut être téléchargé.''' <br />
+Dans la liste noire, il correspond à l'expression rationnelle : '''''$1'''''",
+			'titleblacklist-invalid'          => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 		),
 
 		'gl' => array(
@@ -130,8 +140,8 @@ Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1''''
 </span>",
 			'titleblacklist-forbidden-upload' => "'''Het bestand \"\$2\" kan niet toegevoegd worden''' <br />
 Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''",
-
-),
+			'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} onjuist. Corrgieer die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
+		),
 
 /** Occitan (Occitan)
  * @author Cedric31
@@ -144,10 +154,11 @@ Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1''''
 			'titleblacklist-forbidden-move'   => "<span class=\"error\"> '''La page intitolada « \$2 » pòt pas èsser deplaçada a « \$3 ».''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </span>",
 			'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat « $2 » pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''$1'''''",
 		),
+
 /** Russian (Русский)
  * @author VasilievVV
  */
-'ru' => array(
+		'ru' => array(
 			'titleblacklist' =>
 "# Это список запрещённый названий
 # Любая статья, название которой попадает под этот список, не может быть создана
