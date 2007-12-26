@@ -6,11 +6,12 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Title Blacklist',
 	'author' => 'VasilievVV',
-	'version' => '1.3',
+	'version' => '1.4',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'description' => 'Allows to forbide creation of pages with specified titles'
 );
 
+$wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlacklist.i18n.php';
 $wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
 $wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
 
@@ -35,16 +36,8 @@ $wgGroupPermissions['sysop']['tboverride'] = true;
 function efInitTitleBlacklist() {
 	global $wgTitleBlacklist;
 	$wgTitleBlacklist = new TitleBlacklist();
-	efSetupTitleBlacklistMessages();
+	wfLoadExtensionMessages( 'TitleBlacklist' );
 	efSetupTitleBlacklistHooks();
-}
-
-function efSetupTitleBlacklistMessages() {
-	global $wgMessageCache;
-	require_once( 'TitleBlacklist.i18n.php' );
-	foreach( efGetTitleBlacklistMessages() as $lang => $messages ) {
-		$wgMessageCache->addMessages( $messages, $lang );
-	}
 }
 
 function efSetupTitleBlacklistHooks() {
