@@ -180,3 +180,20 @@ $messages['ru'] = array(
 Он попадает под следующую запись списка запрещенных названий: '''''\$1'''''",
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещенный названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
 );
+
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'titleblacklist'                  => '# Dit is ju Swotte Lieste fon nit wonskede Siedennoomen.
+# Älke Siedennoome, ap dän do foulgjende reguläre Uutdrukke touträffe, kon nit moaked un beoarbaided wäide.
+# Text bääte ne Ruute „#“ wäd as Kommentoar betrachted.',
+	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''Ne Siede mäd dän Tittel „\$2“ kon nit moaked wäide.''' <br />
+Die Tittel kollidiert mäd dissen Speerbegriep: '''''\$1'''''</div>",
+	'titleblacklist-forbidden-move'   => "<span class=\"error\">
+'''Ju Siede „\$2“ kon nit ätter „\$3“ ferschäuwen wäide.''' <br />
+Die Tittel kollidiert mäd dissen Speerbegriep: '''''\$1'''''</span>",
+	'titleblacklist-forbidden-upload' => "'''Ne Doatäi mäd dän Noome „$2“ kon nit hoochleeden wäide.''' <br />
+Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
+);
