@@ -61,7 +61,7 @@ class TitleBlacklistHooks {
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist;
 		$title = $editor->mTitle;
-		if( $title->getNamespace() != NS_MEDIAWIKI && $title->getDbKey() != 'Titleblacklist' )
+		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDbKey() != 'Titleblacklist' )
 			return true;
 
 		$bl = $wgTitleBlacklist->parseBlacklist( $text );
