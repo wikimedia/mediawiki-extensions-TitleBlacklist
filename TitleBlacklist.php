@@ -8,7 +8,7 @@ $wgExtensionCredits['other'][] = array(
 	'author' => 'VasilievVV',
 	'version' => '1.4',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
-	'description' => 'Allows to forbide creation of pages with specified titles'
+	'description' => 'Allows to forbid creation of pages with specified titles'
 );
 
 $wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlacklist.i18n.php';
@@ -18,10 +18,10 @@ $wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlackli
 $wgExtensionFunctions[] = 'efInitTitleBlacklist';
 
 // Sources of TitleBlacklist
-define( 'TBLSRC_MSG',       0 );	//For internal usage
-define( 'TBLSRC_LOCALPAGE', 1 );	//Local wiki page
-define( 'TBLSRC_URL',	    2 );	//Load blacklist from URL
-define( 'TBLSRC_FILE',      3 );	//Load from file
+define( 'TBLSRC_MSG',       0 );	// For internal usage
+define( 'TBLSRC_LOCALPAGE', 1 );	// Local wiki page
+define( 'TBLSRC_URL',	    2 );	// Load blacklist from URL
+define( 'TBLSRC_FILE',      3 );	// Load from file
 $wgTitleBlacklistSources = array();
 
 $wgTitleBlacklistCaching = array(
@@ -42,8 +42,9 @@ function efInitTitleBlacklist() {
 
 function efSetupTitleBlacklistHooks() {
 	global $wgHooks;
-	$wgHooks['getUserPermissionsErrors'][]   = 'TitleBlacklistHooks::userCan';
+	$wgHooks['getUserPermissionsErrors'][] = 'TitleBlacklistHooks::userCan';
 	$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
 	$wgHooks['UploadVerification'][] = 'TitleBlacklistHooks::verifyUpload';
 	$wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
+	$wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 }

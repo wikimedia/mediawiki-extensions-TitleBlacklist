@@ -7,27 +7,25 @@
  * @subpackage Extensions
  * @author VasilievVV
  * @copyright © 2007 VasilievVV
- * @licence GNU General Public Licence 2.0 or later
+ * @license GNU General Public License 2.0 or later
  */
  
 class TitleBlacklistHooks {
-	public static function userCan( $title, $user, $action, &$result )
-	{
+	public static function userCan( $title, $user, $action, &$result ) {
 		global $wgTitleBlacklist;
-		if ( $action != 'create' && $action != 'edit' ) {
-			$result = true;
-			return $result;
+		if( $action == 'create' || $action == 'edit' ) {
+			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
+			if( $blacklisted instanceof TitleBlacklistEntry ) {
+				$message = $blacklisted->getCustomMessage();
+				if( is_null( $message ) )
+					$message = 'titleblacklist-forbidden-edit';
+				$result = array( $message,
+					htmlspecialchars( $blacklisted->getRaw() ),
+					$title->getFullText() );
+				return false;
+			}
 		}
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
-		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			$message = $blacklisted->getCustomMessage();
-			if( is_null( $message ) )
-				$message = 'titleblacklist-forbidden-edit';
-			$result = array( $message, htmlspecialchars( $blacklisted->getRaw() ), $title->getFullText() );
-			return false;
-		}
-
-		return $result = true;
+		return true;
 	}
 
 	public static function abortMove( $old, $nt, $user, &$err ) {
@@ -39,7 +37,10 @@ class TitleBlacklistHooks {
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-move';
-			$err = wfMsgWikiHtml( $message, htmlspecialchars( $blacklisted->getRaw() ), $nt->getFullText(), $old->getFullText() );
+			$err = wfMsgWikiHtml( $message,
+				htmlspecialchars( $blacklisted->getRaw() ),
+				htmlspecialchars( $nt->getFullText() ),
+				htmlspecialchars( $old->getFullText() ) );
 			return false;
 		}
 		return true;
@@ -67,7 +68,6 @@ class TitleBlacklistHooks {
 		$bl = $wgTitleBlacklist->parseBlacklist( $text );
 		$ok = $wgTitleBlacklist->validate( $bl );
 		if( count( $ok ) == 0 ) {
-			$wgTitleBlacklist->invalidate();
 			return true;
 		}
 
@@ -79,6 +79,18 @@ class TitleBlacklistHooks {
 			$errlines .
 			"</div>\n" .
 			"<br clear='all' />\n";
+		
+		// $error will be displayed by the edit class
+		return true;
+	}
+	
+	public static function clearBlacklist( &$article, &$user,
+			$text, $summary, $isminor, $iswatch, $section ) {
+		$title = $article->getTitle();
+		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDbKey() == 'Titleblacklist' ) {
+			global $wgTitleBlacklist;
+			$wgTitleBlacklist->invalidate();
+		}
 		return true;
 	}
 }

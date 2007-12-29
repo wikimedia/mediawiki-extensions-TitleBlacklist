@@ -156,7 +156,7 @@ class TitleBlacklistEntry {
 			return true;
 		}
 		wfSuppressWarnings();
-		$match = preg_match( "/^{$this->mRegex}$/s" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
+		$match = preg_match( "/^{$this->mRegex}$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
 		wfRestoreWarnings();
 		if( $match ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
@@ -171,18 +171,18 @@ class TitleBlacklistEntry {
 	}
 
 	public static function newFromString( $line ) {
-		$raw = $line;	#Keep line for raw data
+		$raw = $line; // Keep line for raw data
 		$regex = "";
 		$options = array();
-		//Strip comments
+		// Strip comments
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
 		$line = trim( $line );
-		//Parse the rest of message
+		// Parse the rest of message
 		preg_match( '/^(.*?)(\s*<(.*)>)?$/', $line, $pockets );
 		@list( $full, $regex, $null, $opts_str ) = $pockets;
 		$regex = trim( $regex );
 		$opts_str = trim( $opts_str );
-		//Parse opts
+		// Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
 		foreach( $opts as $opt ) {
 			$opt2 = strtolower( $opt );
@@ -199,15 +199,15 @@ class TitleBlacklistEntry {
 				$options['errmsg'] = $matches[1];
 			}
 		}
-		//Process magic words
+		// Process magic words
 		preg_match_all( '/{{\s*([a-z]+)\s*:\s*(.+?)\s*}}/', $regex, $magicwords, PREG_SET_ORDER );
 		foreach( $magicwords as $mword ) {
-			global $wgParser;	//Functions we're calling don't need, nevertheless let's use it
+			global $wgParser;	// Functions we're calling don't need, nevertheless let's use it
 			switch( strtolower( $mword[1] ) ) {
 				case 'ns':
 					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
 					if( is_string( $cpf_result ) ) {
-						$regex = str_replace( $mword[0], $cpf_result, $regex );	//All result will have the same value, so we can just use str_seplace()
+						$regex = str_replace( $mword[0], $cpf_result, $regex );	// All result will have the same value, so we can just use str_seplace()
 					}
 					break;
 				case 'int':
@@ -217,7 +217,7 @@ class TitleBlacklistEntry {
 					}
 			}
 		}
-		//Return result
+		// Return result
 		if( $regex ) {
 			return new TitleBlacklistEntry( $regex, $options, $raw );
 		} else {
