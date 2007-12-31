@@ -49,6 +49,27 @@ $messages['ar'] = array(
 	'titleblacklist-invalid'          => '{{PLURAL:$1|السطر|السطور}} التالية في قائمة العناوين السوداء {{PLURAL:$1|غير صحيح|غير صحيحة}}؛ من فضلك {{PLURAL:$1|صححه|صححهم}} قبل الحفظ:',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ * @author Spiritia
+ */
+$messages['bg'] = array(
+	'titleblacklist'                  => '# Това е черен списък на заглавията на страници
+# Страници, чиито заглавия съответстват с регулярните изрази в списъка, не могат да бъдат създавани или редактирани
+# За коментари се използва символът "#"',
+	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
+'''Не може да бъде създадена страница с името \"\$2\",''' <br />
+тъй като съвпада със запис от черния списък: '''''\$1'''''
+</div>",
+	'titleblacklist-forbidden-move'   => "<span class=\"error\">
+'''Страницата \"\$2\" не може да бъде преместена като \"\$3\",''' <br />
+тъй като съвпада със запис от черния списък: '''''\$1'''''
+</span>",
+	'titleblacklist-forbidden-upload' => "'''Не може да бъде качен файл с името \"\$2\",''' <br />
+тъй като съвпада със запис от черния списък: '''''\$1'''''",
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
+);
+
 $messages['de'] = array(
 	'titleblacklist' =>
 "# Dies ist die Schwarze Liste unerwünschter Seitennamen.
