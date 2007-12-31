@@ -54,7 +54,7 @@ $messages['ar'] = array(
  * @author Spiritia
  */
 $messages['bg'] = array(
-	'titleblacklist'                  => '# Това е черен списък на заглавията на страници
+	'titleblacklist'                  => '# Страницата съдържа черен списък за заглавия на страници
 # Страници, чиито заглавия съответстват с регулярните изрази в списъка, не могат да бъдат създавани или редактирани
 # За коментари се използва символът "#"',
 	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
