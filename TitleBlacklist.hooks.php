@@ -6,7 +6,7 @@
  * @package MediaWiki
  * @subpackage Extensions
  * @author VasilievVV
- * @copyright © 2007 VasilievVV
+ * @copyright Â© 2007 VasilievVV
  * @license GNU General Public License 2.0 or later
  */
  
