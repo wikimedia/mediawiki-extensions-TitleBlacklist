@@ -14,9 +14,9 @@ class TitleBlacklist {
 	const VERSION = 1;	//Blacklist format
 
 	public function load() {
-		global $wgTitleBlacklistSources, $wgMemc, $wgDBname, $wgTitleBlacklistCaching;
+		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
 		//Try to find something in the cache
-		$cachedBlacklist = $wgMemc->get( "{$wgDBname}:title_blacklist_entries" );
+		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
 		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 1 && ( $cachedBlacklist[0]->getFormatVersion() != self::VERSION ) ) {
 			
 			$this->mBlacklist = $cachedBlacklist;
@@ -29,7 +29,7 @@ class TitleBlacklist {
 		foreach( $sources as $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
 		}
-		$wgMemc->set( "{$wgDBname}:title_blacklist_entries", $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
+		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 	}
 	
 	public function getBlacklistText( $source ) {
@@ -107,9 +107,9 @@ class TitleBlacklist {
 	}
 	
 	public function getHttp( $url ) {
-		global $messageMemc, $wgDBname, $wgTitleBlacklistCaching;
-		$key = "title_blacklist_source:" . md5( $url );
-		$warnkey = "{$wgDBname}:titleblacklistwarning:" . md5( $url );
+		global $messageMemc, $wgTitleBlacklistCaching;
+		$key = "title_blacklist_source:" . md5( $url ); // Global shared
+		$warnkey = wfMemcKey( "titleblacklistwarning", md5( $url ) );
 		$result = $messageMemc->get( $key );
 		$warn = $messageMemc->get( $warnkey );
 		if ( !is_string( $result ) || ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) ) ) {
@@ -121,8 +121,8 @@ class TitleBlacklist {
 	}
 	
 	public function invalidate() {
-		global $wgMemc, $wgDBname;
-		$wgMemc->delete( "{$wgDBname}:title_blacklist_entries" );
+		global $wgMemc;
+		$wgMemc->delete( wfMemcKey( "title_blacklist_entries" ) );
 	}
 	
 	public function validate( $blacklist ) {
