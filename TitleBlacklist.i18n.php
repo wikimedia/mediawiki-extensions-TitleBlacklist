@@ -149,24 +149,23 @@ Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'',
 );
 
 /** Dutch (Nederlands)
- * @author Siebrand
  * @author SPQRobin
  */
 $messages['nl'] = array(
 	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen
-# Iedere paginanaam die voldoet aan de reguliere expressie kan niet aangemaakt en bewerkt worden
+# Iedere paginanaam die voldoet aan de reguliere uitdrukking kan niet aangemaakt en bewerkt worden
 # Gebruik "#" voor opmerkingen',
 	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
 '''Een pagina genaamd \"\$2\" kan niet worden aangemaakt''' <br />
 Hij voldoet aan de volgende regex op de zwarte lijst: '''''\$1'''''
 </div>",
 	'titleblacklist-forbidden-move'   => "<span class=\"error\">
-'''Een pagina genaamd \"\$2\" kan niet worden hernoemd naar \"\$3\"''' <br />
-Hij voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''
+'''Een pagina genaamd \"\$2\" kan niet hernoemd worden naar \"\$3\"''' <br />
+Hij voldoet aan de volgende reguliere uitdrukking op de zwarte lijst: '''''\$1'''''
 </span>",
 	'titleblacklist-forbidden-upload' => "'''Het bestand \"\$2\" kan niet toegevoegd worden''' <br />
-Het voldoet aan de volgende reguliere expressie op de zwarte lijst: '''''\$1'''''",
-	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} onjuist. Corrgieer die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
+Het voldoet aan de volgende reguliere uitdrukking op de zwarte lijst: '''''\$1'''''",
+	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
 );
 
 /** Occitan (Occitan)
