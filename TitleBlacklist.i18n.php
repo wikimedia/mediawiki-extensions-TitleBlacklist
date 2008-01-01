@@ -89,6 +89,15 @@ Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''</span>",
 Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 );
 
+/** Finnish (Suomi)
+ * @author Str4nd
+ */
+$messages['fi'] = array(
+	'titleblacklist' => '# Tämä on uudelleenluonnilta suojattujen sivujen luettelo.
+# Uusien sivujen luominen on estetty sivuista, joiden otsikot vastaavat täällä määritettyjä säännöllisiä lausekkeita.
+# Käytä "#"-merkkiä kommentointiin.',
+);
+
 /** French (Français)
  * @author Sherbrooke
  * @author Grondin
