@@ -70,6 +70,8 @@ $messages['bg'] = array(
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
 );
 
+/** German (Deutsch)
+ */
 $messages['de'] = array(
 	'titleblacklist' =>
 "# Dies ist die Schwarze Liste unerwünschter Seitennamen.
