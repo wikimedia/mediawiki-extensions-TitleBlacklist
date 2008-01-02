@@ -39,23 +39,16 @@ $messages['ar'] = array(
 );
 
 /** Bulgarian (Български)
- * @author Spiritia
  * @author DCLXVI
+ * @author Spiritia
  */
 $messages['bg'] = array(
 	'titleblacklist'                  => '# Страницата съдържа черен списък за заглавия на страници
 # Страници, чиито заглавия съответстват с регулярните изрази в списъка, не могат да бъдат създавани или редактирани
 # За коментари се използва символът "#"',
-	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''Не може да бъде създадена страница с името \"\$2\",''' <br />
-тъй като съвпада със запис от черния списък: '''''\$1'''''
-</div>",
-	'titleblacklist-forbidden-move'   => "<span class=\"error\">
-'''Страницата \"\$2\" не може да бъде преместена като \"\$3\",''' <br />
-тъй като съвпада със запис от черния списък: '''''\$1'''''
-</span>",
-	'titleblacklist-forbidden-upload' => "'''Не може да бъде качен файл с името \"\$2\",''' <br />
-тъй като съвпада със запис от черния списък: '''''\$1'''''",
+	'titleblacklist-forbidden-edit'   => 'Страницата "$2" не може да бъде създадена, тъй като съвпада със запис от черния списък: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Страницата "$2" не може да бъде преместена като "$3", тъй като съвпада със запис от черния списък: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Файлът "$2" не може да бъде качен, тъй като съвпада със запис от черния списък: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
 );
 
@@ -141,22 +134,15 @@ Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'',
 );
 
 /** Dutch (Nederlands)
+ * @author Siebrand
  * @author SPQRobin
  */
 $messages['nl'] = array(
-	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen
-# Iedere paginanaam die voldoet aan de reguliere uitdrukking kan niet aangemaakt en bewerkt worden
-# Gebruik "#" voor opmerkingen',
-	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''Een pagina genaamd \"\$2\" kan niet worden aangemaakt''' <br />
-Hij voldoet aan de volgende regex op de zwarte lijst: '''''\$1'''''
-</div>",
-	'titleblacklist-forbidden-move'   => "<span class=\"error\">
-'''Een pagina genaamd \"\$2\" kan niet hernoemd worden naar \"\$3\"''' <br />
-Hij voldoet aan de volgende reguliere uitdrukking op de zwarte lijst: '''''\$1'''''
-</span>",
-	'titleblacklist-forbidden-upload' => "'''Het bestand \"\$2\" kan niet toegevoegd worden''' <br />
-Het voldoet aan de volgende reguliere uitdrukking op de zwarte lijst: '''''\$1'''''",
+	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen. Iedere paginanaam die voldoet aan een regex kan niet aangemaakt en bewerkt worden.
+# Gebruik "#" voor opmerkingen.',
+	'titleblacklist-forbidden-edit'   => 'Een pagina met de naam "$2" kan niet aangemaakt worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
 );
 
