@@ -22,19 +22,11 @@ $messages['en'] = array(
  * @author Meno25
  */
 $messages['ar'] = array(
-	'titleblacklist'                  => '# هذه قائمة سوداء للعناوين
-# كل عنوان يطابق تعبيرا منتظما هنا ممنوع إنشاؤه وتعديله
-# استخدم "#" للتعليقات',
-	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''الصفحة المعنونة \"\$2\" لا يمكن إنشاؤها''' <br />
-هي تطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''
-</div>",
-	'titleblacklist-forbidden-move'   => "<span class=\"error\">
-'''الصفحة المعنونة \"\$2\" لا يمكن نقلها إلى \"\$3\"''' <br />
-هي تطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''
-</span>",
-	'titleblacklist-forbidden-upload' => "'''الملف بالاسم \"\$2\" لا يمكن رفعه''' <br />
-هو يطابق ريجيكس القائمة السوداء التالي: '''''\$1'''''",
+	'titleblacklist'                  => '# هذه قائمة سوداء للعناوين. العناوين التي تطابق ريجيكس هنا لا يمكن إنشاؤها.
+# استخدم "#" للتعليقات.',
+	'titleblacklist-forbidden-edit'   => 'العنوان "$2" تم منعه من الإنشاء.  هو يطابق المدخلة التالية في القائمة السوداء: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" لا يمكن نقلها إلى "$3"، لأن العنوان "$3" تم منعه من الإنشاء. هو يطابق المدخلة التالية في القائمة السوداء : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'اسم الملف "$2" تم منعه من الإنشاء. هو يطابق المدخلة التالية في القائمة السوداء: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|السطر|السطور}} التالية في قائمة العناوين السوداء {{PLURAL:$1|غير صحيح|غير صحيحة}}؛ من فضلك {{PLURAL:$1|صححه|صححهم}} قبل الحفظ:',
 );
 
@@ -66,12 +58,14 @@ $messages['de'] = array(
 );
 
 /** Finnish (Suomi)
- * @author Str4nd
+ * @author Crt
+ * @author Nike
  */
 $messages['fi'] = array(
-	'titleblacklist' => '# Tämä on uudelleenluonnilta suojattujen sivujen luettelo.
-# Uusien sivujen luominen on estetty sivuista, joiden otsikot vastaavat täällä määritettyjä säännöllisiä lausekkeita.
-# Käytä "#"-merkkiä kommentointiin.',
+	'titleblacklist'         => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen luomisen.
+# Estettyjä ovat sivut, joiden sivunimet vastaavat täällä määritettyjä säännöllisiä lausekkeita.
+# Käytä #-merkkiä kommentointiin.',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
 );
 
 /** French (Français)
@@ -109,6 +103,19 @@ Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'
 </span>',
 	'titleblacklist-forbidden-upload' => '\'\'\'Dataja z mjenom "$2" njeda so nahrać\'\'\' <br />
 Kryje so ze slědowacym regularnym wurazom čorneje lisćiny: \'\'\'\'\'$1\'\'\'\'\'',
+);
+
+/** Italian (Italiano)
+ * @author BrokenArrow
+ */
+$messages['it'] = array(
+	'titleblacklist'                  => '# Lista dei titoli non consentiti. 
+# È impedita la creazione delle pagine il cui titolo corrisponde a un\'espressione regolare indicata di seguito.
+# Usare "#" per le righe di commento.',
+	'titleblacklist-forbidden-edit'   => 'La creazione di pagine con titolo "$2" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Impossibile spostare la pagina "$2" al titolo "$3" in quanto la creazione di pagine con titolo "$3" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'La creazione di file con titolo "$2" è stato impedito. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-invalid'          => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
 );
 
 $messages['la'] = array(
@@ -190,6 +197,18 @@ Die Tittel kollidiert mäd dissen Speerbegriep: '''''\$1'''''</div>",
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''\$1'''''</span>",
 	'titleblacklist-forbidden-upload' => "'''Ne Doatäi mäd dän Noome „$2“ kon nit hoochleeden wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
+);
+
+/** Swedish (Svenska)
+ * @author Lejonel
+ */
+$messages['sv'] = array(
+	'titleblacklist'                  => '# Det här är en lista över förbjudna sidtitlar. Titlar som matchar ett reguljärt uttryck här kan inte skapas.
+# Använd "#" för kommentarer.',
+	'titleblacklist-forbidden-edit'   => 'Sidtiteln "$2" har stoppats från att skapas. Den matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Sidan "$2" kan inte flyttas till "$3", eftersom titeln "$3" har förbjudits att skapas. Titeln matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Filnamnet "$2" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-invalid'          => 'Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:',
 );
 
 /** Cantonese (粵語 / 廣東話)
