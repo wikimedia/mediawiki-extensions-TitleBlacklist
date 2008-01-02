@@ -20,7 +20,6 @@ $messages['en'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
- * @author SPQRobin
  */
 $messages['ar'] = array(
 	'titleblacklist'                  => '# هذه قائمة سوداء للعناوين
@@ -40,8 +39,8 @@ $messages['ar'] = array(
 );
 
 /** Bulgarian (Български)
- * @author DCLXVI
  * @author Spiritia
+ * @author DCLXVI
  */
 $messages['bg'] = array(
 	'titleblacklist'                  => '# Страницата съдържа черен списък за заглавия на страници
@@ -109,6 +108,7 @@ Dans la liste noire, il correspond à l'expression rationnelle : '''''$1'''''",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 );
 
+/** Galician (Galego) */
 $messages['gl'] = array(
 	'titleblacklist' => '# É unha listaxe negra de títulos
 # Ningún título que coincida cunha destas expresións regulares se pode crear e editar
