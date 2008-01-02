@@ -12,9 +12,9 @@ $messages['en'] = array(
 "# This is a title blacklist. Titles that match a regex here cannot be created.
 # Use \"#\" for comments.
 ",
-	'titleblacklist-forbidden-edit' => "The title \"\$2\" has been banned from creation.  It matches the following blacklist entry: <code>\$1</code>",
-	'titleblacklist-forbidden-move' => "\"\$2\" cannot be moved to \"\$3\", because the title \"\$3\" has been banned from creation. It matches the following blacklist entry: <code>\$1</code>",
-	'titleblacklist-forbidden-upload' => "The file name \"\$2\" has been banned from creation. It matches the following blacklist entry: <code>\$1</code>",
+	'titleblacklist-forbidden-edit' => 'The title "$2" has been banned from creation.  It matches the following blacklist entry: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" cannot be moved to "$3", because the title "$3" has been banned from creation. It matches the following blacklist entry: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'The file name "$2" has been banned from creation. It matches the following blacklist entry: <code>\$1</code>',
 	'titleblacklist-invalid' => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid; please correct {{PLURAL:$1|it|them}} before saving:',
 );
 
