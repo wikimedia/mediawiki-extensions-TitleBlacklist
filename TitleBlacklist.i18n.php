@@ -9,22 +9,12 @@ $messages = array();
 
 $messages['en'] = array(
 	'titleblacklist' =>
-"# That's a title blacklist
-# Every title that matches regex here are forbidden to create and edit
-# Use \"#\" for comments
+"# This is a title blacklist. Titles that match a regex here cannot be created.
+# Use \"#\" for comments.
 ",
-	'titleblacklist-forbidden-edit' => "
-<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''A page titled \"\$2\" cannot be created''' <br />
-It matches the following blacklist entry: '''''\$1'''''
-</div>",
-	'titleblacklist-forbidden-move' => "<span class=\"error\">
-'''A page titled \"\$2\" cannot be moved to \"\$3\"''' <br />
-It matches the following blacklist entry: '''''\$1'''''
-</span>",
-	'titleblacklist-forbidden-upload' => "
-'''A file named \"\$2\" cannot be uploaded''' <br />
-It matches the following blacklist entry: '''''\$1'''''",
+	'titleblacklist-forbidden-edit' => "The title \"\$2\" has been banned from creation.  It matches the following blacklist entry: <code>\$1</code>",
+	'titleblacklist-forbidden-move' => "\"\$2\" cannot be moved to \"\$3\", because the title \"\$3\" has been banned from creation. It matches the following blacklist entry: <code>\$1</code>",
+	'titleblacklist-forbidden-upload' => "The file name \"\$2\" has been banned from creation. It matches the following blacklist entry: <code>\$1</code>",
 	'titleblacklist-invalid' => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid; please correct {{PLURAL:$1|it|them}} before saving:',
 );
 
