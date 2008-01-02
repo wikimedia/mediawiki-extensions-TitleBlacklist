@@ -118,20 +118,16 @@ $messages['it'] = array(
 	'titleblacklist-invalid'          => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
 );
 
+/** Latin (Latina)
+ * @author UV
+ */
 $messages['la'] = array(
-	'titleblacklist' => '# Hic est index titulorum prohibitorum
-# Tituli qui congruunt cum expressione regulari sequente nec creari nec recenseri possunt
-# Utere "#" pro commentariis',
-	'titleblacklist-forbidden-edit' => '<div align="center" style="border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;">
-\'\'\'Pagina cum titulo "$2" nec creari nec recenseri potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'
-</div>',
-	'titleblacklist-forbidden-move' => '<span class="error">
-\'\'\'Pagina cum titulo "$2" non ad "$3" moveri potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'
-</span>',
-	'titleblacklist-forbidden-upload' => '\'\'\'Fasciculus cum titulo "$2" onerari non potest\'\'\' <br />
-Hic titulus congruit cum expressione regulari: \'\'\'\'\'$1\'\'\'\'\'',
+	'titleblacklist'                  => '# Hic est index titulorum prohibitorum. Tituli qui congruunt cum
+# una ex expressionibus regularis sequentibus creari non possunt.
+# Utere "#" pro commentariis.',
+	'titleblacklist-forbidden-edit'   => 'Pagina cum titulo "$2" creari non potest. Hic titulus congruit cum expressione regulari: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Pagina cum titulo "$2" non ad "$3" moveri potest, quia titulus "$3" prohibitus est ne pagina creetur. Hic titulus congruit cum expressione regulari: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Fasciculus cum titulo "$2" onerari non potest. Hic titulus congruit cum expressione regulari: <code>\\$1</code>',
 );
 
 /** Dutch (Nederlands)
@@ -157,6 +153,18 @@ $messages['oc'] = array(
 	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\"> '''La pagina intitolada « \$2 » pòt pas èsser creada.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </div>",
 	'titleblacklist-forbidden-move'   => "<span class=\"error\"> '''La page intitolada « \$2 » pòt pas èsser deplaçada a « \$3 ».''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </span>",
 	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat « $2 » pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''$1'''''",
+);
+
+/** Portuguese (Português)
+ * @author 555
+ */
+$messages['pt'] = array(
+	'titleblacklist'                  => '# Esta é uma lista negra de títulos. Títulos que se encaixem em uma regex não poderão ser criados.
+# Utilize "#" para fazer comentários.',
+	'titleblacklist-forbidden-edit'   => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" não pode ser movida para "$3" já que "$3" é um título impedido de ser criado. Se encaixa na seguinte entrada da lista-negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'O ficheiro "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>\\$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 );
 
 /** Russian (Русский)
