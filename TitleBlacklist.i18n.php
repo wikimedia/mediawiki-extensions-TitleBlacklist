@@ -88,23 +88,16 @@ $messages['fi'] = array(
 );
 
 /** French (Français)
- * @author Sherbrooke
  * @author Grondin
  */
 $messages['fr'] = array(
 	'titleblacklist'                  => "# Ceci est un titre mis en liste noire
-# Chaque titre qu'indique ici le code regex est interdit à la création et à l'édition
-# Utilisez « \" » pour écrire des commentaires",
-	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
-'''La page intitulée « \$2 » ne peut être créée.''' <br />
-Dans la liste noire, elle correspond à l'expression rationnelle : '''''\$1'''''
-</div>",
-	'titleblacklist-forbidden-move'   => "<span class=\"error\">
-'''La page intitulée « \$2 » ne peut être déplacée à « \$3 ».''' <br />
-Dans la liste noire, elle correspond à l'expression rationnelle : '''''\$1'''''
-</span>",
-	'titleblacklist-forbidden-upload' => "'''Une fichier nommé « $2 » ne peut être téléchargé.''' <br />
-Dans la liste noire, il correspond à l'expression rationnelle : '''''$1'''''",
+# Chaque titre qu'indique ici le code regex ne peux être créé.
+# Utilisez « # » pour écrire des commentaires",
+	'titleblacklist-forbidden-edit'   => "Le titre « $2 » est interdit à la création.
+Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
+	'titleblacklist-forbidden-move'   => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
+	'titleblacklist-forbidden-upload' => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 );
 
