@@ -211,3 +211,54 @@ Die Tittel kollidiert mäd dissen Speerbegriep: '''''\$1'''''</span>",
 	'titleblacklist-forbidden-upload' => "'''Ne Doatäi mäd dän Noome „$2“ kon nit hoochleeden wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
 );
+
+/** Cantonese (粵語 / 廣東話)
+ * @author Shinjiman
+ */
+$messages['yue'] = array(
+	'titleblacklist' =>
+"# 呢個係一個標題黑名單。同呢度配合正規表達式嘅標題係唔可以新開嘅。
+# 用 \"#\" 去做註解。
+",
+	'titleblacklist-forbidden-edit' => '個標題 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" 唔可以搬到去 "$3"，由於個標題 "$3" 已經禁止咗去開。佢同下面黑名單嘅項目配合: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '個檔名 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>\$1</code>',
+	'titleblacklist-invalid' => '下面響標題黑名單嘅{{PLURAL:$1|一行|幾行}}無效；請響保存之前改正{{PLURAL:$1|佢|佢哋}}:',
+);
+
+/** chinese (simplified) (中文 (简化字))
+ * @author Fdcn
+ * @author Shinjiman
+ */
+$messages['zh-hans'] = array(
+	'titleblacklist' =>
+"# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
+# 请使用\"#\"来添加注释。
+",
+	'titleblacklist-forbidden-edit' => '标题 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>\$1</code>',
+	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
+);
+
+/** Chinese (Traditional) (中文 (傳統字))
+ * @author Fdcn
+ * @author Shinjiman
+ */
+$messages['zh-hant'] = array(
+	'titleblacklist' =>
+"# 本頁面為「標題黑名單」。任何匹配本名單正則表達式的標題會被阻止建立和編輯。
+# 請使用\"#\"來添加註釋。
+",
+	'titleblacklist-forbidden-edit' => '標題 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" 不可以移動到 "$3"，由於該標題 "$3" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>\$1</code>',
+	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
+);
+
+$messages['zh']     = $messages['zh-hans'];
+$messages['zh-cn']  = $messages['zh-hans'];
+$messages['zh-hk']  = $messages['zh-hant'];
+$messages['zh-sg']  = $messages['zh-hans'];
+$messages['zh-tw']  = $messages['zh-hant'];
+$messages['zh-yue'] = $messages['yue'];
