@@ -181,6 +181,7 @@ class TitleBlacklistEntry {
 		preg_match( '/^(.*?)(\s*<(.*)>)?$/', $line, $pockets );
 		@list( $full, $regex, $null, $opts_str ) = $pockets;
 		$regex = trim( $regex );
+		$regex = str_replace( '_', ' ', $regex ); // We'll be matching against text form
 		$opts_str = trim( $opts_str );
 		// Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
