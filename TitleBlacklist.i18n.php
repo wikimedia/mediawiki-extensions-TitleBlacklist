@@ -44,6 +44,18 @@ $messages['bg'] = array(
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
 );
 
+/** Czech (Česky)
+ * @author Li-sung
+ */
+$messages['cs'] = array(
+	'titleblacklist'                  => '# Toto je černá listina názvů. Název, který bude odpovídat regulárnímu výrazu, nebude možné vytvořit.
+# Používejte „#“ pro označení komentáře.',
+	'titleblacklist-forbidden-edit'   => 'Název "$2" je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '„$2“ nelze přesunout na název „$3“, protože název „$3“ je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Soubor s jménem „$2“ je zakázáno vytvářet. Název odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-invalid'          => 'Na černé listině názvů {{PLURAL:$1|je následující řádka neplatný regulární výraz|jsou následující řádky neplatné regulární výrazy|jsou následující řádky regulární výrazy}} a je nutné {{PLURAL:$1|ji|je|je}} před uložením stránky opravit :',
+);
+
 /** German (Deutsch)
  */
 $messages['de'] = array(
