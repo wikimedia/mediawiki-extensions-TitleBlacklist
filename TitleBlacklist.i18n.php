@@ -50,9 +50,9 @@ $messages['bg'] = array(
 $messages['ca'] = array(
 	'titleblacklist'                  => "# Això és una llista negra de títols. Aquelles pàgines que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creades.
 # Les línies que començen per \"#\" són comentaris.",
-	'titleblacklist-forbidden-edit'   => 'El títol «$2» està prohibit i no es pot crear. Compleix la següent entrada de la llista negra: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => "No es pot moure «$2» a «$3», perquè el títol «$3» està prohibit. Compleix l'entrada de la llista negra següent: <code>$1</code>",
-	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Compleix la següent línia de la llista negra: <code>\\$1</code>",
+	'titleblacklist-forbidden-edit'   => 'El títol «$2» està prohibit i no es pot crear. Concorda amb la següent entrada de la llista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => "No es pot moure «$2» a «$3», perquè el títol «$3» està prohibit. Concorda amb l'entrada de la llista negra següent: <code>$1</code>",
+	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>\\$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
 );
 
