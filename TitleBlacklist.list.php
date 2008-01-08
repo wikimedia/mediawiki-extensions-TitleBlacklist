@@ -10,16 +10,18 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 class TitleBlacklist {
-	private $mBlacklist = null;
-	const VERSION = 1;	//Blacklist format
+	private $mBlacklist = null, $mWhitelist = null;
+	const VERSION = 2;	//Blacklist format
 
 	public function load() {
 		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
+		wfProfileIn( __METHOD__ );
 		//Try to find something in the cache
 		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
-		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 1 && ( $cachedBlacklist[0]->getFormatVersion() != self::VERSION ) ) {
+		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
 			
 			$this->mBlacklist = $cachedBlacklist;
+			wfProfileOut( __METHOD__ );
 			return;
 		}
 
@@ -30,8 +32,23 @@ class TitleBlacklist {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
 		}
 		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
+		wfProfileOut( __METHOD__ );
 	}
-	
+
+	public function loadWhitelist() {
+		global $wgMemc, $wgTitleBlacklistCaching;
+		wfProfileIn( __METHOD__ );
+		$cachedWhitelist = $wgMemc->get( wfMemcKey( "title_whitelist_entries" ) );
+		if( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
+			$this->mWhitelist = $cachedWhitelist;
+			wfProfileOut( __METHOD__ );
+			return;
+		}
+		$this->mWhitelist = $this->parseBlacklist( wfMsgForContent( 'titlewhitelist' ) );
+		$wgMemc->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
+		wfProfileOut( __METHOD__ );
+	}
+
 	public function getBlacklistText( $source ) {
 		if( !is_array( $source ) || count( $source ) <= 0 ) {
 			return '';	//Return empty string in error case
@@ -72,6 +89,7 @@ class TitleBlacklist {
 	}
 	
 	public function parseBlacklist( $list ) {
+		wfProfileIn( __METHOD__ );
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = array();
 		foreach ( $lines as $line )
@@ -83,6 +101,7 @@ class TitleBlacklist {
 		}
 
 		return $result;
+		wfProfileOut( __METHOD__ );
 	}
 
 	public function isBlacklisted( $title, $action = 'edit' ) {
@@ -93,7 +112,24 @@ class TitleBlacklist {
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
 			if( !$item->userCan( $title, $wgUser, $action ) ) {
+				if( $this->isWhitelisted( $title, $action ) ) {
+					return false;
+				}
 				return $item;
+			}
+		}
+		return false;
+	}
+	
+	public function isWhitelisted( $title, $action = 'edit' ) {
+		global $wgUser;
+		if( !($title instanceof Title) ) {
+			$title = Title::newFromString( $title );
+		}
+		$whitelist = $this->getWhitelist();
+		foreach( $whitelist as $item ) {
+			if( !$item->userCan( $title, $wgUser, $action ) ) {
+				return true;
 			}
 		}
 		return false;
@@ -104,6 +140,13 @@ class TitleBlacklist {
 			$this->load();
 		}
 		return $this->mBlacklist;
+	}
+	
+	public function getWhitelist() {
+		if( is_null( $this->mWhitelist ) ) {
+			$this->loadWhitelist();
+		}
+		return $this->mWhitelist;
 	}
 	
 	public function getHttp( $url ) {
@@ -149,6 +192,7 @@ class TitleBlacklistEntry {
 		$this->mRaw = $raw;
 		$this->mRegex = $regex;
 		$this->mParams = $params;
+		$this->mFormatVersion = TitleBlacklist::VERSION;
 	}
 
 	public function userCan( $title, $user, $action ) {
