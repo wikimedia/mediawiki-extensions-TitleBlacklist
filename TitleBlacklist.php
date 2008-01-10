@@ -36,7 +36,6 @@ $wgGroupPermissions['sysop']['tboverride'] = true;
 function efInitTitleBlacklist() {
 	global $wgTitleBlacklist;
 	$wgTitleBlacklist = new TitleBlacklist();
-	wfLoadExtensionMessages( 'TitleBlacklist' );
 	efSetupTitleBlacklistHooks();
 }
 
