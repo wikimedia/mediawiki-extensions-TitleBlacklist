@@ -129,6 +129,7 @@ $messages['fr'] = array(
 	'titleblacklist'                  => "# Ceci est un titre mis en liste noire
 # Chaque titre qu'indique ici le code regex ne peux être créé.
 # Utilisez « # » pour écrire des commentaires",
+	'titlewhitelist'                  => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
 	'titleblacklist-forbidden-edit'   => "Le titre « $2 » est interdit à la création.
 Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
 	'titleblacklist-forbidden-move'   => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
@@ -161,6 +162,7 @@ $messages['hr'] = array(
 $messages['hsb'] = array(
 	'titleblacklist'                  => '# To je čorna lisćina nastawkowych mjenow. Titule, kotrež so na regularny wuraz hodźa,  njehodźa so wutworjeć.
 # Wužij "#" za komentary.',
+	'titlewhitelist'                  => '# Tuta je běła lisćina titulow. Wužij "#" za komentary',
 	'titleblacklist-forbidden-edit'   => 'Strona z titulom "$2" njeda so wutworić. Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Strona z titulom "$2" njeda so do "$3" přesunyć, dokelž titul "$3" njesmě so wutworjeć.
 Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
@@ -201,6 +203,7 @@ $messages['la'] = array(
 	'titleblacklist'                  => '# Hic est index titulorum prohibitorum. Tituli qui congruunt cum
 # una ex expressionibus regularis sequentibus creari non possunt.
 # Utere "#" pro commentariis.',
+	'titlewhitelist'                  => '# Hic est index titulorum permissorum. Utere "#" pro commentariis',
 	'titleblacklist-forbidden-edit'   => 'Pagina cum titulo "$2" creari non potest. Hic titulus congruit cum expressione regulari: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Pagina cum titulo "$2" non ad "$3" moveri potest, quia titulus "$3" prohibitus est ne pagina creetur. Hic titulus congruit cum expressione regulari: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Fasciculus cum titulo "$2" onerari non potest. Hic titulus congruit cum expressione regulari: <code>\\$1</code>',
