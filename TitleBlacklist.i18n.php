@@ -178,7 +178,7 @@ Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
 $messages['hu'] = array(
 	'titleblacklist'                  => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezésekre, nem hozhatóak létre.
 # Használd a „#” karaktert megjegyzések írásához.',
-	'titlewhitelist'                  => '# Ez egy engedélyező lista. A # karakterrel írhtsz megjegyzéseket.',
+	'titlewhitelist'                  => '# Ez egy engedélyező lista. A # karakterrel írhatsz megjegyzéseket.',
 	'titleblacklist-forbidden-edit'   => '„$1” című lapot tilos készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '„$2” nem nevezhető át „$3” névre, mert „$3” névvel tilos lapot készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '„$1” nevű fájlt tilos feltölteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>\\$1</code>',
@@ -309,6 +309,7 @@ Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
 $messages['sv'] = array(
 	'titleblacklist'                  => '# Det här är en lista över förbjudna sidtitlar. Titlar som matchar ett reguljärt uttryck här kan inte skapas.
 # Använd "#" för kommentarer.',
+	'titlewhitelist'                  => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.',
 	'titleblacklist-forbidden-edit'   => 'Sidtiteln "$2" har stoppats från att skapas. Den matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Sidan "$2" kan inte flyttas till "$3", eftersom titeln "$3" har förbjudits att skapas. Titeln matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Filnamnet "$2" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
