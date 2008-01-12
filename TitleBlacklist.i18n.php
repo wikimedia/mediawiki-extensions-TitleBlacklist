@@ -282,26 +282,26 @@ $messages['pt'] = array(
 );
 
 /** Russian (Русский)
- * @author VasilievVV
+ * @author .:Ajvol:.
  */
 $messages['ru'] = array(
-	'titleblacklist' =>
-"# Это список запрещённый названий
+	'titleblacklist'                  => '# Это список запрещённый названий
 # Любая статья, название которой попадает под этот список, не может быть создана
-# Используйте « # » для комментариев",
-	'titleblacklist-forbidden-edit' => "
+# Используйте « # » для комментариев',
+	'titlewhitelist'                  => '# Это «белый список» названий. Для комментариев используйте «#»',
+	'titleblacklist-forbidden-edit'   => "
 <div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
 '''Страница с названием \"\$2\" не может быть создана''' <br />
 Она попадает под следующую запись списка запрещенных названий: '''''\$1'''''
 </div>",
-	'titleblacklist-forbidden-move' => "<span class=\"error\">
+	'titleblacklist-forbidden-move'   => "<span class=\"error\">
 '''Страница с названием \"\$2\" не может быть перемещена''' <br />
 Она попадает под следующую запись списка запрещенных названий: '''''\$1'''''
 </span>",
 	'titleblacklist-forbidden-upload' => "
 '''Файл с названием \"\$2\" не может быть загружен''' <br />
 Он попадает под следующую запись списка запрещенных названий: '''''\$1'''''",
-	'titleblacklist-invalid' => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещенный названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещенный названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
 );
 
 /** Slovak (Slovenčina)
@@ -395,7 +395,6 @@ $messages['kk'] = $messages['kk-cyrl'];
 $messages['kk-cn'] = $messages['kk-arab'];
 $messages['kk-kz'] = $messages['kk-cyrl'];
 $messages['kk-tr'] = $messages['kk-latn'];
-
 $messages['zh']     = $messages['zh-hans'];
 $messages['zh-cn']  = $messages['zh-hans'];
 $messages['zh-hk']  = $messages['zh-hant'];
