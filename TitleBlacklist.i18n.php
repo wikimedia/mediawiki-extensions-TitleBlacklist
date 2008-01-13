@@ -269,6 +269,20 @@ $messages['oc'] = array(
 	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat « $2 » pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''$1'''''",
 );
 
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'titleblacklist'                  => '# To jest lista zabronionych nazw artykułów. Artykuły o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogły zostać utworzone.
+# Użyj znaku "#" by utworzyć komentarz.',
+	'titlewhitelist'                  => '# To jest lista dopuszczalnych nazw artykułów. 
+# Użyj znaku "#" by utworzyć komentarz.',
+	'titleblacklist-forbidden-edit'   => 'Nie wolno utworzyć artykułu o nazwie "$2". Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Zmiana nazwy z "$2" na "$3" nie jest możliwa, ponieważ nazwa "$3" jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie "$2" nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>\\$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
+);
+
 /** Portuguese (Português)
  * @author 555
  */
