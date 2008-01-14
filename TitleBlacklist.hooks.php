@@ -12,11 +12,11 @@
  
 class TitleBlacklistHooks {
 	public static function userCan( $title, $user, $action, &$result ) {
-		wfLoadExtensionMessages( 'TitleBlacklist' );
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' ) {
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
+				wfLoadExtensionMessages( 'TitleBlacklist' );
 				$message = $blacklisted->getCustomMessage();
 				if( is_null( $message ) )
 					$message = 'titleblacklist-forbidden-edit';
@@ -30,12 +30,12 @@ class TitleBlacklistHooks {
 	}
 
 	public static function abortMove( $old, $nt, $user, &$err ) {
-		wfLoadExtensionMessages( 'TitleBlacklist' );
 		global $wgTitleBlacklist;
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt, 'move' );
 		if( !$blacklisted )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
+			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-move';
@@ -49,10 +49,10 @@ class TitleBlacklistHooks {
 	}
 	
 	public static function verifyUpload( $fname, $fpath, &$err ) {
-		wfLoadExtensionMessages( 'TitleBlacklist' );
 		global $wgTitleBlacklist, $wgUser;
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( Title::newFromText( $fname, NS_IMAGE ), 'upload' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
+			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-upload';
@@ -68,13 +68,13 @@ class TitleBlacklistHooks {
 		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDBkey() != 'Titleblacklist' )
 			return true;
 
-		wfLoadExtensionMessages( 'TitleBlacklist' );
 		$bl = $wgTitleBlacklist->parseBlacklist( $text );
 		$ok = $wgTitleBlacklist->validate( $bl );
 		if( count( $ok ) == 0 ) {
 			return true;
 		}
 
+		wfLoadExtensionMessages( 'TitleBlacklist' );
 		$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
 		$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
 		$error = '<div class="errorbox">' .
