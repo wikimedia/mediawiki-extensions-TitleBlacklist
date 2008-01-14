@@ -65,7 +65,7 @@ class TitleBlacklistHooks {
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist;
 		$title = $editor->mTitle;
-		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDbKey() != 'Titleblacklist' )
+		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDBkey() != 'Titleblacklist' )
 			return true;
 
 		wfLoadExtensionMessages( 'TitleBlacklist' );
@@ -91,7 +91,7 @@ class TitleBlacklistHooks {
 	public static function clearBlacklist( &$article, &$user,
 			$text, $summary, $isminor, $iswatch, $section ) {
 		$title = $article->getTitle();
-		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDbKey() == 'Titleblacklist' ) {
+		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			global $wgTitleBlacklist;
 			$wgTitleBlacklist->invalidate();
 		}
