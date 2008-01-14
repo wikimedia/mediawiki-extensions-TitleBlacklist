@@ -100,8 +100,8 @@ class TitleBlacklist {
 			}
 		}
 
-		return $result;
 		wfProfileOut( __METHOD__ );
+		return $result;
 	}
 
 	public function isBlacklisted( $title, $action = 'edit' ) {
