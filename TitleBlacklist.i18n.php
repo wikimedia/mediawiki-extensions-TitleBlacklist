@@ -151,11 +151,12 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La legne siuventa|Les legnes siuventes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} : vos éte envitâ a {{PLURAL:$1|la|les}} corregiér devant que sôvar.',
 );
 
-/** Galician (Galego) */
+/** Galician (Galego)
+ * @author Xosé
+ */
 $messages['gl'] = array(
-	'titleblacklist' => '# É unha listaxe negra de títulos
-# Ningún título que coincida cunha destas expresións regulares se pode crear e editar
-# Use "#" para os comentarios',
+	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
+# Use "#" para os comentarios.',
 );
 
 /** Croatian (Hrvatski)
@@ -278,7 +279,7 @@ $messages['oc'] = array(
 	'titleblacklist'                  => '# Aquò es un títol mes en lista negra. Cada títol qu\'indica aicí lo còde regex es interdich a la creacion e a l\'edicion.
 # Utilizatz "#" per escriure de comentaris.',
 	'titlewhitelist'                  => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
-	'titleblacklist-forbidden-edit'   => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\"> '''La pagina intitolada « \$2 » pòt pas èsser creada.''' <br /> Dins la lista negra, correspond a l'expression racionala : '''''\$1''''' </div>",
+	'titleblacklist-forbidden-edit'   => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspond a l'expression racionala : <code>$1</code>",
 	'titleblacklist-forbidden-move'   => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspond a l\'expression racionala : <code>$1</code>',
 	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala :  <code>\\\$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvagardar.',
