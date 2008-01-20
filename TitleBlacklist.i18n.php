@@ -137,6 +137,20 @@ Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'titleblacklist'                  => '# Cen est la lista nêre des titros. Châque titro qu’endique ique lo code RegEx pôt pas étre crèâ.
+# Utilisâd « # » por los comentèros.',
+	'titlewhitelist'                  => '# Cen est la lista blanche des titros. Utilisâd « # » por los comentèros.',
+	'titleblacklist-forbidden-edit'   => 'Lo titro « $2 » est dèfendu a la crèacion.
+Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'La pâge avouéc lo titro « $2 » pôt pas étre dèplaciê vers « $3 » perce que ceti dèrriér at étâ dèfendu a la crèacion. Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Lo fichiér avouéc lo titro « $2 » est dèfendu a la crèacion. Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|La legne siuventa|Les legnes siuventes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} : vos éte envitâ a {{PLURAL:$1|la|les}} corregiér devant que sôvar.',
+);
+
 /** Galician (Galego) */
 $messages['gl'] = array(
 	'titleblacklist' => '# É unha listaxe negra de títulos
