@@ -15,7 +15,7 @@ $wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlack
 $wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
 $wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
 
-$wgExtensionFunctions[] = 'efInitTitleBlacklist';
+$wgExtensionFunctions[] = 'efSetupTitleBlacklistHooks';
 
 // Sources of TitleBlacklist
 define( 'TBLSRC_MSG',       0 );	// For internal usage
@@ -35,8 +35,8 @@ $wgGroupPermissions['sysop']['tboverride'] = true;
 
 function efInitTitleBlacklist() {
 	global $wgTitleBlacklist;
+	if( isset( $wgTitleBlacklist ) && $wgTitleBlacklist ) return;
 	$wgTitleBlacklist = new TitleBlacklist();
-	efSetupTitleBlacklistHooks();
 }
 
 function efSetupTitleBlacklistHooks() {

@@ -14,6 +14,7 @@ class TitleBlacklistHooks {
 	public static function userCan( $title, $user, $action, &$result ) {
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' ) {
+			efInitTitleBlacklist();
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
 				wfLoadExtensionMessages( 'TitleBlacklist' );
@@ -31,6 +32,7 @@ class TitleBlacklistHooks {
 
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
+		efInitTitleBlacklist();
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt, 'move' );
 		if( !$blacklisted )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
@@ -49,7 +51,8 @@ class TitleBlacklistHooks {
 	}
 	
 	public static function verifyUpload( $fname, $fpath, &$err ) {
-		global $wgTitleBlacklist, $wgUser;
+		global $wgTitleBlacklist;
+		efInitTitleBlacklist();
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( Title::newFromText( $fname, NS_IMAGE ), 'upload' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			wfLoadExtensionMessages( 'TitleBlacklist' );
@@ -64,6 +67,7 @@ class TitleBlacklistHooks {
 	
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist;
+		efInitTitleBlacklist();
 		$title = $editor->mTitle;
 		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDBkey() != 'Titleblacklist' )
 			return true;
@@ -93,6 +97,7 @@ class TitleBlacklistHooks {
 		$title = $article->getTitle();
 		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			global $wgTitleBlacklist;
+			efInitTitleBlacklist();
 			$wgTitleBlacklist->invalidate();
 		}
 		return true;
