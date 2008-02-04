@@ -152,11 +152,13 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
 );
 
 /** Galician (Galego)
+ * @author Alma
  * @author Xosé
  */
 $messages['gl'] = array(
 	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
 # Use "#" para os comentarios.',
+	'titlewhitelist' => '# Este é un título da listaxe branca. Use "#" para os comentarios',
 );
 
 /** Croatian (Hrvatski)
