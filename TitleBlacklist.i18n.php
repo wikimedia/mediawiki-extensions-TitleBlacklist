@@ -423,15 +423,3 @@ $messages['zh-hant'] = array(
 	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>\$1</code>',
 	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
 );
-
-$messages['de-formal'] = $messages['de'];
-$messages['kk'] = $messages['kk-cyrl'];
-$messages['kk-cn'] = $messages['kk-arab'];
-$messages['kk-kz'] = $messages['kk-cyrl'];
-$messages['kk-tr'] = $messages['kk-latn'];
-$messages['zh']     = $messages['zh-hans'];
-$messages['zh-cn']  = $messages['zh-hans'];
-$messages['zh-hk']  = $messages['zh-hant'];
-$messages['zh-sg']  = $messages['zh-hans'];
-$messages['zh-tw']  = $messages['zh-hant'];
-$messages['zh-yue'] = $messages['yue'];
