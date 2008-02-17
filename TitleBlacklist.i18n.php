@@ -73,10 +73,12 @@ $messages['ca'] = array(
 
 /** Czech (Česky)
  * @author Li-sung
+ * @author Matěj Grabovský
  */
 $messages['cs'] = array(
 	'titleblacklist'                  => '# Toto je černá listina názvů. Název, který bude odpovídat regulárnímu výrazu, nebude možné vytvořit.
 # Používejte „#“ pro označení komentáře.',
+	'titlewhitelist'                  => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“',
 	'titleblacklist-forbidden-edit'   => 'Název "$2" je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '„$2“ nelze přesunout na název „$3“, protože název „$3“ je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Soubor s jménem „$2“ je zakázáno vytvářet. Název odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
@@ -274,6 +276,17 @@ $messages['nl'] = array(
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
 );
 
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'titleblacklist'                => '# Dette er en svartlisting for titler. Titler som passer med regulære uttrykk her kan ikke opprettes.
+# Bruk «#» for kommentarer.',
+	'titlewhitelist'                => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.',
+	'titleblacklist-forbidden-edit' => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code<',
+);
+
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -384,7 +397,13 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
-	'titleblacklist-forbidden-edit' => '"$2" అనే శీర్షిక గల పేజీలను సృష్టించడంపై నిషేధం విధించారు. ఇది నిరోధపు జాబితాలోని ఈ పద్దుకి సరిపోలింది: <code>$1</code>',
+	'titleblacklist'                  => '# ఇది శీర్షికల నిరోధపు జాబితా. ఇక్కడ ఉన్న regexకి సరిపోలే శీర్షికలు గల పేజీలను సృష్టించలేరు.
+# వ్యాఖ్యానించడానికి "#"ని వాడండి.',
+	'titlewhitelist'                  => '# ఇది అనుమతించే శీర్షికల జాబితా. వ్యాఖ్యానించడానికి "#"ని వాడండి',
+	'titleblacklist-forbidden-edit'   => '"$2" అనే శీర్షిక గల పేజీలను సృష్టించడంపై నిషేధం విధించారు. ఇది నిరోధపు జాబితాలోని ఈ పద్దుకి సరిపోలింది: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2"ని "$3"కి తరలించలేము, ఎందుకంటే "$3" అన్న శీర్షికని సృష్టించడంపై నిషేధం ఉంది. ఇది నిరోధపు జాబితాలోని ఈ పద్దుకి సరిపోలుతుంది: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" అన్న పేరు గల ఫైలుని సృష్టించడాన్ని నిషేధించారు. ఇది నిషేధపు జాబితాలోని ఈ పద్దుకి సరిపోలుతుంది: <code>\\$1</code>',
+	'titleblacklist-invalid'          => 'శీర్షికల నిరోధపు జాబితాలోని ఈ క్రింద పేర్కొన్న {{PLURAL:$1|లైను|లైన్లు}} తప్పుగా {{PLURAL:$1|ఉంది|ఉన్నాయి}}; భద్రపరిచేముందు {{PLURAL:$1|దాన్ని|వాటిని}} సరిదిద్దండి:',
 );
 
 /** Cantonese (粵語 / 廣東話)
