@@ -4,11 +4,12 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 $wgExtensionCredits['other'][] = array(
-	'name' => 'Title Blacklist',
-	'author' => 'VasilievVV',
-	'version' => '1.4',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
-	'description' => 'Allows to forbid creation of pages with specified titles'
+	'name'           => 'Title Blacklist',
+	'author'         => 'VasilievVV',
+	'version'        => '1.4.1',
+	'url'            => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
+	'description'    => 'Allows to forbid creation of pages with specified titles',
+	'descriptionmsg' => 'titleblacklist-desc',
 );
 
 $wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlacklist.i18n.php';

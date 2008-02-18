@@ -8,6 +8,7 @@
 $messages = array();
 
 $messages['en'] = array(
+	'titleblacklist-desc' => 'Allows to forbid creation of pages with specified titles: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' =>
 "# This is a title blacklist. Titles that match a regex here cannot be created.
 # Use \"#\" for comments.
@@ -86,12 +87,15 @@ $messages['cs'] = array(
 );
 
 /** German (Deutsch)
+ * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'titleblacklist' =>
+	'titleblacklist-desc'             => 'Ergänzt eine schwarze Liste unerwünschter Seitennamen: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  =>
 "# Dies ist die Schwarze Liste unerwünschter Seitennamen.
 # Jeder Seitenname, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt werden.
 # Text hinter einer Raute „#“ wird als Kommentar gesehen.",
+	'titlewhitelist'                  => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutze „#“ für Kommentare',
 	'titleblacklist-forbidden-edit'   => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 	'titleblacklist-forbidden-move'   => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
