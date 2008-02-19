@@ -24,6 +24,7 @@ $messages['en'] = array(
  * @author Meno25
  */
 $messages['ar'] = array(
+	'titleblacklist-desc'             => 'يسمح بمنع إنشاء الصفحات بعناوين محددة: [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# هذه قائمة سوداء للعناوين. العناوين التي تطابق ريجيكس هنا لا يمكن إنشاؤها.
 # استخدم "#" للتعليقات.',
 	'titlewhitelist'                  => '# هذه قائمة بيضاء للعناوين. استخدم "#" للتعليقات',
@@ -77,6 +78,7 @@ $messages['ca'] = array(
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
+	'titleblacklist-desc'             => 'Umožňuje zakázat tvorbu stránek s určitými názvy: [[MediaWiki:Titleblacklist|Černá listina názvů]] a [[MediaWiki:Titlewhitelist|Bílá listina názvů]]',
 	'titleblacklist'                  => '# Toto je černá listina názvů. Název, který bude odpovídat regulárnímu výrazu, nebude možné vytvořit.
 # Používejte „#“ pro označení komentáře.',
 	'titlewhitelist'                  => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“',
@@ -130,8 +132,10 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Meithal
  */
 $messages['fr'] = array(
+	'titleblacklist-desc'             => "Permet d'interdire la création de pages en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]] de titres",
 	'titleblacklist'                  => "# Ceci est un titre mis en liste noire
 # Chaque titre qu'indique ici le code regex ne peux être créé.
 # Utilisez « # » pour écrire des commentaires",
@@ -271,6 +275,7 @@ $messages['la'] = array(
  * @author SPQRobin
  */
 $messages['nl'] = array(
+	'titleblacklist-desc'             => "Voorkom het aanmaken van pagina's met aangegeven namen: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
 	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen. Iedere paginanaam die voldoet aan een regex kan niet aangemaakt en bewerkt worden.
 # Gebruik "#" voor opmerkingen.',
 	'titlewhitelist'                  => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
@@ -325,6 +330,7 @@ $messages['pl'] = array(
  * @author Malafaya
  */
 $messages['pt'] = array(
+	'titleblacklist-desc'             => 'Permite a proibição da criação de páginas com títulos específicos: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Esta é uma lista negra de títulos. Títulos que se encaixem em uma regex não poderão ser criados.
 # Utilize "#" para fazer comentários.',
 	'titlewhitelist'                  => '# Esta é uma lista branca de títulos. Utilize "#" para fazer comentários',
@@ -338,6 +344,7 @@ $messages['pt'] = array(
  * @author .:Ajvol:.
  */
 $messages['ru'] = array(
+	'titleblacklist-desc'             => 'Позволяет запретить создание страниц с указанными названиями: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Это список запрещённый названий
 # Любая статья, название которой попадает под этот список, не может быть создана
 # Используйте « # » для комментариев',
@@ -381,6 +388,7 @@ $messages['sah'] = array(
  * @author Helix84
  */
 $messages['sk'] = array(
+	'titleblacklist-desc'             => 'Umožňuje zakázať tvorbu stránok s určenými názvami: [[MediaWiki:Titleblacklist|Čierna listina názvov]] a [[MediaWiki:Titlewhitelist|Biela listina názvov]]',
 	'titleblacklist'                  => '# Toto je čierna listina názvov stránok. Názvy, ktoré zodpovedajú tu uvedenému regulárnemu výrazu nebude možné vytvoriť.
 # Komentáre začínajú znakom „#“.',
 	'titlewhitelist'                  => '# Toto je biela listina názvov stránok. Riadky komentárov začínajú znakom „#“',
@@ -410,6 +418,7 @@ Die Tittel kollidiert mäd dissen Speerbegriep: <code>\\$1</code>",
  * @author Lejonel
  */
 $messages['sv'] = array(
+	'titleblacklist-desc'             => 'Ger möjlighet att förhindra att sidor med vissa titlar skapas, genom att använda  [[MediaWiki:Titleblacklist]] och [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Det här är en lista över förbjudna sidtitlar. Titlar som matchar ett reguljärt uttryck här kan inte skapas.
 # Använd "#" för kommentarer.',
 	'titlewhitelist'                  => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.',
