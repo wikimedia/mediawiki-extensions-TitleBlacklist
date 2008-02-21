@@ -155,6 +155,7 @@ Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
+	'titleblacklist-desc'             => 'Pèrmèt de dèfendre la crèacion de pâges d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]] de titros.',
 	'titleblacklist'                  => '# Cen est la lista nêre des titros. Châque titro qu’endique ique lo code RegEx pôt pas étre crèâ.
 # Utilisâd « # » por los comentèros.',
 	'titlewhitelist'                  => '# Cen est la lista blanche des titros. Utilisâd « # » por los comentèros.',
@@ -294,7 +295,7 @@ $messages['la'] = array(
  * @author SPQRobin
  */
 $messages['nl'] = array(
-	'titleblacklist-desc'             => "Voorkom het aanmaken van pagina's met aangegeven namen: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist-desc'             => "Voorkomt het aanmaken van pagina's met aangegeven namen: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
 	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen. Iedere paginanaam die voldoet aan een regex kan niet aangemaakt en bewerkt worden.
 # Gebruik "#" voor opmerkingen.',
 	'titlewhitelist'                  => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
@@ -308,6 +309,7 @@ $messages['nl'] = array(
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
+	'titleblacklist-desc'             => 'Gir muligheten til å forhindre at sider med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Dette er en svartlisting for titler. Titler som passer med regulære uttrykk her kan ikke opprettes.
 # Bruk «#» for kommentarer.',
 	'titlewhitelist'                  => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.',
