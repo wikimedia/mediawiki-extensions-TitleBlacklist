@@ -123,11 +123,13 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Nike
  * @author Crt
+ * @author Cimon Avaro
  */
 $messages['fi'] = array(
 	'titleblacklist'                  => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen luomisen.
 # Estettyjä ovat sivut, joiden sivunimet vastaavat täällä määritettyjä säännöllisiä lausekkeita.
 # Käytä #-merkkiä kommentointiin.',
+	'titlewhitelist'                  => '# Tämä on valkoinen lista otsikkoja varten. Käytä "#" merkintää kommentteja varten',
 	'titleblacklist-forbidden-edit'   => 'Sivun ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Tiedoston ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
@@ -209,6 +211,7 @@ Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
  * @author Bdanee
  */
 $messages['hu'] = array(
+	'titleblacklist-desc'             => 'Lehetővé teszi adott címmel rendelkező lapok elkészítését: [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezésekre, nem hozhatóak létre.
 # Használd a „#” karaktert megjegyzések írásához.',
 	'titlewhitelist'                  => '# Ez egy engedélyező lista. A # karakterrel írhatsz megjegyzéseket.',
@@ -288,6 +291,20 @@ $messages['la'] = array(
 	'titleblacklist-forbidden-edit'   => 'Pagina cum titulo "$2" creari non potest. Hic titulus congruit cum expressione regulari: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Pagina cum titulo "$2" non ad "$3" moveri potest, quia titulus "$3" prohibitus est ne pagina creetur. Hic titulus congruit cum expressione regulari: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Fasciculus cum titulo "$2" onerari non potest. Hic titulus congruit cum expressione regulari: <code>\\$1</code>',
+);
+
+/** Limburgish (Limburgs)
+ * @author Matthias
+ */
+$messages['li'] = array(
+	'titleblacklist-desc'             => "Voorkomt het aanmake van pagina's met aangegeve name: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen. Iedere paginanaam die voldoet aan een regex kan niet aangemaakt en bewerkt worden.
+# Gebruik "#" voor opmerkingen.',
+	'titlewhitelist'                  => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
+	'titleblacklist-forbidden-edit'   => 'Een pagina met de naam "$2" kan niet aangemaakt worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
 );
 
 /** Dutch (Nederlands)
