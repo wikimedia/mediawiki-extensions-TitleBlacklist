@@ -129,7 +129,7 @@ $messages['fi'] = array(
 	'titleblacklist'                  => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen luomisen.
 # Estettyjä ovat sivut, joiden sivunimet vastaavat täällä määritettyjä säännöllisiä lausekkeita.
 # Käytä #-merkkiä kommentointiin.',
-	'titlewhitelist'                  => '# Tämä on valkoinen lista otsikkoja varten. Käytä "#" merkintää kommentteja varten',
+	'titlewhitelist'                  => '# Tämä sivu sisältää sivujen sallittuja nimiä. Käytä #-merkkiä kommentointia varten.',
 	'titleblacklist-forbidden-edit'   => 'Sivun ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Tiedoston ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
@@ -225,6 +225,7 @@ $messages['hu'] = array(
  * @author BrokenArrow
  */
 $messages['it'] = array(
+	'titleblacklist-desc'             => 'Consente di proibire la creazione di pagine con i titoli indicati in [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Lista dei titoli non consentiti. 
 # È impedita la creazione delle pagine il cui titolo corrisponde a un\'espressione regolare indicata di seguito.
 # Usare "#" per le righe di commento.',
