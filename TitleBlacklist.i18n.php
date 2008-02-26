@@ -488,6 +488,7 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
+	'titleblacklist-desc'             => 'ప్రత్యేకిత శీర్షికలతో పేజీలు తయారుచేయడాన్ని నిరోధించే వీలుకల్పిస్తుంది: [[MediaWiki:Titleblacklist]] మరియు [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# ఇది శీర్షికల నిరోధపు జాబితా. ఇక్కడ ఉన్న regexకి సరిపోలే శీర్షికలు గల పేజీలను సృష్టించలేరు.
 # వ్యాఖ్యానించడానికి "#"ని వాడండి.',
 	'titlewhitelist'                  => '# ఇది అనుమతించే శీర్షికల జాబితా. వ్యాఖ్యానించడానికి "#"ని వాడండి',
