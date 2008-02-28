@@ -138,13 +138,14 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Urhixidur
  * @author Meithal
  */
 $messages['fr'] = array(
 	'titleblacklist-desc'             => "Permet d'interdire la création de pages en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]] de titres",
-	'titleblacklist'                  => "# Ceci est un titre mis en liste noire
-# Chaque titre qu'indique ici le code regex ne peux être créé.
-# Utilisez « # » pour écrire des commentaires",
+	'titleblacklist'                  => '# Ceci est un titre mis en liste noire
+# Chaque titre qu’indique ici le code regex ne peut être créé.
+# Utilisez « # » pour écrire des commentaires',
 	'titlewhitelist'                  => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
 	'titleblacklist-forbidden-edit'   => "Le titre « $2 » est interdit à la création.
 Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
@@ -357,6 +358,7 @@ $messages['no'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
+	'titleblacklist-desc'             => "Permet d'interdire la creacion de paginas en foncion d'una [[MediaWiki:Titleblacklist|lista negra]] e d'una [[MediaWiki:Titlewhitelist|lista blanca]] de títols",
 	'titleblacklist'                  => '# Aquò es un títol mes en lista negra. Cada títol qu\'indica aicí lo còde regex es interdich a la creacion e a l\'edicion.
 # Utilizatz "#" per escriure de comentaris.',
 	'titlewhitelist'                  => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
