@@ -20,6 +20,20 @@ $messages['en'] = array(
 	'titleblacklist-invalid' => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid; please correct {{PLURAL:$1|it|them}} before saving:',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'titleblacklist-desc'             => 'Premite biedar a creyazión de pachinas con determinaus títols: [[MediaWiki:Titleblacklist]] y [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Ista ya una lista negra de títols. Os títols que concuerdan con una d\'as espresions regulars (regex) no se pueden creyar.
+# Use "#" ta fer comentarios.',
+	'titlewhitelist'                  => '# Ista ya una lista blanca de títols. Use "#" ta fer comentarios.',
+	'titleblacklist-forbidden-edit'   => 'O títol "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" no se puede tresladar ta "$3", porque o títol "$3" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'O nombre de fichero "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>\\$1</code>',
+	'titleblacklist-invalid'          => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por fabor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
