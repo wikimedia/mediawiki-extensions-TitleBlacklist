@@ -51,8 +51,10 @@ $messages['ar'] = array(
 /** Bulgarian (Български)
  * @author DCLXVI
  * @author Spiritia
+ * @author Borislav
  */
 $messages['bg'] = array(
+	'titleblacklist-desc'             => 'Позволява забраната за създаване на страници с указаните заглавия: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Страницата съдържа черен списък за заглавия на страници
 # Страници, чиито заглавия съответстват с регулярните изрази в списъка, не могат да бъдат създавани или редактирани
 # За коментари се използва символът "#"',
@@ -184,13 +186,14 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
 );
 
 /** Galician (Galego)
- * @author Alma
  * @author Xosé
+ * @author Alma
  */
 $messages['gl'] = array(
-	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
+	'titleblacklist-desc' => 'Permite prohibir a creación de páxinas con títulos especificados: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'      => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
 # Use "#" para os comentarios.',
-	'titlewhitelist' => '# Este é un título da listaxe branca. Use "#" para os comentarios',
+	'titlewhitelist'      => '# Este é un título da listaxe branca. Use "#" para os comentarios',
 );
 
 /** Croatian (Hrvatski)
@@ -230,7 +233,7 @@ $messages['hu'] = array(
 	'titleblacklist'                  => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezésekre, nem hozhatóak létre.
 # Használd a „#” karaktert megjegyzések írásához.',
 	'titlewhitelist'                  => '# Ez egy engedélyező lista. A # karakterrel írhatsz megjegyzéseket.',
-	'titleblacklist-forbidden-edit'   => '„$1” című lapot tilos készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
+	'titleblacklist-forbidden-edit'   => '„$1” címmel tilos lapot készíteni, mert illeszkedik a következő feketelistás bejegyzésre: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '„$2” nem nevezhető át „$3” névre, mert „$3” névvel tilos lapot készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '„$1” nevű fájlt tilos feltölteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>\\$1</code>',
 	'titleblacklist-invalid'          => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
