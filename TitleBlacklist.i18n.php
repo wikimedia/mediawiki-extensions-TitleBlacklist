@@ -186,14 +186,19 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
 );
 
 /** Galician (Galego)
+ * @author Toliño
  * @author Xosé
  * @author Alma
  */
 $messages['gl'] = array(
-	'titleblacklist-desc' => 'Permite prohibir a creación de páxinas con títulos especificados: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'      => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
+	'titleblacklist-desc'             => 'Permite prohibir a creación de páxinas con títulos especificados: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
 # Use "#" para os comentarios.',
-	'titlewhitelist'      => '# Este é un título da listaxe branca. Use "#" para os comentarios',
+	'titlewhitelist'                  => '# Este é un título da listaxe branca. Use "#" para os comentarios',
+	'titleblacklist-forbidden-edit'   => 'O título "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" non pode ser movido a "$3", porque o título "$3" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'O nome de arquivo "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>\\$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
 );
 
 /** Croatian (Hrvatski)
@@ -340,6 +345,15 @@ $messages['li'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
+);
+
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'titleblacklist' => '# Dit is de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
+# Bruuk „#“ för Kommentaren.',
+	'titlewhitelist' => '# Dit is en Wittlist mit Utnahmen vun de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Bruuk „#“ för Kommentaren',
 );
 
 /** Dutch (Nederlands)
