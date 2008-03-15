@@ -14,6 +14,7 @@ class TitleBlacklistHooks {
 	public static function userCan( $title, $user, $action, &$result ) {
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' ) {
+			if( $title->getNamespace() == NS_IMAGE ) return true;	//Should be handled using verifyUpload
 			efInitTitleBlacklist();
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
