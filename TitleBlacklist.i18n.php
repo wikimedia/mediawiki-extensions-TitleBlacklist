@@ -232,15 +232,16 @@ Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
 
 /** Hungarian (Magyar)
  * @author Bdanee
+ * @author Tgr
  */
 $messages['hu'] = array(
 	'titleblacklist-desc'             => 'Lehetővé teszi adott címmel rendelkező lapok elkészítését: [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezésekre, nem hozhatóak létre.
 # Használd a „#” karaktert megjegyzések írásához.',
 	'titlewhitelist'                  => '# Ez egy engedélyező lista. A # karakterrel írhatsz megjegyzéseket.',
-	'titleblacklist-forbidden-edit'   => '„$1” címmel tilos lapot készíteni, mert illeszkedik a következő feketelistás bejegyzésre: <code>$1</code>',
+	'titleblacklist-forbidden-edit'   => '„$2” címmel tilos lapot készíteni, mert illeszkedik a feketelista <code>$1</code> bejegyzésére.',
 	'titleblacklist-forbidden-move'   => '„$2” nem nevezhető át „$3” névre, mert „$3” névvel tilos lapot készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '„$1” nevű fájlt tilos feltölteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>\\$1</code>',
+	'titleblacklist-forbidden-upload' => '„$2” nevű fájlt tilos feltölteni, mert illeszkedik a feketelista <code>$1</code> bejegyzésére.',
 	'titleblacklist-invalid'          => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
 );
 
@@ -287,6 +288,15 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-move'   => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-invalid'          => 'タイトルブラックリスト{{PLURAL:$1|に|に}}不正な{{PLURAL:$1|行が|行が複数}}存在します。保存する前に{{PLURAL:$1|これ|これら}}を修正してください:',
+);
+
+/** Jutish (Jysk)
+ * @author Huslåke
+ */
+$messages['jut'] = array(
+	'titleblacklist' => '# Dett\'er en titel blackliste. Titler dette match en regex her ken ekke være skeppen.
+# Brug "#" før bemærkenge.',
+	'titlewhitelist' => '# Dett\'er en titel whiteliste. Brug "#" før bemærkenge',
 );
 
 /** Kazakh (Қазақша)
@@ -572,7 +582,7 @@ $messages['vi'] = array(
 	'titleblacklist-forbidden-edit'   => 'Không được tạo ra trang dưới tên “$2”, vì tên này trùng với khoản sau trong danh sách đen: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Không được di chuyển “$2” đến “$3”, vì tên thứ hai bị cấm. Nó trùng với khoản sau trong danh sách đen: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Không được tải lên tập tin dưới tên “$2”, vì tên này trùng với khoản sau trong danh sách đen: <code>\\$1</code>',
-	'titleblacklist-invalid'          => 'Những dòng sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa chúng để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
 );
 
 /** Cantonese (粵語 / 廣東話)
