@@ -292,11 +292,13 @@ $messages['ja'] = array(
 
 /** Jutish (Jysk)
  * @author Huslåke
+ * @author Ælsån
  */
 $messages['jut'] = array(
-	'titleblacklist' => '# Dett\'er en titel blackliste. Titler dette match en regex her ken ekke være skeppen.
+	'titleblacklist-desc' => 'Kan til førbæd skeppenge der pæger ve spæsifiærn titler: [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'      => '# Dett\'er en titel blackliste. Titler dette match en regex her ken ekke være skeppen.
 # Brug "#" før bemærkenge.',
-	'titlewhitelist' => '# Dett\'er en titel whiteliste. Brug "#" før bemærkenge',
+	'titlewhitelist'      => '# Dett\'er en titel whiteliste. Brug "#" før bemærkenge',
 );
 
 /** Kazakh (Қазақша)
