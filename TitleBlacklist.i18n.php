@@ -231,7 +231,7 @@ Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
 );
 
 /** Hungarian (Magyar)
- * @author Bdanee
+ * @author Dani
  * @author Tgr
  */
 $messages['hu'] = array(
