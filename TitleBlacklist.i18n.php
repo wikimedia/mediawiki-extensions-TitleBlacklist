@@ -533,6 +533,15 @@ Die Tittel kollidiert mäd dissen Speerbegriep: <code>\\$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Ju foulgjende Riege|Do foulgjende Riegen}} in ju Speerlieste {{PLURAL:$1|is|sunt}} uungultich; korrigier do foar dät Spiekerjen:',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Kandar
+ */
+$messages['su'] = array(
+	'titleblacklist-forbidden-edit'   => 'Judul “$2” dicaram dijieun, luyu jeung éntri daptar hideung: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '“$2” teu bisa dipindahkeun ka “$3”, sababa judul “$3” dicaram dijieun, luyu jeung éntri daptar hideung: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Ngaran koropak “$2” dicaram dijieun, luyu jeung éntri daptar hideung: <code>\\$1</code>',
+);
+
 /** Swedish (Svenska)
  * @author Lejonel
  */
