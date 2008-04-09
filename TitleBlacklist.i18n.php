@@ -376,6 +376,16 @@ $messages['li'] = array(
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'titleblacklist-forbidden-edit'   => '"$2" എന്ന തലക്കെട്ട് സൃഷ്ടിക്കുന്നതു നിരോധിച്ചിട്ടുള്ളതാണ്‌. ആ തലക്കെട്ട് താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$3" എന്ന തലക്കെട്ട് സൃഷ്ടിക്കുന്നതു നിരോധിച്ചിട്ടുള്ളതിനാല്‍, "$2" എന്ന താള്‍ "$3" എന്ന തലക്കെട്ടിലേക്കു മാറ്റാന്‍ പറ്റില്ല. ആ തലക്കെട്ട് താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" എന്ന നാമം പ്രമാണത്തിനു കൊടുക്കുന്നത് നിരോധിച്ചിട്ടുള്ളതാണ്‌.
+ആ നാമം താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>\\$1</code>',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
@@ -446,6 +456,7 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author Siebrand
  */
 $messages['pl'] = array(
 	'titleblacklist-desc'             => 'Pozwala zabezpieczyć przed możliwością utworzenia stron o określonych tytułach: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
@@ -453,9 +464,9 @@ $messages['pl'] = array(
 # Użyj znaku "#" by utworzyć komentarz.',
 	'titlewhitelist'                  => '# To jest lista dopuszczalnych nazw artykułów.
 # Użyj znaku "#" by utworzyć komentarz.',
-	'titleblacklist-forbidden-edit'   => 'Nie wolno utworzyć artykułu o nazwie "$2". Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => 'Zmiana nazwy z "$2" na "$3" nie jest możliwa, ponieważ nazwa "$3" jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie "$2" nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>\\$1</code>',
+	'titleblacklist-forbidden-edit'   => 'Nie wolno utworzyć artykułu o nazwie „$2”. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nazwa „$3” jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
 );
 
@@ -597,6 +608,21 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" наметавонад ба "$3" кӯчонида шавад, зеро эҷоди унвони "$3" манъ шудааст. Чун бо ин дастур аз феҳристи сиёҳ мутобиқат мекунад: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Эҷоди номи "$2" барои парвандаҳо манъ аст. Он бо ин дастур аз фехристи сиёҳи зерин мутобиқат мекунад: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'titleblacklist-desc'             => 'Consente de proibir la creazion de pagine con i titoli indicà in [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Lista dei titoli mìa consentìi.
+# Xe inpedìa la creazion de le pagine el cui titolo el corisponde a na espression regolar indicà de seguito.
+# Dòpara "#" par le righe de comento.',
+	'titlewhitelist'                  => '# Sta qua la xe na lista bianca dei titoli. Dòpara "#" par le righe de comento',
+	'titleblacklist-forbidden-edit'   => 'La creazion de pagine con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'No se pode spostar la pagina "$2" al titolo "$3" in quanto la creazion de pagine con titolo "$3" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'La creazion de file con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
+	'titleblacklist-invalid'          => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} de l'elenco dei titoli mìa consentìi {{PLURAL:$1|no la xe valida|no le xe valide}}; se prega de corègiar {{PLURAL:$1|l'eror|i erori}} prima de salvar la pagina.",
 );
 
 /** Vietnamese (Tiếng Việt)
