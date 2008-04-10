@@ -314,8 +314,10 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'titleblacklist-forbidden-edit' => 'Irah-irahan "$2" dilarang digawé.
+	'titleblacklist-forbidden-edit'   => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Jeneng berkas "$2" wis dilarang kanggo digawé. 
+Irah-irahan iku cocog karo èntri daftar ireng iki: <code>\\$1</code>',
 );
 
 /** Kazakh (Қазақша)
@@ -380,6 +382,9 @@ $messages['li'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
+	'titleblacklist-desc'             => 'ചില പ്രത്യേക തലക്കെട്ടുള്ള താളുകള്‍ സൃഷ്ടിക്കുന്നത് തടയാന്‍ സഹായിക്കുന്നു: [[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# ഇതു തലക്കെട്ടിന്റെ കരിമ്പട്ടികയാണ്‌. ഈ പട്ടികയിലുള്ള ഇനവുമായി  യോജിക്കുന്ന ലേഖനങ്ങള്‍ സൃഷ്ടിക്കാനാവില്ല. 
+# അഭിപ്രായത്തിനു "#" ഉപയോഗിക്കുക.',
 	'titleblacklist-forbidden-edit'   => '"$2" എന്ന തലക്കെട്ട് സൃഷ്ടിക്കുന്നതു നിരോധിച്ചിട്ടുള്ളതാണ്‌. ആ തലക്കെട്ട് താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '"$3" എന്ന തലക്കെട്ട് സൃഷ്ടിക്കുന്നതു നിരോധിച്ചിട്ടുള്ളതിനാല്‍, "$2" എന്ന താള്‍ "$3" എന്ന തലക്കെട്ടിലേക്കു മാറ്റാന്‍ പറ്റില്ല. ആ തലക്കെട്ട് താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" എന്ന നാമം പ്രമാണത്തിനു കൊടുക്കുന്നത് നിരോധിച്ചിട്ടുള്ളതാണ്‌.
