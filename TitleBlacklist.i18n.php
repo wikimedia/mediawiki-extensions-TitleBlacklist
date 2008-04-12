@@ -314,6 +314,7 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
+	'titleblacklist-desc'             => 'Marengaké pamenggakan nggawé kaca mawa irah-irahan tartamtu: [[MediaWiki:Titleblacklist]] lan [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist-forbidden-edit'   => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Jeneng berkas "$2" wis dilarang kanggo digawé. 
