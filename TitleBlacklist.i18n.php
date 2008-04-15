@@ -315,8 +315,11 @@ $messages['jut'] = array(
  */
 $messages['jv'] = array(
 	'titleblacklist-desc'             => 'Marengaké pamenggakan nggawé kaca mawa irah-irahan tartamtu: [[MediaWiki:Titleblacklist]] lan [[MediaWiki:Titlewhitelist]]',
+	'titlewhitelist'                  => '# Daftar iki yaiku daftar putih irah-irahan. Enggonen "#" kanggo komentar',
 	'titleblacklist-forbidden-edit'   => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" ora bisa dipindhahaké menyang "$3", amerga irah-irahan iki "$3" dilarang ora olèh digawé.
+Irah-irahan iki soalé cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Jeneng berkas "$2" wis dilarang kanggo digawé. 
 Irah-irahan iku cocog karo èntri daftar ireng iki: <code>\\$1</code>',
 );
@@ -462,14 +465,13 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
- * @author Siebrand
  */
 $messages['pl'] = array(
 	'titleblacklist-desc'             => 'Pozwala zabezpieczyć przed możliwością utworzenia stron o określonych tytułach: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# To jest lista zabronionych nazw artykułów. Artykuły o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogły zostać utworzone.
-# Użyj znaku "#" by utworzyć komentarz.',
+# Użyj znaku „#” by utworzyć komentarz.',
 	'titlewhitelist'                  => '# To jest lista dopuszczalnych nazw artykułów.
-# Użyj znaku "#" by utworzyć komentarz.',
+# Użyj znaku „#” by utworzyć komentarz.',
 	'titleblacklist-forbidden-edit'   => 'Nie wolno utworzyć artykułu o nazwie „$2”. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nazwa „$3” jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>\\$1</code>',
