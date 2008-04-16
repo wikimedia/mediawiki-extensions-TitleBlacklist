@@ -315,6 +315,8 @@ $messages['jut'] = array(
  */
 $messages['jv'] = array(
 	'titleblacklist-desc'             => 'Marengaké pamenggakan nggawé kaca mawa irah-irahan tartamtu: [[MediaWiki:Titleblacklist]] lan [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Ing ngisor iki kapacak daftar ireng irah-irahan. Irah-irahan sing cocog karo sawijining regex ing kéné ora bisa digawé.
+# Enggonen "#" kanggo komentar.',
 	'titlewhitelist'                  => '# Daftar iki yaiku daftar putih irah-irahan. Enggonen "#" kanggo komentar',
 	'titleblacklist-forbidden-edit'   => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
