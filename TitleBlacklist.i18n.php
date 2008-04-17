@@ -637,15 +637,19 @@ $messages['vec'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
+ * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'titleblacklist-desc'             => 'Cấm không được tạo ra trang có các tên được định rõ: [[MediaWiki:Titleblacklist]] và [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Đây là danh sách đen về tên trang. Không được tạo ra các trang trùng với một biểu thức chính quy ở đây.
 # Hãy bắt đầu lời ghi chú với “#”.',
 	'titlewhitelist'                  => '# Đây là “danh sách trắng” về tên trang. Hãy bắt đầu lời ghi chú với “#”.',
-	'titleblacklist-forbidden-edit'   => 'Không được tạo ra trang dưới tên “$2”, vì tên này trùng với khoản sau trong danh sách đen: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => 'Không được di chuyển “$2” đến “$3”, vì tên thứ hai bị cấm. Nó trùng với khoản sau trong danh sách đen: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Không được tải lên tập tin dưới tên “$2”, vì tên này trùng với khoản sau trong danh sách đen: <code>\\$1</code>',
+	'titleblacklist-forbidden-edit'   => 'Không được tạo ra trang dưới tên “$2”.
+Tên này trùng với mục sau trong danh sách đen: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'Không được di chuyển “$2” đến “$3”, vì tựa đề “$3” bị cấm khởi tạo. 
+Nó trùng với mục sau trong danh sách đen: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Không được tải lên tập tin dưới tên “$2”.
+Tên này trùng với khoản sau trong danh sách đen: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
 );
 
