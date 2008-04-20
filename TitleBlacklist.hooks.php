@@ -54,7 +54,11 @@ class TitleBlacklistHooks {
 	public static function verifyUpload( $fname, $fpath, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( Title::newFromText( $fname, NS_IMAGE ), 'upload' );
+		
+		$title = Title::newFromText( $fname, NS_IMAGE );
+		$action = $title->exists() ? 'reupload' : 'upload';
+
+		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();

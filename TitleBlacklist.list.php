@@ -209,6 +209,9 @@ class TitleBlacklistEntry {
 			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
 				return true;
 			}
+			if ( isset( $this->mParams['reupload'] ) && $action == 'reupload' ) {
+				return true;
+			}
 			return false;
 		}
 		return true;
@@ -239,6 +242,9 @@ class TitleBlacklistEntry {
 			}
 			if( $opt2 == 'casesensitive' ) {
 				$options['casesensitive'] = true;
+			}
+			if( $opt2 == 'reupload' ) {
+				$options['reupload'] = true;
 			}
 			if( preg_match( '/errmsg\s*=\s*(.+)/i', $opt, $matches ) ) {
 				$options['errmsg'] = $matches[1];
