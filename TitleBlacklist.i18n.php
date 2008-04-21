@@ -368,6 +368,16 @@ $messages['kk-arab'] = array(
 	'titleblacklist-invalid'          => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
 );
 
+/** Korean (한국어)
+ * @author ToePeu
+ */
+$messages['ko'] = array(
+	'titleblacklist-desc'           => '특정 제목의 문서를 만드는 것을 막습니다. 
+[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용합니다.',
+	'titleblacklist-forbidden-edit' => '"$2"는 만들기가 금지된 제목입니다.
+다음과 일치합니다: <code>$1</code>',
+);
+
 /** Latin (Latina)
  * @author UV
  */
