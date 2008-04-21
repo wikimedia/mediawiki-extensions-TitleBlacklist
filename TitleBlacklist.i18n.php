@@ -122,6 +122,15 @@ $messages['de'] = array(
 	'titleblacklist-invalid'          => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'titlewhitelist'                => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
+	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
+Ĝi similas la jenan nigralistan listeron: <code>$1</code>',
+);
+
 /** فارسی (فارسی)
  * @author Huji
  */
@@ -325,6 +334,7 @@ Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
 Irah-irahan iki soalé cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Jeneng berkas "$2" wis dilarang kanggo digawé. 
 Irah-irahan iku cocog karo èntri daftar ireng iki: <code>\\$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Baris|Baris-baris}} ing daftar ireng irah-irahan (judhul) {{PLURAL:$1|ing ngisor|ing ngisor}} iki ora absah; mangga dikorèksi {{PLURAL:$1|item|item-item}} iku sadurungé disimpen:',
 );
 
 /** Kazakh (Қазақша)
