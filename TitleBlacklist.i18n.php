@@ -407,7 +407,9 @@ $messages['la'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'titleblacklist-desc' => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist-desc'           => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
+En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
 );
 
 /** Limburgish (Limburgs)
@@ -563,6 +565,7 @@ $messages['ru'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
+	'titleblacklist-desc'             => 'Манна ааттаммыт сирэйдэри айыыны/оҥорууну бобор: [[MediaWiki:Titleblacklist]] уонна [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Бу бобуллубут ааттар испииһэктэрэ. Бу испииһэккэ киирбит ханнык баҕарар ыстатыйа оҥоһуллар кыаҕа суох.
 # Ырытарга « # » бэлиэни туһаныҥ.',
 	'titlewhitelist'                  => '# Бу ааттар «үрүҥ испииһэктэрэ». Ырытарга «#» бэлиэни туһаныҥ.',
