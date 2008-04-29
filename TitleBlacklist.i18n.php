@@ -20,6 +20,7 @@ It matches the following blacklist entry: <code>$1</code>',
 It matches the following blacklist entry: <code>\$1</code>',
 	'titleblacklist-invalid'          => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid;
 please correct {{PLURAL:$1|it|them}} before saving:',
+	'right-tboverride'                => 'Override the title blacklist',
 );
 
 /** Aragonese (Aragonés)
@@ -120,6 +121,7 @@ $messages['de'] = array(
 	'titleblacklist-forbidden-move'   => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
 	'titleblacklist-invalid'          => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
+	'right-tboverride'                => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
 );
 
 /** Esperanto (Esperanto)
