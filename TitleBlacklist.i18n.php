@@ -424,6 +424,7 @@ En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
 
 /** Limburgish (Limburgs)
  * @author Matthias
+ * @author Ooswesthoesbes
  */
 $messages['li'] = array(
 	'titleblacklist-desc'             => "Voorkomt het aanmake van pagina's met aangegeve name: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
@@ -434,6 +435,7 @@ $messages['li'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
+	'right-tboverride'                => 'De zwarte lies veur pazjenaname negere',
 );
 
 /** Malayalam (മലയാളം)
@@ -488,6 +490,7 @@ $messages['nl'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
+	'right-tboverride'                => 'De zwarte lijst voor paginanamen negeren',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -574,6 +577,7 @@ $messages['ru'] = array(
 '''Файл с названием \"\$2\" не может быть загружен''' <br />
 Он попадает под следующую запись списка запрещенных названий: '''''\$1'''''",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещенный названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
+	'right-tboverride'                => 'игнорирование чёрного списка имён страниц',
 );
 
 /** Yakut (Саха тыла)
