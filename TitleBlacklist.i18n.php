@@ -702,8 +702,8 @@ $messages['vec'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
- * @author Minh Nguyen
  * @author Vinhtantran
+ * @author Minh Nguyen
  */
 $messages['vi'] = array(
 	'titleblacklist-desc'             => 'Cấm không được tạo ra trang có các tên được định rõ: [[MediaWiki:Titleblacklist]] và [[MediaWiki:Titlewhitelist]]',
@@ -717,6 +717,7 @@ Nó trùng với mục sau trong danh sách đen: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Không được tải lên tập tin dưới tên “$2”.
 Tên này trùng với khoản sau trong danh sách đen: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
+	'right-tboverride'                => 'Bỏ qua danh sách các tựa trang bị cấm',
 );
 
 /** Cantonese (粵語 / 廣東話)
