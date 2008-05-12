@@ -169,6 +169,7 @@ $messages['fi'] = array(
 	'titleblacklist-forbidden-move'   => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Tiedoston ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
+	'right-tboverride'                => 'Ohittaa sivunimien mustalista',
 );
 
 /** French (Français)
@@ -284,6 +285,7 @@ $messages['hu'] = array(
 	'titleblacklist-forbidden-move'   => '„$2” nem nevezhető át „$3” névre, mert „$3” névvel tilos lapot készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '„$2” nevű fájlt tilos feltölteni, mert illeszkedik a feketelista <code>$1</code> bejegyzésére.',
 	'titleblacklist-invalid'          => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
+	'right-tboverride'                => 'címek feketelistájának figyelmen kívül hagyása',
 );
 
 /** Indonesian (Bahasa Indonesia)
