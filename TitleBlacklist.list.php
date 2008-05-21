@@ -206,6 +206,9 @@ class TitleBlacklistEntry {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
 				return true;
 			}
+			if( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
+				return true;
+			}
 			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
 				return true;
 			}
@@ -236,6 +239,9 @@ class TitleBlacklistEntry {
 			$opt2 = strtolower( $opt );
 			if( $opt2 == 'autoconfirmed' ) {
 				$options['autoconfirmed'] = true;
+			}
+			if( $opt2 == 'moveonly' ) {
+				$options['moveonly'] = true;
 			}
 			if( $opt2 == 'noedit' ) {
 				$options['noedit'] = true;
