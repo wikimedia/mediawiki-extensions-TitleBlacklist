@@ -559,7 +559,7 @@ $messages['pt'] = array(
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'titleblacklist-desc'             => 'Позволяет запретить создание страниц с указанными названиями: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]]',
