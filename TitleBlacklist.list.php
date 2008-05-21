@@ -200,7 +200,7 @@ class TitleBlacklistEntry {
 			return true;
 		}
 		wfSuppressWarnings();
-		$match = preg_match( "/^{$this->mRegex}$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
+		$match = preg_match( "/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
 		wfRestoreWarnings();
 		if( $match ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
