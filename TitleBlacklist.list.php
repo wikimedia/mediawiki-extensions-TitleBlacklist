@@ -212,7 +212,8 @@ class TitleBlacklistEntry {
 			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
 				return true;
 			}
-			if ( isset( $this->mParams['reupload'] ) && $action == 'reupload' ) {
+			if ( isset( $this->mParams['reupload'] ) && $action == 'upload' ) {
+				// Special:Upload also checks 'create' permissions when not reuploading
 				return true;
 			}
 			return false;

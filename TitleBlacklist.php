@@ -44,7 +44,6 @@ function efSetupTitleBlacklistHooks() {
 	global $wgHooks;
 	$wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
 	$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
-	$wgHooks['UploadVerification'][] = 'TitleBlacklistHooks::verifyUpload';
 	$wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 	$wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 }
