@@ -423,6 +423,7 @@ $messages['lb'] = array(
 	'titleblacklist-desc'           => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
+	'right-tboverride'              => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
 );
 
 /** Limburgish (Limburgs)
@@ -475,9 +476,10 @@ $messages['mr'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
-	'titleblacklist' => '# Dit is de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
+	'titleblacklist'   => '# Dit is de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
 # Bruuk „#“ för Kommentaren.',
-	'titlewhitelist' => '# Dit is en Wittlist mit Utnahmen vun de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Bruuk „#“ för Kommentaren',
+	'titlewhitelist'   => '# Dit is en Wittlist mit Utnahmen vun de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Bruuk „#“ för Kommentaren',
+	'right-tboverride' => 'De swarte List för Siedennaams ümgahn',
 );
 
 /** Dutch (Nederlands)
