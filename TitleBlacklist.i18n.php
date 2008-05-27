@@ -403,6 +403,13 @@ $messages['ko'] = array(
 다음과 일치합니다: <code>$1</code>',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'right-tboverride' => 'De Liss met verbodde Sigge-Name övverjonn',
+);
+
 /** Latin (Latina)
  * @author UV
  */
