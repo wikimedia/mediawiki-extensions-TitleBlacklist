@@ -229,7 +229,7 @@ class TitleBlacklistEntry {
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
 		$line = trim( $line );
 		// Parse the rest of message
-		preg_match( '/^(.*?)(\s*<(.*)>)?$/', $line, $pockets );
+		preg_match( '/^(.*?)(\s*<([^<>]*)>)?$/', $line, $pockets );
 		@list( $full, $regex, $null, $opts_str ) = $pockets;
 		$regex = trim( $regex );
 		$regex = str_replace( '_', ' ', $regex ); // We'll be matching against text form
