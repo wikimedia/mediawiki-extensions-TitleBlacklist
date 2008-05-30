@@ -749,6 +749,7 @@ $messages['yue'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" 唔可以搬到去 "$3"，由於個標題 "$3" 已經禁止咗去開。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '個檔名 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>\$1</code>',
 	'titleblacklist-invalid'          => '下面響標題黑名單嘅{{PLURAL:$1|一行|幾行}}無效；請響保存之前改正{{PLURAL:$1|佢|佢哋}}:',
+	'right-tboverride'                => '覆蓋標題黑名單',
 );
 
 /** chinese (simplified) (中文 (简化字))
@@ -766,6 +767,7 @@ $messages['zh-hans'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>\$1</code>',
 	'titleblacklist-invalid'          => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
+	'right-tboverride'                => '覆盖标题黑名单',
 );
 
 /** Chinese (Traditional) (中文 (傳統字))
@@ -783,5 +785,6 @@ $messages['zh-hant'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" 不可以移動到 "$3"，由於該標題 "$3" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>\$1</code>',
 	'titleblacklist-invalid'          => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
+	'right-tboverride'                => '覆蓋標題黑名單',
 );
 
