@@ -137,6 +137,7 @@ $messages['eo'] = array(
 	'titlewhitelist'                => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
 	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
 Ĝi similas la jenan nigralistan listeron: <code>$1</code>',
+	'right-tboverride'              => 'Anstataŭigi la titolan nigraliston',
 );
 
 /** فارسی (فارسی)
