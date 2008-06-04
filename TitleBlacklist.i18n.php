@@ -541,6 +541,7 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author Beau
  */
 $messages['pl'] = array(
 	'titleblacklist-desc'             => 'Pozwala zabezpieczyć przed możliwością utworzenia stron o określonych tytułach: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
@@ -552,7 +553,7 @@ $messages['pl'] = array(
 	'titleblacklist-forbidden-move'   => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nazwa „$3” jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
-	'right-tboverride'                => 'Zarządzanie listą zabronionych tytułów artykułów',
+	'right-tboverride'                => 'Wyłącza ograniczenia nakładane przez rozszerzenie Title Blacklist, które blokuje tworzenie oraz edycję artykułów o nazwach pasujących do zdefiniowanych wzorców',
 );
 
 /** Portuguese (Português)
