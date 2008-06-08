@@ -132,12 +132,19 @@ $messages['de'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
-	'titleblacklist'                => '# Ĉi tiu estas titola nigralisto. Titoloj konguantaj regulan esprimon ĉi tie ne povas esti kreita.
+	'titleblacklist-desc'             => 'Permesas aŭ malpermesas kreadon de paĝoj kun specifaj titoloj: [[MediaWiki:Titleblacklist]] kaj [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Ĉi tiu estas titola nigralisto. Titoloj konguantaj regulan esprimon ĉi tie ne povas esti kreita.
 # Uzu "#" por komentoj.',
-	'titlewhitelist'                => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
-	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
+	'titlewhitelist'                  => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
+	'titleblacklist-forbidden-edit'   => 'La titolo "$2" estis malpermesita de kreado.
 Ĝi similas la jenan nigralistan listeron: <code>$1</code>',
-	'right-tboverride'              => 'Anstataŭigi la titolan nigraliston',
+	'titleblacklist-forbidden-move'   => '"$2" ne povas esti alinomita al "$3", ĉar la titolo "$3" estis forbarita de kreado.
+Ĝi kongruas la jenan nigralistanon: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'La dosiernomo "$2" estis forbarita de kreado.
+Ĝi kongruas la jenan nigralistanon: <code>\\$1</code>',
+	'titleblacklist-invalid'          => 'La {{PLURAL:$1|jena linio|jenaj linioj}} en la titola nigralisto estas {{PLURAL:$1|nevalida|nevalidaj}}; 
+bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
+	'right-tboverride'                => 'Anstataŭigi la titolan nigraliston',
 );
 
 /** فارسی (فارسی)
@@ -532,9 +539,9 @@ $messages['oc'] = array(
 	'titleblacklist'                  => '# Aquò es un títol mes en lista negra. Cada títol qu\'indica aicí lo còde regex es interdich a la creacion e a l\'edicion.
 # Utilizatz "#" per escriure de comentaris.',
 	'titlewhitelist'                  => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
-	'titleblacklist-forbidden-edit'   => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspond a l'expression racionala : <code>$1</code>",
-	'titleblacklist-forbidden-move'   => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspond a l\'expression racionala : <code>$1</code>',
-	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala :  <code>\\\$1</code>",
+	'titleblacklist-forbidden-edit'   => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspon a l'expression racionala : <code>$1</code>",
+	'titleblacklist-forbidden-move'   => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspon a l\'expression racionala : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspon a l'expression racionala :  <code>\\\$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
 	'right-tboverride'                => 'Ignorar la lista negra dels títols',
 );
