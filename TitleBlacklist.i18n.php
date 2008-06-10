@@ -84,8 +84,10 @@ $messages['bn'] = array(
 
 /** Catalan (Català)
  * @author SMP
+ * @author Jordi Roqué
  */
 $messages['ca'] = array(
+	'titleblacklist-desc'             => 'Permet de restringir la creació de pàgines amb els títols indicats a [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => "# Això és una llista negra de títols. Aquelles pàgines que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creades.
 # Les línies que començen per \"#\" són comentaris.",
 	'titleblacklist-forbidden-edit'   => 'El títol «$2» està prohibit i no es pot crear. Concorda amb la següent entrada de la llista negra: <code>$1</code>',
