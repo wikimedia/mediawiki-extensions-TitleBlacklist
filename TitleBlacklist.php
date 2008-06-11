@@ -16,8 +16,6 @@ $wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlack
 $wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
 $wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
 
-$wgExtensionFunctions[] = 'efSetupTitleBlacklistHooks';
-
 // Sources of TitleBlacklist
 define( 'TBLSRC_MSG',       0 );	// For internal usage
 define( 'TBLSRC_LOCALPAGE', 1 );	// Local wiki page
@@ -34,16 +32,13 @@ $wgTitleBlacklistCaching = array(
 $wgAvailableRights[] = 'tboverride';
 $wgGroupPermissions['sysop']['tboverride'] = true;
 
+$wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
+$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
+$wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
+$wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
+
 function efInitTitleBlacklist() {
 	global $wgTitleBlacklist;
 	if( isset( $wgTitleBlacklist ) && $wgTitleBlacklist ) return;
 	$wgTitleBlacklist = new TitleBlacklist();
-}
-
-function efSetupTitleBlacklistHooks() {
-	global $wgHooks;
-	$wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
-	$wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
-	$wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
-	$wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 }
