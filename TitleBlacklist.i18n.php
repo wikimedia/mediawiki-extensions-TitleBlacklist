@@ -235,6 +235,25 @@ $messages['gl'] = array(
 	'titleblacklist-invalid'          => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
 );
 
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$messages['he'] = array(
+	'titleblacklist-desc'             => 'הוספת אפשרות לאיסור יצירת דפים עם הכותרות המצוינות: [[MediaWiki:Titleblacklist|רשימת כותרות אסורות]] ו[[MediaWiki:Titlewhitelist|רשימת כותרות מותרות]]',
+	'titleblacklist'                  => "# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות שמתאימות לביטוי רגולרי המופיע כאן.
+# השתמשו בסימן \"#\" להערות.",
+	'titlewhitelist'                  => "# זוהי רשימת הכותרות המותרות. השתמשו בסימן \"#\" להערות.",
+	'titleblacklist-forbidden-edit'   => 'הכותרת "$2" היא כותרת אסורה ליצירה.
+היא מתאימה לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'לא ניתן להעביר את "$2" לשם "$3", כיוון שהכותרת "$3" אסורה ליצירה.
+היא מתאימה לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'שם הקובץ "$2" נאסר ליצירה.
+הוא מתאים לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|השורה הבאה|השורות הבאות}} ברשימת הכותרות האסורות {{PLURAL:$1|אינה תקינה|אינם תקינים}};
+אנא תקנו {{PLURAL:$1|אותה|אותן}} לפני השמירה:',
+	'right-tboverride'                => 'עקיפת רשימת הכותרות האסורות',
+);
+
 /** Hindi (हिन्दी)
  * @author Shyam
  * @author Kaustubh
