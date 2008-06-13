@@ -239,7 +239,7 @@ $messages['gl'] = array(
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'titleblacklist-desc'             => 'הוספת אפשרות לאיסור יצירת דפים עם הכותרות המצוינות: [[MediaWiki:Titleblacklist|רשימת כותרות אסורות]] ו[[MediaWiki:Titlewhitelist|רשימת כותרות מותרות]]',
+	'titleblacklist-desc'             => 'הוספת אפשרות לאיסור יצירת דפים עם הכותרות המצוינות: [[MediaWiki:Titleblacklist]] ו־[[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => "# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות שמתאימות לביטוי רגולרי המופיע כאן.
 # השתמשו בסימן \"#\" להערות.",
 	'titlewhitelist'                  => "# זוהי רשימת הכותרות המותרות. השתמשו בסימן \"#\" להערות.",
