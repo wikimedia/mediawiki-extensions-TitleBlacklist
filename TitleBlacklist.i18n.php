@@ -233,6 +233,7 @@ $messages['gl'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" non pode ser movido a "$3", porque o título "$3" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O nome de arquivo "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
+	'right-tboverride'                => 'Ignorar os títulos da listaxe negra (blacklist)',
 );
 
 /** Hebrew (עברית)
