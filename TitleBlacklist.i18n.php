@@ -515,6 +515,24 @@ $messages['mr'] = array(
 	'right-tboverride'                => 'शीर्षक ब्लॅकयादी कडे दुर्लक्ष करा',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'titleblacklist-desc'             => 'Membolehkan pengharaman tajuk-tajuk laman tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Ini ialah senarai hitam tajuk. Tajuk yang sepadan dengan mana-mana ungkapan nalar di sini akan disekat daripada dicipta.
+# Gunakan "#" untuk komen.',
+	'titlewhitelist'                  => '# Ini ialah senarai putih tajuk. Gunakan "#" untuk komen.',
+	'titleblacklist-forbidden-edit'   => 'Tajuk "$2" telah diharamkan.
+Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" tidak boleh dipindahkan ke "$3" kerana tajuk "$3" telah diharamkan.
+Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Nama fail "$2" telah diharamkan.
+Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
+	'titleblacklist-invalid'          => '{{PLURAL:$1|Baris|Baris-baris}} berikut adalah tidak sah. Sila betulkannya sebelum menyimpan:',
+	'right-tboverride'                => 'Mengatasi senarai hitam tajuk',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
