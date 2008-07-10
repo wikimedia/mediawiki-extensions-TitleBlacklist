@@ -118,14 +118,13 @@ $messages['cs'] = array(
  */
 $messages['de'] = array(
 	'titleblacklist-desc'             => 'Ergänzt eine schwarze Liste unerwünschter Seitennamen: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  =>
-"# Dies ist die Schwarze Liste unerwünschter Seitennamen.
+	'titleblacklist'                  => '# Dies ist die Schwarze Liste unerwünschter Seitennamen.
 # Jeder Seitenname, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt werden.
-# Text hinter einer Raute „#“ wird als Kommentar gesehen.",
+# Text hinter einer Raute „#“ wird als Kommentar gesehen.',
 	'titlewhitelist'                  => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutze „#“ für Kommentare',
-	'titleblacklist-forbidden-edit'   => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
-	'titleblacklist-forbidden-move'   => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
-	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''\$1'''''",
+	'titleblacklist-forbidden-edit'   => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
+	'titleblacklist-forbidden-move'   => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
+	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
 	'titleblacklist-invalid'          => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
 	'right-tboverride'                => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
 );
@@ -149,7 +148,7 @@ bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'right-tboverride'                => 'Anstataŭigi la titolan nigraliston',
 );
 
-/** فارسی (فارسی)
+/** Persian (فارسی)
  * @author Huji
  */
 $messages['fa'] = array(
@@ -163,7 +162,6 @@ $messages['fa'] = array(
 	'titleblacklist-invalid'          => '
 {{PLURAL:$1|سطر|سطرهای}} زیر در فهرست سیاه عنوان‌ها غیرمجاز {{PLURAL:$1|است|هستند}}؛ لطفاً {{PLURAL:$1|آن|آن‌ها}} را قبل از ذخیره کردن اصلاح کنید:',
 	'right-tboverride'                => 'گذر از فهرست سیاه عنوان‌ها',
-
 );
 
 /** Finnish (Suomi)
@@ -241,9 +239,9 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'titleblacklist-desc'             => 'הוספת אפשרות לאיסור יצירת דפים עם הכותרות המצוינות: [[MediaWiki:Titleblacklist]] ו־[[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => "# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות שמתאימות לביטוי רגולרי המופיע כאן.
-# השתמשו בסימן \"#\" להערות.",
-	'titlewhitelist'                  => "# זוהי רשימת הכותרות המותרות. השתמשו בסימן \"#\" להערות.",
+	'titleblacklist'                  => '# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות שמתאימות לביטוי רגולרי המופיע כאן.
+# השתמשו בסימן "#" להערות.',
+	'titlewhitelist'                  => '# זוהי רשימת הכותרות המותרות. השתמשו בסימן "#" להערות.',
 	'titleblacklist-forbidden-edit'   => 'הכותרת "$2" היא כותרת אסורה ליצירה.
 היא מתאימה לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'לא ניתן להעביר את "$2" לשם "$3", כיוון שהכותרת "$3" אסורה ליצירה.
@@ -398,7 +396,18 @@ Irah-irahan iku cocog karo èntri daftar ireng iki: <code>\\$1</code>',
 	'right-tboverride'                => "''Override'' daftar ireng judhul",
 );
 
-/** Kazakh (Қазақша)
+/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+$messages['kk-arab'] = array(
+	'titleblacklist'                  => '# بۇل اتاۋلاردىڭ قارا ٴتىزىمى. جۇيەلى ايتىلىمدارعا (regex) سايكەس مىنداعى اتاۋلار جاراتىلمايدى.
+ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز.',
+	'titlewhitelist'                  => '# بۇل اتاۋلاردىڭ اق ٴتىزىمى. ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز',
+	'titleblacklist-forbidden-edit'   => '«$2» دەگەن اتاۋ جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '«$2» دەگەن «$3» دەگەنگە جىلجىتىلمايدى, سەبەبى «$3» دەگەن اتاۋ جاراتۋى قۇلىپتالعان. بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '«$2» دەگەن فايل اتى جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
+	'titleblacklist-invalid'          => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
+);
+
+/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -410,6 +419,8 @@ $messages['kk-cyrl'] = array(
 	'titleblacklist-forbidden-upload' => '«$2» деген файл аты жаратуы құлыпталған.  Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-invalid'          => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
 );
+
+/** Kazakh (Latin) (Қазақша (Latin)) */
 $messages['kk-latn'] = array(
 	'titleblacklist'                  => '# Bul atawlardıñ qara tizimi. Jüýeli aýtılımdarğa (regex) säýkes mındağı atawlar jaratılmaýdı.
 Mändemeler üşin «#» nışanın qoldanıñız.',
@@ -418,15 +429,6 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
 	'titleblacklist-forbidden-move'   => '«$2» degen «$3» degenge jıljıtılmaýdı, sebebi «$3» degen ataw jaratwı qulıptalğan. Bul qara tizimniñ jazbasına säýkes: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '«$2» degen faýl atı jaratwı qulıptalğan.  Bul qara tizimniñ jazbasına säýkes: <code>$1</code>',
 	'titleblacklist-invalid'          => 'Atawlardıñ qara tizimindegi kelesi {{PLURAL:$1|jol|joldar}} {{PLURAL:$1||}} jaramsız; saqtaw aldında {{PLURAL:$1|bunı|bulardı}} durıstap şığıñız:',
-);
-$messages['kk-arab'] = array(
-	'titleblacklist'                  => '# بۇل اتاۋلاردىڭ قارا ٴتىزىمى. جۇيەلى ايتىلىمدارعا (regex) سايكەس مىنداعى اتاۋلار جاراتىلمايدى.
-ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز.',
-	'titlewhitelist'                  => '# بۇل اتاۋلاردىڭ اق ٴتىزىمى. ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز',
-	'titleblacklist-forbidden-edit'   => '«$2» دەگەن اتاۋ جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '«$2» دەگەن «$3» دەگەنگە جىلجىتىلمايدى, سەبەبى «$3» دەگەن اتاۋ جاراتۋى قۇلىپتالعان. بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '«$2» دەگەن فايل اتى جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
-	'titleblacklist-invalid'          => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
 );
 
 /** Korean (한국어)
@@ -464,6 +466,7 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'titleblacklist-desc'           => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
+	'titlewhitelist'                => "# Dëst ass d'''Whitelist'' vun den Titelen. Benotzt \"#\" fir Bemierkungen.",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
 	'right-tboverride'              => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
@@ -736,7 +739,7 @@ $messages['te'] = array(
 	'titleblacklist-invalid'          => 'శీర్షికల నిరోధపు జాబితాలోని ఈ క్రింద పేర్కొన్న {{PLURAL:$1|లైను|లైన్లు}} తప్పుగా {{PLURAL:$1|ఉంది|ఉన్నాయి}}; భద్రపరిచేముందు {{PLURAL:$1|దాన్ని|వాటిని}} సరిదిద్దండి:',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -785,55 +788,50 @@ Tên này trùng với khoản sau trong danh sách đen: <code>\\$1</code>',
 	'right-tboverride'                => 'Bỏ qua danh sách các tựa trang bị cấm',
 );
 
-/** Cantonese (粵語 / 廣東話)
+/** Yue (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
 	'titleblacklist-desc'             => '容許禁止開指定標題嘅版: [[MediaWiki:Titleblacklist]] 同 [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' =>
-"# 呢個係一個標題黑名單。同呢度配合正規表達式嘅標題係唔可以新開嘅。
-# 用 \"#\" 去做註解。
-",
-	'titlewhitelist'                  => "# 呢個係一個標題白名單。 用 \"#\" 去做註解",
+	'titleblacklist'                  => '# 呢個係一個標題黑名單。同呢度配合正規表達式嘅標題係唔可以新開嘅。
+# 用 "#" 去做註解。
+',
+	'titlewhitelist'                  => '# 呢個係一個標題白名單。 用 "#" 去做註解',
 	'titleblacklist-forbidden-edit'   => '個標題 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '"$2" 唔可以搬到去 "$3"，由於個標題 "$3" 已經禁止咗去開。佢同下面黑名單嘅項目配合: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '個檔名 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>\$1</code>',
+	'titleblacklist-forbidden-upload' => '個檔名 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '下面響標題黑名單嘅{{PLURAL:$1|一行|幾行}}無效；請響保存之前改正{{PLURAL:$1|佢|佢哋}}:',
 	'right-tboverride'                => '覆蓋標題黑名單',
 );
 
-/** chinese (simplified) (中文 (简化字))
+/** Simplified Chinese (‪中文(简体)‬)
  * @author Fdcn
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
 	'titleblacklist-desc'             => '容许禁止建立指定标题的页面: [[MediaWiki:Titleblacklist]] 和 [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' =>
-"# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
-# 请使用\"#\"来添加注释。
-",
-	'titlewhitelist'                  => "# 本页面为“标题白名单”。 请使用\"#\"来添加注释。",
+	'titleblacklist'                  => '# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
+# 请使用"#"来添加注释。',
+	'titlewhitelist'                  => '# 本页面为“标题白名单”。 请使用"#"来添加注释。',
 	'titleblacklist-forbidden-edit'   => '标题 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>\$1</code>',
+	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
 	'right-tboverride'                => '覆盖标题黑名单',
 );
 
-/** Chinese (Traditional) (中文 (傳統字))
+/** Traditional Chinese (‪中文(繁體)‬)
  * @author Fdcn
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
 	'titleblacklist-desc'             => '容許禁止建立指定標題的頁面: [[MediaWiki:Titleblacklist]] 與 [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' =>
-"# 本頁面為「標題黑名單」。任何匹配本名單正則表達式的標題會被阻止建立和編輯。
-# 請使用\"#\"來添加註釋。
-",
-	'titlewhitelist'                  => "# 本頁面為「標題白名單」。 請使用\"#\"來添加註釋。",
+	'titleblacklist'                  => '# 本頁面為「標題黑名單」。任何匹配本名單正則表達式的標題會被阻止建立和編輯。
+# 請使用"#"來添加註釋。',
+	'titlewhitelist'                  => '# 本頁面為「標題白名單」。 請使用"#"來添加註釋。',
 	'titleblacklist-forbidden-edit'   => '標題 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '"$2" 不可以移動到 "$3"，由於該標題 "$3" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>\$1</code>',
+	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
 	'right-tboverride'                => '覆蓋標題黑名單',
 );
