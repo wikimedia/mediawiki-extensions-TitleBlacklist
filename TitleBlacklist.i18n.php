@@ -276,8 +276,10 @@ $messages['hi'] = array(
 /** Croatian (Hrvatski)
  * @author Dnik
  * @author SpeedyGonsales
+ * @author Dalibor Bosits
  */
 $messages['hr'] = array(
+	'titleblacklist-desc'             => 'Onemogućava stvaranje stranica s određenim naslovima: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist'                  => '# Ovo je popis zabranjenih naslova. Naslovi koji se podudaraju s regularnim izrazom se ne mogu kreirati.
 # Koristite "#" za komentare.',
 	'titlewhitelist'                  => "# Ovo je tzv. ''bijela knjiga'' ili ''whitelist'' imena članaka. Rabite \"#\" za komentar",
