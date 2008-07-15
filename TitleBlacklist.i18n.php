@@ -53,6 +53,23 @@ $messages['ar'] = array(
 	'right-tboverride'                => 'تجاوز قائمة العناوين السوداء',
 );
 
+/** Southern Balochi (بلوچی مکرانی)
+ * @author Mostafadaneshvar
+ */
+$messages['bcc'] = array(
+	'titleblacklist-desc'             => 'اجازت دن بند کتن شرکنگ صفحاتی گون مشخصین عناوین:  [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# شی یک عنوان لیست سیاهی انت. عناوینی که هم داب رجکس انت ادان شرکنگ نه بیت.
+# استفاده کن"#" په نظرات',
+	'titlewhitelist'                  => '#شی یک اسپیت لیستی عنوانیء. استفاده کن چه  "#" په نظر داتن',
+	'titleblacklist-forbidden-edit'   => 'عنوان "$2" چه شر بیگ منع بوتت.
+ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => 'عنوان "$2" نه تونیت په "$3" جاه په جاه بیت، په چی که ایی چه شر بیگ منع بوتت.
+ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'فایل نام  "$2" چه شر بیگ منع بوتت.
+ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
+	'right-tboverride'                => 'لیست سیاه عنوان لغو کن',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  * @author Spiritia
