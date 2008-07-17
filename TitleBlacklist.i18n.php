@@ -485,6 +485,9 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'titleblacklist-desc'           => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist'                => '# Dëst ass een Titel deen op enger schwaarzer Lëscht steet.
+# All Titel op den dës Ausdréck passe kann net ugeluecht ginn
+# Benotzt "#" fir Bemierkungen ze schreiwen',
 	'titlewhitelist'                => "# Dëst ass d'''Whitelist'' vun den Titelen. Benotzt \"#\" fir Bemierkungen.",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
@@ -701,6 +704,17 @@ $messages['sk'] = array(
 	'titleblacklist-forbidden-upload' => 'Bolo zakázané vytvorenie súboru s názvom „$2“. Zodpovedá tejto položke čiernej listiny: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Nasledovný riadok|Nasledovné riadky}} čiernej listiny názvov stránok {{PLURAL:$1|je neplatný|sú neplatné}} a je potrebné {{PLURAL:$1|ho|ich}} opraviť pred uložením stránky:',
 	'right-tboverride'                => 'Prekonať čiernu listinu názvov',
+);
+
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Millosh
+ */
+$messages['sr-ec'] = array(
+	'titleblacklist-desc' => 'Допушта забрану стварања страна с одређеним насловима: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]].',
+	'titleblacklist'      => '# Ово је наслов црног списка. Наслови који садрже регуларни израз из овог списка не могу бити направљени.
+# Користи "#" за коментаре.',
+	'titlewhitelist'      => '# Ово је бели списак наслова. Користи "#" за коментаре.',
+	'right-tboverride'    => 'Преписује црни списак наслова.',
 );
 
 /** Seeltersk (Seeltersk)
