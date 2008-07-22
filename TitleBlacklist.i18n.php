@@ -337,6 +337,24 @@ $messages['hu'] = array(
 	'right-tboverride'                => 'címek feketelistájának figyelmen kívül hagyása',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'titleblacklist-desc'             => 'Permitte prohibir le creation de paginas con titulos specificate: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                  => '# Isto es un lista nigre de titulos. Le titulos que corresponde a un regex
+# includite hic non pote esser create. Usa "#" pro commentos.',
+	'titlewhitelist'                  => '# Isto es un lista blanc de titulos. Usa "#" pro commentos.',
+	'titleblacklist-forbidden-edit'   => 'Le creation del titulo "$2" ha essite prohibite.
+Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
+	'titleblacklist-forbidden-move'   => '"$2" non pote esser renominate a "$3", proque le creation del titulo "$3" ha essite prohibite.
+Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Le creation del nomine de file "$2" ha essite prohibite.
+Illo corresponde al sequente entrata del lista nigre: <code>\\$1</code>',
+	'titleblacklist-invalid'          => 'Le sequente {{PLURAL:$1|linea|lineas}} in le lista nigre de titulos es invalide; per favor corrige {{PLURAL:$1|lo|los}} ante de immagazinar:',
+	'right-tboverride'                => 'Ultrapassar le lista nigre de titulos',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
  * @author Rex
@@ -784,6 +802,13 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-forbidden-move'   => '"$2" наметавонад ба "$3" кӯчонида шавад, зеро эҷоди унвони "$3" манъ шудааст. Чун бо ин дастур аз феҳристи сиёҳ мутобиқат мекунад: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Эҷоди номи "$2" барои парвандаҳо манъ аст. Он бо ин дастур аз фехристи сиёҳи зерин мутобиқат мекунад: <code>\\$1</code>',
 	'titleblacklist-invalid'          => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
+);
+
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
 );
 
 /** Vèneto (Vèneto)
