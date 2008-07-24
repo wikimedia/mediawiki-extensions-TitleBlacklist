@@ -576,6 +576,14 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'right-tboverride'                => 'Mengatasi senarai hitam tajuk',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'titleblacklist' => '# Inīn cateh ahcualli tōcāitl. 
+# Xictequitiltia "#" ic tlahtoa.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
