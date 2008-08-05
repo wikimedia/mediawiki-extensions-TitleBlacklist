@@ -380,12 +380,11 @@ $messages['id'] = array(
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
- * @author Siebrand
  */
 $messages['it'] = array(
-	'titleblacklist-desc'             => 'Consente di proibire la creazione di pagine con i titoli indicati in [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc'             => 'Consente di proibire la creazione di pagine e account utente con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
 	'titleblacklist'                  => '# Lista dei titoli non consentiti.
-# È impedita la creazione delle pagine il cui titolo corrisponde a un\'espressione regolare indicata di seguito.
+# È impedita la creazione delle pagine e degli account il cui nome corrisponde a un\'espressione regolare indicata di seguito.
 # Usare "#" per le righe di commento.',
 	'titlewhitelist'                  => '# Questa è una whitelist dei titoli. Usare "#" per le righe di commento',
 	'titleblacklist-forbidden-edit'   => 'La creazione di pagine con titolo "$2" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
@@ -567,21 +566,22 @@ $messages['mr'] = array(
  * @author Aviator
  */
 $messages['ms'] = array(
-	'titleblacklist-desc'             => 'Membolehkan pengharaman tajuk-tajuk laman tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Ini ialah senarai hitam tajuk. Tajuk yang sepadan dengan mana-mana ungkapan nalar di sini akan disekat daripada dicipta.
+	'titleblacklist-desc'                  => 'Membolehkan pentadbir mengawal penciptaan laman dan pengguna tertentu menggunakan [[MediaWiki:Titleblacklist|senarai hitam]] dan [[MediaWiki:Titlewhitelist|senarai putih]]',
+	'titleblacklist'                       => '# Ini ialah senarai hitam tajuk. Tajuk atau pengguna yang sepadan dengan mana-mana ungkapan nalar di sini akan disekat daripada dicipta.
 # Gunakan "#" untuk komen.',
-	'titlewhitelist'                  => '# Ini ialah senarai putih tajuk. Gunakan "#" untuk komen.',
-	'titleblacklist-forbidden-edit'   => 'Tajuk "$2" telah diharamkan.
+	'titlewhitelist'                       => '# Ini ialah senarai putih tajuk. Gunakan "#" untuk komen.',
+	'titleblacklist-forbidden-edit'        => 'Tajuk "$2" telah diharamkan.
 Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '"$2" tidak boleh dipindahkan ke "$3" kerana tajuk "$3" telah diharamkan.
+	'titleblacklist-forbidden-move'        => '"$2" tidak boleh dipindahkan ke "$3" kerana tajuk "$3" telah diharamkan.
 Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Nama fail "$2" telah diharamkan.
+	'titleblacklist-forbidden-upload'      => 'Nama fail "$2" telah diharamkan.
 Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
-	'titleblacklist-invalid'          => '{{PLURAL:$1|Baris|Baris-baris}} berikut adalah tidak sah. Sila betulkannya sebelum menyimpan:',
-	'right-tboverride'                => 'Mengatasi senarai hitam tajuk',
+	'titleblacklist-forbidden-new-account' => 'Nama pengguna "$2" telah diharamkan kerana sepadan dengan entri senarai hitam berikut: <code>\\$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|Baris|Baris-baris}} berikut adalah tidak sah. Sila betulkannya sebelum menyimpan:',
+	'right-tboverride'                     => 'Mengatasi senarai hitam tajuk',
 );
 
-/** Nahuatl (Nahuatl)
+/** Nahuatl (Nāhuatl)
  * @author Fluence
  */
 $messages['nah'] = array(
@@ -604,15 +604,16 @@ $messages['nds'] = array(
  * @author SPQRobin
  */
 $messages['nl'] = array(
-	'titleblacklist-desc'             => "Voorkomt het aanmaken van pagina's met aangegeven namen: [[MediaWiki:Titleblacklist]] en [[MediaWiki:Titlewhitelist]]",
-	'titleblacklist'                  => '# Dit is een zwarte lijst voor paginanamen. Iedere paginanaam die voldoet aan een regex kan niet aangemaakt en bewerkt worden.
+	'titleblacklist-desc'                  => "Voorkomt het aanmaken van pagina's en gebruikers via een [[MediaWiki:Titleblacklist|zwarte lijst]] en een [[MediaWiki:Titlewhitelist|witte lijst]]",
+	'titleblacklist'                       => '# Dit is een zwarte lijst voor paginanamen. Paginanamen en gebruikers die voldoen aan een reguliere expressie op deze paina kunnen niet aangemaakt worden.
 # Gebruik "#" voor opmerkingen.',
-	'titlewhitelist'                  => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
-	'titleblacklist-forbidden-edit'   => 'Een pagina met de naam "$2" kan niet aangemaakt worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
-	'titleblacklist-invalid'          => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
-	'right-tboverride'                => 'De zwarte lijst voor paginanamen negeren',
+	'titlewhitelist'                       => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
+	'titleblacklist-forbidden-edit'        => 'Een pagina met de naam "$2" kan niet aangemaakt worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'De gebruikersnaam "$2" kan niet aangemaakt worden omdat het voldoet aan de volgende beperking op de zwarte lijst: <code>\\$1</code>',
+	'titleblacklist-invalid'               => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
+	'right-tboverride'                     => 'De zwarte lijst voor paginanamen negeren',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
