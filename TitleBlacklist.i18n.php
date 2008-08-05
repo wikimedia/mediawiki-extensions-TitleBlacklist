@@ -506,7 +506,7 @@ $messages['la'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'titleblacklist-desc'           => "Erlaabt et d'Ulleeë vu Säite mat spezifischen Titelen ze verbidden: [[MediaWiki:Titleblacklist]] and [[MediaWiki:Titlewhitelist]]",
+	'titleblacklist-desc'           => "Erlaabt den Administrateuren et d'Ulleeë vu Säiten a Benotzerkonten mat spezifischen Titelen iwwer en [[MediaWiki:Titleblacklist|schwaarz Lëscht]] an eng [[MediaWiki:Titlewhitelist|wäiss Lëscht]] ze verbidden",
 	'titleblacklist'                => '# Dëst ass een Titel deen op enger schwaarzer Lëscht steet.
 # All Titel op den dës Ausdréck passe kann net ugeluecht ginn
 # Benotzt "#" fir Bemierkungen ze schreiwen',
@@ -620,15 +620,17 @@ $messages['nl'] = array(
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
-	'titleblacklist-desc'             => 'Gir muligheten til å forhindre at sider med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Dette er en svartlisting for titler. Titler som passer med regulære uttrykk her kan ikke opprettes.
+	'titleblacklist-desc'                  => 'Gir muligheten til å forhindre at sider og brukerkontoer med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                       => '# Dette er en svartlisting for titler. Titler og brukernavn som passer med regulære uttrykk her kan ikke opprettes.
 # Bruk «#» for kommentarer.',
-	'titlewhitelist'                  => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.',
-	'titleblacklist-forbidden-edit'   => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code<',
-	'titleblacklist-forbidden-upload' => 'Filnavnet «$2» er blokkert for oppretting. Den tilsvarer følgende svartelisteelement: <code>\\$1</code>',
-	'titleblacklist-invalid'          => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
-	'right-tboverride'                => 'Overkjøre tittelsvartelisten',
+	'titlewhitelist'                       => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.',
+	'titleblacklist-forbidden-edit'        => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code<',
+	'titleblacklist-forbidden-upload'      => 'Filnavnet «$2» er blokkert for oppretting. Den tilsvarer følgende svartelisteelement: <code>\\$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Brukernavnet «$2» kan ikke opprettes.
+Det tilsvarer følgende svartelisteelement: <code>\\$1</code>',
+	'titleblacklist-invalid'               => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
+	'right-tboverride'                     => 'Overkjøre tittelsvartelisten',
 );
 
 /** Occitan (Occitan)
