@@ -11,7 +11,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 $wgExtensionCredits['other'][] = array(
 	'name'           => 'Title Blacklist',
-	'author'         => 'VasilievVV, Fran Rogers',
+	'author'         => array( 'VasilievVV', 'Fran Rogers' ),
 	'version'        => '1.4.2',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'description'    => 'Allows administrators to forbid creation of certain pages and user accounts',
