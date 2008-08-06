@@ -262,19 +262,21 @@ $messages['gl'] = array(
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'titleblacklist-desc'             => 'הוספת אפשרות לאיסור יצירת דפים עם הכותרות המצוינות: [[MediaWiki:Titleblacklist]] ו־[[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות שמתאימות לביטוי רגולרי המופיע כאן.
+	'titleblacklist-desc'                  => 'אפשרות למנהלים לאסור על יצירת דפים וחשבונות משתמש לפי [[MediaWiki:Titleblacklist|רשימה שחורה]] ו[[MediaWiki:Titlewhitelist|רשימה לבנה]]',
+	'titleblacklist'                       => '# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות וחשבונות משתמש שמתאימים לביטוי רגולרי המופיע כאן.
 # השתמשו בסימן "#" להערות.',
-	'titlewhitelist'                  => '# זוהי רשימת הכותרות המותרות. השתמשו בסימן "#" להערות.',
-	'titleblacklist-forbidden-edit'   => 'הכותרת "$2" היא כותרת אסורה ליצירה.
+	'titlewhitelist'                       => '# זוהי רשימת הכותרות המותרות. השתמשו בסימן "#" להערות.',
+	'titleblacklist-forbidden-edit'        => 'הכותרת "$2" היא כותרת אסורה ליצירה.
 היא מתאימה לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => 'לא ניתן להעביר את "$2" לשם "$3", כיוון שהכותרת "$3" אסורה ליצירה.
-היא מתאימה לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'שם הקובץ "$2" נאסר ליצירה.
-הוא מתאים לערך הבא ברשימת הכותרות האסורות: <code>$1</code>',
-	'titleblacklist-invalid'          => '{{PLURAL:$1|השורה הבאה|השורות הבאות}} ברשימת הכותרות האסורות {{PLURAL:$1|אינה תקינה|אינם תקינים}};
+	'titleblacklist-forbidden-move'        => 'לא ניתן להעביר את "$2" לשם "$3", כיוון שהכותרת "$3" אסורה ליצירה.
+היא מתאימה לערך הבא ברשימה השחורה: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'שם הקובץ "$2" נאסר ליצירה.
+הוא מתאים לערך הבא ברשימה השחורה: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'שם המשתמש "$2" נאסר ליצירה.
+הוא מתאים לערך הבא ברשימה השחורה: <code>$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|השורה הבאה|השורות הבאות}} ברשימת הכותרות האסורות {{PLURAL:$1|אינה תקינה|אינם תקינים}};
 אנא תקנו {{PLURAL:$1|אותה|אותן}} לפני השמירה:',
-	'right-tboverride'                => 'עקיפת רשימת הכותרות האסורות',
+	'right-tboverride'                     => 'עקיפת רשימת הכותרות האסורות',
 );
 
 /** Hindi (हिन्दी)
