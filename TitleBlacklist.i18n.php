@@ -29,15 +29,17 @@ please correct {{PLURAL:$1|it|them}} before saving:',
  * @author Juanpabl
  */
 $messages['an'] = array(
-	'titleblacklist-desc'             => 'Premite biedar a creyazión de pachinas con determinaus títols: [[MediaWiki:Titleblacklist]] y [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Ista ya una lista negra de títols. Os títols que concuerdan con una d\'as espresions regulars (regex) no se pueden creyar.
+	'titleblacklist-desc'                  => "Premite a os almenistradors de bedar a creyazión de pachinas y cuentas d'usuario con aduya d'una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]",
+	'titleblacklist'                       => '# Ista ya una lista negra de títols. Os títols que concuerden con una d\'istas espresions regulars no se pueden creyar.
 # Use "#" ta fer comentarios.',
-	'titlewhitelist'                  => '# Ista ya una lista blanca de títols. Use "#" ta fer comentarios.',
-	'titleblacklist-forbidden-edit'   => 'O títol "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '"$2" no se puede tresladar ta "$3", porque o títol "$3" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'O nombre de fichero "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-invalid'          => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por fabor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
-	'right-tboverride'                => 'Inorar a lista negra de títols',
+	'titlewhitelist'                       => '# Ista ya una lista blanca de títols. Use "#" ta fer comentarios.',
+	'titleblacklist-forbidden-edit'        => 'O títol "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '"$2" no se puede tresladar ta "$3", porque o títol "$3" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'O nombre de fichero "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'O nombre d\'usuario "$2" ye bedato y no se puede creyar. 
+Concuerda con a dentrada <code>$1</code> d\'a lista negra.',
+	'titleblacklist-invalid'               => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por fabor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
+	'right-tboverride'                     => 'Inorar a lista negra de títols',
 );
 
 /** Arabic (العربية)
@@ -141,16 +143,18 @@ $messages['cs'] = array(
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'titleblacklist-desc'             => 'Ergänzt eine schwarze Liste unerwünschter Seitennamen: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Dies ist die Schwarze Liste unerwünschter Seitennamen.
-# Jeder Seitenname, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt werden.
+	'titleblacklist-desc'                  => 'Ermöglicht Administratoren, die Erstellung unerwünschter Seiten- und Benutzernamen zu verhindern: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                       => '# Dies ist eine Schwarze Liste.
+# Jeder Seiten- und Benutzername, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt werden.
 # Text hinter einer Raute „#“ wird als Kommentar gesehen.',
-	'titlewhitelist'                  => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutze „#“ für Kommentare',
-	'titleblacklist-forbidden-edit'   => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
-	'titleblacklist-forbidden-move'   => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
-	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
-	'titleblacklist-invalid'          => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
-	'right-tboverride'                => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
+	'titlewhitelist'                       => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutze „#“ für Kommentare',
+	'titleblacklist-forbidden-edit'        => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
+	'titleblacklist-forbidden-move'        => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
+	'titleblacklist-forbidden-upload'      => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
+	'titleblacklist-forbidden-new-account' => 'Die Registrierung des Benutzernames „$2“ ist nicht erwünscht.
+Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnung: <code>$1</code>',
+	'titleblacklist-invalid'               => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
+	'right-tboverride'                     => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
 );
 
 /** Esperanto (Esperanto)
@@ -400,10 +404,11 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author JtFuruhata
+ * @author Aotake
  */
 $messages['ja'] = array(
-	'titleblacklist-desc'             => '指定したページ名での新規作成を禁止する: [[MediaWiki:Titleblacklist|タイトルブラックリスト]] および [[MediaWiki:Titlewhitelist|タイトルホワイトリスト]]',
-	'titleblacklist'                  => '# これは、タイトルブラックリストです。正規表現に一致するタイトルでの新規作成を禁止します。
+	'titleblacklist-desc'             => '管理者が[[MediaWiki:Titleblacklist|ブラックリスト]] および [[MediaWiki:Titlewhitelist|ホワイトリスト]]を使ってページおよび利用者アカウントの新規作成を禁止できるようにする',
+	'titleblacklist'                  => '# これは、タイトルブラックリストです。正規表現に一致するタイトルおよび利用者アカウントの新規作成を禁止します。
 # "#"以降はコメントとして扱われます。',
 	'titlewhitelist'                  => '# これは、タイトルホワイトリストです。"#"以降はコメントとして扱われます。',
 	'titleblacklist-forbidden-edit'   => '"$2" という名前での新規作成は禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
@@ -597,7 +602,7 @@ $messages['nah'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
-	'titleblacklist'   => '# Dit is de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
+	'titleblacklist'   => '# Dit is de Swartlist vun Sieden- un Brukernaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
 # Bruuk „#“ för Kommentaren.',
 	'titlewhitelist'   => '# Dit is en Wittlist mit Utnahmen vun de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Bruuk „#“ för Kommentaren',
 	'right-tboverride' => 'De swarte List för Siedennaams ümgahn',
@@ -647,7 +652,7 @@ $messages['oc'] = array(
 	'titlewhitelist'                  => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
 	'titleblacklist-forbidden-edit'   => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspon a l'expression racionala : <code>$1</code>",
 	'titleblacklist-forbidden-move'   => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspon a l\'expression racionala : <code>$1</code>',
-	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspon a l'expression racionala :  <code>$1</code>",
+	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspon a l'expression racionala :  <code>\$1</code>",
 	'titleblacklist-invalid'          => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
 	'right-tboverride'                => 'Ignorar la lista negra dels títols',
 );
@@ -810,7 +815,7 @@ $messages['te'] = array(
 	'titleblacklist-invalid'          => 'శీర్షికల నిరోధపు జాబితాలోని ఈ క్రింద పేర్కొన్న {{PLURAL:$1|లైను|లైన్లు}} తప్పుగా {{PLURAL:$1|ఉంది|ఉన్నాయి}}; భద్రపరిచేముందు {{PLURAL:$1|దాన్ని|వాటిని}} సరిదిద్దండి:',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
