@@ -1,18 +1,16 @@
 <?php
+
 /**
  * Hooks for Title Blacklist
+ *
+ * @package MediaWiki
+ * @subpackage Extensions
  * @author VasilievVV
  * @copyright © 2007 VasilievVV
  * @license GNU General Public License 2.0 or later
  */
-
-/**
- * Hooks for the TitleBlacklist class
- * @package MediaWiki
- * @subpackage Extensions
- */
+ 
 class TitleBlacklistHooks {
-	/** getUserPermissionsErrorsExpensive hook */
 	public static function userCan( $title, $user, $action, &$result ) {
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' || $action == 'upload' ) {
@@ -32,7 +30,6 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** AbortMove hook */
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
@@ -52,34 +49,7 @@ class TitleBlacklistHooks {
 		}
 		return true;
 	}
-
-	/** AbortNewAccount hook */
-	public static function abortNewAccount($user, &$message) {
-		global $wgTitleBlacklist, $wgUser;
-		if ( $wgUser->isAllowed( 'tboverride' ) )
-			return true;
-
-		efInitTitleBlacklist();
-		$title = Title::newFromText( $user->getName() );
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
-		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
-			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
-		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			wfLoadExtensionMessages( 'TitleBlacklist' );
-			$message = $blacklisted->getCustomMessage();
-			if( is_null( $message ) )
-				$message = wfMsgWikiHtml( 'titleblacklist-forbidden-new-account',
-							  $blacklisted->getRaw(),
-							  $user->getName() );
-			$result = array( $message,
-				htmlspecialchars( $blacklisted->getRaw() ),
-				$title->getFullText() );
-			return false;
-		}
-		return true;
-	}
-	
-	/** EditFilter hook */
+		
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
@@ -107,7 +77,6 @@ class TitleBlacklistHooks {
 		return true;
 	}
 	
-	/** ArticleSaveComplete hook */
 	public static function clearBlacklist( &$article, &$user,
 			$text, $summary, $isminor, $iswatch, $section ) {
 		$title = $article->getTitle();
