@@ -62,6 +62,27 @@ $messages['ar'] = array(
 	'right-tboverride'                     => 'تجاوز قائمة العناوين السوداء',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'titleblacklist-desc'                  => "Permite a los alministradores prohibir la creación de páxines y cuentes d'usuariu per aciu d'una [[MediaWiki:Titleblacklist|llista prieta]] y una [[MediaWiki:Titlewhitelist|llista blanca]]",
+	'titleblacklist'                       => '# Esta ye una llista prieta de títulos. Los títulos y usuarios que concayen con dalguna de les expresiones regulares d\'equí nun puen ser creaos.
+# Usa "#" pa los comentarios.',
+	'titlewhitelist'                       => '# Esta ye una llista blanca de títulos. Usa "#" pa los comentarios.',
+	'titleblacklist-forbidden-edit'        => 'Torgóse la creación del títulu "$2".
+Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '"$2" nun pue ser treslladáu a "$3" porque\'l títulu "$3" ta prohibío crealu.
+Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Torgóse la creación del nome d\'archivu "$2".
+Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Torgóse la creación del nome d\'usuariu "$2".
+Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|La siguiente llinia|Les siguientes llinies}} de la llista prieta de títulos {{PLURAL:$1|nun ye válida|nun son válides}};
+por favor {{PLURAL:$1|corríxila|corríxiles}} enantes de guardar:',
+	'right-tboverride'                     => 'Inorar la llista prieta de títulos',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
@@ -126,17 +147,20 @@ $messages['ca'] = array(
  * @author Li-sung
  * @author Matěj Grabovský
  * @author Danny B.
+ * @author Mormegil
  */
 $messages['cs'] = array(
-	'titleblacklist-desc'             => 'Umožňuje zakázat tvorbu stránek s určitými názvy: [[MediaWiki:Titleblacklist|Černá listina názvů]] a [[MediaWiki:Titlewhitelist|Bílá listina názvů]]',
-	'titleblacklist'                  => '# Toto je černá listina názvů. Název, který bude odpovídat regulárnímu výrazu, nebude možné vytvořit.
-# Používejte „#“ pro označení komentáře.',
-	'titlewhitelist'                  => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“',
-	'titleblacklist-forbidden-edit'   => 'Název "$2" je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '„$2“ nelze přesunout na název „$3“, protože název „$3“ je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Soubor s jménem „$2“ je zakázáno vytvářet. Název odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
-	'titleblacklist-invalid'          => 'Na černé listině názvů {{PLURAL:$1|je následující řádka neplatný regulární výraz|jsou následující řádky neplatné regulární výrazy|jsou následující řádky regulární výrazy}} a je nutné {{PLURAL:$1|ji|je|je}} před uložením stránky opravit :',
-	'right-tboverride'                => 'Potlačení nepovolených názvů stránek',
+	'titleblacklist-desc'                  => 'Umožňuje správcům zakázat tvorbu stránek a uživatelských účtů na základě [[MediaWiki:Titleblacklist|černé listiny názvů]] a [[MediaWiki:Titlewhitelist|bílé listina názvů]]',
+	'titleblacklist'                       => '# Toto je černá listina názvů. Stránky a uživatelské účty, jejichž název odpovídá některému regulárnímu výrazu, nebude možné vytvořit.
+# Komentáře začínají znakem „#“.',
+	'titlewhitelist'                       => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“',
+	'titleblacklist-forbidden-edit'        => 'Název "$2" je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '„$2“ nelze přesunout na název „$3“, protože název „$3“ je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Soubor s jménem „$2“ je zakázáno vytvářet. Název odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Není dovoleno zaregistrovat uživatelské jméno „$2“.
+Odpovídá následující položce černé listiny: <code>$1</code>',
+	'titleblacklist-invalid'               => 'Na černé listině názvů {{PLURAL:$1|je následující řádka neplatný regulární výraz|jsou následující řádky neplatné regulární výrazy|jsou následující řádky regulární výrazy}} a je nutné {{PLURAL:$1|ji|je|je}} před uložením stránky opravit :',
+	'right-tboverride'                     => 'Potlačení nepovolených názvů stránek',
 );
 
 /** German (Deutsch)
@@ -217,17 +241,18 @@ $messages['fi'] = array(
  * @author Meithal
  */
 $messages['fr'] = array(
-	'titleblacklist-desc'             => "Permet d'interdire la création de pages en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]] de titres",
-	'titleblacklist'                  => '# Ceci est un titre mis en liste noire
-# Chaque titre qu’indique ici le code regex ne peut être créé.
-# Utilisez « # » pour écrire des commentaires',
-	'titlewhitelist'                  => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
-	'titleblacklist-forbidden-edit'   => "Le titre « $2 » est interdit à la création.
+	'titleblacklist-desc'                  => "Permet aux administrateur d’interdire la création de pages et des comptes utilisateur en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]]",
+	'titleblacklist'                       => '# Ceci est un titre mis en liste noire. Les titres et les utilisateur qui correspondent ici à une expression régulière ne peuvent être créés.
+# Utilisez « # » pour écrire les commentaires.',
+	'titlewhitelist'                       => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
+	'titleblacklist-forbidden-edit'        => "Le titre « $2 » est interdit à la création.
 Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
-	'titleblacklist-forbidden-move'   => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
-	'titleblacklist-forbidden-upload' => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
-	'titleblacklist-invalid'          => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
-	'right-tboverride'                => 'Ignorer la liste noire des titres',
+	'titleblacklist-forbidden-move'        => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
+	'titleblacklist-forbidden-upload'      => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
+	'titleblacklist-forbidden-new-account' => 'Le nom d’utilisateur « $2 » a été banni à la création.
+Il corresponds à l’entrée suivante de la liste noire : <code>$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
+	'right-tboverride'                     => 'Ignorer la liste noire des titres',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -373,16 +398,18 @@ Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
  * @author Rex
  */
 $messages['id'] = array(
-	'titleblacklist-desc'             => 'Mengizinkan pencegahan pembuatan halaman dengan judul tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Berikut adalah daftar hitam judul. Judul yang sesuai dengan suatu regex berikut tidak akan dibuat.
+	'titleblacklist-desc'                  => 'Mengizinkan pencegahan pembuatan halaman dengan judul tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist'                       => '# Berikut adalah daftar hitam judul. Judul yang sesuai dengan suatu regex berikut tidak akan dibuat.
 # Gunakan "#" untuk komentar.
 ',
-	'titlewhitelist'                  => '# Ini adalah daftar putih. Gunakan "#" untuk komentar',
-	'titleblacklist-forbidden-edit'   => 'Judul "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '"$2" tak dapat dipindahkan ke "$3" karena judul "$3" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Nama berkas "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
-	'titleblacklist-invalid'          => '{{PLURAL:$1|Baris|Baris-baris}} dalam daftar hitam judul {{PLURAL:$1|berikut|berikut}} tak valid; silakan koreksi {{PLURAL:$1|item|item-item}} tersebut sebelum disimpan:',
-	'right-tboverride'                => 'Abaikan daftar hitam judul',
+	'titlewhitelist'                       => '# Ini adalah daftar putih. Gunakan "#" untuk komentar',
+	'titleblacklist-forbidden-edit'        => 'Judul "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '"$2" tak dapat dipindahkan ke "$3" karena judul "$3" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Nama berkas "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Nama pengguna "$2" tidak diperbolehkan.
+Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|Baris|Baris-baris}} dalam daftar hitam judul {{PLURAL:$1|berikut|berikut}} tak valid; silakan koreksi {{PLURAL:$1|item|item-item}} tersebut sebelum disimpan:',
+	'right-tboverride'                     => 'Abaikan daftar hitam judul',
 );
 
 /** Italian (Italiano)
@@ -390,16 +417,17 @@ $messages['id'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'titleblacklist-desc'             => 'Consente di proibire la creazione di pagine e account utente con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
-	'titleblacklist'                  => '# Lista dei titoli non consentiti.
+	'titleblacklist-desc'                  => 'Consente di proibire la creazione di pagine e account utente con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist'                       => '# Lista dei titoli non consentiti.
 # È impedita la creazione delle pagine e degli account il cui nome corrisponde a un\'espressione regolare indicata di seguito.
 # Usare "#" per le righe di commento.',
-	'titlewhitelist'                  => '# Questa è una whitelist dei titoli. Usare "#" per le righe di commento',
-	'titleblacklist-forbidden-edit'   => 'La creazione di pagine con titolo "$2" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => 'Impossibile spostare la pagina "$2" al titolo "$3" in quanto la creazione di pagine con titolo "$3" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'La creazione di file con titolo "$2" è stato impedito. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
-	'titleblacklist-invalid'          => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
-	'right-tboverride'                => 'Ignora la blacklist dei titoli',
+	'titlewhitelist'                       => '# Questa è una whitelist dei titoli. Usare "#" per le righe di commento',
+	'titleblacklist-forbidden-edit'        => 'La creazione di pagine con titolo "$2" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => 'Impossibile spostare la pagina "$2" al titolo "$3" in quanto la creazione di pagine con titolo "$3" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'La creazione di file con titolo "$2" è stato impedito. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'La creazione di utenti con nome "$2" è stata impedita. La voce corrispondente nell\'elenco dei nomi non consentiti è la seguente: <code>$1</code>',
+	'titleblacklist-invalid'               => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
+	'right-tboverride'                     => 'Ignora la blacklist dei titoli',
 );
 
 /** Japanese (日本語)
@@ -502,8 +530,8 @@ $messages['ksh'] = array(
  * @author UV
  */
 $messages['la'] = array(
-	'titleblacklist'                  => '# Hic est index titulorum prohibitorum. Tituli qui congruunt cum
-# una ex expressionibus regularis sequentibus creari non possunt.
+	'titleblacklist'                  => '# Hic est index titulorum prohibitorum. Tituli usoresque qui congruunt
+# cum una ex expressionibus regularis sequentibus creari non possunt.
 # Utere "#" pro commentariis.',
 	'titlewhitelist'                  => '# Hic est index titulorum permissorum. Utere "#" pro commentariis',
 	'titleblacklist-forbidden-edit'   => 'Pagina cum titulo "$2" creari non potest. Hic titulus congruit cum expressione regulari: <code>$1</code>',
@@ -738,15 +766,17 @@ $messages['sah'] = array(
  * @author Helix84
  */
 $messages['sk'] = array(
-	'titleblacklist-desc'             => 'Umožňuje zakázať tvorbu stránok s určenými názvami: [[MediaWiki:Titleblacklist|Čierna listina názvov]] a [[MediaWiki:Titlewhitelist|Biela listina názvov]]',
-	'titleblacklist'                  => '# Toto je čierna listina názvov stránok. Názvy, ktoré zodpovedajú tu uvedenému regulárnemu výrazu nebude možné vytvoriť.
+	'titleblacklist-desc'                  => 'Umožňuje zakázať tvorbu stránok a používateľských účtov s určenými názvami na základe [[MediaWiki:Titleblacklist|čiernej listiny názvov]] a [[MediaWiki:Titlewhitelist|bielej listiny názvov]]',
+	'titleblacklist'                       => '# Toto je čierna listina názvov stránok. Názvy stránok a účtov, ktoré zodpovedajú tu uvedenému regulárnemu výrazu nebude možné vytvoriť.
 # Komentáre začínajú znakom „#“.',
-	'titlewhitelist'                  => '# Toto je biela listina názvov stránok. Riadky komentárov začínajú znakom „#“',
-	'titleblacklist-forbidden-edit'   => 'Vytvorenie stránky z názovom „$2“ bolo zakázané. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => '„$2“ nie je možné presunúť na „$3“, pretože vytvorenie stránky z názovom „$3“ bolo zakázané. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Bolo zakázané vytvorenie súboru s názvom „$2“. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
-	'titleblacklist-invalid'          => '{{PLURAL:$1|Nasledovný riadok|Nasledovné riadky}} čiernej listiny názvov stránok {{PLURAL:$1|je neplatný|sú neplatné}} a je potrebné {{PLURAL:$1|ho|ich}} opraviť pred uložením stránky:',
-	'right-tboverride'                => 'Prekonať čiernu listinu názvov',
+	'titlewhitelist'                       => '# Toto je biela listina názvov stránok. Riadky komentárov začínajú znakom „#“',
+	'titleblacklist-forbidden-edit'        => 'Vytvorenie stránky z názovom „$2“ bolo zakázané. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => '„$2“ nie je možné presunúť na „$3“, pretože vytvorenie stránky z názovom „$3“ bolo zakázané. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Bolo zakázané vytvorenie súboru s názvom „$2“. Zodpovedá tejto položke čiernej listiny: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Bolo zakázané vytvorenie používateľského mena „$2”.
+Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
+	'titleblacklist-invalid'               => '{{PLURAL:$1|Nasledovný riadok|Nasledovné riadky}} čiernej listiny názvov stránok {{PLURAL:$1|je neplatný|sú neplatné}} a je potrebné {{PLURAL:$1|ho|ich}} opraviť pred uložením stránky:',
+	'right-tboverride'                     => 'Prekonať čiernu listinu názvov',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
