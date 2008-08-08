@@ -95,7 +95,7 @@ class TitleBlacklist {
 				}
 			}
 		} elseif( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
-			return $this->getHttp( $source['src'] );
+			return self::getHttp( $source['src'] );
 		} elseif( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
 			if( file_exists( $source['src'] ) ) {
 				return file_get_contents( $source['src'] );
