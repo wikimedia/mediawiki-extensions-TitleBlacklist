@@ -106,10 +106,10 @@ $messages['bcc'] = array(
  * @author Borislav
  */
 $messages['bg'] = array(
-	'titleblacklist-desc'             => 'Позволява забраната за създаване на страници с указаните заглавия: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc'             => 'Позволява на администраторите да забраняват създаването на страници и потребителски сметки чрез [[MediaWiki:Titleblacklist|черен]] и [[MediaWiki:Titlewhitelist|бял списък]].',
 	'titleblacklist'                  => '# Страницата съдържа черен списък за заглавия на страници
-# Страници, чиито заглавия съответстват с регулярните изрази в списъка, не могат да бъдат създавани или редактирани
-# За коментари се използва символът "#"',
+# Страници и потребители, чиито имена съответстват с регулярните изрази в списъка, не могат да бъдат създавани.
+# За коментари се използва символът „#“.',
 	'titleblacklist-forbidden-edit'   => 'Страницата "$2" не може да бъде създадена, тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => 'Страницата "$2" не може да бъде преместена като "$3", тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Файлът "$2" не може да бъде качен, тъй като съвпада със запис от черния списък: <code>$1</code>',
@@ -544,9 +544,8 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'titleblacklist-desc'           => "Erlaabt den Administrateuren et d'Ulleeë vu Säiten a Benotzerkonten mat spezifischen Titelen iwwer en [[MediaWiki:Titleblacklist|schwaarz Lëscht]] an eng [[MediaWiki:Titlewhitelist|wäiss Lëscht]] ze verbidden",
-	'titleblacklist'                => '# Dëst ass een Titel deen op enger schwaarzer Lëscht steet.
-# All Titel op den dës Ausdréck passe kann net ugeluecht ginn
-# Benotzt "#" fir Bemierkungen ze schreiwen',
+	'titleblacklist'                => '# Dëst ass een Titel deen op enger schwaarzer Lëscht steet. Titelen a Benotzernimm op déi dës Ausdréck passe kann net ugeluecht ginn
+# Benotzt "#" fir Bemierkungen',
 	'titlewhitelist'                => "# Dëst ass d'''Whitelist'' vun den Titelen. Benotzt \"#\" fir Bemierkungen.",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
@@ -822,15 +821,17 @@ $messages['su'] = array(
  * @author M.M.S.
  */
 $messages['sv'] = array(
-	'titleblacklist-desc'             => 'Ger möjlighet att förhindra att sidor med vissa titlar skapas, genom att använda  [[MediaWiki:Titleblacklist]] och [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Det här är en lista över förbjudna sidtitlar. Titlar som matchar ett reguljärt uttryck här kan inte skapas.
+	'titleblacklist-desc'                  => 'Låter administratörer förbjuda skapande av sidor och användarkonton genom en [[MediaWiki:Titleblacklist|svartlista]] och en [[MediaWiki:Titlewhitelist|vitlista]].',
+	'titleblacklist'                       => '# Det här är en svartlista för titlar. Titlar och användarnamn som matchar ett reguljärt uttryck här kan inte skapas.
 # Använd "#" för kommentarer.',
-	'titlewhitelist'                  => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.',
-	'titleblacklist-forbidden-edit'   => 'Sidtiteln "$2" har stoppats från att skapas. Den matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
-	'titleblacklist-forbidden-move'   => 'Sidan "$2" kan inte flyttas till "$3", eftersom titeln "$3" har förbjudits att skapas. Titeln matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Filnamnet "$2" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
-	'titleblacklist-invalid'          => 'Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:',
-	'right-tboverride'                => 'Upphäva den svarta listan över titlar',
+	'titlewhitelist'                       => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.',
+	'titleblacklist-forbidden-edit'        => 'Sidtiteln "$2" har stoppats från att skapas. Den matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-forbidden-move'        => 'Sidan "$2" kan inte flyttas till "$3", eftersom titeln "$3" har förbjudits att skapas. Titeln matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-forbidden-upload'      => 'Filnamnet "$2" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Användarnamnet "$2" kan inte skapas.
+Det matchar följande element i svartlistan: <code>$1</code>',
+	'titleblacklist-invalid'               => 'Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:',
+	'right-tboverride'                     => 'Upphäva den svarta listan över titlar',
 );
 
 /** Telugu (తెలుగు)
@@ -885,9 +886,8 @@ $messages['uk'] = array(
  * @author Candalua
  */
 $messages['vec'] = array(
-	'titleblacklist-desc'             => 'Consente de proibir la creazion de pagine con i titoli indicà in [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist'                  => '# Lista dei titoli mìa consentìi.
-# Xe inpedìa la creazion de le pagine el cui titolo el corisponde a na espression regolar indicà de seguito.
+	'titleblacklist-desc'             => 'Consente ai aministradori de proibir la creazion de pagine con i titoli indicà su la [[MediaWiki:Titleblacklist|lista nera]] e su la [[MediaWiki:Titlewhitelist|lista bianca]]',
+	'titleblacklist'                  => '# Lista dei titoli mìa consentìi. Xe inpedìa la creazion de le pagine el cui titolo el corisponde a na espression regolar indicà de seguito.
 # Dòpara "#" par le righe de comento.',
 	'titlewhitelist'                  => '# Sta qua la xe na lista bianca dei titoli. Dòpara "#" par le righe de comento',
 	'titleblacklist-forbidden-edit'   => 'La creazion de pagine con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
