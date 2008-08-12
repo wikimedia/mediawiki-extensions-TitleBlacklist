@@ -343,14 +343,17 @@ $messages['hi'] = array(
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
-	'titleblacklist-desc' => 'Onemogućava stvaranje stranica s određenim naslovima: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Ovo je popis zabranjenih naslova. Naslovi koji se podudaraju s regularnim izrazom se ne mogu kreirati.
+	'titleblacklist-desc' => 'Omogućava administratorima postavljanje zabrane kreiranja stranica ili računa s [[MediaWiki:Titleblacklist|crnim popisom]] i [[MediaWiki:Titlewhitelist|bijelim popisom]]',
+	'titleblacklist' => '# Ovo je popis zabranjenih naslova. Naslovi i računi koji se podudaraju s regularnim izrazom se ne mogu kreirati.
 # Koristite "#" za komentare.',
 	'titlewhitelist' => "# Ovo je tzv. ''bijela knjiga'' ili ''whitelist'' imena članaka. Rabite \"#\" za komentar",
 	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za kreiranje.  Podudara se sa sljedećom stavkom popisa zabranjenih: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ne može biti premješten na "$3", jer je naslov "$3" zabranjeno kreirati. Podudara se sa sljedećom stavkom popisa zabranjenih: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Ime datoteke "$2" je zabranjeno kreirati. Poklapa se sa stavkom popisa zabranjenih: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Suradnički račun "$2" je zabranjen za kreiranje.
+Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
 	'titleblacklist-invalid' => 'Sljedeći {{PLURAL:$1|redak|redci}} u popisu zabranjenih naslova {{PLURAL:$1|je|su}} nedozvoljeni; molimo ispravite {{PLURAL:$1|ga|ih}} prije spremanja:',
+	'right-tboverride' => 'Premošćivanje naslova u crnom popisu',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -695,12 +698,13 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Beau
+ * @author Derbeth
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'titleblacklist-desc' => 'Pozwala zabezpieczyć przed możliwością utworzenia stron o określonych tytułach: [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# To jest lista zabronionych nazw artykułów. Artykuły o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogły zostać utworzone.
-# Użyj znaku „#” by utworzyć komentarz.',
+	'titleblacklist-desc' => 'Pozwala uniemożliwić tworzenie stron i kont użytkowników o określonych tytułach: [[MediaWiki:Titleblacklist|„czarna lista”]] — [[MediaWiki:Titlewhitelist|biała lista”]]',
+	'titleblacklist' => '# To jest lista zabronionych nazw tytułów. Artykuły i użytkownicy o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogli zostać utworzeni.
+# Użyj znaku „#”, by utworzyć komentarz.',
 	'titlewhitelist' => '# To jest lista dopuszczalnych nazw artykułów.
 # Użyj znaku „#” by utworzyć komentarz.',
 	'titleblacklist-forbidden-edit' => 'Nie wolno utworzyć artykułu o nazwie „$2”. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
