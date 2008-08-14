@@ -535,6 +535,22 @@ $messages['ko'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'titleblacklist-desc' => 'Määt et müjjelsch, bestemmpte neu Sigge un neu Metmaacher-Name övver en
+[[MediaWiki:Titleblacklist|„schwatze Leß“]] un en
+[[MediaWiki:Titlewhitelist|Leß met Ußnahme dofun]] ze verbeede.',
+	'titleblacklist' => '# Dat hee eß en „schwatze Leß“ met verbodde Tittele för Sigge
+# un Metmaacher-Name. Dä ier Enhallt sen <i lang="en">regular expressions</i>,
+# wat do drop paß, kam_mer nit aanläje.
+# Donn „#“ aan der Aanfang fun en Reih, dann häß ene Kommentaa.',
+	'titlewhitelist' => '# Dat hee eß en Leß met Ußnahme fun de „schwatze Leß“ met verbodde
+# Tittele för Sigge un Metmaacher-Name. Dä ier Enhallt sen <i lang="en">regular expressions</i>,
+# wat do drop paß, kam_mer aanläje.
+# Donn „#“ aan der Aanfang fun en Reih, dann häß ene Kommentaa.',
+	'titleblacklist-forbidden-edit' => 'En Sigg met dämm Tittel „$2“ aanzelääje es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
+	'titleblacklist-forbidden-move' => 'Di Sigg met dämm Tittel „$2“ op dä Tittel „$3“ ömzenänne es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
+	'titleblacklist-forbidden-upload' => 'En Datei met dämm Tittel „$2“ huhzelade es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
+	'titleblacklist-forbidden-new-account' => 'Enne Metmaacher met dämm Name „$2“ aanzelääje es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
+	'titleblacklist-invalid' => '{{PLURAL:$1|De Reih unge stemmp nit un moß|De $1 Reije unge stimme nit un möße|Dat he sull}} för em Afspeichere eets en Odenung jebraat wäde:',
 	'right-tboverride' => 'De Liss met verbodde Sigge-Name övverjonn',
 );
 
@@ -719,8 +735,8 @@ $messages['pl'] = array(
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'titleblacklist-desc' => 'Permite a proibição da criação de páginas com títulos específicos: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos que se encaixem em uma regex não poderão ser criados.
+	'titleblacklist-desc' => 'Permite a proibição da criação de páginas e contas de utilizadores com títulos específicos através de uma [[MediaWiki:Titleblacklist|lista negra]] e uma [[MediaWiki:Titlewhitelist|lista de exceções]]',
+	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos e nomes de usuários que se encaixem em uma regex não poderão ser criados.
 # Utilize "#" para fazer comentários.',
 	'titlewhitelist' => '# Esta é uma lista branca de títulos. Utilize "#" para fazer comentários',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
@@ -915,8 +931,8 @@ $messages['vec'] = array(
  * @author Vinhtantran
  */
 $messages['vi'] = array(
-	'titleblacklist-desc' => 'Cấm không được tạo ra trang có các tên được định rõ: [[MediaWiki:Titleblacklist]] và [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Đây là danh sách đen về tên trang. Không được tạo ra các trang trùng với một biểu thức chính quy ở đây.
+	'titleblacklist-desc' => 'Cho phép các quản lý viên cấm không được tạo ra trang có các tên, theo [[MediaWiki:Titleblacklist|danh sách đen]] và [[MediaWiki:Titlewhitelist|danh sách trắng]]',
+	'titleblacklist' => '# Đây là danh sách đen về tên trang. Không được tạo ra các trang trùng tên với một biểu thức chính quy ở đây.
 # Hãy bắt đầu lời ghi chú với “#”.',
 	'titlewhitelist' => '# Đây là “danh sách trắng” về tên trang. Hãy bắt đầu lời ghi chú với “#”.',
 	'titleblacklist-forbidden-edit' => 'Không được tạo ra trang dưới tên “$2”.
@@ -925,6 +941,8 @@ Tên này trùng với mục sau trong danh sách đen: <code>$1</code>',
 Nó trùng với mục sau trong danh sách đen: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Không được tải lên tập tin dưới tên “$2”.
 Tên này trùng với khoản sau trong danh sách đen: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Không được tạo ra tài khoản “$2”.
+Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
 	'right-tboverride' => 'Bỏ qua danh sách các tựa trang bị cấm',
 );
