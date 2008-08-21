@@ -69,6 +69,27 @@ $messages['ar'] = array(
 	'right-tboverride' => 'تجاوز قائمة العناوين السوداء',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ramsis II
+ */
+$messages['arz'] = array(
+	'titleblacklist-desc' => 'بيسمح للاداريين انهم يمنعو انشاء الصفحات و حسابات اليوزرز  على حسب [[MediaWiki:Titleblacklist|البلاك ليست]] و [[MediaWiki:Titlewhitelist|اللستة المسموحة]]',
+	'titleblacklist' => '# دي بلاك  ليست للعناوين. العناوين واليوزرز اللي بيطابقو نعبير عادي هنا مش ممكن إنشاؤهم.
+# استعمل "#" للتعليقات.',
+	'titlewhitelist' => '# دي لستة بالعناوين المسموح بيها. استعمل "#" للتعليقات.',
+	'titleblacklist-forbidden-edit' => 'العنوان "$2" ممنوع من الانشاء.
+لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" ماينفعش تتنقل لـ "$3", لان العنوان "$3" ممنوع من الانشاء.
+لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'اسم الملف "$2" ممنوع من الانشاء.
+لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'اسم اليوزر "$2" ممنوع من الانشاء.
+لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|السطر دا|السطور دي}} اللي في البلاك ليست بتاعة العناوين مش {{PLURAL:$1|صح|صح}} ;
+لو سمحت تصلح {{PLURAL:$1|ـه|ـهم}} قبل الحفظ:',
+	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  */
@@ -703,13 +724,15 @@ Det tilsvarer følgende svartelisteelement: <code>$1</code>',
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'titleblacklist-desc' => "Permet d'interdire la creacion de paginas en foncion d'una [[MediaWiki:Titleblacklist|lista negra]] e d'una [[MediaWiki:Titlewhitelist|lista blanca]] de títols",
-	'titleblacklist' => '# Aquò es un títol mes en lista negra. Cada títol qu\'indica aicí lo còde regex es interdich a la creacion e a l\'edicion.
-# Utilizatz "#" per escriure de comentaris.',
+	'titleblacklist-desc' => "Permet als administrators d'interdire la creacion de paginas e de comptes d'utilizaires en foncion d'una [[MediaWiki:Titleblacklist|lista negra]] e d'una [[MediaWiki:Titlewhitelist|lista blanca]]",
+	'titleblacklist' => '# Aquò es un títol més en lista negra. Los títols e los utilizaires que correspondon aicí a una expression regulara pòdon pas èsser creats.
+# Utilizatz "#" per escriure los comentaris.',
 	'titlewhitelist' => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
 	'titleblacklist-forbidden-edit' => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspon a l'expression racionala : <code>$1</code>",
 	'titleblacklist-forbidden-move' => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspon a l\'expression racionala : <code>$1</code>',
 	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspon a l'expression racionala :  <code>\$1</code>",
+	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilizaire « $2 » es estat interdich a la creacion.
+Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
 	'right-tboverride' => 'Ignorar la lista negra dels títols',
 );
