@@ -306,13 +306,14 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
  * @author Xosé
  */
 $messages['gl'] = array(
-	'titleblacklist-desc' => 'Permite prohibir a creación de páxinas con títulos especificados: [[MediaWiki:Titleblacklist]] e [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título que coincida cunha destas expresións regulares.
+	'titleblacklist-desc' => 'Permítelle aos administradores prohibir a creación de páxinas e contas de usuario grazas a unha [[MediaWiki:Titleblacklist|lista negra]] e mais unha [[MediaWiki:Titlewhitelist|lista branca]] de títulos',
+	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título ou usuario que coincida cunha destas expresións regulares.
 # Use "#" para os comentarios.',
 	'titlewhitelist' => '# Este é un título da listaxe branca. Use "#" para os comentarios',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" non pode ser movido a "$3", porque o título "$3" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'O nome de arquivo "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'O nome do ficheiro "$2" foi protexido fronte á súa creación.
+Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
 	'right-tboverride' => 'Ignorar os títulos da listaxe negra (blacklist)',
 );
