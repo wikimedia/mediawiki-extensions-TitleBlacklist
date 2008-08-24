@@ -247,19 +247,23 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Agony
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
+ * @author Str4nd
  */
 $messages['fi'] = array(
-	'titleblacklist-desc' => 'Mahdollistaa sivujen luomisen estämisen nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
-	'titleblacklist' => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen luomisen.
-# Estettyjä ovat sivut, joiden sivunimet vastaavat täällä määritettyjä säännöllisiä lausekkeita.
+	'titleblacklist-desc' => 'Antaa ylläpitäjälle mahdollisuuden estää sivujen luonti nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
+	'titleblacklist' => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen tai käyttäjien luomisen.
+# Sivuja tai käyttäjiä, jotka vastaavat täällä määritettyihin säännöllisiin lausekkeisiin, ei voi luoda.
 # Käytä #-merkkiä kommentointiin.',
 	'titlewhitelist' => '# Tämä sivu sisältää sivujen sallittuja nimiä. Käytä #-merkkiä kommentointia varten.',
 	'titleblacklist-forbidden-edit' => 'Sivun ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Tiedoston ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Käyttäjätunnuksen ”$2” luonti on estetty.
+Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
 	'right-tboverride' => 'Ohittaa sivunimien mustalista',
 );
@@ -467,6 +471,7 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author JtFuruhata
+ * @author Muttley
  */
 $messages['ja'] = array(
 	'titleblacklist-desc' => '管理者が[[MediaWiki:Titleblacklist|ブラックリスト]] および [[MediaWiki:Titlewhitelist|ホワイトリスト]]を使ってページおよび利用者アカウントの新規作成を禁止できるようにする',
@@ -476,6 +481,7 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-edit' => '"$2" という名前での新規作成は禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
 	'titleblacklist-invalid' => 'タイトルブラックリスト{{PLURAL:$1|に|に}}不正な{{PLURAL:$1|行が|行が複数}}存在します。保存する前に{{PLURAL:$1|これ|これら}}を修正してください:',
 );
 
