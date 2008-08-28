@@ -70,22 +70,23 @@ $messages['ar'] = array(
 );
 
 /** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
  * @author Ramsis II
  */
 $messages['arz'] = array(
 	'titleblacklist-desc' => 'بيسمح للاداريين انهم يمنعو انشاء الصفحات و حسابات اليوزرز  على حسب [[MediaWiki:Titleblacklist|البلاك ليست]] و [[MediaWiki:Titlewhitelist|اللستة المسموحة]]',
-	'titleblacklist' => '# دي بلاك  ليست للعناوين. العناوين واليوزرز اللي بيطابقو نعبير عادي هنا مش ممكن إنشاؤهم.
+	'titleblacklist' => '# دى بلاك  ليست للعناوين. العناوين واليوزرز اللى بيطابقو نعبير عادى هنا مش ممكن إنشاؤهم.
 # استعمل "#" للتعليقات.',
-	'titlewhitelist' => '# دي لستة بالعناوين المسموح بيها. استعمل "#" للتعليقات.',
+	'titlewhitelist' => '# دى لستة بالعناوين المسموح بيها. استعمل "#" للتعليقات.',
 	'titleblacklist-forbidden-edit' => 'العنوان "$2" ممنوع من الانشاء.
-لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ماينفعش تتنقل لـ "$3", لان العنوان "$3" ممنوع من الانشاء.
-لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'اسم الملف "$2" ممنوع من الانشاء.
-لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
+لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'اسم اليوزر "$2" ممنوع من الانشاء.
-لانه مطابق لمدخلة في البلاك ليست دي: <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|السطر دا|السطور دي}} اللي في البلاك ليست بتاعة العناوين مش {{PLURAL:$1|صح|صح}} ;
+لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|السطر دا|السطور دي}} اللى فى البلاك ليست بتاعة العناوين مش {{PLURAL:$1|صح|صح}} ;
 لو سمحت تصلح {{PLURAL:$1|ـه|ـهم}} قبل الحفظ:',
 	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين',
 );
@@ -273,10 +274,11 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
  * @author IAlex
  * @author Meithal
  * @author Urhixidur
+ * @author Zetud
  */
 $messages['fr'] = array(
 	'titleblacklist-desc' => "Permet aux administrateur d’interdire la création de pages et des comptes utilisateur en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]]",
-	'titleblacklist' => '# Ceci est un titre mis en liste noire. Les titres et les utilisateur qui correspondent ici à une expression régulière ne peuvent être créés.
+	'titleblacklist' => '# Ceci est un titre mis en liste noire. Les titres et les utilisateurs qui correspondent ici à une expression régulière ne peuvent être créés.
 # Utilisez « # » pour écrire les commentaires.',
 	'titlewhitelist' => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
 	'titleblacklist-forbidden-edit' => "Le titre « $2 » est interdit à la création.
@@ -957,6 +959,7 @@ $messages['vec'] = array(
 	'titleblacklist-forbidden-edit' => 'La creazion de pagine con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'No se pode spostar la pagina "$2" al titolo "$3" in quanto la creazion de pagine con titolo "$3" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'La creazion de file con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'La creassion de utenti co\' nome "$2" la xe stà proibìa. La voçe corispondente in tel\'elenco dei nomi mìa consentìi la xe la seguente: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} de l'elenco dei titoli mìa consentìi {{PLURAL:$1|no la xe valida|no le xe valide}}; se prega de corègiar {{PLURAL:$1|l'eror|i erori}} prima de salvar la pagina.",
 	'right-tboverride' => 'Ignora la lista nera dei titoli',
 );
