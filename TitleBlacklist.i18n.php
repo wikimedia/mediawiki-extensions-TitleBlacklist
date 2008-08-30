@@ -214,8 +214,8 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
  * @author Yekrats
  */
 $messages['eo'] = array(
-	'titleblacklist-desc' => 'Permesas aŭ malpermesas kreadon de paĝoj kun specifaj titoloj: [[MediaWiki:Titleblacklist]] kaj [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Ĉi tiu estas titola nigralisto. Titoloj konguantaj regulan esprimon ĉi tie ne povas esti kreita.
+	'titleblacklist-desc' => 'Rajtigas la adminstrantojn malpermesi kreadon de paĝoj kaj uzanto-kontoj per [[MediaWiki:Titleblacklist|nigralisto]] kaj [[MediaWiki:Titlewhitelist|blankalisto]]',
+	'titleblacklist' => '# Jen titola nigralisto. Titoloj kaj uzantoj kiuj kongruas regulan esprimon ĉi tie ne povas esti kreitaj.
 # Uzu "#" por komentoj.',
 	'titlewhitelist' => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
 	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
@@ -224,6 +224,8 @@ $messages['eo'] = array(
 Ĝi kongruas la jenan nigralistanon: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'La dosiernomo "$2" estis forbarita de kreado.
 Ĝi kongruas la jenan nigralistanon: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'La uzanto-nomo "$2" estis forbarita de kreado.
+Ĝi kongruas la jenan nigralistano: <code>$1</code>',
 	'titleblacklist-invalid' => 'La {{PLURAL:$1|jena linio|jenaj linioj}} en la titola nigralisto estas {{PLURAL:$1|nevalida|nevalidaj}}; 
 bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'right-tboverride' => 'Anstataŭigi la titolan nigraliston',
