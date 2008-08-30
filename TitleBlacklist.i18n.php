@@ -444,8 +444,7 @@ Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
 $messages['id'] = array(
 	'titleblacklist-desc' => 'Mengizinkan pencegahan pembuatan halaman dengan judul tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# Berikut adalah daftar hitam judul. Judul yang sesuai dengan suatu regex berikut tidak akan dibuat.
-# Gunakan "#" untuk komentar.
-',
+# Gunakan "#" untuk komentar.',
 	'titlewhitelist' => '# Ini adalah daftar putih. Gunakan "#" untuk komentar',
 	'titleblacklist-forbidden-edit' => 'Judul "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" tak dapat dipindahkan ke "$3" karena judul "$3" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
@@ -993,8 +992,7 @@ Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>
 $messages['yue'] = array(
 	'titleblacklist-desc' => '容許禁止開指定標題嘅版: [[MediaWiki:Titleblacklist]] 同 [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# 呢個係一個標題黑名單。同呢度配合正規表達式嘅標題係唔可以新開嘅。
-# 用 "#" 去做註解。
-',
+# 用 "#" 去做註解。',
 	'titlewhitelist' => '# 呢個係一個標題白名單。 用 "#" 去做註解',
 	'titleblacklist-forbidden-edit' => '個標題 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 唔可以搬到去 "$3"，由於個標題 "$3" 已經禁止咗去開。佢同下面黑名單嘅項目配合: <code>$1</code>',
