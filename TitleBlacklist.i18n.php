@@ -142,6 +142,8 @@ $messages['bg'] = array(
 	'titleblacklist-forbidden-edit' => 'Страницата "$2" не може да бъде създадена, тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Страницата "$2" не може да бъде преместена като "$3", тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Файлът "$2" не може да бъде качен, тъй като съвпада със запис от черния списък: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Забранено е създаването на потребителско име „$2“.
+То отговаря на следния запис от черния списък: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
 );
 
@@ -321,6 +323,8 @@ $messages['gl'] = array(
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" non pode ser movido a "$3", porque o título "$3" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O nome do ficheiro "$2" foi protexido fronte á súa creación.
+Coincide coa seguinte entrada da lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'O nome de usuario "$2" foi protexido fronte á súa creación.
 Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
 	'right-tboverride' => 'Ignorar os títulos da listaxe negra (blacklist)',
@@ -771,17 +775,18 @@ $messages['pl'] = array(
 /** Portuguese (Português)
  * @author 555
  * @author Malafaya
+ * @author Waldir
  */
 $messages['pt'] = array(
 	'titleblacklist-desc' => 'Permite a proibição da criação de páginas e contas de utilizadores com títulos específicos através de uma [[MediaWiki:Titleblacklist|lista negra]] e uma [[MediaWiki:Titlewhitelist|lista de exceções]]',
-	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos e nomes de usuários que se encaixem em uma regex não poderão ser criados.
+	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos de páginas e nomes de usuários que sejam filtrados por uma expressão regular desta lista não poderão ser criados.
 # Utilize "#" para fazer comentários.',
 	'titlewhitelist' => '# Esta é uma lista branca de títulos. Utilize "#" para fazer comentários',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" não pode ser movida para "$3" já que "$3" é um título impedido de ser criado. Se encaixa na seguinte entrada da lista-negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O ficheiro "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'O nome de utilizador "$2" foi banido da criação de utilizadores.
-O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
+O nome corresponde à seguinte entrada na [[MediaWiki:Titleblacklist|lista negra]]: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 	'right-tboverride' => 'Sobrepor a lista negra de títulos',
 );
