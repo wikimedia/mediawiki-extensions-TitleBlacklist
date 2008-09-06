@@ -786,7 +786,7 @@ $messages['pt'] = array(
 	'titleblacklist-forbidden-move' => '"$2" não pode ser movida para "$3" já que "$3" é um título impedido de ser criado. Se encaixa na seguinte entrada da lista-negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O ficheiro "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'O nome de utilizador "$2" foi banido da criação de utilizadores.
-O nome corresponde à seguinte entrada na [[MediaWiki:Titleblacklist|lista negra]]: <code>$1</code>',
+O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 	'right-tboverride' => 'Sobrepor a lista negra de títulos',
 );
