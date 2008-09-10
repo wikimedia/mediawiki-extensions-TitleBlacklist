@@ -394,8 +394,8 @@ Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'titleblacklist-desc' => 'Dowola wutworjenje stronow z podatymi titulemi zakazać: [[MediaWiki:Titleblacklist]] a [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# To je čorna lisćina nastawkowych mjenow. Titule, kotrež so na regularny wuraz hodźa,  njehodźa so wutworjeć.
+	'titleblacklist-desc' => 'Dowola administratoram wutworjenje stronow a wužiwarskich kontow z pomocu [[MediaWiki:Titleblacklist|čorneje lisćiny]] a [[MediaWiki:Titlewhitelist|běłeje lisćiny]] zakazać',
+	'titleblacklist' => '# To je čorna lisćina titulow. Titule a wužiwarjo, kotrež so na regularny wuraz hodźa, njehodźa so wutworić.
 # Wužij "#" za komentary.',
 	'titlewhitelist' => '# Tuta je běła lisćina titulow. Wužij "#" za komentary',
 	'titleblacklist-forbidden-edit' => 'Strona z titulom "$2" njeda so wutworić. Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
@@ -560,6 +560,7 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
 );
 
 /** Korean (한국어)
+ * @author Kwj2772
  * @author ToePeu
  */
 $messages['ko'] = array(
@@ -567,6 +568,8 @@ $messages['ko'] = array(
 [[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용합니다.',
 	'titleblacklist-forbidden-edit' => '"$2"는 만들기가 금지된 제목입니다.
 다음과 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
+문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -941,9 +944,8 @@ $messages['tg-cyrl'] = array(
  * @author Ahonc
  */
 $messages['uk'] = array(
-	'titleblacklist-desc' => 'Дає змогу заборонити створення сторінок з певними назвами: [[MediaWiki:Titleblacklist]] та [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Це список заборонених назв.
-# Сторінки, назви яких підпадають під регулярні вирази з цього списку, не можуть бути створені.
+	'titleblacklist-desc' => 'Дає змогу заборонити створення певних сторінок та облікових записів з допомогою [[MediaWiki:Titleblacklist|чорного]] та [[MediaWiki:Titlewhitelist|білого]] списків.',
+	'titleblacklist' => '# Це список заборонених назв. Сторінки і користувачі, назви яких підпадають під регулярні вирази з цього списку, не можуть бути створені.
 # Використовуйте "#" для коментарів.',
 	'titlewhitelist' => '# Це "білий список" назв. Використовуйте "#" для коментарів.',
 	'titleblacklist-forbidden-edit' => 'Сторінку з назвою "$2" заборонено створювати. Вона підпадає під наступний запис із списку заборонених назв: <code>$1</code>',
@@ -951,6 +953,8 @@ $messages['uk'] = array(
 Вона підпадає під наступний запис із списку заборонених назв: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Назва файлу "$2" є забороненою для створення.
 Вона підпадає під наступний запис із списку заборонених назв: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Заборонено використовувати ім\'я користувача "$2".
+Ім\'я відповідає наступному запису з чорного списку: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступнинй рядок|Наступні рядки}} списку заборонених назв є {{PLURAL:$1|помилковим|помилковими}};
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
 	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
