@@ -771,6 +771,8 @@ $messages['pl'] = array(
 	'titleblacklist-forbidden-edit' => 'Nie wolno utworzyć artykułu o nazwie „$2”. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nazwa „$3” jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Zabroniono tworzenia użytkownika o nazwie „$2”.
+Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
 	'right-tboverride' => 'Wyłącza ograniczenia nakładane przez rozszerzenie Title Blacklist, które blokuje tworzenie oraz edycję artykułów o nazwach pasujących do zdefiniowanych wzorców',
 );
@@ -944,7 +946,7 @@ $messages['tg-cyrl'] = array(
  * @author Ahonc
  */
 $messages['uk'] = array(
-	'titleblacklist-desc' => 'Дає змогу заборонити створення певних сторінок та облікових записів з допомогою [[MediaWiki:Titleblacklist|чорного]] та [[MediaWiki:Titlewhitelist|білого]] списків.',
+	'titleblacklist-desc' => 'Дає змогу адміністратораи заборонити створення певних сторінок та облікових записів за допомогою [[MediaWiki:Titleblacklist|чорного]] та [[MediaWiki:Titlewhitelist|білого]] списків.',
 	'titleblacklist' => '# Це список заборонених назв. Сторінки і користувачі, назви яких підпадають під регулярні вирази з цього списку, не можуть бути створені.
 # Використовуйте "#" для коментарів.',
 	'titlewhitelist' => '# Це "білий список" назв. Використовуйте "#" для коментарів.',
@@ -953,8 +955,8 @@ $messages['uk'] = array(
 Вона підпадає під наступний запис із списку заборонених назв: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Назва файлу "$2" є забороненою для створення.
 Вона підпадає під наступний запис із списку заборонених назв: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'Заборонено використовувати ім\'я користувача "$2".
-Ім\'я відповідає наступному запису з чорного списку: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => "Заборонено використовувати ім'я користувача «$2».
+Ім'я відповідає наступному запису з чорного списку: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступнинй рядок|Наступні рядки}} списку заборонених назв є {{PLURAL:$1|помилковим|помилковими}};
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
 	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
