@@ -84,27 +84,44 @@ class TitleBlacklistHooks {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
 		$title = $editor->mTitle;
-		if( $title->getNamespace() != NS_MEDIAWIKI || $title->getDBkey() != 'Titleblacklist' )
-			return true;
+		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 
-		$bl = $wgTitleBlacklist->parseBlacklist( $text );
-		$ok = $wgTitleBlacklist->validate( $bl );
-		if( count( $ok ) == 0 ) {
+			$bl = $wgTitleBlacklist->parseBlacklist( $text );
+			$ok = $wgTitleBlacklist->validate( $bl );
+			if( count( $ok ) == 0 ) {
+				return true;
+			}
+
+			wfLoadExtensionMessages( 'TitleBlacklist' );
+			$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
+			$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
+			$error = '<div class="errorbox">' .
+				$errmsg .
+				"\n" .
+				$errlines .
+				"</div>\n" .
+				"<br clear='all' />\n";
+		
+			// $error will be displayed by the edit class
+			return true;
+		} else if (!$section) {
+			# Block redirects to nonexistent blacklisted titles
+			$retitle = Title::newFromRedirect( $text );
+			if ( $retitle !== null && !$retitle->exists() )  {
+				$blacklisted = $wgTitleBlacklist->isBlacklisted( $retitle, 'create' );
+				if ( $blacklisted instanceof TitleBlacklistEntry ) {
+					wfLoadExtensionMessages( 'TitleBlacklist' );
+					$error = ( '<div class="errorbox">' .
+						   wfMsg( 'titleblacklist-forbidden-edit', 
+							  htmlspecialchars( $blacklisted->getRaw() ),
+							  $retitle->getFullText() ) .
+						   "</div>\n" .
+						   "<br clear='all' />\n" );
+				}
+			}
+
 			return true;
 		}
-
-		wfLoadExtensionMessages( 'TitleBlacklist' );
-		$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
-		$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
-		$error = '<div class="errorbox">' .
-			$errmsg .
-			"\n" .
-			$errlines .
-			"</div>\n" .
-			"<br clear='all' />\n";
-		
-		// $error will be displayed by the edit class
-		return true;
 	}
 	
 	/** ArticleSaveComplete hook */
