@@ -122,6 +122,7 @@ class TitleBlacklistHooks {
 
 			return true;
 		}
+		return true;
 	}
 	
 	/** ArticleSaveComplete hook */
