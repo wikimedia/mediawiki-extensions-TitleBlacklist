@@ -161,13 +161,14 @@ $messages['bn'] = array(
 );
 
 /** Catalan (Català)
+ * @author Aleator
  * @author Jordi Roqué
  * @author SMP
  */
 $messages['ca'] = array(
-	'titleblacklist-desc' => 'Permet de restringir la creació de pàgines amb els títols indicats a [[MediaWiki:Titleblacklist]] i [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => "# Això és una llista negra de títols. Aquelles pàgines que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creades.
-# Les línies que començen per \"#\" són comentaris.",
+	'titleblacklist-desc' => "Permet als administradors restringir la creació de pàgines i comptes d'usuari mitjançant una [[MediaWiki:Titleblacklist|llista negra]] i una [[MediaWiki:Titlewhitelist|llista blanca]]",
+	'titleblacklist' => "# Això és una llista negra de títols. Els títols i els usuaris que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creats.
+# Feu servir \"#\" per als comentaris.",
 	'titleblacklist-forbidden-edit' => 'El títol «$2» està prohibit i no es pot crear. Concorda amb la següent entrada de la llista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => "No es pot moure «$2» a «$3», perquè el títol «$3» està prohibit. Concorda amb l'entrada de la llista negra següent: <code>$1</code>",
 	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>$1</code>",
@@ -231,6 +232,25 @@ $messages['eo'] = array(
 	'titleblacklist-invalid' => 'La {{PLURAL:$1|jena linio|jenaj linioj}} en la titola nigralisto estas {{PLURAL:$1|nevalida|nevalidaj}}; 
 bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'right-tboverride' => 'Anstataŭigi la titolan nigraliston',
+);
+
+/** Spanish (Español)
+ * @author Remember the dot
+ * @author Sanbec
+ */
+$messages['es'] = array(
+	'titleblacklist-desc' => 'Permite que los administradores prohíban la creación de páginas y cuentas de usuario mediante una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]',
+	'titleblacklist' => '# Esta es una lista negra de títulos. No se pueden crear títulos o usuarios que coincidan con una de estas expresiones regulares.
+# Use «#» para comentarios.',
+	'titlewhitelist' => '# Ésta es una lista blanca de títulos. Use «#» para comentarios.',
+	'titleblacklist-forbidden-edit' => 'Se ha bloqueado la creación del título «$2».
+Coincide con la siguiente entrada de lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '«$2» no puede ser trasladado a «$3», porque se ha bloqueado la creación del título «$3».
+Coincide con la siguiente entrada de lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Se ha bloqueado el nombre de archivo «$2».
+Coincide con la entrada de lista negra <code>$1</code>.',
+	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};
+por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
 );
 
 /** Persian (فارسی)
@@ -825,9 +845,9 @@ $messages['ru'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
-	'titleblacklist-desc' => 'Манна ааттаммыт сирэйдэри айыыны/оҥорууну бобор: [[MediaWiki:Titleblacklist]] уонна [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Бу бобуллубут ааттар испииһэктэрэ. Бу испииһэккэ киирбит ханнык баҕарар ыстатыйа оҥоһуллар кыаҕа суох.
-# Ырытарга « # » бэлиэни туһаныҥ.',
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|Хара]] уонна [[MediaWiki:Titlewhitelist|Үрүҥ испииһэктэри]] туһанан сирэйдэри айары уонна саҥа дьону бэлиэтиири боборго аналлаах',
+	'titleblacklist' => '# Бу бобуллубут ааттар "хара" испииһэктэрэ. Испииһэккэ киирбит ханнык баҕарар ыстатыйа оҥоһуллар кыаҕа суох.
+# Быһаарыыны суруйарга "#" бэлиэни туһан.',
 	'titlewhitelist' => '# Бу ааттар «үрүҥ испииһэктэрэ». Ырытарга «#» бэлиэни туһаныҥ.',
 	'titleblacklist-forbidden-edit' => "<div align=\"center\" style=\"border: 1px solid #f88; padding: 0.5em; margin-bottom: 3px; font-size: 95%; width: auto;\">
 '''Маннык ааттаах сирэй \"\$2\" кыайан оҥоһуллубат''' <br />
