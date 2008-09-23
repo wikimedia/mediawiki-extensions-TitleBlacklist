@@ -242,7 +242,7 @@ $messages['es'] = array(
 	'titleblacklist-desc' => 'Permite que los administradores prohíban la creación de páginas y cuentas de usuario mediante una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]',
 	'titleblacklist' => '# Esta es una lista negra de títulos. No se pueden crear títulos o usuarios que coincidan con una de estas expresiones regulares.
 # Use «#» para comentarios.',
-	'titlewhitelist' => '# Ésta es una lista blanca de títulos. Use «#» para comentarios.',
+	'titlewhitelist' => '# Esta es una lista blanca de títulos. Use «#» para comentarios.',
 	'titleblacklist-forbidden-edit' => 'Se ha bloqueado la creación del título «$2».
 Coincide con la siguiente entrada de lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '«$2» no puede ser trasladado a «$3», porque se ha bloqueado la creación del título «$3».
