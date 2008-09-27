@@ -27,8 +27,10 @@ please correct {{PLURAL:$1|it|them}} before saving:',
 
 /** Message documentation (Message documentation)
  * @author Beau
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'titleblacklist-desc' => 'Short description of the Titleblacklist extension, shown in [[Special:Version]]. Do not translate or change links.',
 	'right-tboverride' => '{{doc-right}}',
 );
 
@@ -249,6 +251,8 @@ Coincide con la siguiente entrada de lista negra: <code>$1</code>',
 Coincide con la siguiente entrada de lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Se ha bloqueado el nombre de archivo «$2».
 Coincide con la entrada de lista negra <code>$1</code>.',
+	'titleblacklist-forbidden-new-account' => 'Se prohibe crear el nombre de usuario «$2».
+Coincide con la siguiente entrada de la lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};
 por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
 );
