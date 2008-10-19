@@ -646,6 +646,8 @@ $messages['lb'] = array(
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'De Fichiersnumm "$2" kann net benotzt ginn.
 Hien ass identesch mat dësem Numm vun der schwaarzer Lëscht (black list): <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'De Benotzermumm "$2" gouf gespaart fir benotzt ze ginn.
+En ass esou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
 	'right-tboverride' => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
 );
 
