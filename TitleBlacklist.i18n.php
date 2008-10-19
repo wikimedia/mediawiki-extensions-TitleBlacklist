@@ -426,7 +426,10 @@ $messages['hsb'] = array(
 	'titleblacklist-forbidden-move' => 'Strona z titulom "$2" njeda so do "$3" přesunyć, dokelž titul "$3" njesmě so wutworjeć.
 Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Dataja z mjenom "$2" njesmě so wutworjeć. Kryje so ze slědowacym zapiskom čorneje lisćiny: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Wužiwarske mjeno "$2" bu za registrowanje zawrjene.
+Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Slědowaca linka|Slědowace linki}} w čornej lisćinje titulow {{PLURAL:$1|je njepłaćiwa|su njepłaćiwe}}; prošu skoriguj {{PLURAL:$1|ju|je}} před składowanjom:',
+	'right-tboverride' => 'Płaćiwosć čorneje lisćiny nastawkow zběhnyć',
 );
 
 /** Hungarian (Magyar)
