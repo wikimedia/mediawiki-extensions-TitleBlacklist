@@ -597,6 +597,7 @@ $messages['ko'] = array(
 다음과 일치합니다: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
 문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
+	'right-tboverride' => '문서 이름 블랙리스트를 무시',
 );
 
 /** Ripoarisch (Ripoarisch)
