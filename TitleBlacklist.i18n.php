@@ -537,11 +537,12 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
-	'titleblacklist-desc' => 'Marengaké pamenggakan nggawé kaca mawa irah-irahan tartamtu: [[MediaWiki:Titleblacklist]] lan [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Ing ngisor iki kapacak daftar ireng irah-irahan. Irah-irahan sing cocog karo sawijining regex ing kéné ora bisa digawé.
-# Enggonen "#" kanggo komentar.',
+	'titleblacklist-desc' => 'Marengaké pangurus menggak wong gawé kaca lan akun miturut [[MediaWiki:Titleblacklist|dhaptar-ireng]] lan [[MediaWiki:Titlewhitelist|dhaptar-putih]]',
+	'titleblacklist' => '# Iki dhaptar-ireng irah-irahan. Irah-irahan lan panganggo sing cocog karo sawijining regex ing kéné ora bisa digawé.
+# Anggonen "#" kanggo komentar.',
 	'titlewhitelist' => '# Daftar iki yaiku daftar putih irah-irahan. Enggonen "#" kanggo komentar',
 	'titleblacklist-forbidden-edit' => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
@@ -549,6 +550,8 @@ Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
 Irah-irahan iki soalé cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Jeneng berkas "$2" wis dilarang kanggo digawé. 
 Irah-irahan iku cocog karo èntri daftar ireng iki: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Jeneng panganggo "$2" wis dipenggak.
+Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} ing daftar ireng irah-irahan (judhul) {{PLURAL:$1|ing ngisor|ing ngisor}} iki ora absah; mangga dikorèksi {{PLURAL:$1|item|item-item}} iku sadurungé disimpen:',
 	'right-tboverride' => "''Override'' daftar ireng judhul",
 );
@@ -589,14 +592,14 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
 );
 
 /** Korean (한국어)
+ * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
  */
 $messages['ko'] = array(
 	'titleblacklist-desc' => '특정 제목의 문서를 만드는 것을 막습니다. 
 [[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용합니다.',
-	'titleblacklist-forbidden-edit' => '"$2"는 만들기가 금지된 제목입니다.
-다음과 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
 문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
 	'right-tboverride' => '문서 이름 블랙리스트를 무시',
@@ -755,6 +758,23 @@ $messages['nl'] = array(
 	'titleblacklist-forbidden-new-account' => 'De gebruikersnaam "$2" kan niet aangemaakt worden omdat het voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid' => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
 	'right-tboverride' => 'De zwarte lijst voor paginanamen negeren',
+);
+
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Frokor
+ */
+$messages['nn'] = array(
+	'titleblacklist-desc' => 'Gjev høve til å hindre at sider og brukarkontoar med visse titlar vert oppretta, ved å nytte [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist' => '# Dette er ei svartlisting for titlar. Titlar og brukernamn som passar med regulære uttrykk her kan ikkje opprettast.
+# Bruk «#» for kommentarar.',
+	'titlewhitelist' => '# Dette er ei kvitelisting for titlar. Bruk «#» for kommentarar.',
+	'titleblacklist-forbidden-edit' => 'Tittelen «$2» er stengd for oppretting. Han er blokkert av følgjande svartelistingselement: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '«$2» kan ikkje flyttast til «$3» fordi tittelen «$3» er stengd for oppretting. Han svarar til følgjande element i svartelistinga: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Filnamnet «$2» er blokkert for oppretting. Det svarar til følgjande svartelisteelement: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Brukarnamnet «$2» kan ikkje opprettast. 
+Det svarar til følgjande svartelisteelement: <code>$1</code>',
+	'titleblacklist-invalid' => 'Følgjande {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; ver venleg å rette {{PLURAL:$1|ho|dei}} før du lagrar:',
+	'right-tboverride' => 'Overkøyre tittelsvartelista',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
