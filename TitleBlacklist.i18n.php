@@ -802,9 +802,9 @@ $messages['oc'] = array(
 	'titleblacklist' => '# Aquò es un títol mes en lista negra. Los títols e los utilizaires que correspondon aicí a una expression regulara pòdon pas èsser creats.
 # Utilizatz "#" per escriure los comentaris.',
 	'titlewhitelist' => '# Aquò es la lista blanca dels títols. Utilizatz « # » pels comentaris.',
-	'titleblacklist-forbidden-edit' => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspon a l'expression racionala : <code>$1</code>",
-	'titleblacklist-forbidden-move' => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspon a l\'expression racionala : <code>$1</code>',
-	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspon a l'expression racionala :  <code>\$1</code>",
+	'titleblacklist-forbidden-edit' => "La pagina intitolada « $2 » pòt pas èsser creada. Dins la lista negra, correspond a l'expression racionala : <code>$1</code>",
+	'titleblacklist-forbidden-move' => 'La page intitolada "$2" pòt pas èsser renomenada "$3". Dins la lista negra, correspond a l\'expression racionala : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => "'''Un fichièr nomenat \"\$2\" pòt pas èsser telecargat.''' <br /> Dins la lista negra, correspond a l'expression racionala :  <code>\$1</code>",
 	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilizaire « $2 » es estat interdich a la creacion.
 Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
