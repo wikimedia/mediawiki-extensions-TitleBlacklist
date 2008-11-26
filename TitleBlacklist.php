@@ -18,9 +18,10 @@ $wgExtensionCredits['other'][] = array(
 	'descriptionmsg' => 'titleblacklist-desc',
 );
 
-$wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlacklist.i18n.php';
-$wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
-$wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['TitleBlacklist'] = $dir . 'TitleBlacklist.i18n.php';
+$wgAutoloadClasses['TitleBlacklist']      = $dir . 'TitleBlacklist.list.php';
+$wgAutoloadClasses['TitleBlacklistHooks'] = $dir . 'TitleBlacklist.hooks.php';
 
 /** @defgroup Title blacklist source types
  *  @{
