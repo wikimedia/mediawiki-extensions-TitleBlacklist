@@ -522,7 +522,7 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-move' => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
-	'titleblacklist-invalid' => 'タイトルブラックリスト{{PLURAL:$1|に|に}}不正な{{PLURAL:$1|行が|行が複数}}存在します。保存する前に{{PLURAL:$1|これ|これら}}を修正してください:',
+	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の行は正しく記述できていません。保存する前に修正してください:',
 	'right-tboverride' => 'タイトルブラックリストを上書きする',
 );
 
@@ -601,6 +601,7 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
 $messages['ko'] = array(
 	'titleblacklist-desc' => '특정 제목의 문서를 만드는 것을 막습니다. 
 [[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용합니다.',
+	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.',
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
 문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
