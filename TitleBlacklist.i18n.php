@@ -162,6 +162,17 @@ $messages['bn'] = array(
 	'titleblacklist-invalid' => 'শিরোনাম কালোতালিকার এই {{PLURAL:$1|টি লাইন|টি লাইন}} অবৈধ; অনুগ্রহ করে সংরক্ষণ করার আগে  {{PLURAL:$1|এটি|এগুলি}} সংশোধন করুন:',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za pravljenje.
+Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Datoteka sa imenom "$2" je zabranjena za postavljanje.
+Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
+	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova',
+);
+
 /** Catalan (Català)
  * @author Aleator
  * @author Jordi Roqué
