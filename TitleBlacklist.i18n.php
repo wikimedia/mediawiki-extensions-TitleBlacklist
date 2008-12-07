@@ -611,8 +611,7 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  * @author ToePeu
  */
 $messages['ko'] = array(
-	'titleblacklist-desc' => '특정 제목의 문서를 만드는 것을 막습니다. 
-[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용합니다.',
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용하여 특정 제목의 문서를 만드는 것을 막습니다.',
 	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.',
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
