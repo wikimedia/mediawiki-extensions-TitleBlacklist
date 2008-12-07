@@ -166,6 +166,7 @@ $messages['bn'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'titleblacklist-desc' => 'Omogućuje administratorima za zabrane pravljenje stranica i korisničkih računa putem spiskova [[MediaWiki:Titleblacklist|zabranjenih]] i [[MediaWiki:Titlewhitelist|dopuštenih]] naslova',
 	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za pravljenje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Datoteka sa imenom "$2" je zabranjena za postavljanje.
