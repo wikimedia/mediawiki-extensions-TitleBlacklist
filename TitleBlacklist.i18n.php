@@ -166,11 +166,16 @@ $messages['bn'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
-	'titleblacklist-desc' => 'Omogućuje administratorima za zabrane pravljenje stranica i korisničkih računa putem spiskova [[MediaWiki:Titleblacklist|zabranjenih]] i [[MediaWiki:Titlewhitelist|dopuštenih]] naslova',
+	'titleblacklist-desc' => 'Omogućuje administratorima da zabrane pravljenje stranica i korisničkih računa putem spiskova [[MediaWiki:Titleblacklist|zabranjenih]] i [[MediaWiki:Titlewhitelist|dopuštenih]] naslova',
+	'titleblacklist' => '# Ovo je spisak zabranjenih naslova. Naslovi i korisnici koji se nalaze na ovom spisku neće moći biti napravljeni.
+# Koristite "#" za komentare.',
+	'titlewhitelist' => '# Ovo je spisak dopuštenih naslova. Koristite "#" za komentare.',
 	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za pravljenje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Datoteka sa imenom "$2" je zabranjena za postavljanje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Korisničko ime "$2" je zabranjeno za pravljenje.
+Ono se nalazi na spisku zabranjenih naslova pod stavkom: <code>$1</code>',
 	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova',
 );
 
@@ -929,9 +934,10 @@ Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Millosh
+ * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
-	'titleblacklist-desc' => 'Допушта забрану стварања страна с одређеним насловима: [[MediaWiki:Titleblacklist]] и [[MediaWiki:Titlewhitelist]].',
+	'titleblacklist-desc' => 'Допушта забрану стварања страна с одређеним насловима: [[MediaWiki:Titleblacklist|црна листа]] и [[MediaWiki:Titlewhitelist|бела листа]].',
 	'titleblacklist' => '# Ово је наслов црног списка. Наслови који садрже регуларни израз из овог списка не могу бити направљени.
 # Користи "#" за коментаре.',
 	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.',
