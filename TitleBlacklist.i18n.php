@@ -355,6 +355,27 @@ Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La legne siuventa|Les legnes siuventes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} : vos éte envitâ a {{PLURAL:$1|la|les}} corregiér devant que sôvar.',
 );
 
+/** Irish (Gaeilge)
+ * @author Alison
+ */
+$messages['ga'] = array(
+	'titleblacklist-desc' => 'Ceadaionn na riarthóirí coisc a chur faoi leathanaigh agus cuntais nua a chruthú, de réir [[MediaWiki:Titleblacklist|dúliosta teideail]] agus [[MediaWiki:Titlewhitelist|bánliosta teideail]]',
+	'titleblacklist' => '# Seo é an dúliosta teideail. Ní féidir teideail ná úsáideoirí a chruthú atá meaitseáil slonn rialta anseo.
+# Usáideann "#" mar nótaí tráchta.',
+	'titlewhitelist' => '# Seo é an bánliosta teideail. Usáideann "#" mar nótaí tráchta.',
+	'titleblacklist-forbidden-edit' => 'Tá toirmeasc ar an teideal "$2 a chruthú.<br />
+Tá sé chomhoiriúna leis an iontráil dúliosta a leanas: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Ní féidir "$2" a athainmnigh go "$3", mar tá an teideal "$3" coiscthe faoi chruthú.
+Tá sé chomhoiriúint leis an iontráil seo a leanas sa dúliosta teideail: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Tá an ainm comhaid "$2" coiscthe faoi chruthú.
+Tá sé chomhoiriúint leis an iontráil seo a leanas sa dúliosta teideail: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Tá an ainm úsáideorá "$2" coiscthe faoi chruthú.
+Tá sé chomhoiriúint leis an iontráil seo a leanas sa dúliosta teideail: <code>$1</code>',
+	'titleblacklist-invalid' => "Tá {{PLURAL:$1|an|na}} {{PLURAL:$1|líne|líonta}} seo a leanas neamhbhailí sa dúliosta teideail;
+ceartaigh {{PLURAL:$1|é|iad}} roimh shábháil, le d'thoil:",
+	'right-tboverride' => 'Sáraíocht an dúliosta teideail',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Toliño
