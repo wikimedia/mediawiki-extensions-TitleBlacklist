@@ -319,6 +319,7 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 );
 
 /** French (Français)
+ * @author Elfix
  * @author Grondin
  * @author IAlex
  * @author Meithal
@@ -335,7 +336,7 @@ Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
 	'titleblacklist-forbidden-move' => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
 	'titleblacklist-forbidden-upload' => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => 'Le nom d’utilisateur « $2 » a été banni à la création.
-Il corresponds à l’entrée suivante de la liste noire : <code>$1</code>',
+Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 	'right-tboverride' => 'Ignorer la liste noire des titres',
 );
@@ -638,6 +639,8 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  */
 $messages['ko'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용하여 특정 제목의 문서를 만드는 것을 막습니다.',
+	'titleblacklist' => ' # 이 문서는 문서 이름 블랙이스트입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 생성될 수 없습니다.
+ # 의견은 "#"을 이용하여 적어주십시오.',
 	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.',
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
