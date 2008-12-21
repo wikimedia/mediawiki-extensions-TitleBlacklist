@@ -645,6 +645,8 @@ $messages['ko'] = array(
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
 문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
+	'titleblacklist-invalid' => '문서 제목 블랙리스트의 다음 줄이 잘못되었습니다;
+저장하기 전에 올바르게 고쳐 주세요:',
 	'right-tboverride' => '문서 이름 블랙리스트를 무시',
 );
 
