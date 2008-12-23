@@ -131,6 +131,23 @@ $messages['bcc'] = array(
 	'right-tboverride' => 'لیست سیاه عنوان لغو کن',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ * @author Red Winged Duck
+ */
+$messages['be-tarask'] = array(
+	'titleblacklist-desc' => 'Дазваляе адміністратарам забараніць стварэньне старонак і рахункаў удзельнікаў з дапамогай [[MediaWiki:Titleblacklist|чорнага]] і [[MediaWiki:Titlewhitelist|белага]] сьпісаў',
+	'titleblacklist' => '# Гэта сьпіс забароненых назваў. Старонкі і рахункі, назвы якіх супадуць з гэтымі выразамі, ня могуць быць створаныя.
+# Карыстайцеся «#» для камэнтароў.',
+	'titlewhitelist' => '# Гэта сьпіс дазволеных назваў. Карыстайцеся «#» для камэнтароў.',
+	'titleblacklist-forbidden-edit' => 'Назва «$2» забароненая для стварэньня.
+Яна супадае з наступным узорам у чорным сьпісе: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Старонка «$2» ня можа быць перанесеная ў «$3», таму што назва «$3» забароненая для стварэньня.
+Яна супадае з наступным узорам у чорным сьпісе: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Файл з назвай «$2» забаронены для стварэньня.
+Яна супадае з наступным узорам у чорным сьпісе: <code>$1</code>',
+);
+
 /** Bulgarian (Български)
  * @author Borislav
  * @author DCLXVI
@@ -172,10 +189,14 @@ $messages['bs'] = array(
 	'titlewhitelist' => '# Ovo je spisak dopuštenih naslova. Koristite "#" za komentare.',
 	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za pravljenje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" ne može biti premješten na "$3", jer je naslov "$3" zabranjen za pravljenje.
+Nalazi se kao slijedeća stavka spiska nepoželjnih naslova: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Datoteka sa imenom "$2" je zabranjena za postavljanje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Korisničko ime "$2" je zabranjeno za pravljenje.
 Ono se nalazi na spisku zabranjenih naslova pod stavkom: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Slijedeći red|Slijedeća $1 reda|Slijedećih $1 redova}} na spisku nepoželjnih naslova {{PLURAL:$1|je nevalidan|su nevalidna|je nevalidno}};
+molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
 	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova',
 );
 
