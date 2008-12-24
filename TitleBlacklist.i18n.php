@@ -147,6 +147,11 @@ $messages['be-tarask'] = array(
 Яна адпавядае наступнаму элемэнту чорнага сьпісу: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Файл з назвай «$2» забаронены для стварэньня.
 Яна адпавядае наступнаму элемэнту чорнага сьпісу: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Імя ўдзельніка «$2» было забаронена для стварэньня.
+Яно адпавядае наступнаму элемэнту чорнага сьпісу: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Наступны радок у|Наступныя радкі ў}} сьпісе забароненых назваў — {{PLURAL:$1|няслушны|няслушныя}};
+калі ласка, выпраўце {{PLURAL:$1|яго|іх}} перад захаваньнем:',
+	'right-tboverride' => 'Ігнараваньне чорнага сьпісу назваў',
 );
 
 /** Bulgarian (Български)
@@ -298,6 +303,7 @@ Coincide con la entrada de lista negra <code>$1</code>.',
 Coincide con la siguiente entrada de la lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};
 por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
+	'right-tboverride' => 'Ignorar la lista negra de títulos',
 );
 
 /** Persian (فارسی)
