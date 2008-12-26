@@ -802,7 +802,7 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
  * @author Fluence
  */
 $messages['nah'] = array(
-	'titleblacklist' => '# Inīn cateh ahcualli tōcāitl. 
+	'titleblacklist' => '# Inīn cateh ahcualli tōcāitl.  Ahmo huelīti tlachīhuāz tlatequitiltilīlli auh tōcāitl monēz nicān oppa.
 # Xictequitiltia "#" ic tlahtoa.',
 );
 
