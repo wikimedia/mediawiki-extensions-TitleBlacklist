@@ -667,12 +667,16 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  */
 $messages['ko'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용하여 특정 제목의 문서를 만드는 것을 막습니다.',
-	'titleblacklist' => ' # 이 문서는 문서 이름 블랙이스트입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 생성될 수 없습니다.
+	'titleblacklist' => ' # 이 문서는 문서 이름 블랙리스트입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 생성될 수 없습니다.
  # 의견은 "#"을 이용하여 적어주십시오.',
 	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.',
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
 	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
 문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '파일 이름 "$2"는 생성이 금지되었습니다.
+파일 이름이 블랙리스트의 다음과 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" 계정 이름은 생성이 금지되었습니다.
+해당 계정 이름은 블랙리스트의 다음과 일치합니다: <code>$1</code>',
 	'titleblacklist-invalid' => '문서 제목 블랙리스트의 다음 줄이 잘못되었습니다;
 저장하기 전에 올바르게 고쳐 주세요:',
 	'right-tboverride' => '문서 이름 블랙리스트를 무시',
