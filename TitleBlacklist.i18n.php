@@ -730,10 +730,14 @@ $messages['lb'] = array(
 	'titlewhitelist' => "# Dëst ass d'''Whitelist'' vun den Titelen. Benotzt \"#\" fir Bemierkungen.",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" kann net op "$3" geréckelt ginn, well den Titel "$3" net däerf ugeluecht ginn.
+En entsprécht dëser Rubrik vun der schwaarzr Lëscht: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'De Fichiersnumm "$2" kann net benotzt ginn.
 Hien ass identesch mat dësem Numm vun der schwaarzer Lëscht (black list): <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'De Benotzermumm "$2" gouf gespaart fir benotzt ze ginn.
 En ass esou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
+	'titleblacklist-invalid' => 'Dës {{PLURAL:$1|Linn|Linnen}} op der schwaarzer Lëscht vun den {{PLURAL:$1|Titelen ass|Titele sinn}} net valabel;
+verbessert se virum späicheren:',
 	'right-tboverride' => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
 );
 
@@ -1073,12 +1077,34 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'titleblacklist-desc' => 'Nagpapahintulot sa mga tagapangasiwa na magbawal ng paglikha ng mga pahina at mga kuwenta ng tagagamit sa bawat isang [[MediaWiki:Titleblacklist|talaan ng pinagbabawal ("itim na talaan")]] at [[MediaWiki:Titlewhitelist|talaan ng mga pinapayagan ("puting talaan")]]',
+	'titleblacklist' => '# Isang itong talaan ng mga pinagbabawalan ("itim na talaan").  Hindi maaaring likhain ang mga pamagat at mga tagagamit na tumutugma sa isang pangkaraniwang pagsasaad/pagpapahayag na naririto
+
+# Gamitin ang "#" para sa mga puna/kumento.',
+	'titlewhitelist' => '# Isa itong talaan ng mga pinapayagan ("puting talaan").  Gamitin ang "#" para sa mga puna/kumento.',
+	'titleblacklist-forbidden-edit' => 'Pinagbawalan sa paglikha ang pamagat na "$2".
+Tumutugma ito sa sumusunod na entradang/ipinasok na nasa talaan ng mga pinagbabawal ("itim na talaan"): <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Hindi maililipat ang "$2" patungo sa "$3", dahil pinagbawal ang paglikha sa pamagat na "$3".
+Tumutugma ito sa sumusunod na ipinasok/entradang nasa talaan ng mga pinagbabawal ("itim na talaan"): <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Pinagbawal ang paglikha sa pangalan ng talaksang "$2".
+Tumutugma ito sa sumusunod na ipinasok/entradang nasa talaan ng mga pinagbabawalan ("itim na talaan"): <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Ipinagbawalan ang paglikha ng pangalan ng tagagamit na "$2".
+Tumutugma ito sa sumusunod na entrada/ipinasok sa talaan ng mga pinagbabawalan ("itim na talaan"): <code>$1</code>',
+	'titleblacklist-invalid' => 'Ang sumusunod na {{PLURAL:$1|hanay|mga hanay}} (guhit) na nasa loob ng talaan ng pinagbabawal na pamagat {{PLURAL:$1|ay|ay}} hindi tanggap;
+pakitama lamang {{PLURAL:$1|ito|ang mga ito}} bago sagipin:',
+	'right-tboverride' => 'Daigin (pangibabawan) ang talaan ng pinagbabawalang pamagat',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
  */
 $messages['uk'] = array(
-	'titleblacklist-desc' => 'Дає змогу адміністратораи заборонити створення певних сторінок та облікових записів за допомогою [[MediaWiki:Titleblacklist|чорного]] та [[MediaWiki:Titlewhitelist|білого]] списків.',
+	'titleblacklist-desc' => 'Дає змогу адміністраторам заборонити створення певних сторінок та облікових записів за допомогою [[MediaWiki:Titleblacklist|чорного]] та [[MediaWiki:Titlewhitelist|білого]] списків.',
 	'titleblacklist' => '# Це список заборонених назв. Сторінки і користувачі, назви яких підпадають під регулярні вирази з цього списку, не можуть бути створені.
 # Використовуйте "#" для коментарів.',
 	'titlewhitelist' => '# Це "білий список" назв. Використовуйте "#" для коментарів.',
