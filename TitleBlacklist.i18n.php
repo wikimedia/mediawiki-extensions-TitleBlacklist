@@ -263,6 +263,26 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
 	'right-tboverride' => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'titleblacklist-desc' => 'Zmóžnja administratoram napóranjeju bokow a wužywarskich kontow pó [[MediaWiki:Titleblacklist|cornej lisćinje]] a [[MediaWiki:Titlewhitelist|běłej lisćinje]] zajźowaś',
+	'titleblacklist' => '# To jo corna lisćina titelow. Titele a wužywarje, kótarež pśitrjefiju na regularny wuraz, njedaju se napóraś.
+# Wuž "#" za komentary.',
+	'titlewhitelist' => '# To jo běła lisćina titelow. Wuž "#" za komentary.',
+	'titleblacklist-forbidden-edit' => 'Titel "$2" jo pśeśiwo napóranjeju blokěrowany.
+Pśitrjefijo na slědujucy zapisk: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" njedajo se do "$3" pśesunuś, dokulaž titel "$3" pśeśiwo napóranjeju blokěrowany.
+Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Datajowe mě "$2" je so blokěrowało pśeśiwo napóranjeju.
+Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Wužywarske mě "$2" jo se blokěrowało pśeśiwo napóranjeju.
+Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Slědujuca smužka|Slědujucej smužce|slědujuce smužki|Slědujuce smužki}} w cornej lisćinje titelow {{PLURAL:$1|jo njepłaśiwa|stej njepłaśiwej|su njepłaśiwe |su njepłaśiwe}}; pšosym skorigěruj {{PLURAL:$1|ju|jej|je|je}} do składowanja:',
+	'right-tboverride' => 'Płaśiwosć corneje lisćiny titelow wótpóraś',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
