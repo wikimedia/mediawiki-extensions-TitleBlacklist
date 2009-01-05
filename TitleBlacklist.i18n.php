@@ -919,18 +919,21 @@ Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'titleblacklist-desc' => 'Pozwala uniemożliwić tworzenie stron i kont użytkowników o określonych tytułach: [[MediaWiki:Titleblacklist|„czarna lista”]] — [[MediaWiki:Titlewhitelist|biała lista”]]',
-	'titleblacklist' => '# To jest lista zabronionych nazw tytułów. Artykuły i użytkownicy o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogli zostać utworzeni.
+	'titleblacklist-desc' => 'Pozwala na blokowanie tworzenia stron i kont użytkowników o określonych nazwach wykorzystując [[MediaWiki:Titleblacklist|czarną]] oraz [[MediaWiki:Titlewhitelist|białą]] listę',
+	'titleblacklist' => '# To jest lista zabronionych nazw. Strony i konta o nazwach odpowiadających tym wzorcom, zapisanym wyrażeniami regularnymi, nie będą mogły zostać utworzene.
 # Użyj znaku „#”, by utworzyć komentarz.',
 	'titlewhitelist' => '# To jest lista dopuszczalnych nazw artykułów.
 # Użyj znaku „#” by utworzyć komentarz.',
-	'titleblacklist-forbidden-edit' => 'Nie wolno utworzyć artykułu o nazwie „$2”. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
-	'titleblacklist-forbidden-move' => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nazwa „$3” jest zabroniona. Pasuje ona do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. Nazwa pasuje do następującego wzorca z listy nazw zabronionych: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'Zabroniono tworzenia użytkownika o nazwie „$2”.
+	'titleblacklist-forbidden-edit' => 'Utworzenie strony o nazwie „$2” nie jest możliwe.  
+Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Zmiana nazwy z „$2” na „$3” nie jest możliwa, ponieważ nie można utworzyć strony o nazwie „$3”.
+Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Utworzenie pliku o nazwie „$2” nie jest możliwe. 
+Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Utworzenie konta o nazwie „$2” nie jest możliwe.
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
-	'right-tboverride' => 'Wyłącza ograniczenia nakładane przez rozszerzenie Title Blacklist, które blokuje tworzenie oraz edycję artykułów o nazwach pasujących do zdefiniowanych wzorców',
+	'right-tboverride' => 'Wyłącza ograniczenia nakładane przez rozszerzenie Title Blacklist, które blokuje tworzenie oraz edycję stron o nazwach pasujących do zdefiniowanych wzorców',
 );
 
 /** Portuguese (Português)
