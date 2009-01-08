@@ -445,6 +445,24 @@ Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'right-tboverride' => 'Ignorar os títulos da listaxe negra (blacklist)',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'titleblacklist-desc' => 'Macht s Ammanne megli, s Aalege vu nit gwinschte Syten- un Benutzernäme z verhindere: [[MediaWiki:Titleblacklist]] un [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist' => '# Des isch e Schwarzi Lischt.
+# Jede Syten- un Benutzername, wu die Uusdrick druf zueträffe, cha nit aagleit wäre.
+# Täxt hinter ere Raute „#“ wird as Kommentar gsähne.',
+	'titlewhitelist' => '# Des isch d Usnahmelischt vu dr Schwarze Lischt vu nit gwinschte Sytenäme. Verwänd „#“ fir Kommentar.',
+	'titleblacklist-forbidden-edit' => "'''E Syte mit em Titel „$2“ cha nit aagleit wäre.'''<br />Dr Titel kollidiert mit däm gsperrte Usdruck: '''''$1'''''",
+	'titleblacklist-forbidden-move' => "'''D Syte „$2“ cha nit no „$3“ verschobe wäre.'''<br />Dr Titel kollidiert mit däm gsperrte Usdruck: '''''$1'''''",
+	'titleblacklist-forbidden-upload' => "'''E Datei mit em Name „$2“ cha nit uffeglade wäre.'''<br />Dr Titel kollidiert mit däm gsperrte Usdruck: '''''$1'''''",
+	'titleblacklist-forbidden-new-account' => 'D Regischtrierig vum Benutzername „$2“ isch nit gwinscht.
+Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
+	'titleblacklist-invalid' => 'Die {{PLURAL:$1|Zyylete|Zyylete}} in dr Sperrlischt {{PLURAL:$1|isch|sin}} nit giltig; bitte korrigier si vor em Spychere:',
+	'right-tboverride' => 'Di Schwarz Lischt vu nit gwinschte Sytennäme usser Chraft setze',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
