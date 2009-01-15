@@ -1052,16 +1052,21 @@ $messages['sr-ec'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
+	'titleblacklist-desc' => 'Moaket dät Administratore muugelk, dät Moakjen fon nit wonskede Sieden- un Benutsernoomen tou ferhinnerjen: [[MediaWiki:Titleblacklist]] un [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# Dit is ju Swotte Lieste fon nit wonskede Siedennoomen.
 # Älke Siedennoome, ap dän do foulgjende reguläre Uutdrukke touträffe, kon nit moaked wäide.
 # Text bääte ne Ruute „#“ wäd as Kommentoar betrachted.',
+	'titlewhitelist' => '# Dit is ju Uutnoamelieste fon ju Swotte Lieste fon nit wonskede Siedennoomen. Benuts „#“ foar Kommentoare',
 	'titleblacklist-forbidden-edit' => "'''Ne Siede mäd dän Tittel „$2“ kon nit moaked wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
 	'titleblacklist-forbidden-move' => "'''Ju Siede „$2“ kon nit ätter „$3“ ferschäuwen wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
 	'titleblacklist-forbidden-upload' => "'''Ne Doatäi mäd dän Noome „$2“ kon nit hoochleeden wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: <code>$1</code>",
+	'titleblacklist-forbidden-new-account' => 'Ju Registrierenge fon dän Benutsernoome „$2“ is nit wonsked.
+Ju foulgjende Iendraach uut ju Lieste fon nit wonskede Benutsernoomen fierde tou Oulienenge: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Ju foulgjende Riege|Do foulgjende Riegen}} in ju Speerlieste {{PLURAL:$1|is|sunt}} uungultich; korrigier do foar dät Spiekerjen:',
+	'right-tboverride' => 'Buute Kraft sätten fon ju swotte Lieste fon nit wonskede Siedennoomen',
 );
 
 /** Sundanese (Basa Sunda)
@@ -1141,6 +1146,27 @@ pakitama lamang {{PLURAL:$1|ito|ang mga ito}} bago sagipin:',
 	'right-tboverride' => 'Daigin (pangibabawan) ang talaan ng pinagbabawalang pamagat',
 );
 
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'titleblacklist-desc' => 'Yöneticilere, sayfaların ve kullanıcı hesaplarının oluşturulmasını yasaklamalarına bir [[MediaWiki:Titleblacklist|karaliste]] ve [[MediaWiki:Titlewhitelist|beyazliste]] ile izin verir.',
+	'titleblacklist' => '# Bu bir başlık karalistesi. Buradaki düzenli ifadelerle eşleşen başlıklar ve kullanıcılar oluşturulamaz.
+# Yorumlar için "#" kullanın.',
+	'titlewhitelist' => '# Bu bir başlık beyazlistesi. Yorumlar için "#" kullanın.',
+	'titleblacklist-forbidden-edit' => '"$2" başlığının oluşturulması engellendi.
+Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2", "$3" sayfasına taşınamaz, çünkü "$3" başlığının oluşturulması yasaklanmış.
+Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" dosya adının oluşturulması engellendi.
+Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" kullanıcı adının oluşturulması engellendi.
+Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
+	'titleblacklist-invalid' => 'Karalistedeki şu {{PLURAL:$1|satır|satırlar}} geçersiz;
+lütfen kaydetmeden önce düzeltin:',
+	'right-tboverride' => 'Başlık karalistesini geçersiz kıl',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
@@ -1197,6 +1223,21 @@ Tên này trùng với khoản sau trong danh sách đen: <code>$1</code>',
 Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
 	'right-tboverride' => 'Bỏ qua danh sách các tựa trang bị cấm',
+);
+
+/** Volapük (Volapük)
+ * @author Smeira
+ */
+$messages['vo'] = array(
+	'titlewhitelist' => '# Atos binon vietalised tiädas. Gebolös el „#“ pro küpets.',
+	'titleblacklist-forbidden-edit' => 'Tiäd: „$2“ no dalon pajafön.
+Tiäd at binon in blägalised as: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Pad: „$2“ no kanon topätükön sui pad: „$3“, bi tiäd: „$3“ no dalon pajafön. Tiäd at binon in blägalised as: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Ragivanem: „$2“ no dalon pajafön. Ragivanem at binon in blägalised as: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Gebananem: „$2“ no dalon pajafön.
+Gebananem at binon in blägalised as: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Lien|Liens}} sököl in tiädablägalised no {{PLURAL:$1|lonöfon|lonöfons}}; gudükumolös {{PLURAL:$1|oni|onis}} bü dakip:',
+	'right-tboverride' => 'Nedemön blägalisedi tiädas',
 );
 
 /** Yue (粵語)
