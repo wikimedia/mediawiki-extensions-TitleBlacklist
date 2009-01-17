@@ -1229,6 +1229,7 @@ Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>
  * @author Smeira
  */
 $messages['vo'] = array(
+	'titleblacklist-desc' => 'Dälon guvanes ad proibön padi- e kalijafi medü [[MediaWiki:Titleblacklist|blägalised]] e [[MediaWiki:Titlewhitelist|vietalised]].',
 	'titlewhitelist' => '# Atos binon vietalised tiädas. Gebolös el „#“ pro küpets.',
 	'titleblacklist-forbidden-edit' => 'Tiäd: „$2“ no dalon pajafön.
 Tiäd at binon in blägalised as: <code>$1</code>',
