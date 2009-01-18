@@ -599,6 +599,7 @@ Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
+ * @author Melos
  */
 $messages['it'] = array(
 	'titleblacklist-desc' => 'Consente di proibire la creazione di pagine e account utente con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
