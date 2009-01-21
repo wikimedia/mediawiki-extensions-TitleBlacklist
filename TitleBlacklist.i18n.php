@@ -1055,8 +1055,8 @@ $messages['sr-ec'] = array(
  */
 $messages['stq'] = array(
 	'titleblacklist-desc' => 'Moaket dät Administratore muugelk, dät Moakjen fon nit wonskede Sieden- un Benutsernoomen tou ferhinnerjen: [[MediaWiki:Titleblacklist]] un [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Dit is ju Swotte Lieste fon nit wonskede Siedennoomen.
-# Älke Siedennoome, ap dän do foulgjende reguläre Uutdrukke touträffe, kon nit moaked wäide.
+	'titleblacklist' => '# Dit is ne Swotte Lieste.
+# Älke Siede- un Benutsernoome, ap dän do foulgjende reguläre Uutdrukke touträffe, kon nit moaked wäide.
 # Text bääte ne Ruute „#“ wäd as Kommentoar betrachted.',
 	'titlewhitelist' => '# Dit is ju Uutnoamelieste fon ju Swotte Lieste fon nit wonskede Siedennoomen. Benuts „#“ foar Kommentoare',
 	'titleblacklist-forbidden-edit' => "'''Ne Siede mäd dän Tittel „$2“ kon nit moaked wäide.''' <br />
