@@ -1127,6 +1127,15 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
+/** Thai (ไทย)
+ * @author Manop
+ */
+$messages['th'] = array(
+	'titleblacklist-forbidden-edit' => 'ชื่อบทความ "$2" ถูกห้ามสร้างในระบบนี้
+
+ชื่อหัวข้อนี้ตรงกับบัญชีดำในส่วนของ: <code>$1</code>',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
