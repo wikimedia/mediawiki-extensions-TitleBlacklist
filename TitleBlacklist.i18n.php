@@ -368,6 +368,7 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author Elfix
  * @author Grondin
  * @author IAlex
@@ -386,7 +387,7 @@ Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
 	'titleblacklist-forbidden-upload' => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => 'Le nom d’utilisateur « $2 » a été banni à la création.
 Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
+	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité{{GENDER:||e|(e)}} à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
 	'right-tboverride' => 'Ignorer la liste noire des titres',
 );
 
