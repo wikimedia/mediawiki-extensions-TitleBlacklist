@@ -748,9 +748,7 @@ $messages['ko'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'titleblacklist-desc' => 'Määt et müjjelsch, bestemmpte neu Sigge un neu Metmaacher-Name övver en
-[[MediaWiki:Titleblacklist|„schwatze Leß“]] un en
-[[MediaWiki:Titlewhitelist|Leß met Ußnahme dofun]] ze verbeede.',
+	'titleblacklist-desc' => 'Määt et müjjelsch, bestemmpte neu Sigge un neu Metmaacher-Name övver en [[MediaWiki:Titleblacklist|„schwatze Leß“]] un en [[MediaWiki:Titlewhitelist|Leß met Ußnahme dofun]] ze verbeede.',
 	'titleblacklist' => '# Dat hee eß en „schwatze Leß“ met verbodde Tittele för Sigge
 # un Metmaacher-Name. Dä ier Enhallt sen <i lang="en">regular expressions</i>,
 # wat do drop paß, kam_mer nit aanläje.
