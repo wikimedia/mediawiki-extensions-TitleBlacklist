@@ -270,8 +270,8 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
 $messages['dsb'] = array(
 	'titleblacklist-desc' => 'Zmóžnja administratoram napóranjeju bokow a wužywarskich kontow pó [[MediaWiki:Titleblacklist|cornej lisćinje]] a [[MediaWiki:Titlewhitelist|běłej lisćinje]] zajźowaś',
 	'titleblacklist' => '# To jo corna lisćina titelow. Titele a wužywarje, kótarež pśitrjefiju na regularny wuraz, njedaju se napóraś.
-# Wuž "#" za komentary.',
-	'titlewhitelist' => '# To jo běła lisćina titelow. Wuž "#" za komentary.',
+# Wužyj "#" za komentary.',
+	'titlewhitelist' => '# To jo běła lisćina titelow. Wužyj "#" za komentary.',
 	'titleblacklist-forbidden-edit' => 'Titel "$2" jo pśeśiwo napóranjeju blokěrowany.
 Pśitrjefijo na slědujucy zapisk: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" njedajo se do "$3" pśesunuś, dokulaž titel "$3" pśeśiwo napóranjeju blokěrowany.
@@ -454,9 +454,9 @@ ceartaigh {{PLURAL:$1|é|iad}} roimh shábháil, le d'thoil:",
  */
 $messages['gl'] = array(
 	'titleblacklist-desc' => 'Permítelle aos administradores prohibir a creación de páxinas e contas de usuario grazas a unha [[MediaWiki:Titleblacklist|lista negra]] e mais unha [[MediaWiki:Titlewhitelist|lista branca]] de títulos',
-	'titleblacklist' => '# Esta é unha listaxe negra de títulos. Non se pode crear ningún título ou usuario que coincida cunha destas expresións regulares.
+	'titleblacklist' => '# Esta é unha lista negra de títulos. Non se pode crear ningún título ou usuario que coincida cunha destas expresións regulares.
 # Use "#" para os comentarios.',
-	'titlewhitelist' => '# Este é un título da listaxe branca. Use "#" para os comentarios',
+	'titlewhitelist' => '# Este é un título da lista branca. Use "#" para os comentarios',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" non pode ser movido a "$3", porque o título "$3" foi protexido fronte á súa creación. Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O nome do ficheiro "$2" foi protexido fronte á súa creación.
@@ -464,7 +464,7 @@ Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'O nome de usuario "$2" foi protexido fronte á súa creación.
 Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
-	'right-tboverride' => 'Ignorar os títulos da listaxe negra (blacklist)',
+	'right-tboverride' => 'Ignorar os títulos da lista negra (blacklist)',
 );
 
 /** Swiss German (Alemannisch)
@@ -973,7 +973,7 @@ Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Utworzenie konta o nazwie „$2” nie jest możliwe.
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
-	'right-tboverride' => 'Wyłącza ograniczenia nakładane przez rozszerzenie Title Blacklist, które blokuje tworzenie oraz edycję stron o nazwach pasujących do zdefiniowanych wzorców',
+	'right-tboverride' => 'Brak ograniczeń czarnej listy zabronionych tytułów stron',
 );
 
 /** Portuguese (Português)
