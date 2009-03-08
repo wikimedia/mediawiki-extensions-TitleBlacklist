@@ -879,9 +879,18 @@ $messages['nah'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
+	'titleblacklist-desc' => 'Verlöövt Administraters, dat Opstellen vun nich wünschte Sieden- un Brukernaams över en [[MediaWiki:Titleblacklist|Swartlist]] un [[MediaWiki:Titlewhitelist|Wittlist]] to verbeden',
 	'titleblacklist' => '# Dit is de Swartlist vun Sieden- un Brukernaams, de nich opstellt warrn schöölt. Naams, op de disse regulären Utdrück todrepen doot, köönt nich opstellt warrn.
 # Bruuk „#“ för Kommentaren.',
 	'titlewhitelist' => '# Dit is en Wittlist mit Utnahmen vun de Swartlist vun Siedennaams, de nich opstellt warrn schöölt. Bruuk „#“ för Kommentaren',
+	'titleblacklist-forbidden-edit' => 'De Siedennaam „$2“ is för dat nee Opstellen nich verlöövt.
+Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Siedennaams: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '„$2“ kann nich na „$3“ schaven warrn, de Siedennaam „$3“ is nich verlöövt.
+Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Siedennaams: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'De Dateinaam „$2“ is nich verlöövt.
+Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Dateinaams: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'De Brukernaam „$2“ is för dat nee Anmellen nich verlöövt.
+Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Brukernaams: <code>$1</code>',
 	'titleblacklist-invalid' => 'Disse {{PLURAL:$1|Reeg|Regen}} in de Sperrlist {{PLURAL:$1|is|sünd}} ungüllig; verbeter {{PLURAL:$1|ehr|jem}}, ehrdat du spiekerst:',
 	'right-tboverride' => 'De swarte List för Siedennaams ümgahn',
 );
