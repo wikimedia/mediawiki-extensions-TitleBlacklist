@@ -272,8 +272,10 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
 $messages['dsb'] = array(
 	'titleblacklist-desc' => 'Zmóžnja administratoram napóranjeju bokow a wužywarskich kontow pó [[MediaWiki:Titleblacklist|cornej lisćinje]] a [[MediaWiki:Titlewhitelist|běłej lisćinje]] zajźowaś',
 	'titleblacklist' => '# To jo corna lisćina titelow. Titele a wužywarje, kótarež pśitrjefiju na regularny wuraz, njedaju se napóraś.
-# Wužyj "#" za komentary.',
-	'titlewhitelist' => '# To jo běła lisćina titelow. Wužyj "#" za komentary.',
+# Wužyj "#" za komentary.
+# Pó standarźe to njeźiwa na wjelikopisanje',
+	'titlewhitelist' => '# To jo běła lisćina titelow. Wužyj "#" za komentary.
+# Pó standarźe to njeźiwa na wjelikopisanje.',
 	'titleblacklist-forbidden-edit' => 'Titel "$2" jo pśeśiwo napóranjeju blokěrowany.
 Pśitrjefijo na slědujucy zapisk: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" njedajo se do "$3" pśesunuś, dokulaž titel "$3" pśeśiwo napóranjeju blokěrowany.
@@ -395,21 +397,22 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
  * @author Grondin
  * @author IAlex
  * @author Meithal
+ * @author PieRRoMaN
  * @author Urhixidur
  * @author Zetud
  */
 $messages['fr'] = array(
 	'titleblacklist-desc' => "Permet aux administrateur d’interdire la création de pages et des comptes utilisateur en fonction d'une [[MediaWiki:Titleblacklist|liste noire]] et d'une [[MediaWiki:Titlewhitelist|liste blanche]]",
-	'titleblacklist' => '# Ceci est un titre mis en liste noire. Les titres et les utilisateurs qui correspondent ici à une expression régulière ne peuvent être créés.
-# Utilisez « # » pour écrire les commentaires.',
-	'titlewhitelist' => '# Ceci est la liste blanche des titres. Utilisez « # » pour les commentaires.',
+	'titleblacklist' => '# Ceci est la liste noire des titres. Les titres et les utilisateurs qui correspondent à une expression régulière présente sur cette page ne peuvent être créés.
+# Utilisez « # » pour insérer des commentaires.',
+	'titlewhitelist' => '# Ceci est la liste blanche des titres. Utilisez « # » pour insérer des commentaires.',
 	'titleblacklist-forbidden-edit' => "Le titre « $2 » est interdit à la création.
 Dans la liste noire, il est détecté par l'entrée suivante : <code>$1</code>",
-	'titleblacklist-forbidden-move' => "La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l'entrée : <code>$1</code>",
-	'titleblacklist-forbidden-upload' => "Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
+	'titleblacklist-forbidden-move' => "La page « $2 » ne peut être renommée en « $3 », car le titre « $3 » a été interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
+	'titleblacklist-forbidden-upload' => "Le nom de fichier « $2 » est interdit à la création. Dans la liste noire, il correspond à l'entrée : <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => 'Le nom d’utilisateur « $2 » a été banni à la création.
 Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide|sont invalides}} : vous êtes invité{{GENDER:||e|(e)}} à {{PLURAL:$1|la|les}} corriger avant de sauvegarder.',
+	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide. Veuillez la|sont invalides. Veuillez les}} corriger avant de publier.',
 	'right-tboverride' => 'Ignorer la liste noire des titres',
 );
 
@@ -553,8 +556,10 @@ Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
 $messages['hsb'] = array(
 	'titleblacklist-desc' => 'Dowola administratoram wutworjenje stronow a wužiwarskich kontow z pomocu [[MediaWiki:Titleblacklist|čorneje lisćiny]] a [[MediaWiki:Titlewhitelist|běłeje lisćiny]] zakazać',
 	'titleblacklist' => '# To je čorna lisćina titulow. Titule a wužiwarjo, kotrež so na regularny wuraz hodźa, njehodźa so wutworić.
-# Wužij "#" za komentary.',
-	'titlewhitelist' => '# Tuta je běła lisćina titulow. Wužij "#" za komentary',
+# Wužij "#" za komentary.
+# Po standardźe to na wulkopisanje njedźiwa',
+	'titlewhitelist' => '# To je běła lisćina titulow. Wužij "#" za komentary.
+# Po standardźe to na wulkopisanje njedźiwa',
 	'titleblacklist-forbidden-edit' => 'Strona z titulom "$2" njeda so wutworić. Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Strona z titulom "$2" njeda so do "$3" přesunyć, dokelž titul "$3" njesmě so wutworjeć.
 Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
