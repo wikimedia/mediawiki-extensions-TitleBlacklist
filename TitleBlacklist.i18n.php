@@ -10,8 +10,10 @@ $messages = array();
 $messages['en'] = array(
 	'titleblacklist-desc'             => 'Allows administrators to forbid creation of pages and user accounts per a [[MediaWiki:Titleblacklist|blacklist]] and [[MediaWiki:Titlewhitelist|whitelist]]',
 	'titleblacklist'                  => "# This is a title blacklist. Titles and users that match a regular expression here cannot be created.
-# Use \"#\" for comments.",
-	'titlewhitelist'                  => "# This is a title whitelist. Use \"#\" for comments.",
+# Use \"#\" for comments.
+# This is case insensitive by default",
+	'titlewhitelist'                  => "# This is a title whitelist. Use \"#\" for comments. 
+# This is case insensitive by default",
 	'titleblacklist-forbidden-edit'   => 'The title "$2" has been banned from creation.
 It matches the following blacklist entry: <code>$1</code>',
 	'titleblacklist-forbidden-move'   => '"$2" cannot be moved to "$3", because the title "$3" has been banned from creation.
