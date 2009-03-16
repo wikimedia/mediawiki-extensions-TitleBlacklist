@@ -315,7 +315,8 @@ $messages['eo'] = array(
 	'titleblacklist-desc' => 'Rajtigas la adminstrantojn malpermesi kreadon de paĝoj kaj uzanto-kontoj per [[MediaWiki:Titleblacklist|nigralisto]] kaj [[MediaWiki:Titlewhitelist|blankalisto]]',
 	'titleblacklist' => '# Jen titola nigralisto. Titoloj kaj uzantoj kiuj kongruas regulan esprimon ĉi tie ne povas esti kreitaj.
 # Uzu "#" por komentoj.',
-	'titlewhitelist' => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.',
+	'titlewhitelist' => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.
+# Ĉi tio estas defaŭlte uskleca maldistingiva.',
 	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
 Ĝi similas la jenan nigralistan listeron: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ne povas esti alinomita al "$3", ĉar la titolo "$3" estis forbarita de kreado.
@@ -1281,9 +1282,11 @@ $messages['vec'] = array(
  */
 $messages['vi'] = array(
 	'titleblacklist-desc' => 'Cho phép các quản lý viên cấm không được tạo ra trang có các tên, theo [[MediaWiki:Titleblacklist|danh sách đen]] và [[MediaWiki:Titlewhitelist|danh sách trắng]]',
-	'titleblacklist' => '# Đây là danh sách đen về tên trang. Không được tạo ra các trang trùng tên với một biểu thức chính quy ở đây.
-# Hãy bắt đầu lời ghi chú với “#”.',
-	'titlewhitelist' => '# Đây là “danh sách trắng” về tên trang. Hãy bắt đầu lời ghi chú với “#”.',
+	'titleblacklist' => '# Đây là danh sách đen về tựa đề. Tựa bài và tên thành viên trùng với biểu thức chính quy tại đây sẽ không thể tạo được.
+# Hãy dùng “#” để ghi chú.
+# Nội dung mặc định là không phân biệt chữ hoa chữ thường',
+	'titlewhitelist' => '# Đây là danh sách trắng về tựa đề. Hãy sử dụng "#" cho lời chú thích.
+# Nội dung theo mặc định không phân biệt chữ hoa chữ thường',
 	'titleblacklist-forbidden-edit' => 'Không được tạo ra trang dưới tên “$2”.
 Tên này trùng với mục sau trong danh sách đen: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Không được di chuyển “$2” đến “$3”, vì tựa đề “$3” bị cấm khởi tạo. 
