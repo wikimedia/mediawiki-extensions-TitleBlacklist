@@ -194,8 +194,10 @@ $messages['bn'] = array(
 $messages['bs'] = array(
 	'titleblacklist-desc' => 'Omogućuje administratorima da zabrane pravljenje stranica i korisničkih računa putem spiskova [[MediaWiki:Titleblacklist|zabranjenih]] i [[MediaWiki:Titlewhitelist|dopuštenih]] naslova',
 	'titleblacklist' => '# Ovo je spisak zabranjenih naslova. Naslovi i korisnici koji se nalaze na ovom spisku neće moći biti napravljeni.
-# Koristite "#" za komentare.',
-	'titlewhitelist' => '# Ovo je spisak dopuštenih naslova. Koristite "#" za komentare.',
+# Koristite "#" za komentare.
+# Ovo ne razlikuje velika i mala slova po pretpostavljenom',
+	'titlewhitelist' => '# Ovo je spisak dopuštenih naslova. Koristite "#" za komentare.
+# Ovo ne razlikuje velika i mala slova po pretpostavljenom',
 	'titleblacklist-forbidden-edit' => 'Naslov "$2" je zabranjen za pravljenje.
 Nalazi se kao stavka na spisku zabranjenih naslova: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ne može biti premješten na "$3", jer je naslov "$3" zabranjen za pravljenje.
@@ -237,8 +239,10 @@ $messages['ca'] = array(
 $messages['cs'] = array(
 	'titleblacklist-desc' => 'Umožňuje správcům zakázat tvorbu stránek a uživatelských účtů na základě [[MediaWiki:Titleblacklist|černé listiny názvů]] a [[MediaWiki:Titlewhitelist|bílé listiny názvů]]',
 	'titleblacklist' => '# Toto je černá listina názvů. Stránky a uživatelské účty, jejichž název odpovídá některému regulárnímu výrazu, nebude možné vytvořit.
-# Komentáře začínají znakem „#“.',
-	'titlewhitelist' => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“',
+# Komentáře začínají znakem „#“.
+# Na velikosti písmen nezáleží.',
+	'titlewhitelist' => '# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“.
+# Na velikosti písmen nezáleží.',
 	'titleblacklist-forbidden-edit' => 'Je zakázáno vytvořit stránku s názvem „$2“. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '„$2“ nelze přesunout na název „$3“, protože název „$3“ je zakázáno vytvářet. Odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Soubor s jménem „$2“ je zakázáno vytvářet. Název odpovídá následujícímu záznamu na černé listině: <code>$1</code>',
@@ -314,7 +318,8 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'titleblacklist-desc' => 'Rajtigas la adminstrantojn malpermesi kreadon de paĝoj kaj uzanto-kontoj per [[MediaWiki:Titleblacklist|nigralisto]] kaj [[MediaWiki:Titlewhitelist|blankalisto]]',
 	'titleblacklist' => '# Jen titola nigralisto. Titoloj kaj uzantoj kiuj kongruas regulan esprimon ĉi tie ne povas esti kreitaj.
-# Uzu "#" por komentoj.',
+# Uzu "#" por komentoj.
+# Ĉi tio estas usklecodistingiva defaŭlte.',
 	'titlewhitelist' => '# Ĉi tio estas blanklisto por titoloj. Uzu "#" por komentoj.
 # Ĉi tio estas defaŭlte uskleca maldistingiva.',
 	'titleblacklist-forbidden-edit' => 'La titolo "$2" estis malpermesita de kreado.
