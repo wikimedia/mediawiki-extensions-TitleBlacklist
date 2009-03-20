@@ -1144,14 +1144,17 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Boivie
  * @author Lejonel
  * @author M.M.S.
  */
 $messages['sv'] = array(
 	'titleblacklist-desc' => 'Låter administratörer förbjuda skapande av sidor och användarkonton genom en [[MediaWiki:Titleblacklist|svartlista]] och en [[MediaWiki:Titlewhitelist|vitlista]].',
 	'titleblacklist' => '# Det här är en svartlista för titlar. Titlar och användarnamn som matchar ett reguljärt uttryck här kan inte skapas.
-# Använd "#" för kommentarer.',
-	'titlewhitelist' => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.',
+# Använd "#" för kommentarer.
+# Detta är okänsligt för skiftläge som förval',
+	'titlewhitelist' => '# Det är en lista över tillåtna sidtitlar. Använd "#" för att skriva kommentarer.
+# Detta är okänsligt för skiftläge som förval',
 	'titleblacklist-forbidden-edit' => 'Sidtiteln "$2" har stoppats från att skapas. Den matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Sidan "$2" kan inte flyttas till "$3", eftersom titeln "$3" har förbjudits att skapas. Titeln matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Filnamnet "$2" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>',
