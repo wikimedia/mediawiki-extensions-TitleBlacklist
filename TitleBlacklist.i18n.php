@@ -825,9 +825,11 @@ verbessert se virum späicheren:',
  */
 $messages['li'] = array(
 	'titleblacklist-desc' => "Veurkömp het aanmake van pagina's èn gebroekers waenger 'ne [[MediaWiki:Titleblacklist|zwarte]] en [[MediaWiki:Titlewhitelist|witte]] lies.",
-	'titleblacklist' => '# Dit is \'ne zwarte lies veur paginaname. Paginaname èn gebroekers die voldoon aan \'ne regex kan niet aangemaak waere.
-# Gebruik "#" voor opmerkingen.',
-	'titlewhitelist' => '# Dit is een witte lijst voor paginanamen. Gebruik "#" voor opmerkingen.',
+	'titleblacklist' => '# Dit is \'ne zjwarte lies veur paginaname. Paginaname en gebroekers die voldoon aan \'ne regex kinne neet aangemaak waere.
+# Gebroek "#" veur opmerkinge.
+# Dit is autematis huidlettergeveulig',
+	'titlewhitelist' => '# Dit is \'ne witte lies veur paginaname. Gebroek "#" veur opmerkinge.
+# Dit is autematis huidlettergeveulig',
 	'titleblacklist-forbidden-edit' => 'Een pagina met de naam "$2" kan niet aangemaakt worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" kan niet hernoemd worden naar "$3", omdat pagina\'s met de naam "$3" niet aangemaakt kunnen worden. Deze paginanaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
