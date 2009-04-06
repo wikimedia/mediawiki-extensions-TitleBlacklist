@@ -219,9 +219,11 @@ molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
  */
 $messages['ca'] = array(
 	'titleblacklist-desc' => "Permet als administradors restringir la creació de pàgines i comptes d'usuari mitjançant una [[MediaWiki:Titleblacklist|llista negra]] i una [[MediaWiki:Titlewhitelist|llista blanca]]",
-	'titleblacklist' => "# Això és una llista negra de títols. Els títols i els usuaris que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creats.
-# Feu servir \"#\" per als comentaris.",
-	'titlewhitelist' => '# Açò és una llista blanca de títols. Useu "#" pels comentaris.',
+	'titleblacklist' => "# Açò és una llista negra de títols. Els títols i els usuaris que compleixin alguna expressió regular (''regex'') d'aquí no podran ser creats.
+# Feu servir \"#\" per als comentaris.
+# Per defecte, no distingeix majúscules de minúscules",
+	'titlewhitelist' => '# Açò és una llista blanca de títols. Useu "#" pels comentaris.
+# Per defecte, no distingeix majúscules de minúscules',
 	'titleblacklist-forbidden-edit' => 'El títol «$2» està prohibit i no es pot crear. Concorda amb la següent entrada de la llista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => "No es pot moure «$2» a «$3», perquè el títol «$3» està prohibit. Concorda amb l'entrada de la llista negra següent: <code>$1</code>",
 	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>$1</code>",
@@ -1344,13 +1346,15 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Bencmq
  * @author Fdcn
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
 	'titleblacklist-desc' => '容许禁止建立指定标题的页面: [[MediaWiki:Titleblacklist]] 和 [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
-# 请使用"#"来添加注释。',
+# 请使用"#"来添加注释。
+# 默认忽略大小写',
 	'titlewhitelist' => '# 本页面为“标题白名单”。 请使用"#"来添加注释。',
 	'titleblacklist-forbidden-edit' => '标题 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
