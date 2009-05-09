@@ -636,7 +636,7 @@ Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Le creation del nomine de usator "$2" ha essite prohibite.
 Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
 	'titleblacklist-invalid' => 'Le sequente {{PLURAL:$1|linea|lineas}} in le lista nigre de titulos es invalide; per favor corrige {{PLURAL:$1|lo|los}} ante de immagazinar:',
-	'right-tboverride' => 'Ultrapassar le lista nigre de titulos',
+	'right-tboverride' => 'Ignorar le lista nigre de titulos',
 );
 
 /** Indonesian (Bahasa Indonesia)
