@@ -443,15 +443,22 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'titleblacklist-desc' => 'Pèrmèt de dèfendre la crèacion de pâges d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]] de titros.',
-	'titleblacklist' => '# Cen est la lista nêre des titros. Châque titro qu’endique ique lo code RegEx pôt pas étre crèâ.
-# Utilisâd « # » por los comentèros.',
-	'titlewhitelist' => '# Cen est la lista blanche des titros. Utilisâd « # » por los comentèros.',
-	'titleblacklist-forbidden-edit' => 'Lo titro « $2 » est dèfendu a la crèacion.
-Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
-	'titleblacklist-forbidden-move' => 'La pâge avouéc lo titro « $2 » pôt pas étre dèplaciê vers « $3 » perce que ceti dèrriér at étâ dèfendu a la crèacion. Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Lo fichiér avouéc lo titro « $2 » est dèfendu a la crèacion. Dens la lista nêre, corrèspond a l’entrâ siuventa : <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|La legne siuventa|Les legnes siuventes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} : vos éte envitâ a {{PLURAL:$1|la|les}} corregiér devant que sôvar.',
+	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos utilisator d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
+	'titleblacklist' => "# Cen est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion règuliére (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
+# Utilisâd « # » por entrebetar des comentèros.
+# Les entrâs sont pas sensibles a la câssa per dèfôt.",
+	'titlewhitelist' => '# Cen est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
+# Les entrâs sont pas sensibles a la câssa per dèfôt.',
+	'titleblacklist-forbidden-edit' => 'Lo titro « $2 » at étâ dèfendu a la crèacion.
+Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'La pâge « $2 » pôt pas étre renomâ en « $3 », perce que lo titro « $3 » at étâ dèfendu a la crèacion.
+Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Lo nom de fichiér « $2 » at étâ dèfendu a la crèacion.
+Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilisator « $2 » at étâ dèfendu a la crèacion.
+Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Ceta legne|Cetes legnes}} dens la lista nêre des titros {{PLURAL:$1|est envalida. Volyéd la|sont envalides. Volyéd les}} corregiér devant que sôvar.',
+	'right-tboverride' => 'Ignorar la lista nêre des titros',
 );
 
 /** Irish (Gaeilge)
