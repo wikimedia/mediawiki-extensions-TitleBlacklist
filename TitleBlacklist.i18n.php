@@ -1004,12 +1004,15 @@ Det svarar til følgjande svartelisteelement: <code>$1</code>',
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'titleblacklist-desc' => 'Gir muligheten til å forhindre at sider og brukerkontoer med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# Dette er en svartlisting for titler. Titler og brukernavn som passer med regulære uttrykk her kan ikke opprettes.
-# Bruk «#» for kommentarer.',
-	'titlewhitelist' => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.',
+# Bruk «#» for kommentarer.
+# Det skilles ikke mellom store og små bokstaver som standard',
+	'titlewhitelist' => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.
+# Det skilles ikke mellom store og små bokstaver som standard',
 	'titleblacklist-forbidden-edit' => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code<',
 	'titleblacklist-forbidden-upload' => 'Filnavnet «$2» er blokkert for oppretting. Den tilsvarer følgende svartelisteelement: <code>$1</code>',
