@@ -613,13 +613,17 @@ Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
  * @author Tgr
  */
 $messages['hu'] = array(
-	'titleblacklist-desc' => 'Lehetővé teszi adott címmel rendelkező lapok elkészítését: [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezésekre, nem hozhatóak létre.
-# Használd a „#” karaktert megjegyzések írásához.',
-	'titlewhitelist' => '# Ez egy engedélyező lista. A # karakterrel írhatsz megjegyzéseket.',
+	'titleblacklist-desc' => 'Lehetővé teszi az adminisztrátorok számára, hogy letiltsák adott című lapok vagy nevű felhasználói fiókok készítését a [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]] alapján',
+	'titleblacklist' => '# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezések valamelyikére, nem hozhatóak létre.
+# Használd a „#” karaktert megjegyzések írásához.
+# A sorok kis- és nagybetűérzékenyek alapértelmezettként',
+	'titlewhitelist' => '# Ez egy engedélyező lista. A „#” karakterrel írhatsz megjegyzéseket.
+# A sorok kis- és nagybetűérzékenyek alapértelmezettként',
 	'titleblacklist-forbidden-edit' => '„$2” címmel tilos lapot készíteni, mert illeszkedik a feketelista <code>$1</code> bejegyzésére.',
 	'titleblacklist-forbidden-move' => '„$2” nem nevezhető át „$3” névre, mert „$3” névvel tilos lapot készíteni. Illeszkedik a következő feketelistás bejegyzéssel: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '„$2” nevű fájlt tilos feltölteni, mert illeszkedik a feketelista <code>$1</code> bejegyzésére.',
+	'titleblacklist-forbidden-new-account' => 'A(z) „$2” felhasználói név nem hozható létre.
+Illeszkedik a következő feketelistás elemre: <code>$1</code>',
 	'titleblacklist-invalid' => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
 	'right-tboverride' => 'címek feketelistájának figyelmen kívül hagyása',
 );
