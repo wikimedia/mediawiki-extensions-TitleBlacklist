@@ -656,9 +656,11 @@ Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
  */
 $messages['id'] = array(
 	'titleblacklist-desc' => 'Mengizinkan pencegahan pembuatan halaman dengan judul tertentu: [[MediaWiki:Titleblacklist]] dan [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Berikut adalah daftar hitam judul. Judul yang sesuai dengan suatu regex berikut tidak akan dibuat.
-# Gunakan "#" untuk komentar.',
-	'titlewhitelist' => '# Ini adalah daftar putih. Gunakan "#" untuk komentar',
+	'titleblacklist' => '# Ini adalah daftar hitam judul. Judul dan nama pengguna yang berkesamaan dengan suatu regex berikut ini tidak dapat dibuat.
+# Gunakan "#" untuk komentar.
+# Daftar ini secara standar tidak memandang huruf besar-huruf kecil.',
+	'titlewhitelist' => '# Ini adalah daftar putih judul. Gunakan "#" untuk komentar.
+# Daftar ini secara standar tidak memandang huruf besar-huruf kecil.',
 	'titleblacklist-forbidden-edit' => 'Judul "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" tak dapat dipindahkan ke "$3" karena judul "$3" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Nama berkas "$2" telah dicekal untuk dibuat. Judul tersebut cocok dengan entri daftar hitam berikut: <code>$1</code>',
