@@ -423,7 +423,7 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
  * @author Zetud
  */
 $messages['fr'] = array(
-	'titleblacklist-desc' => 'Permet aux administrateur d’interdire la création de pages et des comptes utilisateur en fonction d’une [[MediaWiki:Titleblacklist|liste noire]] et d’une [[MediaWiki:Titlewhitelist|liste blanche]]',
+	'titleblacklist-desc' => 'Permet aux administrateurs d’interdire la création de pages et de comptes utilisateur en fonction d’une [[MediaWiki:Titleblacklist|liste noire]] et d’une [[MediaWiki:Titlewhitelist|liste blanche]]',
 	'titleblacklist' => '# Ceci est la liste noire des titres. Les titres et les utilisateurs qui correspondent à une expression régulière présente sur cette page ne peuvent pas être créés.
 # Utilisez « # » pour insérer des commentaires.
 # Les entrées ne sont pas sensibles à la casse par défaut.',
