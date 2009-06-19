@@ -424,15 +424,15 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
  */
 $messages['fr'] = array(
 	'titleblacklist-desc' => 'Permet aux administrateurs d’interdire la création de pages et de comptes utilisateur en fonction d’une [[MediaWiki:Titleblacklist|liste noire]] et d’une [[MediaWiki:Titlewhitelist|liste blanche]]',
-	'titleblacklist' => '# Ceci est la liste noire des titres. Les titres et les utilisateurs qui correspondent à une expression régulière présente sur cette page ne peuvent pas être créés.
+	'titleblacklist' => '# Ceci est la liste noire des titres. Les titres et les utilisateurs qui correspondent à une expression rationnelle présente sur cette page ne peuvent pas être créés.
 # Utilisez « # » pour insérer des commentaires.
-# Les entrées ne sont pas sensibles à la casse par défaut.',
+# Par défaut, les entrées ne sont pas sensibles à la casse.',
 	'titlewhitelist' => '# Ceci est la liste blanche des titres. Utilisez « # » pour insérer des commentaires.
 # Les entrées ne sont pas sensibles à la casse par défaut.',
 	'titleblacklist-forbidden-edit' => 'Le titre « $2 » est interdit à la création.
 Dans la liste noire, il est détecté par l’entrée suivante : <code>$1</code>',
-	'titleblacklist-forbidden-move' => 'La page « $2 » ne peut être renommée en « $3 », car le titre « $3 » a été interdit à la création. Dans la liste noire, il correspond à l’entrée : <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Le nom de fichier « $2 » est interdit à la création. Dans la liste noire, il correspond à l’entrée : <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'La page intitulée « $2 » ne peut être déplacée vers « $3 » parce que cette dernière a été interdite à la création. Dans la liste noire, elle correspond à l’entrée : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Le fichier intitulé « $2 » est interdit à la création. Dans la liste noire, il correspond à l’entrée : <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Le nom d’utilisateur « $2 » a été banni à la création.
 Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide. Veuillez la|sont invalides. Veuillez les}} corriger avant de publier.',
