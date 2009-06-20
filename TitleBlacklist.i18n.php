@@ -709,7 +709,7 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-move' => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
-	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の行は正しく記述できていません。保存する前に修正してください:',
+	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
 	'right-tboverride' => 'タイトルブラックリストを上書きする',
 );
 
