@@ -400,10 +400,11 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'titleblacklist-desc' => 'Antaa ylläpitäjälle mahdollisuuden estää sivujen luonti nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
-	'titleblacklist' => '# Tämä sivu sisältää sääntöjä, jotka estävät tietyn nimisten uusien sivujen tai käyttäjien luomisen.
-# Sivuja tai käyttäjiä, jotka vastaavat täällä määritettyihin säännöllisiin lausekkeisiin, ei voi luoda.
-# Käytä #-merkkiä kommentointiin.',
-	'titlewhitelist' => '# Tämä sivu sisältää sivujen sallittuja nimiä. Käytä #-merkkiä kommentointia varten.',
+	'titleblacklist' => '# Tämä on nimien musta luettelo. Sivuja tai käyttäjiä, jotka vastaavat täällä määritettyihin säännöllisiin lausekkeisiin, ei voi luoda.
+# Käytä #-merkkiä kommentointiin.
+# Oletusarvoisesti tämä on riippuvainen kirjainkoosta',
+	'titlewhitelist' => '# Tämä on nimien valkoinen luettelo. Käytä #-merkkiä kommentointiin.
+# Oletusarvoisesti tämä on riippuvainen kirjainkoosta',
 	'titleblacklist-forbidden-edit' => 'Sivun ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Tiedoston ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
