@@ -733,8 +733,10 @@ $messages['jut'] = array(
 $messages['jv'] = array(
 	'titleblacklist-desc' => 'Marengaké pangurus menggak wong gawé kaca lan akun miturut [[MediaWiki:Titleblacklist|dhaptar-ireng]] lan [[MediaWiki:Titlewhitelist|dhaptar-putih]]',
 	'titleblacklist' => '# Iki dhaptar-ireng irah-irahan. Irah-irahan lan panganggo sing cocog karo sawijining regex ing kéné ora bisa digawé.
-# Anggonen "#" kanggo komentar.',
-	'titlewhitelist' => '# Daftar iki yaiku daftar putih irah-irahan. Enggonen "#" kanggo komentar',
+# Anggonen "#" kanggo komentar.
+# Dhaptar iki sacara baku ora mbédakaké aksara gedhé-cilik.',
+	'titlewhitelist' => '# Dhaptar iki arupa dhaptar-putih irah-irahan. Anggonen "#" kanggo komentar.
+# Dhaptar iki sacara baku ora mbédakaké aksara gedhé-cilik.',
 	'titleblacklist-forbidden-edit' => 'Irah-irahan "$2" dilarang digawé.
 Irah-irahan iki cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ora bisa dipindhahaké menyang "$3", amerga irah-irahan iki "$3" dilarang ora olèh digawé.
