@@ -911,6 +911,29 @@ $messages['li'] = array(
 	'right-tboverride' => 'De zwarte lies veur pazjenaname negere',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Matasg
+ */
+$messages['lt'] = array(
+	'titleblacklist-desc' => 'Leidžia administratoriams uždrausti kurti puslapius ir vartotojų sąskaitas pagal [[MediaWiki:Titleblacklist|juodąjį sąrašą]] ir [[MediaWiki:Titlewhitelist|baltąjį sąrašą]]',
+	'titleblacklist' => '# Tai pavadinimų juodasis sąrašas. Pavadinimai ir vartotojai, kurie atitinka įrašus čia, negali būti sukuriami. 
+# Naudokite "#" komentarams. 
+# Pagal nutylėjimą nejautrus raidžių dydžiui',
+	'titlewhitelist' => '# Tai pavadinimų baltasis sąrašas. Naudokite "#" komentarams. 
+# Pagal nutylėjimą nejautrus raidžių dydžiui',
+	'titleblacklist-forbidden-edit' => 'Pavadinimą "$2" buvo uždrausta sukurti.
+Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" negali būti perkeltas į "$3", nes pavadinimą "$3" buvo uždrausta sukurti.
+Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Failą "$2" buvo uždrausta sukurti.
+Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Naudotojo vardą "$2" buvo uždrausta sukurti.
+Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
+	'titleblacklist-invalid' => 'Žemiau {{PLURAL:$1|esanti linija|esančios linijos}} juodajame sąraše {{PLURAL:$1|yra|yra}} netinkama;
+prašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:',
+	'right-tboverride' => 'Nepaisyti juodojo sąrašo',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
