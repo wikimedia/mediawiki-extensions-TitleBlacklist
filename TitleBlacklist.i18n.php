@@ -817,15 +817,13 @@ $messages['ko'] = array(
  # 이 문서는 기본적으로 대소문자를 구별하지 않습니다.',
 	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.
 # 이 문서는 기본적으로 대소문자를 구별하지 않습니다',
-	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 <code>$1</code> 블랙리스트 조건에 맞기 때문에, 문서 생성이 차단되어 있습니다.',
-	'titleblacklist-forbidden-move' => '"$3" 문서는 생성이 금지되었기 때문에 "$2"를 "$3"으로 옮길 수 없습니다.
-문서 이름이 블랙리스트와 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 생성 금지 목록에 포함되어 있습니다. 해당 생성 금지 조건은 <code>$1</code>입니다.',
+	'titleblacklist-forbidden-move' => '‘$2’ 문서를 ‘$3’ 제목으로 이동할 수 없습니다. 해당 생성 금지 조건은 <code>$1</code>입니다.',
 	'titleblacklist-forbidden-upload' => '파일 이름 "$2"는 생성이 금지되었습니다.
 파일 이름이 블랙리스트의 다음과 일치합니다: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => '"$2" 계정 이름은 생성이 금지되었습니다.
 해당 계정 이름은 블랙리스트의 다음과 일치합니다: <code>$1</code>',
-	'titleblacklist-invalid' => '문서 제목 블랙리스트의 다음 줄이 잘못되었습니다;
-저장하기 전에 올바르게 고쳐 주세요:',
+	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다. 저장하기 전에 올바르게 수정해주세요.',
 	'right-tboverride' => '문서 이름 블랙리스트를 무시',
 );
 
