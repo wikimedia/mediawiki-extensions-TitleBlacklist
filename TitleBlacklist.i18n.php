@@ -373,6 +373,13 @@ por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
 	'right-tboverride' => 'Ignorar la lista negra de títulos',
 );
 
+/** Estonian (Eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'right-tboverride' => 'Eirata pealkirjade musta nimekirja',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
