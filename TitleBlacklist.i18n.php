@@ -377,6 +377,7 @@ por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
  * @author Pikne
  */
 $messages['et'] = array(
+	'titleblacklist-desc' => 'Võimaldab ülematel vastavalt [[MediaWiki:Titleblacklist|mustale]] ja [[MediaWiki:Titlewhitelist|valgele nimekirjale]] keelata lehekülgede ja kasutajakontode loomise.',
 	'right-tboverride' => 'Eirata pealkirjade musta nimekirja',
 );
 
