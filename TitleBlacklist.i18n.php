@@ -1248,6 +1248,14 @@ $messages['sr-ec'] = array(
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'titleblacklist-desc' => 'Dopušta zabranu stvaranja strana s određenim naslovima: [[MediaWiki:Titleblacklist|crna lista]] i [[MediaWiki:Titlewhitelist|bela lista]].',
+	'right-tboverride' => 'Prepisuje crni spisak naslova.',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
