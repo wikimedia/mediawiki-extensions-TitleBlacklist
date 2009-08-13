@@ -378,6 +378,9 @@ por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
  */
 $messages['et'] = array(
 	'titleblacklist-desc' => 'Võimaldab ülematel vastavalt [[MediaWiki:Titleblacklist|mustale]] ja [[MediaWiki:Titlewhitelist|valgele nimekirjale]] keelata lehekülgede ja kasutajakontode loomise.',
+	'titleblacklist' => '# See on pealkirjade must nimekiri. Siinsetele regulaaravaldistele vastavaid pealkirju ega kasutajaid ei saa luua.
+# Kommentaariks kasuta märki "#".
+# Vaikimisi on see tõstutundetu',
 	'titlewhitelist' => '# See pealkiri on valges nimekirjas. Kommentaariks kasuta märki "#".  
 # Vaikimisi on see tõstutundetu',
 	'titleblacklist-forbidden-edit' => 'Lehekülje pealkirjaga "$2" loomine on keelatud.
