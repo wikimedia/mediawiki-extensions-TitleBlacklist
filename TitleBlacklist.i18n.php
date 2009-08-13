@@ -378,6 +378,18 @@ por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
  */
 $messages['et'] = array(
 	'titleblacklist-desc' => 'Võimaldab ülematel vastavalt [[MediaWiki:Titleblacklist|mustale]] ja [[MediaWiki:Titlewhitelist|valgele nimekirjale]] keelata lehekülgede ja kasutajakontode loomise.',
+	'titlewhitelist' => '# See pealkiri on valges nimekirjas. Kommentaariks kasuta märki "#".  
+# Vaikimisi on see tõstutundetu',
+	'titleblacklist-forbidden-edit' => 'Lehekülje pealkirjaga "$2" loomine on keelatud.
+See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Lehekülge "$2" ei saa teisaldada pealkirja "$3" alla, sest lehekülgede pealkirjaga "$3" loomine on keelatud.
+See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Pealkirjaga "$2" on keelatud faili üles laadida.
+See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Kasutaja nimega "$2" loomine on keelatud.
+See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Järgnev|Järgnevad}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.
+Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
 	'right-tboverride' => 'Eirata pealkirjade musta nimekirja',
 );
 
