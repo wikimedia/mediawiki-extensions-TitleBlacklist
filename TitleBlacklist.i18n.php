@@ -1261,7 +1261,7 @@ Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 	'right-tboverride' => 'Prekonať čiernu listinu názvov',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Sasa Stefanovic
  */
@@ -1273,7 +1273,7 @@ $messages['sr-ec'] = array(
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
