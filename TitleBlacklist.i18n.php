@@ -943,6 +943,7 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Homo
  * @author Matasg
  */
 $messages['lt'] = array(
