@@ -584,6 +584,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Kaustubh
  * @author Shyam
+ * @author आलोक
  */
 $messages['hi'] = array(
 	'titleblacklist-desc' => 'विशिष्ठ नामपदों: [[MediaWiki:Titleblacklist]] और [[MediaWiki:Titlewhitelist]] के साथ वाले पृष्ठों के निर्माण अवरोधन में सहायक है',
@@ -594,8 +595,8 @@ $messages['hi'] = array(
 यह निम्नांकित ब्लैकलिस्ट प्रवेशिका से मेल खाता है: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" का नाम बदलकर "$3" नहीं किया जा सकता, क्योंकि "$3" को निर्माण करने से प्रतिबंधित किया गया है।
 यह निम्नांकित ब्लैकलिस्ट प्रवेशिका से मेल खाता है: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'फाइल नाम "$2" निर्मित करने से प्रतिबंधित है।
-यह निम्नांकित ब्लैकलिस्ट प्रवेशिका से मेल खाता है: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'संचिका नाम "$2" निर्मित करने से प्रतिबंधित है।
+यह निम्नांकित कालीसूची प्रविष्टि से मेल खाता है: <code>$1</code>',
 	'titleblacklist-invalid' => 'ब्लैकलिस्ट नामपद में निम्नांकित {{PLURAL:$1|पंक्ति|पंक्तियाँ}} अमान्य {{PLURAL:$1|है|हैं}};
 कृपया {{PLURAL:$1|इसे|इन्हें}} जमा करने से पहले ठीक करें:',
 	'right-tboverride' => 'शीर्षक ब्लॅकलिस्ट को नजर अंदाज करें',
@@ -1149,6 +1150,22 @@ Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
 	'right-tboverride' => 'Brak ograniczeń czarnej listy zabronionych tytułów stron',
+);
+
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'titleblacklist-desc' => "A përmëtt a j'aministrador ëd vieté la creassion ëd pàgine e ëd cont për na [[MediaWiki:Titleblacklist|blacklist]] e na [[MediaWiki:Titlewhitelist|whitelist]]",
+	'titleblacklist' => '# Costa sì a l\'é na blacklist dij tìtoj. Tìtoj e stranòm che a corispondo a n\'espression regolar sì a peulo pa esse creà.
+# Dòvra "$" për coment.
+# Cost sì a l\'é pa case sensitive për default',
+	'titlewhitelist' => '# Costa a l\'é na whitelist ëd tìtoj. Dòvra "$" për coment.
+# Sòn sì a l\'é pa case sensitive për default',
+	'titleblacklist-forbidden-edit' => 'Ël tìtol "$2" a l\'é stàit vietà.
+A corispond a costa intrada dla blacklist: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" a peul pa esse tramudà a "$3", përchè ël tìtol "$3" a l\'é stàit vietà.
+A corispond a costa intrada dla blacklist: <code>$1</code>',
 );
 
 /** Portuguese (Português)
