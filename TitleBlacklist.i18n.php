@@ -1166,6 +1166,13 @@ $messages['pms'] = array(
 A corispond a costa intrada dla blacklist: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" a peul pa esse tramudà a "$3", përchè ël tìtol "$3" a l\'é stàit vietà.
 A corispond a costa intrada dla blacklist: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Ël nòm dël file "$2" a l\'é stàit vietà.
+A corispond a costa intrada dla blacklist: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Lë stranòm "$2" a l\'é stàit vietà.
+A corispond a costa intrada dla blacklist: <code>$1</code>',
+	'titleblacklist-invalid' => "{{PLURAL:$1|La linia|Le linie}} sota ant la blacklist dij tìtoj {{PLURAL:$1|a l'é pa bon-a|a son pa bon-e}};
+për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
+	'right-tboverride' => 'Sàuta la blacklist dij tìtoj',
 );
 
 /** Portuguese (Português)
