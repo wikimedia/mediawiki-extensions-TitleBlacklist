@@ -290,6 +290,28 @@ $messages['de-formal'] = array(
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigieren Sie diese vor dem Speichern:',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'titleblacklist-desc' => 'serkaran re desturê vıraştışê pel u hesabê karberan dano, qey qedexekerdışi re yew [[MediaWiki:Titleblacklist|listeya risiyayan]] u [[MediaWiki:Titlewhitelist|listeya risıpiyan]] dano.',
+	'titleblacklist' => '# no yew sernameyê listeya risiyayano.
+# qey mışorekerdışi "#" bıxulunê.
+# no farazi herfa qıc u gırdi re hessas niyo',
+	'titlewhitelist' => '# no yew sernameyê listeya risıpiyan o. qey mışorekerdışi "#" bışuxulnê.
+# no farazi herfa qıc u gırdi re hessas niyo',
+	'titleblacklist-forbidden-edit' => 'vıraştışê sernameyê "$2" i qedexe bı .
+malumatê ey na listeyasiya de zepê ya: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'no "$2", "$3" pel re nêkırışiyeno çunke vıraştışê sernameyê "$3"i qedexe biyo. 
+malumatê ey na listeyasiya de zepê ya: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'vıraştışê sernameyê dosyaya"$2"i qedexe bı.
+malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'vıraştışê nameyê karberê"$2" i qedexe bı.
+malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
+	'titleblacklist-invalid' => 'nê {{PLURAL:$1|satır o ke|satır ê ke}} listeyasiyayi de qedexe yê;
+kerem kerê verqeydkerdışi de raşt kerê:',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
