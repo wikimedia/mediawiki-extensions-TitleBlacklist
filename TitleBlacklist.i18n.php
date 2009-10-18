@@ -295,7 +295,7 @@ $messages['de-formal'] = array(
  */
 $messages['diq'] = array(
 	'titleblacklist-desc' => 'serkaran re desturê vıraştışê pel u hesabê karberan dano, qey qedexekerdışi re yew [[MediaWiki:Titleblacklist|listeya risiyayan]] u [[MediaWiki:Titlewhitelist|listeya risıpiyan]] dano.',
-	'titleblacklist' => '# no yew sernameyê listeya risiyayano.
+	'titleblacklist' => '# no yew sernameyê qerelisteyo.
 # qey mışorekerdışi "#" bıxulunê.
 # no farazi herfa qıc u gırdi re hessas niyo',
 	'titlewhitelist' => '# no yew sernameyê listeya risıpiyan o. qey mışorekerdışi "#" bışuxulnê.
@@ -310,6 +310,7 @@ malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 	'titleblacklist-invalid' => 'nê {{PLURAL:$1|satır o ke|satır ê ke}} listeyasiyayi de qedexe yê;
 kerem kerê verqeydkerdışi de raşt kerê:',
+	'right-tboverride' => 'sernameyê listeya siyayi bloke bıker',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -787,7 +788,7 @@ $messages['jut'] = array(
  * @author Pras
  */
 $messages['jv'] = array(
-	'titleblacklist-desc' => 'Marengaké pangurus menggak wong gawé kaca lan akun miturut [[MediaWiki:Titleblacklist|dhaptar-ireng]] lan [[MediaWiki:Titlewhitelist|dhaptar-putih]]',
+	'titleblacklist-desc' => 'Marengaké pangurus menggak wong nggawé kaca lan akun miturut [[MediaWiki:Titleblacklist|daftar-ireng]] lan [[MediaWiki:Titlewhitelist|daftar-putih]]',
 	'titleblacklist' => '# Iki dhaptar-ireng irah-irahan. Irah-irahan lan panganggo sing cocog karo sawijining regex ing kéné ora bisa digawé.
 # Anggonen "#" kanggo komentar.
 # Dhaptar iki sacara baku ora mbédakaké aksara gedhé-cilik.',
@@ -1004,6 +1005,9 @@ $messages['ml'] = array(
 ആ നാമം താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന കരിമ്പട്ടിക ഇനവുമായി യോജിക്കുന്നു: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ഉപയോക്തൃനാമം "$2" സൃഷ്ടിക്കുന്നതിൽ നിന്നും നിരോധിക്കപ്പെട്ടതാണ്.
 കരിമ്പട്ടികയിൽ കൊടുത്തിരിക്കുന്ന ഇനിപ്പറയുന്നതുമായി അതു ഒത്തുപോകുന്നു: <code>$1</code>',
+	'titleblacklist-invalid' => 'കരിമ്പട്ടികയിലെ താഴെ കൊടുത്തിരിക്കുന്ന  {{PLURAL:$1|വരി|വരികൾ}} അസാധുവാണ്.
+ദയവായി {{PLURAL:$1|അത്|അവ}} ശരിയാക്കിയ ശേഷം സേവ് ചെയ്യുക:',
+	'right-tboverride' => 'തലക്കെട്ടിന്റെ കരിമ്പട്ടികയെ അതിലംഘിക്കുക',
 );
 
 /** Marathi (मराठी)
