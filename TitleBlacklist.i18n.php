@@ -383,6 +383,7 @@ bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Locos epraix
  * @author Remember the dot
  * @author Sanbec
  */
@@ -390,7 +391,7 @@ $messages['es'] = array(
 	'titleblacklist-desc' => 'Permite que los administradores prohíban la creación de páginas y cuentas de usuario mediante una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]',
 	'titleblacklist' => '# Esta es una lista negra de títulos. No se pueden crear títulos o usuarios que coincidan con una de estas expresiones regulares.
 # Use «#» para comentarios.
-# Esta es insesible a las mayúsculas por defecto',
+# Esta es insensible a las mayúsculas por defecto',
 	'titlewhitelist' => '# Esta es una lista blanca de títulos. Use «#» para comentarios.
 # Esta es insensible a las mayúsculas por defecto',
 	'titleblacklist-forbidden-edit' => 'Se ha bloqueado la creación del título «$2».
@@ -1585,7 +1586,8 @@ $messages['zh-hans'] = array(
 	'titleblacklist' => '# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
 # 请使用"#"来添加注释。
 # 默认忽略大小写',
-	'titlewhitelist' => '# 本页面为“标题白名单”。 请使用"#"来添加注释。',
+	'titlewhitelist' => '# 本页面为“标题白名单”。 请使用"#"来添加注释。
+# 本页默认不区分大小写',
 	'titleblacklist-forbidden-edit' => '标题 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
