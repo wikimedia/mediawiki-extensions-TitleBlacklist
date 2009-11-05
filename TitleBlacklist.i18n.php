@@ -869,18 +869,18 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  * @author ToePeu
  */
 $messages['ko'] = array(
-	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]]과 [[MediaWiki:Titlewhitelist]]를 사용하여 특정 제목의 문서를 만드는 것을 막습니다.',
-	'titleblacklist' => ' # 이 문서는 문서 이름 블랙리스트입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 생성될 수 없습니다.
- # 의견은 "#"을 이용하여 적어주십시오.
- # 이 문서는 기본적으로 대소문자를 구별하지 않습니다.',
-	'titlewhitelist' => '# 이 문서는 문서 이름 화이트리스트입니다. 의견이 있으시다면 "#"을 이용해주세요.
-# 이 문서는 기본적으로 대소문자를 구별하지 않습니다',
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]를 통해서 특정 제목의 문서 생성을 막는 기능',
+	'titleblacklist' => ' # 문서 이름 금지 목록을 적는 곳입니다. 정규 표현식과 일치하는 문서나 사용자명은 생성이 제한됩니다.
+ # 규칙이 아닌 주석 내용에는 앞에 "#"을 붙여 주세요.
+ # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
+	'titlewhitelist' => ' # 생성 허용 규칙을 적는 곳입니다. 생성 금지 규칙에 포함되는 문서의 경우, 이 곳의 규칙에도 포함될 경우 생성이 가능해집니다. 규칙이 아닌 내용을 적을 때에는 앞에 "#"을 붙여 주세요.
+ # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
 	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 생성 금지 목록에 포함되어 있습니다. 해당 생성 금지 조건은 <code>$1</code>입니다.',
 	'titleblacklist-forbidden-move' => '‘$2’ 문서를 ‘$3’ 제목으로 이동할 수 없습니다. 문서 생성 금지 조건이 걸려 있습니다. 해당 금지 조건은 <code>$1</code>입니다.',
-	'titleblacklist-forbidden-upload' => '파일 이름 "$2"는 생성이 금지되었습니다.
-파일 이름이 블랙리스트의 다음과 일치합니다: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => '"$2" 계정 이름은 생성이 금지되었습니다.
-해당 계정 이름은 블랙리스트의 다음과 일치합니다: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '‘$2’ 파일 이름을 만드는 것이 제한되어 있습니다.
+파일 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '‘$2’ 이름으로 계정을 만드는 것이 제한되어 있습니다.
+계정 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
 	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다. 저장하기 전에 올바르게 수정해주세요.',
 	'right-tboverride' => '문서 제목 블랙리스트 무시',
 );
