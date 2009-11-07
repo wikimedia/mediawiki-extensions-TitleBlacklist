@@ -1210,14 +1210,15 @@ për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
 
 /** Portuguese (Português)
  * @author 555
+ * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
  */
 $messages['pt'] = array(
 	'titleblacklist-desc' => 'Permite a proibição da criação de páginas e contas de utilizadores com títulos específicos através de uma [[MediaWiki:Titleblacklist|lista negra]] e uma [[MediaWiki:Titlewhitelist|lista de exceções]]',
-	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos de páginas e nomes de usuários que sejam filtrados por uma expressão regular desta lista não poderão ser criados.
-# Utilize "#" para fazer comentários.
-# Esta lista ignora maiúsculas e minúsculas por padrão',
+	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos de páginas e nomes de utilizadores que sejam filtrados por uma expressão regular desta lista não poderão ser criados.
+# Use "#" para comentários.
+# Por omissão, esta lista ignora diferenças entre maiúsculas e minúsculas',
 	'titlewhitelist' => '# Esta é uma lista branca de títulos. Utilize "#" para fazer comentários
 # Esta lista ignora maiúsculas e minúsculas por padrão',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
