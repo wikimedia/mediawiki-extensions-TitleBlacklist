@@ -1460,14 +1460,15 @@ pakitama lamang {{PLURAL:$1|ito|ang mga ito}} bago sagipin:',
 
 /** Turkish (Türkçe)
  * @author Joseph
+ * @author Vito Genovese
  */
 $messages['tr'] = array(
 	'titleblacklist-desc' => 'Yöneticilere, sayfaların ve kullanıcı hesaplarının oluşturulmasını yasaklamalarına bir [[MediaWiki:Titleblacklist|karaliste]] ve [[MediaWiki:Titlewhitelist|beyazliste]] ile izin verir.',
 	'titleblacklist' => '# Bu bir başlık karalistesi. Buradaki düzenli ifadelerle eşleşen başlıklar ve kullanıcılar oluşturulamaz.
 # Yorumlar için "#" kullanın.
 # Bu varsayılan olarak büyük-küçük harf duyarsızdır',
-	'titlewhitelist' => '# Bu bir başlık beyazlistesi. Yorumlar için "#" kullanın.
-# Bu varsayılan olarak büyük-küçük harf duyarsızdır',
+	'titlewhitelist' => '# Bu bir başlık beyaz listesidir. Yorumlar için "#" kullanın.
+# Varsayılan olarak büyük-küçük harfe duyarsızdır',
 	'titleblacklist-forbidden-edit' => '"$2" başlığının oluşturulması engellendi.
 Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2", "$3" sayfasına taşınamaz, çünkü "$3" başlığının oluşturulması yasaklanmış.
