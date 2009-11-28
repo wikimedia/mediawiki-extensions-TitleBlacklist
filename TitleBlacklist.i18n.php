@@ -503,10 +503,10 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  */
 $messages['frp'] = array(
 	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos utilisator d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
-	'titleblacklist' => "# Cen est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion règuliére (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
+	'titleblacklist' => "# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion règuliére (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
 # Utilisâd « # » por entrebetar des comentèros.
 # Les entrâs sont pas sensibles a la câssa per dèfôt.",
-	'titlewhitelist' => '# Cen est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
+	'titlewhitelist' => '# O est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
 # Les entrâs sont pas sensibles a la câssa per dèfôt.',
 	'titleblacklist-forbidden-edit' => 'Lo titro « $2 » at étâ dèfendu a la crèacion.
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
