@@ -756,6 +756,7 @@ $messages['it'] = array(
  * @author Fryed-peach
  * @author Hosiryuhosi
  * @author JtFuruhata
+ * @author Marine-Blue
  * @author Muttley
  */
 $messages['ja'] = array(
@@ -770,7 +771,7 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
 	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
-	'right-tboverride' => 'タイトルブラックリストを上書きする',
+	'right-tboverride' => 'タイトルブラックリストを無視してページの作成を行う',
 );
 
 /** Jutish (Jysk)
