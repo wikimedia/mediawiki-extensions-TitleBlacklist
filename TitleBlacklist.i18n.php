@@ -193,6 +193,15 @@ $messages['bn'] = array(
 	'titleblacklist-invalid' => 'শিরোনাম কালোতালিকার এই {{PLURAL:$1|টি লাইন|টি লাইন}} অবৈধ; অনুগ্রহ করে সংরক্ষণ করার আগে  {{PLURAL:$1|এটি|এগুলি}} সংশোধন করুন:',
 );
 
+/** Breton (Brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'titleblacklist-invalid' => 'Al {{PLURAL:$1|linenn|linennoù}} da heul a zo e-barzh roll du an titloù a zo fall ; 
+mar plij reizhit {{PLURAL:$1|anezhi|anezho}} a-raok enrollañ.',
+	'right-tboverride' => 'Dianavezout roll du an titloù',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
