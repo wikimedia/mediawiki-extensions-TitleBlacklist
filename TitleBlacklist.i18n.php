@@ -171,12 +171,15 @@ $messages['bg'] = array(
 	'titleblacklist' => '# Страницата съдържа черен списък за заглавия на страници
 # Страници и потребители, чиито имена съответстват с регулярните изрази в списъка, не могат да бъдат създавани.
 # За коментари се използва символът „#“.',
+	'titlewhitelist' => '# Това е бял списък на заглавията. Използвайте "#" за въвеждане на коментари.
+# По подразбиране списъкът е нечувствителен на малки и главни букви',
 	'titleblacklist-forbidden-edit' => 'Страницата "$2" не може да бъде създадена, тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Страницата "$2" не може да бъде преместена като "$3", тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Файлът "$2" не може да бъде качен, тъй като съвпада със запис от черния списък: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Забранено е създаването на потребителско име „$2“.
 То отговаря на следния запис от черния списък: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
+	'right-tboverride' => 'Презаписване върху черния списък на заглавията',
 );
 
 /** Bengali (বাংলা)
@@ -512,11 +515,11 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  */
 $messages['frp'] = array(
 	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos utilisator d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
-	'titleblacklist' => "# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion règuliére (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
+	'titleblacklist' => "# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion racionèla (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
 # Utilisâd « # » por entrebetar des comentèros.
-# Les entrâs sont pas sensibles a la câssa per dèfôt.",
+# Per dèfôt, les entrâs sont pas sensibles a la câssa.",
 	'titlewhitelist' => '# O est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
-# Les entrâs sont pas sensibles a la câssa per dèfôt.',
+# Per dèfôt, les entrâs sont pas sensibles a la câssa.',
 	'titleblacklist-forbidden-edit' => 'Lo titro « $2 » at étâ dèfendu a la crèacion.
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'La pâge « $2 » pôt pas étre renomâ en « $3 », perce que lo titro « $3 » at étâ dèfendu a la crèacion.
@@ -1634,16 +1637,21 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Fdcn
+ * @author Gaoxuewei
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
 	'titleblacklist-desc' => '容許禁止建立指定標題的頁面: [[MediaWiki:Titleblacklist]] 與 [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# 本頁面為「標題黑名單」。任何匹配本名單正則表達式的標題會被阻止建立和編輯。
-# 請使用"#"來添加註釋。',
-	'titlewhitelist' => '# 本頁面為「標題白名單」。 請使用"#"來添加註釋。',
+# 請使用"#"來添加註釋。
+# 默認忽略大小寫',
+	'titlewhitelist' => '# 本頁面為「標題白名單」。 請使用"#"來添加註釋。
+# 本頁默認不區分大小寫',
 	'titleblacklist-forbidden-edit' => '標題 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 不可以移動到 "$3"，由於該標題 "$3" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '檔案名稱 "$2" 已經被禁止創建。它跟以下黑名單的項目配合: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '用戶名“$2”已被阻止創建。
+它匹配以下黑名單項目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
 	'right-tboverride' => '覆蓋標題黑名單',
 );
