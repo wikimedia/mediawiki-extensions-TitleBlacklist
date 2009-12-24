@@ -83,8 +83,10 @@ $messages['ar'] = array(
 $messages['arz'] = array(
 	'titleblacklist-desc' => 'بيسمح للاداريين انهم يمنعو انشاء الصفحات و حسابات اليوزرز  على حسب [[MediaWiki:Titleblacklist|البلاك ليست]] و [[MediaWiki:Titlewhitelist|اللستة المسموحة]]',
 	'titleblacklist' => '# دى بلاك  ليست للعناوين. العناوين واليوزرز اللى بيطابقو نعبير عادى هنا مش ممكن إنشاؤهم.
-# استعمل "#" للتعليقات.',
-	'titlewhitelist' => '# دى لستة بالعناوين المسموح بيها. استعمل "#" للتعليقات.',
+# استعمل "#" للتعليقات.
+# ما بتتأثرش بحاله الحروف',
+	'titlewhitelist' => '# دى لستة بالعناوين المسموح بيها. استعمل "#" للتعليقات.
+# ما بتتأثرش بحاله الحروف',
 	'titleblacklist-forbidden-edit' => 'العنوان "$2" ممنوع من الانشاء.
 لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" ماينفعش تتنقل لـ "$3", لان العنوان "$3" ممنوع من الانشاء.
@@ -515,9 +517,9 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  */
 $messages['frp'] = array(
 	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos utilisator d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
-	'titleblacklist' => "# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion racionèla (''RegEx'') presenta sur ceta pâge pôvont pas étre fêts.
+	'titleblacklist' => '# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion racionèla presenta sur ceta pâge pôvont pas étre fêts.
 # Utilisâd « # » por entrebetar des comentèros.
-# Per dèfôt, les entrâs sont pas sensibles a la câssa.",
+# Per dèfôt, les entrâs sont pas sensibles a la câssa.',
 	'titlewhitelist' => '# O est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
 # Per dèfôt, les entrâs sont pas sensibles a la câssa.',
 	'titleblacklist-forbidden-edit' => 'Lo titro « $2 » at étâ dèfendu a la crèacion.
