@@ -1287,6 +1287,13 @@ O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'right-tboverride' => 'Sobrepor a lista negra de títulos',
 );
 
+/** Romanian (Română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'right-tboverride' => 'Înlocuiţi titlul listei negre',
+);
+
 /** Russian (Русский)
  * @author AlexSm
  * @author Ferrer
