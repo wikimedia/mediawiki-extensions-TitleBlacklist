@@ -202,6 +202,14 @@ $messages['bn'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
+	'titleblacklist-forbidden-edit' => 'Difennet eo krouiñ an anv "$2".
+Er roll du e klot gant ar kasadenn da heul : <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Ne c\'hell ket bezañ fiñvet "$2" davet "$3", peogwir eo bet nac\'het.
+Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Skarzhet eo bet an anv restr "$2".
+Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Skarzhet eo bet an anv implijer "$2".
+Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
 	'titleblacklist-invalid' => 'Al {{PLURAL:$1|linenn|linennoù}} da heul a zo e-barzh roll du an titloù a zo fall ; 
 mar plij reizhit {{PLURAL:$1|anezhi|anezho}} a-raok enrollañ.',
 	'right-tboverride' => 'Dianavezout roll du an titloù',
@@ -1294,6 +1302,30 @@ $messages['ro'] = array(
 	'right-tboverride' => 'Înlocuiţi titlul listei negre',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'titleblacklist-desc' => "Permette a l'amministrature de vietà ccrejaziune de le pàggene e le cunde utinde pe 'na [[MediaWiki:Titleblacklist|lista gnore]] e [[MediaWiki:Titlewhitelist|lista vianghe]]",
+	'titleblacklist' => '# Stu titele jè in lista gnore. Le titele e l\'utinde ca se ponne comborndà cu le espressiune regolare aqquà non ge ponne essere ccrejate.
+# Ause "#" pe le commende.
+# Quiste jè sensibbele a le maiuscole e le minuscole de partenze',
+	'titlewhitelist' => '# Stu titele jè in lista vianghe.
+# Ause "#" pe le commende.
+# Quiste jè sensibbele a le maiuscole e le minuscole de partenze',
+	'titleblacklist-forbidden-edit' => '\'U titele "$2" ha state mise fore da \'a ccrejazione.<br />
+Jidde se combronde cu le seguende vosce d\'a lista gnore: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" non ge pò essere sustate sus a "$3", purcé \'u titele "$3" ha state escluse da \'a ccreiazione.<br />
+Jidde se combronde cu le seguende vosce d\'a lista gnore: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '\'U nome d\'u file "$2" ha state escluse da \'a ccreiazione.<br />
+Jidde se combronde cu le vosce d\'a lista gnore: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '\'U nome de l\'utende "$2" ha state escluse da \'a ccreiazione.<br />
+Jidde se combronde cu le vosce d\'a lista gnore: <code>$1</code>',
+	'titleblacklist-invalid' => "{{PLURAL:$1|'A seguenda linèe|Le seguende linèe}} jndr'à lista gnore de le titele {{PLURAL:$1|jè|sonde}} invalide;
+pe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
+	'right-tboverride' => "Sovrasrive 'a lista gnore de le titele",
+);
+
 /** Russian (Русский)
  * @author AlexSm
  * @author Ferrer
@@ -1471,6 +1503,16 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'titleblacklist-forbidden-edit' => 'Eçodi unvoni "$2" man\' şudaast.  In unvon bo in dastur az fehristi sijoh mutobiqat mekunad: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" nametavonad ba "$3" kūconida şavad, zero eçodi unvoni "$3" man\' şudaast. Cun bo in dastur az fehristi sijoh mutobiqat mekunad: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Eçodi nomi "$2" baroi parvandaho man\' ast. On bo in dastur az fexristi sijohi zerin mutobiqat mekunad: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Satri|Satrhoi}} zerin dar fehristi sijohi unvonho ƣajrimiçoz {{PLURAL:$1|ast|hastand}}; lutfan {{PLURAL:$1|on|onho}}ro qabl az zaxira kardan, isloh kuned:',
+);
+
 /** Thai (ไทย)
  * @author Manop
  */
@@ -1478,6 +1520,14 @@ $messages['th'] = array(
 	'titleblacklist-forbidden-edit' => 'ชื่อบทความ "$2" ถูกห้ามสร้างในระบบนี้
 
 ชื่อหัวข้อนี้ตรงกับบัญชีดำในส่วนของ: <code>$1</code>',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'titlewhitelist' => '# Bu bir atlaryň ak sanawydyr. Teswirler üçin "#" ulanyň.
+# Bu gaýybana baş-setir harpa duýgur däldir.',
 );
 
 /** Tagalog (Tagalog)
