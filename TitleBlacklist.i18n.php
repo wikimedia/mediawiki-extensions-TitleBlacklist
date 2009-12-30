@@ -282,6 +282,7 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 );
 
 /** German (Deutsch)
+ * @author Giftpflanze
  * @author Imre
  * @author Metalhead64
  * @author Raimond Spekking
@@ -300,7 +301,7 @@ $messages['de'] = array(
 	'titleblacklist-forbidden-new-account' => 'Die Registrierung des Benutzernames „$2“ ist nicht erwünscht.
 Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnung: <code>$1</code>',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
-	'right-tboverride' => 'Außer Kraft setzen der schwarzen Liste unerwünschter Seitennamen',
+	'right-tboverride' => 'Außerkraftsetzen der schwarzen Liste unerwünschter Seitennamen',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1528,6 +1529,8 @@ $messages['th'] = array(
 $messages['tk'] = array(
 	'titlewhitelist' => '# Bu bir atlaryň ak sanawydyr. Teswirler üçin "#" ulanyň.
 # Bu gaýybana baş-setir harpa duýgur däldir.',
+	'titleblacklist-invalid' => 'Gara sanawdaky şu {{PLURAL:$1|setir|setirler}} nädogry;
+ýazdyrmankaňyz düzediň:',
 );
 
 /** Tagalog (Tagalog)
