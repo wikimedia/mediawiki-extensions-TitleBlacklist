@@ -1531,6 +1531,7 @@ $messages['tk'] = array(
 # Bu gaýybana baş-setir harpa duýgur däldir.',
 	'titleblacklist-invalid' => 'Gara sanawdaky şu {{PLURAL:$1|setir|setirler}} nädogry;
 ýazdyrmankaňyz düzediň:',
+	'right-tboverride' => 'At gara sanawyna pisint etme',
 );
 
 /** Tagalog (Tagalog)
