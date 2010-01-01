@@ -1527,8 +1527,15 @@ $messages['th'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'titleblacklist-desc' => 'Administratorlara sahypalaryň we ulanyjy hasaplarynyň döredilmegini gadagan etmeklerine [[MediaWiki:Titleblacklist|gara sanaw]] ve [[MediaWiki:Titlewhitelist|ak sanaw]] arkaly rugsat berýär.',
 	'titlewhitelist' => '# Bu bir atlaryň ak sanawydyr. Teswirler üçin "#" ulanyň.
 # Bu gaýybana baş-setir harpa duýgur däldir.',
+	'titleblacklist-forbidden-edit' => '"$2" adynyň döredilmegi gadagan edildi.
+Şu gara sanaw girişina gabat gelýär: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" faýl adynyň döredilmegi gadagan edildi.
+Şu gara sanaw girişina gabat gelýär: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" ulanyjy adynyň döredilmegi gadagan edildi.
+Şu gara sanaw girişina gabat gelýär: <code>$1</code>',
 	'titleblacklist-invalid' => 'Gara sanawdaky şu {{PLURAL:$1|setir|setirler}} nädogry;
 ýazdyrmankaňyz düzediň:',
 	'right-tboverride' => 'At gara sanawyna pisint etme',
