@@ -1515,12 +1515,17 @@ $messages['tg-latn'] = array(
 );
 
 /** Thai (ไทย)
+ * @author Horus
  * @author Manop
  */
 $messages['th'] = array(
 	'titleblacklist-forbidden-edit' => 'ชื่อบทความ "$2" ถูกห้ามสร้างในระบบนี้
 
 ชื่อหัวข้อนี้ตรงกับบัญชีดำในส่วนของ: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'ไฟล์ชื่อ "$2" ถูกห้ามจากการสร้าง
+เนื่องจากตรงกับชื่อที่ปรากฎในบัญชีดำดังต่อไปนี้: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'ชื่อผู้ใช้ "$2" ถูกห้ามจากการสร้าง
+เนื่องจากตรงกับชื่อที่ปรากฎในบัญชีดำดังต่อไปนี้: <code>$1</code>',
 );
 
 /** Turkmen (Türkmençe)
