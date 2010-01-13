@@ -199,9 +199,11 @@ $messages['bn'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Gwenn-Ael
  * @author Y-M D
  */
 $messages['br'] = array(
+	'titleblacklist-desc' => "a ro tro d'ar verourien da verzañ krouiñ pajennoù ha kontoù implijerien hervez [[MediaWiki:Titleblacklist|listenn zu]] hag ur [[MediaWiki:Titlewhitelist|listenn wenn]]",
 	'titleblacklist-forbidden-edit' => 'Difennet eo krouiñ an anv "$2".
 Er roll du e klot gant ar kasadenn da heul : <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Ne c\'hell ket bezañ fiñvet "$2" davet "$3", peogwir eo bet nac\'het.
