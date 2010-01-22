@@ -654,8 +654,8 @@ $messages['hi'] = array(
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
+ * @author Ex13
  * @author SpeedyGonsales
- * @author Suradnik13
  */
 $messages['hr'] = array(
 	'titleblacklist-desc' => 'Omogućava administratorima postavljanje zabrane kreiranja stranica ili računa s [[MediaWiki:Titleblacklist|crnim popisom]] i [[MediaWiki:Titlewhitelist|bijelim popisom]]',
