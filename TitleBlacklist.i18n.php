@@ -283,6 +283,13 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 	'right-tboverride' => 'Potlačení nepovolených názvů stránek',
 );
 
+/** Danish (Dansk)
+ * @author Sarrus
+ */
+$messages['da'] = array(
+	'titleblacklist-forbidden-move' => '"$2" kan ikke flyttes til "$3", fordi artikelnavnet "$3" er blevet beskyttet mod oprettelse. Det svarer til følgende blacklistpost: <code>$1</code>',
+);
+
 /** German (Deutsch)
  * @author Giftpflanze
  * @author Imre
