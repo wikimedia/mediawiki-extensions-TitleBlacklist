@@ -287,6 +287,9 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
  * @author Sarrus
  */
 $messages['da'] = array(
+	'titleblacklist-desc' => 'Tillader administartorer at forhindre oprettelse af og brugerkonti gennem [[MediaWiki:Titleblacklist|blacklist]] og en [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist-forbidden-edit' => 'Sidenavnet "$2" er blevet beskyttet mod oprettelse<br />
+Det svarer til følgende blacklistpost: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" kan ikke flyttes til "$3", fordi artikelnavnet "$3" er blevet beskyttet mod oprettelse. Det svarer til følgende blacklistpost: <code>$1</code>',
 );
 
