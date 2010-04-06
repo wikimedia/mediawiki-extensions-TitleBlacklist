@@ -204,6 +204,11 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'titleblacklist-desc' => "a ro tro d'ar verourien da verzañ krouiñ pajennoù ha kontoù implijerien hervez [[MediaWiki:Titleblacklist|listenn zu]] hag ur [[MediaWiki:Titlewhitelist|listenn wenn]]",
+	'titleblacklist' => "# Roll du an titloù eo. Ne c'hell ket bezañ krouet an titloù pe implijerien hag a glot gant un dro-lavar rasional.
+# Implijit \"#\" evit an evezhiadennoù. 
+# N'eo ket kizigig ar monedoù d'an distruj dre ziouer.",
+	'titlewhitelist' => '# Roll gwenn an titloù eo. Implijit "#" evit an evezhiadennoù.
+# N\'eo ket kizigig ar monedoù d\'an distruj dre ziouer.',
 	'titleblacklist-forbidden-edit' => 'Difennet eo krouiñ an anv "$2".
 Er roll du e klot gant ar kasadenn da heul : <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Ne c\'hell ket bezañ fiñvet "$2" davet "$3", peogwir eo bet nac\'het.
@@ -1241,7 +1246,7 @@ Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Utworzenie konta o nazwie „$2” nie jest możliwe.
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
-	'right-tboverride' => 'Brak ograniczeń czarnej listy zabronionych tytułów stron',
+	'right-tboverride' => 'Nie dotyczą go ograniczenia czarnej listy zabronionych tytułów stron',
 );
 
 /** Piedmontese (Piemontèis)
