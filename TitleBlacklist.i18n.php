@@ -218,7 +218,7 @@ Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
 Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Skarzhet eo bet an anv implijer "$2".
 Klotañ a ran gant kasadenn da heul ar roll du : <code>$1</code>',
-	'titleblacklist-invalid' => 'Direizh eo a {{PLURAL:$1|linenn|linennoù}} da-heul zo war roll du an titloù; 
+	'titleblacklist-invalid' => 'Direizh eo al {{PLURAL:$1|linenn|linennoù}} da-heul zo war roll du an titloù; 
 reizhit {{PLURAL:$1|anezhi|anezho}} a-raok enrollañ :',
 	'right-tboverride' => 'Na ober van ouzh roll du an titloù',
 );
