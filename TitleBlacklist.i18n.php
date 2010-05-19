@@ -1318,7 +1318,7 @@ O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'right-tboverride' => 'Înlocuiţi titlul listei negre',
+	'right-tboverride' => 'Înlocuiți titlul listei negre',
 );
 
 /** Tarandíne (Tarandíne)
