@@ -19,7 +19,6 @@ class TitleBlacklistHooks {
 			efInitTitleBlacklist();
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
-				wfLoadExtensionMessages( 'TitleBlacklist' );
 				$message = $blacklisted->getCustomMessage();
 				if( is_null( $message ) )
 					$message = 'titleblacklist-forbidden-edit';
@@ -40,7 +39,6 @@ class TitleBlacklistHooks {
 		if( !$blacklisted )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-move';
@@ -65,7 +63,6 @@ class TitleBlacklistHooks {
 		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = wfMsgWikiHtml( 'titleblacklist-forbidden-new-account',
@@ -92,7 +89,6 @@ class TitleBlacklistHooks {
 				return true;
 			}
 
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
 			$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
 			$error = '<div class="errorbox">' .
@@ -110,7 +106,6 @@ class TitleBlacklistHooks {
 			if ( $retitle !== null && !$retitle->exists() )  {
 				$blacklisted = $wgTitleBlacklist->isBlacklisted( $retitle, 'create' );
 				if ( $blacklisted instanceof TitleBlacklistEntry ) {
-					wfLoadExtensionMessages( 'TitleBlacklist' );
 					$error = ( '<div class="errorbox">' .
 						   wfMsg( 'titleblacklist-forbidden-edit', 
 							  htmlspecialchars( $blacklisted->getRaw() ),
