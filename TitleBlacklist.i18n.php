@@ -1419,12 +1419,15 @@ Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Sasa Stefanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'titleblacklist-desc' => 'Допушта забрану стварања страна с одређеним насловима: [[MediaWiki:Titleblacklist|црна листа]] и [[MediaWiki:Titlewhitelist|бела листа]].',
 	'titleblacklist' => '# Ово је наслов црног списка. Наслови који садрже регуларни израз из овог списка не могу бити направљени.
-# Користи "#" за коментаре.',
-	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.',
+# Користи "#" за коментаре.
+# Подразумевано је неосетљив на величину слова',
+	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.
+# Подразумевано је неосетљив на величину слова',
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
