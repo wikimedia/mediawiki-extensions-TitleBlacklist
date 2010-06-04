@@ -53,14 +53,17 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** AbortNewAccount hook */
-	public static function abortNewAccount($user, &$message) {
-		global $wgTitleBlacklist, $wgUser;
-		if ( $wgUser->isAllowed( 'tboverride' ) )
-			return true;
-
+	/**
+	 * Check whether a user name is acceptable,
+	 * and set a message if unacceptable.
+	 *
+	 * Used by abortNewAccount and centralAuthAutoCreate
+	 *
+	 * @return bool Acceptable
+	 */
+	private static function acceptNewUserName( $userName, &$message ) {
 		efInitTitleBlacklist();
-		$title = Title::newFromText( $user->getName() );
+		$title = Title::newFromText( $userName );
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
 		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
@@ -70,13 +73,27 @@ class TitleBlacklistHooks {
 			if( is_null( $message ) )
 				$message = wfMsgWikiHtml( 'titleblacklist-forbidden-new-account',
 							  $blacklisted->getRaw(),
-							  $user->getName() );
+							  $userName );
 			$result = array( $message,
 				htmlspecialchars( $blacklisted->getRaw() ),
 				$title->getFullText() );
 			return false;
 		}
 		return true;
+	}
+
+	/** AbortNewAccount hook */
+	public static function abortNewAccount($user, &$message) {
+		global $wgTitleBlacklist, $wgUser;
+		if ( $wgUser->isAllowed( 'tboverride' ) )
+			return true;
+		return self::acceptNewUserName( $user->getName(), $message );
+	}
+
+	/** CentralAuthAutoCreate hook */
+	public static function centralAuthAutoCreate( $user, $userName ) {
+		$message = ''; # Will be ignored
+		return self::acceptNewUserName( $userName, $message );
 	}
 	
 	/** EditFilter hook */
