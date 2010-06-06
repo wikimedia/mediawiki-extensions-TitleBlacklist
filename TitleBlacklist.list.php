@@ -9,8 +9,7 @@
 
 //@{
 /**
- * @package MediaWiki
- * @subpackage Extensions
+ * @ingroup Extensions
  */
 
 /**

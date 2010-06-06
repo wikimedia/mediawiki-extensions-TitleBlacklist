@@ -5,8 +5,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 //@{
 /**
- * @package MediaWiki
- * @subpackage Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $wgExtensionCredits['other'][] = array(

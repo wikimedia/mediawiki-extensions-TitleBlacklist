@@ -8,8 +8,8 @@
 
 /**
  * Hooks for the TitleBlacklist class
- * @package MediaWiki
- * @subpackage Extensions
+ *
+ * @ingroup Extensions
  */
 class TitleBlacklistHooks {
 	/** getUserPermissionsErrorsExpensive hook */
