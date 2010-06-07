@@ -62,6 +62,7 @@ class TitleBlacklistHooks {
 	 * @return bool Acceptable
 	 */
 	private static function acceptNewUserName( $userName, &$message ) {
+		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
 		$title = Title::newFromText( $userName );
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
