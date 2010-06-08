@@ -85,7 +85,7 @@ class TitleBlacklistHooks {
 
 	/** AbortNewAccount hook */
 	public static function abortNewAccount($user, &$message) {
-		global $wgTitleBlacklist, $wgUser;
+		global $wgUser;
 		if ( $wgUser->isAllowed( 'tboverride' ) )
 			return true;
 		return self::acceptNewUserName( $user->getName(), $message );
