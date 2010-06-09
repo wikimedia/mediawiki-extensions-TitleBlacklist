@@ -41,17 +41,20 @@ $messages['qqq'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
-	'titleblacklist-desc' => "Premite a os almenistradors de bedar a creyazión de pachinas y cuentas d'usuario con aduya d'una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]",
-	'titleblacklist' => '# Ista ya una lista negra de títols. Os títols que concuerden con una d\'istas espresions regulars no se pueden creyar.
-# Use "#" ta fer comentarios.',
-	'titlewhitelist' => '# Ista ya una lista blanca de títols. Use "#" ta fer comentarios.',
-	'titleblacklist-forbidden-edit' => 'O títol "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-move' => '"$2" no se puede tresladar ta "$3", porque o títol "$3" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'O nombre de fichero "$2" ye biedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'O nombre d\'usuario "$2" ye bedato y no se puede creyar. 
+	'titleblacklist-desc' => "Premite a os almenistradors de vedar a creyación de pachinas y cuentas d'usuario con aduya d'una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]",
+	'titleblacklist' => '# Ista ya una lista negra de títols. Os títols que concuerden con una d\'istas expresions regulars no se pueden creyar.
+# Use "#" ta fer comentarios.
+# Por defecto, no fa diferencia entre mayusclas y minusclas',
+	'titlewhitelist' => '# Ista ye una lista blanca de títols. Faiga servir "#" ta escribir comentarios.
+# Por defecto, no diferencia entre mayusclas y minusclas',
+	'titleblacklist-forbidden-edit' => 'O títol "$2" ye vedato y no se puede creyar. 
+Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" no se puede tresladar ta "$3", porque o títol "$3" ye vedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'O nombre de fichero "$2" ye vedato y no se puede creyar. Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'O nombre d\'usuario "$2" ye vedato y no se puede creyar. 
 Concuerda con a dentrada <code>$1</code> d\'a lista negra.',
-	'titleblacklist-invalid' => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por fabor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
-	'right-tboverride' => 'Inorar a lista negra de títols',
+	'titleblacklist-invalid' => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por favor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
+	'right-tboverride' => 'Ignorar a lista negra de títols',
 );
 
 /** Arabic (العربية)
