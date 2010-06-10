@@ -1440,6 +1440,11 @@ $messages['sr-ec'] = array(
  */
 $messages['sr-el'] = array(
 	'titleblacklist-desc' => 'Dopušta zabranu stvaranja strana s određenim naslovima: [[MediaWiki:Titleblacklist|crna lista]] i [[MediaWiki:Titlewhitelist|bela lista]].',
+	'titleblacklist' => '# Ovo je naslov crnog spiska. Naslovi koji sadrže regularni izraz iz ovog spiska ne mogu biti napravljeni.
+# Koristi "#" za komentare.
+# Podrazumevano je neosetljiv na veličinu slova',
+	'titlewhitelist' => '# Ovo je beli spisak naslova. Koristi "#" za komentare.
+# Podrazumevano je neosetljiv na veličinu slova',
 	'right-tboverride' => 'Prepisuje crni spisak naslova.',
 );
 
