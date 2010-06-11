@@ -1168,7 +1168,7 @@ $messages['nl'] = array(
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'De gebruikersnaam "$2" kan niet aangemaakt worden omdat het voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-invalid' => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} alstublieft voordat u de lijst opslaat:',
-	'right-tboverride' => 'De zwarte lijst voor paginanamen negeren',
+	'right-tboverride' => 'De zwarte lijst voor paginanamen omzeilen',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
