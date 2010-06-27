@@ -1420,6 +1420,29 @@ Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 	'right-tboverride' => 'Prekonať čiernu listinu názvov',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'titleblacklist-desc' => 'Omogoča administratorjem preprečiti ustvarjanje strani in uporabniških računov glede na [[MediaWiki:Titleblacklist|črni seznam]] in [[MediaWiki:Titlewhitelist|beli seznam]]',
+	'titleblacklist' => '# To je črni seznam naslovov. Naslovov in uporabnikov, ki ustrezajo regularnim izrazom tukaj, ni mogoče ustvariti.
+# Uporabite »#« za pripombe. 
+# Po privzetem seznam ni občutljiv na velikost črk',
+	'titlewhitelist' => '# To je beli seznam naslovov. Uporabite »#« za pripombe. 
+# Po privzetem seznam ni občutljiv na velikost črk',
+	'titleblacklist-forbidden-edit' => 'Naslov »$2« je bil preprečen pred ustvarjanjem.
+Ustreza naslednjemu vnosu na črnem seznamu: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '»$2« ni mogoče prestaviti na »$3«, ker je bil naslov »$3« preprečen pred ustvarjanjem.
+Ustreza naslednjemu vnosu na črnem seznamu: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Ime datoteke »$2« je bilo preprečeno pred ustvarjanjem.
+Ustreza naslednjemu vnosu na črnem seznamu: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Uporabniško ime »$2« je bilo preprečeno pred ustvarjanjem.
+Ustreza naslednjemu vnosu na črnem seznamu: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Naslednja vrstica|Naslednji vrstici|Naslednje vrstice}} v črnem seznamu naslovov {{PLURAL:$1|je neveljavna|sta neveljavni|so neveljavne}};
+prosimo, popravite {{PLURAL:$1|jo|ju|jih}} pred shranjevanjem:',
+	'right-tboverride' => 'Prepisovanje črnega seznama naslovov',
+);
+
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Sasa Stefanovic
