@@ -1319,9 +1319,26 @@ O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 );
 
 /** Romanian (Română)
+ * @author AdiJapan
  * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'titleblacklist-desc' => 'Permite administratorilor să interzică crearea de pagini și de conturi de utilizator, folosind o [[MediaWiki:Titleblacklist|listă neagră]] și o [[MediaWiki:Titlewhitelist|listă albă]]',
+	'titleblacklist' => '# Aceasta este lista neagră pentru titluri. Nu pot fi create titluri și conturi care corespund la una din expresiile regulate de aici.
+# Folosiți „#” pentru comentarii.
+# În mod implicit nu contează majusculele.',
+	'titlewhitelist' => '# Aceasta este lista albă pentru titluri. Folosiți „#” pentru comentarii. 
+# În mod implicit nu contează majusculele.',
+	'titleblacklist-forbidden-edit' => 'Este interzisă crearea unui titlu „$2”.
+Interdicția a fost declanșată de următorul element din lista neagră: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Titlul „$2” nu se poate redenumi în „$3” pentru că acesta din urmă este interzis.
+Interdicția a fost declanșată de următorul element din lista neagră: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Numele de fișier „$2” este interzis.
+Interdicția a fost declanșată de următorul element din lista neagră: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Nu se poate crea un cont de utilizator cu numele „$2”.
+Interdicția a fost declanșată de următorul element din lista neagră: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Următoarea linie|Următoarele linii}} din lista neagră a titlurilor {{PLURAL:$1|este invalidă|sînt invalide}};
+corectați{{PLURAL:$1|o|-le}} înainte de a salva pagina.',
 	'right-tboverride' => 'Înlocuiți titlul listei negre',
 );
 
