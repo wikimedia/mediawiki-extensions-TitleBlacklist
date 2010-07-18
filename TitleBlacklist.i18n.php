@@ -561,7 +561,8 @@ Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilisator « $2 » at étâ dèfendu a la crèacion.
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|Ceta legne|Cetes legnes}} dens la lista nêre des titros {{PLURAL:$1|est envalida. Volyéd la|sont envalides. Volyéd les}} corregiér devant que sôvar.',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Ceta legne|Cetes legnes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} ;
+{{PLURAL:$1|la|les}} volyéd corregiér devant qu’encartar :',
 	'right-tboverride' => 'Ignorar la lista nêre des titros',
 );
 
