@@ -61,32 +61,28 @@ class TitleBlacklistHooks {
 	 *
 	 * @return bool Acceptable
 	 */
-	private static function acceptNewUserName( $userName, &$message ) {
+	private static function acceptNewUserName( $userName, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
-		$title = Title::newFromText( $userName );
+		$title = Title::newFromText( $userName, NS_USER );
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
 		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
-			if( is_null( $message ) )
-				$message = wfMsgWikiHtml( 'titleblacklist-forbidden-new-account',
-							  $blacklisted->getRaw(),
-							  $userName );
-			$result = array( $message,
-				htmlspecialchars( $blacklisted->getRaw() ),
-				$title->getFullText() );
+			if ( is_null( $message ) )
+				$message = 'titleblacklist-forbidden-new-account';
+			$err = wfMsgWikiHtml( $message, $blacklisted->getRaw(), $userName );
 			return false;
 		}
 		return true;
 	}
 
 	/** AbortNewAccount hook */
-	public static function abortNewAccount($user, &$message) {
+	public static function abortNewAccount( $user, &$message ) {
 		global $wgUser;
-		if ( $wgUser->isAllowed( 'tboverride' ) )
+		if( $wgUser->isAllowed( 'tboverride' ) )
 			return true;
 		return self::acceptNewUserName( $user->getName(), $message );
 	}
@@ -96,7 +92,7 @@ class TitleBlacklistHooks {
 		$message = ''; # Will be ignored
 		return self::acceptNewUserName( $userName, $message );
 	}
-	
+
 	/** EditFilter hook */
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist;
@@ -113,28 +109,28 @@ class TitleBlacklistHooks {
 			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
 			$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
-			$error = '<div class="errorbox">' .
+			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 				$errmsg .
 				"\n" .
 				$errlines .
-				"</div>\n" .
-				"<br clear='all' />\n";
-		
+				Html::closeElement( 'div' ) . "\n" .
+				Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
+
 			// $error will be displayed by the edit class
 			return true;
-		} else if (!$section) {
+		} elseif( !$section ) {
 			# Block redirects to nonexistent blacklisted titles
 			$retitle = Title::newFromRedirect( $text );
-			if ( $retitle !== null && !$retitle->exists() )  {
+			if( $retitle !== null && !$retitle->exists() )  {
 				$blacklisted = $wgTitleBlacklist->isBlacklisted( $retitle, 'create' );
-				if ( $blacklisted instanceof TitleBlacklistEntry ) {
+				if( $blacklisted instanceof TitleBlacklistEntry ) {
 					wfLoadExtensionMessages( 'TitleBlacklist' );
-					$error = ( '<div class="errorbox">' .
-						   wfMsg( 'titleblacklist-forbidden-edit', 
-							  htmlspecialchars( $blacklisted->getRaw() ),
-							  $retitle->getFullText() ) .
-						   "</div>\n" .
-						   "<br clear='all' />\n" );
+					$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
+						wfMsg( 'titleblacklist-forbidden-edit',
+							htmlspecialchars( $blacklisted->getRaw() ),
+							$retitle->getFullText() ) .
+						Html::closeElement( 'div' ) . "\n" .
+						Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
 				}
 			}
 
@@ -142,10 +138,11 @@ class TitleBlacklistHooks {
 		}
 		return true;
 	}
-	
+
 	/** ArticleSaveComplete hook */
 	public static function clearBlacklist( &$article, &$user,
-			$text, $summary, $isminor, $iswatch, $section ) {
+		$text, $summary, $isminor, $iswatch, $section )
+	{
 		$title = $article->getTitle();
 		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			global $wgTitleBlacklist;
