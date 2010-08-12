@@ -19,7 +19,6 @@ class TitleBlacklistHooks {
 			efInitTitleBlacklist();
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
-				wfLoadExtensionMessages( 'TitleBlacklist' );
 				$message = $blacklisted->getCustomMessage();
 				if( is_null( $message ) )
 					$message = 'titleblacklist-forbidden-edit';
@@ -40,7 +39,6 @@ class TitleBlacklistHooks {
 		if( !$blacklisted )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-move';
@@ -64,12 +62,11 @@ class TitleBlacklistHooks {
 	private static function acceptNewUserName( $userName, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
-		$title = Title::newFromText( $userName, NS_USER );
+		$title = Title::makeTitleSafe( NS_USER, $userName );
 		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
 		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
 			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$message = $blacklisted->getCustomMessage();
 			if ( is_null( $message ) )
 				$message = 'titleblacklist-forbidden-new-account';
@@ -106,7 +103,6 @@ class TitleBlacklistHooks {
 				return true;
 			}
 
-			wfLoadExtensionMessages( 'TitleBlacklist' );
 			$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
 			$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
 			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
@@ -124,7 +120,6 @@ class TitleBlacklistHooks {
 			if( $retitle !== null && !$retitle->exists() )  {
 				$blacklisted = $wgTitleBlacklist->isBlacklisted( $retitle, 'create' );
 				if( $blacklisted instanceof TitleBlacklistEntry ) {
-					wfLoadExtensionMessages( 'TitleBlacklist' );
 					$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 						wfMsg( 'titleblacklist-forbidden-edit',
 							htmlspecialchars( $blacklisted->getRaw() ),
