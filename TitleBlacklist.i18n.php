@@ -31,9 +31,10 @@ please correct {{PLURAL:$1|it|them}} before saving:',
 /** Message documentation (Message documentation)
  * @author Beau
  * @author Purodha
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'titleblacklist-desc' => 'Short description of the Titleblacklist extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'titleblacklist-desc' => '{{desc}}',
 	'right-tboverride' => '{{doc-right}}',
 );
 
