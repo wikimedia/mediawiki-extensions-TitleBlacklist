@@ -480,13 +480,14 @@ Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Ladsgroup
  * @author Wayiran
  */
 $messages['fa'] = array(
 	'titleblacklist-desc' => 'امکان جلوگیری از ایجاد صفحه‌هایی با عنوان‌های خاص را می‌دهد: [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# این یک فهرست سیاه عنوان‌ها است. عنوان‌هایی که با یک regex در این صفحه مطابقت کنند را نمی‌توان ایجاد کرد.
+	'titleblacklist' => '# این یک فهرست سیاه عنوان‌ها است. عنوان‌هایی که با یک عبارت باقاعده در این صفحه مطابقت کنند را نمی‌توان ایجاد کرد.
 # از «#» برای توضیحات استفاده کنید.
 # به‌طور پیش‌فرض به بزرگ و کوچکی حروف حساس نیست.',
 	'titlewhitelist' => '# این یک فهرست سفید برای عنوان‌ها است. از «#» برای افزودن توضیحات استفاده کنید.
