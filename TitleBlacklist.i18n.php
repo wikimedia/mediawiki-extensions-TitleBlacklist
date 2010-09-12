@@ -1296,11 +1296,11 @@ për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
  */
 $messages['pt'] = array(
 	'titleblacklist-desc' => 'Permite a proibição da criação de páginas e contas de utilizadores com títulos específicos através de uma [[MediaWiki:Titleblacklist|lista negra]] e uma [[MediaWiki:Titlewhitelist|lista de exceções]]',
-	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos de páginas e nomes de utilizadores que sejam filtrados por uma expressão regular desta lista não poderão ser criados.
+	'titleblacklist' => '# Esta é uma lista negra de títulos. Títulos de páginas e nomes de utilizadores que sejam filtrados por uma expressão regular desta lista, não poderão ser criados.
 # Use "#" para comentários.
-# Por omissão, esta lista ignora diferenças entre maiúsculas e minúsculas',
-	'titlewhitelist' => '# Esta é uma lista branca de títulos. Utilize "#" para fazer comentários
-# Esta lista ignora maiúsculas e minúsculas por padrão',
+# Por omissão, esta lista não distingue maiúsculas de minúsculas',
+	'titlewhitelist' => '# Esta é uma lista branca de títulos. Use "#" para comentários.
+# Por omissão, esta lista não distingue maiúsculas de minúsculas',
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" não pode ser movida para "$3" já que "$3" é um título impedido de ser criado. Se encaixa na seguinte entrada da lista-negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O ficheiro "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
