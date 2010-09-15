@@ -581,8 +581,10 @@ Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 $messages['ga'] = array(
 	'titleblacklist-desc' => 'Ceadaionn na riarthóirí coisc a chur faoi leathanaigh agus cuntais nua a chruthú, de réir [[MediaWiki:Titleblacklist|dúliosta teideail]] agus [[MediaWiki:Titlewhitelist|bánliosta teideail]]',
 	'titleblacklist' => '# Seo é an dúliosta teideail. Ní féidir teideail ná úsáideoirí a chruthú atá meaitseáil slonn rialta anseo.
-# Usáideann "#" mar nótaí tráchta.',
-	'titlewhitelist' => '# Seo é an bánliosta teideail. Usáideann "#" mar nótaí tráchta.',
+# Usáideann "#" mar nótaí tráchta.
+# Tá an cás seo neamhíogair de réir réamhshocraithe',
+	'titlewhitelist' => '# Seo é an bánliosta teideail. Usáideann "#" mar nótaí tráchta.
+# Tá an cás seo neamhíogair de réir réamhshocraithe',
 	'titleblacklist-forbidden-edit' => 'Tá toirmeasc ar an teideal "$2 a chruthú.<br />
 Tá sé chomhoiriúna leis an iontráil dúliosta a leanas: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Ní féidir "$2" a athainmnigh go "$3", mar tá an teideal "$3" coiscthe faoi chruthú.
