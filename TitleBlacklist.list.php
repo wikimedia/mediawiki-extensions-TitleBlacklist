@@ -318,7 +318,6 @@ class TitleBlacklistEntry {
 	 */
 	public static function newFromString( $line ) {
 		$raw = $line; // Keep line for raw data
-		$regex = "";
 		$options = array();
 		// Strip comments
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
