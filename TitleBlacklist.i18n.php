@@ -25,7 +25,9 @@ It matches the following blacklist entry: <code>$1</code>',
 It matches the following blacklist entry: <code>$1</code>',
 	'titleblacklist-invalid'          => 'The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid;
 please correct {{PLURAL:$1|it|them}} before saving:',
+	'titleblacklist-override'         => 'Ignore the blacklist',
 	'right-tboverride'                => 'Override the title blacklist',
+	'right-tboverride-account'        => 'Override the username blacklist',
 );
 
 /** Message documentation (Message documentation)

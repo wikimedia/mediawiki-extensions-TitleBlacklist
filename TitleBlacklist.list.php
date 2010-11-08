@@ -1,8 +1,8 @@
 <?php
 /**
  * Title Blacklist class
- * @author VasilievVV
- * @copyright © 2007 VasilievVV
+ * @author Victor Vasiliev
+ * @copyright © 2007-2010 Victor Vasiliev et al
  * @license GNU General Public License 2.0 or later
  * @file
  */
@@ -129,7 +129,25 @@ class TitleBlacklist {
 	}
 
 	/**
-	 * Check whether the blacklist restricts the current User from 
+	 * Check whether the blacklist restricts giver nuser
+	 * performing a specific action on the given Title
+	 *
+	 * @param $title Title to check
+	 * @param $user User to check
+	 * @param $action Action to check; 'edit' if unspecified
+	 * @param $override If set to true, overrides work
+	 * @return The corresponding TitleBlacklistEntry if blacklisted;
+	 *         otherwise FALSE
+         */
+	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
+		if( $override && self::userCanOverride( $action ) )
+			return false;
+		else
+			return $this->isBlacklisted( $title, $action );
+	}
+
+	/**
+	 * Check whether the blacklist restricts 
 	 * performing a specific action on the given Title
 	 *
 	 * @param $title Title to check
@@ -138,13 +156,12 @@ class TitleBlacklist {
 	 *         otherwise FALSE
          */
 	public function isBlacklisted( $title, $action = 'edit' ) {
-		global $wgUser;
 		if( !($title instanceof Title) ) {
 			$title = Title::newFromText( $title );
 		}
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
-			if( !$item->userCan( $title, $wgUser, $action ) ) {
+			if( !$item->matches( $title, $action ) ) {
 				if( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
@@ -169,7 +186,7 @@ class TitleBlacklist {
 		}
 		$whitelist = $this->getWhitelist();
 		foreach( $whitelist as $item ) {
-			if( !$item->userCan( $title, $wgUser, $action ) ) {
+			if( !$item->matches( $title, $action ) ) {
 				return true;
 			}
 		}
@@ -245,6 +262,17 @@ class TitleBlacklist {
 		}
 		return $badEntries;
 	}
+	
+	/**
+	 * Inidcates whether user can override blacklist on certain action.
+	 * 
+	 * @param $action Action
+	 */
+	public static function userCanOverride( $action ) {
+		global $wgUser;
+		return $wgUser->isAllowed( 'tboverride' ) ||
+			( $action == 'new-account' && $wgUser->isAllowed( 'tboverride-account' ) );
+	}
 }
 
 
@@ -273,18 +301,14 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * Check whether the specified User can perform the specified action 
+	 * Check whether a user can perform the specified action 
 	 * on the specified Title
 	 *
 	 * @param $title Title to check
-	 * @param $user User to check
 	 * @param $action %Action to check
 	 * @return TRUE if the user can; otherwise FALSE
 	 */
-	public function userCan( $title, $user, $action ) {
-		if( $user->isAllowed( 'tboverride' ) ) {
-			return true;
-		}
+	public function matches( $title, $action ) {
 		wfSuppressWarnings();
 		$match = preg_match( "/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
 		wfRestoreWarnings();
@@ -419,6 +443,18 @@ class TitleBlacklistEntry {
 	 * @param $v New version to set
 	 */
 	public function setFormatVersion( $v ) { $this->mFormatVersion = $v; }
+	
+	/**
+	 * Return the error message name for the blacklist entry.
+	 * 
+	 * @param $operation Operation name (as in titleblacklist-forbidden message name)
+	 * 
+	 * @returns The error message name
+	 */
+	public function getErrorMessage( $operation ) {
+		$message = $this->getCustomMessage();
+		return $message ? $message : "titleblacklist-forbidden-{$operation}";
+	}
 }
 
 //@}

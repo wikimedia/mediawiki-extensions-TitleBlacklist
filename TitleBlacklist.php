@@ -12,7 +12,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Title Blacklist',
-	'author'         => array( 'VasilievVV', 'Fran Rogers' ),
+	'author'         => array( 'Victor Vasiliev', 'Fran Rogers' ),
 	'version'        => '1.4.2',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'descriptionmsg' => 'titleblacklist-desc',
@@ -40,7 +40,8 @@ $wgTitleBlacklistCaching = array(
 	'warningexpiry' => 600,
 );
 
-$wgAvailableRights[] = 'tboverride';
+$wgAvailableRights[] = 'tboverride';	// Implies tboverride-account
+$wgAvailableRights[] = 'tboverride-account';	// For account creation
 $wgGroupPermissions['sysop']['tboverride'] = true;
 
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
@@ -49,6 +50,7 @@ $wgHooks['AbortNewAccount'][] = 'TitleBlacklistHooks::abortNewAccount';
 $wgHooks['CentralAuthAutoCreate'][] = 'TitleBlacklistHooks::centralAuthAutoCreate';
 $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 $wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
+$wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
 
 /**
  * Initialize the title blacklist

@@ -1,8 +1,8 @@
 <?php
 /**
  * Hooks for Title Blacklist
- * @author VasilievVV
- * @copyright © 2007 VasilievVV
+ * @author Victor Vasiliev
+ * @copyright © 2007-2010 Victor Vasiliev et al
  * @license GNU General Public License 2.0 or later
  */
 
@@ -17,12 +17,9 @@ class TitleBlacklistHooks {
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' || $action == 'upload' ) {
 			efInitTitleBlacklist();
-			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, $action );
+			$blacklisted = $wgTitleBlacklist->userCannot( $title, $user, $action );
 			if( $blacklisted instanceof TitleBlacklistEntry ) {
-				$message = $blacklisted->getCustomMessage();
-				if( is_null( $message ) )
-					$message = 'titleblacklist-forbidden-edit';
-				$result = array( $message,
+				$result = array( $blacklisted->getErrorMessage( 'edit' ),
 					htmlspecialchars( $blacklisted->getRaw() ),
 					$title->getFullText() );
 				return false;
@@ -35,14 +32,11 @@ class TitleBlacklistHooks {
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $nt, 'move' );
+		$blacklisted = $wgTitleBlacklist->userCannot( $nt, $user, 'move' );
 		if( !$blacklisted )
-			$blacklisted = $wgTitleBlacklist->isBlacklisted( $old, 'edit' );
+			$blacklisted = $wgTitleBlacklist->userCannot( $old, $user, 'edit' );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			$message = $blacklisted->getCustomMessage();
-			if( is_null( $message ) )
-				$message = 'titleblacklist-forbidden-move';
-			$err = wfMsgWikiHtml( $message,
+			$err = wfMsgWikiHtml( $blacklisted->getErrorMessage( 'move' ),
 				htmlspecialchars( $blacklisted->getRaw() ),
 				htmlspecialchars( $old->getFullText() ),
 				htmlspecialchars( $nt->getFullText() ) );
@@ -59,17 +53,13 @@ class TitleBlacklistHooks {
 	 *
 	 * @return bool Acceptable
 	 */
-	private static function acceptNewUserName( $userName, &$err ) {
-		global $wgTitleBlacklist;
+	private static function acceptNewUserName( $userName, &$err, $override = true ) {
+		global $wgTitleBlacklist, $wgUser;
 		efInitTitleBlacklist();
 		$title = Title::makeTitleSafe( NS_USER, $userName );
-		$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'new-account' );
-		if( !( $blacklisted instanceof TitleBlacklistEntry ) )
-			$blacklisted = $wgTitleBlacklist->isBlacklisted( $title, 'create' );
+		$blacklisted = $wgTitleBlacklist->userCannot( $title, $wgUser, 'new-account', $override );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			$message = $blacklisted->getCustomMessage();
-			if ( is_null( $message ) )
-				$message = 'titleblacklist-forbidden-new-account';
+			$message = $blacklisted->getErrorMessage( 'new-account' );
 			$err = wfMsgWikiHtml( $message, $blacklisted->getRaw(), $userName );
 			return false;
 		}
@@ -78,10 +68,9 @@ class TitleBlacklistHooks {
 
 	/** AbortNewAccount hook */
 	public static function abortNewAccount( $user, &$message ) {
-		global $wgUser;
-		if( $wgUser->isAllowed( 'tboverride' ) )
-			return true;
-		return self::acceptNewUserName( $user->getName(), $message );
+		global $wgUser, $wgRequest;
+		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
+		return self::acceptNewUserName( $user->getName(), $message, $override );
 	}
 
 	/** CentralAuthAutoCreate hook */
@@ -92,7 +81,7 @@ class TitleBlacklistHooks {
 
 	/** EditFilter hook */
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
-		global $wgTitleBlacklist;
+		global $wgTitleBlacklist, $wgUser;
 		efInitTitleBlacklist();
 		$title = $editor->mTitle;
 		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
@@ -118,7 +107,7 @@ class TitleBlacklistHooks {
 			# Block redirects to nonexistent blacklisted titles
 			$retitle = Title::newFromRedirect( $text );
 			if( $retitle !== null && !$retitle->exists() )  {
-				$blacklisted = $wgTitleBlacklist->isBlacklisted( $retitle, 'create' );
+				$blacklisted = $wgTitleBlacklist->userCannot( $retitle, $wgUser, 'create' );
 				if( $blacklisted instanceof TitleBlacklistEntry ) {
 					$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 						wfMsg( 'titleblacklist-forbidden-edit',
@@ -144,6 +133,17 @@ class TitleBlacklistHooks {
 			efInitTitleBlacklist();
 			$wgTitleBlacklist->invalidate();
 		}
+		return true;
+	}
+
+	/** UserCreateForm hook based on the one from AntiSpoof extension */
+	public static function addOverrideCheckbox( &$template ) {
+		global $wgRequest, $wgUser;
+
+		if ( TitleBlacklist::userCanOverride( 'new-account' ) )
+			$template->addInputItem( 'wpIgnoreTitleBlacklist',
+				$wgRequest->getCheck( 'wpIgnoreTitleBlacklist' ),
+				'checkbox', 'titleblacklist-override' );
 		return true;
 	}
 }
