@@ -867,6 +867,7 @@ $messages['it'] = array(
  * @author JtFuruhata
  * @author Marine-Blue
  * @author Muttley
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'titleblacklist-desc' => '管理者が[[MediaWiki:Titleblacklist|ブラックリスト]] および [[MediaWiki:Titlewhitelist|ホワイトリスト]]を使ってページおよび利用者アカウントの新規作成を禁止できるようにする',
@@ -880,7 +881,9 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
 	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
+	'titleblacklist-override' => 'ブラックリストを無視',
 	'right-tboverride' => 'タイトルブラックリストによる編集制限を受けない',
+	'right-tboverride-account' => '利用者名ブラックリストを無視する',
 );
 
 /** Jutish (Jysk)
@@ -1057,7 +1060,9 @@ Hien ass identesch mat dësem Numm vun der schwaarzer Lëscht (black list): <cod
 En ass esou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
 	'titleblacklist-invalid' => 'Dës {{PLURAL:$1|Linn|Linnen}} op der schwaarzer Lëscht vun den {{PLURAL:$1|Titelen ass|Titele sinn}} net valabel;
 verbessert se virum späicheren:',
+	'titleblacklist-override' => 'Schwaarz Lëscht ignoréieren',
 	'right-tboverride' => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
+	'right-tboverride-account' => 'Schwaarz Lëscht vun de Benotzernimm iwwergoen',
 );
 
 /** Limburgish (Limburgs)
@@ -1495,7 +1500,9 @@ $messages['rue'] = array(
 	'titleblacklist-forbidden-upload' => 'Не є доволено створити файл з назвов „$2“. Одповідать наступному запису на чорній листинї: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Не є доволено реґістровати імя хоснователя „$2“. Одповідать наступному запису на чорній листинї: <code>$1</code>',
 	'titleblacklist-invalid' => 'На чорній листинї назв {{PLURAL:$1|є наступный рядок неправилный реґуларный выраз|суть наступны рядкы неправилны реґуларны выразы|є наступный рядок неправилный реґуларный выраз}} і є треба {{PLURAL:$1|го|їх|їх}} перед уложінём сторінкы справити :',
+	'titleblacklist-override' => 'Іґноровати чорный список',
 	'right-tboverride' => 'іґнорованя чорной листины назв сторінок',
+	'right-tboverride-account' => 'Переконаня чорной листины назв сторінок',
 );
 
 /** Yakut (Саха тыла)
