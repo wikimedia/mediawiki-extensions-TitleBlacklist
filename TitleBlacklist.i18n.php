@@ -1286,7 +1286,9 @@ $messages['no'] = array(
 	'titleblacklist-forbidden-new-account' => 'Brukernavnet «$2» kan ikke opprettes.
 Det tilsvarer følgende svartelisteelement: <code>$1</code>',
 	'titleblacklist-invalid' => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
+	'titleblacklist-override' => 'Ignorer svartelista.',
 	'right-tboverride' => 'Overkjøre tittelsvartelisten',
+	'right-tboverride-account' => 'Overstyr svartelista for brukernavn',
 );
 
 /** Occitan (Occitan)
@@ -1799,6 +1801,7 @@ $messages['uk'] = array(
 Ім'я відповідає наступному запису з чорного списку: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступнинй рядок|Наступні рядки}} списку заборонених назв є {{PLURAL:$1|помилковим|помилковими}};
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
+	'titleblacklist-override' => 'Ігнорувати чорний список',
 	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
 );
 
