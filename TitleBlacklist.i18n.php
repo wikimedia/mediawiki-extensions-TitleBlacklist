@@ -840,6 +840,7 @@ Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
@@ -857,6 +858,7 @@ $messages['it'] = array(
 	'titleblacklist-forbidden-upload' => 'La creazione di file con titolo "$2" è stato impedito. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'La creazione di utenti con nome "$2" è stata impedita. La voce corrispondente nell\'elenco dei nomi non consentiti è la seguente: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
+	'titleblacklist-override' => 'Ignora la blacklist',
 	'right-tboverride' => 'Ignora la blacklist dei titoli',
 );
 
