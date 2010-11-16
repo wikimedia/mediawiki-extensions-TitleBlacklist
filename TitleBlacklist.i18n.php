@@ -176,6 +176,7 @@ $messages['bcc'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'titleblacklist-desc' => 'Дазваляе адміністратарам забараняць стварэньне старонак і рахункаў удзельнікаў з дапамогай [[MediaWiki:Titleblacklist|чорнага]] і [[MediaWiki:Titlewhitelist|белага]] сьпісаў',
@@ -194,7 +195,9 @@ $messages['be-tarask'] = array(
 Яно адпавядае наступнаму элемэнту чорнага сьпісу: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступны радок у|Наступныя радкі ў}} сьпісе забароненых назваў — {{PLURAL:$1|няслушны|няслушныя}};
 калі ласка, выпраўце {{PLURAL:$1|яго|іх}} перад захаваньнем:',
+	'titleblacklist-override' => 'Ігнараваць чорны сьпіс',
 	'right-tboverride' => 'Ігнараваньне чорнага сьпісу назваў',
+	'right-tboverride-account' => 'ігнараваньне чорнага сьпісу ўдзельнікаў',
 );
 
 /** Bulgarian (Български)
@@ -492,7 +495,9 @@ Coincide con la entrada de lista negra <code>$1</code>.',
 Coincide con la siguiente entrada de la lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};
 por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
+	'titleblacklist-override' => 'Ignorar la lista negra',
 	'right-tboverride' => 'Ignorar la lista negra de títulos',
+	'right-tboverride-account' => 'Ignorar la lista negra de los nombres de usuario',
 );
 
 /** Estonian (Eesti)
@@ -523,6 +528,7 @@ Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
  * @author Huji
  * @author Ladsgroup
  * @author Wayiran
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'titleblacklist-desc' => 'امکان جلوگیری از ایجاد صفحه‌هایی با عنوان‌های خاص را می‌دهد: [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]',
@@ -538,7 +544,9 @@ $messages['fa'] = array(
 این نام کاربری با این قسمت از فهرست سیاه مطابقت دارد: <code>$1</code>',
 	'titleblacklist-invalid' => '
 {{PLURAL:$1|سطر|سطرهای}} زیر در فهرست سیاه عنوان‌ها غیرمجاز {{PLURAL:$1|است|هستند}}؛ لطفاً {{PLURAL:$1|آن|آن‌ها}} را قبل از ذخیره کردن اصلاح کنید:',
+	'titleblacklist-override' => 'از فهرست سیاه چشم‌پوشی کن',
 	'right-tboverride' => 'گذر از فهرست سیاه عنوان‌ها',
+	'right-tboverride-account' => 'لغو فهرست سیاه نام کاربری',
 );
 
 /** Finnish (Suomi)
