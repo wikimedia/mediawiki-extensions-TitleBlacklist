@@ -423,7 +423,9 @@ Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Wužywarske mě "$2" jo se blokěrowało pśeśiwo napóranjeju.
 Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Slědujuca smužka|Slědujucej smužce|slědujuce smužki|Slědujuce smužki}} w cornej lisćinje titelow {{PLURAL:$1|jo njepłaśiwa|stej njepłaśiwej|su njepłaśiwe |su njepłaśiwe}}; pšosym skorigěruj {{PLURAL:$1|ju|jej|je|je}} do składowanja:',
+	'titleblacklist-override' => 'Carnu lisćinu ignorěrowaś',
 	'right-tboverride' => 'Płaśiwosć corneje lisćiny titelow wótpóraś',
+	'right-tboverride-account' => 'Płaśiwosć carneje lisćiny wužywarskich mjenjow wótpóraś',
 );
 
 /** Greek (Ελληνικά)
@@ -1664,7 +1666,9 @@ $messages['sv'] = array(
 	'titleblacklist-forbidden-new-account' => 'Användarnamnet "$2" kan inte skapas.
 Det matchar följande element i svartlistan: <code>$1</code>',
 	'titleblacklist-invalid' => 'Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:',
+	'titleblacklist-override' => 'Ignorera svartlistan',
 	'right-tboverride' => 'Upphäva den svarta listan över titlar',
+	'right-tboverride-account' => 'Kör över svartlistan för användarnamn',
 );
 
 /** Telugu (తెలుగు)
