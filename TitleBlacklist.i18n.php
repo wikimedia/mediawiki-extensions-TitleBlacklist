@@ -1560,7 +1560,9 @@ $messages['sk'] = array(
 	'titleblacklist-forbidden-new-account' => 'Bolo zakázané vytvorenie používateľského mena „$2”.
 Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Nasledovný riadok|Nasledovné riadky}} čiernej listiny názvov stránok {{PLURAL:$1|je neplatný|sú neplatné}} a je potrebné {{PLURAL:$1|ho|ich}} opraviť pred uložením stránky:',
+	'titleblacklist-override' => 'Ignorovať čiernu listinu',
 	'right-tboverride' => 'Prekonať čiernu listinu názvov',
+	'right-tboverride-account' => 'Prekonať čiernu listinu používateľských mien',
 );
 
 /** Slovenian (Slovenščina)
