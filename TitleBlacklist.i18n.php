@@ -846,7 +846,9 @@ $messages['id'] = array(
 	'titleblacklist-forbidden-new-account' => 'Nama pengguna "$2" tidak diperbolehkan.
 Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} dalam daftar hitam judul {{PLURAL:$1|berikut|berikut}} tak valid; silakan koreksi {{PLURAL:$1|item|item-item}} tersebut sebelum disimpan:',
+	'titleblacklist-override' => 'Abaikan daftar hitam',
 	'right-tboverride' => 'Mengabaikan daftar hitam judul',
+	'right-tboverride-account' => 'Mengabaikan daftar hitam nama pengguna',
 );
 
 /** Italian (Italiano)
@@ -1793,7 +1795,9 @@ $messages['tr'] = array(
 Şu karaliste girdisiyle eşleşiyor: <code>$1</code>',
 	'titleblacklist-invalid' => 'Karalistedeki şu {{PLURAL:$1|satır|satırlar}} geçersiz;
 lütfen kaydetmeden önce düzeltin:',
+	'titleblacklist-override' => 'Karalisteyi yoksay',
 	'right-tboverride' => 'Başlık karalistesini geçersiz kıl',
+	'right-tboverride-account' => 'Kullanıcı adı karalistesini geçersiz kıl',
 );
 
 /** Ukrainian (Українська)
