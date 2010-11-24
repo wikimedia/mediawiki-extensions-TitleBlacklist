@@ -471,6 +471,7 @@ $messages['eo'] = array(
 Ĝi kongruas la jenan nigralistano: <code>$1</code>',
 	'titleblacklist-invalid' => 'La {{PLURAL:$1|jena linio|jenaj linioj}} en la titola nigralisto estas {{PLURAL:$1|malvalida|malvalidaj}}; 
 bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
+	'titleblacklist-override' => 'Ignori la nigraliston',
 	'right-tboverride' => 'Anstataŭigi la titolan nigraliston',
 );
 
