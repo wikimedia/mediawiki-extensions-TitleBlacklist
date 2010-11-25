@@ -1804,6 +1804,7 @@ lütfen kaydetmeden önce düzeltin:',
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author JenVan
  * @author Prima klasy4na
  */
 $messages['uk'] = array(
@@ -1824,6 +1825,7 @@ $messages['uk'] = array(
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
 	'titleblacklist-override' => 'Ігнорувати чорний список',
 	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
+	'right-tboverride-account' => 'ігнорування чорного списку імен користувачів',
 );
 
 /** Vèneto (Vèneto)
