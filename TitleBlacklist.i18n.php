@@ -787,6 +787,7 @@ Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 );
 
 /** Hungarian (Magyar)
+ * @author BáthoryPéter
  * @author Dani
  * @author Tgr
  */
@@ -803,7 +804,9 @@ $messages['hu'] = array(
 	'titleblacklist-forbidden-new-account' => 'A(z) „$2” felhasználói név nem hozható létre.
 Illeszkedik a következő feketelistás elemre: <code>$1</code>',
 	'titleblacklist-invalid' => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
+	'titleblacklist-override' => 'Feketelista figyelmen kívül hagyása',
 	'right-tboverride' => 'címek feketelistájának figyelmen kívül hagyása',
+	'right-tboverride-account' => 'Felhasználónév-feketelista felülbírálása',
 );
 
 /** Interlingua (Interlingua)
