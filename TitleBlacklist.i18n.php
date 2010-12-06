@@ -293,6 +293,7 @@ molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
 
 /** Catalan (Català)
  * @author Aleator
+ * @author El libre
  * @author Jordi Roqué
  * @author SMP
  * @author Vriullop
@@ -309,7 +310,9 @@ $messages['ca'] = array(
 	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => "No es pot crear el nom d'usuari «$2». Coincideix amb la següent entrada de la llista negra: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
+	'titleblacklist-override' => 'Ignora la llista negra',
 	'right-tboverride' => 'Sobreescriure la llista negra',
+	'right-tboverride-account' => "Ignora la llista negra de noms d'usuari/a",
 );
 
 /** Czech (Česky)
@@ -761,7 +764,9 @@ $messages['hr'] = array(
 	'titleblacklist-forbidden-new-account' => 'Suradnički račun "$2" je zabranjen za kreiranje.
 Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
 	'titleblacklist-invalid' => 'Sljedeći {{PLURAL:$1|redak|redci}} u popisu zabranjenih naslova {{PLURAL:$1|je|su}} nedozvoljeni; molimo ispravite {{PLURAL:$1|ga|ih}} prije spremanja:',
+	'titleblacklist-override' => 'Zanemari crnu listu',
 	'right-tboverride' => 'Premošćivanje naslova u crnom popisu',
+	'right-tboverride-account' => 'Zaobilaženje popisa zabranjenih suradničkih imena',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
