@@ -9,7 +9,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @ingroup Extensions
  */
 
-$wgExtensionCredits['other'][] = array(
+$wgExtensionCredits['antispam'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Title Blacklist',
 	'author'         => array( 'Victor Vasiliev', 'Fran Rogers' ),
