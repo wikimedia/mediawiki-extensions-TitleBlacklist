@@ -1915,6 +1915,7 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
  * @author Fdcn
+ * @author Hydra
  * @author Liangent
  * @author Shinjiman
  */
@@ -1931,7 +1932,9 @@ $messages['zh-hans'] = array(
 	'titleblacklist-forbidden-new-account' => '用户名“$2”已被阻止创建。
 它匹配以下黑名单项目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
+	'titleblacklist-override' => '忽略黑名单',
 	'right-tboverride' => '覆盖标题黑名单',
+	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
