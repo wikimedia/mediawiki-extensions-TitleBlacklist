@@ -434,6 +434,7 @@ Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
 /** Greek (Ελληνικά)
  * @author Dead3y3
  * @author Geraki
+ * @author Glavkos
  */
 $messages['el'] = array(
 	'titleblacklist-desc' => 'Επιτρέπει στους διαχειριστές να απαγορέψουν την δημιουργία σελίδων και λογαριασμών χρηστών σύμφωνα με μία [[MediaWiki:Titleblacklist|μαύρη λίστα]] και μία [[MediaWiki:Titlewhitelist|άσπρη λίστα]]',
@@ -451,6 +452,7 @@ $messages['el'] = array(
 	'titleblacklist-forbidden-new-account' => 'Η δημιουργία του ονόματος χρήστη/χρήστριας «$2» έχει φραγεί.
 Ταιριάζει στην ακόλουθη εγγραφή της μαύρης λίστας: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Η ακόλουθη γραμμή|Οι ακόλουθες γραμμές}} στην μαύρη λίστα τίτλων είναι {{PLURAL:$1|άκυρη|άκυρες}}· παρακαλώ διορθώστε {{PLURAL:$1|την|τις}} πριν την αποθήκευση:',
+	'titleblacklist-override' => 'Αγνοήστε τη μαύρη λίστα',
 	'right-tboverride' => 'Παράκαμψη της μαύρης λίστας τίτλων',
 );
 
@@ -1555,6 +1557,31 @@ $messages['sah'] = array(
 	'titleblacklist-override' => 'Хара тиһиги көрүмэ',
 	'right-tboverride' => 'Сирэйдэр ааттарын "хара тиһигин" туттума',
 	'right-tboverride-account' => 'кыттааччылар ааттарын "хара тиһигин" туттума',
+);
+
+/** Sinhala (සිංහල)
+ * @author Budhajeewa
+ */
+$messages['si'] = array(
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|කළුලයිස්තුව]]කට හා [[MediaWiki:Titlewhitelist|සුදු ලයිස්තුව]]කට අනුව පිටු හා පරිශීලක නිමැවුම් වැලැක්වුමට පරිපාලකයන්ට ඉඩ දෙයි.',
+	'titleblacklist' => '# This is a title blacklist. Titles and users that match a regular expression here cannot be created.
+# Use "#" for comments.
+# This is case insensitive by default',
+	'titlewhitelist' => '# This is a title whitelist. Use "#" for comments. 
+# This is case insensitive by default',
+	'titleblacklist-forbidden-edit' => '"$2" මාතෘකාව නිර්මාණය වලක්වා ඇත.
+එය පහත සඳහන් කළුලයිස්තු අංගයට ගැළපේ: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$3" යන්න නිර්මාණය වලකා ඇති නිසා "$2" යන්න "$3" වෙත ගෙනයා නොහැක.
+එය පහත කළුලයිස්තු අංගයට ගැළපේ: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" ගොනු නාමය නිර්මාණය වලක්වා ඇත.
+එය පහත සඳහන් කළුලයිස්තු අංගයට ගැළපේ: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" පරිශීලක නාමය නිර්මාණය වලක්වා ඇත.
+එය පහත සඳහන් කළුලයිස්තු අංගයට ගැළපේ: <code>$1</code>',
+	'titleblacklist-invalid' => 'මාතෘකා කළුලයිස්තුවේ පහත {{PLURAL:$1|පේලිය|පේලි}} වැරදිය;
+සුරැකුමට පෙර ඒවා නිවැරදි කරන්න:',
+	'titleblacklist-override' => 'කළුලයිස්තුව නොසලකා හරින්න',
+	'right-tboverride' => 'මාතෘකා කළුලයිස්තුව ඉක්මවායන්න',
+	'right-tboverride-account' => 'පරිශීලක නාම කළුලයිස්තුව ඉක්මවායන්න',
 );
 
 /** Slovak (Slovenčina)
