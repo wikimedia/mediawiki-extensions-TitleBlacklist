@@ -457,6 +457,7 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Mihxil
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -478,6 +479,7 @@ $messages['eo'] = array(
 bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'titleblacklist-override' => 'Ignori la nigraliston',
 	'right-tboverride' => 'Anstataŭigi la titolan nigraliston',
+	'right-tboverride-account' => 'Transpasi la nigran liston pri uzantoj.',
 );
 
 /** Spanish (Español)
