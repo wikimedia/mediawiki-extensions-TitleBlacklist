@@ -1969,6 +1969,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Fdcn
  * @author Gaoxuewei
+ * @author Mark85296341
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
@@ -1984,6 +1985,7 @@ $messages['zh-hant'] = array(
 	'titleblacklist-forbidden-new-account' => '用戶名“$2”已被阻止創建。
 它匹配以下黑名單項目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
+	'titleblacklist-override' => '忽略黑名單',
 	'right-tboverride' => '覆蓋標題黑名單',
 );
 
