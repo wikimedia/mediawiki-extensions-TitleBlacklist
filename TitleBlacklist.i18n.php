@@ -948,6 +948,7 @@ Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 );
 
 /** Georgian (ქართული)
+ * @author Dawid Deutschland
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
@@ -965,6 +966,7 @@ $messages['ka'] = array(
 	'titleblacklist-forbidden-new-account' => 'აკრძალულია სიტყვა «$2»-ის გამოყენება მომხმარებლის სახელად.
 ეს სახელი ექვემდებარება შემდეგ ჩანაწერს შავი სიიდან: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|შემდეგი ხაზიа|შემდეგი ხაზები}} აკრძალულ სახელთა სიაში {{PLURAL:$1|არის არასწორი რეგულარული გამოთქმა|არის არასწორი რეგულარული გამოთქმები}}. გთხოვთ შეასწოროთ {{PLURAL:$1|ის|ისინი}} შენახვამდე:',
+	'titleblacklist-override' => 'შავი სიის იგნორირება',
 	'right-tboverride' => 'გვერდების სახელების შავი სიის იგნორირება',
 );
 
