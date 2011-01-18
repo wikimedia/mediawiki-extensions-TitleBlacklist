@@ -1973,6 +1973,7 @@ $messages['zh-hans'] = array(
  * @author Gaoxuewei
  * @author Mark85296341
  * @author Shinjiman
+ * @author Waihorace
  */
 $messages['zh-hant'] = array(
 	'titleblacklist-desc' => '容許禁止建立指定標題的頁面: [[MediaWiki:Titleblacklist]] 與 [[MediaWiki:Titlewhitelist]]',
@@ -1989,5 +1990,6 @@ $messages['zh-hant'] = array(
 	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在保存前改正{{PLURAL:$1|它|它們}}:',
 	'titleblacklist-override' => '忽略黑名單',
 	'right-tboverride' => '覆蓋標題黑名單',
+	'right-tboverride-account' => '覆蓋用戶名黑名單',
 );
 
