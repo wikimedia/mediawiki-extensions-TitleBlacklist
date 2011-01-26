@@ -1368,6 +1368,7 @@ Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
@@ -1387,9 +1388,9 @@ A corispond a costa intrada dla blacklist: <code>$1</code>',
 A corispond a costa intrada dla blacklist: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La linia|Le linie}} sota ant la blacklist dij tìtoj {{PLURAL:$1|a l'é pa bon-a|a son pa bon-e}};
 për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
-	'titleblacklist-override' => 'Ignora la lista nèira',
+	'titleblacklist-override' => 'Ignoré la lista nèira',
 	'right-tboverride' => 'Sàuta la blacklist dij tìtoj',
-	'right-tboverride-account' => 'Sàuta la blacklist dij nòm utent',
+	'right-tboverride-account' => "Ignoré la lista nèira djë stranòm d'utent",
 );
 
 /** Portuguese (Português)
