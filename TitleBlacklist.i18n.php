@@ -454,6 +454,7 @@ $messages['el'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Η ακόλουθη γραμμή|Οι ακόλουθες γραμμές}} στην μαύρη λίστα τίτλων είναι {{PLURAL:$1|άκυρη|άκυρες}}· παρακαλώ διορθώστε {{PLURAL:$1|την|τις}} πριν την αποθήκευση:',
 	'titleblacklist-override' => 'Αγνοήστε τη μαύρη λίστα',
 	'right-tboverride' => 'Παράκαμψη της μαύρης λίστας τίτλων',
+	'right-tboverride-account' => 'Παρακάμψετε την μαύρη λίστα ονομάτων χρήστη',
 );
 
 /** Esperanto (Esperanto)
