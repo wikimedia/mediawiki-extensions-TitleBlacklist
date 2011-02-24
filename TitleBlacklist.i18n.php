@@ -1443,6 +1443,13 @@ O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'right-tboverride-account' => 'Sobrepor a lista negra de nomes de usuários',
 );
 
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'titleblacklist-override' => 'Yana sutisuyuta ama qhawaychu',
+);
+
 /** Romanian (Română)
  * @author AdiJapan
  * @author Stelistcristi
