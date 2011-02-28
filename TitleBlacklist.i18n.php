@@ -1964,6 +1964,14 @@ Gebananem at binon in blägalised as: <code>$1</code>',
 	'right-tboverride' => 'Nedemön blägalisedi tiädas',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'titlewhitelist' => '# דאס איז א קעפל ווײַסליסטע. ניצט "#" פֿאַר באַמערקונגען.
+# ס\'איז נישט קיין אונטערשיד צווישן גרויסע און קליינע בוכשטאַבן',
+);
+
 /** Cantonese (粵語)
  * @author Shinjiman
  */
