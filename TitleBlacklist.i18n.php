@@ -949,6 +949,7 @@ Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 );
 
 /** Georgian (ქართული)
+ * @author David1010
  * @author Dawid Deutschland
  * @author გიორგიმელა
  */
@@ -969,6 +970,7 @@ $messages['ka'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|შემდეგი ხაზიа|შემდეგი ხაზები}} აკრძალულ სახელთა სიაში {{PLURAL:$1|არის არასწორი რეგულარული გამოთქმა|არის არასწორი რეგულარული გამოთქმები}}. გთხოვთ შეასწოროთ {{PLURAL:$1|ის|ისინი}} შენახვამდე:',
 	'titleblacklist-override' => 'შავი სიის იგნორირება',
 	'right-tboverride' => 'გვერდების სახელების შავი სიის იგნორირება',
+	'right-tboverride-account' => 'მომხმარებელთა სახელების შავი სიის იგნორირება',
 );
 
 /** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
@@ -1849,7 +1851,9 @@ Tumutugma ito sa sumusunod na ipinasok/entradang nasa talaan ng mga pinagbabawal
 Tumutugma ito sa sumusunod na entrada/ipinasok sa talaan ng mga pinagbabawalan ("itim na talaan"): <code>$1</code>',
 	'titleblacklist-invalid' => 'Ang sumusunod na {{PLURAL:$1|hanay|mga hanay}} (guhit) na nasa loob ng talaan ng pinagbabawal na pamagat {{PLURAL:$1|ay|ay}} hindi tanggap;
 pakitama lamang {{PLURAL:$1|ito|ang mga ito}} bago sagipin:',
+	'titleblacklist-override' => 'Huwag pansinin ang talaang-itim',
 	'right-tboverride' => 'Daigin (pangibabawan) ang talaan ng pinagbabawalang pamagat',
+	'right-tboverride-account' => 'Daigin ang talaang-itim ng mga pangalan ng tagagamit',
 );
 
 /** Turkish (Türkçe)
