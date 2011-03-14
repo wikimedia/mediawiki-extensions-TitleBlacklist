@@ -21,7 +21,7 @@ class TitleBlacklist {
 
 	/**
 	 * Load all configured blacklist sources
-         */
+	 */
 	public function load() {
 		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
 		wfProfileIn( __METHOD__ );
@@ -46,7 +46,7 @@ class TitleBlacklist {
 
 	/**
 	 * Load all configured whitelist sources
-         */
+	 */
 	public function loadWhitelist() {
 		global $wgMemc, $wgTitleBlacklistCaching;
 		wfProfileIn( __METHOD__ );
@@ -66,7 +66,7 @@ class TitleBlacklist {
 	 *
 	 * @param $source A blacklist source from $wgTitleBlacklistSources
 	 * @return The content of the blacklist source as a string
-         */
+	 */
 	private static function getBlacklistText( $source ) {
 		if( !is_array( $source ) || count( $source ) <= 0 ) {
 			return '';	//Return empty string in error case
@@ -111,7 +111,7 @@ class TitleBlacklist {
 	 *
 	 * @param $list Text of a blacklist source, as a string
 	 * @return An array of TitleBlacklistEntry entries
-         */
+	 */
 	public static function parseBlacklist( $list ) {
 		wfProfileIn( __METHOD__ );
 		$lines = preg_split( "/\r?\n/", $list );
@@ -138,7 +138,7 @@ class TitleBlacklist {
 	 * @param $override If set to true, overrides work
 	 * @return The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
-         */
+	 */
 	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
 		if( $override && self::userCanOverride( $action ) )
 			return false;
@@ -154,7 +154,7 @@ class TitleBlacklist {
 	 * @param $action Action to check; 'edit' if unspecified
 	 * @return The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
-         */
+	 */
 	public function isBlacklisted( $title, $action = 'edit' ) {
 		if( !($title instanceof Title) ) {
 			$title = Title::newFromText( $title );
@@ -178,7 +178,7 @@ class TitleBlacklist {
 	 * @param $title Title to check
 	 * @param $action Action to check; 'edit' if unspecified
 	 * @return TRUE if whitelisted; otherwise FALSE
-         */
+	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
 		global $wgUser;
 		if( !($title instanceof Title) ) {
@@ -197,7 +197,7 @@ class TitleBlacklist {
 	 * Get the current blacklist
 	 *
 	 * @return Array of TitleBlacklistEntry items
-         */
+	 */
 	public function getBlacklist() {
 		if( is_null( $this->mBlacklist ) ) {
 			$this->load();
@@ -209,7 +209,7 @@ class TitleBlacklist {
 	 * Get the current whitelist
 	 *
 	 * @return Array of TitleBlacklistEntry items
-         */
+	 */
 	public function getWhitelist() {
 		if( is_null( $this->mWhitelist ) ) {
 			$this->loadWhitelist();
@@ -222,7 +222,7 @@ class TitleBlacklist {
 	 *
 	 * @param $source URL of the blacklist source
 	 * @return The content of the blacklist source as a string
-         */
+	 */
 	private static function getHttp( $url ) {
 		global $messageMemc, $wgTitleBlacklistCaching;
 		$key = "title_blacklist_source:" . md5( $url ); // Global shared
