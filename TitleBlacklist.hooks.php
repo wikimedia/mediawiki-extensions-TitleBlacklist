@@ -12,7 +12,17 @@
  * @ingroup Extensions
  */
 class TitleBlacklistHooks {
-	/** getUserPermissionsErrorsExpensive hook */
+
+	/**
+	 * getUserPermissionsErrorsExpensive hook
+	 *
+	 * @static
+	 * @param Title $title
+	 * @param User $user
+	 * @param  $action
+	 * @param  $result
+	 * @return bool
+	 */
 	public static function userCan( $title, $user, $action, &$result ) {
 		global $wgTitleBlacklist;
 		if( $action == 'create' || $action == 'edit' || $action == 'upload' ) {
@@ -28,13 +38,23 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** AbortMove hook */
+	/**
+	 * AbortMove hook
+	 *
+	 * @static
+	 * @param Title $old
+	 * @param Title $nt
+	 * @param User $user
+	 * @param  $err
+	 * @return bool
+	 */
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		global $wgTitleBlacklist;
 		efInitTitleBlacklist();
 		$blacklisted = $wgTitleBlacklist->userCannot( $nt, $user, 'move' );
-		if( !$blacklisted )
+		if( !$blacklisted ) {
 			$blacklisted = $wgTitleBlacklist->userCannot( $old, $user, 'edit' );
+		}
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			$err = wfMsgWikiHtml( $blacklisted->getErrorMessage( 'move' ),
 				htmlspecialchars( $blacklisted->getRaw() ),
