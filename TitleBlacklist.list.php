@@ -180,7 +180,6 @@ class TitleBlacklist {
 	 * @return TRUE if whitelisted; otherwise FALSE
 	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
-		global $wgUser;
 		if( !($title instanceof Title) ) {
 			$title = Title::newFromText( $title );
 		}

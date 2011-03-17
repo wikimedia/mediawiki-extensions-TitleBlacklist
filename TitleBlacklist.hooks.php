@@ -86,7 +86,11 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** AbortNewAccount hook */
+	/** AbortNewAccount hook
+	 *
+	 *
+	 * @param User $user
+	 */
 	public static function abortNewAccount( $user, &$message ) {
 		global $wgUser, $wgRequest;
 		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
@@ -99,11 +103,15 @@ class TitleBlacklistHooks {
 		return self::acceptNewUserName( $userName, $message );
 	}
 
-	/** EditFilter hook */
+	/** EditFilter hook
+	 *
+	 * @param EditPage $editor
+	 */
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgTitleBlacklist, $wgUser;
 		efInitTitleBlacklist();
 		$title = $editor->mTitle;
+
 		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 
 			$bl = $wgTitleBlacklist->parseBlacklist( $text );
@@ -143,7 +151,10 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** ArticleSaveComplete hook */
+	/** ArticleSaveComplete hook
+	 *
+	 * @param Article $article
+	 */
 	public static function clearBlacklist( &$article, &$user,
 		$text, $summary, $isminor, $iswatch, $section )
 	{
@@ -158,12 +169,13 @@ class TitleBlacklistHooks {
 
 	/** UserCreateForm hook based on the one from AntiSpoof extension */
 	public static function addOverrideCheckbox( &$template ) {
-		global $wgRequest, $wgUser;
+		global $wgRequest;
 
-		if ( TitleBlacklist::userCanOverride( 'new-account' ) )
+		if ( TitleBlacklist::userCanOverride( 'new-account' ) ) {
 			$template->addInputItem( 'wpIgnoreTitleBlacklist',
 				$wgRequest->getCheck( 'wpIgnoreTitleBlacklist' ),
 				'checkbox', 'titleblacklist-override' );
+		}
 		return true;
 	}
 }

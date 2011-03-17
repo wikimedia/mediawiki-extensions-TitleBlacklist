@@ -57,7 +57,9 @@ $wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
  */
 function efInitTitleBlacklist() {
 	global $wgTitleBlacklist;
-	if( isset( $wgTitleBlacklist ) && $wgTitleBlacklist ) return;
+	if( isset( $wgTitleBlacklist ) && $wgTitleBlacklist ) {
+		return;
+	}
 	$wgTitleBlacklist = new TitleBlacklist();
 }
 
