@@ -104,7 +104,7 @@ class TitleBlacklist {
 
 		return '';
 	}
-	
+
 	/**
 	 * Parse blacklist from a string
 	 *
@@ -115,8 +115,7 @@ class TitleBlacklist {
 		wfProfileIn( __METHOD__ );
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = array();
-		foreach ( $lines as $line )
-		{
+		foreach ( $lines as $line ) {
 			$line = TitleBlacklistEntry :: newFromString( $line );
 			if ( $line ) {
 				$result[] = $line;
@@ -164,7 +163,7 @@ class TitleBlacklist {
 				if( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
-				return $item;
+				return $item; // "returning true"
 			}
 		}
 		return false;
@@ -254,8 +253,9 @@ class TitleBlacklist {
 		foreach( $blacklist as $e ) {
 			wfSuppressWarnings();
 			$regex = $e->getRegex();
-			if( preg_match( "/{$regex}/u", '' ) === false )
+			if( preg_match( "/{$regex}/u", '' ) === false ) {
 				$badEntries[] = $e->getRaw();
+			}
 			wfRestoreWarnings();
 		}
 		return $badEntries;
@@ -304,7 +304,8 @@ class TitleBlacklistEntry {
 	 *
 	 * @param $title Title to check
 	 * @param $action %Action to check
-	 * @return TRUE if the user can; otherwise FALSE
+	 * @return TRUE if the the regex matches the title, and is not overridden
+	 * else if it doesn't match (or was overridden)
 	 */
 	public function matches( $title, $action ) {
 		wfSuppressWarnings();
@@ -314,24 +315,24 @@ class TitleBlacklistEntry {
 		global $wgUser;
 		if( $match ) {
 			if( isset( $this->mParams['autoconfirmed'] ) && $wgUser->isAllowed( 'autoconfirmed' ) ) {
-				return true;
+				return false;
 			}
 			if( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
-				return true;
+				return false;
 			}
 			if( isset( $this->mParams['newaccountonly'] ) && $action != 'new-account' ) {
-				return true;
+				return false;
 			}
 			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
-				return true;
+				return false;
 			}
 			if ( isset( $this->mParams['reupload'] ) && $action == 'upload' ) {
 				// Special:Upload also checks 'create' permissions when not reuploading
-				return true;
+				return false;
 			}
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	/**
