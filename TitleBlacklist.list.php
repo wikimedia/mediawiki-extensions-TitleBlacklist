@@ -28,7 +28,6 @@ class TitleBlacklist {
 		//Try to find something in the cache
 		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
 		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
-			
 			$this->mBlacklist = $cachedBlacklist;
 			wfProfileOut( __METHOD__ );
 			return;
@@ -147,7 +146,7 @@ class TitleBlacklist {
 	}
 
 	/**
-	 * Check whether the blacklist restricts 
+	 * Check whether the blacklist restricts
 	 * performing a specific action on the given Title
 	 *
 	 * @param $title Title to check
@@ -161,7 +160,7 @@ class TitleBlacklist {
 		}
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
-			if( !$item->matches( $title, $action ) ) {
+			if( $item->matches( $title, $action ) ) {
 				if( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
@@ -170,9 +169,9 @@ class TitleBlacklist {
 		}
 		return false;
 	}
-	
+
 	/**
-	 * Check whether it has been explicitly whitelisted that the 
+	 * Check whether it has been explicitly whitelisted that the
 	 * current User may perform a specific action on the given Title
 	 *
 	 * @param $title Title to check
@@ -191,7 +190,7 @@ class TitleBlacklist {
 		}
 		return false;
 	}
-	
+
 	/**
 	 * Get the current blacklist
 	 *
@@ -203,7 +202,7 @@ class TitleBlacklist {
 		}
 		return $this->mBlacklist;
 	}
-	
+
 	/*
 	 * Get the current whitelist
 	 *
@@ -215,7 +214,7 @@ class TitleBlacklist {
 		}
 		return $this->mWhitelist;
 	}
-	
+
 	/**
 	 * Get the text of a blacklist source via HTTP
 	 *
@@ -235,7 +234,7 @@ class TitleBlacklist {
 		}
 		return $result;
 	}
-	
+
 	/**
 	 * Invalidate the blacklist cache
 	 */
@@ -261,7 +260,7 @@ class TitleBlacklist {
 		}
 		return $badEntries;
 	}
-	
+
 	/**
 	 * Inidcates whether user can override blacklist on certain action.
 	 * 
