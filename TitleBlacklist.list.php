@@ -183,7 +183,7 @@ class TitleBlacklist {
 		}
 		$whitelist = $this->getWhitelist();
 		foreach( $whitelist as $item ) {
-			if( !$item->matches( $title, $action ) ) {
+			if( $item->matches( $title, $action ) ) {
 				return true;
 			}
 		}
@@ -305,7 +305,7 @@ class TitleBlacklistEntry {
 	 * @param $title Title to check
 	 * @param $action %Action to check
 	 * @return TRUE if the the regex matches the title, and is not overridden
-	 * else if it doesn't match (or was overridden)
+	 * else false if it doesn't match (or was overridden)
 	 */
 	public function matches( $title, $action ) {
 		wfSuppressWarnings();
