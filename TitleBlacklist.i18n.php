@@ -312,7 +312,7 @@ $messages['ca'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
 	'titleblacklist-override' => 'Ignora la llista negra',
 	'right-tboverride' => 'Sobreescriure la llista negra',
-	'right-tboverride-account' => "Ignora la llista negra de noms d'usuari/a",
+	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
 /** Czech (Česky)
