@@ -886,6 +886,7 @@ $messages['it'] = array(
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
 	'titleblacklist-override' => 'Ignora la blacklist',
 	'right-tboverride' => 'Ignora la blacklist dei titoli',
+	'right-tboverride-account' => 'Ignora la blacklist dei nome utente',
 );
 
 /** Japanese (日本語)
