@@ -299,7 +299,7 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * Check whether a user can perform the specified action 
+	 * Check whether a user can perform the specified action
 	 * on the specified Title
 	 *
 	 * @param $title Title to check
@@ -404,7 +404,7 @@ class TitleBlacklistEntry {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * @returns This entry's regular expression
 	 */
@@ -432,7 +432,7 @@ class TitleBlacklistEntry {
 	public function getCustomMessage() {
 		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
 	}
-	
+
 	/**
 	 * @returns The format version
 	 */
@@ -444,7 +444,7 @@ class TitleBlacklistEntry {
 	 * @param $v New version to set
 	 */
 	public function setFormatVersion( $v ) { $this->mFormatVersion = $v; }
-	
+
 	/**
 	 * Return the error message name for the blacklist entry.
 	 * 
