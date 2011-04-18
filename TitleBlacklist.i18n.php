@@ -111,12 +111,15 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'titleblacklist-desc' => "Permite a los alministradores prohibir la creación de páxines y cuentes d'usuariu per aciu d'una [[MediaWiki:Titleblacklist|llista prieta]] y una [[MediaWiki:Titlewhitelist|llista blanca]]",
-	'titleblacklist' => '# Esta ye una llista prieta de títulos. Los títulos y usuarios que concayen con dalguna de les expresiones regulares d\'equí nun puen ser creaos.
-# Usa "#" pa los comentarios.',
-	'titlewhitelist' => '# Esta ye una llista blanca de títulos. Usa "#" pa los comentarios.',
+	'titleblacklist' => '# Esta ye una llista prieta de títulos. Los títulos y usuarios que concayen con dalguna d\'estes expresiones regulares nun se puen crear.
+# Usa "#" pa los comentarios.
+# De mou predetermináu nun ye sensible a les mayúscules.',
+	'titlewhitelist' => '# Esta ye una llista blanca de títulos. Usa "#" pa los comentarios.
+# De mou predetermináu nun ye sensible a les mayúscules.',
 	'titleblacklist-forbidden-edit' => 'Torgóse la creación del títulu "$2".
 Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" nun pue ser treslladáu a "$3" porque\'l títulu "$3" ta prohibío crealu.
@@ -127,7 +130,9 @@ Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
 Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente llinia|Les siguientes llinies}} de la llista prieta de títulos {{PLURAL:$1|nun ye válida|nun son válides}};
 por favor {{PLURAL:$1|corríxila|corríxiles}} enantes de guardar:',
+	'titleblacklist-override' => 'Inorar la llista prieta',
 	'right-tboverride' => 'Inorar la llista prieta de títulos',
+	'right-tboverride-account' => "Saltar la llista prieta d'usuarios",
 );
 
 /** Bashkir (Башҡортса)
