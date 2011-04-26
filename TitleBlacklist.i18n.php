@@ -1503,7 +1503,9 @@ Jidde se combronde cu le vosce d\'a lista gnore: <code>$1</code>',
 Jidde se combronde cu le vosce d\'a lista gnore: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|'A seguenda linèe|Le seguende linèe}} jndr'à lista gnore de le titele {{PLURAL:$1|jè|sonde}} invalide;
 pe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
+	'titleblacklist-override' => "No scè penzanne 'a lista gnore",
 	'right-tboverride' => "Sovrasrive 'a lista gnore de le titele",
+	'right-tboverride-account' => "Sovrasrive 'a lista gnore de le utinde",
 );
 
 /** Russian (Русский)
