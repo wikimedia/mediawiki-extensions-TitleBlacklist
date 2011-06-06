@@ -63,6 +63,7 @@ Concuerda con a dentrada <code>$1</code> d\'a lista negra.',
 );
 
 /** Arabic (العربية)
+ * @author Aiman titi
  * @author Meno25
  * @author OsamaK
  */
@@ -82,7 +83,9 @@ $messages['ar'] = array(
 	'titleblacklist-forbidden-new-account' => 'اسم المستخدم "$2" تم منعه من الإنشاء.
 هو يطابق مدخلة القائمة السوداء التالية: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1||السطر التالي|السطران التاليان|السطور التالية}} في قائمة العناوين السوداء {{PLURAL:$1||غير صحيح|غير صحيحان|غير صحيحة}}؛ من فضلك {{PLURAL:$1||صححه|صححهما|صححهم}} قبل الحفظ:',
+	'titleblacklist-override' => 'تجاهل القائمة السوداء',
 	'right-tboverride' => 'تجاوز قائمة العناوين السوداء',
+	'right-tboverride-account' => 'تجاوز قائمة اسم المستخدم السوداء.',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
