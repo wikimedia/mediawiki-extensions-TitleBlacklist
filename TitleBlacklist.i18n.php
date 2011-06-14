@@ -1243,10 +1243,12 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 
 /** Nahuatl (Nāhuatl)
  * @author Fluence
+ * @author Ricardo gs
  */
 $messages['nah'] = array(
-	'titleblacklist' => '# Inīn cateh ahcualli tōcāitl.  Ahmo huelīti tlachīhuāz tlatequitiltilīlli auh tōcāitl monēz nicān oppa.
-# Xictequitiltia "#" ic tlahtoa.',
+	'titleblacklist' => '#Inīn ahcualli tēpōhualāmatl. Ahmo tihuelitiz ahmo ticyōcoyaz tōcāitl ahnozo tlatequitiltilīlli mā quinehuihuilia cemeh in nāhuatīllahtōliztli.
+#Xinemītia «#» titlacaquiztilīz.
+#Inīn ahmo quimati in huēyimachiyōtlahtōliztli intlā ahmo mopehpena',
 );
 
 /** Low German (Plattdüütsch)
