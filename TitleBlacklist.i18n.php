@@ -1488,6 +1488,7 @@ Interdicția a fost declanșată de următorul element din lista neagră: <code>
 corectați{{PLURAL:$1|-o|-le}} înainte de a salva pagina.',
 	'titleblacklist-override' => 'Ignoră lista neagră',
 	'right-tboverride' => 'Înlocuiește titlul listei negre',
+	'right-tboverride-account' => 'Suprascrie lista neagră a numelor de utilizator',
 );
 
 /** Tarandíne (Tarandíne)
