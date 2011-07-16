@@ -1238,7 +1238,9 @@ Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Nama pengguna "$2" telah diharamkan kerana sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} berikut adalah tidak sah. Sila betulkannya sebelum menyimpan:',
+	'titleblacklist-override' => 'Abaikan senarai hitam',
 	'right-tboverride' => 'Mengatasi senarai hitam tajuk',
+	'right-tboverride-account' => 'Mengatasi senarai hitam nama pengguna',
 );
 
 /** Nahuatl (Nāhuatl)
