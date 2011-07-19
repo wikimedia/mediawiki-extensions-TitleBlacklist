@@ -642,6 +642,7 @@ Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 {{PLURAL:$1|la|les}} volyéd corregiér devant qu’encartar :',
 	'titleblacklist-override' => 'Ignorar la lista nêre',
 	'right-tboverride' => 'Ignorar la lista nêre des titros',
+	'right-tboverride-account' => 'Ignorar la lista nêre des noms d’utilisator',
 );
 
 /** Irish (Gaeilge)
