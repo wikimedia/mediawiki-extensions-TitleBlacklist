@@ -102,9 +102,7 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 	}
 
 	public function getPossibleErrors() {
-		
-		//return array_merge( parent::getPossibleErrors(), array(
-		//) );
+
 	}
 
 	protected function getExamples() {
