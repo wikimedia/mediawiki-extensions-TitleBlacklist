@@ -40,6 +40,12 @@ $wgTitleBlacklistCaching = array(
 	'warningexpiry' => 600,
 );
 
+$dir = dirname( __FILE__ );
+
+// Register the API method
+$wgAutoloadClasses['ApiQueryTitleBlacklist'] = "$dir/api/ApiQueryTitleBlacklist.php";
+$wgAPIModules['titleblacklist'] = 'ApiQueryTitleBlacklist';
+
 $wgAvailableRights[] = 'tboverride';	// Implies tboverride-account
 $wgAvailableRights[] = 'tboverride-account';	// For account creation
 $wgGroupPermissions['sysop']['tboverride'] = true;
