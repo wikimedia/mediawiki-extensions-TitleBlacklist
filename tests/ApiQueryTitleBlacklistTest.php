@@ -48,7 +48,7 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		$this->assertEquals( $listed[0]['titleblacklist']['result'], 'error', 'Listed title returns error');
 		$this->assertEquals(
 			$listed[0]['titleblacklist']['error'],
-			"The title \"bar\" has been banned from creation.\nIt matches the following blacklist entry: <code>[Bb]ar #	example blacklist entry</code>",
+			"The title \"bar\" has been banned from creation.\nIt matches the following blacklist entry: <code>[Bb]ar #example blacklist entry</code>",
 			'Listed title error text is as as expected'
 		);
 	}

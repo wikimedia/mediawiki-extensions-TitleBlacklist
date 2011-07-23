@@ -101,10 +101,6 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 		return 'Validate an article title, filename, or username against the TitleBlacklist.';
 	}
 
-	public function getPossibleErrors() {
-
-	}
-
 	protected function getExamples() {
 		return array(
 			'api.php?action=titleblacklist&tbtitle=Foo',
