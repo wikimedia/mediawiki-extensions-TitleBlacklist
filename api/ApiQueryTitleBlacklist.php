@@ -65,8 +65,8 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 				htmlspecialchars( $params['title'] ),
 			);
 			
-			$this->getResult()->addValue( 'titleblacklist', 'result', 'error' );
-			$this->getResult()->addValue( 'titleblacklist', 'error', wfMsg($blacklisted->getErrorMessage('edit'), $result) );
+			$this->getResult()->addValue( 'titleblacklist', 'result', 'blacklisted' );
+			$this->getResult()->addValue( 'titleblacklist', 'reason', wfMsg($blacklisted->getErrorMessage('edit'), $result) );
 		} else {
 			// not blacklisted
 			$this->getResult()->addValue( 'titleblacklist', 'result', 'ok' );
