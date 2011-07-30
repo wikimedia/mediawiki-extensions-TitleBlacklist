@@ -36,8 +36,6 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 	}
 
 	public function execute() {
-		global $wgTitleBlacklist; // When in Rome...
-
 		# get the current user.
 		$context = $this->createContext();
 		$user = $context->getUser();
@@ -53,11 +51,8 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 		if( $action === 'createpage' || $action === 'createtalk' ) {
 			$action = 'create';
 		}
-		
-		// possible actions at the moment: create, edit, upload
-		efInitTitleBlacklist();
 
-		$blacklisted = $wgTitleBlacklist->userCannot( $params['title'], $user, $action );
+		$blacklisted = TitleBlacklist::singleton()->userCannot( $params['title'], $user, $action );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			// this title is blacklisted.
 			$result = array(

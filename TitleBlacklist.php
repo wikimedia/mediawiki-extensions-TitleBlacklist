@@ -59,15 +59,4 @@ $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 $wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 $wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
 
-/**
- * Initialize the title blacklist
- */
-function efInitTitleBlacklist() {
-	global $wgTitleBlacklist;
-	if( isset( $wgTitleBlacklist ) && $wgTitleBlacklist ) {
-		return;
-	}
-	$wgTitleBlacklist = new TitleBlacklist();
-}
-
 //@}

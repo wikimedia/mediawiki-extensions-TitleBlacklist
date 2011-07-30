@@ -20,6 +20,20 @@ class TitleBlacklist {
 	const VERSION = 2;	//Blacklist format
 
 	/**
+	 * Get an instance of this class
+	 *
+	 * @return TitleBlacklist
+	 */
+	public static function singleton() {
+		static $instance = null;
+
+		if ( $instance === null ) {
+			$instance = new self;
+		}
+		return $instance;
+	}
+
+	/**
 	 * Load all configured blacklist sources
 	 */
 	public function load() {
