@@ -2016,10 +2016,11 @@ $messages['yue'] = array(
  * @author Fdcn
  * @author Hydra
  * @author Liangent
+ * @author PhiLiP
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
-	'titleblacklist-desc' => '容许禁止建立指定标题的页面: [[MediaWiki:Titleblacklist]] 和 [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc' => '允许管理员通过[[MediaWiki:Titleblacklist|黑名单]]和[[MediaWiki:Titlewhitelist|白名单]]禁止页面和用户帐户的创建',
 	'titleblacklist' => '# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。
 # 请使用"#"来添加注释。
 # 默认忽略大小写',
