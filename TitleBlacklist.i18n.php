@@ -1569,7 +1569,7 @@ $messages['rue'] = array(
 	'right-tboverride-account' => 'Переконаня чорной листины назв сторінок',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
