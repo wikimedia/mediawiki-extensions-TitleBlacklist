@@ -27,10 +27,8 @@
  * @ingroup API
  * @ingroup Extensions
  */
+class ApiQueryTitleBlacklist extends ApiBase {
 
-
-class ApiQueryTitleBlacklist extends ApiQueryBase {
-		
 	public function __construct( $query, $moduleName ) {
 		parent::__construct( $query, $moduleName, 'tb' );
 	}
@@ -39,7 +37,7 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 		# get the current user.
 		$context = $this->createContext();
 		$user = $context->getUser();
-		
+
 		$params = $this->extractRequestParams();
 		$action = $params['action'];
 
@@ -59,13 +57,14 @@ class ApiQueryTitleBlacklist extends ApiQueryBase {
 				htmlspecialchars( $blacklisted->getRaw() ),
 				htmlspecialchars( $params['title'] ),
 			);
-			
-			$this->getResult()->addValue( 'titleblacklist', 'result', 'blacklisted' );
+
+			$result = $this->getResult();
+			$result->addValue( 'titleblacklist', 'result', 'blacklisted' );
 			// this is hardcoded to 'edit' in Titleblacklist.hooks.php, duplicating that.
 			$message = $blacklisted->getErrorMessage( 'edit' );
-			$this->getResult()->addValue( 'titleblacklist', 'reason', wfMessage( $message, $result )->text() );
-			$this->getResult()->addValue( 'titleblacklist', 'message', $message );
-			$this->getResult()->addValue( 'titleblacklist', 'line', htmlspecialchars( $blacklisted->getRaw() ) );
+			$result->addValue( 'titleblacklist', 'reason', wfMessage( $message, $result )->text() );
+			$result->addValue( 'titleblacklist', 'message', $message );
+			$result->addValue( 'titleblacklist', 'line', htmlspecialchars( $blacklisted->getRaw() ) );
 		} else {
 			// not blacklisted
 			$this->getResult()->addValue( 'titleblacklist', 'result', 'ok' );
