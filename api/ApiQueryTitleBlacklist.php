@@ -58,13 +58,13 @@ class ApiQueryTitleBlacklist extends ApiBase {
 				htmlspecialchars( $params['title'] ),
 			);
 
-			$result = $this->getResult();
-			$result->addValue( 'titleblacklist', 'result', 'blacklisted' );
+			$res = $this->getResult();
+			$res->addValue( 'titleblacklist', 'result', 'blacklisted' );
 			// this is hardcoded to 'edit' in Titleblacklist.hooks.php, duplicating that.
 			$message = $blacklisted->getErrorMessage( 'edit' );
-			$result->addValue( 'titleblacklist', 'reason', wfMessage( $message, $result )->text() );
-			$result->addValue( 'titleblacklist', 'message', $message );
-			$result->addValue( 'titleblacklist', 'line', htmlspecialchars( $blacklisted->getRaw() ) );
+			$res->addValue( 'titleblacklist', 'reason', wfMessage( $message, $result )->text() );
+			$res->addValue( 'titleblacklist', 'message', $message );
+			$res->addValue( 'titleblacklist', 'line', htmlspecialchars( $blacklisted->getRaw() ) );
 		} else {
 			// not blacklisted
 			$this->getResult()->addValue( 'titleblacklist', 'result', 'ok' );
