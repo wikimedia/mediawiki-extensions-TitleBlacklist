@@ -50,7 +50,12 @@ class ApiQueryTitleBlacklist extends ApiBase {
 			$action = 'create';
 		}
 
-		$blacklisted = TitleBlacklist::singleton()->userCannot( $params['title'], $user, $action );
+		$title = Title::newFromText( $params['title'] );
+		if ( !$title ) {
+			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+		}
+
+		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			// this title is blacklisted.
 			$result = array(
