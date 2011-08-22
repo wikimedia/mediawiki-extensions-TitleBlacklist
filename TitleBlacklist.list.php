@@ -146,16 +146,17 @@ class TitleBlacklist {
 	 *
 	 * @param $title Title to check
 	 * @param $user User to check
-	 * @param $action Action to check; 'edit' if unspecified
-	 * @param $override If set to true, overrides work
-	 * @return The corresponding TitleBlacklistEntry if blacklisted;
+	 * @param $action string Action to check; 'edit' if unspecified
+	 * @param $override bool If set to true, overrides work
+	 * @return TitleBlacklistEntry|false The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
 	 */
 	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
-		if( $override && self::userCanOverride( $action ) )
+		if( $override && self::userCanOverride( $action ) ) {
 			return false;
-		else
+		} else {
 			return $this->isBlacklisted( $title, $action );
+		}
 	}
 
 	/**
@@ -163,8 +164,8 @@ class TitleBlacklist {
 	 * performing a specific action on the given Title
 	 *
 	 * @param $title Title to check
-	 * @param $action Action to check; 'edit' if unspecified
-	 * @return The corresponding TitleBlacklistEntry if blacklisted;
+	 * @param $action string Action to check; 'edit' if unspecified
+	 * @return TitleBlacklistEntry|false The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
 	 */
 	public function isBlacklisted( $title, $action = 'edit' ) {
@@ -188,8 +189,8 @@ class TitleBlacklist {
 	 * current User may perform a specific action on the given Title
 	 *
 	 * @param $title Title to check
-	 * @param $action Action to check; 'edit' if unspecified
-	 * @return TRUE if whitelisted; otherwise FALSE
+	 * @param $action string Action to check; 'edit' if unspecified
+	 * @return bool TRUE if whitelisted; otherwise FALSE
 	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
 		if( !($title instanceof Title) ) {
@@ -216,7 +217,7 @@ class TitleBlacklist {
 		return $this->mBlacklist;
 	}
 
-	/*
+	/**
 	 * Get the current whitelist
 	 *
 	 * @return Array of TitleBlacklistEntry items
@@ -231,8 +232,8 @@ class TitleBlacklist {
 	/**
 	 * Get the text of a blacklist source via HTTP
 	 *
-	 * @param $source URL of the blacklist source
-	 * @return The content of the blacklist source as a string
+	 * @param $url string URL of the blacklist source
+	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getHttp( $url ) {
 		global $messageMemc, $wgTitleBlacklistCaching;
@@ -255,11 +256,11 @@ class TitleBlacklist {
 		global $wgMemc;
 		$wgMemc->delete( wfMemcKey( "title_blacklist_entries" ) );
 	}
-	
+
 	/**
 	 * Validate a new blacklist
 	 *
-	 * @param $list Text of the new blacklist, as a string
+	 * @param $blacklist array
 	 * @return Array of bad entries; empty array means blacklist is valid
 	 */
 	public function validate( $blacklist ) {
@@ -277,8 +278,10 @@ class TitleBlacklist {
 
 	/**
 	 * Inidcates whether user can override blacklist on certain action.
-	 * 
+	 *
 	 * @param $action Action
+	 *
+	 * @return bool
 	 */
 	public static function userCanOverride( $action ) {
 		global $wgUser;
@@ -318,7 +321,7 @@ class TitleBlacklistEntry {
 	 *
 	 * @param $title Title to check
 	 * @param $action %Action to check
-	 * @return TRUE if the the regex matches the title, and is not overridden
+	 * @return bool TRUE if the the regex matches the title, and is not overridden
 	 * else false if it doesn't match (or was overridden)
 	 */
 	public function matches( $title, $action ) {
@@ -420,7 +423,7 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @returns This entry's regular expression
+	 * @return This entry's regular expression
 	 */
 	public function getRegex() {
 		return $this->mRegex;
@@ -434,21 +437,21 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @returns This entry's options
+	 * @return This entry's options
 	 */
 	public function getOptions() {
 		return $this->mOptions;
 	}
 
 	/**
-	 * @returns Custom message for this entry
+	 * @return Custom message for this entry
 	 */
 	public function getCustomMessage() {
 		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
 	}
 
 	/**
-	 * @returns The format version
+	 * @return The format version
 	 */
 	public function getFormatVersion() { return $this->mFormatVersion; }
 
@@ -461,10 +464,10 @@ class TitleBlacklistEntry {
 
 	/**
 	 * Return the error message name for the blacklist entry.
-	 * 
+	 *
 	 * @param $operation Operation name (as in titleblacklist-forbidden message name)
-	 * 
-	 * @returns The error message name
+	 *
+	 * @return The error message name
 	 */
 	public function getErrorMessage( $operation ) {
 		$message = $this->getCustomMessage();

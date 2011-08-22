@@ -16,11 +16,10 @@ class TitleBlacklistHooks {
 	/**
 	 * getUserPermissionsErrorsExpensive hook
 	 *
-	 * @static
-	 * @param Title $title
-	 * @param User $user
-	 * @param  $action
-	 * @param  $result
+	 * @param $title Title
+	 * @param $user User
+	 * @param $action
+	 * @param $result
 	 * @return bool
 	 */
 	public static function userCan( $title, $user, $action, &$result ) {
@@ -45,11 +44,10 @@ class TitleBlacklistHooks {
 	/**
 	 * AbortMove hook
 	 *
-	 * @static
-	 * @param Title $old
-	 * @param Title $nt
-	 * @param User $user
-	 * @param  $err
+	 * @param $old Title
+	 * @param $nt Title
+	 * @param $user User
+	 * @param $err
 	 * @return bool
 	 */
 	public static function abortMove( $old, $nt, $user, &$err ) {
@@ -88,8 +86,8 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** AbortNewAccount hook
-	 *
+	/**
+	 * AbortNewAccount hook
 	 *
 	 * @param User $user
 	 */
@@ -105,9 +103,10 @@ class TitleBlacklistHooks {
 		return self::acceptNewUserName( $userName, $message );
 	}
 
-	/** EditFilter hook
+	/**
+	 * EditFilter hook
 	 *
-	 * @param EditPage $editor
+	 * @param $editor EditPage
 	 */
 	public static function validateBlacklist( $editor, $text, $section, $error ) {
 		global $wgUser;
@@ -153,7 +152,8 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** ArticleSaveComplete hook
+	/**
+	 * ArticleSaveComplete hook
 	 *
 	 * @param Article $article
 	 */
