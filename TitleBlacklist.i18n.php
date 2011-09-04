@@ -1130,6 +1130,7 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Homo
  * @author Matasg
  */
@@ -1150,6 +1151,7 @@ Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
 Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
 	'titleblacklist-invalid' => 'Žemiau {{PLURAL:$1|esanti linija|esančios linijos}} juodajame sąraše {{PLURAL:$1|yra|yra}} netinkama;
 prašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:',
+	'titleblacklist-override' => 'Ignoruoti juodąjį sąrašą',
 	'right-tboverride' => 'Nepaisyti juodojo sąrašo',
 );
 
