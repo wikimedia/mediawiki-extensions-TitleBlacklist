@@ -34,9 +34,16 @@ please correct {{PLURAL:$1|it|them}} before saving:',
  * @author Beau
  * @author Purodha
  * @author The Evil IP address
+ * @author Yekrats
  */
 $messages['qqq'] = array(
 	'titleblacklist-desc' => '{{desc}}',
+	'titleblacklist' => 'The [http://www.mediawiki.org/wiki/Extension:TitleBlacklist extension Title Blacklist] gives the ability to block certain unallowed words appearing in the title through regular expressions.
+This will be the first explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  
+To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titleblacklist',
+	'titlewhitelist' => 'The whitelist is a feature of the  [http://www.mediawiki.org/wiki/Extension:TitleBlacklist extension Title Blacklist], which gives the ability to block certain words (or explicitly allow them) appearing in the title through regular expressions.
+This will be the explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  
+To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titlewhitelist',
 	'titleblacklist-override' => "Check box label on \"Create account\" form if the user has the user right ''tboverride-account''. If checked, the [[MediaWiki:Titleblacklist]] is ignored during account creation.",
 	'right-tboverride' => '{{doc-right}}',
 	'right-tboverride-account' => '{{doc-right}}',
