@@ -325,6 +325,9 @@ class TitleBlacklistEntry {
 	 * else false if it doesn't match (or was overridden)
 	 */
 	public function matches( $title, $action ) {
+		if ( !$title ) {
+			return false;
+		}
 		wfSuppressWarnings();
 		$match = preg_match( "/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
 		wfRestoreWarnings();
