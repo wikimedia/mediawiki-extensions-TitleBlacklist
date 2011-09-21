@@ -1368,6 +1368,15 @@ Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'right-tboverride' => 'Ignorar la lista negra dels títols',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Psubhashish
+ */
+$messages['or'] = array(
+	'titleblacklist-override' => 'ଅଟକତାଲିକାକୁ ଅଣଦେଖା କରିବେ',
+	'right-tboverride' => 'ଅଟକ ତାଲିକାର ନାମକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
+	'right-tboverride-account' => 'ଇଉଜର ନାମ ଅଟକ ତାଲିକାକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
+);
+
 /** Polish (Polski)
  * @author Beau
  * @author Derbeth
