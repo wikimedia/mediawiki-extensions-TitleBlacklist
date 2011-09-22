@@ -101,7 +101,6 @@ class TitleBlacklistHooks {
 	public static function centralAuthAutoCreate( $user, $userName ) {
 		$message = ''; # Will be ignored
 		$anon = new User;
-		global $wgUser;
 		return self::acceptNewUserName( $userName, $anon, $message );
 	}
 
