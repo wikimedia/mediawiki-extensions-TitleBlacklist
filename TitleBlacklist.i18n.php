@@ -1372,6 +1372,22 @@ Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'titleblacklist-desc' => 'ପରିଛାମାନଙ୍କୁ [[MediaWiki:Titleblacklist|ବାସନ୍ଦ ତାଲିକା]] ଓ [[MediaWiki:Titlewhitelist|ଅନୁମତି ତାଲିକା]] ଅନୁସାରେ ପୃଷ୍ଠା ଓ ସଭ୍ୟ ଖାତା ତିଆରି ପାଇଁ ଅନୁମତି ଦେଇଥାଏ',
+	'titleblacklist' => '# ଏହା ଏକ ନାମ ଅଟକତାଲିକା । ନାମ ଓ ସଭ୍ୟସବୁ ମେଳ ନଖାଇଲେ ଏଠାରେ ତାହା ଗଢ଼ାଯାଇପାରିବ ନାହିଁ ।
+# ମତାମତ ନିମନ୍ତେ "#" ବ୍ୟବହାର କରନ୍ତୁ ।
+# ଏହା ଆପେ ଆପେ ବଡ଼ ଓ ସାନ ଅକ୍ଷରକୁ ଏକ ଭାବରେ ନେଇଥାଏ',
+	'titlewhitelist' => '# ଏହା ଏକ ଅନୁମୋଦିତ ନାମ ତାଲିକା । ମତାମତ ପାଇଁ "#" ବ୍ୟବହାର କରନ୍ତୁ । 
+# ଏହା ଆପେ ଆପେ ବଡ଼ ଓ ସାନ ଅକ୍ଷରକୁ ସମଭାବେ ନେଇଥାଏ',
+	'titleblacklist-forbidden-edit' => '"$2" ନାମଟି ତିଆରି କରିବାରୁ ଅଟକାଯାଇଛି ।
+ଏହା ବାସନ୍ଦ ତାଲିକା ସହ ମେଳ ଖାଇଥାଏ: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" ରୁ "$3" ଘୁଞ୍ଚାଯାଇପାରିବ ନାହିଁ, କାରଣ "$3" ତିଆରି କରିବାରୁ ଅଟକାଯାଇଛି ।
+ଏହା ଏହି ବାସନ୍ଦତାଲିକା ସହ ମେଳ ଖାଉଛି: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '"$2" ନାମଟି ତିଆରି କରିବାରୁ ଅଟକାଯାଇଛି ।
+ଏହା ବାସନ୍ଦ ତାଲିକା ସହ ମେଳ ଖାଉଛି: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" ନାମଟି ତିଆରି କରିବାରୁ ଅଟକାଯାଇଛି ।
+ଏହା ବାସନ୍ଦ ତାଲିକା ସହ ମେଳ ଖାଉଛି: <code>$1</code>',
+	'titleblacklist-invalid' => 'ବାସନ୍ଦ ତାଲିକାରେ ଥିବା ତଳଲିଖିତ {{PLURAL:$1|ଧାଡ଼ିଟି|ଧାଡ଼ିସବୁ}} ଅଚଳ {{PLURAL:$1|ଅଟେ|ଅଟନ୍ତି}};
+ଦୟାକରି {{PLURAL:$1|ତାହାକୁ|ସେସବୁକୁ}} ସାଇତିବା ଆଗରୁ ସୁଧାରି ଦିଅନ୍ତୁ:',
 	'titleblacklist-override' => 'ଅଟକତାଲିକାକୁ ଅଣଦେଖା କରିବେ',
 	'right-tboverride' => 'ଅଟକ ତାଲିକାର ନାମକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
 	'right-tboverride-account' => 'ଇଉଜର ନାମ ଅଟକ ତାଲିକାକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
@@ -1427,6 +1443,15 @@ për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
 	'titleblacklist-override' => 'Ignoré la lista nèira',
 	'right-tboverride' => 'Sàuta la blacklist dij tìtoj',
 	'right-tboverride-account' => "Ignoré la lista nèira djë stranòm d'utent",
+);
+
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'titleblacklist-override' => 'روکنلسٹ پعل جاؤ',
+	'right-tboverride' => 'ٹاغٹل شلیکلسٹ تے لکھو۔',
+	'right-tboverride-account' => 'ورتن ناں بلیکلسٹ تے لکھو۔',
 );
 
 /** Portuguese (Português)
