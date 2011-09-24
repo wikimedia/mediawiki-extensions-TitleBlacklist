@@ -1133,7 +1133,9 @@ $messages['li'] = array(
 	'titleblacklist-forbidden-upload' => 'Het bestand "$2" kan niet toegevoegd worden. Deze bestandsnaam voldoet aan de volgende beperking op de zwarte lijst: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'De gebroekersnaam "$2" kan neet aangemaak waere ómdet \'t voldeit aan de volgende beperking op de zwarte lies: <code>$1</code>',
 	'titleblacklist-invalid' => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
+	'titleblacklist-override' => 'Negeer zwarte lies',
 	'right-tboverride' => 'De zwarte lies veur pazjenaname negere',
+	'right-tboverride-account' => 'De zwarte lies veur gebroekersname negere',
 );
 
 /** Lithuanian (Lietuvių)
