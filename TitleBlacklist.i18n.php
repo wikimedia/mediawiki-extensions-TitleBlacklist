@@ -583,11 +583,11 @@ $messages['fa'] = array(
  * @author Str4nd
  */
 $messages['fi'] = array(
-	'titleblacklist-desc' => 'Antaa ylläpitäjälle mahdollisuuden estää sivujen luonti nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
-	'titleblacklist' => '# Tämä on nimien musta luettelo. Sivuja tai käyttäjiä, jotka vastaavat täällä määritettyihin säännöllisiin lausekkeisiin, ei voi luoda.
+	'titleblacklist-desc' => 'Antaa ylläpitäjille mahdollisuuden estää sivujen ja käyttäjätunnusten luonti nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
+	'titleblacklist' => '# Tämä on nimien estolista. Sivuja tai käyttäjiä, jotka vastaavat täällä määritettyihin säännöllisiin lausekkeisiin, ei voi luoda.
 # Käytä #-merkkiä kommentointiin.
 # Oletusarvoisesti tämä on riippuvainen kirjainkoosta',
-	'titlewhitelist' => '# Tämä on nimien valkoinen luettelo. Käytä #-merkkiä kommentointiin.
+	'titlewhitelist' => '# Tämä on nimien poikkeuslista. Käytä #-merkkiä kommentointiin.
 # Oletusarvoisesti tämä on riippuvainen kirjainkoosta',
 	'titleblacklist-forbidden-edit' => 'Sivun ”$2” luonti on estetty, koska se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Sivua ”$2” ei voi siirtää nimelle ”$3”, koska sivun ”$3” luonti on estetty. Se täsmää seuraavaan osaan estolistassa: <code>$1</code>',
@@ -595,7 +595,9 @@ $messages['fi'] = array(
 	'titleblacklist-forbidden-new-account' => 'Käyttäjätunnuksen ”$2” luonti on estetty.
 Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
-	'right-tboverride' => 'Ohittaa sivunimien mustalista',
+	'titleblacklist-override' => 'Ohita estolista',
+	'right-tboverride' => 'Ohittaa sivunimien estolista',
+	'right-tboverride-account' => 'Ohittaa käyttäjänimien estolista',
 );
 
 /** French (Français)
