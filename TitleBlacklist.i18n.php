@@ -1453,6 +1453,10 @@ për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
  * @author Khalid Mahmood
  */
 $messages['pnb'] = array(
+	'titleblacklist-desc' => 'مکھیانواں نوں اجازت دیندا اے جے اوہ صفے بنن توں روکن تے ورتن کھاتے [[MediaWiki:Titleblacklist|blacklist]] تے [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist' => '# ایہ اک سرخی روک لسٹ اے۔ سرناویں تے ورتن والے اکو جۓ لگن تے تے اوہ نئیں بناۓ جاسکدے.
+# کومنٹ لئی ورتو "#" .
+# اے کیس سینسیٹو نئیں۔',
 	'titleblacklist-override' => 'روکنلسٹ پعل جاؤ',
 	'right-tboverride' => 'ٹاغٹل شلیکلسٹ تے لکھو۔',
 	'right-tboverride-account' => 'ورتن ناں بلیکلسٹ تے لکھو۔',
