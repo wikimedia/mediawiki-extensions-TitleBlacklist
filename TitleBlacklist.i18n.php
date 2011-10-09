@@ -34,6 +34,7 @@ please correct {{PLURAL:$1|it|them}} before saving:',
  * @author Beau
  * @author Purodha
  * @author The Evil IP address
+ * @author Umherirrender
  * @author Yekrats
  */
 $messages['qqq'] = array(
@@ -45,8 +46,8 @@ To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:
 This will be the explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  
 To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titlewhitelist',
 	'titleblacklist-override' => "Check box label on \"Create account\" form if the user has the user right ''tboverride-account''. If checked, the [[MediaWiki:Titleblacklist]] is ignored during account creation.",
-	'right-tboverride' => '{{doc-right}}',
-	'right-tboverride-account' => '{{doc-right}}',
+	'right-tboverride' => '{{doc-right|tboverride}}',
+	'right-tboverride-account' => '{{doc-right|tboverride-account}}',
 );
 
 /** Aragonese (Aragonés)
