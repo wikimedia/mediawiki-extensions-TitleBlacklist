@@ -432,7 +432,7 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @returns This entry's raw line
+	 * @return This entry's raw line
 	 */
 	public function getRaw() {
 		return $this->mRaw;
