@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Test the TitleBlacklist API
  *
  * This wants to run with phpunit.php, like so:
@@ -23,7 +23,7 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 		// without this, blacklist applies only to anonymous users.
 		$wgGroupPermissions['sysop']['tboverride'] = false;
-		
+
 		$wgTitleBlacklistSources = array(
 		    array(
 		         'type' => TBLSRC_FILE,
@@ -51,13 +51,13 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 			"The title \"bar\" has been banned from creation.\nIt matches the following blacklist entry: <code>[Bb]ar #example blacklist entry</code>",
 			'Listed title error text is as expected'
 		);
-		
+
 		$this->assertEquals(
 			$listed[0]['titleblacklist']['message'],
 			"titleblacklist-forbidden-edit",
 			'Correct blacklist message name is returned'
 		);
-		
+
 		$this->assertEquals(
 			$listed[0]['titleblacklist']['line'],
 			"[Bb]ar #example blacklist entry",
