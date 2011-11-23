@@ -1005,7 +1005,7 @@ $messages['kk-arab'] = array(
 	'titleblacklist-invalid' => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
 );
 
-/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -1018,7 +1018,7 @@ $messages['kk-cyrl'] = array(
 	'titleblacklist-invalid' => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
 );
 
-/** Kazakh (Latin) (Қазақша (Latin)) */
+/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'titleblacklist' => '# Bul atawlardıñ qara tizimi. Jüýeli aýtılımdarğa (regex) säýkes mındağı atawlar jaratılmaýdı.
 Mändemeler üşin «#» nışanın qoldanıñız.',
@@ -1755,7 +1755,7 @@ ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 	'right-tboverride-account' => 'Refuzoni emrin e përdoruesit të listës së zezë',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -1771,7 +1771,7 @@ $messages['sr-ec'] = array(
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1858,7 +1858,7 @@ $messages['te'] = array(
 	'right-tboverride' => 'శీర్షికల నిరోధపు జాబితాని  అధిగమించగలగడం',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1872,7 +1872,7 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
