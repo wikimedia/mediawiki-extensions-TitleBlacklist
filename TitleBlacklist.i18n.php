@@ -1242,9 +1242,9 @@ $messages['ms'] = array(
 	'titleblacklist-desc' => 'Membolehkan pentadbir mengawal penciptaan laman dan pengguna tertentu menggunakan [[MediaWiki:Titleblacklist|senarai hitam]] dan [[MediaWiki:Titlewhitelist|senarai putih]]',
 	'titleblacklist' => '# Ini ialah senarai hitam tajuk. Tajuk atau pengguna yang sepadan dengan mana-mana ungkapan nalar di sini tidak boleh dicipta.
 # Gunakan "#" untuk komen.
-# Secara tersedia, ini tidak peka huruf (mengabaikan besar kecil huruf)',
+# Secara asali, ini tidak peka huruf (mengabaikan besar kecil huruf)',
 	'titlewhitelist' => '# Ini ialah senarai hitam tajuk. Gunakan "#" untuk komen.
-# Secara tersedia, ini tidak peka huruf (mengabaikan besar kecil huruf)',
+# Secara asali, ini tidak peka huruf (mengabaikan besar kecil huruf)',
 	'titleblacklist-forbidden-edit' => 'Tajuk "$2" telah diharamkan.
 Tajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" tidak boleh dipindahkan ke "$3" kerana tajuk "$3" telah diharamkan.
