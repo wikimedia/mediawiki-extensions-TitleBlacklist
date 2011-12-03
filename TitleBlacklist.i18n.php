@@ -634,7 +634,7 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos utilisator d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
+	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos usanciér d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
 	'titleblacklist' => '# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion racionèla presenta sur ceta pâge pôvont pas étre fêts.
 # Utilisâd « # » por entrebetar des comentèros.
 # Per dèfôt, les entrâs sont pas sensibles a la câssa.',
