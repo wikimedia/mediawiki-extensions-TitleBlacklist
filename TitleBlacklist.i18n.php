@@ -1218,6 +1218,7 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]] व [[MediaWiki:Titlewhitelist]] मध्ये दिलेल्या शीर्षकांचे लेख बनविण्यापासून रोखा',
@@ -1230,7 +1231,9 @@ $messages['mr'] = array(
 	'titleblacklist-forbidden-upload' => '"$2" या शीर्षकाची संचिका बनवू शकत नाही. खाली ब्लॉक केलेल्या शीर्षकांच्या यादीतील नोंद आहे:
 <code>$1</code>',
 	'titleblacklist-invalid' => 'शीर्षक ब्लॉक यादीतील खालील {{PLURAL:$1|ओळ चुकीची आहे|ओळी चुकीच्या आहेत}}; कृपया जतन करण्यापूर्वी {{PLURAL:$1|ती|त्या}} दुरुस्त करा:',
+	'titleblacklist-override' => 'काळ्या यादीकडे दुर्लक्ष करा',
 	'right-tboverride' => 'शीर्षक ब्लॅकयादी कडे दुर्लक्ष करा',
+	'right-tboverride-account' => 'खते काळ्या यादीकडे  दुर्लक्ष करा',
 );
 
 /** Malay (Bahasa Melayu)
