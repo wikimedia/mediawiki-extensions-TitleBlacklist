@@ -14,7 +14,7 @@ $wgExtensionCredits[version_compare($wgVersion, '1.17alpha', '>=') ? 'antispam' 
 	'name'           => 'Title Blacklist',
 	'author'         => array( 'Victor Vasiliev', 'Fran Rogers' ),
 	'version'        => '1.4.2',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:Title_Blacklist',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'descriptionmsg' => 'titleblacklist-desc',
 );
 
