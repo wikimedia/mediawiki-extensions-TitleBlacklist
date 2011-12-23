@@ -1217,6 +1217,7 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaajawa
  * @author Kaustubh
  * @author Rahuldeshmukh101
  */
