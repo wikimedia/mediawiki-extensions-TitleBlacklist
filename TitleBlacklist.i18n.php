@@ -1272,6 +1272,29 @@ $messages['nah'] = array(
 #Inīn ahmo quimati in huēyimachiyōtlahtōliztli intlā ahmo mopehpena',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ * @author Reedy
+ */
+$messages['nb'] = array(
+	'titleblacklist-desc' => 'Gir muligheten til å forhindre at sider og brukerkontoer med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist' => '# Dette er en svartlisting for titler. Titler og brukernavn som passer med regulære uttrykk her kan ikke opprettes.
+# Bruk «#» for kommentarer.
+# Det skilles ikke mellom store og små bokstaver som standard',
+	'titlewhitelist' => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.
+# Det skilles ikke mellom store og små bokstaver som standard',
+	'titleblacklist-forbidden-edit' => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Filnavnet «$2» er blokkert for oppretting. Den tilsvarer følgende svartelisteelement: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Brukernavnet «$2» kan ikke opprettes.
+Det tilsvarer følgende svartelisteelement: <code>$1</code>',
+	'titleblacklist-invalid' => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
+	'titleblacklist-override' => 'Ignorer svartelista.',
+	'right-tboverride' => 'Overkjøre tittelsvartelisten',
+	'right-tboverride-account' => 'Overstyr svartelista for brukernavn',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1333,29 +1356,6 @@ $messages['nn'] = array(
 Det svarar til følgjande svartelisteelement: <code>$1</code>',
 	'titleblacklist-invalid' => 'Følgjande {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; ver venleg å rette {{PLURAL:$1|ho|dei}} før du lagrar:',
 	'right-tboverride' => 'Overkøyre tittelsvartelista',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- * @author Reedy
- */
-$messages['nb'] = array(
-	'titleblacklist-desc' => 'Gir muligheten til å forhindre at sider og brukerkontoer med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Dette er en svartlisting for titler. Titler og brukernavn som passer med regulære uttrykk her kan ikke opprettes.
-# Bruk «#» for kommentarer.
-# Det skilles ikke mellom store og små bokstaver som standard',
-	'titlewhitelist' => '# Dette er en hvitelisting for titler. Bruk «#» for kommentarer.
-# Det skilles ikke mellom store og små bokstaver som standard',
-	'titleblacklist-forbidden-edit' => 'Tittelen «$2» er stengt for oppretting. Den blokkeres av følgende svartelistingselement: <code>$1</code>',
-	'titleblacklist-forbidden-move' => '«$2» kan ikke flyttes til «$3» fordi tittelen «$3» har blitt stengt for oppretting. Den tilsvarer følgende element i svartelistinga: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Filnavnet «$2» er blokkert for oppretting. Den tilsvarer følgende svartelisteelement: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'Brukernavnet «$2» kan ikke opprettes.
-Det tilsvarer følgende svartelisteelement: <code>$1</code>',
-	'titleblacklist-invalid' => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
-	'titleblacklist-override' => 'Ignorer svartelista.',
-	'right-tboverride' => 'Overkjøre tittelsvartelisten',
-	'right-tboverride-account' => 'Overstyr svartelista for brukernavn',
 );
 
 /** Occitan (Occitan)
