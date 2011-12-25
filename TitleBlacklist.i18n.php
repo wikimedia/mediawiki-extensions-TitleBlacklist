@@ -1340,7 +1340,7 @@ Det svarar til følgjande svartelisteelement: <code>$1</code>',
  * @author Nghtwlkr
  * @author Reedy
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'titleblacklist-desc' => 'Gir muligheten til å forhindre at sider og brukerkontoer med visse titler opprettes, ved å bruke [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# Dette er en svartlisting for titler. Titler og brukernavn som passer med regulære uttrykk her kan ikke opprettes.
 # Bruk «#» for kommentarer.
