@@ -547,7 +547,9 @@ See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
 See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Järgnev|Järgnevad}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.
 Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
+	'titleblacklist-override' => 'Eira musta nimekirja',
 	'right-tboverride' => 'Eirata pealkirjade musta nimekirja',
+	'right-tboverride-account' => 'Eirata kasutajanimede musta nimekirja',
 );
 
 /** Persian (فارسی)
@@ -1476,6 +1478,13 @@ $messages['pnb'] = array(
 	'titleblacklist-override' => 'روکنلسٹ پعل جاؤ',
 	'right-tboverride' => 'ٹاغٹل شلیکلسٹ تے لکھو۔',
 	'right-tboverride-account' => 'ورتن ناں بلیکلسٹ تے لکھو۔',
+);
+
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'titleblacklist-override' => 'تورليک بابېزه ګڼل',
 );
 
 /** Portuguese (Português)
