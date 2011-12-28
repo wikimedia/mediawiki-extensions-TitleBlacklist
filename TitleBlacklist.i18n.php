@@ -887,6 +887,31 @@ Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 	'right-tboverride-account' => 'Mengabaikan daftar hitam nama pengguna',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'titleblacklist-desc' => 'Palubosan na dagiti administrador ti agiparit ti agaramid kadagiti panid ken dagiti pakabilangan ti agar-aramat babaen ti [[MediaWiki:Titleblacklist|blacklist]] ken [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist' => '# Daytoy ket titulo a blacklist. Dagiti titulo ken agar-aramat a maipada ti kadawyan a panangisa ditoy ket saan a maaramid.
+# Usaren ti "#" para iti komentario.
+# Daytoy ket kinasigud a sensetibo iti kadakkel ti letra',
+	'titlewhitelist' => '# Daytoy ket titulo a whitelist. Usaren ti "#" para iti komentario. 
+# Daytoy ket kinasigud a sensetibo iti kadakkel ti letra',
+	'titleblacklist-forbidden-edit' => 'Ti titulo "$2" ket naiparit ti panaka-aramid.
+Naipada ti sumaganad a blacklist a naikabil: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" ket saan a maiyalis idiay "$3", ngamin ket ti titulo "$3" ket naiparit a maaramid.
+Naipada ti sumagana a blacklist a naikabil: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Ti nagan ti papeles "$2" ket naiparit a maaramid.
+Naipada ti sumaganad a blacklist a naikabil: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Ti nagan ti agar-aramat "$2" ket naiparit a maaramid.
+Naipada ti sumaganad a blacklist a naikabil: <code>$1</code>',
+	'titleblacklist-invalid' => 'Ti sumaganad a {{PLURAL:$1|linia|dagiti linia}} iti titulo ti blacklist {{PLURAL:$1|ket|ket}} imbalido;
+pangngaasi ta pasayaaten {{PLURAL:$1|ida|dagida}} sakbay nga idulin:',
+	'titleblacklist-override' => 'Saan nga ikaskaso ti blacklist',
+	'right-tboverride' => 'Ipatuon ti titulo a blacklist',
+	'right-tboverride-account' => 'Ipatuon ti nagan ti agar-aramat a blacklist',
+);
+
 /** Italian (Italiano)
  * @author Beta16
  * @author BrokenArrow
