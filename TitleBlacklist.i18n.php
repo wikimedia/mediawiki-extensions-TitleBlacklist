@@ -752,6 +752,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  * @author Shyam
  * @author आलोक
@@ -769,6 +770,7 @@ $messages['hi'] = array(
 यह निम्नांकित कालीसूची प्रविष्टि से मेल खाता है: <code>$1</code>',
 	'titleblacklist-invalid' => 'ब्लैकलिस्ट नामपद में निम्नांकित {{PLURAL:$1|पंक्ति|पंक्तियाँ}} अमान्य {{PLURAL:$1|है|हैं}};
 कृपया {{PLURAL:$1|इसे|इन्हें}} जमा करने से पहले ठीक करें:',
+	'titleblacklist-override' => 'ब्लाकलिस्ट उपेक्षा करें',
 	'right-tboverride' => 'शीर्षक ब्लॅकलिस्ट को नजर अंदाज करें',
 );
 
@@ -1874,6 +1876,13 @@ Det matchar följande element i svartlistan: <code>$1</code>',
 	'titleblacklist-override' => 'Ignorera svartlistan',
 	'right-tboverride' => 'Upphäva den svarta listan över titlar',
 	'right-tboverride-account' => 'Kör över svartlistan för användarnamn',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'titleblacklist-override' => 'கருப்புபட்டியலை புறக்கணிக்கவும்',
 );
 
 /** Telugu (తెలుగు)
