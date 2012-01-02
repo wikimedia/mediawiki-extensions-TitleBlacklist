@@ -889,6 +889,28 @@ Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 	'right-tboverride-account' => 'Mengabaikan daftar hitam nama pengguna',
 );
 
+/** Interlingue (Interlingue)
+ * @author Renan
+ */
+$messages['ie'] = array(
+	'titleblacklist-desc' => 'Permisse administratores prohibir creation de págines e contos de usatores por un [[MediaWiki:Titleblacklist|liste nigri]] e [[MediaWiki:Titlewhitelist|liste blanc]]',
+	'titleblacklist' => '#Ti es un titul de liste nigri. Titules e usatores que harmonisa un expression regulari ci ne posse es creat. 
+#Usa "#" por comentaries. 
+#Ti liste usa majuscules e minuscules per contumacie',
+	'titlewhitelist' => "#Ti es un titul de liste blanc. Usa ''#'' por comentaries. 
+#Ti liste usa majuscules e minuscules per contumacie",
+	'titleblacklist-forbidden-edit' => "Li titul ''$2'' ha esset bannit de creation. 
+It harmonisa in li proxim intrada de liste nigri:<code>$1</code>",
+	'titleblacklist-forbidden-move' => "''$2'' ne posse esser movet por ''$3'', pro que li titul ''$3'' ha esset bannit de creation. 
+It harmonisa li proxim intrada in li liste nigri:<code>$1</code>",
+	'titleblacklist-forbidden-upload' => "Li nómine de file ''$2'' ha esset bannit de creation. 
+It harmonisa li proxim intrada in li liste nigri:<code>$1</code>",
+	'titleblacklist-forbidden-new-account' => "Li nómine de usator ''$2'' ha esset bannit de creation. 
+It harmonisa li proxim intrada in li liste nigri:<code>$1</code>",
+	'titleblacklist-invalid' => 'Li proxim {{PLURAL:$1|linea|lineas}} in li liste nigri es ínvalid; 
+pleser corecte {{PLURAL:$1|it|les}} ante de conservar:',
+);
+
 /** Iloko (Ilokano)
  * @author Lam-ang
  */
