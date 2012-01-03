@@ -50,6 +50,15 @@ To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:
 	'right-tboverride-account' => '{{doc-right|tboverride-account}}',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['af'] = array(
+	'titleblacklist-override' => 'Ignoreer die swartlys',
+	'right-tboverride' => 'Ignoreer die titel swartlys',
+	'right-tboverride-account' => 'Ignoreer die gebruikersnaam swartlys',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
