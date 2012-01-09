@@ -76,7 +76,9 @@ Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'O nombre d\'usuario "$2" ye vedato y no se puede creyar. 
 Concuerda con a dentrada <code>$1</code> d\'a lista negra.',
 	'titleblacklist-invalid' => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por favor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
+	'titleblacklist-override' => 'Ignorar a lista negra',
 	'right-tboverride' => 'Ignorar a lista negra de títols',
+	'right-tboverride-account' => "Ignorar a lista negra de los nombres d'usuario",
 );
 
 /** Arabic (العربية)
