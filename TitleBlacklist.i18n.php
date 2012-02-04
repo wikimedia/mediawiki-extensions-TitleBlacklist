@@ -736,6 +736,13 @@ Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
 	'right-tboverride-account' => 'Di Schwarz Lischt vu nit gwinschte Benutzernäme usser Chraft setze',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Sushant savla
+ */
+$messages['gu'] = array(
+	'titleblacklist-override' => 'પ્રતિબંધ સૂચી અવગણો',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  * @author Rotem Liss
