@@ -741,6 +741,8 @@ Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
  */
 $messages['gu'] = array(
 	'titleblacklist-override' => 'પ્રતિબંધ સૂચી અવગણો',
+	'right-tboverride' => 'આ શીર્ષક પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
+	'right-tboverride-account' => 'આ સભ્ય નામ પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
 );
 
 /** Hebrew (עברית)
