@@ -740,6 +740,8 @@ Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'titleblacklist-forbidden-edit' => 'શીર્ષક "$2" ની રચના પર પ્રતિબંધ મૂકાયો છે.
+તે નીચેના પ્રતિબંધીત શીર્ષકને મળતું આવે છે: <code>$1</code>',
 	'titleblacklist-override' => 'પ્રતિબંધ સૂચી અવગણો',
 	'right-tboverride' => 'આ શીર્ષક પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
 	'right-tboverride-account' => 'આ સભ્ય નામ પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
