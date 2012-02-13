@@ -740,6 +740,7 @@ Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'titleblacklist-desc' => 'પ્રબંધકોને  [[MediaWiki:Titleblacklist|blacklist]] અને [[MediaWiki:Titlewhitelist|whitelist]] અનુસાર નવા પૃષ્ઠ કે ખાતા રચનાને પ્રતુબંધીત કરવાનો અધિકાર આપે છે.',
 	'titleblacklist' => '# આ શીર્ષક કાળી યાદી છે. સામાન્ય ઍક્સરેશનને મળતા શીર્ષકો અને સભ્યો બનાવી ન શાકાય. 
 # ટિપ્પણી માટે "#" વાપરો.
 # આ મૂળ રીતે કેસ ઈનસેન્સીટીવ છે.',
