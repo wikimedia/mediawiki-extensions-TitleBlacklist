@@ -377,20 +377,21 @@ Det svarer til følgende blacklistpost: <code>$1</code>',
 );
 
 /** German (Deutsch)
+ * @author Geitost
  * @author Giftpflanze
  * @author Imre
+ * @author Kghbln
  * @author Metalhead64
  * @author Raimond Spekking
  * @author The Evil IP address
  */
 $messages['de'] = array(
 	'titleblacklist-desc' => 'Ermöglicht Administratoren, die Erstellung unerwünschter Seiten- und Benutzernamen zu verhindern: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
-	'titleblacklist' => '# Dies ist eine Schwarze Liste.
-# Jeder Seiten- und Benutzername, auf den die folgenden regulären Ausdrücke zutreffen, kann nicht erstellt werden.
-# Text hinter einer Raute „#“ wird als Kommentar gesehen.
-# Standardgemäß wird nicht zwischen Groß- und Kleinschreibung unterschieden',
-	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutze „#“ für Kommentare
-# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden',
+	'titleblacklist' => '# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Sofern auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.
+# Verwende „#“ für Kommentare.
+# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.',
+	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.
+# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.',
 	'titleblacklist-forbidden-edit' => "'''Eine Seite mit dem Titel „$2“ kann nicht erstellt werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
 	'titleblacklist-forbidden-move' => "'''Die Seite „$2“ kann nicht nach „$3“ verschoben werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
 	'titleblacklist-forbidden-upload' => "'''Eine Datei mit dem Namen „$2“ kann nicht hochgeladen werden.'''<br />Der Titel kollidiert mit diesem Sperrbegriff: '''''$1'''''",
@@ -398,16 +399,20 @@ $messages['de'] = array(
 Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnung: <code>$1</code>',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
 	'titleblacklist-override' => 'Schwarze Liste ignorieren',
-	'right-tboverride' => 'Außerkraftsetzen der schwarzen Liste unerwünschter Seitennamen',
-	'right-tboverride-account' => 'Außerkraftsetzen der schwarzen Liste unerwünschter Benutzernamen',
+	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen außer Kraft setzen',
+	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
+ * @author Kghbln
  */
 $messages['de-formal'] = array(
-	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seitennamen. Benutzen Sie „#“ für Kommentare
-# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden',
+	'titleblacklist' => '# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Sofern auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.
+# Verwenden Sie „#“ für Kommentare.
+# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.',
+	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutzen Sie „#“ für Kommentare.
+# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigieren Sie diese vor dem Speichern:',
 );
 
