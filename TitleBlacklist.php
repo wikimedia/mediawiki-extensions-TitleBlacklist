@@ -12,7 +12,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['antispam'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Title Blacklist',
-	'author'         => array( 'Victor Vasiliev', 'Fran Rogers' ),
+	'author'         => array( 'Victor Vasiliev', 'Fran McCrory' ),
 	'version'        => '1.4.2',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'descriptionmsg' => 'titleblacklist-desc',
