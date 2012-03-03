@@ -386,7 +386,7 @@ Det svarer til følgende blacklistpost: <code>$1</code>',
  * @author The Evil IP address
  */
 $messages['de'] = array(
-	'titleblacklist-desc' => 'Ermöglicht Administratoren, die Erstellung unerwünschter Seiten- und Benutzernamen zu verhindern: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc' => 'Ermöglicht es Administratoren die Erstellung unerwünschter Seiten- und Benutzernamen zu unterbinden: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Sofern auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.
 # Verwende „#“ für Kommentare.
 # Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.',
