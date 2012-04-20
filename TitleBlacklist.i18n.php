@@ -1008,15 +1008,16 @@ $messages['it'] = array(
  * @author JtFuruhata
  * @author Marine-Blue
  * @author Muttley
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'titleblacklist-desc' => '管理者が[[MediaWiki:Titleblacklist|ブラックリスト]] および [[MediaWiki:Titlewhitelist|ホワイトリスト]]を使ってページおよび利用者アカウントの新規作成を禁止できるようにする',
 	'titleblacklist' => '# これは、ページ名のブラックリストです。正規表現に一致するページ名および利用者アカウントの新規作成を禁止します。
-# "#" 以降はコメントとして扱われます。
-# デフォルトでは大文字と小文字の区別はされません。',
-	'titlewhitelist' => '# これは、ページ名のホワイトリストです。"#"以降はコメントとして扱われます。
-# デフォルトでは大文字と小文字の区別はされません。',
+# 「#」以降はコメントです。
+# 既定では大文字と小文字を区別しません',
+	'titlewhitelist' => '# これは、ページ名のホワイトリストです。「#」以降はコメントです。
+# 既定では大文字と小文字を区別しません',
 	'titleblacklist-forbidden-edit' => '"$2" という名前での新規作成は禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
