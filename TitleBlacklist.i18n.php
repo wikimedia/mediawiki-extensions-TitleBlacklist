@@ -1025,7 +1025,7 @@ $messages['ja'] = array(
 	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
 	'titleblacklist-override' => 'ブラックリストを無視',
 	'right-tboverride' => 'タイトルブラックリストによる編集制限を受けない',
-	'right-tboverride-account' => '利用者名ブラックリストを無視する',
+	'right-tboverride-account' => '利用者名ブラックリストを無視',
 );
 
 /** Jutish (Jysk)
