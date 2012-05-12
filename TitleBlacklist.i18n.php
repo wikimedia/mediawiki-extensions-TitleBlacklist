@@ -653,7 +653,7 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
  */
 $messages['frp'] = array(
 	'titleblacklist-desc' => 'Pèrmèt ux administrators de dèfendre la crèacion de pâges et de comptos usanciér d’aprés una [[MediaWiki:Titleblacklist|lista nêre]] et una [[MediaWiki:Titlewhitelist|lista blanche]].',
-	'titleblacklist' => '# O est la lista nêre des titros. Los titros et los utilisators que corrèspondont a una èxprèssion racionèla presenta sur ceta pâge pôvont pas étre fêts.
+	'titleblacklist' => '# O est la lista nêre des titros. Los titros et los usanciérs que corrèspondont a una èxprèssion racionèla presenta sur ceta pâge pôvont pas étre fêts.
 # Utilisâd « # » por entrebetar des comentèros.
 # Per dèfôt, les entrâs sont pas sensibles a la câssa.',
 	'titlewhitelist' => '# O est la lista blanche des titros. Utilisâd « # » por entrebetar des comentèros.
@@ -664,13 +664,13 @@ Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Lo nom de fichiér « $2 » at étâ dèfendu a la crèacion.
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilisator « $2 » at étâ dèfendu a la crèacion.
+	'titleblacklist-forbidden-new-account' => 'Lo nom d’usanciér « $2 » at étâ dèfendu a la crèacion.
 Dens la lista nêre, corrèspond a ceta entrâ : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Ceta legne|Cetes legnes}} dens la lista nêre des titros {{PLURAL:$1|est envalida|sont envalides}} ;
 {{PLURAL:$1|la|les}} volyéd corregiér devant qu’encartar :',
 	'titleblacklist-override' => 'Ignorar la lista nêre',
 	'right-tboverride' => 'Ignorar la lista nêre des titros',
-	'right-tboverride-account' => 'Ignorar la lista nêre des noms d’utilisator',
+	'right-tboverride-account' => 'Ignorar la lista nêre des noms d’usanciér',
 );
 
 /** Irish (Gaeilge)
@@ -1437,6 +1437,7 @@ $messages['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'titleblacklist-desc' => 'Gjev høve til å hindre at sider og brukarkontoar med visse titlar vert oppretta, ved å nytte [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
@@ -1985,7 +1986,7 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
