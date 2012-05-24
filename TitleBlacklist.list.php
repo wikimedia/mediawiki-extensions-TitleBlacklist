@@ -17,7 +17,7 @@
  */
 class TitleBlacklist {
 	private $mBlacklist = null, $mWhitelist = null;
-	const VERSION = 2;	// Blacklist format
+	const VERSION = 3;	// Blacklist format
 
 	/**
 	 * Get an instance of this class
@@ -48,17 +48,17 @@ class TitleBlacklist {
 		}
 
 		$sources = $wgTitleBlacklistSources;
-		$sources[] = array( 'type' => TBLSRC_MSG );
+		$sources['local'] = array( 'type' => TBLSRC_MSG );
 		$this->mBlacklist = array();
-		foreach ( $sources as $source ) {
-			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
+		foreach( $sources as $sourceName => $source ) {
+			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName ) );
 		}
 		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 		wfProfileOut( __METHOD__ );
 	}
 
 	/**
-	 * Load all configured whitelist sources
+	 * Load local whitelist
 	 */
 	public function loadWhitelist() {
 		global $wgMemc, $wgTitleBlacklistCaching;
@@ -70,7 +70,7 @@ class TitleBlacklist {
 			return;
 		}
 		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
-			->inContentLanguage()->text() );
+				->inContentLanguage()->text(), 'whitelist' );
 		$wgMemc->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
 		wfProfileOut( __METHOD__ );
 	}
@@ -126,12 +126,12 @@ class TitleBlacklist {
 	 * @param $list string Text of a blacklist source
 	 * @return array of TitleBlacklistEntry entries
 	 */
-	public static function parseBlacklist( $list ) {
+	public static function parseBlacklist( $list, $sourceName ) {
 		wfProfileIn( __METHOD__ );
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = array();
 		foreach ( $lines as $line ) {
-			$line = TitleBlacklistEntry :: newFromString( $line );
+			$line = TitleBlacklistEntry :: newFromString( $line, $sourceName );
 			if ( $line ) {
 				$result[] = $line;
 			}
@@ -296,10 +296,11 @@ class TitleBlacklist {
  */
 class TitleBlacklistEntry {
 	private
-		$mRaw,           /// < Raw line
-		$mRegex,         /// < Regular expression to match
-		$mParams,        /// < Parameters for this entry
-		$mFormatVersion; /// < Entry format version
+		$mRaw,           ///< Raw line
+		$mRegex,         ///< Regular expression to match
+		$mParams,        ///< Parameters for this entry
+		$mFormatVersion, ///< Entry format version
+		$mSource;        ///< Source of this entry
 
 	/**
 	 * Construct a new TitleBlacklistEntry.
@@ -308,11 +309,34 @@ class TitleBlacklistEntry {
 	 * @param $params array Parameters for this entry
 	 * @param $raw string Raw contents of this line
 	 */
-	private function __construct( $regex, $params, $raw ) {
+	private function __construct( $regex, $params, $raw, $source ) {
 		$this->mRaw = $raw;
 		$this->mRegex = $regex;
 		$this->mParams = $params;
 		$this->mFormatVersion = TitleBlacklist::VERSION;
+		$this->mSource = $source;
+	}
+
+	/**
+	 * Returns whether this entry is capable of filtering new accounts.
+	 */
+	private function filtersNewAccounts() {
+		global $wgTitleBlacklistUsernameSources;
+
+		if( $wgTitleBlacklistUsernameSources === '*' ) {
+			return true;
+		}
+
+		if( !$wgTitleBlacklistUsernameSources ) {
+			return false;
+		}
+
+		if( !is_array( $wgTitleBlacklistUsernameSources ) ) {
+			throw new MWException(
+				'$wgTitleBlacklistUsernameSources must be "*", false or an array' );
+		}
+
+		return in_array( $this->mSource, $wgTitleBlacklistUsernameSources, true );
 	}
 
 	/**
@@ -328,6 +352,11 @@ class TitleBlacklistEntry {
 		if ( !$title ) {
 			return false;
 		}
+
+		if( $action == 'new-account' && !$this->filtersNewAccounts() ) {
+			return false;
+		}
+
 		wfSuppressWarnings();
 		$match = preg_match( "/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title->getFullText() );
 		wfRestoreWarnings();
@@ -361,7 +390,7 @@ class TitleBlacklistEntry {
 	 * @param $line String containing a line of blacklist text
 	 * @return TitleBlacklistEntry
 	 */
-	public static function newFromString( $line ) {
+	public static function newFromString( $line, $source ) {
 		$raw = $line; // Keep line for raw data
 		$options = array();
 		// Strip comments
@@ -418,8 +447,8 @@ class TitleBlacklistEntry {
 			}
 		}
 		// Return result
-		if ( $regex ) {
-			return new TitleBlacklistEntry( $regex, $options, $raw );
+		if( $regex ) {
+			return new TitleBlacklistEntry( $regex, $options, $raw, $source );
 		} else {
 			return null;
 		}

@@ -13,6 +13,9 @@
 
 ini_set( 'include_path', ini_get( 'include_path' ) . ':' . __DIR__ . '/../../../tests/phpunit/includes/api' );
 
+/**
+ * @group medium
+ **/
 class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 	function setUp() {

@@ -32,8 +32,25 @@ define( 'TBLSRC_URL', 2 ); ///< Load blacklist from URL
 define( 'TBLSRC_FILE', 3 ); ///< Load from file
 /** @} */
 
-/** Array of title blacklist sources */
+/**
+ * Array of title blacklist sources.
+ *
+ * Should be in array( name => source description ) format.
+ * See extension documentation for details of source description.
+ */
 $wgTitleBlacklistSources = array();
+
+/**
+ * Sets the sources which may work as a username filter.
+ *
+ * '*' is for all; false disables all.
+ *
+ * If you want to limit it to particular sources, use
+ * array( source name 1, source name 2 ).
+ * This may be useful when you have shared account creation system
+ * in order to avoid blacklist fragmentation.
+ */
+$wgTitleBlacklistUsernameSources = '*';
 
 $wgTitleBlacklistCaching = array(
 	'warningchance' => 100,
