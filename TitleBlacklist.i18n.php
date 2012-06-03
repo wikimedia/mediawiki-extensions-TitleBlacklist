@@ -131,6 +131,15 @@ $messages['arz'] = array(
 	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Gitartha.bordoloi
+ */
+$messages['as'] = array(
+	'titleblacklist-override' => 'ব্লেকলিষ্ট উপেক্ষা কৰক',
+	'right-tboverride' => 'শিৰোনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
+	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  * @author Xuacu
