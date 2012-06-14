@@ -140,7 +140,7 @@ $messages['as'] = array(
 	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -236,7 +236,7 @@ $messages['be-tarask'] = array(
 	'right-tboverride-account' => 'ігнараваньне чорнага сьпісу ўдзельнікаў',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
@@ -274,7 +274,7 @@ $messages['bn'] = array(
 	'titleblacklist-invalid' => 'শিরোনাম কালোতালিকার এই {{PLURAL:$1|টি লাইন|টি লাইন}} অবৈধ; অনুগ্রহ করে সংরক্ষণ করার আগে  {{PLURAL:$1|এটি|এগুলি}} সংশোধন করুন:',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Gwendal
  * @author Gwenn-Ael
@@ -302,7 +302,7 @@ reizhit {{PLURAL:$1|anezhi|anezho}} a-raok enrollañ :',
 	'right-tboverride-account' => 'Na ober van ouzh roll du an anvioù implijer',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -327,7 +327,7 @@ molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
 	'right-tboverride-account' => 'Zaobilaženje spiska zabranjenih korisničkih imena',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author El libre
  * @author Jordi Roqué
@@ -351,7 +351,7 @@ $messages['ca'] = array(
 	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Li-sung
  * @author Matěj Grabovský
@@ -375,7 +375,7 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 	'right-tboverride-account' => 'Překonání černé listiny uživatelských jmen',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Sarrus
  */
 $messages['da'] = array(
@@ -524,7 +524,7 @@ bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'right-tboverride-account' => 'Transpasi la nigran liston pri uzantoj.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Locos epraix
  * @author Remember the dot
@@ -552,7 +552,7 @@ por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
 	'right-tboverride-account' => 'Ignorar la lista negra de los nombres de usuario',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  */
 $messages['et'] = array(
@@ -603,7 +603,7 @@ $messages['fa'] = array(
 	'right-tboverride-account' => 'لغو فهرست سیاه نام کاربری',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Agony
  * @author Cimon Avaro
  * @author Crt
@@ -628,7 +628,7 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 	'right-tboverride-account' => 'Ohittaa käyttäjänimien estolista',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Elfix
  * @author Grondin
@@ -657,7 +657,7 @@ Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
 	'right-tboverride-account' => "Ignorer la liste noire des noms d'utilisateur",
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -824,7 +824,7 @@ $messages['hi'] = array(
 	'right-tboverride' => 'शीर्षक ब्लॅकलिस्ट को नजर अंदाज करें',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -870,7 +870,7 @@ Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 	'right-tboverride-account' => 'Płaćiwosć čorneje lisćiny wužiwarskich mjenow zběhnyć',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author BáthoryPéter
  * @author Dani
  * @author Tgr
@@ -893,7 +893,7 @@ Illeszkedik a következő feketelistás elemre: <code>$1</code>',
 	'right-tboverride-account' => 'Felhasználónév-feketelista felülbírálása',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -986,7 +986,7 @@ pangngaasi ta pasayaaten {{PLURAL:$1|ida|dagida}} sakbay nga idulin:',
 	'right-tboverride-account' => 'Ipatuon ti nagan ti agar-aramat a blacklist',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
@@ -1037,7 +1037,7 @@ $messages['ja'] = array(
 	'right-tboverride-account' => '利用者名ブラックリストを無視',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  * @author Ælsån
  */
@@ -1243,7 +1243,7 @@ $messages['li'] = array(
 	'right-tboverride-account' => 'De zwarte lies veur gebroekersname negere',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Matasg
@@ -1269,7 +1269,7 @@ prašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:',
 	'right-tboverride' => 'Nepaisyti juodojo sąrašo',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1444,7 +1444,7 @@ Verbeter die {{PLURAL:$1|regel|regels}} voordat u de lijst opslaat:',
 	'right-tboverride-account' => 'Zwarte lijst voor gebruikersnamen negeren',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1465,7 +1465,7 @@ Det svarar til følgjande svartelisteelement: <code>$1</code>',
 	'right-tboverride' => 'Overkøyre tittelsvartelista',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1509,7 +1509,7 @@ $messages['or'] = array(
 	'right-tboverride-account' => 'ଇଉଜର ନାମ ଅଟକ ତାଲିକାକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Beau
  * @author Derbeth
  * @author Sp5uhe
@@ -1592,7 +1592,7 @@ $messages['ps'] = array(
 	'titleblacklist-override' => 'تورليک بابېزه ګڼل',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Hamilton Abreu
  * @author Malafaya
@@ -1619,7 +1619,7 @@ O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 	'right-tboverride-account' => 'Ignorar a lista negra de nomes de utilizador',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  */
@@ -1648,7 +1648,7 @@ $messages['qu'] = array(
 	'titleblacklist-override' => 'Yana sutisuyuta ama qhawaychu',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author AdiJapan
  * @author Minisarm
  * @author Stelistcristi
@@ -1675,7 +1675,7 @@ corectați{{PLURAL:$1|-o|-le}} înainte de a salva pagina.',
 	'right-tboverride-account' => 'Suprascrie lista neagră a numelor de utilizator',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1701,7 +1701,7 @@ pe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
 	'right-tboverride-account' => "Sovrasrive 'a lista gnore de le utinde",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author AlexSm
  * @author Ferrer
  * @author KPu3uC B Poccuu
@@ -1749,7 +1749,7 @@ $messages['rue'] = array(
 	'right-tboverride-account' => 'Переконаня чорной листины назв сторінок',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1801,7 +1801,7 @@ $messages['si'] = array(
 	'right-tboverride-account' => 'පරිශීලක නාම කළුලයිස්තුව ඉක්මවායන්න',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1822,7 +1822,7 @@ Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 	'right-tboverride-account' => 'Prekonať čiernu listinu používateľských mien',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1847,7 +1847,7 @@ prosimo, popravite {{PLURAL:$1|jo|ju|jih}} pred shranjevanjem:',
 	'right-tboverride-account' => 'Prepis črnega seznama uporabniških imen',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Olsi
  */
 $messages['sq'] = array(
@@ -1872,7 +1872,7 @@ ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 	'right-tboverride-account' => 'Refuzoni emrin e përdoruesit të listës së zezë',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -1888,7 +1888,7 @@ $messages['sr-ec'] = array(
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1932,7 +1932,7 @@ $messages['su'] = array(
 	'titleblacklist-forbidden-upload' => 'Ngaran koropak “$2” dicaram dijieun, luyu jeung éntri daptar hideung: <code>$1</code>',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
@@ -1982,7 +1982,7 @@ $messages['te'] = array(
 	'right-tboverride' => 'శీర్షికల నిరోధపు జాబితాని  అధిగమించగలగడం',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1996,7 +1996,7 @@ $messages['tg-cyrl'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Сатри|Сатрҳои}} зерин дар феҳристи сиёҳи унвонҳо ғайримиҷоз {{PLURAL:$1|аст|ҳастанд}}; лутфан {{PLURAL:$1|он|онҳо}}ро қабл аз захира кардан, ислоҳ кунед:',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2089,7 +2089,7 @@ lütfen kaydetmeden önce düzeltin:',
 	'right-tboverride-account' => 'Kullanıcı adı karalistesini geçersiz kıl',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author JenVan
@@ -2116,7 +2116,7 @@ $messages['uk'] = array(
 	'right-tboverride-account' => 'ігнорування чорного списку імен користувачів',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -2198,7 +2198,7 @@ $messages['yue'] = array(
 	'right-tboverride' => '覆蓋標題黑名單',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Bencmq
  * @author Fdcn
  * @author Hydra
@@ -2224,7 +2224,7 @@ $messages['zh-hans'] = array(
 	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Fdcn
  * @author Gaoxuewei
  * @author Mark85296341
