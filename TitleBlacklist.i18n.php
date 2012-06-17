@@ -2213,6 +2213,7 @@ $messages['yue'] = array(
  * @author Liangent
  * @author PhiLiP
  * @author Shinjiman
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'titleblacklist-desc' => '允许管理员通过[[MediaWiki:Titleblacklist|黑名单]]和[[MediaWiki:Titlewhitelist|白名单]]禁止页面和用户帐户的创建',
@@ -2228,7 +2229,7 @@ $messages['zh-hans'] = array(
 它匹配以下黑名单项目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
 	'titleblacklist-override' => '忽略黑名单',
-	'right-tboverride' => '覆盖标题黑名单',
+	'right-tboverride' => '避开标题黑名单',
 	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
