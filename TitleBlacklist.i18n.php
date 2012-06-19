@@ -132,10 +132,11 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
-	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|ব্লেকলিষ্ট]] আৰু [[MediaWiki:Titlewhitelist|হোৱাইটলিষ্ট]]ৰ মতে প্ৰশাসকক পৃষ্ঠা আৰু সদস্য একাউণ্টৰ সৃষ্টি অৱৰোধৰ অনুমতি দিযে',
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|ব্লেকলিষ্ট]] আৰু [[MediaWiki:Titlewhitelist|হোৱাইটলিষ্ট]]ৰ মতে প্ৰশাসকক পৃষ্ঠা আৰু সদস্য একাউণ্টৰ সৃষ্টি অৱৰোধৰ অনুমতি দিয়ে',
 	'titleblacklist' => '# এইখন এখন শিৰোনাম ব্লেকলিষ্ট। ইয়াৰ যিকোনো নিয়মিত এক্সপ্ৰেছনৰ লগত মিলা শিৰোনাম আৰু সদস্যনাম সৃষ্টি কৰিব নোৱাৰি।
 # মন্তব্যৰ বাবে "#" ব্যৱহাৰ কৰক।
 # ই বৰফলা বা সৰুফলা দুয়োবিধ আখৰতে কাম কৰিব।',
