@@ -59,7 +59,7 @@ $messages['af'] = array(
 	'right-tboverride-account' => 'Ignoreer die gebruikersnaam swartlys',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -217,7 +217,7 @@ $messages['bcc'] = array(
 	'right-tboverride' => 'لیست سیاه عنوان لغو کن',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -457,7 +457,7 @@ kerem kerê verqeydkerdışi de raşt kerê:',
 	'right-tboverride' => 'sernameyê listeya siyayi bloke bıker',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -714,7 +714,7 @@ ceartaigh {{PLURAL:$1|é|iad}} roimh shábháil, le d'thoil:",
 	'right-tboverride' => 'Sáraíocht an dúliosta teideail',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -857,7 +857,7 @@ Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
 	'right-tboverride-account' => 'Zaobilaženje popisa zabranjenih suradničkih imena',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1738,7 +1738,7 @@ $messages['ru'] = array(
 	'right-tboverride-account' => 'игнорирование чёрного списка имён участников',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
