@@ -134,6 +134,7 @@ $messages['arz'] = array(
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Gitartha.bordoloi
+ * @author Nilamdyuti
  */
 $messages['as'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|ব্লেকলিষ্ট]] আৰু [[MediaWiki:Titlewhitelist|হোৱাইটলিষ্ট]]ৰ মতে প্ৰশাসকক পৃষ্ঠা আৰু সদস্য একাউণ্টৰ সৃষ্টি অৱৰোধৰ অনুমতি দিয়ে',
@@ -144,6 +145,14 @@ $messages['as'] = array(
 # ই বৰফলা বা সৰুফলা দুয়োবিধ আখৰতে কাম কৰিব।',
 	'titleblacklist-forbidden-edit' => '"$2" শিৰোনামটো সৃষ্টিৰ পৰা বাৰণ কৰা হৈছে। 
 এই ব্লেকলিষ্ট ভুক্তিৰ লগত ইয়াৰ মিল আছে: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '"$2" ক "$3" লে স্থানান্তৰ কৰিব নোৱাৰি, কাৰণ শীৰ্ষক "$3" ক সৃষ্টিৰ পৰা নিষিদ্ধ কৰা হৈছে।
+ই নিম্নলিখিত ব্লেকলিস্ট প্ৰৱিষ্টিৰ সৈতে মিল খায়: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'নথিপত্ৰ নাম "$2" সৃষ্টিৰ পৰা নিষিদ্ধ কৰা হৈছে।
+ই নিম্নলিখিত ব্লেকলিস্ট প্ৰৱিষ্টিৰ সৈতে মিল খায়: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'ব্যৱহাৰকাৰী নাম "$2" ক সৃষ্টিৰ পৰা নিষিদ্ধ কৰা হৈছে।
+ই নিম্নলিখিত ব্লেকলিস্ট প্ৰৱিষ্টিৰ সৈতে মিল খায়: <code>$1</code>',
+	'titleblacklist-invalid' => 'শীৰ্ষক ব্লেকলিস্টত নিম্নলিখিত {{PLURAL:$1|শাৰী|শাৰীসমূহ}} অবৈধ; 
+অনুগ্ৰহ কৰি সংৰক্ষণ কৰাৰ আগত {{PLURAL:$1|ইয়াক|ইহতক}} শুদ্ধ কৰক:',
 	'titleblacklist-override' => 'ব্লেকলিষ্ট উপেক্ষা কৰক',
 	'right-tboverride' => 'শিৰোনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
