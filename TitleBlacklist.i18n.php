@@ -184,7 +184,7 @@ por favor {{PLURAL:$1|corríxila|corríxiles}} enantes de guardar:',
 	'right-tboverride-account' => "Saltar la llista prieta d'usuarios",
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -1125,7 +1125,7 @@ $messages['kk-arab'] = array(
 	'titleblacklist-invalid' => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -1138,7 +1138,7 @@ $messages['kk-cyrl'] = array(
 	'titleblacklist-invalid' => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'titleblacklist' => '# Bul atawlardıñ qara tizimi. Jüýeli aýtılımdarğa (regex) säýkes mındağı atawlar jaratılmaýdı.
 Mändemeler üşin «#» nışanın qoldanıñız.',
@@ -1153,6 +1153,7 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]를 통해서 특정 제목의 문서 생성을 막는 기능',
@@ -1161,13 +1162,16 @@ $messages['ko'] = array(
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
 	'titlewhitelist' => ' # 생성 허용 규칙을 적는 곳입니다. 생성 금지 규칙에 포함되는 문서의 경우, 이 곳의 규칙에도 포함될 경우 생성이 가능해집니다. 규칙이 아닌 내용을 적을 때에는 앞에 "#"을 붙여 주세요.
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
-	'titleblacklist-forbidden-edit' => '‘$2’ 문서는 생성 금지 목록에 포함되어 있습니다. 해당 생성 금지 조건은 <code>$1</code>입니다.',
-	'titleblacklist-forbidden-move' => '‘$2’ 문서를 ‘$3’ 제목으로 이동할 수 없습니다. 문서 생성 금지 조건이 걸려 있습니다. 해당 금지 조건은 <code>$1</code>입니다.',
-	'titleblacklist-forbidden-upload' => '‘$2’ 파일 이름을 만드는 것이 제한되어 있습니다.
+	'titleblacklist-forbidden-edit' => '"$2" 문서는 생성 금지 목록에 포함되어 있습니다.
+해당 생성 금지 조건은 <code>$1</code>입니다.',
+	'titleblacklist-forbidden-move' => '"$2" 문서를 "$3" 제목으로 이동할 수 없습니다. 문서 생성 금지 조건이 걸려 있습니다.
+해당 금지 조건은 <code>$1</code>입니다.',
+	'titleblacklist-forbidden-upload' => '"$2" 파일 이름을 만드는 것이 제한되어 있습니다.
 파일 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => '‘$2’ 이름으로 계정을 만드는 것이 제한되어 있습니다.
+	'titleblacklist-forbidden-new-account' => '"$2" 이름으로 계정을 만드는 것이 제한되어 있습니다.
 계정 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
-	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다. 저장하기 전에 올바르게 수정해주세요.',
+	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다.
+저장하기 전에 올바르게 수정해주세요.',
 	'titleblacklist-override' => '블랙리스트를 무시',
 	'right-tboverride' => '문서 제목 블랙리스트 무시',
 	'right-tboverride-account' => '사용자 이름 블랙리스트를 무시',
@@ -1395,8 +1399,7 @@ $messages['nah'] = array(
 #Inīn ahmo quimati in huēyimachiyōtlahtōliztli intlā ahmo mopehpena',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  * @author Reedy
  */
