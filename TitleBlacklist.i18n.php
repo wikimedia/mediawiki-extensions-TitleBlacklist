@@ -151,8 +151,8 @@ $messages['as'] = array(
 ই নিম্নলিখিত ব্লেকলিস্ট প্ৰৱিষ্টিৰ সৈতে মিল খায়: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'ব্যৱহাৰকাৰী নাম "$2" ক সৃষ্টিৰ পৰা নিষিদ্ধ কৰা হৈছে।
 ই নিম্নলিখিত ব্লেকলিস্ট প্ৰৱিষ্টিৰ সৈতে মিল খায়: <code>$1</code>',
-	'titleblacklist-invalid' => 'শীৰ্ষক ব্লেকলিস্টত নিম্নলিখিত {{PLURAL:$1|শাৰী|শাৰীসমূহ}} অবৈধ; 
-অনুগ্ৰহ কৰি সংৰক্ষণ কৰাৰ আগত {{PLURAL:$1|ইয়াক|ইহতক}} শুদ্ধ কৰক:',
+	'titleblacklist-invalid' => 'শীৰ্ষক ব্লেকলিষ্টত নিম্নলিখিত {{PLURAL:$1|শাৰী|শাৰীসমূহ}} অবৈধ; 
+অনুগ্ৰহ কৰি সংৰক্ষণ কৰাৰ আগত {{PLURAL:$1|ইয়াক|এইবোৰ}} শুদ্ধ কৰক:',
 	'titleblacklist-override' => 'ব্লেকলিষ্ট উপেক্ষা কৰক',
 	'right-tboverride' => 'শিৰোনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
@@ -445,6 +445,7 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Erdemaslancan
  */
 $messages['diq'] = array(
 	'titleblacklist-desc' => 'serkaran re desturê vıraştışê pel u hesabê karberan dano, qey qedexekerdışi re yew [[MediaWiki:Titleblacklist|listeya risiyayan]] u [[MediaWiki:Titlewhitelist|listeya risıpiyan]] dano.',
@@ -463,7 +464,9 @@ malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 	'titleblacklist-invalid' => 'nê {{PLURAL:$1|satır o ke|satır ê ke}} listeyasiyayi de qedexe yê;
 kerem kerê verqeydkerdışi de raşt kerê:',
+	'titleblacklist-override' => 'Tenilisti mehesebne',
 	'right-tboverride' => 'sernameyê listeya siyayi bloke bıker',
+	'right-tboverride-account' => 'Tenilisteya naman dê karberan mehesebnê',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -1156,15 +1159,16 @@ Mändemeler üşin «#» nışanın qoldanıñız.',
  * @author 아라
  */
 $messages['ko'] = array(
-	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]를 통해서 특정 제목의 문서 생성을 막는 기능',
-	'titleblacklist' => ' # 문서 이름 금지 목록을 적는 곳입니다. 정규 표현식과 일치하는 문서나 사용자명은 생성이 제한됩니다.
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]를 통해서 특정 제목의 문서 만들기를 막는 기능',
+	'titleblacklist' => ' # 문서 이름 금지 목록을 적는 곳입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 만들기가 제한됩니다.
  # 규칙이 아닌 주석 내용에는 앞에 "#"을 붙여 주세요.
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
-	'titlewhitelist' => ' # 생성 허용 규칙을 적는 곳입니다. 생성 금지 규칙에 포함되는 문서의 경우, 이 곳의 규칙에도 포함될 경우 생성이 가능해집니다. 규칙이 아닌 내용을 적을 때에는 앞에 "#"을 붙여 주세요.
+	'titlewhitelist' => ' # 만들기 허용 규칙을 적는 곳입니다. 만들기 금지 규칙에 포함되는 문서의 경우, 이 곳의 규칙에도 포함될 경우 만들기가 가능해집니다.
+ # 규칙이 아닌 주석 내용에는 앞에 "#"을 붙여 주세요.
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
-	'titleblacklist-forbidden-edit' => '"$2" 문서는 생성 금지 목록에 포함되어 있습니다.
-해당 생성 금지 조건은 <code>$1</code>입니다.',
-	'titleblacklist-forbidden-move' => '"$2" 문서를 "$3" 제목으로 이동할 수 없습니다. 문서 생성 금지 조건이 걸려 있습니다.
+	'titleblacklist-forbidden-edit' => '"$2" 문서는 만들기 금지 목록에 포함되어 있습니다.
+해당 만들기 금지 조건은 <code>$1</code>입니다.',
+	'titleblacklist-forbidden-move' => '"$2" 문서를 "$3" 제목으로 이동할 수 없습니다. 문서 만들기 금지 조건이 걸려 있습니다.
 해당 금지 조건은 <code>$1</code>입니다.',
 	'titleblacklist-forbidden-upload' => '"$2" 파일 이름을 만드는 것이 제한되어 있습니다.
 파일 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
