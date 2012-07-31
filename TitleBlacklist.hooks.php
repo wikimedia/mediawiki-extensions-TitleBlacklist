@@ -80,7 +80,7 @@ class TitleBlacklistHooks {
 			'new-account', $override );
 		if( $blacklisted instanceof TitleBlacklistEntry ) {
 			$message = $blacklisted->getErrorMessage( 'new-account' );
-			$err = wfMsgWikiHtml( $message, $blacklisted->getRaw(), $userName );
+			$err = wfMsgWikiHtml( $message, htmlspecialchars( $blacklisted->getRaw() ), $userName );
 			return false;
 		}
 		return true;
