@@ -449,9 +449,9 @@ $messages['de-formal'] = array(
  */
 $messages['diq'] = array(
 	'titleblacklist-desc' => 'serkaran re desturê vıraştışê pel u hesabê karberan dano, qey qedexekerdışi re yew [[MediaWiki:Titleblacklist|listeya risiyayan]] u [[MediaWiki:Titlewhitelist|listeya risıpiyan]] dano.',
-	'titleblacklist' => '# no yew sernameyê qerelisteyo.
-# qey mışorekerdışi "#" bıxulunê.
-# no farazi herfa qıc u gırdi re hessas niyo',
+	'titleblacklist' => '# No yew sernameyê qerelisteyo.Tiya dı ifadey timarınana sernamey u karberi nêvırazênê.
+# Qan dê vatışa "#" kar kerê.
+# No farazi herfa qıc u gırdi re nêhesıbneno',
 	'titlewhitelist' => '# no yew sernameyê listeya risıpiyan o. qey mışorekerdışi "#" bışuxulnê.
 # no farazi herfa qıc u gırdi re hessas niyo',
 	'titleblacklist-forbidden-edit' => 'vıraştışê sernameyê "$2" i qedexe bı .
