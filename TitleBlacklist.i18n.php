@@ -394,6 +394,7 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 );
 
 /** Danish (dansk)
+ * @author Hylle
  * @author Sarrus
  */
 $messages['da'] = array(
@@ -401,6 +402,7 @@ $messages['da'] = array(
 	'titleblacklist-forbidden-edit' => 'Sidenavnet "$2" er blevet beskyttet mod oprettelse<br />
 Det svarer til følgende blacklistpost: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" kan ikke flyttes til "$3", fordi artikelnavnet "$3" er blevet beskyttet mod oprettelse. Det svarer til følgende blacklistpost: <code>$1</code>',
+	'titleblacklist-override' => 'Ignorer sortlisten',
 );
 
 /** German (Deutsch)
