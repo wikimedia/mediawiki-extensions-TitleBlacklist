@@ -1009,6 +1009,28 @@ pangngaasi ta pasayaaten {{PLURAL:$1|ida|dagida}} sakbay nga idulin:',
 	'right-tboverride-account' => 'Ipatuon ti nagan ti agar-aramat a blacklist',
 );
 
+/** Icelandic (íslenska)
+ * @author Snævar
+ */
+$messages['is'] = array(
+	'titleblacklist-desc' => 'Leyfir möppudýrum að banna stofnun síðna og notenda samkvæmt [[MediaWiki:Titleblacklist|blacklist]] og [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist' => '# Þetta er bannlisti fyrir síðutitla. Titlar og notendanöfn sem passa við reglulega segð hér er ekki hægt að búa til.
+# Notaðu "#" fyrir athugasemdir
+# Færslurnar hér eru sjálfvirkt hástafafrjálsar',
+	'titleblacklist-forbidden-edit' => 'Búið er að banna titilinn "$2" og ekki er hægt að nota hann við stofnun síðna eða notendanafna.
+Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Ekki er hægt að færa "$2" á "$3", því búið er að banna titilinn "$3". Ekki er hægt að búa til síður með þessum titli.
+Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Búið er að banna skráarnafnið "$2". Ekki er hægt að stofna skrár með þessum titli.
+Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Búið er að banna titilinn "$2" og ekki er hægt að nota hann við stofnun notendanafna.
+Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
+	'titleblacklist-invalid' => 'Eftirfarandi {{PLURAL:$1|færsla|færslur}} í bannlista yfir síðutitla {{PLURAL:$1|er|eru}} ógildar og leiðrétta þarf {{PLURAL:$1|hana|þær}} áður en síðan er vistuð:',
+	'titleblacklist-override' => 'Hunsa bannlistann',
+	'right-tboverride' => 'Hunsa bannlista fyrir síðutitla.',
+	'right-tboverride-account' => 'Hunsa bannlista yfir notendanöfn',
+);
+
 /** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
