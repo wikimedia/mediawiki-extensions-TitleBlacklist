@@ -1923,6 +1923,7 @@ ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 
 /** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -1934,6 +1935,7 @@ $messages['sr-ec'] = array(
 # Подразумевано је неосетљив на величину слова',
 	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.
 # Подразумевано је неосетљив на величину слова',
+	'titleblacklist-override' => 'Занемари црну листу',
 	'right-tboverride' => 'Преписује црни списак наслова.',
 );
 
@@ -2006,8 +2008,11 @@ Det matchar följande element i svartlistan: <code>$1</code>',
 
 /** Tamil (தமிழ்)
  * @author Shanmugamp7
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'titleblacklist-forbidden-edit' => 'தலைப்பு "$2" உருவாக்கத்திலிருந்து தடை செய்யப்பட்டுள்ளது.
+அது பின்வரும் கறுப்புப் பட்டியல் பதிவை ஒத்துள்ளது: <code>$1</code>',
 	'titleblacklist-override' => 'கருப்புபட்டியலை புறக்கணிக்கவும்',
 );
 
