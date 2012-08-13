@@ -1937,6 +1937,7 @@ $messages['sr-ec'] = array(
 # Подразумевано је неосетљив на величину слова',
 	'titleblacklist-override' => 'Занемари црну листу',
 	'right-tboverride' => 'Преписује црни списак наслова.',
+	'right-tboverride-account' => 'заобилажење црне листе корисничких имена',
 );
 
 /** Serbian (Latin script) (‪srpski (latinica)‬)
