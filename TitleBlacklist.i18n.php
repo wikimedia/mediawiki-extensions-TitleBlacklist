@@ -278,6 +278,7 @@ $messages['bg'] = array(
 /** Bengali (বাংলা)
  * @author Abdullah Harun Jewel
  * @author Bellayet
+ * @author Nasir8891
  * @author Zaheen
  */
 $messages['bn'] = array(
@@ -289,7 +290,12 @@ $messages['bn'] = array(
 	'titleblacklist-forbidden-edit' => '"$2" শিরোনামটি সৃষ্টি করা নিষিদ্ধ করা হয়েছে। এটি কালোতালিকার এই ভুক্তিটির সাথে মিলে গেছে: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2"-কে "$3"-এ সরানো যাবে না, কারণ "$3" শিরোনামটি নিষিদ্ধ। শিরোনামটি এই কালোতালিকা ভুক্তিটির সাথে মিলে গেছে: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '"$2" ফাইলনামটি সৃষ্টি নিষিদ্ধ। নামটি এই কালোতালিকা ভুক্তিটির সাথে মিলে গেছে: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '"$2" নামে ব্যবহারকারী নাম তৈরী নিষিদ্ধ।
+এটি কালোতালিকার এই ভুক্তিটির সাথে মিলে গেছে: <code>$1</code>',
 	'titleblacklist-invalid' => 'শিরোনাম কালোতালিকার এই {{PLURAL:$1|টি লাইন|টি লাইন}} অবৈধ; অনুগ্রহ করে সংরক্ষণ করার আগে  {{PLURAL:$1|এটি|এগুলি}} সংশোধন করুন:',
+	'titleblacklist-override' => 'কালোতালিকা উপেক্ষা করুন',
+	'right-tboverride' => 'শিরোনাম কালোতালিকা উপেক্ষা করুন',
+	'right-tboverride-account' => 'ব্যবহারকারী নাম কালোতালিকা উপেক্ষা করুন',
 );
 
 /** Breton (brezhoneg)
@@ -1095,6 +1101,7 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
@@ -1113,6 +1120,7 @@ Irah-irahan iku cocog karo èntri daftar ireng iki: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Jeneng panganggo "$2" wis dipenggak.
 Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} ing daftar ireng irah-irahan (judhul) {{PLURAL:$1|ing ngisor|ing ngisor}} iki ora absah; mangga dikorèksi {{PLURAL:$1|item|item-item}} iku sadurungé disimpen:',
+	'titleblacklist-override' => 'Bènaké daptar ireng',
 	'right-tboverride' => "''Override'' daftar ireng judhul",
 );
 
@@ -1415,6 +1423,16 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-override' => 'Abaikan senarai hitam',
 	'right-tboverride' => 'Mengatasi senarai hitam tajuk',
 	'right-tboverride-account' => 'Mengatasi senarai hitam nama pengguna',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'titleblacklist-forbidden-new-account' => 'Il-ħolqien ta\' utenti bl-isem "$2" ġie imblukkat. Dan jaqbel mad-daħla fil-lista s-sewda segwenti: <code>$1</code>',
+	'titleblacklist-override' => 'Injora l-lista s-sewda',
+	'right-tboverride' => 'Jinjora l-lista s-sewda tat-titli',
+	'right-tboverride-account' => 'Jinjora l-lista s-sewda tal-ismijiet tal-utent',
 );
 
 /** Nahuatl (Nāhuatl)
