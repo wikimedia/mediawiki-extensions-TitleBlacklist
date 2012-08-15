@@ -1122,6 +1122,7 @@ Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} ing daftar ireng irah-irahan (judhul) {{PLURAL:$1|ing ngisor|ing ngisor}} iki ora absah; mangga dikorèksi {{PLURAL:$1|item|item-item}} iku sadurungé disimpen:',
 	'titleblacklist-override' => 'Bènaké daptar ireng',
 	'right-tboverride' => "''Override'' daftar ireng judhul",
+	'right-tboverride-account' => 'Benaké daptar ireng jeneng panganggo',
 );
 
 /** Georgian (ქართული)
@@ -1814,6 +1815,15 @@ $messages['rue'] = array(
 	'titleblacklist-override' => 'Іґноровати чорный список',
 	'right-tboverride' => 'іґнорованя чорной листины назв сторінок',
 	'right-tboverride-account' => 'Переконаня чорной листины назв сторінок',
+);
+
+/** Sanskrit (संस्कृतम्)
+ * @author Shubha
+ */
+$messages['sa'] = array(
+	'titleblacklist-override' => 'दुर्वृत्तावली उपेक्ष्यताम्',
+	'right-tboverride' => 'दुर्वृत्तावल्याः शिरोनाम अतिव्रजतु',
+	'right-tboverride-account' => 'दुर्वृत्तयोजकनाम अतिव्रजतु',
 );
 
 /** Sakha (саха тыла)
