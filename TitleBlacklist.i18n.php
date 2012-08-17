@@ -1821,6 +1821,7 @@ $messages['rue'] = array(
  * @author Shubha
  */
 $messages['sa'] = array(
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|blacklist]] तथा [[MediaWiki:Titlewhitelist|whitelist]] इत्येतयोः प्रबन्धकेन नूतनपृष्ठस्य योजकपृष्ठस्य सर्जनं च अवरुद्धम् अस्ति ।',
 	'titleblacklist' => '# इदं दुरुपयुक्तशीर्षकम् । शिर्षकाणि योजकाः ये अत्र नियताभिव्यक्तिं प्राप्नुवन्ति ते स्रष्टुं नार्हन्ति ।
 # अभिप्रायाय "#" उपयुज्यताम् ।
 # पूर्वनिर्देशानुसारम् इदम् अक्षरभेदसूक्ष्मरहितम् ।',
