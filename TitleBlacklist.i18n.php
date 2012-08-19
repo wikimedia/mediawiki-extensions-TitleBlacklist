@@ -180,7 +180,7 @@ Concueya cola siguiente entrada na llista prieta: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente llinia|Les siguientes llinies}} de la llista prieta de títulos {{PLURAL:$1|nun ye válida|nun son válides}};
 por favor {{PLURAL:$1|corríxila|corríxiles}} enantes de guardar:',
 	'titleblacklist-override' => 'Inorar la llista prieta',
-	'right-tboverride' => 'Inorar la llista prieta de títulos',
+	'right-tboverride' => "Sobrescribir la llista prieta de títulos o nomes d'usuariu",
 	'right-tboverride-account' => "Saltar la llista prieta d'usuarios",
 );
 
@@ -416,6 +416,7 @@ Det svarer til følgende blacklistpost: <code>$1</code>',
  * @author Giftpflanze
  * @author Imre
  * @author Kghbln
+ * @author MF-Warburg
  * @author Metalhead64
  * @author Raimond Spekking
  * @author The Evil IP address
@@ -434,7 +435,7 @@ $messages['de'] = array(
 Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnung: <code>$1</code>',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
 	'titleblacklist-override' => 'Schwarze Liste ignorieren',
-	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen außer Kraft setzen',
+	'right-tboverride' => 'Die schwarze Liste unerwünschter Seiten- oder Benutzernamen außer Kraft setzen',
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen',
 );
 
@@ -754,7 +755,7 @@ Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 Coincide coa seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte liña|As seguintes liñas}} da lista negra {{PLURAL:$1|é inválida|son inválidas}}; por favor  {{PLURAL:$1|corríxaa|corríxaas}} antes de gardar:',
 	'titleblacklist-override' => 'Ignorar a lista negra',
-	'right-tboverride' => 'Ignorar os títulos da lista negra',
+	'right-tboverride' => 'Ignorar a lista negra de títulos ou nomes de usuario',
 	'right-tboverride-account' => 'Ignorar a lista negra de nomes de usuario',
 );
 
@@ -1508,7 +1509,7 @@ $messages['nl'] = array(
 	'titleblacklist-invalid' => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst voor paginanamen {{PLURAL:$1|is|zijn}} ongeldig.
 Verbeter die {{PLURAL:$1|regel|regels}} voordat u de lijst opslaat:',
 	'titleblacklist-override' => 'Zwarte lijst negeren',
-	'right-tboverride' => 'De zwarte lijst voor paginanamen omzeilen',
+	'right-tboverride' => 'De zwarte lijst voor pagina- en gebruikersnamen omzeilen',
 	'right-tboverride-account' => 'Zwarte lijst voor gebruikersnamen negeren',
 );
 
