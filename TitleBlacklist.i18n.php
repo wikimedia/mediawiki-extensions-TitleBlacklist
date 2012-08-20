@@ -498,7 +498,7 @@ Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
 Pśetrjefijo na slědujucy zapisk corneje lisćiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Slědujuca smužka|Slědujucej smužce|slědujuce smužki|Slědujuce smužki}} w cornej lisćinje titelow {{PLURAL:$1|jo njepłaśiwa|stej njepłaśiwej|su njepłaśiwe |su njepłaśiwe}}; pšosym skorigěruj {{PLURAL:$1|ju|jej|je|je}} do składowanja:',
 	'titleblacklist-override' => 'Carnu lisćinu ignorěrowaś',
-	'right-tboverride' => 'Płaśiwosć corneje lisćiny titelow wótpóraś',
+	'right-tboverride' => 'Płaśiwosć carneje lisćiny nastawkow abo wužywarskich mjenjow wótpóraś',
 	'right-tboverride-account' => 'Płaśiwosć carneje lisćiny wužywarskich mjenjow wótpóraś',
 );
 
@@ -555,6 +555,7 @@ bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 );
 
 /** Spanish (español)
+ * @author Armando-Martin
  * @author Crazymadlover
  * @author Locos epraix
  * @author Remember the dot
@@ -578,7 +579,7 @@ Coincide con la siguiente entrada de la lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};
 por favor corríge{{PLURAL:$1|la|las}} antes de grabar:',
 	'titleblacklist-override' => 'Ignorar la lista negra',
-	'right-tboverride' => 'Ignorar la lista negra de títulos',
+	'right-tboverride' => 'Ignorar la lista negra de títulos o de nombres de usuario',
 	'right-tboverride-account' => 'Ignorar la lista negra de los nombres de usuario',
 );
 
@@ -603,7 +604,7 @@ See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Järgnev|Järgnevad}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.
 Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
 	'titleblacklist-override' => 'Eira musta nimekirja',
-	'right-tboverride' => 'Eirata pealkirjade musta nimekirja',
+	'right-tboverride' => 'Eirata pealkirjade või kasutajanimede musta nimekirja',
 	'right-tboverride-account' => 'Eirata kasutajanimede musta nimekirja',
 );
 
@@ -827,7 +828,7 @@ $messages['he'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|השורה הבאה|השורות הבאות}} ברשימת הכותרות האסורות {{PLURAL:$1|אינה תקינה|אינם תקינים}};
 אנא תקנו {{PLURAL:$1|אותה|אותן}} לפני השמירה:',
 	'titleblacklist-override' => 'התעלם מהרשימה השחורה',
-	'right-tboverride' => 'עקיפת רשימת הכותרות האסורות',
+	'right-tboverride' => 'עקיפת רשימת שמות המשתמשים האסורים',
 	'right-tboverride-account' => 'לעקוף את הרשימה השחורה של שמות המשתמשים',
 );
 
@@ -896,7 +897,7 @@ Kryje so ze slědowacym zaspiskom čorneje lisćiny: <code>$1</code>',
 Wotpowěduje slědowacemu zapiskej čorneje lisćiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Slědowaca linka|Slědowace linki}} w čornej lisćinje titulow {{PLURAL:$1|je njepłaćiwa|su njepłaćiwe}}; prošu skoriguj {{PLURAL:$1|ju|je}} před składowanjom:',
 	'titleblacklist-override' => 'Čornu lisćinu ignorować',
-	'right-tboverride' => 'Płaćiwosć čorneje lisćiny nastawkow zběhnyć',
+	'right-tboverride' => 'Płaćiwosć čorneje lisćiny nastawkow abo wužiwarskich mjenow zběhnyć',
 	'right-tboverride-account' => 'Płaćiwosć čorneje lisćiny wužiwarskich mjenow zběhnyć',
 );
 
@@ -1058,7 +1059,7 @@ $messages['it'] = array(
 	'titleblacklist-forbidden-new-account' => 'La creazione di utenti con nome "$2" è stata impedita. La voce corrispondente nell\'elenco dei nomi non consentiti è la seguente: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
 	'titleblacklist-override' => 'Ignora la blacklist',
-	'right-tboverride' => 'Ignora la blacklist dei titoli',
+	'right-tboverride' => 'Ignora la blacklist dei titoli o dei nome utente',
 	'right-tboverride-account' => 'Ignora la blacklist dei nome utente',
 );
 
@@ -1085,7 +1086,7 @@ $messages['ja'] = array(
 	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
 	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
 	'titleblacklist-override' => 'ブラックリストを無視',
-	'right-tboverride' => 'タイトルブラックリストによる編集制限を受けない',
+	'right-tboverride' => 'ページ名/利用者名のブラックリストによる制限を受けない',
 	'right-tboverride-account' => '利用者名ブラックリストを無視',
 );
 
@@ -1350,7 +1351,7 @@ $messages['mk'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следниов ред|Следниве редови}} во црниот список на наслови {{PLURAL:$1|е|се}} неважечки;
 поправете {{PLURAL:$1|го|ги}} пред да зачувате:',
 	'titleblacklist-override' => 'Занемари го црниот список',
-	'right-tboverride' => 'Занемарување на црниот список на наслови',
+	'right-tboverride' => 'Занемарување на црниот список на наслови или корисници',
 	'right-tboverride-account' => 'Потиснување на црниот список на кориснички имиња',
 );
 
@@ -1740,7 +1741,7 @@ Interdicția a fost declanșată de următorul element din lista neagră: <code>
 	'titleblacklist-invalid' => '{{PLURAL:$1|Următoarea linie|Următoarele linii}} din lista neagră a titlurilor {{PLURAL:$1|este invalidă|sînt invalide}};
 corectați{{PLURAL:$1|-o|-le}} înainte de a salva pagina.',
 	'titleblacklist-override' => 'Ignoră lista neagră',
-	'right-tboverride' => 'Înlocuiește titlul listei negre',
+	'right-tboverride' => 'Ignoră lista neagră cu titluri sau nume de utilizator',
 	'right-tboverride-account' => 'Suprascrie lista neagră a numelor de utilizator',
 );
 
@@ -2159,7 +2160,7 @@ Tumutugma ito sa sumusunod na entrada/ipinasok sa talaan ng mga pinagbabawalan (
 	'titleblacklist-invalid' => 'Ang sumusunod na {{PLURAL:$1|hanay|mga hanay}} (guhit) na nasa loob ng talaan ng pinagbabawal na pamagat {{PLURAL:$1|ay|ay}} hindi tanggap;
 pakitama lamang {{PLURAL:$1|ito|ang mga ito}} bago sagipin:',
 	'titleblacklist-override' => 'Huwag pansinin ang talaang-itim',
-	'right-tboverride' => 'Daigin (pangibabawan) ang talaan ng pinagbabawalang pamagat',
+	'right-tboverride' => 'Daigin ang talaan ng ipinagbabawal na pamagat o pangalan ng tagagamit',
 	'right-tboverride-account' => 'Daigin ang talaang-itim ng mga pangalan ng tagagamit',
 );
 
@@ -2264,7 +2265,7 @@ Tên này trùng với khoản sau trong danh sách đen: <code>$1</code>',
 Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Dòng|Những dòng}} sau đây trong danh sách đen về tên trang không hợp lệ; xin hãy sửa chữa {{PLURAL:$1|nó|chúng}} để tuân theo cú pháp biểu thức chính quy trước khi lưu trang:',
 	'titleblacklist-override' => 'Bỏ qua danh sách đen',
-	'right-tboverride' => 'Bỏ qua danh sách các tựa trang bị cấm',
+	'right-tboverride' => 'Bỏ qua các danh sách tựa trang và tên người dùng bị cấm',
 	'right-tboverride-account' => 'Ghi đè lên danh sách đen tên người dùng',
 );
 
