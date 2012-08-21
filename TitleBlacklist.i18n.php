@@ -944,7 +944,7 @@ Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
 Illo corresponde al sequente entrata del lista nigre: <code>$1</code>',
 	'titleblacklist-invalid' => 'Le sequente {{PLURAL:$1|linea|lineas}} in le lista nigre de titulos es invalide; per favor corrige {{PLURAL:$1|lo|los}} ante de publicar:',
 	'titleblacklist-override' => 'Ignorar le lista nigre',
-	'right-tboverride' => 'Ignorar le lista nigre de titulos',
+	'right-tboverride' => 'Ignorar le lista nigre de titulos o nomines de usator',
 	'right-tboverride-account' => 'Ignorar le lista nigre de nomines de usator',
 );
 
@@ -1212,7 +1212,7 @@ $messages['ko'] = array(
 	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다.
 저장하기 전에 올바르게 수정해주세요.',
 	'titleblacklist-override' => '블랙리스트를 무시',
-	'right-tboverride' => '문서 제목 블랙리스트 무시',
+	'right-tboverride' => '문서 제목이나 사용자 이름 블랙리스트 무시',
 	'right-tboverride-account' => '사용자 이름 블랙리스트를 무시',
 );
 
@@ -1449,6 +1449,7 @@ $messages['nah'] = array(
 );
 
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
+ * @author Danmichaelo
  * @author Nghtwlkr
  * @author Reedy
  */
@@ -1466,7 +1467,7 @@ $messages['nb'] = array(
 Det tilsvarer følgende svartelisteelement: <code>$1</code>',
 	'titleblacklist-invalid' => 'Følgende {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; vennligst korriger {{PLURAL:$1|den|dem}} før du lagrer:',
 	'titleblacklist-override' => 'Ignorer svartelista.',
-	'right-tboverride' => 'Overkjøre tittelsvartelisten',
+	'right-tboverride' => 'Overkjør svarteliste for tittel eller bruker',
 	'right-tboverride-account' => 'Overstyr svartelista for brukernavn',
 );
 
@@ -1767,7 +1768,7 @@ Jidde se combronde cu le vosce d\'a lista gnore: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|'A seguenda linèe|Le seguende linèe}} jndr'à lista gnore de le titele {{PLURAL:$1|jè|sonde}} invalide;
 pe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
 	'titleblacklist-override' => "No scè penzanne 'a lista gnore",
-	'right-tboverride' => "Sovrasrive 'a lista gnore de le titele",
+	'right-tboverride' => "Sovrascrive 'a lista gnore de le titole o de le utinde",
 	'right-tboverride-account' => "Sovrasrive 'a lista gnore de le utinde",
 );
 
@@ -2340,6 +2341,7 @@ $messages['zh-hans'] = array(
  * @author Gaoxuewei
  * @author Mark85296341
  * @author Shinjiman
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -2356,7 +2358,7 @@ $messages['zh-hant'] = array(
 它符合以下黑名單項目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在標題黑名單上的{{PLURAL:$1|一行|多行}}無效；請在儲存前改正{{PLURAL:$1|它|它們}}:',
 	'titleblacklist-override' => '忽略黑名單',
-	'right-tboverride' => '覆蓋標題黑名單',
+	'right-tboverride' => '覆蓋標題或用戶名黑名單',
 	'right-tboverride-account' => '覆蓋用戶名黑名單',
 );
 
