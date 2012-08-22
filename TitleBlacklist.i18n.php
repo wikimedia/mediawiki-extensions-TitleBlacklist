@@ -662,6 +662,7 @@ Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 /** French (français)
  * @author Crochet.david
  * @author Elfix
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author Meithal
@@ -684,7 +685,7 @@ Dans la liste noire, il est détecté par l’entrée suivante : <code>$1</code>
 Il correspond à l’entrée suivante de la liste noire : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide. Veuillez la|sont invalides. Veuillez les}} corriger avant de publier.',
 	'titleblacklist-override' => 'Ignorer la liste noire',
-	'right-tboverride' => 'Ignorer la liste noire des titres',
+	'right-tboverride' => "Remplacer la liste noire des titres ou des noms d'utilisateur",
 	'right-tboverride-account' => "Ignorer la liste noire des noms d'utilisateur",
 );
 
@@ -1424,7 +1425,7 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Nama pengguna "$2" telah diharamkan kerana sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} berikut adalah tidak sah. Sila betulkannya sebelum menyimpan:',
 	'titleblacklist-override' => 'Abaikan senarai hitam',
-	'right-tboverride' => 'Mengatasi senarai hitam tajuk',
+	'right-tboverride' => 'Membatalkan senarai hitam tajuk atau nama pengguna',
 	'right-tboverride-account' => 'Mengatasi senarai hitam nama pengguna',
 );
 
