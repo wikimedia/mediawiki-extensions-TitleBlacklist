@@ -1875,6 +1875,7 @@ $messages['sah'] = array(
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|කළුලයිස්තුව]]කට හා [[MediaWiki:Titlewhitelist|සුදු ලයිස්තුව]]කට අනුව පිටු හා පරිශීලක නිමැවුම් වැලැක්වුමට පරිපාලකයන්ට ඉඩ දෙයි.',
@@ -1894,7 +1895,7 @@ $messages['si'] = array(
 	'titleblacklist-invalid' => 'මාතෘකා කළුලයිස්තුවේ පහත {{PLURAL:$1|පේලිය|පේලි}} වැරදිය;
 සුරැකුමට පෙර ඒවා නිවැරදි කරන්න:',
 	'titleblacklist-override' => 'කළුලයිස්තුව නොසලකා හරින්න',
-	'right-tboverride' => 'මාතෘකා කළුලයිස්තුව ඉක්මවායන්න',
+	'right-tboverride' => 'මාතෘකා හෝ පරිශීලක නාම කළුලයිස්තුව ඉක්මවා යන්න',
 	'right-tboverride-account' => 'පරිශීලක නාම කළුලයිස්තුව ඉක්මවායන්න',
 );
 
