@@ -395,7 +395,7 @@ $messages['cs'] = array(
 Odpovídá následující položce černé listiny: <code>$1</code>',
 	'titleblacklist-invalid' => 'Na černé listině názvů {{PLURAL:$1|je následující řádka neplatný regulární výraz|jsou následující řádky neplatné regulární výrazy|jsou následující řádky regulární výrazy}} a je nutné {{PLURAL:$1|ji|je|je}} před uložením stránky opravit :',
 	'titleblacklist-override' => 'Ignorovat černou listinu',
-	'right-tboverride' => 'Potlačení nepovolených názvů stránek',
+	'right-tboverride' => 'Překonání zakázaných názvů stránek nebo uživatelských jmen',
 	'right-tboverride-account' => 'Překonání černé listiny uživatelských jmen',
 );
 
