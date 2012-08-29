@@ -1,10 +1,12 @@
 <?php
 /**
- * Test the TitleBlacklist API
+ * Test the TitleBlacklist API.
  *
  * This wants to run with phpunit.php, like so:
  * cd $IP/tests/phpunit
  * php phpunit.php ../../extensions/TitleBlacklist/tests/ApiQueryTitleBlacklistTest.php
+ *
+ * The blacklist file is `testSource` and shared by all tests.
  *
  * Ian Baker <ian@wikimedia.org>
  */
@@ -14,15 +16,9 @@ ini_set( 'include_path', ini_get('include_path') . ':' . __DIR__ . '/../../../te
 class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 	function setUp() {
+		global $wgTitleBlacklistSources, $wgGroupPermissions;
 		parent::setUp();
 		$this->doLogin();
-	}
-
-	function testApiQueryTitleBlacklist() {
-		global $wgMetaNamespace, $wgGroupPermissions, $wgTitleBlacklistSources;
-
-		// without this, blacklist applies only to anonymous users.
-		$wgGroupPermissions['sysop']['tboverride'] = false;
 
 		$wgTitleBlacklistSources = array(
 		    array(
@@ -31,6 +27,14 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		    ),
 		);
 
+		// without this, blacklist applies only to anonymous users.
+		$wgGroupPermissions['sysop']['tboverride'] = false;
+	}
+
+	/**
+	 * Verify we allow a title which is not in the blacklist
+	 */
+	function testCheckingUnlistedTitle() {
 		$unlisted = $this->doApiRequest( array(
 			'action' => 'titleblacklist',
 			'tbtitle' => 'foo',
@@ -38,7 +42,12 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		) );
 
 		$this->assertEquals( $unlisted[0]['titleblacklist']['result'], 'ok', 'Unlisted title returns ok');
+	}
 
+	/**
+	 * Verify a blacklisted title give out an error.
+	 */
+	function testCheckingBlackListedTitle() {
 		$listed = $this->doApiRequest( array(
 			'action' => 'titleblacklist',
 			'tbtitle' => 'bar',
