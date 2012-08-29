@@ -34,10 +34,6 @@ class ApiQueryTitleBlacklist extends ApiBase {
 	}
 
 	public function execute() {
-		# get the current user.
-		$context = $this->getContext();
-		$user = $context->getUser();
-
 		$params = $this->extractRequestParams();
 		$action = $params['action'];
 
@@ -46,7 +42,7 @@ class ApiQueryTitleBlacklist extends ApiBase {
 		// Some places check createpage, while others check create.
 		// As it stands, upload does createpage, but normalize both
 		// to the same action, to stop future similar bugs.
-		if( $action === 'createpage' || $action === 'createtalk' ) {
+		if ( $action === 'createpage' || $action === 'createtalk' ) {
 			$action = 'create';
 		}
 
@@ -55,8 +51,8 @@ class ApiQueryTitleBlacklist extends ApiBase {
 			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
 		}
 
-		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
-		if( $blacklisted instanceof TitleBlacklistEntry ) {
+		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $this->getUser(), $action );
+		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			// this title is blacklisted.
 			$result = array(
 				htmlspecialchars( $blacklisted->getRaw() ),
@@ -74,7 +70,6 @@ class ApiQueryTitleBlacklist extends ApiBase {
 			// not blacklisted
 			$this->getResult()->addValue( 'titleblacklist', 'result', 'ok' );
 		}
-
 	}
 
 	public function getAllowedParams() {

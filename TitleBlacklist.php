@@ -1,9 +1,9 @@
 <?php
 if ( !defined( 'MEDIAWIKI' ) ) {
-	exit(1);
+	exit( 1 );
 }
 
-//@{
+// @{
 /**
  * @file
  * @ingroup Extensions
@@ -18,17 +18,18 @@ $wgExtensionCredits['antispam'][] = array(
 	'descriptionmsg' => 'titleblacklist-desc',
 );
 
-$wgExtensionMessagesFiles['TitleBlacklist'] = dirname( __FILE__ ) . '/TitleBlacklist.i18n.php';
-$wgAutoloadClasses['TitleBlacklist']      = dirname( __FILE__ ) . '/TitleBlacklist.list.php';
-$wgAutoloadClasses['TitleBlacklistHooks'] = dirname( __FILE__ ) . '/TitleBlacklist.hooks.php';
+$dir = __DIR__;
+$wgExtensionMessagesFiles['TitleBlacklist'] = $dir . '/TitleBlacklist.i18n.php';
+$wgAutoloadClasses['TitleBlacklist'] = $dir . '/TitleBlacklist.list.php';
+$wgAutoloadClasses['TitleBlacklistHooks'] = $dir . '/TitleBlacklist.hooks.php';
 
 /** @defgroup Title blacklist source types
  *  @{
  */
-define( 'TBLSRC_MSG',       0 );	///< For internal usage
-define( 'TBLSRC_LOCALPAGE', 1 );	///< Local wiki page
-define( 'TBLSRC_URL',	    2 );	///< Load blacklist from URL
-define( 'TBLSRC_FILE',      3 );	///< Load from file
+define( 'TBLSRC_MSG', 0 ); ///< For internal usage
+define( 'TBLSRC_LOCALPAGE', 1 ); ///< Local wiki page
+define( 'TBLSRC_URL', 2 ); ///< Load blacklist from URL
+define( 'TBLSRC_FILE', 3 ); ///< Load from file
 /** @} */
 
 /** Array of title blacklist sources */
@@ -46,8 +47,8 @@ $dir = dirname( __FILE__ );
 $wgAutoloadClasses['ApiQueryTitleBlacklist'] = "$dir/api/ApiQueryTitleBlacklist.php";
 $wgAPIModules['titleblacklist'] = 'ApiQueryTitleBlacklist';
 
-$wgAvailableRights[] = 'tboverride';	// Implies tboverride-account
-$wgAvailableRights[] = 'tboverride-account';	// For account creation
+$wgAvailableRights[] = 'tboverride'; // Implies tboverride-account
+$wgAvailableRights[] = 'tboverride-account'; // For account creation
 $wgGroupPermissions['sysop']['tboverride'] = true;
 
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
@@ -59,4 +60,4 @@ $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 $wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 $wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
 
-//@}
+// @}

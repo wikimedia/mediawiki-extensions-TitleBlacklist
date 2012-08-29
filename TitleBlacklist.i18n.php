@@ -13,7 +13,7 @@ $messages['en'] = array(
 	'titleblacklist'                  => "# This is a title blacklist. Titles and users that match a regular expression here cannot be created.
 # Use \"#\" for comments.
 # This is case insensitive by default",
-	'titlewhitelist'                  => "# This is a title whitelist. Use \"#\" for comments. 
+	'titlewhitelist'                  => "# This is a title whitelist. Use \"#\" for comments.
 # This is case insensitive by default",
 	'titleblacklist-forbidden-edit'   => 'The title "$2" has been banned from creation.
 It matches the following blacklist entry: <code>$1</code>',

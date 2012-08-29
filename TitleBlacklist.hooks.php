@@ -26,12 +26,12 @@ class TitleBlacklistHooks {
 		# Some places check createpage, while others check create.
 		# As it stands, upload does createpage, but normalize both
 		# to the same action, to stop future similar bugs.
-		if( $action === 'createpage' || $action === 'createtalk' ) {
+		if ( $action === 'createpage' || $action === 'createtalk' ) {
 			$action = 'create';
 		}
-		if( $action == 'create' || $action == 'edit' || $action == 'upload' ) {
+		if ( $action == 'create' || $action == 'edit' || $action == 'upload' ) {
 			$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
-			if( $blacklisted instanceof TitleBlacklistEntry ) {
+			if ( $blacklisted instanceof TitleBlacklistEntry ) {
 				$result = array( $blacklisted->getErrorMessage( 'edit' ),
 					htmlspecialchars( $blacklisted->getRaw() ),
 					$title->getFullText() );
@@ -53,14 +53,14 @@ class TitleBlacklistHooks {
 	public static function abortMove( $old, $nt, $user, &$err ) {
 		$titleBlacklist = TitleBlacklist::singleton();
 		$blacklisted = $titleBlacklist->userCannot( $nt, $user, 'move' );
-		if( !$blacklisted ) {
+		if ( !$blacklisted ) {
 			$blacklisted = $titleBlacklist->userCannot( $old, $user, 'edit' );
 		}
-		if( $blacklisted instanceof TitleBlacklistEntry ) {
-			$err = wfMsgWikiHtml( $blacklisted->getErrorMessage( 'move' ),
-				htmlspecialchars( $blacklisted->getRaw() ),
-				htmlspecialchars( $old->getFullText() ),
-				htmlspecialchars( $nt->getFullText() ) );
+		if ( $blacklisted instanceof TitleBlacklistEntry ) {
+			$err = wfMessage( $blacklisted->getErrorMessage( 'move' ),
+				$blacklisted->getRaw(),
+				$old->getFullText(),
+				$nt->getFullText() )->escaped();
 			return false;
 		}
 		return true;
@@ -76,11 +76,11 @@ class TitleBlacklistHooks {
 	 */
 	private static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true ) {
 		$title = Title::makeTitleSafe( NS_USER, $userName );
-		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $permissionsUser, 
+		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $permissionsUser,
 			'new-account', $override );
-		if( $blacklisted instanceof TitleBlacklistEntry ) {
+		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			$message = $blacklisted->getErrorMessage( 'new-account' );
-			$err = wfMsgWikiHtml( $message, htmlspecialchars( $blacklisted->getRaw() ), $userName );
+			$err = wfMessage( $message, $blacklisted->getRaw(), $userName )->escaped();
 			return false;
 		}
 		return true;
@@ -113,17 +113,17 @@ class TitleBlacklistHooks {
 		global $wgUser;
 		$title = $editor->mTitle;
 
-		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
+		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 
 			$blackList = TitleBlacklist::singleton();
 			$bl = $blackList->parseBlacklist( $text );
 			$ok = $blackList->validate( $bl );
-			if( count( $ok ) == 0 ) {
+			if ( count( $ok ) == 0 ) {
 				return true;
 			}
 
-			$errmsg = wfMsgExt( 'titleblacklist-invalid', array( 'parsemag' ), count( $ok ) );
-			$errlines = '* <tt>' . implode( "</tt>\n* <tt>", array_map( 'wfEscapeWikiText', $ok ) ) . '</tt>';
+			$errmsg = wfMessage( 'titleblacklist-invalid')->numParams( count( $ok ) )->text();
+			$errlines = '* <code>' . implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) . '</code>';
 			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 				$errmsg .
 				"\n" .
@@ -133,16 +133,16 @@ class TitleBlacklistHooks {
 
 			// $error will be displayed by the edit class
 			return true;
-		} elseif( !$section ) {
+		} elseif ( !$section ) {
 			# Block redirects to nonexistent blacklisted titles
 			$retitle = Title::newFromRedirect( $text );
-			if( $retitle !== null && !$retitle->exists() )  {
+			if ( $retitle !== null && !$retitle->exists() )  {
 				$blacklisted = TitleBlacklist::singleton()->userCannot( $retitle, $wgUser, 'create' );
-				if( $blacklisted instanceof TitleBlacklistEntry ) {
+				if ( $blacklisted instanceof TitleBlacklistEntry ) {
 					$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
-						wfMsg( 'titleblacklist-forbidden-edit',
-							htmlspecialchars( $blacklisted->getRaw() ),
-							$retitle->getFullText() ) .
+						wfMessage( 'titleblacklist-forbidden-edit',
+							$blacklisted->getRaw(),
+							$retitle->getFullText() )->escaped() .
 						Html::closeElement( 'div' ) . "\n" .
 						Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
 				}
@@ -162,7 +162,7 @@ class TitleBlacklistHooks {
 		$text, $summary, $isminor, $iswatch, $section )
 	{
 		$title = $article->getTitle();
-		if( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
+		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			TitleBlacklist::singleton()->invalidate();
 		}
 		return true;

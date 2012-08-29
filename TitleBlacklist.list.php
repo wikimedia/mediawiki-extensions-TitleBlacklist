@@ -17,7 +17,7 @@
  */
 class TitleBlacklist {
 	private $mBlacklist = null, $mWhitelist = null;
-	const VERSION = 2;	//Blacklist format
+	const VERSION = 2;	// Blacklist format
 
 	/**
 	 * Get an instance of this class
@@ -39,9 +39,9 @@ class TitleBlacklist {
 	public function load() {
 		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
 		wfProfileIn( __METHOD__ );
-		//Try to find something in the cache
+		// Try to find something in the cache
 		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
-		if( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
+		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
 			$this->mBlacklist = $cachedBlacklist;
 			wfProfileOut( __METHOD__ );
 			return;
@@ -50,7 +50,7 @@ class TitleBlacklist {
 		$sources = $wgTitleBlacklistSources;
 		$sources[] = array( 'type' => TBLSRC_MSG );
 		$this->mBlacklist = array();
-		foreach( $sources as $source ) {
+		foreach ( $sources as $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ) ) );
 		}
 		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
@@ -64,12 +64,13 @@ class TitleBlacklist {
 		global $wgMemc, $wgTitleBlacklistCaching;
 		wfProfileIn( __METHOD__ );
 		$cachedWhitelist = $wgMemc->get( wfMemcKey( "title_whitelist_entries" ) );
-		if( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
+		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
 			$this->mWhitelist = $cachedWhitelist;
 			wfProfileOut( __METHOD__ );
 			return;
 		}
-		$this->mWhitelist = $this->parseBlacklist( wfMsgForContent( 'titlewhitelist' ) );
+		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
+			->inContentLanguage()->text() );
 		$wgMemc->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
 		wfProfileOut( __METHOD__ );
 	}
@@ -81,35 +82,35 @@ class TitleBlacklist {
 	 * @return The content of the blacklist source as a string
 	 */
 	private static function getBlacklistText( $source ) {
-		if( !is_array( $source ) || count( $source ) <= 0 ) {
-			return '';	//Return empty string in error case
+		if ( !is_array( $source ) || count( $source ) <= 0 ) {
+			return '';	// Return empty string in error case
 		}
 
-		if( $source['type'] == TBLSRC_MSG ) {
-			return wfMsgForContent( 'titleblacklist' );
-		} elseif( $source['type'] == TBLSRC_LOCALPAGE && count( $source ) >= 2 ) {
+		if ( $source['type'] == TBLSRC_MSG ) {
+			return wfMessage( 'titleblacklist' )->inContentLanguage()->text();
+		} elseif ( $source['type'] == TBLSRC_LOCALPAGE && count( $source ) >= 2 ) {
 			$title = Title::newFromText( $source['src'] );
-			if( is_null( $title ) ) {
+			if ( is_null( $title ) ) {
 				return '';
 			}
-			if( $title->getNamespace() == NS_MEDIAWIKI ) {	//Use wfMsgForContent() for getting messages
-				$msg = wfMsgForContent( $title->getText() );
-				if( !wfEmptyMsg( 'titleblacklist', $msg ) ) {
+			if ( $title->getNamespace() == NS_MEDIAWIKI ) {	// Use wfMsgForContent() for getting messages
+				$msg = wfMessage( $title->getText() )->inContentLanguage()->text();
+				if ( !wfMessage( 'titleblacklist', $msg )->isDisabled() ) {
 					return $msg;
 				} else {
 					return '';
 				}
 			} else {
 				$article = new Article( $title );
-				if( $article->exists() ) {
+				if ( $article->exists() ) {
 					$article->followRedirect();
 					return $article->getContent();
 				}
 			}
-		} elseif( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
+		} elseif ( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
 			return self::getHttp( $source['src'] );
-		} elseif( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
-			if( file_exists( $source['src'] ) ) {
+		} elseif ( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
+			if ( file_exists( $source['src'] ) ) {
 				return file_get_contents( $source['src'] );
 			} else {
 				return '';
@@ -152,7 +153,7 @@ class TitleBlacklist {
 	 *         otherwise FALSE
 	 */
 	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
-		if( $override && self::userCanOverride( $user, $action ) ) {
+		if ( $override && self::userCanOverride( $user, $action ) ) {
 			return false;
 		} else {
 			return $this->isBlacklisted( $title, $action );
@@ -169,13 +170,13 @@ class TitleBlacklist {
 	 *         otherwise FALSE
 	 */
 	public function isBlacklisted( $title, $action = 'edit' ) {
-		if( !($title instanceof Title) ) {
+		if ( !( $title instanceof Title ) ) {
 			$title = Title::newFromText( $title );
 		}
 		$blacklist = $this->getBlacklist();
 		foreach ( $blacklist as $item ) {
-			if( $item->matches( $title, $action ) ) {
-				if( $this->isWhitelisted( $title, $action ) ) {
+			if ( $item->matches( $title, $action ) ) {
+				if ( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
 				return $item; // "returning true"
@@ -193,12 +194,12 @@ class TitleBlacklist {
 	 * @return bool TRUE if whitelisted; otherwise FALSE
 	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
-		if( !($title instanceof Title) ) {
+		if ( !( $title instanceof Title ) ) {
 			$title = Title::newFromText( $title );
 		}
 		$whitelist = $this->getWhitelist();
-		foreach( $whitelist as $item ) {
-			if( $item->matches( $title, $action ) ) {
+		foreach ( $whitelist as $item ) {
+			if ( $item->matches( $title, $action ) ) {
 				return true;
 			}
 		}
@@ -211,7 +212,7 @@ class TitleBlacklist {
 	 * @return Array of TitleBlacklistEntry items
 	 */
 	public function getBlacklist() {
-		if( is_null( $this->mBlacklist ) ) {
+		if ( is_null( $this->mBlacklist ) ) {
 			$this->load();
 		}
 		return $this->mBlacklist;
@@ -223,7 +224,7 @@ class TitleBlacklist {
 	 * @return Array of TitleBlacklistEntry items
 	 */
 	public function getWhitelist() {
-		if( is_null( $this->mWhitelist ) ) {
+		if ( is_null( $this->mWhitelist ) ) {
 			$this->loadWhitelist();
 		}
 		return $this->mWhitelist;
@@ -265,10 +266,10 @@ class TitleBlacklist {
 	 */
 	public function validate( $blacklist ) {
 		$badEntries = array();
-		foreach( $blacklist as $e ) {
+		foreach ( $blacklist as $e ) {
 			wfSuppressWarnings();
 			$regex = $e->getRegex();
-			if( preg_match( "/{$regex}/u", '' ) === false ) {
+			if ( preg_match( "/{$regex}/u", '' ) === false ) {
 				$badEntries[] = $e->getRaw();
 			}
 			wfRestoreWarnings();
@@ -295,10 +296,10 @@ class TitleBlacklist {
  */
 class TitleBlacklistEntry {
 	private
-		$mRaw,           ///< Raw line
-		$mRegex,         ///< Regular expression to match
-		$mParams,        ///< Parameters for this entry
-		$mFormatVersion; ///< Entry format version
+		$mRaw,           /// < Raw line
+		$mRegex,         /// < Regular expression to match
+		$mParams,        /// < Parameters for this entry
+		$mFormatVersion; /// < Entry format version
 
 	/**
 	 * Construct a new TitleBlacklistEntry.
@@ -332,17 +333,17 @@ class TitleBlacklistEntry {
 		wfRestoreWarnings();
 
 		global $wgUser;
-		if( $match ) {
-			if( isset( $this->mParams['autoconfirmed'] ) && $wgUser->isAllowed( 'autoconfirmed' ) ) {
+		if ( $match ) {
+			if ( isset( $this->mParams['autoconfirmed'] ) && $wgUser->isAllowed( 'autoconfirmed' ) ) {
 				return false;
 			}
-			if( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
+			if ( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
 				return false;
 			}
-			if( isset( $this->mParams['newaccountonly'] ) && $action != 'new-account' ) {
+			if ( isset( $this->mParams['newaccountonly'] ) && $action != 'new-account' ) {
 				return false;
 			}
-			if( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
+			if ( !isset( $this->mParams['noedit'] ) && $action == 'edit' ) {
 				return false;
 			}
 			if ( isset( $this->mParams['reupload'] ) && $action == 'upload' ) {
@@ -374,50 +375,50 @@ class TitleBlacklistEntry {
 		$opts_str = trim( $opts_str );
 		// Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
-		foreach( $opts as $opt ) {
+		foreach ( $opts as $opt ) {
 			$opt2 = strtolower( $opt );
-			if( $opt2 == 'autoconfirmed' ) {
+			if ( $opt2 == 'autoconfirmed' ) {
 				$options['autoconfirmed'] = true;
 			}
-			if( $opt2 == 'moveonly' ) {
+			if ( $opt2 == 'moveonly' ) {
 				$options['moveonly'] = true;
 			}
-			if( $opt2 == 'newaccountonly' ) {
+			if ( $opt2 == 'newaccountonly' ) {
 				$options['newaccountonly'] = true;
 			}
-			if( $opt2 == 'noedit' ) {
+			if ( $opt2 == 'noedit' ) {
 				$options['noedit'] = true;
 			}
-			if( $opt2 == 'casesensitive' ) {
+			if ( $opt2 == 'casesensitive' ) {
 				$options['casesensitive'] = true;
 			}
-			if( $opt2 == 'reupload' ) {
+			if ( $opt2 == 'reupload' ) {
 				$options['reupload'] = true;
 			}
-			if( preg_match( '/errmsg\s*=\s*(.+)/i', $opt, $matches ) ) {
+			if ( preg_match( '/errmsg\s*=\s*(.+)/i', $opt, $matches ) ) {
 				$options['errmsg'] = $matches[1];
 			}
 		}
 		// Process magic words
 		preg_match_all( '/{{\s*([a-z]+)\s*:\s*(.+?)\s*}}/', $regex, $magicwords, PREG_SET_ORDER );
-		foreach( $magicwords as $mword ) {
+		foreach ( $magicwords as $mword ) {
 			global $wgParser;	// Functions we're calling don't need, nevertheless let's use it
 			switch( strtolower( $mword[1] ) ) {
 				case 'ns':
 					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
-					if( is_string( $cpf_result ) ) {
+					if ( is_string( $cpf_result ) ) {
 						$regex = str_replace( $mword[0], $cpf_result, $regex );	// All result will have the same value, so we can just use str_seplace()
 					}
 					break;
 				case 'int':
-					$cpf_result = wfMsgForContent( $mword[2] );
-					if( is_string( $cpf_result ) ) {
+					$cpf_result = wfMessage( $mword[2] )->inContentLanguage()->text();
+					if ( is_string( $cpf_result ) ) {
 						$regex = str_replace( $mword[0], $cpf_result, $regex );
 					}
 			}
 		}
 		// Return result
-		if( $regex ) {
+		if ( $regex ) {
 			return new TitleBlacklistEntry( $regex, $options, $raw );
 		} else {
 			return null;

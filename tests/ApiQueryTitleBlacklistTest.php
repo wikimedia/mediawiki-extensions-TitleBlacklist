@@ -11,7 +11,7 @@
  * Ian Baker <ian@wikimedia.org>
  */
 
-ini_set( 'include_path', ini_get('include_path') . ':' . __DIR__ . '/../../../tests/phpunit/includes/api' );
+ini_set( 'include_path', ini_get( 'include_path' ) . ':' . __DIR__ . '/../../../tests/phpunit/includes/api' );
 
 class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
