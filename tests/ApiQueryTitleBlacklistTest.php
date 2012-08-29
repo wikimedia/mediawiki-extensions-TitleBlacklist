@@ -41,7 +41,11 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 			'tbaction' => 'create',
 		) );
 
-		$this->assertEquals( $unlisted[0]['titleblacklist']['result'], 'ok', 'Unlisted title returns ok');
+		$this->assertEquals(
+			'ok',
+			$unlisted[0]['titleblacklist']['result'],
+			'Unlisted title returns ok'
+		);
 	}
 
 	/**
@@ -54,22 +58,26 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 			'tbaction' => 'create',
 		) );
 
-		$this->assertEquals( $listed[0]['titleblacklist']['result'], 'blacklisted', 'Listed title returns error');
 		$this->assertEquals(
-			$listed[0]['titleblacklist']['reason'],
+			'blacklisted',
+			$listed[0]['titleblacklist']['result'],
+			'Listed title returns error'
+		);
+		$this->assertEquals(
 			"The title \"bar\" has been banned from creation.\nIt matches the following blacklist entry: <code>[Bb]ar #example blacklist entry</code>",
+			$listed[0]['titleblacklist']['reason'],
 			'Listed title error text is as expected'
 		);
 
 		$this->assertEquals(
-			$listed[0]['titleblacklist']['message'],
 			"titleblacklist-forbidden-edit",
+			$listed[0]['titleblacklist']['message'],
 			'Correct blacklist message name is returned'
 		);
 
 		$this->assertEquals(
-			$listed[0]['titleblacklist']['line'],
 			"[Bb]ar #example blacklist entry",
+			$listed[0]['titleblacklist']['line'],
 			'Correct blacklist line is returned'
 		);
 
