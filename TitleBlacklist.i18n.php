@@ -612,6 +612,7 @@ Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
  * @author Ebraminio
  * @author Huji
  * @author Ladsgroup
+ * @author Reza1615
  * @author Wayiran
  * @author ZxxZxxZ
  */
@@ -630,7 +631,7 @@ $messages['fa'] = array(
 	'titleblacklist-invalid' => '
 {{PLURAL:$1|سطر|سطرهای}} زیر در فهرست سیاه عنوان‌ها غیرمجاز {{PLURAL:$1|است|هستند}}؛ لطفاً {{PLURAL:$1|آن|آن‌ها}} را قبل از ذخیره کردن اصلاح کنید:',
 	'titleblacklist-override' => 'از فهرست سیاه چشم‌پوشی کن',
-	'right-tboverride' => 'گذر از فهرست سیاه عنوان‌ها',
+	'right-tboverride' => 'نادیده گرفتن لیست سیاه عنوان یا نام کاربری',
 	'right-tboverride-account' => 'لغو فهرست سیاه نام کاربری',
 );
 
@@ -1376,7 +1377,7 @@ $messages['ml'] = array(
 	'titleblacklist-invalid' => 'കരിമ്പട്ടികയിലെ താഴെ കൊടുത്തിരിക്കുന്ന  {{PLURAL:$1|വരി|വരികൾ}} അസാധുവാണ്.
 ദയവായി {{PLURAL:$1|അത്|അവ}} ശരിയാക്കിയ ശേഷം സേവ് ചെയ്യുക:',
 	'titleblacklist-override' => 'കരിമ്പട്ടിക അവഗണിക്കുക',
-	'right-tboverride' => 'തലക്കെട്ടിന്റെ കരിമ്പട്ടികയെ അതിലംഘിക്കുക',
+	'right-tboverride' => 'തലക്കെട്ടിന്റെ അല്ലെങ്കിൽ ഉപയോക്തൃനാമത്തിന്റെ കരിമ്പട്ടികയെ അതിലംഘിക്കുക',
 	'right-tboverride-account' => 'ഉപയോക്തൃനാമ കരിമ്പട്ടികയെ അതിലംഘിക്കുക',
 );
 
