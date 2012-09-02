@@ -474,7 +474,7 @@ malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 	'titleblacklist-invalid' => 'nê {{PLURAL:$1|satır o ke|satır ê ke}} listeyasiyayi de qedexe yê;
 kerem kerê verqeydkerdışi de raşt kerê:',
 	'titleblacklist-override' => 'Tenilisti mehesebne',
-	'right-tboverride' => 'sernameyê listeya siyayi bloke bıker',
+	'right-tboverride' => 'Siya listeya sernuşti nêravêrde ke',
 	'right-tboverride-account' => 'Tenilisteya naman dê karberan mehesebnê',
 );
 
