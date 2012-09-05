@@ -375,6 +375,13 @@ $messages['ca'] = array(
 	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'titleblacklist-override' => 'پێرستی ڕەش لەبەر چاو مەگرە',
+);
+
 /** Czech (česky)
  * @author Danny B.
  * @author Li-sung
