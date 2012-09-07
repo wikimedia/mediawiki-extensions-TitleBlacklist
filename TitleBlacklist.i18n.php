@@ -1288,7 +1288,7 @@ En ass esou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
 	'titleblacklist-invalid' => 'Dës {{PLURAL:$1|Linn|Linnen}} op der schwaarzer Lëscht vun den {{PLURAL:$1|Titelen ass|Titele sinn}} net valabel;
 verbessert se virum späicheren:',
 	'titleblacklist-override' => 'Schwaarz Lëscht ignoréieren',
-	'right-tboverride' => "Ignoréiert d'schwaarz Lëscht vun den Titelen",
+	'right-tboverride' => "D'schwaarz Lëscht vun den Titelen a Benotzernimm ignoréieren",
 	'right-tboverride-account' => 'Schwaarz Lëscht vun de Benotzernimm iwwergoen',
 );
 
