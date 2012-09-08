@@ -1950,7 +1950,7 @@ Ustreza naslednjemu vnosu na črnem seznamu: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Naslednja vrstica|Naslednji vrstici|Naslednje vrstice}} v črnem seznamu naslovov {{PLURAL:$1|je neveljavna|sta neveljavni|so neveljavne}};
 prosimo, popravite {{PLURAL:$1|jo|ju|jih}} pred shranjevanjem:',
 	'titleblacklist-override' => 'Prezri črni seznam',
-	'right-tboverride' => 'Prepisovanje črnega seznama naslovov',
+	'right-tboverride' => 'Prepisovanje črnega seznama naslovov ali uporabniških imen',
 	'right-tboverride-account' => 'Prepis črnega seznama uporabniških imen',
 );
 
