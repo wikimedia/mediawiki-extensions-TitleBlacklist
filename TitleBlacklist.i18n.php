@@ -791,6 +791,7 @@ Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
  * @author Sushant savla
  */
 $messages['gu'] = array(
@@ -811,7 +812,7 @@ $messages['gu'] = array(
 	'titleblacklist-invalid' => 'નીચેની {{PLURAL:$1|હરોળ|હરોળ}} પ્રતિબંધિત યાદી {{PLURAL:$1|is|are}} અમાન્ય છે;
 મહેરબાની કરી {{PLURAL:$1|તેને|તેમને}} સાચવો:',
 	'titleblacklist-override' => 'પ્રતિબંધ સૂચી અવગણો',
-	'right-tboverride' => 'આ શીર્ષક પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
+	'right-tboverride' => 'આ શીર્ષક કે સભ્યનામ પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
 	'right-tboverride-account' => 'આ સભ્ય નામ પ્રતિબંધ સૂચિની ઉપરવટ જાવ',
 );
 
