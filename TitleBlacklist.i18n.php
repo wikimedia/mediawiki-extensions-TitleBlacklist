@@ -2044,6 +2044,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Ainali
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
@@ -2062,7 +2063,7 @@ $messages['sv'] = array(
 Det matchar följande element i svartlistan: <code>$1</code>',
 	'titleblacklist-invalid' => 'Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:',
 	'titleblacklist-override' => 'Ignorera svartlistan',
-	'right-tboverride' => 'Upphäva den svarta listan över titlar',
+	'right-tboverride' => 'Överrid svartlistan med titlar och användarnamn',
 	'right-tboverride-account' => 'Kör över svartlistan för användarnamn',
 );
 
