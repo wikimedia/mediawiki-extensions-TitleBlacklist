@@ -93,7 +93,7 @@ class TitleBlacklist {
 			if ( is_null( $title ) ) {
 				return '';
 			}
-			if ( $title->getNamespace() == NS_MEDIAWIKI ) {	// Use wfMsgForContent() for getting messages
+			if ( $title->getNamespace() == NS_MEDIAWIKI ) {
 				$msg = wfMessage( $title->getText() )->inContentLanguage()->text();
 				if ( !wfMessage( 'titleblacklist', $msg )->isDisabled() ) {
 					return $msg;
@@ -123,8 +123,8 @@ class TitleBlacklist {
 	/**
 	 * Parse blacklist from a string
 	 *
-	 * @param $list Text of a blacklist source, as a string
-	 * @return An array of TitleBlacklistEntry entries
+	 * @param $list string Text of a blacklist source
+	 * @return array of TitleBlacklistEntry entries
 	 */
 	public static function parseBlacklist( $list ) {
 		wfProfileIn( __METHOD__ );
@@ -149,8 +149,8 @@ class TitleBlacklist {
 	 * @param $user User to check
 	 * @param $action string Action to check; 'edit' if unspecified
 	 * @param $override bool If set to true, overrides work
-	 * @return TitleBlacklistEntry|false The corresponding TitleBlacklistEntry if blacklisted;
-	 *         otherwise FALSE
+	 * @return TitleBlacklistEntry|bool The corresponding TitleBlacklistEntry if
+	 * blacklisted; otherwise false
 	 */
 	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
 		if ( $override && self::userCanOverride( $user, $action ) ) {
@@ -166,7 +166,7 @@ class TitleBlacklist {
 	 *
 	 * @param $title Title to check
 	 * @param $action string Action to check; 'edit' if unspecified
-	 * @return TitleBlacklistEntry|false The corresponding TitleBlacklistEntry if blacklisted;
+	 * @return TitleBlacklistEntry|bool The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
 	 */
 	public function isBlacklisted( $title, $action = 'edit' ) {
@@ -191,7 +191,7 @@ class TitleBlacklist {
 	 *
 	 * @param $title Title to check
 	 * @param $action string Action to check; 'edit' if unspecified
-	 * @return bool TRUE if whitelisted; otherwise FALSE
+	 * @return bool True if whitelisted; otherwise false
 	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
 		if ( !( $title instanceof Title ) ) {
@@ -304,9 +304,9 @@ class TitleBlacklistEntry {
 	/**
 	 * Construct a new TitleBlacklistEntry.
 	 *
-	 * @param $regex Regular expression to match
-	 * @param $params Parameters for this entry
-	 * @param $raw Raw contents of this line
+	 * @param $regex string Regular expression to match
+	 * @param $params array Parameters for this entry
+	 * @param $raw string Raw contents of this line
 	 */
 	private function __construct( $regex, $params, $raw ) {
 		$this->mRaw = $raw;
@@ -359,7 +359,7 @@ class TitleBlacklistEntry {
 	 * Create a new TitleBlacklistEntry from a line of text
 	 *
 	 * @param $line String containing a line of blacklist text
-	 * @return A new corresponding TitleBlacklistEntry
+	 * @return TitleBlacklistEntry
 	 */
 	public static function newFromString( $line ) {
 		$raw = $line; // Keep line for raw data
@@ -426,51 +426,51 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @return This entry's regular expression
+	 * @return string This entry's regular expression
 	 */
 	public function getRegex() {
 		return $this->mRegex;
 	}
 
 	/**
-	 * @return This entry's raw line
+	 * @return string This entry's raw line
 	 */
 	public function getRaw() {
 		return $this->mRaw;
 	}
 
 	/**
-	 * @return This entry's options
+	 * @return array This entry's options
 	 */
 	public function getOptions() {
 		return $this->mOptions;
 	}
 
 	/**
-	 * @return Custom message for this entry
+	 * @return string Custom message for this entry
 	 */
 	public function getCustomMessage() {
 		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
 	}
 
 	/**
-	 * @return The format version
+	 * @return string The format version
 	 */
 	public function getFormatVersion() { return $this->mFormatVersion; }
 
 	/**
 	 * Set the format version
 	 *
-	 * @param $v New version to set
+	 * @param $v string New version to set
 	 */
 	public function setFormatVersion( $v ) { $this->mFormatVersion = $v; }
 
 	/**
 	 * Return the error message name for the blacklist entry.
 	 *
-	 * @param $operation Operation name (as in titleblacklist-forbidden message name)
+	 * @param $operation string Operation name (as in titleblacklist-forbidden message name)
 	 *
-	 * @return The error message name
+	 * @return string The error message name
 	 */
 	public function getErrorMessage( $operation ) {
 		$message = $this->getCustomMessage();
