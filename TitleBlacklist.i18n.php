@@ -1999,7 +1999,7 @@ $messages['sr-ec'] = array(
 	'right-tboverride-account' => 'заобилажење црне листе корисничких имена',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2009,7 +2009,9 @@ $messages['sr-el'] = array(
 # Podrazumevano je neosetljiv na veličinu slova',
 	'titlewhitelist' => '# Ovo je beli spisak naslova. Koristi "#" za komentare.
 # Podrazumevano je neosetljiv na veličinu slova',
+	'titleblacklist-override' => 'Zanemari crnu listu',
 	'right-tboverride' => 'Prepisuje crni spisak naslova.',
+	'right-tboverride-account' => 'zaobilaženje crne liste korisničkih imena',
 );
 
 /** Seeltersk (Seeltersk)
@@ -2322,7 +2324,7 @@ $messages['yue'] = array(
 	'right-tboverride' => '覆蓋標題黑名單',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Fdcn
  * @author Hydra
@@ -2345,7 +2347,7 @@ $messages['zh-hans'] = array(
 它匹配以下黑名单项目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
 	'titleblacklist-override' => '忽略黑名单',
-	'right-tboverride' => '避开标题黑名单',
+	'right-tboverride' => '覆蓋标题或用户名黑名单',
 	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
