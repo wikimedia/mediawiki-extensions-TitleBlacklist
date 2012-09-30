@@ -226,7 +226,7 @@ $messages['bcc'] = array(
 	'right-tboverride' => 'لیست سیاه عنوان لغو کن',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -250,7 +250,7 @@ $messages['be-tarask'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступны радок у|Наступныя радкі ў}} сьпісе забароненых назваў — {{PLURAL:$1|няслушны|няслушныя}};
 калі ласка, выпраўце {{PLURAL:$1|яго|іх}} перад захаваньнем:',
 	'titleblacklist-override' => 'Ігнараваць чорны сьпіс',
-	'right-tboverride' => 'Ігнараваньне чорнага сьпісу назваў',
+	'right-tboverride' => 'Ігнараваньне чорнага сьпісу назваў і імёнаў удзельнікаў',
 	'right-tboverride-account' => 'ігнараваньне чорнага сьпісу ўдзельнікаў',
 );
 
