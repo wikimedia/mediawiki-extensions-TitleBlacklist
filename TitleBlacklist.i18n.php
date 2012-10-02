@@ -446,7 +446,20 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'titleblacklist' => '# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Wenn auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.
+# Verwende „#“ für Kommentare.
+# Standardgemäss wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
+	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.
+# Standardmässig wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
+	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen ausser Kraft setzen.',
+	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen ausser Kraft setzen.',
+);
+
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  */
@@ -1162,7 +1175,7 @@ $messages['ka'] = array(
 	'right-tboverride-account' => 'მომხმარებელთა სახელების შავი სიის იგნორირება',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
 $messages['kk-arab'] = array(
 	'titleblacklist' => '# بۇل اتاۋلاردىڭ قارا ٴتىزىمى. جۇيەلى ايتىلىمدارعا (regex) سايكەس مىنداعى اتاۋلار جاراتىلمايدى.
 ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز.',
@@ -1173,7 +1186,7 @@ $messages['kk-arab'] = array(
 	'titleblacklist-invalid' => 'اتاۋلاردىڭ قارا تىزىمىندەگى كەلەسى {{PLURAL:$1|جول|جولدار}} {{PLURAL:$1||}} جارامسىز; ساقتاۋ الدىندا {{PLURAL:$1|بۇنى|بۇلاردى}} دۇرىستاپ شىعىڭىز:',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -1186,7 +1199,7 @@ $messages['kk-cyrl'] = array(
 	'titleblacklist-invalid' => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎) */
 $messages['kk-latn'] = array(
 	'titleblacklist' => '# Bul atawlardıñ qara tizimi. Jüýeli aýtılımdarğa (regex) säýkes mındağı atawlar jaratılmaýdı.
 Mändemeler üşin «#» nışanın qoldanıñız.',
@@ -1458,7 +1471,7 @@ $messages['nah'] = array(
 #Inīn ahmo quimati in huēyimachiyōtlahtōliztli intlā ahmo mopehpena',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Danmichaelo
  * @author Nghtwlkr
  * @author Reedy
@@ -1525,7 +1538,7 @@ Verbeter die {{PLURAL:$1|regel|regels}} voordat u de lijst opslaat:',
 	'right-tboverride-account' => 'Zwarte lijst voor gebruikersnamen negeren',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1981,7 +1994,7 @@ ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 	'right-tboverride-account' => 'Refuzoni emrin e përdoruesit të listës së zezë',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -2352,7 +2365,7 @@ $messages['zh-hans'] = array(
 	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Fdcn
  * @author Gaoxuewei
  * @author Mark85296341
