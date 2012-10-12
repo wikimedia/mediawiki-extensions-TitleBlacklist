@@ -799,7 +799,7 @@ $messages['gsw'] = array(
 Dr Name kollidiert mit däm gsperrte Name: <code>$1</code>',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|Zyylete|Zyylete}} in dr Sperrlischt {{PLURAL:$1|isch|sin}} nit giltig; bitte korrigier si vor em Spychere:',
 	'titleblacklist-override' => 'Schwarzi Lischt ignoriere',
-	'right-tboverride' => 'Di Schwarz Lischt vu nit gwinschte Sytennäme usser Chraft setze',
+	'right-tboverride' => 'Di Schwarz Lischt vu nit gwinschte Syte- oder Benutzernäme usser Chraft setze',
 	'right-tboverride-account' => 'Di Schwarz Lischt vu nit gwinschte Benutzernäme usser Chraft setze',
 );
 
