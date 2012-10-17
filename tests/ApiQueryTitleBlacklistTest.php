@@ -26,36 +26,56 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		         'src'  => __DIR__ . '/testSource',
 		    ),
 		);
-
-		// without this, blacklist applies only to anonymous users.
-		$wgGroupPermissions['sysop']['tboverride'] = false;
 	}
 
 	/**
-	 * Verify we allow a title which is not in the blacklist
+	 * Verify we allow a title which is not blacklisted
 	 */
 	function testCheckingUnlistedTitle() {
 		$unlisted = $this->doApiRequest( array(
 			'action' => 'titleblacklist',
-			'tbtitle' => 'foo',
+			// evil_acc is blacklisted as <newaccountonly>
+			'tbtitle' => 'evil_acc',
+			'tbaction' => 'create',
+			'tbnooverride' => true,
+		) );
+
+		$this->assertEquals(
+			'ok',
+			$unlisted[0]['titleblacklist']['result'],
+			'Not blacklisted title returns ok'
+		);
+	}
+
+	/**
+	 * Verify tboverride works
+	 */
+	function testTboverride() {
+		// Allow all users to override the titleblacklist
+		$wgGroupPermissions['*']['tboverride'] = true;
+
+		$unlisted = $this->doApiRequest( array(
+			'action' => 'titleblacklist',
+			'tbtitle' => 'bar',
 			'tbaction' => 'create',
 		) );
 
 		$this->assertEquals(
 			'ok',
 			$unlisted[0]['titleblacklist']['result'],
-			'Unlisted title returns ok'
+			'Blacklisted title returns ok if the user is allowd to tboverride'
 		);
 	}
 
 	/**
-	 * Verify a blacklisted title give out an error.
+	 * Verify a blacklisted title gives out an error.
 	 */
 	function testCheckingBlackListedTitle() {
 		$listed = $this->doApiRequest( array(
 			'action' => 'titleblacklist',
 			'tbtitle' => 'bar',
 			'tbaction' => 'create',
+			'tbnooverride' => true,
 		) );
 
 		$this->assertEquals(
