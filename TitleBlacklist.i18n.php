@@ -55,7 +55,7 @@ To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:
  */
 $messages['af'] = array(
 	'titleblacklist-override' => 'Ignoreer die swartlys',
-	'right-tboverride' => 'Ignoreer die titel swartlys',
+	'right-tboverride' => 'Ignoreer die titel swartlys', # Fuzzy
 	'right-tboverride-account' => 'Ignoreer die gebruikersnaam swartlys',
 );
 
@@ -77,7 +77,7 @@ Concuerda con a siguient dentrada d\'a lista negra: <code>$1</code>',
 Concuerda con a dentrada <code>$1</code> d\'a lista negra.',
 	'titleblacklist-invalid' => "{{PLURAL:$1|A siguient linia|As siguients linias}} d'a lista negra de títols {{PLURAL:$1|ye|son}} no son conformes; por favor corricha-{{PLURAL:$1|la|las}} antes d'alzar:",
 	'titleblacklist-override' => 'Ignorar a lista negra',
-	'right-tboverride' => 'Ignorar a lista negra de títols',
+	'right-tboverride' => 'Ignorar a lista negra de títols', # Fuzzy
 	'right-tboverride-account' => "Ignorar a lista negra de los nombres d'usuario",
 );
 
@@ -103,7 +103,7 @@ $messages['ar'] = array(
 هو يطابق مدخلة القائمة السوداء التالية: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1||السطر التالي|السطران التاليان|السطور التالية}} في قائمة العناوين السوداء {{PLURAL:$1||غير صحيح|غير صحيحان|غير صحيحة}}؛ من فضلك {{PLURAL:$1||صححه|صححهما|صححهم}} قبل الحفظ:',
 	'titleblacklist-override' => 'تجاهل القائمة السوداء',
-	'right-tboverride' => 'تجاوز قائمة العناوين السوداء',
+	'right-tboverride' => 'تجاوز قائمة العناوين السوداء', # Fuzzy
 	'right-tboverride-account' => 'تجاوز قائمة اسم المستخدم السوداء.',
 );
 
@@ -128,7 +128,7 @@ $messages['arz'] = array(
 لانه مطابق لمدخلة فى البلاك ليست دي: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|السطر دا|السطور دي}} اللى فى البلاك ليست بتاعة العناوين مش {{PLURAL:$1|صح|صح}} ;
 لو سمحت تصلح {{PLURAL:$1|ـه|ـهم}} قبل الحفظ:',
-	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين',
+	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين', # Fuzzy
 );
 
 /** Assamese (অসমীয়া)
@@ -154,7 +154,7 @@ $messages['as'] = array(
 	'titleblacklist-invalid' => 'শীৰ্ষক ব্লেকলিষ্টত নিম্নলিখিত {{PLURAL:$1|শাৰী|শাৰীসমূহ}} অবৈধ; 
 অনুগ্ৰহ কৰি সংৰক্ষণ কৰাৰ আগত {{PLURAL:$1|ইয়াক|এইবোৰ}} শুদ্ধ কৰক:',
 	'titleblacklist-override' => 'ব্লেকলিষ্ট উপেক্ষা কৰক',
-	'right-tboverride' => 'শিৰোনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
+	'right-tboverride' => 'শিৰোনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক', # Fuzzy
 	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 );
 
@@ -205,7 +205,7 @@ $messages['ba'] = array(
 	'titleblacklist-invalid' => 'Ҡара исемлектә түбәндәге {{PLURAL:$1|юл|юлдар}} дөрөҫ түгел;
 зинһар, һаҡлар алдынан {{PLURAL:$1|уны|уларҙы}} төҙәтегеҙ:',
 	'titleblacklist-override' => 'Ҡара исемлекте иғтибарға алмаҫҡа',
-	'right-tboverride' => 'Исемдәр ҡара исемлеген иғтибарға алмау',
+	'right-tboverride' => 'Исемдәр ҡара исемлеген иғтибарға алмау', # Fuzzy
 	'right-tboverride-account' => 'Ҡатнашыусы исемдәре ҡара исемлеген иғтибарға алмау',
 );
 
@@ -213,17 +213,17 @@ $messages['ba'] = array(
  * @author Mostafadaneshvar
  */
 $messages['bcc'] = array(
-	'titleblacklist-desc' => 'اجازت دن بند کتن شرکنگ صفحاتی گون مشخصین عناوین:  [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc' => 'اجازت دن بند کتن شرکنگ صفحاتی گون مشخصین عناوین:  [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]', # Fuzzy
 	'titleblacklist' => '# شی یک عنوان لیست سیاهی انت. عناوینی که هم داب رجکس انت ادان شرکنگ نه بیت.
-# استفاده کن"#" په نظرات',
-	'titlewhitelist' => '#شی یک اسپیت لیستی عنوانیء. استفاده کن چه  "#" په نظر داتن',
+# استفاده کن"#" په نظرات', # Fuzzy
+	'titlewhitelist' => '#شی یک اسپیت لیستی عنوانیء. استفاده کن چه  "#" په نظر داتن', # Fuzzy
 	'titleblacklist-forbidden-edit' => 'عنوان "$2" چه شر بیگ منع بوتت.
 ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'عنوان "$2" نه تونیت په "$3" جاه په جاه بیت، په چی که ایی چه شر بیگ منع بوتت.
 ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'فایل نام  "$2" چه شر بیگ منع بوتت.
 ایی هم داب جهلگی لیست سیاه یک ورودی انت: <code>$1</code>',
-	'right-tboverride' => 'لیست سیاه عنوان لغو کن',
+	'right-tboverride' => 'لیست سیاه عنوان لغو کن', # Fuzzy
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -272,7 +272,7 @@ $messages['bg'] = array(
 	'titleblacklist-forbidden-new-account' => 'Забранено е създаването на потребителско име „$2“.
 То отговаря на следния запис от черния списък: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следният ред|Следните редове}} от черния списък на заглавията {{PLURAL:$1|е невалиден|са невалидни}} и трябва да {{PLURAL:$1|бъде коригиран|бъдат коригирани}} преди съхранение:',
-	'right-tboverride' => 'Презаписване върху черния списък на заглавията',
+	'right-tboverride' => 'Презаписване върху черния списък на заглавията', # Fuzzy
 );
 
 /** Bengali (বাংলা)
@@ -294,7 +294,7 @@ $messages['bn'] = array(
 এটি কালোতালিকার এই ভুক্তিটির সাথে মিলে গেছে: <code>$1</code>',
 	'titleblacklist-invalid' => 'শিরোনাম কালোতালিকার এই {{PLURAL:$1|টি লাইন|টি লাইন}} অবৈধ; অনুগ্রহ করে সংরক্ষণ করার আগে  {{PLURAL:$1|এটি|এগুলি}} সংশোধন করুন:',
 	'titleblacklist-override' => 'কালোতালিকা উপেক্ষা করুন',
-	'right-tboverride' => 'শিরোনাম কালোতালিকা উপেক্ষা করুন',
+	'right-tboverride' => 'শিরোনাম কালোতালিকা উপেক্ষা করুন', # Fuzzy
 	'right-tboverride-account' => 'ব্যবহারকারী নাম কালোতালিকা উপেক্ষা করুন',
 );
 
@@ -347,7 +347,7 @@ Ono se nalazi na spisku zabranjenih naslova pod stavkom: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Slijedeći red|Slijedeća $1 reda|Slijedećih $1 redova}} na spisku nepoželjnih naslova {{PLURAL:$1|je nevalidan|su nevalidna|je nevalidno}};
 molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
 	'titleblacklist-override' => 'Zanemari crnu listu',
-	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova',
+	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova', # Fuzzy
 	'right-tboverride-account' => 'Zaobilaženje spiska zabranjenih korisničkih imena',
 );
 
@@ -371,7 +371,7 @@ $messages['ca'] = array(
 	'titleblacklist-forbidden-new-account' => "No es pot crear el nom d'usuari «$2». Coincideix amb la següent entrada de la llista negra: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
 	'titleblacklist-override' => 'Ignora la llista negra',
-	'right-tboverride' => 'Sobreescriure la llista negra',
+	'right-tboverride' => 'Sobreescriure la llista negra', # Fuzzy
 	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
@@ -455,7 +455,7 @@ $messages['de-ch'] = array(
 # Standardgemäss wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
 	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.
 # Standardmässig wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
-	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen ausser Kraft setzen.',
+	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen ausser Kraft setzen.', # Fuzzy
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen ausser Kraft setzen.',
 );
 
@@ -544,7 +544,7 @@ $messages['el'] = array(
 Ταιριάζει στην ακόλουθη εγγραφή της μαύρης λίστας: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Η ακόλουθη γραμμή|Οι ακόλουθες γραμμές}} στην μαύρη λίστα τίτλων είναι {{PLURAL:$1|άκυρη|άκυρες}}· παρακαλώ διορθώστε {{PLURAL:$1|την|τις}} πριν την αποθήκευση:',
 	'titleblacklist-override' => 'Αγνοήστε τη μαύρη λίστα',
-	'right-tboverride' => 'Παράκαμψη της μαύρης λίστας τίτλων',
+	'right-tboverride' => 'Παράκαμψη της μαύρης λίστας τίτλων', # Fuzzy
 	'right-tboverride-account' => 'Παρακάμψετε την μαύρη λίστα ονομάτων χρήστη',
 );
 
@@ -570,7 +570,7 @@ $messages['eo'] = array(
 	'titleblacklist-invalid' => 'La {{PLURAL:$1|jena linio|jenaj linioj}} en la titola nigralisto estas {{PLURAL:$1|malvalida|malvalidaj}}; 
 bonvolu korekti {{PLURAL:$1|gxi|ilin}} antaŭ konservado:',
 	'titleblacklist-override' => 'Ignori la nigraliston',
-	'right-tboverride' => 'Anstataŭigi la titolan nigraliston',
+	'right-tboverride' => 'Anstataŭigi la titolan nigraliston', # Fuzzy
 	'right-tboverride-account' => 'Transpasi la nigran liston pri uzantoj.',
 );
 
@@ -676,7 +676,7 @@ $messages['fi'] = array(
 Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
 	'titleblacklist-override' => 'Ohita estolista',
-	'right-tboverride' => 'Ohittaa sivunimien estolista',
+	'right-tboverride' => 'Ohittaa sivunimien estolista', # Fuzzy
 	'right-tboverride-account' => 'Ohittaa käyttäjänimien estolista',
 );
 
@@ -755,7 +755,7 @@ Tá sé chomhoiriúint leis an iontráil seo a leanas sa dúliosta teideail: <co
 Tá sé chomhoiriúint leis an iontráil seo a leanas sa dúliosta teideail: <code>$1</code>',
 	'titleblacklist-invalid' => "Tá {{PLURAL:$1|an|na}} {{PLURAL:$1|líne|líonta}} seo a leanas neamhbhailí sa dúliosta teideail;
 ceartaigh {{PLURAL:$1|é|iad}} roimh shábháil, le d'thoil:",
-	'right-tboverride' => 'Sáraíocht an dúliosta teideail',
+	'right-tboverride' => 'Sáraíocht an dúliosta teideail', # Fuzzy
 );
 
 /** Galician (galego)
@@ -862,10 +862,10 @@ $messages['he'] = array(
  * @author आलोक
  */
 $messages['hi'] = array(
-	'titleblacklist-desc' => 'विशिष्ठ नामपदों: [[MediaWiki:Titleblacklist]] और [[MediaWiki:Titlewhitelist]] के साथ वाले पृष्ठों के निर्माण अवरोधन में सहायक है',
+	'titleblacklist-desc' => 'विशिष्ठ नामपदों: [[MediaWiki:Titleblacklist]] और [[MediaWiki:Titlewhitelist]] के साथ वाले पृष्ठों के निर्माण अवरोधन में सहायक है', # Fuzzy
 	'titleblacklist' => '# यह एक ब्लैकलिस्ट नामपद है। नामपद जो ब्लैकलिस्ट सूची से मेल खाता है, निर्मित नहीं किए जा सकते।
-# टिपण्णी के लिए "#" का प्रयोग करें।',
-	'titlewhitelist' => '# यह टाईटल व्हाईटलिस्ट हैं। टिप्पणीयों के लिये "#" का इस्तेमाल करें।',
+# टिपण्णी के लिए "#" का प्रयोग करें।', # Fuzzy
+	'titlewhitelist' => '# यह टाईटल व्हाईटलिस्ट हैं। टिप्पणीयों के लिये "#" का इस्तेमाल करें।', # Fuzzy
 	'titleblacklist-forbidden-edit' => 'नामपद "$2" निर्मित करने से प्रतिबंधित है।
 यह निम्नांकित ब्लैकलिस्ट प्रवेशिका से मेल खाता है: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" का नाम बदलकर "$3" नहीं किया जा सकता, क्योंकि "$3" को निर्माण करने से प्रतिबंधित किया गया है।
@@ -875,7 +875,7 @@ $messages['hi'] = array(
 	'titleblacklist-invalid' => 'ब्लैकलिस्ट नामपद में निम्नांकित {{PLURAL:$1|पंक्ति|पंक्तियाँ}} अमान्य {{PLURAL:$1|है|हैं}};
 कृपया {{PLURAL:$1|इसे|इन्हें}} जमा करने से पहले ठीक करें:',
 	'titleblacklist-override' => 'ब्लाकलिस्ट उपेक्षा करें',
-	'right-tboverride' => 'शीर्षक ब्लॅकलिस्ट को नजर अंदाज करें',
+	'right-tboverride' => 'शीर्षक ब्लॅकलिस्ट को नजर अंदाज करें', # Fuzzy
 );
 
 /** Croatian (hrvatski)
@@ -898,7 +898,7 @@ $messages['hr'] = array(
 Poklapa se sa sljedećim izrazom iz crnog popisa: <code>$1</code>',
 	'titleblacklist-invalid' => 'Sljedeći {{PLURAL:$1|redak|redci}} u popisu zabranjenih naslova {{PLURAL:$1|je|su}} nedozvoljeni; molimo ispravite {{PLURAL:$1|ga|ih}} prije spremanja:',
 	'titleblacklist-override' => 'Zanemari crnu listu',
-	'right-tboverride' => 'Premošćivanje naslova u crnom popisu',
+	'right-tboverride' => 'Premošćivanje naslova u crnom popisu', # Fuzzy
 	'right-tboverride-account' => 'Zaobilaženje popisa zabranjenih suradničkih imena',
 );
 
@@ -943,7 +943,7 @@ $messages['hu'] = array(
 Illeszkedik a következő feketelistás elemre: <code>$1</code>',
 	'titleblacklist-invalid' => 'Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:',
 	'titleblacklist-override' => 'Feketelista figyelmen kívül hagyása',
-	'right-tboverride' => 'címek feketelistájának figyelmen kívül hagyása',
+	'right-tboverride' => 'címek feketelistájának figyelmen kívül hagyása', # Fuzzy
 	'right-tboverride-account' => 'Felhasználónév-feketelista felülbírálása',
 );
 
@@ -989,7 +989,7 @@ $messages['id'] = array(
 Nama ini sama dengan entri daftar hitam berikut: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} dalam daftar hitam judul {{PLURAL:$1|berikut|berikut}} tak valid; silakan koreksi {{PLURAL:$1|item|item-item}} tersebut sebelum disimpan:',
 	'titleblacklist-override' => 'Abaikan daftar hitam',
-	'right-tboverride' => 'Mengabaikan daftar hitam judul',
+	'right-tboverride' => 'Mengabaikan daftar hitam judul', # Fuzzy
 	'right-tboverride-account' => 'Mengabaikan daftar hitam nama pengguna',
 );
 
@@ -1036,7 +1036,7 @@ Naipada ti sumaganad a blacklist a naikabil: <code>$1</code>',
 	'titleblacklist-invalid' => 'Ti sumaganad a {{PLURAL:$1|linia|dagiti linia}} iti titulo ti blacklist {{PLURAL:$1|ket|ket}} imbalido;
 pangngaasi ta pasayaaten {{PLURAL:$1|ida|dagida}} sakbay nga idulin:',
 	'titleblacklist-override' => 'Saan nga ikaskaso ti blacklist',
-	'right-tboverride' => 'Ipatuon ti titulo a blacklist',
+	'right-tboverride' => 'Ipatuon ti titulo a blacklist', # Fuzzy
 	'right-tboverride-account' => 'Ipatuon ti nagan ti agar-aramat a blacklist',
 );
 
@@ -1058,7 +1058,7 @@ Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
 Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
 	'titleblacklist-invalid' => 'Eftirfarandi {{PLURAL:$1|færsla|færslur}} í bannlista yfir síðutitla {{PLURAL:$1|er|eru}} ógildar og leiðrétta þarf {{PLURAL:$1|hana|þær}} áður en síðan er vistuð:',
 	'titleblacklist-override' => 'Hunsa bannlistann',
-	'right-tboverride' => 'Hunsa bannlista fyrir síðutitla.',
+	'right-tboverride' => 'Hunsa bannlista fyrir síðutitla.', # Fuzzy
 	'right-tboverride-account' => 'Hunsa bannlista yfir notendanöfn',
 );
 
@@ -1118,10 +1118,10 @@ $messages['ja'] = array(
  * @author Ælsån
  */
 $messages['jut'] = array(
-	'titleblacklist-desc' => 'Kan til førbæd skeppenge der pæger ve spæsifiærn titler: [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc' => 'Kan til førbæd skeppenge der pæger ve spæsifiærn titler: [[MediaWiki:Titleblacklist]] og [[MediaWiki:Titlewhitelist]]', # Fuzzy
 	'titleblacklist' => '# Dett\'er en titel blackliste. Titler dette match en regex her ken ekke være skeppen.
-# Brug "#" før bemærkenge.',
-	'titlewhitelist' => '# Dett\'er en titel whiteliste. Brug "#" før bemærkenge',
+# Brug "#" før bemærkenge.', # Fuzzy
+	'titlewhitelist' => '# Dett\'er en titel whiteliste. Brug "#" før bemærkenge', # Fuzzy
 );
 
 /** Javanese (Basa Jawa)
@@ -1146,7 +1146,7 @@ Irah-irahan iku cocog karo èntri daftar ireng iki: <code>$1</code>',
 Iki cocog karo jeneng ing dhaptar-ireng: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Baris|Baris-baris}} ing daftar ireng irah-irahan (judhul) {{PLURAL:$1|ing ngisor|ing ngisor}} iki ora absah; mangga dikorèksi {{PLURAL:$1|item|item-item}} iku sadurungé disimpen:',
 	'titleblacklist-override' => 'Bènaké daptar ireng',
-	'right-tboverride' => "''Override'' daftar ireng judhul",
+	'right-tboverride' => "''Override'' daftar ireng judhul", # Fuzzy
 	'right-tboverride-account' => 'Benaké daptar ireng jeneng panganggo',
 );
 
@@ -1171,15 +1171,16 @@ $messages['ka'] = array(
 ეს სახელი ექვემდებარება შემდეგ ჩანაწერს შავი სიიდან: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|შემდეგი ხაზიа|შემდეგი ხაზები}} აკრძალულ სახელთა სიაში {{PLURAL:$1|არის არასწორი რეგულარული გამოთქმა|არის არასწორი რეგულარული გამოთქმები}}. გთხოვთ შეასწოროთ {{PLURAL:$1|ის|ისინი}} შენახვამდე:',
 	'titleblacklist-override' => 'შავი სიის იგნორირება',
-	'right-tboverride' => 'გვერდების სახელების შავი სიის იგნორირება',
+	'right-tboverride' => 'გვერდების სახელების შავი სიის იგნორირება', # Fuzzy
 	'right-tboverride-account' => 'მომხმარებელთა სახელების შავი სიის იგნორირება',
 );
 
-/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
+ */
 $messages['kk-arab'] = array(
 	'titleblacklist' => '# بۇل اتاۋلاردىڭ قارا ٴتىزىمى. جۇيەلى ايتىلىمدارعا (regex) سايكەس مىنداعى اتاۋلار جاراتىلمايدى.
-ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز.',
-	'titlewhitelist' => '# بۇل اتاۋلاردىڭ اق ٴتىزىمى. ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز',
+ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز.', # Fuzzy
+	'titlewhitelist' => '# بۇل اتاۋلاردىڭ اق ٴتىزىمى. ماندەمەلەر ٴۇشىن «#» نىشانىن قولدانىڭىز', # Fuzzy
 	'titleblacklist-forbidden-edit' => '«$2» دەگەن اتاۋ جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '«$2» دەگەن «$3» دەگەنگە جىلجىتىلمايدى, سەبەبى «$3» دەگەن اتاۋ جاراتۋى قۇلىپتالعان. بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '«$2» دەگەن فايل اتى جاراتۋى قۇلىپتالعان.  بۇل قارا ٴتىزىمنىڭ جازباسىنا سايكەس: <code>$1</code>',
@@ -1191,19 +1192,20 @@ $messages['kk-arab'] = array(
  */
 $messages['kk-cyrl'] = array(
 	'titleblacklist' => '# Бұл атаулардың қара тізімі. Жүйелі айтылымдарға (regex) сәйкес мындағы атаулар жаратылмайды.
-Мәндемелер үшін «#» нышанын қолданыңыз.',
-	'titlewhitelist' => '# Бұл атаулардың ақ тізімі. Мәндемелер үшін «#» нышанын қолданыңыз',
+Мәндемелер үшін «#» нышанын қолданыңыз.', # Fuzzy
+	'titlewhitelist' => '# Бұл атаулардың ақ тізімі. Мәндемелер үшін «#» нышанын қолданыңыз', # Fuzzy
 	'titleblacklist-forbidden-edit' => '«$2» деген атау жаратуы құлыпталған.  Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '«$2» деген «$3» дегенге жылжытылмайды, себебі «$3» деген атау жаратуы құлыпталған. Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '«$2» деген файл аты жаратуы құлыпталған.  Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-invalid' => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
 );
 
-/** Kazakh (Latin script) (qazaqşa (latın)‎) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎)
+ */
 $messages['kk-latn'] = array(
 	'titleblacklist' => '# Bul atawlardıñ qara tizimi. Jüýeli aýtılımdarğa (regex) säýkes mındağı atawlar jaratılmaýdı.
-Mändemeler üşin «#» nışanın qoldanıñız.',
-	'titlewhitelist' => '# Bul atawlardıñ aq tizimi. Mändemeler üşin «#» nışanın qoldanıñız',
+Mändemeler üşin «#» nışanın qoldanıñız.', # Fuzzy
+	'titlewhitelist' => '# Bul atawlardıñ aq tizimi. Mändemeler üşin «#» nışanın qoldanıñız', # Fuzzy
 	'titleblacklist-forbidden-edit' => '«$2» degen ataw jaratwı qulıptalğan.  Bul qara tizimniñ jazbasına säýkes: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '«$2» degen «$3» degenge jıljıtılmaýdı, sebebi «$3» degen ataw jaratwı qulıptalğan. Bul qara tizimniñ jazbasına säýkes: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '«$2» degen faýl atı jaratwı qulıptalğan.  Bul qara tizimniñ jazbasına säýkes: <code>$1</code>',
@@ -1323,7 +1325,7 @@ $messages['li'] = array(
 	'titleblacklist-forbidden-new-account' => 'De gebroekersnaam "$2" kan neet aangemaak waere ómdet \'t voldeit aan de volgende beperking op de zwarte lies: <code>$1</code>',
 	'titleblacklist-invalid' => 'De volgende {{PLURAL:$1|regel|regels}} in de zwarte lijst veur paginaname {{PLURAL:$1|is|zijn}} ongeldig. Verbeter die {{PLURAL:$1|regel|regels}} asjeblieft veurdat ge de lijst opslaat:',
 	'titleblacklist-override' => 'Negeer zwarte lies',
-	'right-tboverride' => 'De zwarte lies veur pazjenaname negere',
+	'right-tboverride' => 'De zwarte lies veur pazjenaname negere', # Fuzzy
 	'right-tboverride-account' => 'De zwarte lies veur gebroekersname negere',
 );
 
@@ -1348,9 +1350,9 @@ Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Naudotojo vardą "$2" buvo uždrausta sukurti.
 Jis atitinką šį juodojo sąrašo įrašą: <code>$1</code>',
 	'titleblacklist-invalid' => 'Žemiau {{PLURAL:$1|esanti linija|esančios linijos}} juodajame sąraše {{PLURAL:$1|yra|yra}} netinkama;
-prašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:',
+prašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:', # Fuzzy
 	'titleblacklist-override' => 'Ignoruoti juodąjį sąrašą',
-	'right-tboverride' => 'Nepaisyti juodojo sąrašo',
+	'right-tboverride' => 'Nepaisyti juodojo sąrašo', # Fuzzy
 );
 
 /** Macedonian (македонски)
@@ -1422,7 +1424,7 @@ $messages['mr'] = array(
 ते खालील वर्ज्यसूचीशी जुळते (महाराष्ट्र राज्याच्या सांस्कृतिक धोरणास अनुसरून वर्णभेदावर आधारीत मुळ इंग्रजीवाक्यातील ब्लॅकलीस्ट अनुवादकरताना टाळत आहोत): <code>$1</code>',
 	'titleblacklist-invalid' => 'शीर्षक ब्लॉक यादीतील खालील {{PLURAL:$1|ओळ चुकीची आहे|ओळी चुकीच्या आहेत}}; कृपया जतन करण्यापूर्वी {{PLURAL:$1|ती|त्या}} दुरुस्त करा:',
 	'titleblacklist-override' => 'काळ्या यादीकडे दुर्लक्ष करा',
-	'right-tboverride' => 'शीर्षक ब्लॅकयादी कडे दुर्लक्ष करा',
+	'right-tboverride' => 'शीर्षक ब्लॅकयादी कडे दुर्लक्ष करा', # Fuzzy
 	'right-tboverride-account' => 'खते काळ्या यादीकडे  दुर्लक्ष करा',
 );
 
@@ -1457,7 +1459,7 @@ Nama tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>',
 $messages['mt'] = array(
 	'titleblacklist-forbidden-new-account' => 'Il-ħolqien ta\' utenti bl-isem "$2" ġie imblukkat. Dan jaqbel mad-daħla fil-lista s-sewda segwenti: <code>$1</code>',
 	'titleblacklist-override' => 'Injora l-lista s-sewda',
-	'right-tboverride' => 'Jinjora l-lista s-sewda tat-titli',
+	'right-tboverride' => 'Jinjora l-lista s-sewda tat-titli', # Fuzzy
 	'right-tboverride-account' => 'Jinjora l-lista s-sewda tal-ismijiet tal-utent',
 );
 
@@ -1513,7 +1515,7 @@ Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Dateinaams: <code>
 	'titleblacklist-forbidden-new-account' => 'De Brukernaam „$2“ is för dat nee Anmellen nich verlöövt.
 Dat liggt an dissen Indrag in de Swartlist vun nich wünschte Brukernaams: <code>$1</code>',
 	'titleblacklist-invalid' => 'Disse {{PLURAL:$1|Reeg|Regen}} in de Sperrlist {{PLURAL:$1|is|sünd}} ungüllig; verbeter {{PLURAL:$1|ehr|jem}}, ehrdat du spiekerst:',
-	'right-tboverride' => 'De swarte List för Siedennaams ümgahn',
+	'right-tboverride' => 'De swarte List för Siedennaams ümgahn', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -1556,7 +1558,7 @@ $messages['nn'] = array(
 	'titleblacklist-forbidden-new-account' => 'Brukarnamnet «$2» kan ikkje opprettast. 
 Det svarar til følgjande svartelisteelement: <code>$1</code>',
 	'titleblacklist-invalid' => 'Følgjande {{PLURAL:$1|linje|linjer}} i tittelsvartelista er {{PLURAL:$1|ugyldig|ugyldige}}; ver venleg å rette {{PLURAL:$1|ho|dei}} før du lagrar:',
-	'right-tboverride' => 'Overkøyre tittelsvartelista',
+	'right-tboverride' => 'Overkøyre tittelsvartelista', # Fuzzy
 );
 
 /** Occitan (occitan)
@@ -1575,7 +1577,7 @@ $messages['oc'] = array(
 	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilizaire « $2 » es estat interdich a la creacion.
 Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
-	'right-tboverride' => 'Ignorar la lista negra dels títols',
+	'right-tboverride' => 'Ignorar la lista negra dels títols', # Fuzzy
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -1599,7 +1601,7 @@ $messages['or'] = array(
 	'titleblacklist-invalid' => 'ବାସନ୍ଦ ତାଲିକାରେ ଥିବା ତଳଲିଖିତ {{PLURAL:$1|ଧାଡ଼ିଟି|ଧାଡ଼ିସବୁ}} ଅଚଳ {{PLURAL:$1|ଅଟେ|ଅଟନ୍ତି}};
 ଦୟାକରି {{PLURAL:$1|ତାହାକୁ|ସେସବୁକୁ}} ସାଇତିବା ଆଗରୁ ସୁଧାରି ଦିଅନ୍ତୁ:',
 	'titleblacklist-override' => 'ଅଟକତାଲିକାକୁ ଅଣଦେଖା କରିବେ',
-	'right-tboverride' => 'ଅଟକ ତାଲିକାର ନାମକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
+	'right-tboverride' => 'ଅଟକ ତାଲିକାର ନାମକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା', # Fuzzy
 	'right-tboverride-account' => 'ଇଉଜର ନାମ ଅଟକ ତାଲିକାକୁ ଅଜାଣତରେ ଅଣଦେଖା କରିବା',
 );
 
@@ -1652,7 +1654,7 @@ A corispond a costa intrada dla blacklist: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La linia|Le linie}} sota ant la blacklist dij tìtoj {{PLURAL:$1|a l'é pa bon-a|a son pa bon-e}};
 për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
 	'titleblacklist-override' => 'Ignoré la lista nèira',
-	'right-tboverride' => 'Sàuta la blacklist dij tìtoj',
+	'right-tboverride' => 'Sàuta la blacklist dij tìtoj', # Fuzzy
 	'right-tboverride-account' => "Ignoré la lista nèira djë stranòm d'utent",
 );
 
@@ -1676,7 +1678,7 @@ $messages['pnb'] = array(
 اے تھلے دتی گئی کالیلسٹ انٹری نال رلدی اے: <code>$1</code>',
 	'titleblacklist-invalid' => 'تھلے دتی {{PLURAL:$1|لین|لیناں }} کالیلسٹ سرناویں {{PLURAL:$1|ہے|ہیں}}چ  ناں منیا جان والا؛ مہربانی کرکے بچان توں پہلے {{PLURAL:$1|it|اوناں نون}} اینوں.',
 	'titleblacklist-override' => 'روکنلسٹ پعل جاؤ',
-	'right-tboverride' => 'ٹاغٹل شلیکلسٹ تے لکھو۔',
+	'right-tboverride' => 'ٹاغٹل شلیکلسٹ تے لکھو۔', # Fuzzy
 	'right-tboverride-account' => 'ورتن ناں بلیکلسٹ تے لکھو۔',
 );
 
@@ -1688,10 +1690,10 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
- * @author 555
  * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
+ * @author 555
  */
 $messages['pt'] = array(
 	'titleblacklist-desc' => 'Permite que os administradores proibam a criação de páginas e contas de utilizadores através de uma [[MediaWiki:Titleblacklist|lista negra]] e de uma [[MediaWiki:Titlewhitelist|lista de excepções]]',
@@ -1710,7 +1712,7 @@ O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por favor, {{PLURAL:$1|corrija-a|corrija-as}} antes de gravar:',
 	'titleblacklist-override' => 'Ignorar a lista negra',
-	'right-tboverride' => 'Ignorar a lista negra de títulos',
+	'right-tboverride' => 'Ignorar a lista negra de títulos', # Fuzzy
 	'right-tboverride-account' => 'Ignorar a lista negra de nomes de utilizador',
 );
 
@@ -1732,7 +1734,7 @@ $messages['pt-br'] = array(
 O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 	'titleblacklist-override' => 'Ignorar a lista negra.',
-	'right-tboverride' => 'Sobrepor a lista negra de títulos',
+	'right-tboverride' => 'Sobrepor a lista negra de títulos', # Fuzzy
 	'right-tboverride-account' => 'Sobrepor a lista negra de nomes de usuários',
 );
 
@@ -1841,7 +1843,7 @@ $messages['rue'] = array(
 	'titleblacklist-forbidden-new-account' => 'Не є доволено реґістровати імя хоснователя „$2“. Одповідать наступному запису на чорній листинї: <code>$1</code>',
 	'titleblacklist-invalid' => 'На чорній листинї назв {{PLURAL:$1|є наступный рядок неправилный реґуларный выраз|суть наступны рядкы неправилны реґуларны выразы|є наступный рядок неправилный реґуларный выраз}} і є треба {{PLURAL:$1|го|їх|їх}} перед уложінём сторінкы справити :',
 	'titleblacklist-override' => 'Іґноровати чорный список',
-	'right-tboverride' => 'іґнорованя чорной листины назв сторінок',
+	'right-tboverride' => 'іґнорованя чорной листины назв сторінок', # Fuzzy
 	'right-tboverride-account' => 'Переконаня чорной листины назв сторінок',
 );
 
@@ -1893,7 +1895,7 @@ $messages['sah'] = array(
 	'titleblacklist-forbidden-new-account' => '«$2» ааты туттар сатаммат. Аат хара тиһик бу суругар сөп түбэһэр: $1',
 	'titleblacklist-invalid' => 'Бобуллубут ааттар тиһиктэрин бу {{PLURAL:$1|строката|строкаалара}} {{PLURAL:$1|сыыһалаах|сыыһалаахтар}}. Бука диэн ону көннөр:',
 	'titleblacklist-override' => 'Хара тиһиги көрүмэ',
-	'right-tboverride' => 'Сирэйдэр ааттарын "хара тиһигин" туттума',
+	'right-tboverride' => 'Сирэйдэр ааттарын "хара тиһигин" туттума', # Fuzzy
 	'right-tboverride-account' => 'кыттааччылар ааттарын "хара тиһигин" туттума',
 );
 
@@ -1940,7 +1942,7 @@ $messages['sk'] = array(
 Zodpovedá nasledovnej položke čiernej listiny: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Nasledovný riadok|Nasledovné riadky}} čiernej listiny názvov stránok {{PLURAL:$1|je neplatný|sú neplatné}} a je potrebné {{PLURAL:$1|ho|ich}} opraviť pred uložením stránky:',
 	'titleblacklist-override' => 'Ignorovať čiernu listinu',
-	'right-tboverride' => 'Prekonať čiernu listinu názvov',
+	'right-tboverride' => 'Prekonať čiernu listinu názvov', # Fuzzy
 	'right-tboverride-account' => 'Prekonať čiernu listinu používateľských mien',
 );
 
@@ -1990,7 +1992,7 @@ Ai përputhet me hyrjen e mëposhtme të listës së zezë: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Rreshti i mëposhtëm|Rreshtat e mëposhtëm}} në titullin e listës së zezë {{PLURAL:$1|është i pavlefshëm|janë të pavlefshëm}};
 ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 	'titleblacklist-override' => 'Shpërfillni listën e zezë',
-	'right-tboverride' => 'Refuzoni titullin e listës së zezë',
+	'right-tboverride' => 'Refuzoni titullin e listës së zezë', # Fuzzy
 	'right-tboverride-account' => 'Refuzoni emrin e përdoruesit të listës së zezë',
 );
 
@@ -2009,7 +2011,7 @@ $messages['sr-ec'] = array(
 	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.
 # Подразумевано је неосетљив на величину слова',
 	'titleblacklist-override' => 'Занемари црну листу',
-	'right-tboverride' => 'Преписује црни списак наслова.',
+	'right-tboverride' => 'Преписује црни списак наслова.', # Fuzzy
 	'right-tboverride-account' => 'заобилажење црне листе корисничких имена',
 );
 
@@ -2024,7 +2026,7 @@ $messages['sr-el'] = array(
 	'titlewhitelist' => '# Ovo je beli spisak naslova. Koristi "#" za komentare.
 # Podrazumevano je neosetljiv na veličinu slova',
 	'titleblacklist-override' => 'Zanemari crnu listu',
-	'right-tboverride' => 'Prepisuje crni spisak naslova.',
+	'right-tboverride' => 'Prepisuje crni spisak naslova.', # Fuzzy
 	'right-tboverride-account' => 'zaobilaženje crne liste korisničkih imena',
 );
 
@@ -2037,7 +2039,7 @@ $messages['stq'] = array(
 # Älke Siede- un Benutsernoome, ap dän do foulgjende reguläre Uutdrukke touträffe, kon nit moaked wäide.
 # Text bääte ne Ruute „#“ wäd as Kommentoar betrachted.
 # Standoardmäitich wäd nit twiske Groot- un Littikskrieuwenge unnerskat.',
-	'titlewhitelist' => '# Dit is ju Uutnoamelieste fon ju Swotte Lieste fon nit wonskede Siedennoomen. Benuts „#“ foar Kommentoare',
+	'titlewhitelist' => '# Dit is ju Uutnoamelieste fon ju Swotte Lieste fon nit wonskede Siedennoomen. Benuts „#“ foar Kommentoare', # Fuzzy
 	'titleblacklist-forbidden-edit' => "'''Ne Siede mäd dän Tittel „$2“ kon nit moaked wäide.''' <br />
 Die Tittel kollidiert mäd dissen Speerbegriep: '''''$1'''''",
 	'titleblacklist-forbidden-move' => "'''Ju Siede „$2“ kon nit ätter „$3“ ferskäuwen wäide.''' <br />
@@ -2047,7 +2049,7 @@ Die Tittel kollidiert mäd dissen Speerbegriep: <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => 'Ju Registrierenge fon dän Benutsernoome „$2“ is nit wonsked.
 Ju foulgjende Iendraach uut ju Lieste fon nit wonskede Benutsernoomen fierde tou Oulienenge: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Ju foulgjende Riege|Do foulgjende Riegen}} in ju Speerlieste {{PLURAL:$1|is|sunt}} uungultich; korrigier do foar dät Spiekerjen:',
-	'right-tboverride' => 'Buute Kraft sätten fon ju swotte Lieste fon nit wonskede Siedennoomen',
+	'right-tboverride' => 'Buute Kraft sätten fon ju swotte Lieste fon nit wonskede Siedennoomen', # Fuzzy
 );
 
 /** Sundanese (Basa Sunda)
@@ -2110,17 +2112,17 @@ $messages['te'] = array(
 	'titleblacklist-forbidden-new-account' => '"$2" అన్న పేరు గల వాడుకరిని సృష్టించడాన్ని నిషేధించారు.
 ఇది నిషేధపు జాబితాలోని ఈ పద్దుకి సరిపోలుతుంది: <code>$1</code>',
 	'titleblacklist-invalid' => 'శీర్షికల నిరోధపు జాబితాలోని ఈ క్రింద పేర్కొన్న {{PLURAL:$1|లైను|లైన్లు}} తప్పుగా {{PLURAL:$1|ఉంది|ఉన్నాయి}}; భద్రపరిచేముందు {{PLURAL:$1|దాన్ని|వాటిని}} సరిదిద్దండి:',
-	'right-tboverride' => 'శీర్షికల నిరోధపు జాబితాని  అధిగమించగలగడం',
+	'right-tboverride' => 'శీర్షికల నిరోధపు జాబితాని  అధిగమించగలగడం', # Fuzzy
 );
 
 /** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
-	'titleblacklist-desc' => 'Имкони пешгирӣ аз эҷоди саҳифахое бо унвонҳои хосро медиҳад: [[MediaWiki:Titleblacklist]] ва [[MediaWiki:Titlewhitelist]]',
+	'titleblacklist-desc' => 'Имкони пешгирӣ аз эҷоди саҳифахое бо унвонҳои хосро медиҳад: [[MediaWiki:Titleblacklist]] ва [[MediaWiki:Titlewhitelist]]', # Fuzzy
 	'titleblacklist' => '# Ин як феҳристи сиёҳ барои унвонҳо аст. Унвонҳое, ки бо як regex дар ин саҳифа мутобиқаткунандаро наметавон эчод кард.
-# Барои илова кардани тавзеҳот аз "#" истифода кунед.',
-	'titlewhitelist' => '# Ин як феҳристи сафед барои унвонҳо аст. Барои илова кардани тавзеҳот аз "#" истифода кунед',
+# Барои илова кардани тавзеҳот аз "#" истифода кунед.', # Fuzzy
+	'titlewhitelist' => '# Ин як феҳристи сафед барои унвонҳо аст. Барои илова кардани тавзеҳот аз "#" истифода кунед', # Fuzzy
 	'titleblacklist-forbidden-edit' => 'Эҷоди унвони "$2" манъ шудааст.  Ин унвон бо ин дастур аз феҳристи сиёҳ мутобиқат мекунад: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" наметавонад ба "$3" кӯчонида шавад, зеро эҷоди унвони "$3" манъ шудааст. Чун бо ин дастур аз феҳристи сиёҳ мутобиқат мекунад: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'Эҷоди номи "$2" барои парвандаҳо манъ аст. Он бо ин дастур аз фехристи сиёҳи зерин мутобиқат мекунад: <code>$1</code>',
@@ -2166,7 +2168,7 @@ $messages['tk'] = array(
 Şu gara sanaw girişina gabat gelýär: <code>$1</code>',
 	'titleblacklist-invalid' => 'Gara sanawdaky şu {{PLURAL:$1|setir|setirler}} nädogry;
 ýazdyrmankaňyz düzediň:',
-	'right-tboverride' => 'At gara sanawyna pisint etme',
+	'right-tboverride' => 'At gara sanawyna pisint etme', # Fuzzy
 );
 
 /** Tagalog (Tagalog)
@@ -2216,7 +2218,7 @@ $messages['tr'] = array(
 	'titleblacklist-invalid' => 'Karalistedeki şu {{PLURAL:$1|satır|satırlar}} geçersiz;
 lütfen kaydetmeden önce düzeltin:',
 	'titleblacklist-override' => 'Karalisteyi yoksay',
-	'right-tboverride' => 'Başlık karalistesini geçersiz kıl',
+	'right-tboverride' => 'Başlık karalistesini geçersiz kıl', # Fuzzy
 	'right-tboverride-account' => 'Kullanıcı adı karalistesini geçersiz kıl',
 );
 
@@ -2243,7 +2245,7 @@ $messages['uk'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступнинй рядок|Наступні рядки}} списку заборонених назв є {{PLURAL:$1|помилковим|помилковими}};
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
 	'titleblacklist-override' => 'Ігнорувати чорний список',
-	'right-tboverride' => 'ігнорування чорного списку назв сторінок',
+	'right-tboverride' => 'ігнорування чорного списку назв сторінок', # Fuzzy
 	'right-tboverride-account' => 'ігнорування чорного списку імен користувачів',
 );
 
@@ -2252,7 +2254,7 @@ $messages['uk'] = array(
  */
 $messages['ur'] = array(
 	'titleblacklist-override' => 'نظر انداز کی بلیک لسٹ',
-	'right-tboverride' => 'اس عنوان کے بلیک لسٹ کی جگہ لے لے',
+	'right-tboverride' => 'اس عنوان کے بلیک لسٹ کی جگہ لے لے', # Fuzzy
 	'right-tboverride-account' => 'کے صارف کا نام بلیک لسٹ کی جگہ لے لے',
 );
 
@@ -2271,7 +2273,7 @@ $messages['vec'] = array(
 	'titleblacklist-forbidden-upload' => 'La creazion de file con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'La creassion de utenti co\' nome "$2" la xe stà proibìa. La voçe corispondente in tel\'elenco dei nomi mìa consentìi la xe la seguente: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} de l'elenco dei titoli mìa consentìi {{PLURAL:$1|no la xe valida|no le xe valide}}; se prega de corègiar {{PLURAL:$1|l'eror|i erori}} prima de salvar la pagina.",
-	'right-tboverride' => 'Ignora la lista nera dei titoli',
+	'right-tboverride' => 'Ignora la lista nera dei titoli', # Fuzzy
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -2304,7 +2306,7 @@ Nó trùng tên với một khoản mục trong danh sách đen: <code>$1</code>
  */
 $messages['vo'] = array(
 	'titleblacklist-desc' => 'Dälon guvanes ad proibön padi- e kalijafi medü [[MediaWiki:Titleblacklist|blägalised]] e [[MediaWiki:Titlewhitelist|vietalised]].',
-	'titlewhitelist' => '# Atos binon vietalised tiädas. Gebolös el „#“ pro küpets.',
+	'titlewhitelist' => '# Atos binon vietalised tiädas. Gebolös el „#“ pro küpets.', # Fuzzy
 	'titleblacklist-forbidden-edit' => 'Tiäd: „$2“ no dalon pajafön.
 Tiäd at binon in blägalised as: <code>$1</code>',
 	'titleblacklist-forbidden-move' => 'Pad: „$2“ no kanon topätükön sui pad: „$3“, bi tiäd: „$3“ no dalon pajafön. Tiäd at binon in blägalised as: <code>$1</code>',
@@ -2312,7 +2314,7 @@ Tiäd at binon in blägalised as: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'Gebananem: „$2“ no dalon pajafön.
 Gebananem at binon in blägalised as: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Lien|Liens}} sököl in tiädablägalised no {{PLURAL:$1|lonöfon|lonöfons}}; gudükumolös {{PLURAL:$1|oni|onis}} bü dakip:',
-	'right-tboverride' => 'Nedemön blägalisedi tiädas',
+	'right-tboverride' => 'Nedemön blägalisedi tiädas', # Fuzzy
 );
 
 /** Yiddish (ייִדיש)
@@ -2329,13 +2331,13 @@ $messages['yi'] = array(
 $messages['yue'] = array(
 	'titleblacklist-desc' => '容許禁止開指定標題嘅版: [[MediaWiki:Titleblacklist]] 同 [[MediaWiki:Titlewhitelist]]',
 	'titleblacklist' => '# 呢個係一個標題黑名單。同呢度配合正規表達式嘅標題係唔可以新開嘅。
-# 用 "#" 去做註解。',
-	'titlewhitelist' => '# 呢個係一個標題白名單。 用 "#" 去做註解',
+# 用 "#" 去做註解。', # Fuzzy
+	'titlewhitelist' => '# 呢個係一個標題白名單。 用 "#" 去做註解', # Fuzzy
 	'titleblacklist-forbidden-edit' => '個標題 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 唔可以搬到去 "$3"，由於個標題 "$3" 已經禁止咗去開。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '個檔名 "$2" 已經禁止咗去開版。佢同下面黑名單嘅項目配合: <code>$1</code>',
 	'titleblacklist-invalid' => '下面響標題黑名單嘅{{PLURAL:$1|一行|幾行}}無效；請響保存之前改正{{PLURAL:$1|佢|佢哋}}:',
-	'right-tboverride' => '覆蓋標題黑名單',
+	'right-tboverride' => '覆蓋標題黑名單', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -2390,4 +2392,3 @@ $messages['zh-hant'] = array(
 	'right-tboverride' => '覆蓋標題或用戶名黑名單',
 	'right-tboverride-account' => '覆蓋用戶名黑名單',
 );
-
