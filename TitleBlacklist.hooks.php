@@ -60,7 +60,7 @@ class TitleBlacklistHooks {
 			$err = wfMessage( $blacklisted->getErrorMessage( 'move' ),
 				$blacklisted->getRaw(),
 				$old->getFullText(),
-				$nt->getFullText() )->escaped();
+				$nt->getFullText() )->parse();
 			return false;
 		}
 		return true;
@@ -80,7 +80,7 @@ class TitleBlacklistHooks {
 			'new-account', $override );
 		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			$message = $blacklisted->getErrorMessage( 'new-account' );
-			$err = wfMessage( $message, $blacklisted->getRaw(), $userName )->escaped();
+			$err = wfMessage( $message, $blacklisted->getRaw(), $userName )->parse();
 			return false;
 		}
 		return true;
@@ -109,7 +109,7 @@ class TitleBlacklistHooks {
 	 *
 	 * @param $editor EditPage
 	 */
-	public static function validateBlacklist( $editor, $text, $section, $error ) {
+	public static function validateBlacklist( $editor, $text, $section, &$error ) {
 		global $wgUser;
 		$title = $editor->mTitle;
 
@@ -122,7 +122,7 @@ class TitleBlacklistHooks {
 				return true;
 			}
 
-			$errmsg = wfMessage( 'titleblacklist-invalid')->numParams( count( $ok ) )->text();
+			$errmsg = wfMessage( 'titleblacklist-invalid' )->numParams( count( $ok ) )->text();
 			$errlines = '* <code>' . implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) . '</code>';
 			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 				$errmsg .
