@@ -2225,6 +2225,7 @@ lütfen kaydetmeden önce düzeltin:',
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
+ * @author Base
  * @author JenVan
  * @author Prima klasy4na
  */
@@ -2245,7 +2246,7 @@ $messages['uk'] = array(
 	'titleblacklist-invalid' => '{{PLURAL:$1|Наступнинй рядок|Наступні рядки}} списку заборонених назв є {{PLURAL:$1|помилковим|помилковими}};
 будь ласка, виправіть {{PLURAL:$1|його|їх}} перед збереженням:',
 	'titleblacklist-override' => 'Ігнорувати чорний список',
-	'right-tboverride' => 'ігнорування чорного списку назв сторінок', # Fuzzy
+	'right-tboverride' => 'Ігнорування чорного списку назв сторінок або користувачів',
 	'right-tboverride-account' => 'ігнорування чорного списку імен користувачів',
 );
 
