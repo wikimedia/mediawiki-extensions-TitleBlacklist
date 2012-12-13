@@ -154,7 +154,7 @@ $messages['as'] = array(
 	'titleblacklist-invalid' => 'শীৰ্ষক ব্লেকলিষ্টত নিম্নলিখিত {{PLURAL:$1|শাৰী|শাৰীসমূহ}} অবৈধ; 
 অনুগ্ৰহ কৰি সংৰক্ষণ কৰাৰ আগত {{PLURAL:$1|ইয়াক|এইবোৰ}} শুদ্ধ কৰক:',
 	'titleblacklist-override' => 'ব্লেকলিষ্ট উপেক্ষা কৰক',
-	'right-tboverride' => 'শিৰোনাম বা সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক', # Fuzzy
+	'right-tboverride' => 'শিৰোনাম বা সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 	'right-tboverride-account' => 'সদস্যনাম ব্লেকলিষ্ট অৱজ্ঞা কৰক',
 );
 
