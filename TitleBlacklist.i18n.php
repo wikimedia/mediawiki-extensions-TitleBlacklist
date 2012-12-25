@@ -1654,7 +1654,7 @@ A corispond a costa intrada dla blacklist: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La linia|Le linie}} sota ant la blacklist dij tìtoj {{PLURAL:$1|a l'é pa bon-a|a son pa bon-e}};
 për piasì {{PLURAL:$1|coregg-la|coregg-je}} prima ëd salvé:",
 	'titleblacklist-override' => 'Ignoré la lista nèira',
-	'right-tboverride' => 'Sàuta la blacklist dij tìtoj o dij nòm utent',
+	'right-tboverride' => "Rampiassé la lista nèira dij tìtoj o djë stranòm d'utent",
 	'right-tboverride-account' => "Ignoré la lista nèira djë stranòm d'utent",
 );
 
