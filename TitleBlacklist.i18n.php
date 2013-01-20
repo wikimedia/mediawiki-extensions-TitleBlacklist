@@ -2263,6 +2263,7 @@ $messages['ur'] = array(
 
 /** vèneto (vèneto)
  * @author Candalua
+ * @author GatoSelvadego
  */
 $messages['vec'] = array(
 	'titleblacklist-desc' => 'Consente ai aministradori de proibir la creazion de pagine con i titoli indicà su la [[MediaWiki:Titleblacklist|lista nera]] e su la [[MediaWiki:Titlewhitelist|lista bianca]]',
@@ -2276,7 +2277,9 @@ $messages['vec'] = array(
 	'titleblacklist-forbidden-upload' => 'La creazion de file con titolo "$2" la xe stà inpedìa. La voçe corispondente ne l\'elenco dei titoli mìa consentìi la xe sta chì: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'La creassion de utenti co\' nome "$2" la xe stà proibìa. La voçe corispondente in tel\'elenco dei nomi mìa consentìi la xe la seguente: <code>$1</code>',
 	'titleblacklist-invalid' => "{{PLURAL:$1|La seguente riga|Le seguenti righe}} de l'elenco dei titoli mìa consentìi {{PLURAL:$1|no la xe valida|no le xe valide}}; se prega de corègiar {{PLURAL:$1|l'eror|i erori}} prima de salvar la pagina.",
-	'right-tboverride' => 'Ignora la lista nera dei titoli', # Fuzzy
+	'titleblacklist-override' => 'Ignora ła lista nera',
+	'right-tboverride' => 'Ignora ła lista nera de i titołi o de i nome utente',
+	'right-tboverride-account' => 'Ignora ła lista nera de i nome utente',
 );
 
 /** Vietnamese (Tiếng Việt)
