@@ -661,6 +661,7 @@ $messages['fa'] = array(
  * @author Crt
  * @author Nike
  * @author Str4nd
+ * @author Stryn
  */
 $messages['fi'] = array(
 	'titleblacklist-desc' => 'Antaa ylläpitäjille mahdollisuuden estää sivujen ja käyttäjätunnusten luonti nimen perusteella: [[MediaWiki:Titleblacklist|estolista]] ja [[MediaWiki:Titlewhitelist|poikkeuslista]].',
@@ -676,7 +677,7 @@ $messages['fi'] = array(
 Tunnus täsmää seuraavaan estolistan sääntöön: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Seuraava listan rivi ei ole kelvollinen|Seuraavat listan rivit eivät ole kelvollisia}}. Korjaa {{PLURAL:$1|se|ne}} ennen tallentamista.',
 	'titleblacklist-override' => 'Ohita estolista',
-	'right-tboverride' => 'Ohittaa sivunimien estolista', # Fuzzy
+	'right-tboverride' => 'Ohittaa sivunimien tai käyttäjänimien estolista',
 	'right-tboverride-account' => 'Ohittaa käyttäjänimien estolista',
 );
 
