@@ -355,6 +355,7 @@ molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
  * @author Aleator
  * @author El libre
  * @author Jordi Roqué
+ * @author Pitort
  * @author SMP
  * @author Vriullop
  */
@@ -371,7 +372,7 @@ $messages['ca'] = array(
 	'titleblacklist-forbidden-new-account' => "No es pot crear el nom d'usuari «$2». Coincideix amb la següent entrada de la llista negra: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
 	'titleblacklist-override' => 'Ignora la llista negra',
-	'right-tboverride' => 'Sobreescriure la llista negra', # Fuzzy
+	'right-tboverride' => "Sobreescriu el títol o el nom d'usuari de la llista negra",
 	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
@@ -2370,7 +2371,7 @@ $messages['zh-hans'] = array(
 它匹配以下黑名单项目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
 	'titleblacklist-override' => '忽略黑名单',
-	'right-tboverride' => '覆蓋标题或用户名黑名单',
+	'right-tboverride' => '覆盖标题或用户名黑名单',
 	'right-tboverride-account' => '覆盖用户名黑名单',
 );
 
