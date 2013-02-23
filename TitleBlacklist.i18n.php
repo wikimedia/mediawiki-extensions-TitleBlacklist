@@ -449,6 +449,7 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
 );
 
 /** Swiss High German (Schweizer Hochdeutsch)
+ * @author Filzstift
  * @author Geitost
  */
 $messages['de-ch'] = array(
@@ -457,7 +458,7 @@ $messages['de-ch'] = array(
 # Standardgemäss wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
 	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.
 # Standardmässig wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
-	'right-tboverride' => 'Die schwarze Liste unerwünschter Seitennamen ausser Kraft setzen.', # Fuzzy
+	'right-tboverride' => 'Die schwarze Liste unerwünschter Seiten- oder Benutzernamen ausser Kraft setzen',
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen ausser Kraft setzen.',
 );
 
