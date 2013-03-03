@@ -46,6 +46,8 @@ To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:
 	'titlewhitelist' => 'The whitelist is a feature of the  [[mw:Extension:TitleBlacklist|extension Title Blacklist]], which gives the ability to block certain words (or explicitly allow them) appearing in the title through regular expressions.
 This will be the explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  
 To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titlewhitelist',
+	'titleblacklist-forbidden-edit' => '"title" stands for "page title".',
+	'titleblacklist-forbidden-move' => '"title" stands for "page title".',
 	'titleblacklist-override' => "Check box label on \"Create account\" form if the user has the user right ''tboverride-account''. If checked, the [[MediaWiki:Titleblacklist]] is ignored during account creation.",
 	'right-tboverride' => '{{doc-right|tboverride}}',
 	'right-tboverride-account' => '{{doc-right|tboverride-account}}',
@@ -1107,10 +1109,14 @@ $messages['ja'] = array(
 # 既定では大文字と小文字を区別しません',
 	'titlewhitelist' => '# これは、ページ名のホワイトリストです。「#」以降はコメントです。
 # 既定では大文字と小文字を区別しません',
-	'titleblacklist-forbidden-edit' => '"$2" という名前での新規作成は禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
-	'titleblacklist-forbidden-move' => '"$3" という名前での新規作成は禁止されているため、"$2" を移動することはできません。これは以下のブラックリスト項目に一致します: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '"$2" というファイル名でのアップロードは禁止されています。これは以下のブラックリスト項目に一致します: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'ブラックリストエントリ:<code>$1</code>と一致したため、"$2" というアカウントは作成できませんでした。',
+	'titleblacklist-forbidden-edit' => '「$2」という名前のページの作成は禁止されています。
+これは以下のブラックリスト項目に一致します: <code>$1</code>',
+	'titleblacklist-forbidden-move' => '「$3」という名前のページの作成が禁止されているため、「$2」を「$3」に移動できません。
+これは以下のブラックリスト項目に一致します: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '「$2」という名前でのファイルのアップロードは禁止されています。
+これは以下のブラックリスト項目に一致します: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => '「$2」という名前のユーザーの作成は禁止されています。
+これは以下のブラックリスト項目と一致します: <code>$1</code>',
 	'titleblacklist-invalid' => 'タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:',
 	'titleblacklist-override' => 'ブラックリストを無視',
 	'right-tboverride' => 'ページ名/利用者名のブラックリストによる制限を受けない',
