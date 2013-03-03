@@ -77,4 +77,10 @@ $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 $wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 $wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
 
+$wgResourceModules['mediawiki.api.titleblacklist'] = array(
+	'scripts' => 'mediawiki.api.titleblacklist.js',
+	'localBasePath' => $dir . '/modules',
+	'remoteExtPath' => 'TitleBlacklist/modules',
+	'dependencies' => array( 'mediawiki.api' ),
+);
 // @}
