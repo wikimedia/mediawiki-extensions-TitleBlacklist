@@ -411,15 +411,29 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 );
 
 /** Danish (dansk)
+ * @author HenrikKbh
  * @author Hylle
  * @author Sarrus
  */
 $messages['da'] = array(
 	'titleblacklist-desc' => 'Tillader administartorer at forhindre oprettelse af og brugerkonti gennem [[MediaWiki:Titleblacklist|blacklist]] og en [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist' => '# Dette er en titel sortliste. Titler og brugere, der svarer til et regulært udtryk her kan ikke oprettes.
+# Brug "#" for kommentarer.
+# Denne er som standard ufølsom overfor store/små bogstaver',
+	'titlewhitelist' => '# Dette er en titel hvidliste. 
+# Brug "#" for kommentarer.
+# Denne er som standard ufølsom overfor store/små bogstaver',
 	'titleblacklist-forbidden-edit' => 'Sidenavnet "$2" er blevet beskyttet mod oprettelse<br />
 Det svarer til følgende blacklistpost: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" kan ikke flyttes til "$3", fordi artikelnavnet "$3" er blevet beskyttet mod oprettelse. Det svarer til følgende blacklistpost: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Sidenavnet "$2" kan ikke oprettes<br />
+Det svarer til følgende sortlistepost: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Brugernavnet "$2" kan ikke oprettes<br />
+Det svarer til følgende sortlistepost: <code>$1</code>',
+	'titleblacklist-invalid' => 'Følgende {{PLURAL:$1|linje|linjer}} i titelsortelisten er {{PLURAL:$1|ugyldig|ugyldige}}; korriger venligst {{PLURAL:$1|den|dem}} før du gemmer:',
 	'titleblacklist-override' => 'Ignorer sortlisten',
+	'right-tboverride' => 'Tilsidesæt titel- eller brugernavnsortlisten',
+	'right-tboverride-account' => 'Tilsidesæt brugernavn sortliste',
 );
 
 /** German (Deutsch)
