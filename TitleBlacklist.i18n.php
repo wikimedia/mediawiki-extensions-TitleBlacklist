@@ -46,8 +46,29 @@ To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:
 	'titlewhitelist' => 'The whitelist is a feature of the  [[mw:Extension:TitleBlacklist|extension Title Blacklist]], which gives the ability to block certain words (or explicitly allow them) appearing in the title through regular expressions.
 This will be the explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  
 To see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titlewhitelist',
-	'titleblacklist-forbidden-edit' => '"title" stands for "page title".',
-	'titleblacklist-forbidden-move' => '"title" stands for "page title".',
+	'titleblacklist-forbidden-edit' => '"title" stands for "page title". Parameters:
+* $1 - blacklist entry
+* $2 - page title
+{{Related|Titleblacklist-forbidden}}',
+	'titleblacklist-forbidden-move' => '"title" stands for "page title". Parameters:
+* $1 - blacklist entry
+* $2 - old page title
+* $3 - new page title
+{{Related|Titleblacklist-forbidden}}',
+	'titleblacklist-forbidden-upload' => 'Unused at this time. Parameters:
+* $1 - blacklist entry
+* $2 - filename
+{{Related|Titleblacklist-forbidden}}',
+	'titleblacklist-forbidden-new-account' => 'Parameters:
+* $1 - blacklist entry
+* $2 - username
+{{Related|Titleblacklist-forbidden}}',
+	'titleblacklist-invalid' => 'Used as error message.
+
+This message is followed by a list of the invalid lines.
+
+Parameters:
+* $1 - number of invalid lines in the title blacklist',
 	'titleblacklist-override' => "Check box label on \"Create account\" form if the user has the user right ''tboverride-account''. If checked, the [[MediaWiki:Titleblacklist]] is ignored during account creation.",
 	'right-tboverride' => '{{doc-right|tboverride}}',
 	'right-tboverride-account' => '{{doc-right|tboverride-account}}',
