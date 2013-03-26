@@ -1850,6 +1850,7 @@ pe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
  * @author Ferrer
  * @author Ignatus
  * @author KPu3uC B Poccuu
+ * @author Kaganer
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1870,7 +1871,7 @@ $messages['ru'] = array(
 Имя соответствует следующей записи из чёрного списка: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Следующая строка|Следующие строки}} в списке запрещённых названий {{PLURAL:$1|не является правильным регулярным выражением|не являются правильными регулярными выражениями}}. Пожалуйста, исправьте {{PLURAL:$1|её|их}} перед сохранением:',
 	'titleblacklist-override' => 'Игнорировать чёрный список',
-	'right-tboverride' => 'Игнорирование чёрного списка имён страниц или участников',
+	'right-tboverride' => 'игнорирование чёрного списка имён страниц или участников',
 	'right-tboverride-account' => 'игнорирование чёрного списка имён участников',
 );
 
