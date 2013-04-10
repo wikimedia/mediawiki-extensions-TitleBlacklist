@@ -491,9 +491,9 @@ Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnu
  */
 $messages['de-ch'] = array(
 	'titleblacklist' => '# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Wenn auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.
-# Verwende „#“ für Kommentare.
+# Verwende «#» für Kommentare.
 # Standardgemäss wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
-	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.
+	'titlewhitelist' => '# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze «#» für Kommentare.
 # Standardmässig wird nicht zwischen Gross- und Kleinschreibung unterschieden.',
 	'right-tboverride' => 'Die schwarze Liste unerwünschter Seiten- oder Benutzernamen ausser Kraft setzen',
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen ausser Kraft setzen.',
