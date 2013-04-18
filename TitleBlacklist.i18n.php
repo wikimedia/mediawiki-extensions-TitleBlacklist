@@ -1274,7 +1274,7 @@ $messages['ko'] = array(
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
 	'titleblacklist-forbidden-edit' => '"$2" 문서는 만들기 금지 목록에 포함되어 있습니다.
 해당 만들기 금지 조건은 <code>$1</code>입니다.',
-	'titleblacklist-forbidden-move' => '"$2" 문서를 "$3" 제목으로 이동할 수 없습니다. 문서 만들기 금지 조건이 걸려 있습니다.
+	'titleblacklist-forbidden-move' => '"$2" 문서를 "$3" 제목으로 옮길 수 없습니다. 문서 만들기 금지 조건이 걸려 있습니다.
 해당 금지 조건은 <code>$1</code>입니다.',
 	'titleblacklist-forbidden-upload' => '"$2" 파일 이름을 만드는 것이 제한되어 있습니다.
 파일 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
