@@ -1293,12 +1293,12 @@ $messages['ko'] = array(
 $messages['ksh'] = array(
 	'titleblacklist-desc' => 'Määt et möjjelesch, bestemmpte neuje Sigge un neuje Metmaacher-Name övver en [[MediaWiki:Titleblacklist|„schwatze Leß“]] un en [[MediaWiki:Titlewhitelist|Leß met Ußnahme dofun]] ze verbeede.',
 	'titleblacklist' => '# Dat hee eß en „schwatze Leß“ met verbodde Tittele för Sigge.
-# Dä ier Enhallt sen <i lang="en">regular expressions</i>,
+# Dä ier Enhallt sen rejolähre Ußdrök,
 # wat do drop paß, kam_mer nit aanläje.
 # Wam_mer et nit ömschtällt, es Jruß- un Kleinschrevv_ejaal.
 # Donn „#“ aan der Aanfang fun en Reih, dann häß ene Kommentaa.',
 	'titlewhitelist' => '# Dat hee eß en Leß met Ußnahme fun de „schwatze Leß“ met verbodde
-# Tittele för Sigge. Dä ier Enhallt sen <i lang="en">regular expressions</i>,
+# Tittele för Sigge. Dä ier Enhallt sen rejolähre Ußdrök,
 # wat do drop paß, kam_mer aanläje.
 # Wam_mer et nit ömschtällt, es Jruß- un Kleinschrevv_ejaal.
 # Donn „#“ aan der Aanfang fun en Reih, dann häß ene Kommentaa.',
