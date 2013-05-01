@@ -1766,6 +1766,7 @@ O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
+ * @author Luckas
  */
 $messages['pt-br'] = array(
 	'titleblacklist-desc' => 'Permite a proibição da criação de páginas e contas de utilizadores com títulos específicos através de uma [[MediaWiki:Titleblacklist|lista negra]] e uma [[MediaWiki:Titlewhitelist|lista de exceções]]',
@@ -1777,7 +1778,7 @@ $messages['pt-br'] = array(
 	'titleblacklist-forbidden-edit' => 'O título "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" não pode ser movida para "$3" já que "$3" é um título impedido de ser criado. Se encaixa na seguinte entrada da lista-negra: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'O arquivo "$2" foi impedido de ser criado. Ele se encaixa na seguinte entrada da lista negra: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'O nome de utilizador "$2" foi banido da criação de utilizadores.
+	'titleblacklist-forbidden-new-account' => 'O nome de usuário "$2" foi banido da criação de usuários.
 O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 	'titleblacklist-override' => 'Ignorar a lista negra.',
