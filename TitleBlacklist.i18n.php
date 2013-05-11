@@ -431,6 +431,13 @@ Odpovídá následující položce černé listiny: <code>$1</code>',
 	'right-tboverride-account' => 'Překonání černé listiny uživatelských jmen',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'titleblacklist-override' => "Anwybyddu'r rhestr ddu",
+);
+
 /** Danish (dansk)
  * @author HenrikKbh
  * @author Hylle
