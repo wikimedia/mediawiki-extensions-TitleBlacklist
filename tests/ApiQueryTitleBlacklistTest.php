@@ -19,7 +19,7 @@ ini_set( 'include_path', ini_get( 'include_path' ) . ':' . __DIR__ . '/../../../
 class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 	function setUp() {
-		global $wgTitleBlacklistSources, $wgGroupPermissions;
+		global $wgTitleBlacklistSources;
 		parent::setUp();
 		$this->doLogin();
 
@@ -54,6 +54,8 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Verify tboverride works
 	 */
 	function testTboverride() {
+		global $wgGroupPermissions;
+
 		// Allow all users to override the titleblacklist
 		$wgGroupPermissions['*']['tboverride'] = true;
 
