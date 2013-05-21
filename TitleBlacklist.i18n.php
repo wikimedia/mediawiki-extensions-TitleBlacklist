@@ -1314,7 +1314,7 @@ $messages['ksh'] = array(
 	'titleblacklist-forbidden-upload' => 'En Datei met dämm Tittel „$2“ huhzelade es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
 	'titleblacklist-forbidden-new-account' => 'Enne Metmaacher met dämm Name „$2“ aanzelääje es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“',
 	'titleblacklist-invalid' => '{{PLURAL:$1|De Reih unge stemmp nit un moß|De $1 Reije unge stimme nit un möße|Dat he sull}} för em Afspeichere eets en Odenung jebraat wäde:',
-	'titleblacklist-override' => 'Schwatze Leß övverjonn',
+	'titleblacklist-override' => 'De schwazze Leß övverjonn',
 	'right-tboverride' => 'De Lėß met verbodde Naame un Titelle för Sigge övverjonn',
 	'right-tboverride-account' => 'De Leß met verbodde Metmaacher-Name övverjonn',
 );
