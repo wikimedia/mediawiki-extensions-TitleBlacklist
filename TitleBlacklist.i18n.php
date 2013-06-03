@@ -1084,7 +1084,7 @@ Naipada ti sumaganad a blacklist a naikabil: <code>$1</code>',
 	'titleblacklist-invalid' => 'Ti sumaganad a {{PLURAL:$1|linia|dagiti linia}} iti titulo ti blacklist {{PLURAL:$1|ket|ket}} imbalido;
 pangngaasi ta pasayaaten {{PLURAL:$1|ida|dagida}} sakbay nga idulin:',
 	'titleblacklist-override' => 'Saan nga ikaskaso ti blacklist',
-	'right-tboverride' => 'Ipatuon ti titulo a blacklist', # Fuzzy
+	'right-tboverride' => 'Patuonan ti titulo wenno madi a listaan ti nagan ti agar-aramat',
 	'right-tboverride-account' => 'Ipatuon ti nagan ti agar-aramat a blacklist',
 );
 
