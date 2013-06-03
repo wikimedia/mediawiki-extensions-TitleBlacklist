@@ -155,7 +155,7 @@ $messages['arz'] = array(
 	'right-tboverride' => 'اتجاوز البلاك ليست بتاعةالعناوين', # Fuzzy
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Gitartha.bordoloi
  * @author Nilamdyuti
@@ -1526,7 +1526,7 @@ $messages['nah'] = array(
 #Inīn ahmo quimati in huēyimachiyōtlahtōliztli intlā ahmo mopehpena',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Danmichaelo
  * @author Nghtwlkr
  * @author Reedy
@@ -1593,7 +1593,7 @@ Verbeter die {{PLURAL:$1|regel|regels}} voordat u de lijst opslaat:',
 	'right-tboverride-account' => 'Zwarte lijst voor gebruikersnamen negeren',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -1633,7 +1633,7 @@ Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'right-tboverride' => 'Ignorar la lista negra dels títols', # Fuzzy
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  * @author Psubhashish
  */
