@@ -210,9 +210,10 @@ por favor {{PLURAL:$1|corríxila|corríxiles}} enantes de guardar:',
 
 /** Bashkir (башҡортса)
  * @author Assele
+ * @author Рустам Нурыев
  */
 $messages['ba'] = array(
-	'titleblacklist-desc' => 'Хәкимдәргә [[MediaWiki:Titleblacklist|ҡара]] һәм [[MediaWiki:Titlewhitelist|аҡ]] исемлек ярҙамында биттәрҙе һәм иҫәп яҙмаларын булдырыуҙы тыйырға мөмкинлек бирә.',
+	'titleblacklist-desc' => 'Хакимдәргә [[MediaWiki:Titleblacklist|ҡара]] һәм [[MediaWiki:Titlewhitelist|аҡ]] исемлек ярҙамында биттәрҙе һәм иҫәп яҙмаларын булдырыуҙы тыйырға мөмкинлек бирә.',
 	'titleblacklist' => '# Был — тыйылған исемдәр исемлеге. Күһәтелгән регуляр аңлатмаларға тап килгән биттәр һәм иҫәп яҙмалары булдырыла алмай.
 # Иҫкәрмәләр өсөн "#" ҡулланығыҙ.
 # Ғәҙәттә ҙур/бәләкәй хәрефкә һиҙгер түгел',
