@@ -430,6 +430,7 @@ $messages['ca'] = array(
  */
 $messages['ckb'] = array(
 	'titleblacklist-override' => 'پێرستی ڕەش لەبەر چاو مەگرە',
+	'right-tboverride' => 'تێپەڕاندنی تاوتوێی پێرستی ڕەشی سەردێڕ یان ناوی بەکارھێنەری',
 );
 
 /** Czech (česky)
