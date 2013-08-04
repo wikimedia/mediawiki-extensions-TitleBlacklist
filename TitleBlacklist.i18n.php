@@ -1313,8 +1313,8 @@ $messages['ko'] = array(
 파일 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => '"$2" 이름으로 계정을 만드는 것이 제한되어 있습니다.
 계정 이름이 다음의 규칙에 해당됩니다: <code>$1</code>',
-	'titleblacklist-invalid' => '제목 블랙리스트 목록에 잘못된 구문이 있습니다.
-저장하기 전에 올바르게 수정해주세요.',
+	'titleblacklist-invalid' => '제목 블랙리스트의 다음 {{PLURAL:$1|줄}}에 잘못된 구문이 {{PLURAL:$1|있습니다}}.
+저장하기 전에 {{PLURAL:$1}}올바르게 수정해주세요:',
 	'titleblacklist-override' => '블랙리스트를 무시',
 	'right-tboverride' => '문서 제목이나 사용자 이름 블랙리스트 무시',
 	'right-tboverride-account' => '사용자 이름 블랙리스트를 무시',
