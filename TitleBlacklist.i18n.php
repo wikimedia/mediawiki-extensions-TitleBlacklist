@@ -1141,13 +1141,14 @@ Hann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>',
  * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
+ * @author Nemo bis
  */
 $messages['it'] = array(
-	'titleblacklist-desc' => 'Consente di proibire la creazione di pagine e account utente con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
-	'titleblacklist' => '# Lista dei titoli non consentiti.
-# È impedita la creazione delle pagine e degli account il cui nome corrisponde a un\'espressione regolare indicata di seguito.
+	'titleblacklist-desc' => 'Consente di proibire la creazione di pagine e utenze con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]',
+	'titleblacklist' => '# Lista di titoli non consentiti.
+# È impedita la creazione di pagine e utenze il cui nome corrisponda a un\'espressione regolare indicata di seguito.
 # Usare "#" per le righe di commento.
-# Per default la differenza tra maiuscole e minuscole non è significativa',
+# Per default la differenza tra maiuscole e minuscole non è significativa.',
 	'titlewhitelist' => '# Questa è una whitelist dei titoli. Usare "#" per le righe di commento
 # Per default la differenza tra maiuscole e minuscole non è significativa',
 	'titleblacklist-forbidden-edit' => 'La creazione di pagine con titolo "$2" è stata impedita. La voce corrispondente nell\'elenco dei titoli non consentiti è la seguente: <code>$1</code>',
