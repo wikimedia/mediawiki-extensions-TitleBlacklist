@@ -1299,7 +1299,7 @@ Mändemeler üşin «#» nışanın qoldanıñız.', # Fuzzy
  * @author 아라
  */
 $messages['ko'] = array(
-	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]를 통해서 특정 제목의 문서 만들기를 막는 기능',
+	'titleblacklist-desc' => '관리자가 [[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]마다 문서와 사용자 계정을 만드는 것을 금지할 수 있습니다',
 	'titleblacklist' => ' # 문서 이름 금지 목록을 적는 곳입니다. 정규 표현식과 일치하는 문서나 사용자 이름은 만들기가 제한됩니다.
  # 규칙이 아닌 주석 내용에는 앞에 "#"을 붙여 주세요.
  # 기본적으로 규칙은 대소문자를 구별하지 않습니다.',
