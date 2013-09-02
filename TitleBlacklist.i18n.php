@@ -1657,7 +1657,7 @@ $messages['oc'] = array(
 	'titleblacklist-forbidden-new-account' => 'Lo nom d’utilizaire « $2 » es estat interdich a la creacion.
 Correspond a l’entrada seguenta de la lista negra : <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|La linha seguenta|Las linhas seguentas}} dins la lista negra dels títols {{PLURAL:$1|es invalida|son invalidas}} : sètz convidat a {{PLURAL:$1|la|las}} corregir abans de salvar.',
-	'right-tboverride' => 'Ignorar la lista negra dels títols', # Fuzzy
+	'right-tboverride' => "Remplaçar la lista negra dels títols o dels noms d'utilizaires",
 );
 
 /** Oriya (ଓଡ଼ିଆ)
