@@ -1771,6 +1771,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Cainamarques
  * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
@@ -1793,11 +1794,12 @@ O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 O nome corresponde à seguinte entrada da lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por favor, {{PLURAL:$1|corrija-a|corrija-as}} antes de gravar:',
 	'titleblacklist-override' => 'Ignorar a lista negra',
-	'right-tboverride' => 'Ignorar a lista negra de títulos', # Fuzzy
+	'right-tboverride' => 'Sobrepor a lista negra de títulos e nomes de utilizador',
 	'right-tboverride-account' => 'Ignorar a lista negra de nomes de utilizador',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Giro720
  * @author Luckas
@@ -1816,7 +1818,7 @@ $messages['pt-br'] = array(
 O nome corresponde à seguinte entrada na lista negra: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. Por gentileza, {{PLURAL:$1|corrija-a|corrija-as}} antes de salvar:',
 	'titleblacklist-override' => 'Ignorar a lista negra.',
-	'right-tboverride' => 'Sobrepor a lista negra de títulos', # Fuzzy
+	'right-tboverride' => 'Sobrepor a lista negra de títulos e nomes de usuário',
 	'right-tboverride-account' => 'Sobrepor a lista negra de nomes de usuários',
 );
 
