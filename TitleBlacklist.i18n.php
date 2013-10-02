@@ -1768,7 +1768,7 @@ $messages['pnb'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'titleblacklist-override' => 'تورليک بابېزه ګڼل',
+	'titleblacklist-override' => 'تورليک بابېزه گڼل',
 );
 
 /** Portuguese (português)
