@@ -2453,7 +2453,7 @@ $messages['zh-hans'] = array(
 # 本页默认不区分大小写',
 	'titleblacklist-forbidden-edit' => '标题 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" 不可以移动到 "$3"，由于该标题 "$3" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => '文件名称 "$2" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => '文件名称“$2”已经被禁止创建。它跟以下黑名单的项目配合：<code>$1</code>',
 	'titleblacklist-forbidden-new-account' => '用户名“$2”已被阻止创建。
 它匹配以下黑名单项目：<code>$1</code>',
 	'titleblacklist-invalid' => '以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:',
