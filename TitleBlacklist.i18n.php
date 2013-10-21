@@ -425,6 +425,14 @@ $messages['ca'] = array(
 	'right-tboverride-account' => "Ignorar la llista negra de noms d'usuari",
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'right-tboverride' => 'Ӏаьржачу могӀанийн чура агӀонийн цӀераш тергалцаяр я декъашхой тергалцабар',
+	'right-tboverride-account' => 'Ӏаьржачу могӀанийн чура декъашхойн цӀераш тергалцаяр',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
@@ -724,7 +732,7 @@ $messages['fa'] = array(
 	'titleblacklist-forbidden-new-account' => 'حساب کاربری «$2» در برابر ایجاد محافظت شده‌است.
 این نام کاربری با این قسمت از فهرست سیاه مطابقت دارد: <code>$1</code>',
 	'titleblacklist-invalid' => '
-{{PLURAL:$1|سطر|سطرهای}} زیر در فهرست سیاه عنوان‌ها غیرمجاز {{PLURAL:$1|است|هستند}}؛ لطفاً {{PLURAL:$1|آن|آن‌ها}} را قبل از ذخیره کردن اصلاح کنید:',
+{{PLURAL:$1|سطر|سطرهای}} زیر در فهرست سیاه عنوان‌ها نامجاز {{PLURAL:$1|است|هستند}}؛ لطفاً {{PLURAL:$1|آن|آن‌ها}} را قبل از ذخیره‌کردن اصلاح کنید:',
 	'titleblacklist-override' => 'از فهرست سیاه چشم‌پوشی کن',
 	'right-tboverride' => 'نادیده گرفتن لیست سیاه عنوان یا نام کاربری',
 	'right-tboverride-account' => 'لغو فهرست سیاه نام کاربری',
