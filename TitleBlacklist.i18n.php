@@ -1498,9 +1498,10 @@ $messages['ml'] = array(
  * @author Kaustubh
  * @author Mahitgar
  * @author Rahuldeshmukh101
+ * @author V.narsikar
  */
 $messages['mr'] = array(
-	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|ब्लॅकलीस्ट]] व [[MediaWiki:Titlewhitelist|व्हाईट लीस्ट]] ला अनुसरून पाने आणि सदस्य खात्यांना प्रतिबंधतीअ करण्याची प्रचालकांना परवानगी द्या',
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|ब्लॅकलीस्ट]] व [[MediaWiki:Titlewhitelist|व्हाईट लीस्ट]] ला अनुसरून पाने आणि सदस्य खात्यांना प्रतिबंधित करण्याची प्रचालकांना परवानगी द्या',
 	'titleblacklist' => '# ही ब्लॉक केलेल्या शीर्षकांची यादी आहे. या यादीत असलेल्या शीर्षकांचे लेख लिहिता येणार नाहीत.
 # शेरा देण्यासाठी "#" वापरा.',
 	'titlewhitelist' => '# ही वापरू शकत असलेल्या शीर्षकांची यादी आहे. शेरा देण्यासाठी "#" वापरा',
