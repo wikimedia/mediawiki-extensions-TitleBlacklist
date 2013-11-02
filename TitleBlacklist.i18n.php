@@ -1374,14 +1374,15 @@ Hic titulus congruit cum expressione regulari: <code>$1</code>',
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'titleblacklist-desc' => "Erlaabt den Administrateuren et d'Uleeë vu Säiten a Benotzerkonte mat spezifeschen Titelen iwwer eng [[MediaWiki:Titleblacklist|schwaarz Lëscht]] an eng [[MediaWiki:Titlewhitelist|wäiss Lëscht]] ze verbidden",
 	'titleblacklist' => '# Dëst ass een Titel deen op enger schwaarzer Lëscht steet. Titelen a Benotzernimm op déi dës Ausdréck passe kann net ugeluecht ginn
 # Benotzt "#" fir Bemierkungen
-# Et gëtt tëschent groussen a klenge Buchstawen ënnerscheed',
+# Et gëtt tëscht groussen a klenge Buchstawen ënnerscheet',
 	'titlewhitelist' => "# Dëst ass d'''Whitelist'' vun den Titelen. Benotzt \"#\" fir Bemierkungen.
-# Et gëtt een Ënnerscheed tëschent groussen a klenge Buchstawe gemaach",
+# Et gëtt een Ënnerscheed tëscht groussen a klenge Buchstawe gemaach",
 	'titleblacklist-forbidden-edit' => 'Den Titel "$2" dàerf net ugeluecht ginn.
 En ass op der schwaarzer Lëscht wéint folgendem Begrëff: <code>$1</code>',
 	'titleblacklist-forbidden-move' => '"$2" kann net op "$3" geréckelt ginn, well den Titel "$3" net däerf ugeluecht ginn.
@@ -1389,7 +1390,7 @@ En entsprécht dëser Rubrik vun der schwaarzr Lëscht: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => 'De Fichiersnumm "$2" kann net benotzt ginn.
 Hien ass identesch mat dësem Numm vun der schwaarzer Lëscht (black list): <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'De Benotzermumm "$2" gouf gespaart fir benotzt ze ginn.
-En ass esou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
+En ass sou op der \'\'schwaarzer Lëscht\'\': <code>$1</code>',
 	'titleblacklist-invalid' => 'Dës {{PLURAL:$1|Linn|Linnen}} op der schwaarzer Lëscht vun den {{PLURAL:$1|Titelen ass|Titele sinn}} net valabel;
 verbessert se virum späicheren:',
 	'titleblacklist-override' => 'Schwaarz Lëscht ignoréieren',
