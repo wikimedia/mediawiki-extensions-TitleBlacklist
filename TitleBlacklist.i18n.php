@@ -404,6 +404,7 @@ molimo da {{PLURAL:$1|ga|ih}} ispravite prije spremanja:',
  * @author Aleator
  * @author El libre
  * @author Jordi Roqué
+ * @author Papapep
  * @author Pitort
  * @author SMP
  * @author Vriullop
@@ -417,7 +418,7 @@ $messages['ca'] = array(
 # Per defecte, no distingeix majúscules de minúscules',
 	'titleblacklist-forbidden-edit' => 'El títol «$2» està prohibit i no es pot crear. Concorda amb la següent entrada de la llista negra: <code>$1</code>',
 	'titleblacklist-forbidden-move' => "No es pot moure «$2» a «$3», perquè el títol «$3» està prohibit. Concorda amb l'entrada de la llista negra següent: <code>$1</code>",
-	'titleblacklist-forbidden-upload' => "El nom de fitxer «$2» ha estat prohibit i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>$1</code>",
+	'titleblacklist-forbidden-upload' => "S'ha prohibit el nom de fitxer «$2» i se n'impedeix la creació. Concorda amb la següent línia de la llista negra: <code>$1</code>",
 	'titleblacklist-forbidden-new-account' => "No es pot crear el nom d'usuari «$2». Coincideix amb la següent entrada de la llista negra: <code>$1</code>",
 	'titleblacklist-invalid' => '{{PLURAL:$1|La línia següent|Les línies següents}} de la llista negra no {{PLURAL:$1|és vàlida|són vàlides}}; heu de corregir-{{PLURAL:$1|la|les}} abans de guardar:',
 	'titleblacklist-override' => 'Ignora la llista negra',
