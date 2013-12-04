@@ -558,6 +558,7 @@ $messages['de-formal'] = array(
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Marmase
  */
 $messages['diq'] = array(
 	'titleblacklist-desc' => 'serkaran re desturê vıraştışê pel u hesabê karberan dano, qey qedexekerdışi re yew [[MediaWiki:Titleblacklist|listeya risiyayan]] u [[MediaWiki:Titlewhitelist|listeya risıpiyan]] dano.',
@@ -574,8 +575,8 @@ malumatê ey na listeyasiya de zepê ya: <code>$1</code>',
 malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
 	'titleblacklist-forbidden-new-account' => 'vıraştışê nameyê karberê"$2" i qedexe bı.
 malumatê ey na listeyasiya de zêpê ya: <code>$1</code>',
-	'titleblacklist-invalid' => 'nê {{PLURAL:$1|satır o ke|satır ê ke}} listeyasiyayi de qedexe yê;
-kerem kerê verqeydkerdışi de raşt kerê:',
+	'titleblacklist-invalid' => 'Na  ğırab lista dı {{PLURAL:$1|en asatır|ené satıri}}  néravérené;
+Verdé qeyd kerdışi  timar keré:',
 	'titleblacklist-override' => 'Tenilisti mehesebne',
 	'right-tboverride' => 'Siya listeya sernuşti nêravêrde ke',
 	'right-tboverride-account' => 'Tenilisteya naman dê karberan mehesebnê',
