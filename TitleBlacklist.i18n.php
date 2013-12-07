@@ -442,7 +442,7 @@ $messages['ckb'] = array(
 	'right-tboverride' => 'تێپەڕاندنی تاوتوێی پێرستی ڕەشی سەردێڕ یان ناوی بەکارھێنەری',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Danny B.
  * @author Li-sung
  * @author Matěj Grabovský
