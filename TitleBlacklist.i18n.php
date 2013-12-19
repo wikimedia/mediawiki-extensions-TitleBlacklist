@@ -917,6 +917,7 @@ $messages['gu'] = array(
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Guycn2
  * @author Rotem Liss
  */
 $messages['he'] = array(
@@ -938,7 +939,7 @@ $messages['he'] = array(
 אנא תקנו {{PLURAL:$1|אותה|אותן}} לפני השמירה:',
 	'titleblacklist-override' => 'התעלם מהרשימה השחורה',
 	'right-tboverride' => 'עקיפת רשימת שמות המשתמשים האסורים',
-	'right-tboverride-account' => 'לעקוף את הרשימה השחורה של שמות המשתמשים',
+	'right-tboverride-account' => 'עקיפת הרשימה השחורה של שמות המשתמשים',
 );
 
 /** Hindi (हिन्दी)
