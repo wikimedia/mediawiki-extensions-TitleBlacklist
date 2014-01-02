@@ -921,7 +921,7 @@ $messages['gu'] = array(
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'titleblacklist-desc' => 'אפשרות למנהלים לאסור על יצירת דפים וחשבונות משתמש לפי [[MediaWiki:Titleblacklist|רשימה שחורה]] ו[[MediaWiki:Titlewhitelist|רשימה לבנה]]',
+	'titleblacklist-desc' => 'לאפשר למפעילי המערכת לאסור על יצירת דפים וחשבונות משתמש לפי [[MediaWiki:Titleblacklist|רשימה שחורה]] ו[[MediaWiki:Titlewhitelist|רשימה לבנה]]',
 	'titleblacklist' => '# זוהי רשימת הכותרות האסורות. לא ניתן ליצור כותרות וחשבונות משתמש שמתאימים לביטוי רגולרי המופיע כאן.
 # השתמשו בסימן "#" להערות.
 #רשימה זו אינה תלויה ברישיות כברירת מחדל.',
