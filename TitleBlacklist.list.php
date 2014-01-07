@@ -156,7 +156,12 @@ class TitleBlacklist {
 		if ( $override && self::userCanOverride( $user, $action ) ) {
 			return false;
 		} else {
-			return $this->isBlacklisted( $title, $action );
+			$entry = $this->isBlacklisted( $title, $action );
+			if ( !$entry ) {
+				return false;
+			}
+			$params = $entry->getParams();
+			return isset( $params['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ? false : $entry;
 		}
 	}
 
@@ -172,17 +177,29 @@ class TitleBlacklist {
 	public function isBlacklisted( $title, $action = 'edit' ) {
 		if ( !( $title instanceof Title ) ) {
 			$title = Title::newFromText( $title );
+			if ( !( $title instanceof Title ) ) {
+				// The fact that the page name is invalid will stop whatever
+				// action is going through. No sense in doing more work here.
+				return false;
+			}
 		}
 		$blacklist = $this->getBlacklist();
+		$autoconfirmedItem = false;
 		foreach ( $blacklist as $item ) {
 			if ( $item->matches( $title->getFullText(), $action ) ) {
 				if ( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
-				return $item; // "returning true"
+				$params = $item->getParams();
+				if ( !isset( $params['autoconfirmed'] ) ) {
+					return $item;
+				}
+				if ( !$autoconfirmedItem ) {
+					$autoconfirmedItem = $item;
+				}
 			}
 		}
-		return false;
+		return $autoconfirmedItem;
 	}
 
 	/**
@@ -370,11 +387,7 @@ class TitleBlacklistEntry {
 		$match = preg_match( "/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ), $title );
 		wfRestoreWarnings();
 
-		global $wgUser;
 		if ( $match ) {
-			if ( isset( $this->mParams['autoconfirmed'] ) && $wgUser->isAllowed( 'autoconfirmed' ) ) {
-				return false;
-			}
 			if ( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
 				return false;
 			}
@@ -481,10 +494,10 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @return array This entry's options
+	 * @return array This entry's parameters
 	 */
-	public function getOptions() {
-		return $this->mOptions;
+	public function getParams() {
+		return $this->mParams;
 	}
 
 	/**
