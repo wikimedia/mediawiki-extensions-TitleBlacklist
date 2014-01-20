@@ -698,14 +698,14 @@ $messages['et'] = array(
 	'titlewhitelist' => '# See pealkiri on valges nimekirjas. Kommentaariks kasuta märki "#".  
 # Vaikimisi on see tõstutundetu',
 	'titleblacklist-forbidden-edit' => 'Lehekülje pealkirjaga "$2" loomine on keelatud.
-See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
-	'titleblacklist-forbidden-move' => 'Lehekülge "$2" ei saa teisaldada pealkirja "$3" alla, sest lehekülgede pealkirjaga "$3" loomine on keelatud.
-See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
-	'titleblacklist-forbidden-upload' => 'Pealkirjaga "$2" on keelatud faili üles laadida.
-See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
-	'titleblacklist-forbidden-new-account' => 'Kasutaja nimega "$2" loomine on keelatud.
-See vastab järgnevale musta nimekirja sissekandele: <code>$1</code>',
-	'titleblacklist-invalid' => '{{PLURAL:$1|Järgnev|Järgnevad}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.
+See vastab järgmisele musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-move' => 'Lehekülge "$2" ei saa teisaldada pealkirja "$3" alla, sest lehekülje loomine pealkirjaga "$3" on keelatud.
+See vastab järgmisele musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-upload' => 'Faili pealkirjaga "$2" on keelatud üles laadida.
+See vastab järgmisele musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-forbidden-new-account' => 'Kasutajat nimega "$2" on keelatud luua.
+See vastab järgmisele musta nimekirja sissekandele: <code>$1</code>',
+	'titleblacklist-invalid' => '{{PLURAL:$1|Järgmine|Järgmised}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.
 Palun paranda {{PLURAL:$1|see|need}} enne salvestamist:',
 	'titleblacklist-override' => 'Eira musta nimekirja',
 	'right-tboverride' => 'Eirata pealkirjade või kasutajanimede musta nimekirja',
