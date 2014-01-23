@@ -430,6 +430,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'titleblacklist-desc' => '[[MediaWiki:Titleblacklist|Ӏаьржа]] а [[MediaWiki:Titlewhitelist|къайн]] а  могӀанийн гӀоьнца куьйгалхошна таро хуьлуьйту декъашхойн дӀаяздарш ца кхоллийта.',
 	'right-tboverride' => 'Ӏаьржачу могӀанийн чура агӀонийн цӀераш тергалцаяр я декъашхой тергалцабар',
 	'right-tboverride-account' => 'Ӏаьржачу могӀанийн чура декъашхойн цӀераш тергалцаяр',
 );
