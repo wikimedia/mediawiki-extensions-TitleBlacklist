@@ -2005,6 +2005,14 @@ $messages['sah'] = array(
 	'right-tboverride-account' => 'кыттааччылар ааттарын "хара тиһигин" туттума',
 );
 
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
+ * @author Kolega2357
+ */
+$messages['sh'] = array(
+	'right-tboverride' => 'Zaobilaženje spiska zabranjenih naslova',
+	'right-tboverride-account' => 'Zaobilaženje spiska zabranjenih korisničkih imena',
+);
+
 /** Sinhala (සිංහල)
  * @author Budhajeewa
  * @author පසිඳු කාවින්ද
