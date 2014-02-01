@@ -1706,14 +1706,15 @@ $messages['or'] = array(
  * @author Beau
  * @author BeginaFelicysym
  * @author Derbeth
+ * @author Peter Bowman
  * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'titleblacklist-desc' => 'Pozwala na blokowanie tworzenia stron i kont użytkowników o określonych nazwach wykorzystując [[MediaWiki:Titleblacklist|czarną]] oraz [[MediaWiki:Titlewhitelist|białą]] listę',
-	'titleblacklist' => '# Lista zabronionych nazw. Strony i konta o nazwach odpowiadających poniższym wyrażeniom regularnym, nie będą mogły zostać utworzone.
-# Użyj znaku „#”, by utworzyć komentarz.
+	'titleblacklist' => '# Lista zabronionych nazw. Strony i konta o nazwach odpowiadających poniższym wyrażeniom regularnym nie będą mogły zostać utworzone.
+# Użyj znaku „#”, aby utworzyć komentarz.
 # Domyślnie we wpisach ma znaczenie wielkość znaków.',
-	'titlewhitelist' => '# To jest lista dopuszczalnych nazw artykułów. Użyj znaku „#” by utworzyć komentarz.
+	'titlewhitelist' => '# To jest lista dopuszczalnych nazw artykułów. Użyj znaku „#”, aby utworzyć komentarz.
 # Domyślnie we wpisach ma znaczenie wielkość znaków.',
 	'titleblacklist-forbidden-edit' => 'Utworzenie strony o nazwie „$2” nie jest możliwe.  
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
