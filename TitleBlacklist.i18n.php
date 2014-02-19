@@ -1705,6 +1705,7 @@ $messages['or'] = array(
 /** Polish (polski)
  * @author Beau
  * @author BeginaFelicysym
+ * @author Chrumps
  * @author Derbeth
  * @author Peter Bowman
  * @author Sp5uhe
@@ -1726,7 +1727,7 @@ Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 Nazwa ta pasuje do wpisu z czarnej listy: <code>$1</code>',
 	'titleblacklist-invalid' => '{{PLURAL:$1|Następująca linia|Następujące linie}} na liście zabronionych tytułów stron {{PLURAL:$1|jest nieprawidłowa|są nieprawidłowe}}. Popraw {{PLURAL:$1|ją|je}} przed zapisaniem:',
 	'titleblacklist-override' => 'Ignoruj czarną listę',
-	'right-tboverride' => 'Zastąp czarną listę zabronionych tytułów stron lub nazw użytkowników',
+	'right-tboverride' => 'Ignorowanie czarnej listy tytułów lub nazw użytkowników',
 	'right-tboverride-account' => 'Ignorowanie czarnej listy użytkowników',
 );
 
