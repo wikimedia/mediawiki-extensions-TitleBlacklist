@@ -2113,6 +2113,7 @@ ju lutemi {{PLURAL:$1|korrigjojeni|korrigjojini}} përpara ruajtjes:',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -2126,6 +2127,8 @@ $messages['sr-ec'] = array(
 # Подразумевано је неосетљив на величину слова',
 	'titlewhitelist' => '# Ово је бели списак наслова. Користи "#" за коментаре.
 # Подразумевано је неосетљив на величину слова',
+	'titleblacklist-forbidden-new-account' => 'Корисничко име „$2“ налази се на црној листи.
+Поклапа се са следећим уносом на црној листи: <code>$1</code>',
 	'titleblacklist-override' => 'Занемари црну листу',
 	'right-tboverride' => 'Преписује црни списак наслова.', # Fuzzy
 	'right-tboverride-account' => 'заобилажење црне листе корисничких имена',
@@ -2133,6 +2136,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
+ * @author Milicevic01
  */
 $messages['sr-el'] = array(
 	'titleblacklist-desc' => 'Dopušta zabranu stvaranja strana s određenim naslovima: [[MediaWiki:Titleblacklist|crna lista]] i [[MediaWiki:Titlewhitelist|bela lista]].',
@@ -2141,6 +2145,8 @@ $messages['sr-el'] = array(
 # Podrazumevano je neosetljiv na veličinu slova',
 	'titlewhitelist' => '# Ovo je beli spisak naslova. Koristi "#" za komentare.
 # Podrazumevano je neosetljiv na veličinu slova',
+	'titleblacklist-forbidden-new-account' => 'Korisničko ime „$2“ nalazi se na crnoj listi.
+Poklapa se sa sledećim unosom na crnoj listi: <code>$1</code>',
 	'titleblacklist-override' => 'Zanemari crnu listu',
 	'right-tboverride' => 'Prepisuje crni spisak naslova.', # Fuzzy
 	'right-tboverride-account' => 'zaobilaženje crne liste korisničkih imena',
