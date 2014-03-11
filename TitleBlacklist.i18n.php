@@ -510,6 +510,7 @@ Det svarer til følgende sortlistepost: <code>$1</code>',
  * @author Raimond Spekking
  * @author The Evil IP address
  * @author Umherirrender
+ * @author Wnme
  */
 $messages['de'] = array(
 	'titleblacklist-desc' => 'Ermöglicht es Administratoren die Erstellung unerwünschter Seiten- und Benutzernamen zu unterbinden: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]',
@@ -524,7 +525,7 @@ $messages['de'] = array(
 	'titleblacklist-forbidden-new-account' => 'Die Registrierung des Benutzernamens „$2“ ist nicht erwünscht.
 Folgender Eintrag aus der Liste unerwünschter Benutzernamen führte zur Ablehnung: <code>$1</code>',
 	'titleblacklist-invalid' => 'Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:',
-	'titleblacklist-override' => 'Schwarze Liste ignorieren',
+	'titleblacklist-override' => 'Blacklist ignorieren',
 	'right-tboverride' => 'Die schwarze Liste unerwünschter Seiten- oder Benutzernamen außer Kraft setzen',
 	'right-tboverride-account' => 'Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen',
 );
