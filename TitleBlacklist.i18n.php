@@ -1285,6 +1285,7 @@ $messages['kk-arab'] = array(
 
 /** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author AlefZet
+ * @author Arystanbek
  */
 $messages['kk-cyrl'] = array(
 	'titleblacklist' => '# Бұл атаулардың қара тізімі. Жүйелі айтылымдарға (regex) сәйкес мындағы атаулар жаратылмайды.
@@ -1294,6 +1295,7 @@ $messages['kk-cyrl'] = array(
 	'titleblacklist-forbidden-move' => '«$2» деген «$3» дегенге жылжытылмайды, себебі «$3» деген атау жаратуы құлыпталған. Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-forbidden-upload' => '«$2» деген файл аты жаратуы құлыпталған.  Бұл қара тізімнің жазбасына сәйкес: <code>$1</code>',
 	'titleblacklist-invalid' => 'Атаулардың қара тізіміндегі келесі {{PLURAL:$1|жол|жолдар}} {{PLURAL:$1||}} жарамсыз; сақтау алдында {{PLURAL:$1|бұны|бұларды}} дұрыстап шығыңыз:',
+	'titleblacklist-override' => 'Қаратізімді елемеу',
 );
 
 /** Kazakh (Latin script) (qazaqşa (latın)‎)
