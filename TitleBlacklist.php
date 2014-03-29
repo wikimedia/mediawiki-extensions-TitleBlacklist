@@ -13,12 +13,13 @@ $wgExtensionCredits['antispam'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Title Blacklist',
 	'author'         => array( 'Victor Vasiliev', 'Fran Rogers' ),
-	'version'        => '1.4.2',
+	'version'        => '1.5.0',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'descriptionmsg' => 'titleblacklist-desc',
 );
 
 $dir = __DIR__;
+$wgMessagesDirs['TitleBlacklist'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TitleBlacklist'] = $dir . '/TitleBlacklist.i18n.php';
 $wgAutoloadClasses['TitleBlacklist'] = $dir . '/TitleBlacklist.list.php';
 $wgAutoloadClasses['TitleBlacklistHooks'] = $dir . '/TitleBlacklist.hooks.php';
