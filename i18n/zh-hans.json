@@ -7,17 +7,18 @@
             "Liangent",
             "PhiLiP",
             "Shinjiman",
-            "Xiaomingyan"
+            "Xiaomingyan",
+            "乌拉跨氪"
         ]
     },
     "titleblacklist-desc": "允许管理员通过[[MediaWiki:Titleblacklist|黑名单]]和[[MediaWiki:Titlewhitelist|白名单]]禁止页面和用户帐户的创建",
-    "titleblacklist": "# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。\n# 请使用\"#\"来添加注释。\n# 默认忽略大小写",
-    "titlewhitelist": "# 本页面为“标题白名单”。 请使用\"#\"来添加注释。\n# 本页默认不区分大小写",
-    "titleblacklist-forbidden-edit": "标题 \"$2\" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>",
-    "titleblacklist-forbidden-move": "\"$2\" 不可以移动到 \"$3\"，由于该标题 \"$3\" 已经被禁止创建。它跟以下黑名单的项目配合: <code>$1</code>",
-    "titleblacklist-forbidden-upload": "文件名称“$2”已经被禁止创建。它跟以下黑名单的项目配合：<code>$1</code>",
-    "titleblacklist-forbidden-new-account": "用户名“$2”已被阻止创建。\n它匹配以下黑名单项目：<code>$1</code>",
-    "titleblacklist-invalid": "以下在标题黑名单上的{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}:",
+    "titleblacklist": "# 本页面为“标题黑名单”。任何匹配本名单正则表达式的标题会被阻止建立和编辑。\n# 请使用\"#\"来添加注释。\n# 本页默认忽略大小写",
+    "titlewhitelist": "# 本页面为“标题白名单”。 请使用\"#\"来添加注释。\n# 本页默认忽略大小写",
+    "titleblacklist-forbidden-edit": "标题 \"$2\" 已被禁止创建。\n其与以下黑名单项匹配：<code>$1</code>",
+    "titleblacklist-forbidden-move": "标题 \"$3\" 已被禁止创建，\"$2\" 无法移动至 \"$3\"。\n其与以下黑名单项匹配： <code>$1</code>",
+    "titleblacklist-forbidden-upload": "文件名称“$2”已被禁止创建。\n其与以下黑名单项匹配：<code>$1</code>",
+    "titleblacklist-forbidden-new-account": "用户名“$2”已被禁止创建。\n其与以下黑名单项匹配：<code>$1</code>",
+    "titleblacklist-invalid": "标题黑名单中以下{{PLURAL:$1|一行|多行}}无效；请在保存前改正{{PLURAL:$1|它|它们}}：",
     "titleblacklist-override": "忽略黑名单",
     "right-tboverride": "覆盖标题或用户名黑名单",
     "right-tboverride-account": "覆盖用户名黑名单"
