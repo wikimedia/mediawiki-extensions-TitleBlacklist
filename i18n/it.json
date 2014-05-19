@@ -5,12 +5,13 @@
 			"BrokenArrow",
 			"Darth Kule",
 			"Melos",
-			"Nemo bis"
+			"Nemo bis",
+			"Lucas2"
 		]
 	},
 	"titleblacklist-desc": "Consente di proibire la creazione di pagine e utenze con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]",
 	"titleblacklist": "# Lista di titoli non consentiti.\n# È impedita la creazione di pagine e utenze il cui nome corrisponda a un'espressione regolare indicata di seguito.\n# Usare \"#\" per le righe di commento.\n# Per default la differenza tra maiuscole e minuscole non è significativa.",
-	"titlewhitelist": "# Questa è una whitelist dei titoli. Usare \"#\" per le righe di commento\n# Per default la differenza tra maiuscole e minuscole non è significativa",
+	"titlewhitelist": "# Questa è una lista di titoli permessi (whitelist). Iniziare la riga con \"#\" per commentare.\n# Per impostazione predefinita il sistema non fa differenza tra minuscole e maiuscole.",
 	"titleblacklist-forbidden-edit": "La creazione di pagine con titolo \"$2\" è stata impedita. La voce corrispondente nell'elenco dei titoli non consentiti è la seguente: <code>$1</code>",
 	"titleblacklist-forbidden-move": "Impossibile spostare la pagina \"$2\" al titolo \"$3\" in quanto la creazione di pagine con titolo \"$3\" è stata impedita. La voce corrispondente nell'elenco dei titoli non consentiti è la seguente: <code>$1</code>",
 	"titleblacklist-forbidden-upload": "La creazione di file con titolo \"$2\" è stato impedito. La voce corrispondente nell'elenco dei titoli non consentiti è la seguente: <code>$1</code>",
