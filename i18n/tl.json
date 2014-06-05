@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw"
+			"AnakngAraw",
+			"Jojit fb"
 		]
 	},
-	"titleblacklist-desc": "Nagpapahintulot sa mga tagapangasiwa na magbawal ng paglikha ng mga pahina at mga kuwenta ng tagagamit sa bawat isang [[MediaWiki:Titleblacklist|talaan ng pinagbabawal (\"itim na talaan\")]] at [[MediaWiki:Titlewhitelist|talaan ng mga pinapayagan (\"puting talaan\")]]",
+	"titleblacklist-desc": "Nagpapahintulot sa mga tagapangasiwa na magbawal ng paglikha ng mga pahina at mga account sa bawat isang [[MediaWiki:Titleblacklist|talaan ng pinagbabawal (\"itim na talaan\")]] at [[MediaWiki:Titlewhitelist|talaan ng mga pinapayagan (\"puting talaan\")]]",
 	"titleblacklist": "# Isa itong itim na talaan ng pamagat.  Hindi maaaring likhain ang mga pamagat at mga tagagamit na tumutugma sa isang pangkaraniwang pagsasaad na naririto.\n# Gamitin ang \"#\" para sa mga puna.\n# Likas na nakatakdang hindi ito maselan sa pagmamakinilya ng titik",
 	"titlewhitelist": "# Isa itong puting talaan ng pamagat.  Gamitin ang \"#\" para sa mga puna.\n# Likas na nakatakdang hindi ito maselan sa pagmamakinilya ng titik",
 	"titleblacklist-forbidden-edit": "Pinagbawalan sa paglikha ang pamagat na \"$2\".\nTumutugma ito sa sumusunod na entradang/ipinasok na nasa talaan ng mga pinagbabawal (\"itim na talaan\"): <code>$1</code>",
