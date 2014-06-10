@@ -2,6 +2,10 @@
     "@metadata": {
         "authors": []
     },
+    "action-titleblacklistlog": "view the title blacklist log",
+    "log-name-titleblacklist": "Title blacklist log",
+    "log-description-titleblacklist": "These events track title blacklist hits.",
+    "logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|caused}} a title blacklist hit when trying to create account $3 matching $4.",
     "titleblacklist-desc": "Allows administrators to forbid creation of pages and user accounts per a [[MediaWiki:Titleblacklist|blacklist]] and [[MediaWiki:Titlewhitelist|whitelist]]",
     "titleblacklist": "# This is a title blacklist. Titles and users that match a regular expression here cannot be created.\n# Use \"#\" for comments.\n# This is case insensitive by default",
     "titlewhitelist": "# This is a title whitelist. Use \"#\" for comments.\n# This is case insensitive by default",
@@ -12,5 +16,6 @@
     "titleblacklist-invalid": "The following {{PLURAL:$1|line|lines}} in the title blacklist {{PLURAL:$1|is|are}} invalid;\nplease correct {{PLURAL:$1|it|them}} before saving:",
     "titleblacklist-override": "Ignore the blacklist",
     "right-tboverride": "Override the title or username blacklist",
-    "right-tboverride-account": "Override the username blacklist"
+    "right-tboverride-account": "Override the username blacklist",
+    "right-titleblacklistlog": "View title blacklist log"
 }

@@ -54,6 +54,11 @@ $wgTitleBlacklistSources = array();
  */
 $wgTitleBlacklistUsernameSources = '*';
 
+/**
+ * Log blacklist hits to Special:Log
+ */
+$wgTitleBlacklistLogHits = false;
+
 $wgTitleBlacklistCaching = array(
 	'warningchance' => 100,
 	'expiry' => 900,
@@ -88,6 +93,12 @@ $wgHooks['ScribuntoExternalLibraries'][] = function( $engine, array &$extraLibra
 	}
 	return true;
 };
+
+$wgLogTypes[] = 'titleblacklist';
+$wgLogActionsHandlers['titleblacklist/*'] = 'LogFormatter';
+$wgLogRestrictions['titleblacklist'] = 'titleblacklistlog';
+$wgGroupPermissions['sysop']['titleblacklistlog'] = true;
+$wgAvailableRights[] = 'titleblacklistlog';
 
 $wgResourceModules['mediawiki.api.titleblacklist'] = array(
 	'scripts' => 'mediawiki.api.titleblacklist.js',

@@ -74,13 +74,17 @@ class TitleBlacklistHooks {
 	 *
 	 * @return bool Acceptable
 	 */
-	private static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true ) {
+	private static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true, $log = false ) {
+		global $wgUser;
 		$title = Title::makeTitleSafe( NS_USER, $userName );
 		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $permissionsUser,
 			'new-account', $override );
 		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			$message = $blacklisted->getErrorMessage( 'new-account' );
 			$err = wfMessage( $message, $blacklisted->getRaw(), $userName )->parse();
+			if ( $log ) {
+				self::logFilterHitUsername( $wgUser, $title, $blacklisted->getRaw() );
+			}
 			return false;
 		}
 		return true;
@@ -94,7 +98,7 @@ class TitleBlacklistHooks {
 	public static function abortNewAccount( $user, &$message ) {
 		global $wgUser, $wgRequest;
 		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
-		return self::acceptNewUserName( $user->getName(), $wgUser, $message, $override );
+		return self::acceptNewUserName( $user->getName(), $wgUser, $message, $override, true );
 	}
 
 	/** CentralAuthAutoCreate hook */
@@ -178,5 +182,27 @@ class TitleBlacklistHooks {
 				'checkbox', 'titleblacklist-override' );
 		}
 		return true;
+	}
+
+	/**
+	 * Logs the filter username hit to Special:Log if
+	 * $wgTitleBlacklistLogHits is enabled.
+	 *
+	 * @param User $user
+	 * @param Title $title
+	 * @param string $entry
+	 */
+	public static function logFilterHitUsername( $user, $title, $entry ) {
+		global $wgTitleBlacklistLogHits;
+		if ( $wgTitleBlacklistLogHits ) {
+			$logEntry = new ManualLogEntry( 'titleblacklist', 'hit-username' );
+			$logEntry->setPerformer( $user );
+			$logEntry->setTarget( $title );
+			$logEntry->setParameters( array(
+				'4::entry' => $entry,
+			) );
+			$logid = $logEntry->insert();
+			$logEntry->publish( $logid );
+		}
 	}
 }
