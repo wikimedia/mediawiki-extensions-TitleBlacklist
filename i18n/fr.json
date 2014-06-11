@@ -12,6 +12,10 @@
 			"Zetud"
 		]
 	},
+	"action-titleblacklistlog": "afficher le journal de la liste noire des titres",
+	"log-name-titleblacklist": "Journal de la liste noire des titres",
+	"log-description-titleblacklist": "Ces événements tracent les correspondances avec la liste noire des titres.",
+	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|a provoqué}} une correspondance avec la liste noire des titres en essayant de créer le compte $3 correspondant à $4.",
 	"titleblacklist-desc": "Permet aux administrateurs d’interdire la création de pages et de comptes utilisateur en fonction d’une [[MediaWiki:Titleblacklist|liste noire]] et d’une [[MediaWiki:Titlewhitelist|liste blanche]]",
 	"titleblacklist": "# Ceci est la liste noire des titres. Les titres et les utilisateurs qui correspondent à une expression rationnelle présente sur cette page ne peuvent pas être créés.\n# Utilisez « # » pour insérer des commentaires.\n# Par défaut, les entrées ne sont pas sensibles à la casse.",
 	"titlewhitelist": "# Ceci est la liste blanche des titres. Utilisez « # » pour insérer des commentaires.\n# Les entrées ne sont pas sensibles à la casse par défaut.",
@@ -22,5 +26,6 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|La ligne suivante|Les lignes suivantes}} dans la liste noire des titres {{PLURAL:$1|est invalide. Veuillez la|sont invalides. Veuillez les}} corriger avant de publier.",
 	"titleblacklist-override": "Ignorer la liste noire",
 	"right-tboverride": "Remplacer la liste noire des titres ou des noms d'utilisateur",
-	"right-tboverride-account": "Ignorer la liste noire des noms d'utilisateur"
+	"right-tboverride-account": "Ignorer la liste noire des noms d'utilisateur",
+	"right-titleblacklistlog": "Afficher le journal de la liste noire des titres"
 }

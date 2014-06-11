@@ -4,6 +4,10 @@
 			"Pikne"
 		]
 	},
+	"action-titleblacklistlog": "pealkirjade musta nimekirja logi vaadata",
+	"log-name-titleblacklist": "Pealkirjade musta nimekirja logi",
+	"log-description-titleblacklist": "Siin logis kajastuvad pealkirjade musta nimekirja tabamused.",
+	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|tabas}} pealkirjade musta nimekirja kirjet $4, kui püüdis luua kontot $3.",
 	"titleblacklist-desc": "Võimaldab administraatoritel vastavalt [[MediaWiki:Titleblacklist|mustale]] ja [[MediaWiki:Titlewhitelist|valgele nimekirjale]] keelata lehekülgede ja kasutajakontode loomise.",
 	"titleblacklist": "# See on pealkirjade must nimekiri. Siinsetele regulaaravaldistele vastavaid pealkirju ega kasutajaid ei saa luua.\n# Kommentaariks kasuta märki \"#\".\n# Vaikimisi on see tõstutundetu",
 	"titlewhitelist": "# See pealkiri on valges nimekirjas. Kommentaariks kasuta märki \"#\".  \n# Vaikimisi on see tõstutundetu",
@@ -14,5 +18,6 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|Järgmine|Järgmised}} musta nimekirja {{PLURAL:$1|rida on vigane|read on vigased}}.\nPalun paranda {{PLURAL:$1|see|need}} enne salvestamist:",
 	"titleblacklist-override": "Eira musta nimekirja",
 	"right-tboverride": "Eirata pealkirjade või kasutajanimede musta nimekirja",
-	"right-tboverride-account": "Eirata kasutajanimede musta nimekirja"
+	"right-tboverride-account": "Eirata kasutajanimede musta nimekirja",
+	"right-titleblacklistlog": "Vaadata pealkirjade musta nimekirja logi"
 }

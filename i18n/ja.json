@@ -11,6 +11,10 @@
 			"青子守歌"
 		]
 	},
+	"action-titleblacklistlog": "ページ名ブラックリストの記録の閲覧",
+	"log-name-titleblacklist": "ページ名ブラックリストの記録",
+	"log-description-titleblacklist": "これらのイベントはページ名ブラックリストとの一致を追跡します。",
+	"logentry-titleblacklist-hit-username": "$1 がアカウント $3 を作成しようとした際に $4 に一致したためページ名ブラックリストが{{GENDER:$2|発動しました}}。",
 	"titleblacklist-desc": "管理者が[[MediaWiki:Titleblacklist|ブラックリスト]] および [[MediaWiki:Titlewhitelist|ホワイトリスト]]を使ってページおよび利用者アカウントの新規作成を禁止できるようにする",
 	"titleblacklist": "# これは、ページ名のブラックリストです。正規表現に一致するページ名および利用者アカウントの新規作成を禁止します。\n# 「#」以降はコメントです。\n# 既定では大文字と小文字を区別しません",
 	"titlewhitelist": "# これは、ページ名のホワイトリストです。「#」以降はコメントです。\n# 既定では大文字と小文字を区別しません",
@@ -21,5 +25,6 @@
 	"titleblacklist-invalid": "タイトルブラックリスト中の以下の{{PLURAL:$1|行}}は正しく記述できて{{PLURAL:$1|いません}}。保存する前に{{PLURAL:$1|修正して}}ください:",
 	"titleblacklist-override": "ブラックリストを無視",
 	"right-tboverride": "ページ名/利用者名のブラックリストによる制限を受けない",
-	"right-tboverride-account": "利用者名ブラックリストを無視"
+	"right-tboverride-account": "利用者名ブラックリストを無視",
+	"right-titleblacklistlog": "ページ名ブラックリストの記録を閲覧"
 }

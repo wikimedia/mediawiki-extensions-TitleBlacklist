@@ -12,7 +12,7 @@
 	"action-titleblacklistlog": "{{doc-action|titleblacklistlog}}",
 	"log-name-titleblacklist": "Name of log that appears on [[Special:Log]].",
 	"log-description-titleblacklist": "Description of title blacklist log",
-	"logentry-titleblacklist-hit-username": "Log entry that is created when someone tries to create an account with a name that is  blacklisted on the title blacklist.\n\n{{logentry}}\nAdditional parameters:\n$4 - the blacklist entry",
+	"logentry-titleblacklist-hit-username": "Log entry that is created when someone tries to create an account with a name that is  blacklisted on the title blacklist.\n\n{{logentry}}\nAdditional parameters:\n* $4 - the blacklist entry",
 	"titleblacklist-desc": "{{desc|name=Title Blacklist|url=http://www.mediawiki.org/wiki/Extension:TitleBlacklist}}",
 	"titleblacklist": "The [[mw:Extension:TitleBlacklist|extension Title Blacklist]] gives the ability to block certain unallowed words appearing in the title through regular expressions.\nThis will be the first explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  \nTo see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titleblacklist",
 	"titlewhitelist": "The whitelist is a feature of the  [[mw:Extension:TitleBlacklist|extension Title Blacklist]], which gives the ability to block certain words (or explicitly allow them) appearing in the title through regular expressions.\nThis will be the explanatory paragraph of the blacklist. (Characters after the #-signs are ignored.)  \nTo see an example list in context, see: http://www.mediawiki.org/wiki/MediaWiki:Titlewhitelist",

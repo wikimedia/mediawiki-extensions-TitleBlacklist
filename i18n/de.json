@@ -13,6 +13,10 @@
 			"Wnme"
 		]
 	},
+	"action-titleblacklistlog": "das Titel-Blacklist-Logbuch anzusehen",
+	"log-name-titleblacklist": "Titel-Blacklist-Logbuch",
+	"log-description-titleblacklist": "Dies ist ein Logbuch der Titel-Blacklist-Treffer.",
+	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|verursachte}} einen Titel-Blacklist-Treffer beim Versuch, das Benutzerkonto $3 mit dem übereinstimmenden Eintrag „$4“ zu erstellen.",
 	"titleblacklist-desc": "Ermöglicht es Administratoren die Erstellung unerwünschter Seiten- und Benutzernamen zu unterbinden: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]",
 	"titleblacklist": "# Dies ist eine Schwarze Liste für Seiten- und Benutzernamen. Sofern auf einen solchen Namen einer der folgenden regulären Ausdrücke zutrifft, kann er nicht erstellt werden.\n# Verwende „#“ für Kommentare.\n# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.",
 	"titlewhitelist": "# Dies ist die Ausnahmeliste von der Schwarzen Liste unerwünschter Seiten- und Benutzernamen. Benutze „#“ für Kommentare.\n# Standardmäßig wird nicht zwischen Groß- und Kleinschreibung unterschieden.",
@@ -23,5 +27,6 @@
 	"titleblacklist-invalid": "Die {{PLURAL:$1|folgende Zeile|folgenden Zeilen}} in der Sperrliste {{PLURAL:$1|ist|sind}} ungültig; bitte korrigiere diese vor dem Speichern:",
 	"titleblacklist-override": "Blacklist ignorieren",
 	"right-tboverride": "Die schwarze Liste unerwünschter Seiten- oder Benutzernamen außer Kraft setzen",
-	"right-tboverride-account": "Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen"
+	"right-tboverride-account": "Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen",
+	"right-titleblacklistlog": "Das Titel-Blacklist-Logbuch ansehen"
 }

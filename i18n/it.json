@@ -9,6 +9,10 @@
 			"Lucas2"
 		]
 	},
+	"action-titleblacklistlog": "vedere il registro dei titoli bloccati",
+	"log-name-titleblacklist": "Titoli bloccati",
+	"log-description-titleblacklist": "Questi eventi tengono traccia delle attivazioni della lista nera dei titoli.",
+	"logentry-titleblacklist-hit-username": "$1 ha causato l'attivazione della blacklist dei titoli tentando di creare l'utenza $3 che corrisponde a $4.",
 	"titleblacklist-desc": "Consente di proibire la creazione di pagine e utenze con i titoli indicati in una [[MediaWiki:Titleblacklist|blacklist]] e una [[MediaWiki:Titlewhitelist|whitelist]]",
 	"titleblacklist": "# Lista di titoli non consentiti.\n# È impedita la creazione di pagine e utenze il cui nome corrisponda a un'espressione regolare indicata di seguito.\n# Usare \"#\" per le righe di commento.\n# Per default la differenza tra maiuscole e minuscole non è significativa.",
 	"titlewhitelist": "# Questa è una lista di titoli permessi (whitelist). Iniziare la riga con \"#\" per commentare.\n# Per impostazione predefinita il sistema non fa differenza tra minuscole e maiuscole.",
@@ -19,5 +23,6 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|La seguente riga|Le seguenti righe}} dell'elenco dei titoli non consentiti {{PLURAL:$1|non è valida|non sono valide}}; si prega di correggere {{PLURAL:$1|l'errore|gli errori}} prima di salvare la pagina.",
 	"titleblacklist-override": "Ignora la blacklist",
 	"right-tboverride": "Ignora la blacklist dei titoli o dei nome utente",
-	"right-tboverride-account": "Ignora la blacklist dei nome utente"
+	"right-tboverride-account": "Ignora la blacklist dei nome utente",
+	"right-titleblacklistlog": "Visualizza registro dei titoli bloccati"
 }
