@@ -7,6 +7,10 @@
 			"Mormegil"
 		]
 	},
+	"action-titleblacklistlog": "prohlížet knihu černé listiny názvů",
+	"log-name-titleblacklist": "Kniha černé listiny názvů",
+	"log-description-titleblacklist": "Tyto události sledují zásahy černé listiny názvů.",
+	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|způsobil|způsobila}} zásah černé listiny názvů při pokusu o založení účtu $3 odpovídajícího $4.",
 	"titleblacklist-desc": "Umožňuje správcům zakázat tvorbu stránek a uživatelských účtů na základě [[MediaWiki:Titleblacklist|černé listiny názvů]] a [[MediaWiki:Titlewhitelist|bílé listiny názvů]]",
 	"titleblacklist": "# Toto je černá listina názvů. Stránky a uživatelské účty, jejichž název odpovídá některému regulárnímu výrazu, nebude možné vytvořit.\n# Komentáře začínají znakem „#“.\n# Na velikosti písmen nezáleží.",
 	"titlewhitelist": "# Toto je bílá listina názvů stránek. Řádky komentářů začínají znakem „#“.\n# Na velikosti písmen nezáleží.",
@@ -17,5 +21,6 @@
 	"titleblacklist-invalid": "Na černé listině názvů {{PLURAL:$1|je následující řádka neplatný regulární výraz|jsou následující řádky neplatné regulární výrazy|jsou následující řádky regulární výrazy}} a je nutné {{PLURAL:$1|ji|je|je}} před uložením stránky opravit :",
 	"titleblacklist-override": "Ignorovat černou listinu",
 	"right-tboverride": "Překonání zakázaných názvů stránek nebo uživatelských jmen",
-	"right-tboverride-account": "Překonání černé listiny uživatelských jmen"
+	"right-tboverride-account": "Překonání černé listiny uživatelských jmen",
+	"right-titleblacklistlog": "Prohlížení knihy černé listiny názvů"
 }
