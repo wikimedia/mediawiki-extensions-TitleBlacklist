@@ -7,9 +7,12 @@
 			"Shinjiman",
 			"Simon Shek",
 			"Waihorace",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Liuxinyu970226"
 		]
 	},
+	"action-titleblacklistlog": "檢視標題黑名單日誌",
+	"log-name-titleblacklist": "標題黑名單日誌",
 	"titleblacklist-desc": "允許管理員使用 [[MediaWiki:Titleblacklist]] 與 [[MediaWiki:Titlewhitelist]] 禁止建立頁面",
 	"titleblacklist": "# 此頁為標題封鎖清單，符合此處正規表示法的標題與使用者將會被禁止使用。\n# 註解使用 \"#\"。\n# 清單預設不區分大小寫",
 	"titlewhitelist": "# 此頁為標題允許清單。 註解請使用 \"#\"。\n# 清單預設不區分大小寫",
@@ -20,5 +23,6 @@
 	"titleblacklist-invalid": "標題封鎖清單中的下列{{PLURAL:$1|一行|多行}}無效；\n在儲存之前請先修正：",
 	"titleblacklist-override": "忽略封鎖清單",
 	"right-tboverride": "覆蓋標題或使用者名稱封鎖清單",
-	"right-tboverride-account": "覆蓋使用者名稱封鎖清單"
+	"right-tboverride-account": "覆蓋使用者名稱封鎖清單",
+	"right-titleblacklistlog": "檢視標題黑名單日誌"
 }

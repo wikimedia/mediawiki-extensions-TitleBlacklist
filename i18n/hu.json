@@ -3,9 +3,12 @@
 		"authors": [
 			"BáthoryPéter",
 			"Dani",
-			"Tgr"
+			"Tgr",
+			"Tacsipacsi"
 		]
 	},
+	"action-titleblacklistlog": "feketelista-napló megtekintése",
+	"log-name-titleblacklist": "Címek feketelistájának naplója",
 	"titleblacklist-desc": "Lehetővé teszi az adminisztrátorok számára, hogy letiltsák adott című lapok vagy nevű felhasználói fiókok készítését a [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]] alapján",
 	"titleblacklist": "# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezések valamelyikére, nem hozhatóak létre.\n# Használd a „#” karaktert megjegyzések írásához.\n# A sorok kis- és nagybetűérzékenyek alapértelmezettként",
 	"titlewhitelist": "# Ez egy engedélyező lista. A „#” karakterrel írhatsz megjegyzéseket.\n# A sorok kis- és nagybetűérzékenyek alapértelmezettként",
@@ -15,6 +18,7 @@
 	"titleblacklist-forbidden-new-account": "A(z) „$2” felhasználói név nem hozható létre.\nIlleszkedik a következő feketelistás elemre: <code>$1</code>",
 	"titleblacklist-invalid": "Az alábbi {{PLURAL:$1|sor hibás|sorok hibásak}} a lapcímek feketelistájában; {{PLURAL:$1|javítsd|javítsd őket}} mentés előtt:",
 	"titleblacklist-override": "Feketelista figyelmen kívül hagyása",
-	"right-tboverride": "címek feketelistájának figyelmen kívül hagyása",
-	"right-tboverride-account": "Felhasználónév-feketelista felülbírálása"
+	"right-tboverride": "címek és felhasználónevek feketelistájának figyelmen kívül hagyása",
+	"right-tboverride-account": "Felhasználónév-feketelista felülbírálása",
+	"right-titleblacklistlog": "Feketelista-napló megtekintése"
 }
