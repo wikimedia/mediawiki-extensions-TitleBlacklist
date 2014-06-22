@@ -5,11 +5,12 @@
 			"Dani",
 			"Tgr",
 			"Tacsipacsi",
-			"Csega"
+			"Csega",
+			"Ildiko Santana"
 		]
 	},
-	"action-titleblacklistlog": "feketelista-napló megtekintése",
-	"log-name-titleblacklist": "Címek feketelistájának naplója",
+	"action-titleblacklistlog": "címek feketelista-naplójának megtekintése",
+	"log-name-titleblacklist": "Címek feketelista-naplója",
 	"titleblacklist-desc": "Lehetővé teszi az adminisztrátorok számára, hogy letiltsák adott című lapok vagy nevű felhasználói fiókok készítését a [[MediaWiki:Titleblacklist]] és [[MediaWiki:Titlewhitelist]] alapján",
 	"titleblacklist": "# Ez a címek feketelistája. Azon címek, amelyek illeszkednek az itt található reguláris kifejezések valamelyikére, nem hozhatóak létre.\n# Használd a „#” karaktert megjegyzések írásához.\n# A sorok kis- és nagybetűérzékenyek alapértelmezettként",
 	"titlewhitelist": "# Ez egy engedélyező lista. A „#” karakterrel írhatsz megjegyzéseket.\n# A sorok kis- és nagybetűérzékenyek alapértelmezettként",
@@ -21,5 +22,5 @@
 	"titleblacklist-override": "Feketelista figyelmen kívül hagyása",
 	"right-tboverride": "Címek és felhasználónevek feketelistájának felülírása",
 	"right-tboverride-account": "Felhasználónév-feketelista felülbírálása",
-	"right-titleblacklistlog": "Feketelista-napló megtekintése"
+	"right-titleblacklistlog": "Címek feketelista-naplójának megtekintése"
 }
