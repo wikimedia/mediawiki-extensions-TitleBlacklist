@@ -127,13 +127,6 @@ class TitleBlacklistHooks {
 		return self::acceptNewUserName( $user->getName(), $wgUser, $message, $override, true );
 	}
 
-	/** CentralAuthAutoCreate hook */
-	public static function centralAuthAutoCreate( $user, $userName ) {
-		$message = ''; # Will be ignored
-		$anon = new User;
-		return self::acceptNewUserName( $userName, $anon, $message );
-	}
-
 	/**
 	 * EditFilter hook
 	 *
