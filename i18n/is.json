@@ -12,6 +12,6 @@
 	"titleblacklist-forbidden-new-account": "Búið er að banna titilinn \"$2\" og ekki er hægt að nota hann við stofnun notendanafna.\nHann passar við eftirfarandi færslu í bannlistanum: <code>$1</code>",
 	"titleblacklist-invalid": "Eftirfarandi {{PLURAL:$1|færsla|færslur}} í bannlista yfir síðutitla {{PLURAL:$1|er|eru}} ógildar og leiðrétta þarf {{PLURAL:$1|hana|þær}} áður en síðan er vistuð:",
 	"titleblacklist-override": "Hunsa bannlistann",
-	"right-tboverride": "Hunsa bannlista fyrir síðutitla.",
+	"right-tboverride": "Hunsa bannlista fyrir síðutitla og notendanöfn.",
 	"right-tboverride-account": "Hunsa bannlista yfir notendanöfn"
 }
