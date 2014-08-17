@@ -3,10 +3,11 @@
 		"authors": [
 			"Anakmalaysia",
 			"Aviator",
-			"Izzudin"
+			"Izzudin",
+			"Pizza1016"
 		]
 	},
-	"titleblacklist-desc": "Membolehkan pentadbir mengawal penciptaan laman dan pengguna tertentu menggunakan [[MediaWiki:Titleblacklist|senarai hitam]] dan [[MediaWiki:Titlewhitelist|senarai putih]]",
+	"titleblacklist-desc": "Membolehkan penyelia untuk menghalangkan penciptaan laman dan akaun pengguna melalui [[MediaWiki:Titleblacklist|senarai hitam]] dan [[MediaWiki:Titlewhitelist|senarai putih]]",
 	"titleblacklist": "# Ini ialah senarai hitam tajuk. Tajuk atau pengguna yang sepadan dengan mana-mana ungkapan nalar di sini tidak boleh dicipta.\n# Gunakan \"#\" untuk komen.\n# Secara asali, ini tidak peka huruf (mengabaikan besar kecil huruf)",
 	"titlewhitelist": "# Ini ialah senarai hitam tajuk. Gunakan \"#\" untuk komen.\n# Secara asali, ini tidak peka huruf (mengabaikan besar kecil huruf)",
 	"titleblacklist-forbidden-edit": "Tajuk \"$2\" telah diharamkan.\nTajuk tersebut sepadan dengan entri senarai hitam berikut: <code>$1</code>",
