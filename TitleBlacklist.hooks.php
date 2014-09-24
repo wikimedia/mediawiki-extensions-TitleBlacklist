@@ -183,23 +183,6 @@ class TitleBlacklistHooks {
 				Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
 
 			// $error will be displayed by the edit class
-			return true;
-		} elseif ( !$section ) {
-			# Block redirects to nonexistent blacklisted titles
-			$retitle = Title::newFromRedirect( $text );
-			if ( $retitle !== null && !$retitle->exists() )  {
-				$blacklisted = TitleBlacklist::singleton()->userCannot( $retitle, $wgUser, 'create' );
-				if ( $blacklisted instanceof TitleBlacklistEntry ) {
-					$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
-						wfMessage( 'titleblacklist-forbidden-edit',
-							$blacklisted->getRaw(),
-							$retitle->getFullText() )->escaped() .
-						Html::closeElement( 'div' ) . "\n" .
-						Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
-				}
-			}
-
-			return true;
 		}
 		return true;
 	}

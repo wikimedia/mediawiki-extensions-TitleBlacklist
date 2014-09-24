@@ -528,6 +528,9 @@ class TitleBlacklistEntry {
 	 */
 	public function getErrorMessage( $operation ) {
 		$message = $this->getCustomMessage();
+		// For grep:
+		// titleblacklist-forbidden-edit, titleblacklist-forbidden-move,
+		// titleblacklist-forbidden-upload, titleblacklist-forbidden-new-account
 		return $message ? $message : "titleblacklist-forbidden-{$operation}";
 	}
 }
