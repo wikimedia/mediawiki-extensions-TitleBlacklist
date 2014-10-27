@@ -68,7 +68,36 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * AbortMove hook
+	 * MovePageCheckPermissions hook (1.25+)
+	 *
+	 * @param Title $oldTitle
+	 * @param Title $newTitle
+	 * @param User $user
+	 * @param $reason
+	 * @param Status $status
+	 * @return bool
+	 */
+	public static function onMovePageCheckPermissions( Title $oldTitle, Title $newTitle, User $user, $reason, Status $status ) {
+		$titleBlacklist = TitleBlacklist::singleton();
+		$blacklisted = $titleBlacklist->userCannot( $newTitle, $user, 'move' );
+		if ( !$blacklisted ) {
+			$blacklisted = $titleBlacklist->userCannot( $oldTitle, $user, 'edit' );
+		}
+		if ( $blacklisted instanceof TitleBlacklistEntry ) {
+			$status->fatal( $blacklisted->getErrorMessage( 'move' ),
+				$blacklisted->getRaw(),
+				$oldTitle->getFullText(),
+				$newTitle->getFullText() );
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * AbortMove hook (<1.24)
+	 *
+	 * @todo: Remove once 1.24 support is dropped
 	 *
 	 * @param $old Title
 	 * @param $nt Title
@@ -76,20 +105,19 @@ class TitleBlacklistHooks {
 	 * @param $err
 	 * @return bool
 	 */
-	public static function abortMove( $old, $nt, $user, &$err ) {
-		$titleBlacklist = TitleBlacklist::singleton();
-		$blacklisted = $titleBlacklist->userCannot( $nt, $user, 'move' );
-		if ( !$blacklisted ) {
-			$blacklisted = $titleBlacklist->userCannot( $old, $user, 'edit' );
+	public static function abortMove( $old, $nt, $user, &$err, $reason ) {
+		if ( method_exists( 'MovePage', 'checkPermissions' ) ) {
+			// Don't use this hook, use MovePageCheckPermissions instead
+			return true;
 		}
-		if ( $blacklisted instanceof TitleBlacklistEntry ) {
-			$err = wfMessage( $blacklisted->getErrorMessage( 'move' ),
-				$blacklisted->getRaw(),
-				$old->getFullText(),
-				$nt->getFullText() )->parse();
-			return false;
+
+		$status = new Status();
+		self::onMovePageCheckPermissions( $old, $nt, $user, $reason, $status );
+		if ( !$status->isOK() ) {
+			$err = $status->getHTML();
 		}
-		return true;
+
+		return $status->isOK();
 	}
 
 	/**
