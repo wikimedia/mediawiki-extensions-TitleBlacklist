@@ -78,6 +78,7 @@ $wgGroupPermissions['sysop']['tboverride'] = true;
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TitleBlacklistHooks::userCan';
 $wgHooks['TitleGetEditNotices'][] = 'TitleBlacklistHooks::displayBlacklistOverrideNotice';
 $wgHooks['AbortMove'][] = 'TitleBlacklistHooks::abortMove';
+$wgHooks['MovePageCheckPermissions'][] = 'TitleBlacklistHooks::onMovePageCheckPermissions';
 $wgHooks['AbortNewAccount'][] = 'TitleBlacklistHooks::abortNewAccount';
 $wgHooks['AbortAutoAccount'][] = 'TitleBlacklistHooks::abortNewAccount';
 $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
