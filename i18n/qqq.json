@@ -27,5 +27,11 @@
 	"titleblacklist-warning": "Displayed when a user is editing a page that only administrators (or custom user groups with the tboverride right) can edit due to the title blacklist. Parameters:\n* $1 - blacklist entry",
 	"right-tboverride": "{{doc-right|tboverride}}",
 	"right-tboverride-account": "{{doc-right|tboverride-account}}",
-	"right-titleblacklistlog": "{{doc-right|titleblacklistlog}}"
+	"right-titleblacklistlog": "{{doc-right|titleblacklistlog}}",
+	"apihelp-titleblacklist-description": "{{doc-apihelp-description|titleblacklist}}",
+	"apihelp-titleblacklist-param-title": "{{doc-apihelp-param|titleblacklist|title}}",
+	"apihelp-titleblacklist-param-action": "{{doc-apihelp-param|titleblacklist|action}}",
+	"apihelp-titleblacklist-param-nooverride": "{{doc-apihelp-param|titleblacklist|nooverride}}",
+	"apihelp-titleblacklist-example-1": "{{doc-apihelp-example|titleblacklist}}",
+	"apihelp-titleblacklist-example-2": "{{doc-apihelp-example|titleblacklist}}"
 }
