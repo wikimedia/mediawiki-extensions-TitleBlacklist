@@ -29,5 +29,6 @@
 	"titleblacklist-warning": "<strong>警告：此页面只能由管理员和其他拥有<code>tboverride</code>权限的用户编辑，因为它匹配以下标题黑名单：</strong><br /><code>$1</code>",
 	"right-tboverride": "覆盖标题或用户名黑名单",
 	"right-tboverride-account": "覆盖用户名黑名单",
-	"right-titleblacklistlog": "查看标题黑名单日志"
+	"right-titleblacklistlog": "查看标题黑名单日志",
+	"apihelp-titleblacklist-param-action": "要检查的操作。"
 }
