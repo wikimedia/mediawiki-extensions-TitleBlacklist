@@ -22,6 +22,7 @@ $dir = __DIR__;
 $wgMessagesDirs['TitleBlacklist'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TitleBlacklist'] = $dir . '/TitleBlacklist.i18n.php';
 $wgAutoloadClasses['TitleBlacklist'] = $dir . '/TitleBlacklist.list.php';
+$wgAutoloadClasses['TitleBlacklistEntry'] = $dir . '/TitleBlacklist.list.php';
 $wgAutoloadClasses['TitleBlacklistHooks'] = $dir . '/TitleBlacklist.hooks.php';
 $wgAutoloadClasses['Scribunto_LuaTitleBlacklistLibrary'] = $dir . '/TitleBlacklist.library.php';
 
