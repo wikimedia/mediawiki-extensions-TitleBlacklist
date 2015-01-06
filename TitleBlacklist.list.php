@@ -54,6 +54,8 @@ class TitleBlacklist {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName ) );
 		}
 		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
+		wfDebugLog( 'TitleBlacklist-cache', 'Updated ' . wfMemcKey( "title_blacklist_entries" )
+			. ' with ' . count( $this->mBlacklist ) . ' entries.' );
 		wfProfileOut( __METHOD__ );
 	}
 
