@@ -351,7 +351,7 @@ class TitleBlacklistEntry {
 		}
 
 		if( !is_array( $wgTitleBlacklistUsernameSources ) ) {
-			throw new MWException(
+			throw new Exception(
 				'$wgTitleBlacklistUsernameSources must be "*", false or an array' );
 		}
 
