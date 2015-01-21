@@ -86,7 +86,7 @@ $wgHooks['EditFilter'][] = 'TitleBlacklistHooks::validateBlacklist';
 $wgHooks['ArticleSaveComplete'][] = 'TitleBlacklistHooks::clearBlacklist';
 $wgHooks['UserCreateForm'][] = 'TitleBlacklistHooks::addOverrideCheckbox';
 $wgHooks['UnitTestsList'][] = function( &$files ) {
-	$files += glob( __DIR__ . '/tests/*Test.php' );
+	$files = array_merge( $files, glob( __DIR__ . '/tests/*Test.php' ) );
 	return true;
 };
 $wgHooks['ScribuntoExternalLibraries'][] = function( $engine, array &$extraLibraries ) {
