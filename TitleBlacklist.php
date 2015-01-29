@@ -16,6 +16,7 @@ $wgExtensionCredits['antispam'][] = array(
 	'version'        => '1.5.0',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Title_Blacklist',
 	'descriptionmsg' => 'titleblacklist-desc',
+	'license-name'   => 'GPL-2.0+',
 );
 
 $dir = __DIR__;
