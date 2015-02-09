@@ -4,7 +4,8 @@
 			"Amire80",
 			"Guycn2",
 			"Rotem Liss",
-			"Rotemliss"
+			"Rotemliss",
+			"Yona b"
 		]
 	},
 	"action-titleblacklistlog": "להציג את יומן הרשימה השחורה של הכותרות",
@@ -22,7 +23,7 @@
 	"titleblacklist-override": "להתעלם מהרשימה השחורה",
 	"titleblacklist-autoconfirmed-warning": "<strong>לתשומת לבך:</strong> רק משתמשים בעלי הרשאת <code>autoconfirmed</code> (משתמשים ותיקים) יכולים לערוך את הדף הזה כי הוא מתאים לשורה הבאה ברשימה השחורה:<br /><code>$1</code>",
 	"titleblacklist-warning": "<strong>לתשומת לבך:</strong> רק מפעילים ומשתמשים אחרים בעלי הרשאת <code>tboverride</code> יכולים לערוך את הדף הזה כי הוא מתאים לשורה הבאה ברשימה השחורה:<br /><code>$1</code>",
-	"right-tboverride": "עקיפת רשימת שמות המשתמשים האסורים",
+	"right-tboverride": "עקיפת איסור יצירת רשימת הכותרות האסורות",
 	"right-tboverride-account": "עקיפת הרשימה השחורה של שמות המשתמשים",
 	"right-titleblacklistlog": "הצגת יומן הרשימה השחורה של הכותרות",
 	"apihelp-titleblacklist-description": "בדיקת כותרת דף, שם קובץ או שם משתמש אל מול TitleBlacklist",
