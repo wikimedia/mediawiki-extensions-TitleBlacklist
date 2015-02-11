@@ -38,12 +38,10 @@ class TitleBlacklist {
 	 */
 	public function load() {
 		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
-		wfProfileIn( __METHOD__ );
 		// Try to find something in the cache
 		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
 		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
 			$this->mBlacklist = $cachedBlacklist;
-			wfProfileOut( __METHOD__ );
 			return;
 		}
 
@@ -56,7 +54,6 @@ class TitleBlacklist {
 		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 		wfDebugLog( 'TitleBlacklist-cache', 'Updated ' . wfMemcKey( "title_blacklist_entries" )
 			. ' with ' . count( $this->mBlacklist ) . ' entries.' );
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
@@ -64,17 +61,14 @@ class TitleBlacklist {
 	 */
 	public function loadWhitelist() {
 		global $wgMemc, $wgTitleBlacklistCaching;
-		wfProfileIn( __METHOD__ );
 		$cachedWhitelist = $wgMemc->get( wfMemcKey( "title_whitelist_entries" ) );
 		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
 			$this->mWhitelist = $cachedWhitelist;
-			wfProfileOut( __METHOD__ );
 			return;
 		}
 		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
 				->inContentLanguage()->text(), 'whitelist' );
 		$wgMemc->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
@@ -129,7 +123,6 @@ class TitleBlacklist {
 	 * @return array of TitleBlacklistEntry entries
 	 */
 	public static function parseBlacklist( $list, $sourceName ) {
-		wfProfileIn( __METHOD__ );
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = array();
 		foreach ( $lines as $line ) {
@@ -139,7 +132,6 @@ class TitleBlacklist {
 			}
 		}
 
-		wfProfileOut( __METHOD__ );
 		return $result;
 	}
 
