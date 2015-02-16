@@ -6,7 +6,8 @@
 			"ToePeu",
 			"아라",
 			"Hym411",
-			"Revi"
+			"Revi",
+			"IRTC1015"
 		]
 	},
 	"action-titleblacklistlog": "제목 블랙리스트 로그를 봅니다",
@@ -22,6 +23,7 @@
 	"titleblacklist-forbidden-new-account": "\"$2\" 이름으로 계정을 만드는 것이 제한되어 있습니다.\n계정 이름이 다음의 규칙에 해당됩니다: <code>$1</code>",
 	"titleblacklist-invalid": "제목 블랙리스트의 다음 {{PLURAL:$1|줄}}에 잘못된 구문이 {{PLURAL:$1|있습니다}}.\n저장하기 전에 {{PLURAL:$1}}올바르게 수정해주세요:",
 	"titleblacklist-override": "블랙리스트를 무시",
+	"titleblacklist-autoconfirmed-warning": "<strong>참고:</strong> 이 문서는 <code>autoconfirmed</code> 권한을 가진 사용자만 편집할 수 있도록 제목 블랙리스트의 다음 항목에 지정되었습니다:<br /><code>$1</code>",
 	"right-tboverride": "문서 제목이나 사용자 이름 블랙리스트 무시",
 	"right-tboverride-account": "사용자 이름 블랙리스트를 무시",
 	"right-titleblacklistlog": "제목 블랙리스트 로그 보기"
