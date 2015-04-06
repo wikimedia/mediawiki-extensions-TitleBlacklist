@@ -134,11 +134,12 @@ class TitleBlacklistHooks {
 	 * Check whether a user name is acceptable,
 	 * and set a message if unacceptable.
 	 *
-	 * Used by abortNewAccount and centralAuthAutoCreate
+	 * Used by abortNewAccount and centralAuthAutoCreate.
+	 * May also be called externally to vet alternate account names.
 	 *
 	 * @return bool Acceptable
 	 */
-	private static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true, $log = false ) {
+	public static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true, $log = false ) {
 		global $wgUser;
 		$title = Title::makeTitleSafe( NS_USER, $userName );
 		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $permissionsUser,
