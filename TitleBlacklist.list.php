@@ -37,9 +37,11 @@ class TitleBlacklist {
 	 * Load all configured blacklist sources
 	 */
 	public function load() {
-		global $wgTitleBlacklistSources, $wgMemc, $wgTitleBlacklistCaching;
+		global $wgTitleBlacklistSources, $wgTitleBlacklistCaching;
+
+		$cache = ObjectCache::getMainWANInstance();
 		// Try to find something in the cache
-		$cachedBlacklist = $wgMemc->get( wfMemcKey( "title_blacklist_entries" ) );
+		$cachedBlacklist = $cache->get( wfMemcKey( "title_blacklist_entries" ) );
 		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
 			$this->mBlacklist = $cachedBlacklist;
 			return;
@@ -51,7 +53,7 @@ class TitleBlacklist {
 		foreach( $sources as $sourceName => $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName ) );
 		}
-		$wgMemc->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
+		$cache->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 		wfDebugLog( 'TitleBlacklist-cache', 'Updated ' . wfMemcKey( "title_blacklist_entries" )
 			. ' with ' . count( $this->mBlacklist ) . ' entries.' );
 	}
@@ -60,15 +62,17 @@ class TitleBlacklist {
 	 * Load local whitelist
 	 */
 	public function loadWhitelist() {
-		global $wgMemc, $wgTitleBlacklistCaching;
-		$cachedWhitelist = $wgMemc->get( wfMemcKey( "title_whitelist_entries" ) );
+		global $wgTitleBlacklistCaching;
+
+		$cache = ObjectCache::getMainWANInstance();
+		$cachedWhitelist = $cache->get( wfMemcKey( "title_whitelist_entries" ) );
 		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
 			$this->mWhitelist = $cachedWhitelist;
 			return;
 		}
 		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
 				->inContentLanguage()->text(), 'whitelist' );
-		$wgMemc->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
+		$cache->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
 	}
 
 	/**
@@ -265,8 +269,8 @@ class TitleBlacklist {
 	 * Invalidate the blacklist cache
 	 */
 	public function invalidate() {
-		global $wgMemc;
-		$wgMemc->delete( wfMemcKey( "title_blacklist_entries" ) );
+		$cache = ObjectCache::getMainWANInstance();
+		$cache->delete( wfMemcKey( "title_blacklist_entries" ) );
 	}
 
 	/**
