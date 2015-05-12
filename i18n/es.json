@@ -6,14 +6,15 @@
 			"Locos epraix",
 			"Remember the dot",
 			"Sanbec",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Macofe"
 		]
 	},
 	"action-titleblacklistlog": "ver el registro de la lista negra de títulos",
 	"log-name-titleblacklist": "Registro de la lista negra de títulos",
 	"titleblacklist-desc": "Permite que los administradores prohíban la creación de páginas y cuentas de usuario mediante una [[MediaWiki:Titleblacklist|lista negra]] y una [[MediaWiki:Titlewhitelist|lista blanca]]",
 	"titleblacklist": "# Esta es una lista negra de títulos. No se pueden crear títulos o usuarios que coincidan con una de estas expresiones regulares.\n# Use «#» para comentarios.\n# Esta es insensible a las mayúsculas por defecto",
-	"titlewhitelist": "# Esta es una lista blanca de títulos. Use «#» para comentarios.\n# Esta es insensible a las mayúsculas por defecto",
+	"titlewhitelist": "# Esta es una lista blanca de títulos. Usa «#» para comentarios.\n# Por omisión, no distingue mayúsculas de minúsculas",
 	"titleblacklist-forbidden-edit": "Se ha bloqueado la creación del título «$2».\nCoincide con la siguiente entrada de lista negra: <code>$1</code>",
 	"titleblacklist-forbidden-move": "«$2» no puede ser trasladado a «$3», porque se ha bloqueado la creación del título «$3».\nCoincide con la siguiente entrada de lista negra: <code>$1</code>",
 	"titleblacklist-forbidden-upload": "Se ha bloqueado el nombre de archivo «$2».\nCoincide con la entrada de lista negra <code>$1</code>.",
