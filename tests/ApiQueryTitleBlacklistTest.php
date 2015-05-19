@@ -25,7 +25,7 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 		$wgTitleBlacklistSources = array(
 			array(
-				'type' => TBLSRC_FILE,
+				'type' => 'file',
 				'src'  => __DIR__ . '/testSource',
 			),
 		);
