@@ -48,7 +48,7 @@ class TitleBlacklist {
 		}
 
 		$sources = $wgTitleBlacklistSources;
-		$sources['local'] = array( 'type' => TBLSRC_MSG );
+		$sources['local'] = array( 'type' => 'message' );
 		$this->mBlacklist = array();
 		foreach( $sources as $sourceName => $source ) {
 			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName ) );
@@ -86,9 +86,9 @@ class TitleBlacklist {
 			return '';	// Return empty string in error case
 		}
 
-		if ( $source['type'] == TBLSRC_MSG ) {
+		if ( $source['type'] == 'message' ) {
 			return wfMessage( 'titleblacklist' )->inContentLanguage()->text();
-		} elseif ( $source['type'] == TBLSRC_LOCALPAGE && count( $source ) >= 2 ) {
+		} elseif ( $source['type'] == 'localpage' && count( $source ) >= 2 ) {
 			$title = Title::newFromText( $source['src'] );
 			if ( is_null( $title ) ) {
 				return '';
@@ -107,9 +107,9 @@ class TitleBlacklist {
 					return $article->getContent();
 				}
 			}
-		} elseif ( $source['type'] == TBLSRC_URL && count( $source ) >= 2 ) {
+		} elseif ( $source['type'] == 'url' && count( $source ) >= 2 ) {
 			return self::getHttp( $source['src'] );
-		} elseif ( $source['type'] == TBLSRC_FILE && count( $source ) >= 2 ) {
+		} elseif ( $source['type'] == 'file' && count( $source ) >= 2 ) {
 			if ( file_exists( $source['src'] ) ) {
 				return file_get_contents( $source['src'] );
 			} else {
