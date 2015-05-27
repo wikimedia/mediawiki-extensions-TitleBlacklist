@@ -19,7 +19,7 @@
 	"titleblacklist-override": "De schwazze Leß övverjonn",
 	"titleblacklist-autoconfirmed-warning": "<strong>Opjepaß:</strong> heh di Sigg kann blohß vun Metmaachere met däm Rääsch <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">autoconfirmed</code> ({{int:group-autoconfirmed}}) weil se en dä „schwazze Leß“ för Övverschreffte op heh dä Enndraach paß:<br /><code>$1</code>",
 	"titleblacklist-warning": "<strong>Opjepaß:</strong> heh di Sigg kann blohß vun Wikki_Köhbeße un vun andere Metmaacher met däm Rääsch <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">tboverride</code>, weil se en dä „schwazze Leß“ för Övverschreffte op heh dä Enndraach paß:<br /><code>$1</code>",
-	"right-tboverride": "De Lėß met verbodde Naame un Titelle för Sigge övverjonn",
+	"right-tboverride": "De Lėß met verbodde Nahme un Övverschreffte för Sigge övverjonn",
 	"right-tboverride-account": "De Leß met verbodde Metmaacher-Name övverjonn",
 	"right-titleblacklistlog": "Donn et Logbohch vun de „schwazze Leß“ för Övvverschreffte aanlohre",
 	"apihelp-titleblacklist-description": "Donn de Övverschreffte vun Sigge, Datteije udder de Nahme vun Metmaacher jähje de „schwazze Leß“ för Övvverschreffte pröhve.",

@@ -29,5 +29,11 @@
 	"titleblacklist-warning": "<strong>Зверніть увагу:</strong> Цю сторінку можуть редагувати лише адміністратори та інші користувачі з правами <code>tboverride</code>, оскільки вона збігається з наступним записом із «чорного списку» назв:<br /><code>$1</code>",
 	"right-tboverride": "ігнорування чорного списку назв сторінок або користувачів",
 	"right-tboverride-account": "ігнорування чорного списку імен користувачів",
-	"right-titleblacklistlog": "перегляд чорного списку назв"
+	"right-titleblacklistlog": "перегляд чорного списку назв",
+	"apihelp-titleblacklist-description": "Перевірити назву статті, файлу або ім'я користувача у чорному списку назв.",
+	"apihelp-titleblacklist-param-title": "Рядок для перевірки у чорному списку.",
+	"apihelp-titleblacklist-param-action": "Дія, яку треба перевірити.",
+	"apihelp-titleblacklist-param-nooverride": "Не намагайтеся обійти чорний список назв.",
+	"apihelp-titleblacklist-example-1": "Перевірити, чи стаття [[Foo]] занесена в чорний список",
+	"apihelp-titleblacklist-example-2": "Перевірити, чи стаття [[Bar]] занесена в чорний список редагування"
 }
