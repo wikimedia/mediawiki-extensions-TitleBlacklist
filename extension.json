@@ -100,5 +100,6 @@
 			"expiry": 900,
 			"warningexpiry": 600
 		}
-	}
+	},
+	"manifest_version": 1
 }
