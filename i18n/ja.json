@@ -10,7 +10,8 @@
 			"Shirayuki",
 			"青子守歌",
 			"Whym",
-			"Sujiniku"
+			"Sujiniku",
+			"2nd-player"
 		]
 	},
 	"action-titleblacklistlog": "ページ名ブラックリストの記録の閲覧",
@@ -31,5 +32,5 @@
 	"right-tboverride": "ページ名/利用者名のブラックリストによる制限を受けない",
 	"right-tboverride-account": "利用者名ブラックリストを無視",
 	"right-titleblacklistlog": "ページ名ブラックリストの記録を閲覧",
-	"apihelp-titleblacklist-param-action": "確認された活動"
+	"apihelp-titleblacklist-param-action": "確認対象の操作"
 }
