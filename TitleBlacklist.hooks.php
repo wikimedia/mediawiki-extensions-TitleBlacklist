@@ -163,11 +163,28 @@ class TitleBlacklistHooks {
 	 * AbortNewAccount hook
 	 *
 	 * @param User $user
+	 * @param string &$message
+	 * @return bool
 	 */
 	public static function abortNewAccount( $user, &$message ) {
 		global $wgUser, $wgRequest;
 		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
 		return self::acceptNewUserName( $user->getName(), $wgUser, $message, $override, true );
+	}
+
+	/**
+	 * AbortAutoAccount hook
+	 *
+	 * @param User $user
+	 * @param string &$message
+	 * @return bool
+	 */
+	public static function abortAutoAccount( $user, &$message ) {
+		global $wgTitleBlacklistBlockAutoAccountCreation;
+		if ( $wgTitleBlacklistBlockAutoAccountCreation ) {
+			return self::abortNewAccount( $user, $message );
+		}
+		return true;
 	}
 
 	/**
