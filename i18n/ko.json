@@ -7,13 +7,14 @@
 			"아라",
 			"Hym411",
 			"Revi",
-			"IRTC1015"
+			"IRTC1015",
+			"Hwangjy9"
 		]
 	},
 	"action-titleblacklistlog": "제목 블랙리스트 로그를 봅니다",
 	"log-name-titleblacklist": "제목 블랙리스트 로그",
 	"log-description-titleblacklist": "이 기록은 제목 블랙리스트 로그의 일치를 추적합니다.",
-	"logentry-titleblacklist-hit-username": "$1 사용자가 제목 블랙리스트 $4 패턴에 일치하는 $3 계정을 생성하려고 하였습니다.",
+	"logentry-titleblacklist-hit-username": "$1 사용자가 제목 블랙리스트 $4 패턴에 일치하는 $3 계정을 {{GENDER:$2|생성하려고 하였습니다}}.",
 	"titleblacklist-desc": "관리자가 [[MediaWiki:Titleblacklist]], [[MediaWiki:Titlewhitelist]]마다 문서와 사용자 계정을 만드는 것을 금지할 수 있습니다",
 	"titleblacklist": "# 제목 금지 목록입니다. 정규 표현식과 일치하는 제목이나 사용자 계정은 만들 수 없습니다.\n# 주석 내용에는 앞에 \"#\"을 붙여 주세요.\n# 기본적으로 규칙은 대소문자를 구별하지 않습니다",
 	"titlewhitelist": "# 제목 허용 목록입니다. 주석 내용에는 앞에 \"#\"을 붙여 주세요.\n# 기본적으로 규칙은 대소문자를 구별하지 않습니다",
