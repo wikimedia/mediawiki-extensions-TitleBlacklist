@@ -89,6 +89,12 @@
 		],
 		"ScribuntoExternalLibraries": [
 			"TitleBlacklistHooks::scribuntoExternalLibraries"
+		],
+		"APIGetAllowedParams": [
+			"TitleBlacklistHooks::onAPIGetAllowedParams"
+		],
+		"AddNewAccountApiForm": [
+			"TitleBlacklistHooks::onAddNewAccountApiForm"
 		]
 	},
 	"config": {
