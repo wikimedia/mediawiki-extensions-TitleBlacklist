@@ -140,7 +140,7 @@ class TitleBlacklist {
 	}
 
 	/**
-	 * Check whether the blacklist restricts giver nuser
+	 * Check whether the blacklist restricts given user
 	 * performing a specific action on the given Title
 	 *
 	 * @param $title Title to check
@@ -151,16 +151,18 @@ class TitleBlacklist {
 	 * blacklisted; otherwise false
 	 */
 	public function userCannot( $title, $user, $action = 'edit', $override = true ) {
+		$entry = $this->isBlacklisted( $title, $action );
+		if ( !$entry ) {
+			return false;
+		}
+		$params = $entry->getParams();
+		if ( isset( $params['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ) {
+			return false;
+		}
 		if ( $override && self::userCanOverride( $user, $action ) ) {
 			return false;
-		} else {
-			$entry = $this->isBlacklisted( $title, $action );
-			if ( !$entry ) {
-				return false;
-			}
-			$params = $entry->getParams();
-			return isset( $params['autoconfirmed'] ) && $user->isAllowed( 'autoconfirmed' ) ? false : $entry;
 		}
+		return $entry;
 	}
 
 	/**
