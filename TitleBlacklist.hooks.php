@@ -48,27 +48,29 @@ class TitleBlacklistHooks {
 
 	/**
 	 * Display a notice if a user is only able to create or edit a page
-	 * because they have tboverride (or autoconfirmed).
+	 * because they have tboverride.
 	 *
 	 * @param Title $title
 	 * @param integer $oldid
 	 * @param array &$notices
 	 */
 	public static function displayBlacklistOverrideNotice( Title $title, $oldid, array &$notices ) {
+		if ( !RequestContext::getMain()->getUser()->isAllowed( 'tboverride' ) ) {
+			return true;
+		}
+
 		$blacklisted = TitleBlacklist::singleton()->isBlacklisted(
 			$title,
 			$title->exists() ? 'edit' : 'create'
 		);
-		if ( $blacklisted ) {
-			$params = $blacklisted->getParams();
-			$msg = wfMessage(
-				isset( $params['autoconfirmed'] ) ?
-				'titleblacklist-autoconfirmed-warning' :
-				'titleblacklist-warning'
-			);
-			$notices['titleblacklist'] = $msg->rawParams(
-				htmlspecialchars( $blacklisted->getRaw() ) )->parseAsBlock();
+		if ( !$blacklisted ) {
+			return true;
 		}
+
+		$params = $blacklisted->getParams();
+		$msg = wfMessage( 'titleblacklist-warning' );
+		$notices['titleblacklist'] = $msg->rawParams(
+			htmlspecialchars( $blacklisted->getRaw() ) )->parseAsBlock();
 		return true;
 	}
 
