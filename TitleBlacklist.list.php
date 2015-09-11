@@ -181,6 +181,13 @@ class TitleBlacklist {
 				return false;
 			}
 		}
+
+		if ( $title->exists() ) {
+			// Don't bother loading the filters if the page is already there.
+			// Blacklisting is only meant to prevent making such titles.
+			return false;
+		}
+
 		$blacklist = $this->getBlacklist();
 		$autoconfirmedItem = false;
 		foreach ( $blacklist as $item ) {
@@ -224,7 +231,7 @@ class TitleBlacklist {
 	/**
 	 * Get the current blacklist
 	 *
-	 * @return Array of TitleBlacklistEntry items
+	 * @return TitleBlacklistEntry[]
 	 */
 	public function getBlacklist() {
 		if ( is_null( $this->mBlacklist ) ) {
