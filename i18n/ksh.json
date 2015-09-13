@@ -17,7 +17,6 @@
 	"titleblacklist-forbidden-new-account": "Enne Metmaacher met dämm Name „$2“ aanzelääje es verbodde per dämm Enndraach <code>$1</code> en de „schwazze Leß.“",
 	"titleblacklist-invalid": "{{PLURAL:$1|De Reih unge stemmp nit un moß|De $1 Reije unge stimme nit un möße|Dat he sull}} för em Affschpeischere eets en Odenung jebraat wäde:",
 	"titleblacklist-override": "De schwazze Leß övverjonn",
-	"titleblacklist-autoconfirmed-warning": "<strong>Opjepaß:</strong> heh di Sigg kann blohß vun Metmaachere met däm Rääsch <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">autoconfirmed</code> ({{int:group-autoconfirmed}}) weil se en dä „schwazze Leß“ för Övverschreffte op heh dä Enndraach paß:<br /><code>$1</code>",
 	"titleblacklist-warning": "<strong>Opjepaß:</strong> heh di Sigg kann blohß vun Wikki_Köhbeße un vun andere Metmaacher met däm Rääsch <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">tboverride</code>, weil se en dä „schwazze Leß“ för Övverschreffte op heh dä Enndraach paß:<br /><code>$1</code>",
 	"right-tboverride": "De Lėß met verbodde Nahme un Övverschreffte för Sigge övverjonn",
 	"right-tboverride-account": "De Leß met verbodde Metmaacher-Name övverjonn",
