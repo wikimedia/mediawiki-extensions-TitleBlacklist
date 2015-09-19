@@ -181,13 +181,6 @@ class TitleBlacklist {
 				return false;
 			}
 		}
-
-		if ( $title->exists() ) {
-			// Don't bother loading the filters if the page is already there.
-			// Blacklisting is only meant to prevent making such titles.
-			return false;
-		}
-
 		$blacklist = $this->getBlacklist();
 		$autoconfirmedItem = false;
 		foreach ( $blacklist as $item ) {
