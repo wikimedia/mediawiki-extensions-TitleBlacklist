@@ -17,7 +17,6 @@
 	"titleblacklist-forbidden-new-account": "'O cunto utente \"$2\" s'è cacciato pe' nun 'o putè crià.<br />\nStu titolo s'azzecca troppo 'a voce ccà, dint'a lista nera, oj cann: <code>$1</code>",
 	"titleblacklist-invalid": "{{PLURAL:$1|'A linea ccà abbascio|'E linee ccà abbascio}} dint'a lista nera 'e titole {{PLURAL:$1|è|songo}} invalide;\npe' piacere curriggite {{PLURAL:$1|chisto|chiste}} primm' 'e reggistrà:",
 	"titleblacklist-override": "Ignora 'a blacklist",
-	"titleblacklist-autoconfirmed-warning": "<strong>Nota:</strong> Sta paggena se putesse cagnà surtanto 'a ll'utente ch'e deritte <code>autoconfirmed</code> pecché s'azzeccassero dint'a lista nera ccà:<br /><code>$1</code>",
 	"titleblacklist-warning": "<strong>Attenziò: sta paggena se putesse cagnà surtanto 'a ll'ammenistrature o l'at'utente c' 'o deritto <code>tboverride</code> pecché currisponne 'a voce ccà d' 'a lista 'e titule bluccate, oj cann:</strong><br /><code>$1</code>",
 	"right-tboverride": "Sovrascrive 'a lista nera 'e titole o utente",
 	"right-tboverride-account": "Sovrascrive 'a lista nera 'utente",
