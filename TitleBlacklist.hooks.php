@@ -33,13 +33,22 @@ class TitleBlacklistHooks {
 			$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
 			if ( $blacklisted instanceof TitleBlacklistEntry ) {
 				$errmsg = $blacklisted->getErrorMessage( 'edit' );
-				ApiBase::$messageMap[$errmsg] = array(
-					'code' => $errmsg,
-					'info' => 'TitleBlacklist prevents this title from being created'
+				$result = ApiMessage::create(
+					wfMessage(
+						$errmsg,
+						htmlspecialchars( $blacklisted->getRaw() ),
+						$title->getFullText()
+					),
+					'titleblacklist-forbidden',
+					array(
+						'message' => $errmsg,
+						'line' => $blacklisted->getRaw(),
+						// As $errmsg usually represents a non-default message here, and ApiBase uses
+						// ->inLanguage( 'en' )->useDatabase( false ) for all messages, it will never result in
+						// useful 'info' text in the API. Try this, extra data seems to override the default.
+						'info' => 'TitleBlacklist prevents this title from being created',
+					)
 				);
-				$result = array( $errmsg,
-					htmlspecialchars( $blacklisted->getRaw() ),
-					$title->getFullText() );
 				return false;
 			}
 		}
