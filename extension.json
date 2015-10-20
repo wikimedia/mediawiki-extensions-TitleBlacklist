@@ -63,9 +63,6 @@
 		"TitleGetEditNotices": [
 			"TitleBlacklistHooks::displayBlacklistOverrideNotice"
 		],
-		"AbortMove": [
-			"TitleBlacklistHooks::abortMove"
-		],
 		"MovePageCheckPermissions": [
 			"TitleBlacklistHooks::onMovePageCheckPermissions"
 		],
