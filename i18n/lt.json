@@ -20,7 +20,6 @@
 	"titleblacklist-forbidden-new-account": "Naudotojo vardą \"$2\" buvo uždrausta sukurti.\nJis atitinką šį juodojo sąrašo įrašą: <code>$1</code>",
 	"titleblacklist-invalid": "Žemiau {{PLURAL:$1|esanti eilutė|esančios eilutės}} pavadinimų juodajame sąraše {{PLURAL:$1|yra}} {{PLURAL:$1|netinkama|netinkamos}};\nprašome {{PLURAL:$1|ją|jas}} pataisyti prieš išsaugant:",
 	"titleblacklist-override": "Ignoruoti juodąjį sąrašą",
-	"titleblacklist-autoconfirmed-warning": "<strong>Pastaba:</strong> Šis puslapis gali būti redaguojamas tik naudotojų, turinčių <code>autoconfirmed</code> teisę, nes jis atitinka šį pavadinimų juodojo sąrašo įrašą:<br /><code>$1</code>",
 	"titleblacklist-warning": "<strong>Įspėjimas: Šį puslapį gali redaguoti tik administratoriai ir kiti naudotojai, turinys  <code>tboverride</code> teisę, nes jis atitinka šį pavadinimų juodojo sąrašo įrašą:</strong><br /><code>$1</code>",
 	"right-tboverride": "Nepaisyti pavadinimų arba naudotojų juodojo sąrašo",
 	"right-tboverride-account": "Nepaisyti naudotojų juodojo sąrašo",

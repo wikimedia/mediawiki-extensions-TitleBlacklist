@@ -1,11 +1,11 @@
 {
-	"name": "Title Blacklist",
+	"name": "TitleBlacklist",
 	"version": "1.5.0",
 	"author": [
 		"Victor Vasiliev",
 		"Fran Rogers"
 	],
-	"url": "https://www.mediawiki.org/wiki/Extension:Title_Blacklist",
+	"url": "https://www.mediawiki.org/wiki/Extension:TitleBlacklist",
 	"descriptionmsg": "titleblacklist-desc",
 	"license-name": "GPL-2.0+",
 	"type": "antispam",
@@ -62,9 +62,6 @@
 		],
 		"TitleGetEditNotices": [
 			"TitleBlacklistHooks::displayBlacklistOverrideNotice"
-		],
-		"AbortMove": [
-			"TitleBlacklistHooks::abortMove"
 		],
 		"MovePageCheckPermissions": [
 			"TitleBlacklistHooks::onMovePageCheckPermissions"

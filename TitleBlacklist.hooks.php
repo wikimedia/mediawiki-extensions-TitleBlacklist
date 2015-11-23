@@ -107,32 +107,6 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * AbortMove hook (<1.24)
-	 *
-	 * @todo: Remove once 1.24 support is dropped
-	 *
-	 * @param $old Title
-	 * @param $nt Title
-	 * @param $user User
-	 * @param $err
-	 * @return bool
-	 */
-	public static function abortMove( $old, $nt, $user, &$err, $reason ) {
-		if ( method_exists( 'MovePage', 'checkPermissions' ) ) {
-			// Don't use this hook, use MovePageCheckPermissions instead
-			return true;
-		}
-
-		$status = new Status();
-		self::onMovePageCheckPermissions( $old, $nt, $user, $reason, $status );
-		if ( !$status->isOK() ) {
-			$err = $status->getHTML();
-		}
-
-		return $status->isOK();
-	}
-
-	/**
 	 * Check whether a user name is acceptable,
 	 * and set a message if unacceptable.
 	 *
