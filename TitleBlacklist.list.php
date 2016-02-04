@@ -464,6 +464,10 @@ class TitleBlacklistEntry {
 		// Strip comments
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
 		$line = trim( $line );
+		// A blank string causes problems later on
+		if ( $line === '' ) {
+			return null;
+		}
 		// Parse the rest of message
 		$pockets = [];
 		if ( !preg_match( '/^(.*?)(\s*<([^<>]*)>)?$/', $line, $pockets ) ) {
