@@ -6,12 +6,32 @@
  * @license GNU General Public License 2.0 or later
  */
 
+use MediaWiki\Auth\AuthManager;
+
 /**
  * Hooks for the TitleBlacklist class
  *
  * @ingroup Extensions
  */
 class TitleBlacklistHooks {
+
+	/**
+	 * Called right after configuration variables have been set.
+	 */
+	public static function onRegistration() {
+		global $wgDisableAuthManager, $wgAuthManagerAutoConfig;
+
+		if ( class_exists( AuthManager::class ) && !$wgDisableAuthManager ) {
+			$wgAuthManagerAutoConfig['preauth'][TitleBlacklistPreAuthenticationProvider::class] =
+				[ 'class' => TitleBlacklistPreAuthenticationProvider::class ];
+		} else {
+			Hooks::register( 'AbortNewAccount', 'TitleBlacklistHooks::abortNewAccount' );
+			Hooks::register( 'AbortAutoAccount', 'TitleBlacklistHooks::abortAutoAccount' );
+			Hooks::register( 'UserCreateForm', 'TitleBlacklistHooks::addOverrideCheckbox' );
+			Hooks::register( 'APIGetAllowedParams', 'TitleBlacklistHooks::onAPIGetAllowedParams' );
+			Hooks::register( 'AddNewAccountApiForm', 'TitleBlacklistHooks::onAddNewAccountApiForm' );
+		}
+	}
 
 	/**
 	 * getUserPermissionsErrorsExpensive hook
@@ -125,23 +145,44 @@ class TitleBlacklistHooks {
 	 * @return bool Acceptable
 	 */
 	public static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true, $log = false ) {
-		global $wgUser;
+		$sv = self::testUserName( $userName, $permissionsUser, $override, $log );
+		if ( !$sv->isGood() ) {
+			$err = Status::wrap( $sv )->getMessage()->parse();
+		}
+		return $sv->isGood();
+	}
+
+	/**
+	 * Check whether a user name is acceptable for account creation or autocreation, and explain
+	 * why not if that's the case.
+	 *
+	 * @param string $userName
+	 * @param User $creatingUser
+	 * @param bool $override Should the test be skipped, if the user has sufficient privileges?
+	 * @param bool $log Log blacklist hits to Special:Log
+	 * @return StatusValue
+	 */
+	public static function testUserName( $userName, User $creatingUser, $override = true, $log = false ) {
 		$title = Title::makeTitleSafe( NS_USER, $userName );
-		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $permissionsUser,
+		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $creatingUser,
 			'new-account', $override );
 		if ( $blacklisted instanceof TitleBlacklistEntry ) {
-			$message = $blacklisted->getErrorMessage( 'new-account' );
-			ApiBase::$messageMap[$message] = array(
-				'code' => $message,
-				'info' => 'TitleBlacklist prevents this username from being created'
-			);
-			$err = wfMessage( $message, $blacklisted->getRaw(), $userName )->parse();
 			if ( $log ) {
-				self::logFilterHitUsername( $wgUser, $title, $blacklisted->getRaw() );
+				self::logFilterHitUsername( $creatingUser, $title, $blacklisted->getRaw() );
 			}
-			return false;
+			$message = $blacklisted->getErrorMessage( 'new-account' );
+			return StatusValue::newFatal( ApiMessage::create(
+				[ $message, $blacklisted->getRaw(), $userName ],
+				'titleblacklist-forbidden',
+				[
+					'message' => $message,
+					'line' => $blacklisted->getRaw(),
+					// The text of the message probably isn't useful API info, so do this instead
+					'info' => 'TitleBlacklist prevents this username from being created',
+				]
+			) );
 		}
-		return true;
+		return StatusValue::newGood();
 	}
 
 	/**
@@ -149,12 +190,18 @@ class TitleBlacklistHooks {
 	 *
 	 * @param User $user
 	 * @param string &$message
+	 * @param Status $status
 	 * @return bool
 	 */
-	public static function abortNewAccount( $user, &$message ) {
+	public static function abortNewAccount( $user, &$message, &$status ) {
 		global $wgUser, $wgRequest;
 		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
-		return self::acceptNewUserName( $user->getName(), $wgUser, $message, $override, true );
+		$sv = self::testUserName( $user->getName(), $wgUser, $override, true );
+		if ( !$sv->isGood() ) {
+			$status = Status::wrap( $sv );
+			$message = $status->getMessage()->parse();
+		}
+		return $sv->isGood();
 	}
 
 	/**
