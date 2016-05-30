@@ -39,9 +39,10 @@ class TitleBlacklistPreAuthenticationProvider extends AbstractPreAuthenticationP
 
 	public function testUserForCreation( $user, $autocreate ) {
 		$sv = StatusValue::newGood();
-		// only check autocreation here, testForAccountCreation will catch the rest
-		if ( $autocreate && $this->blockAutoAccountCreation ) {
-			$sv->merge( TitleBlacklistHooks::testUserName( $user->getName(), $user, false, true ) );
+		$creator = RequestContext::getMain()->getUser();
+
+		if ( !$autocreate || $this->blockAutoAccountCreation ) {
+			$sv->merge( TitleBlacklistHooks::testUserName( $user->getName(), $creator, true, true ) );
 		}
 		return $sv;
 	}
