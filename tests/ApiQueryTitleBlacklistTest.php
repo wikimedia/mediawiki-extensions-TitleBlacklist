@@ -19,16 +19,15 @@ ini_set( 'include_path', ini_get( 'include_path' ) . ':' . __DIR__ . '/../../../
 class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 	function setUp() {
-		global $wgTitleBlacklistSources;
 		parent::setUp();
 		$this->doLogin();
 
-		$wgTitleBlacklistSources = array(
+		$this->setMwGlobals( 'wgTitleBlacklistSources', array(
 			array(
 				'type' => 'file',
 				'src'  => __DIR__ . '/testSource',
 			),
-		);
+		) );
 	}
 
 	/**
@@ -57,6 +56,7 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		global $wgGroupPermissions;
 
 		// Allow all users to override the titleblacklist
+		$this->stashMwGlobals( 'wgGroupPermissions' );
 		$wgGroupPermissions['*']['tboverride'] = true;
 
 		$unlisted = $this->doApiRequest( array(
