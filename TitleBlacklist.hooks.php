@@ -97,6 +97,10 @@ class TitleBlacklistHooks {
 		}
 
 		$params = $blacklisted->getParams();
+		if ( isset( $params['autoconfirmed'] ) ) {
+			return true;
+		}
+
 		$msg = wfMessage( 'titleblacklist-warning' );
 		$notices['titleblacklist'] = $msg->rawParams(
 			htmlspecialchars( $blacklisted->getRaw() ) )->parseAsBlock();
