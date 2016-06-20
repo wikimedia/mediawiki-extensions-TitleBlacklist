@@ -9,7 +9,7 @@
 			"Danny-w"
 		]
 	},
-	"action-titleblacklistlog": "להציג את יומן הרשימה השחורה של הכותרות",
+	"action-titleblacklistlog": "לצפות ביומן הרשימה השחורה של הכותרות",
 	"log-name-titleblacklist": "יומן הרשימה השחורה של הכותרות",
 	"log-description-titleblacklist": "האירועים האלה עוקבים אחרי התאמות לרשימה השחורה.",
 	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|גרם|גרמה}} להתאמה ברשימה השחורה של הכותרות בעת ניסיון ליצור את החשבון $3 שמתאים לפריט הרשימה $4.",
