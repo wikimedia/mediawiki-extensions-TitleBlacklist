@@ -53,6 +53,11 @@ class TitleBlacklistHooks {
 			$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
 			if ( $blacklisted instanceof TitleBlacklistEntry ) {
 				$errmsg = $blacklisted->getErrorMessage( 'edit' );
+				$params = array(
+					$blacklisted->getRaw(),
+					$title->getFullText()
+				);
+				ApiResult::setIndexedTagName( $params, 'param' );
 				$result = ApiMessage::create(
 					wfMessage(
 						$errmsg,
@@ -61,7 +66,10 @@ class TitleBlacklistHooks {
 					),
 					'titleblacklist-forbidden',
 					array(
-						'message' => $errmsg,
+						'message' => array(
+							'key' => $errmsg,
+							'params' => $params,
+						),
 						'line' => $blacklisted->getRaw(),
 						// As $errmsg usually represents a non-default message here, and ApiBase uses
 						// ->inLanguage( 'en' )->useDatabase( false ) for all messages, it will never result in
@@ -175,11 +183,19 @@ class TitleBlacklistHooks {
 				self::logFilterHitUsername( $creatingUser, $title, $blacklisted->getRaw() );
 			}
 			$message = $blacklisted->getErrorMessage( 'new-account' );
+			$params = [
+				$blacklisted->getRaw(),
+				$userName,
+			];
+			ApiResult::setIndexedTagName( $params, 'param' );
 			return StatusValue::newFatal( ApiMessage::create(
 				[ $message, $blacklisted->getRaw(), $userName ],
 				'titleblacklist-forbidden',
 				[
-					'message' => $message,
+					'message' => [
+						'key' => $message,
+						'params' => $params,
+					],
 					'line' => $blacklisted->getRaw(),
 					// The text of the message probably isn't useful API info, so do this instead
 					'info' => 'TitleBlacklist prevents this username from being created',
