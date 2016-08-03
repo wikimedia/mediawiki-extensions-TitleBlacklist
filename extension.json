@@ -54,7 +54,8 @@
 			"scripts": "mediawiki.api.titleblacklist.js",
 			"dependencies": [
 				"mediawiki.api"
-			]
+			],
+			"targets": [ "desktop", "mobile" ]
 		}
 	},
 	"ResourceFileModulePaths": {
