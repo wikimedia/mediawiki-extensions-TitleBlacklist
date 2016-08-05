@@ -79,9 +79,6 @@
 		"ArticleSaveComplete": [
 			"TitleBlacklistHooks::clearBlacklist"
 		],
-		"UnitTestsList": [
-			"TitleBlacklistHooks::unitTestsList"
-		],
 		"ScribuntoExternalLibraries": [
 			"TitleBlacklistHooks::scribuntoExternalLibraries"
 		]

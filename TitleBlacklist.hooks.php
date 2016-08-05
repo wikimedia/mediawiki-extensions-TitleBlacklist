@@ -359,17 +359,6 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * Add phpunit tests
-	 *
-	 * @param array &$files List of test cases and directories to search
-	 * @return bool
-	 */
-	public static function unitTestsList( &$files ) {
-		$files = array_merge( $files, glob( __DIR__ . '/tests/*Test.php' ) );
-		return true;
-	}
-
-	/**
 	 * External Lua library for Scribunto
 	 *
 	 * @param string $engine
