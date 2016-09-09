@@ -4,11 +4,13 @@
 			"Aiman titi",
 			"Meno25",
 			"OsamaK",
-			"Abanima"
+			"Abanima",
+			"علاء"
 		]
 	},
 	"action-titleblacklistlog": "استعراض سجل القائمة السوداء للعناوين",
 	"log-name-titleblacklist": "القائمة السوداء للعناوين",
+	"log-description-titleblacklist": "يتتبع هذا السجل ضربات العناوين التي طابقت القائمة السوداء.",
 	"logentry-titleblacklist-hit-username": "{{GENDER:$2|سبّب|سبّبت}} $1 تفعيل القائمة السوداء للعناوين عندما {{GENDER:$2|حاول|حاولت}} إنشاء الحساب $3 المطابق لـ$4.",
 	"titleblacklist-desc": "يسمح للإداريين بمنع إنشاء الصفحات وحسابات المستخدمين حسب [[MediaWiki:Titleblacklist|قائمة سوداء]] و [[MediaWiki:Titlewhitelist|قائمة بيضاء]]",
 	"titleblacklist": "# هذه قائمة سوداء للعناوين. العناوين والمستخدمون الذين يطابقون تعبيرا منتظما هنا لا يمكن إنشاؤهم.\n# استخدم \"#\" للتعليقات.\n# هذه لا تتأثر بحالة الحروف افتراضيا",
