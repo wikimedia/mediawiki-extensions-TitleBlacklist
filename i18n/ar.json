@@ -31,5 +31,6 @@
 	"apihelp-titleblacklist-param-action": "الفعل للتحقق منه.",
 	"apihelp-titleblacklist-param-nooverride": "لا تحاول تجاوز قائمة العناوين السوداء.",
 	"apihelp-titleblacklist-example-1": "تحقق ما إذا كان [[Foo]] في القائمة السوداء",
-	"apihelp-titleblacklist-example-2": "تحقق ما إذا كان [[Bar]] في القائمة السوداء للتعديل"
+	"apihelp-titleblacklist-example-2": "تحقق ما إذا كان [[Bar]] في القائمة السوداء للتعديل",
+	"apihelp-createaccount-param-ignoretitleblacklist": "تجاهل التحقق من سبوفنج (يتطلب واحدا من الصلاحيات التالية: <code>tboverride</code>, <code>tboverride-account</code>)."
 }
