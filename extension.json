@@ -76,7 +76,7 @@
 		"EditFilter": [
 			"TitleBlacklistHooks::validateBlacklist"
 		],
-		"ArticleSaveComplete": [
+		"PageContentSaveComplete": [
 			"TitleBlacklistHooks::clearBlacklist"
 		],
 		"ScribuntoExternalLibraries": [

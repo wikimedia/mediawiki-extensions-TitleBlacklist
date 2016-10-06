@@ -277,7 +277,7 @@ class TitleBlacklistHooks {
 	 * @param Article $article
 	 */
 	public static function clearBlacklist( &$article, &$user,
-		$text, $summary, $isminor, $iswatch, $section )
+		$content, $summary, $isminor, $iswatch, $section )
 	{
 		$title = $article->getTitle();
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
