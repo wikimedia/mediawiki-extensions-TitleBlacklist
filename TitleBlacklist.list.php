@@ -78,8 +78,8 @@ class TitleBlacklist {
 	/**
 	 * Get the text of a blacklist from a specified source
 	 *
-	 * @param $source A blacklist source from $wgTitleBlacklistSources
-	 * @return The content of the blacklist source as a string
+	 * @param string $source A blacklist source from $wgTitleBlacklistSources
+	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getBlacklistText( $source ) {
 		if ( !is_array( $source ) || count( $source ) <= 0 ) {
@@ -101,10 +101,9 @@ class TitleBlacklist {
 					return '';
 				}
 			} else {
-				$article = new Article( $title );
-				if ( $article->exists() ) {
-					$article->followRedirect();
-					return $article->getContent();
+				$page = WikiPage::factory( $title );
+				if ( $page->exists() ) {
+					return ContentHandler::getContentText( $page->getContent() );
 				}
 			}
 		} elseif ( $source['type'] == 'url' && count( $source ) >= 2 ) {
