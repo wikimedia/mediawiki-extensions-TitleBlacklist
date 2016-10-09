@@ -272,7 +272,7 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * ArticleSaveComplete hook
+	 * PageContentSaveComplete hook
 	 *
 	 * @param Article $article
 	 */
