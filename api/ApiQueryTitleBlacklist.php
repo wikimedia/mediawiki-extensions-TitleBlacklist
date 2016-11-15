@@ -36,10 +36,7 @@ class ApiQueryTitleBlacklist extends ApiBase {
 	public function execute() {
 		$params = $this->extractRequestParams();
 		$action = $params['action'];
-		$override = true;
-		if( isset( $params['nooverride'] ) ) {
-			$override = false;
-		}
+		$override = !$params['nooverride'];
 
 		// createtalk and createpage are useless as they're treated exactly like create
 		if ( $action === 'createpage' || $action === 'createtalk' ) {
@@ -86,6 +83,7 @@ class ApiQueryTitleBlacklist extends ApiBase {
 				),
 			),
 			'nooverride' => array(
+				ApiBase::PARAM_DFLT => false,
 			)
 		);
 	}
