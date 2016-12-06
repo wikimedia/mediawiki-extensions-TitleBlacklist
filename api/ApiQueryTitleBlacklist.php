@@ -45,7 +45,11 @@ class ApiQueryTitleBlacklist extends ApiBase {
 
 		$title = Title::newFromText( $params['title'] );
 		if ( !$title ) {
-			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+			if ( is_callable( [ $this, 'dieWithError' ] ) ) {
+				$this->dieWithError( array( 'apierror-invalidtitle', wfEscapeWikiText( $params['title'] ) ) );
+			} else {
+				$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+			}
 		}
 
 		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $this->getUser(), $action, $override );
