@@ -7,6 +7,7 @@
 			"Srdjan m"
 		]
 	},
+	"log-name-titleblacklist": "Zapisnik crne liste naslova",
 	"log-description-titleblacklist": "Ovaj zapisnik prikazuje pogotke u crnoj listi naslova.",
 	"titleblacklist-desc": "Omogućuje administratorima da zabrane pravljenje stranica i korisničkih računa putem spiskova [[MediaWiki:Titleblacklist|zabranjenih]] i [[MediaWiki:Titlewhitelist|dopuštenih]] naslova",
 	"titleblacklist": "# Ovo je spisak zabranjenih naslova. Naslovi i korisnici koji se nalaze na ovom spisku neće moći biti napravljeni.\n# Koristite \"#\" za komentare.\n# Ovo ne razlikuje velika i mala slova po pretpostavljenom",
