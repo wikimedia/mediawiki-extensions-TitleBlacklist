@@ -30,6 +30,7 @@
 	"right-tboverride-account": "{{doc-right|tboverride-account}}",
 	"right-titleblacklistlog": "{{doc-right|titleblacklistlog}}",
 	"apihelp-titleblacklist-description": "{{doc-apihelp-description|titleblacklist}}",
+	"apihelp-titleblacklist-summary": "{{doc-apihelp-summary|titleblacklist}}",
 	"apihelp-titleblacklist-param-title": "{{doc-apihelp-param|titleblacklist|title}}",
 	"apihelp-titleblacklist-param-action": "{{doc-apihelp-param|titleblacklist|action}}",
 	"apihelp-titleblacklist-param-nooverride": "{{doc-apihelp-param|titleblacklist|nooverride}}",

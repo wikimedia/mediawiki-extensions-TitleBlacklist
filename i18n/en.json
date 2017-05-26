@@ -21,6 +21,7 @@
 	"right-tboverride-account": "Override the username blacklist",
 	"right-titleblacklistlog": "View title blacklist log",
 	"apihelp-titleblacklist-description": "Validate an article title, filename, or username against the TitleBlacklist.",
+	"apihelp-titleblacklist-summary": "Validate an article title, filename, or username against the TitleBlacklist.",
 	"apihelp-titleblacklist-param-title": "The string to validate against the blacklist.",
 	"apihelp-titleblacklist-param-action": "The action to be checked.",
 	"apihelp-titleblacklist-param-nooverride": "Don't try to override the titleblacklist.",
