@@ -447,7 +447,7 @@ class TitleBlacklistEntry {
 	 * Create a new TitleBlacklistEntry from a line of text
 	 *
 	 * @param $line String containing a line of blacklist text
-	 * @return TitleBlacklistEntry
+	 * @return TitleBlacklistEntry|null
 	 */
 	public static function newFromString( $line, $source ) {
 		$raw = $line; // Keep line for raw data
@@ -456,11 +456,13 @@ class TitleBlacklistEntry {
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
 		$line = trim( $line );
 		// Parse the rest of message
-		preg_match( '/^(.*?)(\s*<([^<>]*)>)?$/', $line, $pockets );
-		@list( $full, $regex, $null, $opts_str ) = $pockets;
-		$regex = trim( $regex );
+		$pockets = [];
+		if ( !preg_match( '/^(.*?)(\s*<([^<>]*)>)?$/', $line, $pockets ) ) {
+			return null;
+		}
+		$regex = trim( $pockets[1] );
 		$regex = str_replace( '_', ' ', $regex ); // We'll be matching against text form
-		$opts_str = trim( $opts_str );
+		$opts_str = isset( $pockets[3] ) ? trim( $pockets[3] ) : '';
 		// Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
 		foreach ( $opts as $opt ) {
