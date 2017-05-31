@@ -242,7 +242,6 @@ class TitleBlacklistHooks {
 	 * @param $editor EditPage
 	 */
 	public static function validateBlacklist( $editor, $text, $section, &$error ) {
-		global $wgUser;
 		$title = $editor->mTitle;
 
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
