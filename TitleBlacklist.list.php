@@ -62,7 +62,9 @@ class TitleBlacklist {
 		$cache = ObjectCache::getMainWANInstance();
 		// Try to find something in the cache
 		$cachedBlacklist = $cache->get( wfMemcKey( "title_blacklist_entries" ) );
-		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0 && ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION ) ) {
+		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0
+			&& ( $cachedBlacklist[0]->getFormatVersion() == self::VERSION )
+		) {
 			$this->mBlacklist = $cachedBlacklist;
 			return;
 		}
@@ -71,9 +73,13 @@ class TitleBlacklist {
 		$sources['local'] = array( 'type' => 'message' );
 		$this->mBlacklist = array();
 		foreach( $sources as $sourceName => $source ) {
-			$this->mBlacklist = array_merge( $this->mBlacklist, $this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName ) );
+			$this->mBlacklist = array_merge(
+				$this->mBlacklist,
+				$this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName )
+			);
 		}
-		$cache->set( wfMemcKey( "title_blacklist_entries" ), $this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
+		$cache->set( wfMemcKey( "title_blacklist_entries" ),
+			$this->mBlacklist, $wgTitleBlacklistCaching['expiry'] );
 		wfDebugLog( 'TitleBlacklist-cache', 'Updated ' . wfMemcKey( "title_blacklist_entries" )
 			. ' with ' . count( $this->mBlacklist ) . ' entries.' );
 	}
@@ -86,13 +92,16 @@ class TitleBlacklist {
 
 		$cache = ObjectCache::getMainWANInstance();
 		$cachedWhitelist = $cache->get( wfMemcKey( "title_whitelist_entries" ) );
-		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0 && ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION ) ) {
+		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0
+			&& ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION )
+		) {
 			$this->mWhitelist = $cachedWhitelist;
 			return;
 		}
 		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
 				->inContentLanguage()->text(), 'whitelist' );
-		$cache->set( wfMemcKey( "title_whitelist_entries" ), $this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
+		$cache->set( wfMemcKey( "title_whitelist_entries" ),
+			$this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
 	}
 
 	/**
@@ -278,7 +287,9 @@ class TitleBlacklist {
 		$warnkey = wfMemcKey( "titleblacklistwarning", md5( $url ) );
 		$result = $messageMemc->get( $key );
 		$warn = $messageMemc->get( $warnkey );
-		if ( !is_string( $result ) || ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) ) ) {
+		if ( !is_string( $result )
+			|| ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) )
+		) {
 			$result = Http::get( $url );
 			$messageMemc->set( $warnkey, 1, $wgTitleBlacklistCaching['warningexpiry'] );
 			$messageMemc->set( $key, $result, $wgTitleBlacklistCaching['expiry'] );
@@ -500,7 +511,8 @@ class TitleBlacklistEntry {
 				case 'ns':
 					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
 					if ( is_string( $cpf_result ) ) {
-						$regex = str_replace( $mword[0], $cpf_result, $regex );	// All result will have the same value, so we can just use str_seplace()
+						// All result will have the same value, so we can just use str_seplace()
+						$regex = str_replace( $mword[0], $cpf_result, $regex );
 					}
 					break;
 				case 'int':

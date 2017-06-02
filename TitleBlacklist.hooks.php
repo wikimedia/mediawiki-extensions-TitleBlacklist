@@ -29,7 +29,8 @@ class TitleBlacklistHooks {
 			Hooks::register( 'AbortAutoAccount', 'TitleBlacklistHooks::abortAutoAccount' );
 			Hooks::register( 'UserCreateForm', 'TitleBlacklistHooks::addOverrideCheckbox' );
 			Hooks::register( 'APIGetAllowedParams', 'TitleBlacklistHooks::onAPIGetAllowedParams' );
-			Hooks::register( 'AddNewAccountApiForm', 'TitleBlacklistHooks::onAddNewAccountApiForm' );
+			Hooks::register( 'AddNewAccountApiForm',
+				'TitleBlacklistHooks::onAddNewAccountApiForm' );
 		}
 	}
 
@@ -71,9 +72,10 @@ class TitleBlacklistHooks {
 							'params' => $params,
 						),
 						'line' => $blacklisted->getRaw(),
-						// As $errmsg usually represents a non-default message here, and ApiBase uses
-						// ->inLanguage( 'en' )->useDatabase( false ) for all messages, it will never result in
-						// useful 'info' text in the API. Try this, extra data seems to override the default.
+						// As $errmsg usually represents a non-default message here, and ApiBase
+						// uses ->inLanguage( 'en' )->useDatabase( false ) for all messages, it will
+						// never result in useful 'info' text in the API. Try this, extra data seems
+						// to override the default.
 						'info' => 'TitleBlacklist prevents this title from being created',
 					)
 				);
@@ -125,7 +127,9 @@ class TitleBlacklistHooks {
 	 * @param Status $status
 	 * @return bool
 	 */
-	public static function onMovePageCheckPermissions( Title $oldTitle, Title $newTitle, User $user, $reason, Status $status ) {
+	public static function onMovePageCheckPermissions(
+		Title $oldTitle, Title $newTitle, User $user, $reason, Status $status
+	) {
 		$titleBlacklist = TitleBlacklist::singleton();
 		$blacklisted = $titleBlacklist->userCannot( $newTitle, $user, 'move' );
 		if ( !$blacklisted ) {
@@ -153,7 +157,9 @@ class TitleBlacklistHooks {
 	 *
 	 * @return bool Acceptable
 	 */
-	public static function acceptNewUserName( $userName, $permissionsUser, &$err, $override = true, $log = false ) {
+	public static function acceptNewUserName(
+		$userName, $permissionsUser, &$err, $override = true, $log = false
+	) {
 		$sv = self::testUserName( $userName, $permissionsUser, $override, $log );
 		if ( !$sv->isGood() ) {
 			$err = Status::wrap( $sv )->getMessage()->parse();
@@ -171,7 +177,9 @@ class TitleBlacklistHooks {
 	 * @param bool $log Log blacklist hits to Special:Log
 	 * @return StatusValue
 	 */
-	public static function testUserName( $userName, User $creatingUser, $override = true, $log = false ) {
+	public static function testUserName(
+		$userName, User $creatingUser, $override = true, $log = false
+	) {
 		$title = Title::makeTitleSafe( NS_USER, $userName );
 		$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $creatingUser,
 			'new-account', $override );
@@ -254,7 +262,9 @@ class TitleBlacklistHooks {
 			}
 
 			$errmsg = wfMessage( 'titleblacklist-invalid' )->numParams( count( $ok ) )->text();
-			$errlines = '* <code>' . implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) . '</code>';
+			$errlines = '* <code>' .
+				implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) .
+				'</code>';
 			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
 				$errmsg .
 				"\n" .

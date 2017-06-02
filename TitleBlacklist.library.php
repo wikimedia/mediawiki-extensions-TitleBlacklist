@@ -6,7 +6,9 @@ class Scribunto_LuaTitleBlacklistLibrary extends Scribunto_LuaLibraryBase {
 			'test' => array( $this, 'test' ),
 		);
 
-		return $this->getEngine()->registerInterface( __DIR__ . '/mw.ext.TitleBlacklist.lua', $lib, array() );
+		return $this->getEngine()->registerInterface(
+			__DIR__ . '/mw.ext.TitleBlacklist.lua', $lib, array()
+		);
 	}
 
 	public function test( $action = null, $title = null ) {

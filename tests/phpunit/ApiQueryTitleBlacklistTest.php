@@ -11,7 +11,8 @@
  * Ian Baker <ian@wikimedia.org>
  */
 
-ini_set( 'include_path', ini_get( 'include_path' ) . ':' . __DIR__ . '/../../../tests/phpunit/includes/api' );
+ini_set( 'include_path', ini_get( 'include_path' ) . ':' .
+	__DIR__ . '/../../../tests/phpunit/includes/api' );
 
 /**
  * @group medium
@@ -95,7 +96,8 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 			'Listed title returns error'
 		);
 		$this->assertEquals(
-			"The title \"bar\" has been banned from creation.\nIt matches the following blacklist entry: <code>[Bb]ar #example blacklist entry</code>",
+			"The title \"bar\" has been banned from creation.\nIt matches the following " .
+				"blacklist entry: <code>[Bb]ar #example blacklist entry</code>",
 			$listed[0]['titleblacklist']['reason'],
 			'Listed title error text is as expected'
 		);
