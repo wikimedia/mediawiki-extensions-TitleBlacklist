@@ -24,12 +24,12 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		$this->doLogin();
 
 		TitleBlacklist::destroySingleton();
-		$this->setMwGlobals( 'wgTitleBlacklistSources', array(
-			array(
+		$this->setMwGlobals( 'wgTitleBlacklistSources', [
+			[
 				'type' => 'file',
 				'src'  => __DIR__ . '/testSource',
-			),
-		) );
+			],
+		] );
 	}
 
 	function tearDown() {
@@ -41,13 +41,13 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Verify we allow a title which is not blacklisted
 	 */
 	function testCheckingUnlistedTitle() {
-		$unlisted = $this->doApiRequest( array(
+		$unlisted = $this->doApiRequest( [
 			'action' => 'titleblacklist',
 			// evil_acc is blacklisted as <newaccountonly>
 			'tbtitle' => 'evil_acc',
 			'tbaction' => 'create',
 			'tbnooverride' => true,
-		) );
+		] );
 
 		$this->assertEquals(
 			'ok',
@@ -66,11 +66,11 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 		$this->stashMwGlobals( 'wgGroupPermissions' );
 		$wgGroupPermissions['*']['tboverride'] = true;
 
-		$unlisted = $this->doApiRequest( array(
+		$unlisted = $this->doApiRequest( [
 			'action' => 'titleblacklist',
 			'tbtitle' => 'bar',
 			'tbaction' => 'create',
-		) );
+		] );
 
 		$this->assertEquals(
 			'ok',
@@ -83,12 +83,12 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Verify a blacklisted title gives out an error.
 	 */
 	function testCheckingBlackListedTitle() {
-		$listed = $this->doApiRequest( array(
+		$listed = $this->doApiRequest( [
 			'action' => 'titleblacklist',
 			'tbtitle' => 'bar',
 			'tbaction' => 'create',
 			'tbnooverride' => true,
-		) );
+		] );
 
 		$this->assertEquals(
 			'blacklisted',
@@ -119,16 +119,16 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Tests integration with the AntiSpoof extension
 	 */
 	function testAntiSpoofIntegration() {
-		if ( !class_exists( 'AntiSpoof') ) {
+		if ( !class_exists( 'AntiSpoof' ) ) {
 			$this->markTestSkipped( "This test requires the AntiSpoof extension" );
 		}
 
-		$listed = $this->doApiRequest( array(
+		$listed = $this->doApiRequest( [
 			'action' => 'titleblacklist',
 			'tbtitle' => 'AVVVV',
 			'tbaction' => 'create',
 			'tbnooverride' => true,
-		) );
+		] );
 
 		$this->assertEquals(
 			'blacklisted',

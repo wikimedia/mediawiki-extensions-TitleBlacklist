@@ -47,10 +47,10 @@ class ApiQueryTitleBlacklist extends ApiBase {
 		if ( !$title ) {
 			if ( is_callable( [ $this, 'dieWithError' ] ) ) {
 				$this->dieWithError(
-					array( 'apierror-invalidtitle', wfEscapeWikiText( $params['title'] ) )
+					[ 'apierror-invalidtitle', wfEscapeWikiText( $params['title'] ) ]
 				);
 			} else {
-				$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+				$this->dieUsageMsg( [ 'invalidtitle', $params['title'] ] );
 			}
 		}
 
@@ -59,10 +59,10 @@ class ApiQueryTitleBlacklist extends ApiBase {
 		);
 		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			// this title is blacklisted.
-			$result = array(
+			$result = [
 				htmlspecialchars( $blacklisted->getRaw() ),
 				htmlspecialchars( $params['title'] ),
-			);
+			];
 
 			$res = $this->getResult();
 			$res->addValue( 'titleblacklist', 'result', 'blacklisted' );
@@ -78,33 +78,33 @@ class ApiQueryTitleBlacklist extends ApiBase {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'title' => array(
+		return [
+			'title' => [
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'action' => array(
+			],
+			'action' => [
 				ApiBase::PARAM_DFLT => 'edit',
 				ApiBase::PARAM_ISMULTI => false,
-				ApiBase::PARAM_TYPE => array(
+				ApiBase::PARAM_TYPE => [
 					// createtalk and createpage are useless as they're treated exactly like create
 					'create', 'edit', 'upload', 'createtalk', 'createpage', 'move', 'new-account'
-				),
-			),
-			'nooverride' => array(
+				],
+			],
+			'nooverride' => [
 				ApiBase::PARAM_DFLT => false,
-			)
-		);
+			]
+		];
 	}
 
 	/**
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=titleblacklist&tbtitle=Foo'
 				=> 'apihelp-titleblacklist-example-1',
 			'action=titleblacklist&tbtitle=Bar&tbaction=edit'
 				=> 'apihelp-titleblacklist-example-2',
-		);
+		];
 	}
 }

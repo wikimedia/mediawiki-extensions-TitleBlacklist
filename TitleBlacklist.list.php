@@ -7,7 +7,6 @@
  * @file
  */
 
-//@{
 /**
  * @ingroup Extensions
  */
@@ -70,9 +69,9 @@ class TitleBlacklist {
 		}
 
 		$sources = $wgTitleBlacklistSources;
-		$sources['local'] = array( 'type' => 'message' );
-		$this->mBlacklist = array();
-		foreach( $sources as $sourceName => $source ) {
+		$sources['local'] = [ 'type' => 'message' ];
+		$this->mBlacklist = [];
+		foreach ( $sources as $sourceName => $source ) {
 			$this->mBlacklist = array_merge(
 				$this->mBlacklist,
 				$this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName )
@@ -156,7 +155,7 @@ class TitleBlacklist {
 	 */
 	public static function parseBlacklist( $list, $sourceName ) {
 		$lines = preg_split( "/\r?\n/", $list );
-		$result = array();
+		$result = [];
 		foreach ( $lines as $line ) {
 			$line = TitleBlacklistEntry :: newFromString( $line, $sourceName );
 			if ( $line ) {
@@ -312,7 +311,7 @@ class TitleBlacklist {
 	 * @return Array of bad entries; empty array means blacklist is valid
 	 */
 	public function validate( $blacklist ) {
-		$badEntries = array();
+		$badEntries = [];
 		foreach ( $blacklist as $e ) {
 			wfSuppressWarnings();
 			$regex = $e->getRegex();
@@ -336,7 +335,6 @@ class TitleBlacklist {
 			( $action == 'new-account' && $user->isAllowed( 'tboverride-account' ) );
 	}
 }
-
 
 /**
  * Represents a title blacklist entry
@@ -370,15 +368,15 @@ class TitleBlacklistEntry {
 	private function filtersNewAccounts() {
 		global $wgTitleBlacklistUsernameSources;
 
-		if( $wgTitleBlacklistUsernameSources === '*' ) {
+		if ( $wgTitleBlacklistUsernameSources === '*' ) {
 			return true;
 		}
 
-		if( !$wgTitleBlacklistUsernameSources ) {
+		if ( !$wgTitleBlacklistUsernameSources ) {
 			return false;
 		}
 
-		if( !is_array( $wgTitleBlacklistUsernameSources ) ) {
+		if ( !is_array( $wgTitleBlacklistUsernameSources ) ) {
 			throw new Exception(
 				'$wgTitleBlacklistUsernameSources must be "*", false or an array' );
 		}
@@ -462,7 +460,7 @@ class TitleBlacklistEntry {
 	 */
 	public static function newFromString( $line, $source ) {
 		$raw = $line; // Keep line for raw data
-		$options = array();
+		$options = [];
 		// Strip comments
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
 		$line = trim( $line );
@@ -507,7 +505,7 @@ class TitleBlacklistEntry {
 		preg_match_all( '/{{\s*([a-z]+)\s*:\s*(.+?)\s*}}/', $regex, $magicwords, PREG_SET_ORDER );
 		foreach ( $magicwords as $mword ) {
 			global $wgParser;	// Functions we're calling don't need, nevertheless let's use it
-			switch( strtolower( $mword[1] ) ) {
+			switch ( strtolower( $mword[1] ) ) {
 				case 'ns':
 					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
 					if ( is_string( $cpf_result ) ) {
@@ -523,7 +521,7 @@ class TitleBlacklistEntry {
 			}
 		}
 		// Return result
-		if( $regex ) {
+		if ( $regex ) {
 			return new TitleBlacklistEntry( $regex, $options, $raw, $source );
 		} else {
 			return null;
@@ -561,14 +559,18 @@ class TitleBlacklistEntry {
 	/**
 	 * @return string The format version
 	 */
-	public function getFormatVersion() { return $this->mFormatVersion; }
+	public function getFormatVersion() {
+		return $this->mFormatVersion;
+	}
 
 	/**
 	 * Set the format version
 	 *
 	 * @param $v string New version to set
 	 */
-	public function setFormatVersion( $v ) { $this->mFormatVersion = $v; }
+	public function setFormatVersion( $v ) {
+		$this->mFormatVersion = $v;
+	}
 
 	/**
 	 * Return the error message name for the blacklist entry.
@@ -585,5 +587,3 @@ class TitleBlacklistEntry {
 		return $message ? $message : "titleblacklist-forbidden-{$operation}";
 	}
 }
-
-//@}

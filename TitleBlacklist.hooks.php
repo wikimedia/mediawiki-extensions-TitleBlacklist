@@ -54,10 +54,10 @@ class TitleBlacklistHooks {
 			$blacklisted = TitleBlacklist::singleton()->userCannot( $title, $user, $action );
 			if ( $blacklisted instanceof TitleBlacklistEntry ) {
 				$errmsg = $blacklisted->getErrorMessage( 'edit' );
-				$params = array(
+				$params = [
 					$blacklisted->getRaw(),
 					$title->getFullText()
-				);
+				];
 				ApiResult::setIndexedTagName( $params, 'param' );
 				$result = ApiMessage::create(
 					wfMessage(
@@ -66,18 +66,18 @@ class TitleBlacklistHooks {
 						$title->getFullText()
 					),
 					'titleblacklist-forbidden',
-					array(
-						'message' => array(
+					[
+						'message' => [
 							'key' => $errmsg,
 							'params' => $params,
-						),
+						],
 						'line' => $blacklisted->getRaw(),
 						// As $errmsg usually represents a non-default message here, and ApiBase
 						// uses ->inLanguage( 'en' )->useDatabase( false ) for all messages, it will
 						// never result in useful 'info' text in the API. Try this, extra data seems
 						// to override the default.
 						'info' => 'TitleBlacklist prevents this title from being created',
-					)
+					]
 				);
 				return false;
 			}
@@ -265,12 +265,12 @@ class TitleBlacklistHooks {
 			$errlines = '* <code>' .
 				implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) .
 				'</code>';
-			$error = Html::openElement( 'div', array( 'class' => 'errorbox' ) ) .
+			$error = Html::openElement( 'div', [ 'class' => 'errorbox' ] ) .
 				$errmsg .
 				"\n" .
 				$errlines .
 				Html::closeElement( 'div' ) . "\n" .
-				Html::element( 'br', array( 'clear' => 'all' ) ) . "\n";
+				Html::element( 'br', [ 'clear' => 'all' ] ) . "\n";
 
 			// $error will be displayed by the edit class
 		}
@@ -283,8 +283,8 @@ class TitleBlacklistHooks {
 	 * @param Article $article
 	 */
 	public static function clearBlacklist( &$article, &$user,
-		$content, $summary, $isminor, $iswatch, $section )
-	{
+		$content, $summary, $isminor, $iswatch, $section
+	) {
 		$title = $article->getTitle();
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			TitleBlacklist::singleton()->invalidate();
@@ -311,10 +311,10 @@ class TitleBlacklistHooks {
 	 */
 	public static function onAPIGetAllowedParams( ApiBase &$module, array &$params ) {
 		if ( $module instanceof ApiCreateAccount ) {
-			$params['ignoretitleblacklist'] = array(
+			$params['ignoretitleblacklist'] = [
 				ApiBase::PARAM_TYPE => 'boolean',
 				ApiBase::PARAM_DFLT => false
-			);
+			];
 		}
 
 		return true;
@@ -356,9 +356,9 @@ class TitleBlacklistHooks {
 			$logEntry = new ManualLogEntry( 'titleblacklist', 'hit-username' );
 			$logEntry->setPerformer( $user );
 			$logEntry->setTarget( $title );
-			$logEntry->setParameters( array(
+			$logEntry->setParameters( [
 				'4::entry' => $entry,
-			) );
+			] );
 			$logid = $logEntry->insert();
 			$logEntry->publish( $logid );
 		}
@@ -372,7 +372,7 @@ class TitleBlacklistHooks {
 	 * @return bool
 	 */
 	public static function scribuntoExternalLibraries( $engine, array &$extraLibraries ) {
-		if( $engine == 'lua' ) {
+		if ( $engine == 'lua' ) {
 			$extraLibraries['mw.ext.TitleBlacklist'] = 'Scribunto_LuaTitleBlacklistLibrary';
 		}
 		return true;
