@@ -15,7 +15,11 @@
  * Implements a title blacklist for MediaWiki
  */
 class TitleBlacklist {
-	private $mBlacklist = null, $mWhitelist = null;
+	/** @var array */
+	private $mBlacklist = null;
+
+	/** @var array */
+	private $mWhitelist = null;
 
 	/** @var TitleBlacklist */
 	protected static $instance = null;
@@ -340,12 +344,35 @@ class TitleBlacklist {
  * Represents a title blacklist entry
  */
 class TitleBlacklistEntry {
-	private
-		$mRaw,           ///< Raw line
-		$mRegex,         ///< Regular expression to match
-		$mParams,        ///< Parameters for this entry
-		$mFormatVersion, ///< Entry format version
-		$mSource;        ///< Source of this entry
+	/**
+	 * Raw line
+	 * @var string
+	 */
+	private $mRaw;
+
+	/**
+	 * Regular expression to match
+	 * @var string
+	 */
+	private $mRegex;
+
+	/**
+	 * Parameters for this entry
+	 * @var array
+	 */
+	private $mParams;
+
+	/**
+	 * Entry format version
+	 * @var string
+	 */
+	private $mFormatVersion;
+
+	/**
+	 * Source of this entry
+	 * @var string
+	 */
+	private $mSource;
 
 	/**
 	 * Construct a new TitleBlacklistEntry.
