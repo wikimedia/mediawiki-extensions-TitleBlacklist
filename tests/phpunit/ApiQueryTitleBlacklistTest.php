@@ -135,6 +135,5 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 			$listed[0]['titleblacklist']['result'],
 			'Spoofed title is blacklisted'
 		);
-
 	}
 }

@@ -253,7 +253,6 @@ class TitleBlacklistHooks {
 		$title = $editor->mTitle;
 
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
-
 			$blackList = TitleBlacklist::singleton();
 			$bl = $blackList->parseBlacklist( $text, 'page' );
 			$ok = $blackList->validate( $bl );

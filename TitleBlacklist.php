@@ -1,7 +1,6 @@
 <?php
 
 if ( function_exists( 'wfLoadExtension' ) ) {
-
 	/** @defgroup Title blacklist source types
 	 *  @deprecated Use values directly instead.
 	 */

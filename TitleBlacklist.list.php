@@ -45,7 +45,6 @@ class TitleBlacklist {
 	 * defined.
 	 */
 	public static function destroySingleton() {
-
 		if ( !defined( 'MW_PHPUNIT_TEST' ) ) {
 			throw new MWException(
 				'Can not invoke ' . __METHOD__ . '() ' .
