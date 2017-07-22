@@ -17,5 +17,6 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|'A seguenda linèe|Le seguende linèe}} jndr'à lista gnore de le titele {{PLURAL:$1|jè|sonde}} invalide;\npe piacere corregge {{PLURAL:$1|jedde|lore}} apprime de reggistrà:",
 	"titleblacklist-override": "No scè penzanne 'a lista gnore",
 	"right-tboverride": "Sovrascrive 'a lista gnore de le titole o de le utinde",
-	"right-tboverride-account": "Sovrasrive 'a lista gnore de le utinde"
+	"right-tboverride-account": "Sovrasrive 'a lista gnore de le utinde",
+	"apihelp-titleblacklist-param-action": "L'azione ha state verificate."
 }

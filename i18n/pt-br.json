@@ -20,5 +20,7 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|A seguinte linha|As seguintes linhas}} da lista negra {{PLURAL:$1|é inválida|são inválidas}}. \n{{PLURAL:$1|Corrija-a|Corrija-as}} antes de salvar:",
 	"titleblacklist-override": "Ignorar a lista negra.",
 	"right-tboverride": "Contornar a lista negra de títulos e nomes de usuário",
-	"right-tboverride-account": "Contornar a lista negra de nomes de usuários"
+	"right-tboverride-account": "Contornar a lista negra de nomes de usuários",
+	"right-titleblacklistlog": "Ver o registro da lista negra de títulos",
+	"apihelp-titleblacklist-param-action": "A ação a ser verificada."
 }
