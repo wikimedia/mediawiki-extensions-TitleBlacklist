@@ -160,7 +160,7 @@ class TitleBlacklist {
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = [];
 		foreach ( $lines as $line ) {
-			$line = TitleBlacklistEntry :: newFromString( $line, $sourceName );
+			$line = TitleBlacklistEntry::newFromString( $line, $sourceName );
 			if ( $line ) {
 				$result[] = $line;
 			}
