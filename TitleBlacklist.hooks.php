@@ -37,10 +37,10 @@ class TitleBlacklistHooks {
 	/**
 	 * getUserPermissionsErrorsExpensive hook
 	 *
-	 * @param $title Title
-	 * @param $user User
-	 * @param $action
-	 * @param $result
+	 * @param Title $title
+	 * @param User $user
+	 * @param string $action
+	 * @param array &$result
 	 * @return bool
 	 */
 	public static function userCan( $title, $user, $action, &$result ) {
@@ -90,8 +90,9 @@ class TitleBlacklistHooks {
 	 * because they have tboverride.
 	 *
 	 * @param Title $title
-	 * @param integer $oldid
+	 * @param int $oldid
 	 * @param array &$notices
+	 * @return true
 	 */
 	public static function displayBlacklistOverrideNotice( Title $title, $oldid, array &$notices ) {
 		if ( !RequestContext::getMain()->getUser()->isAllowed( 'tboverride' ) ) {
@@ -123,7 +124,7 @@ class TitleBlacklistHooks {
 	 * @param Title $oldTitle
 	 * @param Title $newTitle
 	 * @param User $user
-	 * @param $reason
+	 * @param string $reason
 	 * @param Status $status
 	 * @return bool
 	 */
@@ -155,6 +156,11 @@ class TitleBlacklistHooks {
 	 * Used by abortNewAccount and centralAuthAutoCreate.
 	 * May also be called externally to vet alternate account names.
 	 *
+	 * @param string $userName
+	 * @param User $permissionsUser
+	 * @param string &$err
+	 * @param bool $override
+	 * @param bool $log
 	 * @return bool Acceptable
 	 */
 	public static function acceptNewUserName(
@@ -215,7 +221,7 @@ class TitleBlacklistHooks {
 	 *
 	 * @param User $user
 	 * @param string &$message
-	 * @param Status $status
+	 * @param Status &$status
 	 * @return bool
 	 */
 	public static function abortNewAccount( $user, &$message, &$status ) {
@@ -247,7 +253,11 @@ class TitleBlacklistHooks {
 	/**
 	 * EditFilter hook
 	 *
-	 * @param $editor EditPage
+	 * @param EditPage $editor
+	 * @param string $text
+	 * @param string $section
+	 * @param string &$error
+	 * @return true
 	 */
 	public static function validateBlacklist( $editor, $text, $section, &$error ) {
 		$title = $editor->mTitle;
@@ -279,7 +289,14 @@ class TitleBlacklistHooks {
 	/**
 	 * PageContentSaveComplete hook
 	 *
-	 * @param Article $article
+	 * @param Article &$article
+	 * @param User &$user
+	 * @param Content $content
+	 * @param string $summary
+	 * @param bool $isminor
+	 * @param bool $iswatch
+	 * @param string $section
+	 * @return true
 	 */
 	public static function clearBlacklist( &$article, &$user,
 		$content, $summary, $isminor, $iswatch, $section
@@ -291,7 +308,11 @@ class TitleBlacklistHooks {
 		return true;
 	}
 
-	/** UserCreateForm hook based on the one from AntiSpoof extension */
+	/**
+	 * UserCreateForm hook based on the one from AntiSpoof extension
+	 * @param UsercreateTemplate &$template
+	 * @return true
+	 */
 	public static function addOverrideCheckbox( &$template ) {
 		global $wgRequest, $wgUser;
 
@@ -304,8 +325,8 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * @param ApiBase $module
-	 * @param array $params
+	 * @param ApiBase &$module
+	 * @param array &$params
 	 * @return bool
 	 */
 	public static function onAPIGetAllowedParams( ApiBase &$module, array &$params ) {
@@ -367,7 +388,7 @@ class TitleBlacklistHooks {
 	 * External Lua library for Scribunto
 	 *
 	 * @param string $engine
-	 * @param array $extraLibraries
+	 * @param array &$extraLibraries
 	 * @return bool
 	 */
 	public static function scribuntoExternalLibraries( $engine, array &$extraLibraries ) {

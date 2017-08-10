@@ -153,7 +153,8 @@ class TitleBlacklist {
 	/**
 	 * Parse blacklist from a string
 	 *
-	 * @param $list string Text of a blacklist source
+	 * @param string $list Text of a blacklist source
+	 * @param string $sourceName
 	 * @return array of TitleBlacklistEntry entries
 	 */
 	public static function parseBlacklist( $list, $sourceName ) {
@@ -173,10 +174,10 @@ class TitleBlacklist {
 	 * Check whether the blacklist restricts given user
 	 * performing a specific action on the given Title
 	 *
-	 * @param $title Title to check
-	 * @param $user User to check
-	 * @param $action string Action to check; 'edit' if unspecified
-	 * @param $override bool If set to true, overrides work
+	 * @param Title $title Title to check
+	 * @param User $user User to check
+	 * @param string $action Action to check; 'edit' if unspecified
+	 * @param bool $override If set to true, overrides work
 	 * @return TitleBlacklistEntry|bool The corresponding TitleBlacklistEntry if
 	 * blacklisted; otherwise false
 	 */
@@ -199,8 +200,8 @@ class TitleBlacklist {
 	 * Check whether the blacklist restricts
 	 * performing a specific action on the given Title
 	 *
-	 * @param $title Title to check
-	 * @param $action string Action to check; 'edit' if unspecified
+	 * @param Title $title Title to check
+	 * @param string $action Action to check; 'edit' if unspecified
 	 * @return TitleBlacklistEntry|bool The corresponding TitleBlacklistEntry if blacklisted;
 	 *         otherwise FALSE
 	 */
@@ -236,8 +237,8 @@ class TitleBlacklist {
 	 * Check whether it has been explicitly whitelisted that the
 	 * current User may perform a specific action on the given Title
 	 *
-	 * @param $title Title to check
-	 * @param $action string Action to check; 'edit' if unspecified
+	 * @param Title $title Title to check
+	 * @param string $action Action to check; 'edit' if unspecified
 	 * @return bool True if whitelisted; otherwise false
 	 */
 	public function isWhitelisted( $title, $action = 'edit' ) {
@@ -280,7 +281,7 @@ class TitleBlacklist {
 	/**
 	 * Get the text of a blacklist source via HTTP
 	 *
-	 * @param $url string URL of the blacklist source
+	 * @param string $url URL of the blacklist source
 	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getHttp( $url ) {
@@ -310,7 +311,7 @@ class TitleBlacklist {
 	/**
 	 * Validate a new blacklist
 	 *
-	 * @param $blacklist array
+	 * @param array $blacklist
 	 * @return Array of bad entries; empty array means blacklist is valid
 	 */
 	public function validate( $blacklist ) {
@@ -329,7 +330,8 @@ class TitleBlacklist {
 	/**
 	 * Inidcates whether user can override blacklist on certain action.
 	 *
-	 * @param $action Action
+	 * @param User $user
+	 * @param string $action Action
 	 *
 	 * @return bool
 	 */
@@ -376,9 +378,9 @@ class TitleBlacklistEntry {
 	/**
 	 * Construct a new TitleBlacklistEntry.
 	 *
-	 * @param $regex string Regular expression to match
-	 * @param $params array Parameters for this entry
-	 * @param $raw string Raw contents of this line
+	 * @param string $regex Regular expression to match
+	 * @param array $params Parameters for this entry
+	 * @param string $raw Raw contents of this line
 	 */
 	private function __construct( $regex, $params, $raw, $source ) {
 		$this->mRaw = $raw;
@@ -481,7 +483,8 @@ class TitleBlacklistEntry {
 	/**
 	 * Create a new TitleBlacklistEntry from a line of text
 	 *
-	 * @param $line String containing a line of blacklist text
+	 * @param string $line String containing a line of blacklist text
+	 * @param string $source
 	 * @return TitleBlacklistEntry|null
 	 */
 	public static function newFromString( $line, $source ) {
@@ -596,7 +599,7 @@ class TitleBlacklistEntry {
 	/**
 	 * Set the format version
 	 *
-	 * @param $v string New version to set
+	 * @param string $v New version to set
 	 */
 	public function setFormatVersion( $v ) {
 		$this->mFormatVersion = $v;
@@ -605,7 +608,7 @@ class TitleBlacklistEntry {
 	/**
 	 * Return the error message name for the blacklist entry.
 	 *
-	 * @param $operation string Operation name (as in titleblacklist-forbidden message name)
+	 * @param string $operation Operation name (as in titleblacklist-forbidden message name)
 	 *
 	 * @return string The error message name
 	 */
