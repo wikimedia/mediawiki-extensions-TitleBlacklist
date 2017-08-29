@@ -440,7 +440,8 @@ class TitleBlacklistEntry {
 					$cache::TTL_MONTH,
 					function () use ( $title ) {
 						return AntiSpoof::checkUnicodeString( $title );
-					}
+					},
+					[ 'pcTTL' => $cache::TTL_PROC_LONG ]
 				);
 			} else {
 				list( $ok, $norm ) = AntiSpoof::checkUnicodeString( $title );
