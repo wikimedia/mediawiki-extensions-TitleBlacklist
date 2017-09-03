@@ -260,7 +260,7 @@ class TitleBlacklistHooks {
 	 * @return true
 	 */
 	public static function validateBlacklist( $editor, $text, $section, &$error ) {
-		$title = $editor->mTitle;
+		$title = $editor->getTitle();
 
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			$blackList = TitleBlacklist::singleton();
