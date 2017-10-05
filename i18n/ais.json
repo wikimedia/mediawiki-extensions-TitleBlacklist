@@ -1,13 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benel"
+			"Benel",
+			"Bunukwiki"
 		]
 	},
 	"action-titleblacklistlog": "ciwsace satangahan malangat piazihan-tu-sulit nasulitan-nazipa’an",
+	"log-description-titleblacklist": "tina belih misult tu sacahamin matatungus satangahan malangat piazihan-tu-sulit a sikawaw.",
 	"titleblacklist-override": "sekipo malangat piazihan tu sulit",
 	"right-tboverride": "mitahpu satangahan saca misaungayay a kalungangan   kakaian tademaw",
 	"right-tboverride-account": "mitahpu misaungayay a kalungangan kakaian tademaw",
 	"apihelp-titleblacklist-param-title": "amipacyinyin milangat piazihan-tu-sulit a sulisulitan.",
-	"apihelp-titleblacklist-param-nooverride": "amana mitanam mitahpu satangahan malangat piazihan-tu-sulit."
+	"apihelp-titleblacklist-param-nooverride": "amana mitanam mitahpu satangahan malangat piazihan-tu-sulit.",
+	"apihelp-titleblacklist-example-1": "kinsa [[Foo]] pasilsil tu malangatay kalungangan"
 }
