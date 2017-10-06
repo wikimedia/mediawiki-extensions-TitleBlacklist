@@ -12,5 +12,6 @@
 	"right-tboverride-account": "mitahpu misaungayay a kalungangan kakaian tademaw",
 	"apihelp-titleblacklist-param-title": "amipacyinyin milangat piazihan-tu-sulit a sulisulitan.",
 	"apihelp-titleblacklist-param-nooverride": "amana mitanam mitahpu satangahan malangat piazihan-tu-sulit.",
-	"apihelp-titleblacklist-example-1": "kinsa [[Foo]] pasilsil tu malangatay kalungangan"
+	"apihelp-titleblacklist-example-1": "kinsa [[Foo]] pasilsil tu malangatay kalungangan",
+	"apihelp-titleblacklist-example-2": "kinsa [[Bar]] pasilsil tu haw mikawaway-kalumyiti malangatay a kalungangan"
 }
