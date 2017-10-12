@@ -6,33 +6,12 @@
  * @license GNU General Public License 2.0 or later
  */
 
-use MediaWiki\Auth\AuthManager;
-
 /**
  * Hooks for the TitleBlacklist class
  *
  * @ingroup Extensions
  */
 class TitleBlacklistHooks {
-
-	/**
-	 * Called right after configuration variables have been set.
-	 */
-	public static function onRegistration() {
-		global $wgDisableAuthManager, $wgAuthManagerAutoConfig;
-
-		if ( class_exists( AuthManager::class ) && !$wgDisableAuthManager ) {
-			$wgAuthManagerAutoConfig['preauth'][TitleBlacklistPreAuthenticationProvider::class] =
-				[ 'class' => TitleBlacklistPreAuthenticationProvider::class ];
-		} else {
-			Hooks::register( 'AbortNewAccount', 'TitleBlacklistHooks::abortNewAccount' );
-			Hooks::register( 'AbortAutoAccount', 'TitleBlacklistHooks::abortAutoAccount' );
-			Hooks::register( 'UserCreateForm', 'TitleBlacklistHooks::addOverrideCheckbox' );
-			Hooks::register( 'APIGetAllowedParams', 'TitleBlacklistHooks::onAPIGetAllowedParams' );
-			Hooks::register( 'AddNewAccountApiForm',
-				'TitleBlacklistHooks::onAddNewAccountApiForm' );
-		}
-	}
 
 	/**
 	 * getUserPermissionsErrorsExpensive hook
@@ -217,40 +196,6 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * AbortNewAccount hook
-	 *
-	 * @param User $user
-	 * @param string &$message
-	 * @param Status &$status
-	 * @return bool
-	 */
-	public static function abortNewAccount( $user, &$message, &$status ) {
-		global $wgUser, $wgRequest;
-		$override = $wgRequest->getCheck( 'wpIgnoreTitleBlacklist' );
-		$sv = self::testUserName( $user->getName(), $wgUser, $override, true );
-		if ( !$sv->isGood() ) {
-			$status = Status::wrap( $sv );
-			$message = $status->getMessage()->parse();
-		}
-		return $sv->isGood();
-	}
-
-	/**
-	 * AbortAutoAccount hook
-	 *
-	 * @param User $user
-	 * @param string &$message
-	 * @return bool
-	 */
-	public static function abortAutoAccount( $user, &$message ) {
-		global $wgTitleBlacklistBlockAutoAccountCreation;
-		if ( $wgTitleBlacklistBlockAutoAccountCreation ) {
-			return self::abortNewAccount( $user, $message );
-		}
-		return true;
-	}
-
-	/**
 	 * EditFilter hook
 	 *
 	 * @param EditPage $editor
@@ -305,60 +250,6 @@ class TitleBlacklistHooks {
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			TitleBlacklist::singleton()->invalidate();
 		}
-		return true;
-	}
-
-	/**
-	 * UserCreateForm hook based on the one from AntiSpoof extension
-	 * @param UsercreateTemplate &$template
-	 * @return true
-	 */
-	public static function addOverrideCheckbox( &$template ) {
-		global $wgRequest, $wgUser;
-
-		if ( TitleBlacklist::userCanOverride( $wgUser, 'new-account' ) ) {
-			$template->addInputItem( 'wpIgnoreTitleBlacklist',
-				$wgRequest->getCheck( 'wpIgnoreTitleBlacklist' ),
-				'checkbox', 'titleblacklist-override' );
-		}
-		return true;
-	}
-
-	/**
-	 * @param ApiBase &$module
-	 * @param array &$params
-	 * @return bool
-	 */
-	public static function onAPIGetAllowedParams( ApiBase &$module, array &$params ) {
-		if ( $module instanceof ApiCreateAccount ) {
-			$params['ignoretitleblacklist'] = [
-				ApiBase::PARAM_TYPE => 'boolean',
-				ApiBase::PARAM_DFLT => false
-			];
-		}
-
-		return true;
-	}
-
-	/**
-	 * Pass API parameter on to the login form when using
-	 * API account creation.
-	 *
-	 * @param ApiBase $apiModule
-	 * @param LoginForm $loginForm
-	 * @return bool Always true
-	 */
-	public static function onAddNewAccountApiForm( ApiBase $apiModule, LoginForm $loginForm ) {
-		global $wgRequest;
-		$main = $apiModule->getMain();
-
-		if ( $main->getVal( 'ignoretitleblacklist' ) !== null ) {
-			$wgRequest->setVal( 'wpIgnoreTitleBlacklist', '1' );
-
-			// Suppress "unrecognized parameter" warning:
-			$main->getVal( 'wpIgnoreTitleBlacklist' );
-		}
-
 		return true;
 	}
 
