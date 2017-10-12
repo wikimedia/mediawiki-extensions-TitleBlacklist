@@ -67,6 +67,7 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "TitleBlacklist/modules"
 	},
+	"callback": "TitleBlacklistHooks::onRegistration",
 	"Hooks": {
 		"getUserPermissionsErrorsExpensive": [
 			"TitleBlacklistHooks::userCan"
@@ -97,13 +98,6 @@
 			"warningexpiry": 600
 		},
 		"TitleBlacklistBlockAutoAccountCreation": true
-	},
-	"AuthManagerAutoConfig": {
-		"primaryauth": {
-			"TitleBlacklistPreAuthenticationProvider": {
-				"class": "TitleBlacklistPreAuthenticationProvider"
-			}
-		}
 	},
 	"manifest_version": 1
 }
