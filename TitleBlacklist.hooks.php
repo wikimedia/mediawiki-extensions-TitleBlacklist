@@ -129,30 +129,6 @@ class TitleBlacklistHooks {
 	}
 
 	/**
-	 * Check whether a user name is acceptable,
-	 * and set a message if unacceptable.
-	 *
-	 * Used by abortNewAccount and centralAuthAutoCreate.
-	 * May also be called externally to vet alternate account names.
-	 *
-	 * @param string $userName
-	 * @param User $permissionsUser
-	 * @param string &$err
-	 * @param bool $override
-	 * @param bool $log
-	 * @return bool Acceptable
-	 */
-	public static function acceptNewUserName(
-		$userName, $permissionsUser, &$err, $override = true, $log = false
-	) {
-		$sv = self::testUserName( $userName, $permissionsUser, $override, $log );
-		if ( !$sv->isGood() ) {
-			$err = Status::wrap( $sv )->getMessage()->parse();
-		}
-		return $sv->isGood();
-	}
-
-	/**
 	 * Check whether a user name is acceptable for account creation or autocreation, and explain
 	 * why not if that's the case.
 	 *
