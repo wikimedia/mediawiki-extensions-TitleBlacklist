@@ -8,6 +8,7 @@
 	"action-titleblacklistlog": "ciwsace satangahan malangat piazihan-tu-sulit nasulitan-nazipa’an",
 	"log-description-titleblacklist": "tina belih misult tu sacahamin matatungus satangahan malangat piazihan-tu-sulit a sikawaw.",
 	"titlewhitelist": "# tina kasabelih satangahan mahasa piazihan tu sulit buhci tu kamu ka pisaungay \"#\".\n# piazihan tu sulit pataayaw tu kawaw caay kasasizuma ku tabakiay atu adidi’ay a sulit",
+	"titleblacklist-invalid": "satangahan malangat piazihan tu sulit labu’ay isasa’ay {{PLURAL:$1|cacay silsil|yadah silsil}} la’cus; taayaw misuped kapisumad henay:",
 	"titleblacklist-override": "sekipo malangat piazihan tu sulit",
 	"titleblacklist-override-help": "mataneng tu ku tungus a situngusay kapah tu misetin ciniza misekipo satangahan kakaian tademaw kinsa.",
 	"right-tboverride": "mitahpu satangahan saca misaungayay a kalungangan   kakaian tademaw",
