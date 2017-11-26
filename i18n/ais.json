@@ -9,6 +9,7 @@
 	"log-description-titleblacklist": "tina belih misult tu sacahamin matatungus satangahan malangat piazihan-tu-sulit a sikawaw.",
 	"logentry-titleblacklist-hit-username": "$1 mitanam panganganen ku canghaw $3 sa {{GENDER:$2|matebing}} matatungus sakacucek $4 ku tangan malangat piazihan tu sulit sikawaw.",
 	"titleblacklist-desc": "mahasa mikuwanay kapah misaungay [[MediaWiki:Titleblacklist|milangat  piazihan-tu-sulit]] atu [[MediaWiki:Titlewhitelist|mahasa piazihan-tu-sulit]] ngay satezep patizeng kasabelih atu misaungayay canghaw.",
+	"titleblacklist": "# tina kasabilih sa u satangahanay nu malangat piazihan-tu-sulit, matatungus tina tatungusay pakatineng a zateng a satangahan atu misaungayay apasatezep misaungay.\n#  buhci tu kamu pisaungay \"#\".\n#  piazihan-tu-sulit pataayaw tu kawaw malecad ku tabakiay atu adidi’ay nu sulit-bacu",
 	"titlewhitelist": "# tina kasabelih satangahan mahasa piazihan tu sulit buhci tu kamu ka pisaungay \"#\".\n# piazihan tu sulit pataayaw tu kawaw caay kasasizuma ku tabakiay atu adidi’ay a sulit",
 	"titleblacklist-forbidden-edit": "pyawti \"$2\" masatezep tu ku pisaungay.\nyapyawti matatungus isasa’ malangat ku piazihan tu sulit tu kasacacay: <code>$1</code>",
 	"titleblacklist-forbidden-move": "satangahan \"$3\" masatezep tuway misaungay, la’cus milimad \"$2\" tayza \"$3\". \nkya satangahan matatungus isasa’ay malangatay a piazihan-tu-sulit kasacacay:<code>$1</code>",
