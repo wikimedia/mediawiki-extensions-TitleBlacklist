@@ -210,19 +210,21 @@ class TitleBlacklistHooks {
 	/**
 	 * PageContentSaveComplete hook
 	 *
-	 * @param Article &$article
+	 * @param WikiPage &$wikiPage
 	 * @param User &$user
 	 * @param Content $content
 	 * @param string $summary
 	 * @param bool $isminor
 	 * @param bool $iswatch
 	 * @param string $section
+	 *
 	 * @return true
 	 */
-	public static function clearBlacklist( &$article, &$user,
+	public static function clearBlacklist(
+		WikiPage &$wikiPage, &$user,
 		$content, $summary, $isminor, $iswatch, $section
 	) {
-		$title = $article->getTitle();
+		$title = $wikiPage->getTitle();
 		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
 			TitleBlacklist::singleton()->invalidate();
 		}
