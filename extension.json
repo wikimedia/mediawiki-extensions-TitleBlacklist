@@ -47,7 +47,7 @@
 	},
 	"AutoloadClasses": {
 		"TitleBlacklist": "TitleBlacklist.list.php",
-		"TitleBlacklistEntry": "TitleBlacklist.list.php",
+		"TitleBlacklistEntry": "TitleBlacklistEntry.php",
 		"TitleBlacklistHooks": "TitleBlacklist.hooks.php",
 		"TitleBlacklistAuthenticationRequest": "TitleBlacklistAuthenticationRequest.php",
 		"TitleBlacklistPreAuthenticationProvider": "TitleBlacklistPreAuthenticationProvider.php",
