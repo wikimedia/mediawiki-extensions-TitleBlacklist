@@ -109,7 +109,7 @@ class TitleBlacklist {
 	/**
 	 * Get the text of a blacklist from a specified source
 	 *
-	 * @param string $source A blacklist source from $wgTitleBlacklistSources
+	 * @param array $source A blacklist source from $wgTitleBlacklistSources
 	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getBlacklistText( $source ) {
@@ -311,6 +311,7 @@ class TitleBlacklist {
 	/**
 	 * Validate a new blacklist
 	 *
+	 * @suppress PhanParamSuspiciousOrder The preg_match() params are in the correct order
 	 * @param array $blacklist
 	 * @return Array of bad entries; empty array means blacklist is valid
 	 */
