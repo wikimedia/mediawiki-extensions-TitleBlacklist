@@ -34,9 +34,13 @@ class TitleBlacklistPreAuthenticationProvider extends AbstractPreAuthenticationP
 		$req = AuthenticationRequest::getRequestByClass( $reqs,
 			TitleBlacklistAuthenticationRequest::class );
 		// For phan check, to ensure that $req is instance of \TitleBlacklistAuthenticationRequest
-		assert( $req instanceof TitleBlacklistAuthenticationRequest );
+		// or null
+		if ( $req instanceof TitleBlacklistAuthenticationRequest ) {
+			$override = $req->ignoreTitleBlacklist;
+		} else {
+			$override = false;
+		}
 
-		$override = $req && $req->ignoreTitleBlacklist;
 		return TitleBlacklistHooks::testUserName( $user->getName(), $creator, $override, true );
 	}
 
