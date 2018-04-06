@@ -15,7 +15,5 @@ $cfg['exclude_analysis_directory_list'] = array_merge(
 		'./../../extensions/Scribunto',
 	]
 );
-$cfg['suppress_issue_types'] = [
-	'PhanDeprecatedFunction',
-];
+
 return $cfg;
