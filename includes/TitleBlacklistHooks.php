@@ -3,7 +3,7 @@
  * Hooks for Title Blacklist
  * @author Victor Vasiliev
  * @copyright © 2007-2010 Victor Vasiliev et al
- * @license GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 /**
