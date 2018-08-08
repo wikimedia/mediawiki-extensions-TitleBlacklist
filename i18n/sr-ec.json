@@ -10,7 +10,7 @@
 			"BadDog"
 		]
 	},
-	"action-titleblacklistlog": "прегледање црног списка наслова",
+	"action-titleblacklistlog": "прегледате евиденцију црне листе наслова",
 	"log-name-titleblacklist": "Евиденција црне листе наслова",
 	"log-description-titleblacklist": "Ови догађаји прате поготке у црној листи наслова.",
 	"titleblacklist-desc": "Допушта забрану стварања страница с одређеним насловима: [[MediaWiki:Titleblacklist|црна листа]] и [[MediaWiki:Titlewhitelist|бела листа]].",
