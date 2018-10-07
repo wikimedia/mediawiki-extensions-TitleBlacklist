@@ -61,11 +61,8 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Verify tboverride works
 	 */
 	function testTboverride() {
-		global $wgGroupPermissions;
-
 		// Allow all users to override the titleblacklist
-		$this->stashMwGlobals( 'wgGroupPermissions' );
-		$wgGroupPermissions['*']['tboverride'] = true;
+		$this->setGroupPermissions( '*', 'tboverride', true );
 
 		$unlisted = $this->doApiRequest( [
 			'action' => 'titleblacklist',
