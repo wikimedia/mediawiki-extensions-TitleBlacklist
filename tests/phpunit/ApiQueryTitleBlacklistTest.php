@@ -11,9 +11,6 @@
  * Ian Baker <ian@wikimedia.org>
  */
 
-ini_set( 'include_path', ini_get( 'include_path' ) . ':' .
-	__DIR__ . '/../../../tests/phpunit/includes/api' );
-
 /**
  * @group medium
  * @covers ApiQueryTitleBlacklist
