@@ -9,7 +9,8 @@
 			"Александр Сигачёв",
 			"Okras",
 			"NBS",
-			"Mouse21"
+			"Mouse21",
+			"Vlad5250"
 		]
 	},
 	"action-titleblacklistlog": "просмотр журнала запрещённыx названий",
@@ -27,9 +28,9 @@
 	"titleblacklist-override": "Игнорировать чёрный список",
 	"titleblacklist-override-help": "Участники с достаточными правами могут установить его для игнорирования проверок список запрещённыx названий.",
 	"titleblacklist-warning": "<strong>Примечание:</strong> Эту страницу могут редактировать только администраторы и другие участники с правами <code>tboverride</code>, потому что, похоже, она совпадает со следующей записью из «чёрного списка» названий:<br /><code>$1</code>",
-	"right-tboverride": "игнорирование чёрного списка имён страниц или участников",
-	"right-tboverride-account": "игнорирование чёрного списка имён участников",
-	"right-titleblacklistlog": "просмотр журнала запрещённыx названий",
+	"right-tboverride": "Игнорирование чёрного списка имён страниц или участников",
+	"right-tboverride-account": "Игнорирование чёрного списка имён участников",
+	"right-titleblacklistlog": "Просмотр журнала запрещённых названий",
 	"apihelp-titleblacklist-description": "Подтвердите заголовок страницы, имя файла или имя пользователя в списке TitleBlacklist.",
 	"apihelp-titleblacklist-summary": "Подтвердите заголовок страницы, имя файла или имя пользователя в списке TitleBlacklist.",
 	"apihelp-titleblacklist-param-title": "Строка для проверки против черного списка.",
