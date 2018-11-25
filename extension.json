@@ -42,7 +42,8 @@
 	},
 	"MessagesDirs": {
 		"TitleBlacklist": [
-			"i18n"
+			"i18n",
+			"i18n/api"
 		]
 	},
 	"AutoloadClasses": {
