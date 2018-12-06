@@ -4,6 +4,7 @@
 		"wikimedia/jquery"
 	],
 	"globals": {
-		"mw": false
+		"mw": false,
+		"OO": false
 	}
 }

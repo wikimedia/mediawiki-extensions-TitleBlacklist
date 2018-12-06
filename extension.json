@@ -62,8 +62,17 @@
 				"mediawiki.api"
 			],
 			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.titleblacklist.visualEditor": {
+			"scripts": "ve-titleblacklist/ve.init.mw.TitleBlacklistSaveErrorHandler.js",
+			"messages": [
+				"visualeditor-saveerror-titleblacklist"
+			]
 		}
 	},
+	"VisualEditorPluginModules": [
+		"ext.titleblacklist.visualEditor"
+	],
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "TitleBlacklist/modules"

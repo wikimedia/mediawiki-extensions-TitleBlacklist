@@ -19,5 +19,6 @@
 	"titleblacklist-warning": "<strong>Warning: This page can only be edited by administrators and other users with the <code>tboverride</code> right because it matches the following title blacklist entry:</strong><br /><code>$1</code>",
 	"right-tboverride": "Override the title or username blacklist",
 	"right-tboverride-account": "Override the username blacklist",
-	"right-titleblacklistlog": "View title blacklist log"
+	"right-titleblacklistlog": "View title blacklist log",
+	"visualeditor-saveerror-titleblacklist": "Error saving page: This page's title is blacklisted"
 }
