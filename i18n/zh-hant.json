@@ -31,5 +31,6 @@
 	"titleblacklist-warning": "<strong>警告：此頁面符合下列標題黑名單項目，僅可由管理員或擁有 <code>tboverride</code> 權限的使用者編輯：</strong><br /><code>$1</code>",
 	"right-tboverride": "覆蓋標題或使用者名稱黑名單",
 	"right-tboverride-account": "覆蓋使用者名稱黑名單",
-	"right-titleblacklistlog": "檢視標題黑名單日誌"
+	"right-titleblacklistlog": "檢視標題黑名單日誌",
+	"visualeditor-saveerror-titleblacklist": "儲存頁面錯誤：此頁面標題已被列入封鎖清單。"
 }

@@ -32,5 +32,6 @@
 	"titleblacklist-warning": "<strong>Attention : Cette page ne peut être modifiée que par des administrateurs et autres utilisateurs avec le droit <code>tboverride</code>, parce qu’elle correspond à l’entrée suivante de la liste noire des titres :</strong><br /><code>$1</code>",
 	"right-tboverride": "Remplacer la liste noire des titres ou des noms d'utilisateur",
 	"right-tboverride-account": "Ignorer la liste noire des noms d'utilisateur",
-	"right-titleblacklistlog": "Afficher le journal de la liste noire des titres"
+	"right-titleblacklistlog": "Afficher le journal de la liste noire des titres",
+	"visualeditor-saveerror-titleblacklist": "Erreur lors de l’enregistrement de la page : le titre de cette page est dans la liste noire"
 }

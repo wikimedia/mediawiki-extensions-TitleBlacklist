@@ -22,5 +22,6 @@
 	"titleblacklist-warning": "<strong>Waarschuwing: Deze pagina kan alleen worden bewerkt door de beheerders en andere gebruikers met het <code>tboverride</code> recht omdat het overeenkomt met de volgende vermelding op de zwarte lijst voor titels:</strong><br /><code>$1</code>",
 	"right-tboverride": "De zwarte lijst voor pagina- en gebruikersnamen omzeilen",
 	"right-tboverride-account": "Zwarte lijst voor gebruikersnamen negeren",
-	"right-titleblacklistlog": "Logboek zwarte lijst voor paginanamen bekijken"
+	"right-titleblacklistlog": "Logboek zwarte lijst voor paginanamen bekijken",
+	"visualeditor-saveerror-titleblacklist": "Fout tijdens het opslaan van de pagina: deze pagina staat op de zwarte lijst"
 }

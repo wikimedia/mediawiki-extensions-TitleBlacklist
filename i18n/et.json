@@ -20,5 +20,6 @@
 	"titleblacklist-warning": "<strong>Märkus: Seda lehekülge saavad redigeerida ainult administraatorid ja kasutajad õigusega <code>tboverride</code>, sest see vastab pealkirjade musta nimekirja järgmisele sissekandele:</strong><br /><code>$1</code>",
 	"right-tboverride": "Eirata pealkirjade või kasutajanimede musta nimekirja",
 	"right-tboverride-account": "Eirata kasutajanimede musta nimekirja",
-	"right-titleblacklistlog": "Vaadata pealkirjade musta nimekirja logi"
+	"right-titleblacklistlog": "Vaadata pealkirjade musta nimekirja logi",
+	"visualeditor-saveerror-titleblacklist": "Tõrge lehekülje salvestamisel: lehekülje pealkiri on mustas nimekirjas."
 }
