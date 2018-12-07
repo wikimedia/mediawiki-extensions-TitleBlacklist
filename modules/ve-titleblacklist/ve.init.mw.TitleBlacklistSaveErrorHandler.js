@@ -6,11 +6,11 @@ mw.libs.ve.targetLoader.addPlugin( function () {
 
 	ve.init.mw.TitleBlacklistSaveErrorHandler.static.name = 'titleBlacklist';
 
-	ve.init.mw.TitleBlacklistSaveErrorHandler.static.matchFunction = function ( editApi ) {
-		return editApi.code === 'titleblacklist-forbidden';
+	ve.init.mw.TitleBlacklistSaveErrorHandler.static.matchFunction = function ( data ) {
+		return ve.getProp( data, 'error', 'code' ) === 'titleblacklist-forbidden';
 	};
 
-	ve.init.mw.TitleBlacklistSaveErrorHandler.static.process = function ( editApi, target ) {
+	ve.init.mw.TitleBlacklistSaveErrorHandler.static.process = function ( data, target ) {
 		// Handle warnings/errors from Extension:AbuseFilter
 		target.showSaveError( mw.msg( 'visualeditor-saveerror-titleblacklist' ) );
 		// Emit event for tracking. TODO: This is a bad design
