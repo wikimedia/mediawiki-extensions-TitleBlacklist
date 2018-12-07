@@ -11,8 +11,8 @@ mw.libs.ve.targetLoader.addPlugin( function () {
 	};
 
 	ve.init.mw.TitleBlacklistSaveErrorHandler.static.process = function ( data, target ) {
-		// Handle warnings/errors from Extension:AbuseFilter
-		target.showSaveError( mw.msg( 'visualeditor-saveerror-titleblacklist' ) );
+		// Handle warnings/errors from Extension:TitleBlacklist
+		target.showSaveError( mw.msg( 'visualeditor-saveerror-titleblacklist' ), false );
 		// Emit event for tracking. TODO: This is a bad design
 		target.emit( 'saveErrorTitleBlacklist' );
 	};
