@@ -28,5 +28,5 @@
 	"right-tboverride": "تجاوز قائمتي العناوين أو أسماء المستخدمين السوداوين",
 	"right-tboverride-account": "تجاوز قائمة اسم المستخدم السوداء.",
 	"right-titleblacklistlog": "استعراض سجل القائمة السوداء للعناوين",
-	"visualeditor-saveerror-titleblacklist": "خطأ في حفظ الصفحة: عنوان الصفحة في القائمة السوداء"
+	"visualeditor-saveerror-titleblacklist": "خطأ في حفظ الصفحة: عنوان هذه الصفحة مدرج في القائمة السوداء"
 }
