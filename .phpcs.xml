@@ -2,8 +2,10 @@
 <ruleset>
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
-		<exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment"/>
+	</rule>
+	<rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
+		<exclude-pattern>Scribunto_LuaTitleBlacklistLibrary\.php</exclude-pattern>
 	</rule>
 	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
 		<properties>
