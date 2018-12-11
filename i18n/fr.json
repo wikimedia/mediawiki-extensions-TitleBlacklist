@@ -33,5 +33,5 @@
 	"right-tboverride": "Remplacer la liste noire des titres ou des noms d'utilisateur",
 	"right-tboverride-account": "Ignorer la liste noire des noms d'utilisateur",
 	"right-titleblacklistlog": "Afficher le journal de la liste noire des titres",
-	"visualeditor-saveerror-titleblacklist": "Erreur lors de l’enregistrement de la page : le titre de cette page est dans la liste noire"
+	"visualeditor-saveerror-titleblacklist": "Erreur lors de l’enregistrement de la page : Le titre de cette page est dans la liste noire"
 }
