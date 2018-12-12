@@ -27,5 +27,5 @@
 	"right-tboverride": "Contornar a lista negra de títulos e nomes de utilizador",
 	"right-tboverride-account": "Contornar a lista negra de nomes de utilizador",
 	"right-titleblacklistlog": "Ver o registo da lista negra de títulos",
-	"visualeditor-saveerror-titleblacklist": "Erro ao gravar a página: O título da página encontra-se na lista negra"
+	"visualeditor-saveerror-titleblacklist": "Erro ao gravar a página: o título desta página está na lista negra"
 }
