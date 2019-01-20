@@ -10,7 +10,8 @@
 			"Macofe",
 			"Lemondoge",
 			"Dgstranz",
-			"Jelou"
+			"Jelou",
+			"Tiberius1701"
 		]
 	},
 	"action-titleblacklistlog": "ver el registro de la lista negra de títulos",
@@ -26,7 +27,7 @@
 	"titleblacklist-forbidden-new-account": "Se prohibe crear el nombre de usuario «$2».\nCoincide con la siguiente entrada de la lista negra: <code>$1</code>",
 	"titleblacklist-invalid": "{{PLURAL:$1|La siguiente línea|Las siguientes líneas}} de la lista negra no {{PLURAL:$1|es válida|son válidas}};\npor favor corríge{{PLURAL:$1|la|las}} antes de grabar:",
 	"titleblacklist-override": "Ignorar la lista negra",
-	"titleblacklist-override-help": "Los usuarios con suficientes privilegios pueden configurar esto para ignorar las comprobaciones de títulos contra la lista negra.",
+	"titleblacklist-override-help": "Los usuarios con suficientes privilegios pueden configurar esto para ignorar las comprobaciones de títulos en la lista negra.",
 	"titleblacklist-warning": "<strong>Advertencia: solo los administradores y los usuarios con el permiso <code>tboverride</code> pueden editar esta página porque esta aparece en la siguiente entrada de la lista negra de títulos:</strong><br /><code>$1</code>",
 	"right-tboverride": "Ignorar la lista negra de títulos o de nombres de usuario",
 	"right-tboverride-account": "Ignorar la lista negra de los nombres de usuario",
