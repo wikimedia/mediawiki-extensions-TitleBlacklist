@@ -124,12 +124,12 @@ class TitleBlacklistEntry {
 			}
 		}
 
-		wfSuppressWarnings();
+		Wikimedia\suppressWarnings();
 		$match = preg_match(
 			"/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ),
 			$title
 		);
-		wfRestoreWarnings();
+		Wikimedia\restoreWarnings();
 
 		if ( $match ) {
 			if ( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {
