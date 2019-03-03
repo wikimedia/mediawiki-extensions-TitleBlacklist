@@ -114,7 +114,7 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 	 * Tests integration with the AntiSpoof extension
 	 */
 	public function testAntiSpoofIntegration() {
-		if ( !class_exists( 'AntiSpoof' ) ) {
+		if ( !ExtensionRegistry::getInstance()->isLoaded( 'AntiSpoof' ) ) {
 			$this->markTestSkipped( "This test requires the AntiSpoof extension" );
 		}
 
