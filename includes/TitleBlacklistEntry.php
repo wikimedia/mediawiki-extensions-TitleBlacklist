@@ -257,7 +257,7 @@ class TitleBlacklistEntry {
 	 * @return string Custom message for this entry
 	 */
 	public function getCustomMessage() {
-		return isset( $this->mParams['errmsg'] ) ? $this->mParams['errmsg'] : null;
+		return $this->mParams['errmsg'] ?? null;
 	}
 
 	/**
@@ -288,6 +288,6 @@ class TitleBlacklistEntry {
 		// For grep:
 		// titleblacklist-forbidden-edit, titleblacklist-forbidden-move,
 		// titleblacklist-forbidden-upload, titleblacklist-forbidden-new-account
-		return $message ? $message : "titleblacklist-forbidden-{$operation}";
+		return $message ?: "titleblacklist-forbidden-{$operation}";
 	}
 }
