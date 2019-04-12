@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
+	"action-tboverride": "override the title or username blacklist",
+	"action-tboverride-account": "override the username blacklist",
 	"action-titleblacklistlog": "view the title blacklist log",
 	"log-name-titleblacklist": "Title blacklist log",
 	"log-description-titleblacklist": "These events track title blacklist hits.",

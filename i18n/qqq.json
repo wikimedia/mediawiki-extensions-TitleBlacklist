@@ -11,6 +11,8 @@
 			"Nemo bis"
 		]
 	},
+	"action-tboverride": "{{doc-action|tboverride}}",
+	"action-tboverride-account": "{{doc-action|tboverride-account}}",
 	"action-titleblacklistlog": "{{doc-action|titleblacklistlog}}",
 	"log-name-titleblacklist": "Name of log that appears on [[Special:Log]].",
 	"log-description-titleblacklist": "Description of title blacklist log",
