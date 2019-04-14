@@ -9,9 +9,12 @@
 			"Prima klasy4na",
 			"Ата",
 			"Green Zero",
-			"Piramidion"
+			"Piramidion",
+			"Vlad5250"
 		]
 	},
+	"action-tboverride": "ігнорування чорного списку назв сторінок або користувачів",
+	"action-tboverride-account": "ігнорування чорного списку імен користувачів",
 	"action-titleblacklistlog": "перегляд журналу заборонених назв",
 	"log-name-titleblacklist": "Журнал чорного списку назв",
 	"log-description-titleblacklist": "Ці події відображають спрацьовування чорного списку назв.",

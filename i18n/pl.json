@@ -13,6 +13,8 @@
 			"Railfail536"
 		]
 	},
+	"action-tboverride": "ignorowania czarnej listy tytułów lub nazw użytkowników",
+	"action-tboverride-account": "ignorowania czarnej listy użytkowników",
 	"action-titleblacklistlog": "przeglądania czarnej listy tytułów",
 	"log-name-titleblacklist": "Rejestr czarnej listy tytułów",
 	"log-description-titleblacklist": "Te zdarzenia służą do śledzenia trafień czarnej listy tytułów.",

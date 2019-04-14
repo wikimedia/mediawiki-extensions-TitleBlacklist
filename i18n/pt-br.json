@@ -7,9 +7,12 @@
 			"Luckas",
 			"555",
 			"Felipe L. Ewald",
-			"TheGabrielZaum"
+			"TheGabrielZaum",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"action-tboverride": "substituir a lista negra de título ou nome de usuário",
+	"action-tboverride-account": "contornar a lista negra de nomes de usuários",
 	"action-titleblacklistlog": "ver os registros da lista negra de título",
 	"log-name-titleblacklist": "Título do registro da lista negra",
 	"log-description-titleblacklist": "Esses eventos rastreiam hits no título da lista negra.",

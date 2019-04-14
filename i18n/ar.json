@@ -10,6 +10,8 @@
 			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"action-tboverride": "تجاوز قائمتي العناوين أو أسماء المستخدمين السوداوين",
+	"action-tboverride-account": "تجاوز قائمة اسم المستخدم السوداء.",
 	"action-titleblacklistlog": "استعراض سجل القائمة السوداء للعناوين",
 	"log-name-titleblacklist": "القائمة السوداء للعناوين",
 	"log-description-titleblacklist": "يتتبع هذا السجل ضربات العناوين التي طابقت القائمة السوداء.",
