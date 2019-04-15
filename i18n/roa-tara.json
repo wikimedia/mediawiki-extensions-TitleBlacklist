@@ -4,6 +4,8 @@
 			"Joetaras"
 		]
 	},
+	"action-tboverride": "sovrascrive 'a lista gnore de le titole o de le utinde",
+	"action-tboverride-account": "sovrascrive 'a lista gnore de le utinde",
 	"action-titleblacklistlog": "'ndruche 'u titole de l'archivije de l'elenghe gnure",
 	"log-name-titleblacklist": "Archivije de le titole bloccate",
 	"log-description-titleblacklist": "Ste evende tracciane le trasute jndr'à l'elenghe gnure de le rummate.",

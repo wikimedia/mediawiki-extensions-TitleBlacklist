@@ -15,6 +15,8 @@
 			"Wladek92"
 		]
 	},
+	"action-tboverride": "écraser la liste noire de titres ou noms d’utilisateur",
+	"action-tboverride-account": "écraser la liste noire des noms d’utilisateur",
 	"action-titleblacklistlog": "afficher le journal de la liste noire des titres",
 	"log-name-titleblacklist": "Journal de la liste noire des titres",
 	"log-description-titleblacklist": "Ces événements tracent les correspondances avec la liste noire des titres.",
