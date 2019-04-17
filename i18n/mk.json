@@ -4,6 +4,8 @@
 			"Bjankuloski06"
 		]
 	},
+	"action-tboverride": "занемарување на црниот список на наслови или корисници",
+	"action-tboverride-account": "занемарување на црниот список на корисници",
 	"action-titleblacklistlog": "преглед на дневникот на наслови на црниот список",
 	"log-name-titleblacklist": "Дневник на наслови на црниот список",
 	"log-description-titleblacklist": "Овие настани следат наидувања на наслови на црниот список.",
