@@ -11,9 +11,12 @@
 			"Liuxinyu970226",
 			"LNDDYL",
 			"Hello903hello",
-			"A2093064"
+			"A2093064",
+			"Kly"
 		]
 	},
+	"action-tboverride": "覆蓋標題或使用者名稱黑名單",
+	"action-tboverride-account": "覆蓋使用者名稱黑名單",
 	"action-titleblacklistlog": "檢視標題黑名單日誌",
 	"log-name-titleblacklist": "標題黑名單日誌",
 	"log-description-titleblacklist": "此頁記錄了所有觸發標題黑名單的事件。",
