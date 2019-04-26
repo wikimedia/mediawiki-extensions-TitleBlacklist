@@ -9,6 +9,8 @@
 			"Vitorvicentevalente"
 		]
 	},
+	"action-tboverride": "contornar a lista negra de títulos e nomes de utilizador",
+	"action-tboverride-account": "contornar a lista negra de nomes de utilizador",
 	"action-titleblacklistlog": "ver o registo da lista negra de títulos",
 	"log-name-titleblacklist": "Registo da lista negra de títulos",
 	"log-description-titleblacklist": "Estes eventos registam as correspondências com a lista negra de títulos.",
