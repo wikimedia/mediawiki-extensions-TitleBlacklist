@@ -77,7 +77,7 @@ class TitleBlacklist {
 		foreach ( $sources as $sourceName => $source ) {
 			$this->mBlacklist = array_merge(
 				$this->mBlacklist,
-				$this->parseBlacklist( $this->getBlacklistText( $source ), $sourceName )
+				self::parseBlacklist( self::getBlacklistText( $source ), $sourceName )
 			);
 		}
 		$cache->set( $cache->makeKey( 'title_blacklist_entries' ),
@@ -100,7 +100,7 @@ class TitleBlacklist {
 			$this->mWhitelist = $cachedWhitelist;
 			return;
 		}
-		$this->mWhitelist = $this->parseBlacklist( wfMessage( 'titlewhitelist' )
+		$this->mWhitelist = self::parseBlacklist( wfMessage( 'titlewhitelist' )
 				->inContentLanguage()->text(), 'whitelist' );
 		$cache->set( $cache->makeKey( 'title_whitelist_entries' ),
 			$this->mWhitelist, $wgTitleBlacklistCaching['expiry'] );
@@ -155,15 +155,15 @@ class TitleBlacklist {
 	 *
 	 * @param string $list Text of a blacklist source
 	 * @param string $sourceName
-	 * @return array of TitleBlacklistEntry entries
+	 * @return TitleBlacklistEntry[]
 	 */
 	public static function parseBlacklist( $list, $sourceName ) {
 		$lines = preg_split( "/\r?\n/", $list );
 		$result = [];
 		foreach ( $lines as $line ) {
-			$line = TitleBlacklistEntry::newFromString( $line, $sourceName );
-			if ( $line ) {
-				$result[] = $line;
+			$entry = TitleBlacklistEntry::newFromString( $line, $sourceName );
+			if ( $entry ) {
+				$result[] = $entry;
 			}
 		}
 
@@ -269,7 +269,7 @@ class TitleBlacklist {
 	/**
 	 * Get the current whitelist
 	 *
-	 * @return Array of TitleBlacklistEntry items
+	 * @return TitleBlacklistEntry[]
 	 */
 	public function getWhitelist() {
 		if ( is_null( $this->mWhitelist ) ) {
@@ -315,8 +315,8 @@ class TitleBlacklist {
 	 * Validate a new blacklist
 	 *
 	 * @suppress PhanParamSuspiciousOrder The preg_match() params are in the correct order
-	 * @param array $blacklist
-	 * @return Array of bad entries; empty array means blacklist is valid
+	 * @param TitleBlacklistEntry[] $blacklist
+	 * @return string[] List of invalid entries; empty array means blacklist is valid
 	 */
 	public function validate( $blacklist ) {
 		$badEntries = [];
