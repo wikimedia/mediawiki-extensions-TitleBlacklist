@@ -46,8 +46,6 @@ class TitleBlacklistEntry {
 	private $mSource;
 
 	/**
-	 * Construct a new TitleBlacklistEntry.
-	 *
 	 * @param string $regex Regular expression to match
 	 * @param array $params Parameters for this entry
 	 * @param string $raw Raw contents of this line
