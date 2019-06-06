@@ -15,10 +15,10 @@
  * Implements a title blacklist for MediaWiki
  */
 class TitleBlacklist {
-	/** @var array */
+	/** @var TitleBlacklistEntry[] */
 	private $mBlacklist = null;
 
-	/** @var array */
+	/** @var TitleBlacklistEntry[] */
 	private $mWhitelist = null;
 
 	/** @var TitleBlacklist */
@@ -318,7 +318,7 @@ class TitleBlacklist {
 	 * @param TitleBlacklistEntry[] $blacklist
 	 * @return string[] List of invalid entries; empty array means blacklist is valid
 	 */
-	public function validate( $blacklist ) {
+	public function validate( array $blacklist ) {
 		$badEntries = [];
 		foreach ( $blacklist as $e ) {
 			Wikimedia\suppressWarnings();
