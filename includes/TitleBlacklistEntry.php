@@ -7,6 +7,8 @@
  * @file
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * @ingroup Extensions
  */
@@ -103,7 +105,7 @@ class TitleBlacklistEntry {
 		) {
 			if ( $action === 'edit' ) {
 				// Use process cache for frequently edited pages
-				$cache = ObjectCache::getMainWANInstance();
+				$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 				list( $ok, $norm ) = $cache->getWithSetCallback(
 					$cache->makeKey( 'titleblacklist', 'normalized-unicode', md5( $title ) ),
 					$cache::TTL_MONTH,

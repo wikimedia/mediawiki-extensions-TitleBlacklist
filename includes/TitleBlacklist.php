@@ -7,6 +7,8 @@
  * @file
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * @ingroup Extensions
  */
@@ -61,7 +63,7 @@ class TitleBlacklist {
 	public function load() {
 		global $wgTitleBlacklistSources, $wgTitleBlacklistCaching;
 
-		$cache = ObjectCache::getMainWANInstance();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		// Try to find something in the cache
 		$cachedBlacklist = $cache->get( $cache->makeKey( 'title_blacklist_entries' ) );
 		if ( is_array( $cachedBlacklist ) && count( $cachedBlacklist ) > 0
@@ -92,7 +94,7 @@ class TitleBlacklist {
 	public function loadWhitelist() {
 		global $wgTitleBlacklistCaching;
 
-		$cache = ObjectCache::getMainWANInstance();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$cachedWhitelist = $cache->get( $cache->makeKey( 'title_whitelist_entries' ) );
 		if ( is_array( $cachedWhitelist ) && count( $cachedWhitelist ) > 0
 			&& ( $cachedWhitelist[0]->getFormatVersion() != self::VERSION )
@@ -307,7 +309,7 @@ class TitleBlacklist {
 	 * Invalidate the blacklist cache
 	 */
 	public function invalidate() {
-		$cache = ObjectCache::getMainWANInstance();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$cache->delete( $cache->makeKey( 'title_blacklist_entries' ) );
 	}
 
