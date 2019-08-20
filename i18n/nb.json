@@ -7,6 +7,8 @@
 			"Jon Harald Søby"
 		]
 	},
+	"action-tboverride": "overstyre svartelistene for titler eller brukernavn",
+	"action-tboverride-account": "overstyre svartelista for brukernavn",
 	"action-titleblacklistlog": "se tittelsvartelisteloggen",
 	"log-name-titleblacklist": "Tittelsvartelistelogg",
 	"log-description-titleblacklist": "Disse hendelsene sporer treff på tittelsvartelista.",
