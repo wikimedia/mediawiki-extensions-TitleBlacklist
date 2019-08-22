@@ -65,9 +65,6 @@
 		},
 		"ext.titleblacklist.visualEditor": {
 			"scripts": "ve-titleblacklist/ve.init.mw.TitleBlacklistSaveErrorHandler.js",
-			"messages": [
-				"visualeditor-saveerror-titleblacklist"
-			],
 			"targets": [ "desktop", "mobile" ]
 		}
 	},
