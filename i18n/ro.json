@@ -17,6 +17,5 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|Următoarea linie|Următoarele linii}} din lista neagră a titlurilor {{PLURAL:$1|este invalidă|sînt invalide}};\ncorectați{{PLURAL:$1|-o|-le}} înainte de a salva pagina.",
 	"titleblacklist-override": "Ignoră lista neagră de titluri dacă se potrivește",
 	"right-tboverride": "Ignoră lista neagră cu titluri sau nume de utilizator",
-	"right-tboverride-account": "Suprascrie lista neagră a numelor de utilizator",
-	"visualeditor-saveerror-titleblacklist": "Eroare la salvarea paginii: titlul paginii se află pe lista neagră."
+	"right-tboverride-account": "Suprascrie lista neagră a numelor de utilizator"
 }

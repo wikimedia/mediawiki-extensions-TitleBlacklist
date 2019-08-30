@@ -29,6 +29,5 @@
 	"titleblacklist-warning": "<strong>ملاحظة:</strong> لا يمكن تحرير هذه الصفحة إلا للإداريين والمستخدمين الآخرين الذين لديهم صلاحية <code>tboverride</code> لأنها تطابق مدخلة القائمة السوداء التالية:<br /><code>$1</code>",
 	"right-tboverride": "تجاوز قائمتي العناوين أو أسماء المستخدمين السوداوين",
 	"right-tboverride-account": "تجاوز قائمة اسم المستخدم السوداء.",
-	"right-titleblacklistlog": "استعراض سجل القائمة السوداء للعناوين",
-	"visualeditor-saveerror-titleblacklist": "خطأ في حفظ الصفحة: عنوان هذه الصفحة مدرج في القائمة السوداء"
+	"right-titleblacklistlog": "استعراض سجل القائمة السوداء للعناوين"
 }

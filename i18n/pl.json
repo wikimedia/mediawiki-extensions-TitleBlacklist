@@ -32,6 +32,5 @@
 	"titleblacklist-warning": "<strong>Uwaga: tę stronę mogą edytować tylko administratorzy i użytkownicy z uprawnieniem <code>tboverride</code>, ponieważ znajduje się ona na czarnej liście, w punkcie:</strong><br /><code>$1</code>",
 	"right-tboverride": "Ignorowanie czarnej listy tytułów lub nazw użytkowników",
 	"right-tboverride-account": "Ignorowanie czarnej listy użytkowników",
-	"right-titleblacklistlog": "Podgląd rejestru czarnej listy tytułów",
-	"visualeditor-saveerror-titleblacklist": "Błąd zapisywania strony: Tytuł tej strony znajduje się na czarnej liście"
+	"right-titleblacklistlog": "Podgląd rejestru czarnej listy tytułów"
 }

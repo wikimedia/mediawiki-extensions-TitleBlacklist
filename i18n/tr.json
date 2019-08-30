@@ -21,6 +21,5 @@
 	"titleblacklist-override": "Eşleşirse başlık kara listesini geçersiz kıl",
 	"right-tboverride": "Başlık karalistesini geçersiz kıl",
 	"right-tboverride-account": "Kullanıcı adı karalistesini geçersiz kıl",
-	"right-titleblacklistlog": "Karaliste günlüğünü gör",
-	"visualeditor-saveerror-titleblacklist": "Kaydetme hatası sayfa: Bu sayfanın adı kara listeye alındı"
+	"right-titleblacklistlog": "Karaliste günlüğünü gör"
 }

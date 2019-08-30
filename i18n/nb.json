@@ -26,6 +26,5 @@
 	"titleblacklist-warning": "<strong>Advarsel: Denne siden kan kun redigeres av administratorer og andre brukere med <code>tboverride</code>-rettigheter fordi den matcher følgende oppslag i tittelsvartelista:</strong><br /><code>$1</code>",
 	"right-tboverride": "Overkjøre svartelista for titler eller brukernavn",
 	"right-tboverride-account": "Overstyr svartelista for brukernavn",
-	"right-titleblacklistlog": "Vise tittelsvartelisteloggen",
-	"visualeditor-saveerror-titleblacklist": "Kunne ikke lagre siden: Denne sidens tittel er svartelistet"
+	"right-titleblacklistlog": "Vise tittelsvartelisteloggen"
 }

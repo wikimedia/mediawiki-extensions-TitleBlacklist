@@ -17,6 +17,5 @@
 	"titleblacklist-invalid": "Følgende {{PLURAL:$1|linje|linjer}} i titelsortelisten er {{PLURAL:$1|ugyldig|ugyldige}}; korriger venligst {{PLURAL:$1|den|dem}} før du gemmer:",
 	"titleblacklist-override": "Ignorer titel-sortlisten hvis den stemmer overens",
 	"right-tboverride": "Tilsidesæt titel- eller brugernavnsortlisten",
-	"right-tboverride-account": "Tilsidesæt brugernavn sortliste",
-	"visualeditor-saveerror-titleblacklist": "Kunne ikke gemme siden: Denne sides titel er sortlistet"
+	"right-tboverride-account": "Tilsidesæt brugernavn sortliste"
 }

@@ -34,6 +34,5 @@
 	"titleblacklist-warning": "<strong>Warnung: Diese Seite kann nur von Administratoren und anderen Benutzern mit dem <code>tboverride</code>-Recht bearbeitet werden, da sie mit dem folgenden Titel-Blacklist-Eintrag übereinstimmt:</strong><br /><code>$1</code>",
 	"right-tboverride": "Die schwarze Liste unerwünschter Seiten- oder Benutzernamen außer Kraft setzen",
 	"right-tboverride-account": "Die schwarze Liste unerwünschter Benutzernamen außer Kraft setzen",
-	"right-titleblacklistlog": "Das Titel-Blacklist-Logbuch ansehen",
-	"visualeditor-saveerror-titleblacklist": "Fehler beim Speichern der Seite: Der Seitentitel ist auf der schwarzen Liste."
+	"right-titleblacklistlog": "Das Titel-Blacklist-Logbuch ansehen"
 }

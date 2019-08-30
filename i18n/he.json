@@ -28,6 +28,5 @@
 	"titleblacklist-warning": "<strong>לתשומת לבך:</strong> רק מפעילים ומשתמשים אחרים בעלי הרשאת <code>tboverride</code> יכולים לערוך את הדף הזה כי הוא מתאים לשורה הבאה ברשימה השחורה:<br /><code>$1</code>",
 	"right-tboverride": "עקיפת הרשימה השחורה של שמות המשתמשים והכותרות",
 	"right-tboverride-account": "עקיפת הרשימה השחורה של שמות המשתמשים",
-	"right-titleblacklistlog": "צפייה ביומן הרשימה השחורה של הכותרות",
-	"visualeditor-saveerror-titleblacklist": "שגיאה בשמירת הדף: כותרת הדף הזה נמצאת ברשימה שחורה"
+	"right-titleblacklistlog": "צפייה ביומן הרשימה השחורה של הכותרות"
 }
