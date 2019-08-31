@@ -8,11 +8,6 @@
 	<rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
 		<exclude-pattern>Scribunto_LuaTitleBlacklistLibrary\.php</exclude-pattern>
 	</rule>
-	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
-		<properties>
-			<property name="ignoreList" type="array" value="$messageMemc" />
-		</properties>
-	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>
 	<arg name="encoding" value="UTF-8"/>

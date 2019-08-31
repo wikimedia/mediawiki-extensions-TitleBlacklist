@@ -287,19 +287,26 @@ class TitleBlacklist {
 	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getHttp( $url ) {
-		global $messageMemc, $wgTitleBlacklistCaching;
+		global $wgTitleBlacklistCaching, $wgMessageCacheType;
+		// FIXME: This is a hack to use Memcached where possible (incl. WMF),
+		// but have CACHE_DB as fallback (instead of no cache).
+		// This might be a good candidate for T248005.
+		$cache = ObjectCache::getInstance( $wgMessageCacheType );
 
-		$key = 'title_blacklist_source:' . md5( $url ); // Global shared
-		$warnkey = $messageMemc->makeKey( 'titleblacklistwarning', md5( $url ) );
-		$result = $messageMemc->get( $key );
-		$warn = $messageMemc->get( $warnkey );
+		// Globally shared
+		$key = $cache->makeGlobalKey( 'title_blacklist_source', md5( $url ) );
+		// Per-wiki
+		$warnkey = $cache->makeKey( 'titleblacklistwarning', md5( $url ) );
+
+		$result = $cache->get( $key );
+		$warn = $cache->get( $warnkey );
 
 		if ( !is_string( $result )
 			|| ( !$warn && !mt_rand( 0, $wgTitleBlacklistCaching['warningchance'] ) )
 		) {
 			$result = Http::get( $url );
-			$messageMemc->set( $warnkey, 1, $wgTitleBlacklistCaching['warningexpiry'] );
-			$messageMemc->set( $key, $result, $wgTitleBlacklistCaching['expiry'] );
+			$cache->set( $warnkey, 1, $wgTitleBlacklistCaching['warningexpiry'] );
+			$cache->set( $key, $result, $wgTitleBlacklistCaching['expiry'] );
 		}
 
 		return $result;
