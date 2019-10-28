@@ -209,10 +209,12 @@ class TitleBlacklistEntry {
 		// Process magic words
 		preg_match_all( '/{{\s*([a-z]+)\s*:\s*(.+?)\s*}}/', $regex, $magicwords, PREG_SET_ORDER );
 		foreach ( $magicwords as $mword ) {
-			global $wgParser;	// Functions we're calling don't need, nevertheless let's use it
 			switch ( strtolower( $mword[1] ) ) {
 				case 'ns':
-					$cpf_result = CoreParserFunctions::ns( $wgParser, $mword[2] );
+					$cpf_result = CoreParserFunctions::ns(
+						MediaWikiServices::getInstance()->getParser(),
+						$mword[2]
+					);
 					if ( is_string( $cpf_result ) ) {
 						// All result will have the same value, so we can just use str_seplace()
 						$regex = str_replace( $mword[0], $cpf_result, $regex );
