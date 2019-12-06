@@ -6,10 +6,16 @@
 			"TmY e12",
 			"Arystanbek",
 			"Mirzali",
-			"ToprakM"
+			"ToprakM",
+			"BaRaN6161 TURK"
 		]
 	},
+	"action-tboverride": "başlığı veya kullanıcı adı kara listesini geçersiz kıl",
+	"action-tboverride-account": "kullanıcı adı kara listesini geçersiz kıl",
+	"action-titleblacklistlog": "başlık kara liste günlüğünü görüntüleyin",
 	"log-name-titleblacklist": "Ad kara listesi günlüğü",
+	"log-description-titleblacklist": "Bu olaylar, başlık kara listesindeki isabetleri izler.",
+	"logentry-titleblacklist-hit-username": "$1 $3 ile eşleşen $4 hesabı oluşturmaya çalışırken bir başlık kara listesinin {{GENDER:$2|nedeniyle}} oluşturdu.",
 	"titleblacklist-desc": "Yöneticilere, sayfaların ve kullanıcı hesaplarının oluşturulmasını yasaklamalarına bir [[MediaWiki:Titleblacklist|karaliste]] ve [[MediaWiki:Titlewhitelist|beyazliste]] ile izin verir.",
 	"titleblacklist": "# Bu bir başlık karalistesi. Buradaki düzenli ifadelerle eşleşen başlıklar ve kullanıcılar oluşturulamaz.\n# Yorumlar için \"#\" kullanın.\n# Bu varsayılan olarak büyük-küçük harf duyarsızdır",
 	"titlewhitelist": "# Bu bir başlık beyaz listesidir. Yorumlar için \"#\" kullanın.\n# Varsayılan olarak büyük-küçük harfe duyarsızdır",
@@ -19,7 +25,9 @@
 	"titleblacklist-forbidden-new-account": "\"$2\" kullanıcı adının oluşturulması engellendi.\nŞu karaliste girdisiyle eşleşiyor: <code>$1</code>",
 	"titleblacklist-invalid": "Karalistedeki şu {{PLURAL:$1|satır|satırlar}} geçersiz;\nlütfen kaydetmeden önce düzeltin:",
 	"titleblacklist-override": "Eşleşirse başlık kara listesini geçersiz kıl",
-	"right-tboverride": "Başlık karalistesini geçersiz kıl",
+	"titleblacklist-override-help": "Yeterli ayrıcalıklara sahip kullanıcılar, kara liste kontrollerini görmezden gelmek için bunu ayarlayabilir.",
+	"titleblacklist-warning": "<strong>Uyarı: Bu sayfa yalnızca <code>tboverride</code> hakkı olan yöneticiler ve diğer kullanıcılar tarafından düzenlenebilir, çünkü aşağıdaki başlık kara liste girişiyle eşleşir:</strong><br /><code>$1</code>",
+	"right-tboverride": "Başlığı veya kullanıcı adı kara listesini geçersiz kıl",
 	"right-tboverride-account": "Kullanıcı adı karalistesini geçersiz kıl",
 	"right-titleblacklistlog": "Karaliste günlüğünü gör"
 }
