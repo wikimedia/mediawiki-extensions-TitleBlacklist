@@ -17,13 +17,13 @@ use MediaWiki\MediaWikiServices;
  * Implements a title blacklist for MediaWiki
  */
 class TitleBlacklist {
-	/** @var TitleBlacklistEntry[] */
+	/** @var TitleBlacklistEntry[]|null */
 	private $mBlacklist = null;
 
-	/** @var TitleBlacklistEntry[] */
+	/** @var TitleBlacklistEntry[]|null */
 	private $mWhitelist = null;
 
-	/** @var TitleBlacklist */
+	/** @var TitleBlacklist|null */
 	protected static $instance = null;
 
 	const VERSION = 3;	// Blacklist format

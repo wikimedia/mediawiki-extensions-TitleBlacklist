@@ -37,7 +37,7 @@ class TitleBlacklistEntry {
 
 	/**
 	 * Entry format version
-	 * @var string
+	 * @var int
 	 */
 	private $mFormatVersion;
 
@@ -264,7 +264,7 @@ class TitleBlacklistEntry {
 	}
 
 	/**
-	 * @return string The format version
+	 * @return int The format version
 	 */
 	public function getFormatVersion() {
 		return $this->mFormatVersion;
@@ -273,7 +273,7 @@ class TitleBlacklistEntry {
 	/**
 	 * Set the format version
 	 *
-	 * @param string $v New version to set
+	 * @param int $v New version to set
 	 */
 	public function setFormatVersion( $v ) {
 		$this->mFormatVersion = $v;
