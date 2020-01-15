@@ -123,7 +123,7 @@ class TitleBlacklist {
 			return wfMessage( 'titleblacklist' )->inContentLanguage()->text();
 		} elseif ( $source['type'] == 'localpage' && count( $source ) >= 2 ) {
 			$title = Title::newFromText( $source['src'] );
-			if ( is_null( $title ) ) {
+			if ( $title === null ) {
 				return '';
 			}
 			if ( $title->getNamespace() == NS_MEDIAWIKI ) {
@@ -262,7 +262,7 @@ class TitleBlacklist {
 	 * @return TitleBlacklistEntry[]
 	 */
 	public function getBlacklist() {
-		if ( is_null( $this->mBlacklist ) ) {
+		if ( $this->mBlacklist === null ) {
 			$this->load();
 		}
 		return $this->mBlacklist;
@@ -274,7 +274,7 @@ class TitleBlacklist {
 	 * @return TitleBlacklistEntry[]
 	 */
 	public function getWhitelist() {
-		if ( is_null( $this->mWhitelist ) ) {
+		if ( $this->mWhitelist === null ) {
 			$this->loadWhitelist();
 		}
 		return $this->mWhitelist;
