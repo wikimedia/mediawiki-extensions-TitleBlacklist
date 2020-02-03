@@ -19,7 +19,6 @@ class ApiQueryTitleBlacklistTest extends ApiTestCase {
 
 	public function setUp() : void {
 		parent::setUp();
-		$this->doLogin();
 
 		TitleBlacklist::destroySingleton();
 		$this->setMwGlobals( 'wgTitleBlacklistSources', [
