@@ -63,6 +63,7 @@ class TitleBlacklistEntry {
 
 	/**
 	 * Returns whether this entry is capable of filtering new accounts.
+	 * @return bool
 	 */
 	private function filtersNewAccounts() {
 		global $wgTitleBlacklistUsernameSources;
