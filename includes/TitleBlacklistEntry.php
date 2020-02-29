@@ -101,27 +101,30 @@ class TitleBlacklistEntry {
 		}
 
 		if ( isset( $this->mParams['antispoof'] )
-			&& is_callable( 'AntiSpoof::checkUnicodeString' )
+			&& ExtensionRegistry::getInstance()->isLoaded( 'AntiSpoof' )
 		) {
 			if ( $action === 'edit' ) {
 				// Use process cache for frequently edited pages
 				$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-				list( $ok, $norm ) = $cache->getWithSetCallback(
+				$status = $cache->getWithSetCallback(
 					$cache->makeKey( 'titleblacklist', 'normalized-unicode', md5( $title ) ),
 					$cache::TTL_MONTH,
 					function () use ( $title ) {
-						return AntiSpoof::checkUnicodeString( $title );
+						return AntiSpoof::checkUnicodeStringStatus( $title );
 					},
 					[ 'pcTTL' => $cache::TTL_PROC_LONG ]
 				);
 			} else {
-				list( $ok, $norm ) = AntiSpoof::checkUnicodeString( $title );
+				$status = AntiSpoof::checkUnicodeStringStatus( $title );
 			}
 
-			if ( $ok === "OK" ) {
-				list( , $title ) = explode( ':', $norm, 2 );
+			if ( $status->isOK() ) {
+				// Remove version from return value
+				list( , $title ) = explode( ':', $status->getValue(), 2 );
 			} else {
-				wfDebugLog( 'TitleBlacklist', 'AntiSpoof could not normalize "' . $title . '".' );
+				wfDebugLog( 'TitleBlacklist', 'AntiSpoof could not normalize "' . $title . '" ' .
+					$status->getMessage( false, false, 'en' )->text() . '.'
+				);
 			}
 		}
 
