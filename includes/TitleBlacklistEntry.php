@@ -108,7 +108,7 @@ class TitleBlacklistEntry {
 				// Use process cache for frequently edited pages
 				$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 				$status = $cache->getWithSetCallback(
-					$cache->makeKey( 'titleblacklist', 'normalized-unicode', md5( $title ) ),
+					$cache->makeKey( 'titleblacklist', 'normalized-unicode-status', md5( $title ) ),
 					$cache::TTL_MONTH,
 					function () use ( $title ) {
 						return AntiSpoof::checkUnicodeStringStatus( $title );
