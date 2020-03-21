@@ -33,6 +33,12 @@
 		"titleblacklist/*": "LogFormatter"
 	},
 	"GrantPermissions": {
+		"createaccount": {
+			"tboverride-account": true
+		},
+		"editprotected": {
+			"tboverride": true
+		},
 		"viewrestrictedlogs": {
 			"titleblacklistlog": true
 		}
