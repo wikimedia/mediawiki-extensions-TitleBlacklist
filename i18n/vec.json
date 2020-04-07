@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Candalua",
-			"GatoSelvadego",
-			"Conky77"
+			"Conky77",
+			"GatoSelvadego"
 		]
 	},
 	"titleblacklist-desc": "Consente ai aministradori de proibir la creazion de pagine con i titoli indicà su la [[MediaWiki:Titleblacklist|lista nera]] e su la [[MediaWiki:Titlewhitelist|lista bianca]]",

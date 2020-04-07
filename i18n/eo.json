@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mihxil",
-			"Yekrats",
 			"Gamliel Fishkin",
-			"Robin van der Vliet"
+			"Mihxil",
+			"Robin van der Vliet",
+			"Yekrats"
 		]
 	},
 	"titleblacklist-desc": "Rajtigas la adminstrantojn malpermesi kreadon de paĝoj kaj uzanto-kontoj per [[MediaWiki:Titleblacklist|nigralisto]] kaj [[MediaWiki:Titlewhitelist|blankalisto]]",
