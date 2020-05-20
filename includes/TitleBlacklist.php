@@ -26,7 +26,8 @@ class TitleBlacklist {
 	/** @var TitleBlacklist|null */
 	protected static $instance = null;
 
-	const VERSION = 3;	// Blacklist format
+	/** Blacklist format */
+	public const VERSION = 3;
 
 	/**
 	 * Get an instance of this class
