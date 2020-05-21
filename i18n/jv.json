@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Meursault2004",
+			"N219",
 			"NoiX180",
 			"Pras"
 		]
 	},
-	"titleblacklist-desc": "Marengaké pangurus menggak wong nggawé kaca lan akun miturut [[MediaWiki:Titleblacklist|daftar-ireng]] lan [[MediaWiki:Titlewhitelist|daftar-putih]]",
+	"titleblacklist-desc": "Ngoléhaké panata menggak wong nggawé kaca lan akun miturut [[MediaWiki:Titleblacklist|daftar-ireng]] lan [[MediaWiki:Titlewhitelist|daftar-putih]]",
 	"titleblacklist": "# Iki dhaptar-ireng irah-irahan. Irah-irahan lan panganggo sing cocog karo sawijining regex ing kéné ora bisa digawé.\n# Anggonen \"#\" kanggo komentar.\n# Dhaptar iki sacara baku ora mbédakaké aksara gedhé-cilik.",
 	"titlewhitelist": "# Dhaptar iki arupa dhaptar-putih irah-irahan. Anggonen \"#\" kanggo komentar.\n# Dhaptar iki sacara baku ora mbédakaké aksara gedhé-cilik.",
 	"titleblacklist-forbidden-edit": "Sesirah \"$2\" dilarang digawé.\nSesirah iki cocog karo isi pratélan ireng iki: <code>$1</code>",
