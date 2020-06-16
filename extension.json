@@ -104,7 +104,7 @@
 		"EditFilter": [
 			"TitleBlacklistHooks::onValidateBlacklist"
 		],
-		"PageContentSaveComplete": [
+		"PageSaveComplete": [
 			"TitleBlacklistHooks::onClearBlacklist"
 		],
 		"ScribuntoExternalLibraries": [
