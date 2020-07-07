@@ -18,7 +18,7 @@
 	"action-tboverride": "die Negativliste unerwünschter Seiten- oder Benutzernamen außer Kraft zu setzen",
 	"action-tboverride-account": "die Negativliste unerwünschter Benutzernamen außer Kraft zu setzen",
 	"action-titleblacklistlog": "das Titel-Negativliste-Logbuch anzusehen",
-	"log-name-titleblacklist": "Titel-Negativliste-Logbuch",
+	"log-name-titleblacklist": "Titel-Negativlisten-Logbuch",
 	"log-description-titleblacklist": "Dies ist ein Logbuch der Titel-Negativliste-Treffer.",
 	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|verursachte}} einen Treffer in der Titel-Negativliste beim Versuch, das Benutzerkonto $3 mit dem übereinstimmenden Eintrag „$4“ zu erstellen.",
 	"titleblacklist-desc": "Ermöglicht es Administratoren die Erstellung unerwünschter Seiten- und Benutzernamen zu unterbinden: [[MediaWiki:Titleblacklist]] und [[MediaWiki:Titlewhitelist]]",
