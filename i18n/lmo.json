@@ -20,7 +20,7 @@
 	"titleblacklist-invalid": "{{PLURAL:$1|Questa riga chì|Queste righe chì}} in la lista negra di titoi minga permetud {{PLURAL:$1|l'è minga valida|a inn minga valide}}; per piesè corensg {{PLURAL:$1|l'eror|i eror}} inanz de salvà la pagina.",
 	"titleblacklist-override": "Ignora la lista negra di titoi se la corispond",
 	"titleblacklist-override-help": "I utent con assee de priviliensg i poden impostà questa opzion chì per ignorà i control de lista negra sora el titol.",
-	"titleblacklist-warning": "<strong>Atenzione: questa pagina chì la pò vesser modificada domà di minestrador o di utent cont el dirit <code>tboverride</code> desgià che la corispond a quela vos chì de la lista di titoi blocad:</strong><br /><code>$1</code>",
+	"titleblacklist-warning": "<strong>Atenzione: questa pagina chì la pò vesser modificada domà di minestrador o di utent cont el dirit <code>tboverride</code> desgià che la corispond a quella vos chì de la lista di titoi blocad:</strong><br /><code>$1</code>",
 	"right-tboverride": "Ignora la lista negra di titoi o di nom d'utent",
 	"right-tboverride-account": "Ignora la lista negra di nom d'utent",
 	"right-titleblacklistlog": "Varda el register di titoi blocad"
