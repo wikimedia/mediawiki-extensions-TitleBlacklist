@@ -92,24 +92,17 @@
 		"remoteExtPath": "TitleBlacklist/modules"
 	},
 	"Hooks": {
-		"getUserPermissionsErrorsExpensive": [
-			"TitleBlacklistHooks::onUserCan"
-		],
-		"TitleGetEditNotices": [
-			"TitleBlacklistHooks::onDisplayBlacklistOverrideNotice"
-		],
-		"MovePageCheckPermissions": [
-			"TitleBlacklistHooks::onMovePageCheckPermissions"
-		],
-		"EditFilter": [
-			"TitleBlacklistHooks::onValidateBlacklist"
-		],
-		"PageSaveComplete": [
-			"TitleBlacklistHooks::onClearBlacklist"
-		],
-		"ScribuntoExternalLibraries": [
-			"TitleBlacklistHooks::onScribuntoExternalLibraries"
-		]
+		"getUserPermissionsErrorsExpensive": "TitleBlacklistHookHandler",
+		"TitleGetEditNotices": "TitleBlacklistHookHandler",
+		"MovePageCheckPermissions": "TitleBlacklistHookHandler",
+		"EditFilter": "TitleBlacklistHookHandler",
+		"PageSaveComplete": "TitleBlacklistHookHandler",
+		"ScribuntoExternalLibraries": "TitleBlacklistHooks::onScribuntoExternalLibraries"
+	},
+	"HookHandlers": {
+		"TitleBlacklistHookHandler": {
+			"class": "TitleBlacklistHooks"
+		}
 	},
 	"config": {
 		"TitleBlacklistSources": {
