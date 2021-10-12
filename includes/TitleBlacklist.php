@@ -137,7 +137,8 @@ class TitleBlacklist {
 			} else {
 				$page = WikiPage::factory( $title );
 				if ( $page->exists() ) {
-					return ContentHandler::getContentText( $page->getContent() );
+					$content = $page->getContent();
+					return ( $content instanceof TextContent ) ? $content->getText() : "";
 				}
 			}
 		} elseif ( $source['type'] == 'url' && count( $source ) >= 2 ) {
