@@ -349,7 +349,7 @@ class TitleBlacklist {
 	}
 
 	/**
-	 * Inidcates whether user can override blacklist on certain action.
+	 * Indicates whether user can override blacklist on certain action.
 	 *
 	 * @param User $user
 	 * @param string $action Action

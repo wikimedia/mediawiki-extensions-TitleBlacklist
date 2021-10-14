@@ -221,7 +221,7 @@ class TitleBlacklistEntry {
 						$mword[2]
 					);
 					if ( is_string( $cpf_result ) ) {
-						// All result will have the same value, so we can just use str_seplace()
+						// All result will have the same value, so we can just use str_replace()
 						$regex = str_replace( $mword[0], $cpf_result, $regex );
 					}
 					break;
