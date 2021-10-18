@@ -3,12 +3,15 @@
 		"authors": [
 			"Ainali",
 			"Boivie",
+			"Hannarosendeloitte",
 			"Lejonel",
 			"Lokal Profil",
 			"M.M.S.",
 			"WikiPhoenix"
 		]
 	},
+	"action-tboverride": "Åsidosätt svartlistan med titlar och användarnamn",
+	"action-tboverride-account": "Åsidosätt svartlistan med användarnamn",
 	"action-titleblacklistlog": "visa svartlistningsloggen för titlar",
 	"log-name-titleblacklist": "Svartlistningslogg för titlar",
 	"log-description-titleblacklist": "Dessa händelser spårar svartlistningsträffar för titlar.",
@@ -21,7 +24,8 @@
 	"titleblacklist-forbidden-upload": "Filnamnet \"$2\" har stoppats från att skapas. Namnet matchar följande rad i svarta listan för sidtitlar: <code>$1</code>",
 	"titleblacklist-forbidden-new-account": "Användarnamnet \"$2\" kan inte skapas.\nDet matchar följande element i svartlistan: <code>$1</code>",
 	"titleblacklist-invalid": "Följande {{PLURAL:$1|rad|rader}} i listan är {{PLURAL:$1|felaktig|felaktiga}}; {{PLURAL:$1|den|de}} måste rättas innan du kan spara:",
-	"titleblacklist-override": "Ignorera svartlistan",
+	"titleblacklist-override": "Åsidosätt svartlistan med titlar om det matchar",
+	"titleblacklist-override-help": "Användare med tillräckliga behörigheter kan ställa in detta för att ignorera checkarna för titlarnas svartlista.",
 	"titleblacklist-warning": "<strong>Varning: Denna sida kan endast redigeras av administratörer och andra användare med <code>tboverride</code>-rättigheten eftersom den matchar följande post i svartlistan över titlar:</strong><br /><code>$1</code>",
 	"right-tboverride": "Åsidosätt svartlistan med titlar och användarnamn",
 	"right-tboverride-account": "Kör över svartlistan för användarnamn",
