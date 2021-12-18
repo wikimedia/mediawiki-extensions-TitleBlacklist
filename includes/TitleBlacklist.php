@@ -135,7 +135,7 @@ class TitleBlacklist {
 					return '';
 				}
 			} else {
-				$page = WikiPage::factory( $title );
+				$page = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 				if ( $page->exists() ) {
 					$content = $page->getContent();
 					return ( $content instanceof TextContent ) ? $content->getText() : "";
