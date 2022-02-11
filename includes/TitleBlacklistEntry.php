@@ -7,6 +7,7 @@
  * @file
  */
 
+use MediaWiki\Extension\AntiSpoof\AntiSpoof;
 use MediaWiki\MediaWikiServices;
 
 /**
