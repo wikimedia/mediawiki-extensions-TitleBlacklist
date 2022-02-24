@@ -9,6 +9,7 @@
 
 use MediaWiki\Extension\AntiSpoof\AntiSpoof;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\AtEase\AtEase;
 
 /**
  * @ingroup Extensions
@@ -130,13 +131,13 @@ class TitleBlacklistEntry {
 			}
 		}
 
-		Wikimedia\suppressWarnings();
+		AtEase::suppressWarnings();
 		// @phan-suppress-next-line SecurityCheck-ReDoS
 		$match = preg_match(
 			"/^(?:{$this->mRegex})$/us" . ( isset( $this->mParams['casesensitive'] ) ? '' : 'i' ),
 			$title
 		);
-		Wikimedia\restoreWarnings();
+		AtEase::restoreWarnings();
 
 		if ( $match ) {
 			if ( isset( $this->mParams['moveonly'] ) && $action != 'move' ) {

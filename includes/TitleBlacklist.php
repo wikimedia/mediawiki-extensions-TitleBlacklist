@@ -8,6 +8,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use Wikimedia\AtEase\AtEase;
 
 /**
  * @ingroup Extensions
@@ -337,13 +338,13 @@ class TitleBlacklist {
 	public function validate( array $blacklist ) {
 		$badEntries = [];
 		foreach ( $blacklist as $e ) {
-			Wikimedia\suppressWarnings();
+			AtEase::suppressWarnings();
 			$regex = $e->getRegex();
 			// @phan-suppress-next-line SecurityCheck-ReDoS
 			if ( preg_match( "/{$regex}/u", '' ) === false ) {
 				$badEntries[] = $e->getRaw();
 			}
-			Wikimedia\restoreWarnings();
+			AtEase::restoreWarnings();
 		}
 		return $badEntries;
 	}
