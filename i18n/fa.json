@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"Bersam",
 			"Calak",
 			"Dalba",
@@ -13,8 +14,10 @@
 			"ZxxZxxZ"
 		]
 	},
-	"action-titleblacklistlog": "مشاهدۀ سیاهۀ لیست سیاه عنوان",
-	"log-name-titleblacklist": "سیاهۀ لیست سیاه عنوان",
+	"action-tboverride": "نادیده گرفتن فهرست عنوان‌ها و نام‌های کاربری غیرمجاز",
+	"action-tboverride-account": "نادیده گرفتن فهرست نام‌های کاربری غیرمجاز",
+	"action-titleblacklistlog": "مشاهدۀ سیاهۀ فهرست عنوان‌های غیرمجاز",
+	"log-name-titleblacklist": "سیاهۀ فهرست عنوان‌های غیرمجاز",
 	"log-description-titleblacklist": "این رویدادها خوردن به فهرست سیاه را دنبال می‌کنند.",
 	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|باعث}} یک برخورد با فهرست سیاه عنوان هنگام ساخت یک حساب کاربری $3 متطابق با $4 شد.",
 	"titleblacklist-desc": "امکان جلوگیری از ایجاد صفحه‌هایی با عنوان‌های خاص را می‌دهد: [[MediaWiki:Titleblacklist]] و [[MediaWiki:Titlewhitelist]]",
