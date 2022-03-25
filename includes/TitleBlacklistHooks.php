@@ -206,11 +206,9 @@ class TitleBlacklistHooks implements
 			$errlines = '* <code>' .
 				implode( "</code>\n* <code>", array_map( 'wfEscapeWikiText', $ok ) ) .
 				'</code>';
-			$error = Html::openElement( 'div', [ 'class' => 'errorbox' ] ) .
-				$errmsg .
-				"\n" .
-				$errlines .
-				Html::closeElement( 'div' ) . "\n" .
+			$error = Html::errorBox(
+					$errmsg . "\n" . $errlines
+				) . "\n" .
 				Html::element( 'br', [ 'clear' => 'all' ] ) . "\n";
 
 			// $error will be displayed by the edit class
