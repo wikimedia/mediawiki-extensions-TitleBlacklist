@@ -21,6 +21,8 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+use Wikimedia\ParamValidator\ParamValidator;
+
 /**
  * Query module check a title against the blacklist
  *
@@ -76,18 +78,18 @@ class ApiQueryTitleBlacklist extends ApiBase {
 	public function getAllowedParams() {
 		return [
 			'title' => [
-				ApiBase::PARAM_REQUIRED => true,
+				ParamValidator::PARAM_REQUIRED => true,
 			],
 			'action' => [
-				ApiBase::PARAM_DFLT => 'edit',
-				ApiBase::PARAM_ISMULTI => false,
-				ApiBase::PARAM_TYPE => [
+				ParamValidator::PARAM_DEFAULT => 'edit',
+				ParamValidator::PARAM_ISMULTI => false,
+				ParamValidator::PARAM_TYPE => [
 					// createtalk and createpage are useless as they're treated exactly like create
 					'create', 'edit', 'upload', 'createtalk', 'createpage', 'move', 'new-account'
 				],
 			],
 			'nooverride' => [
-				ApiBase::PARAM_DFLT => false,
+				ParamValidator::PARAM_DEFAULT => false,
 			]
 		];
 	}
