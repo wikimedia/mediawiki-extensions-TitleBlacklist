@@ -7,7 +7,14 @@
  * @file
  */
 
+namespace MediaWiki\Extension\TitleBlacklist;
+
 use MediaWiki\MediaWikiServices;
+use MWException;
+use ObjectCache;
+use TextContent;
+use Title;
+use User;
 use Wikimedia\AtEase\AtEase;
 
 /**

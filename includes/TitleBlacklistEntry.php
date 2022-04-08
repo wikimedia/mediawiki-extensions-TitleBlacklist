@@ -7,6 +7,11 @@
  * @file
  */
 
+namespace MediaWiki\Extension\TitleBlacklist;
+
+use CoreParserFunctions;
+use Exception;
+use ExtensionRegistry;
 use MediaWiki\Extension\AntiSpoof\AntiSpoof;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\AtEase\AtEase;

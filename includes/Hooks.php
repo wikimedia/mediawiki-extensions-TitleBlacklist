@@ -6,21 +6,40 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TitleBlacklist;
+
+use ApiMessage;
+use ApiResult;
+use EditPage;
+use Html;
+use ManualLogEntry;
+use MediaWiki\Hook\EditFilterHook;
+use MediaWiki\Hook\MovePageCheckPermissionsHook;
+use MediaWiki\Hook\TitleGetEditNoticesHook;
+use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Storage\EditResult;
+use MediaWiki\Storage\Hook\PageSaveCompleteHook;
 use MediaWiki\User\UserIdentity;
+use MessageSpecifier;
+use RequestContext;
+use Status;
+use StatusValue;
+use Title;
+use User;
+use WikiPage;
 
 /**
  * Hooks for the TitleBlacklist class
  *
  * @ingroup Extensions
  */
-class TitleBlacklistHooks implements
-	\MediaWiki\Hook\EditFilterHook,
-	\MediaWiki\Hook\TitleGetEditNoticesHook,
-	\MediaWiki\Hook\MovePageCheckPermissionsHook,
-	\MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook,
-	\MediaWiki\Storage\Hook\PageSaveCompleteHook
+class Hooks implements
+	EditFilterHook,
+	TitleGetEditNoticesHook,
+	MovePageCheckPermissionsHook,
+	GetUserPermissionsErrorsExpensiveHook,
+	PageSaveCompleteHook
 {
 
 	/**
@@ -269,7 +288,7 @@ class TitleBlacklistHooks implements
 	 */
 	public static function onScribuntoExternalLibraries( $engine, array &$extraLibraries ) {
 		if ( $engine == 'lua' ) {
-			$extraLibraries['mw.ext.TitleBlacklist'] = 'Scribunto_LuaTitleBlacklistLibrary';
+			$extraLibraries['mw.ext.TitleBlacklist'] = Scribunto_LuaTitleBlacklistLibrary::class;
 		}
 	}
 }

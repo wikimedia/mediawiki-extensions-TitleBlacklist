@@ -21,6 +21,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+namespace MediaWiki\Extension\TitleBlacklist\Api;
+
+use ApiBase;
+use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
+use MediaWiki\Extension\TitleBlacklist\TitleBlacklistEntry;
+use Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
