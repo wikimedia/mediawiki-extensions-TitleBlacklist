@@ -172,7 +172,8 @@ class TitleBlacklistEntry {
 	 * @return TitleBlacklistEntry|null
 	 */
 	public static function newFromString( $line, $source ) {
-		$raw = $line; // Keep line for raw data
+		// Keep line for raw data
+		$raw = $line;
 		$options = [];
 		// Strip comments
 		$line = preg_replace( "/^\\s*([^#]*)\\s*((.*)?)$/", "\\1", $line );
@@ -187,7 +188,8 @@ class TitleBlacklistEntry {
 			return null;
 		}
 		$regex = trim( $pockets[1] );
-		$regex = str_replace( '_', ' ', $regex ); // We'll be matching against text form
+		// We'll be matching against text form
+		$regex = str_replace( '_', ' ', $regex );
 		$opts_str = isset( $pockets[3] ) ? trim( $pockets[3] ) : '';
 		// Parse opts
 		$opts = preg_split( '/\s*\|\s*/', $opts_str );
