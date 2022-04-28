@@ -125,7 +125,8 @@ class TitleBlacklist {
 	 */
 	private static function getBlacklistText( $source ) {
 		if ( !is_array( $source ) || count( $source ) <= 0 ) {
-			return '';	// Return empty string in error case
+			// Return empty string in error case
+			return '';
 		}
 
 		if ( $source['type'] == 'message' ) {
