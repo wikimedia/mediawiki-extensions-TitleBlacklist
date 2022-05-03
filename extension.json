@@ -53,6 +53,7 @@
 		]
 	},
 	"AutoloadClasses": {
+		"MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklist": "includes/TitleBlacklist.php",
 		"TitleBlacklist": "includes/TitleBlacklist.php",
 		"TitleBlacklistEntry": "includes/TitleBlacklistEntry.php",
 		"TitleBlacklistHooks": "includes/TitleBlacklistHooks.php",

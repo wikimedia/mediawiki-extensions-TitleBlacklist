@@ -362,3 +362,5 @@ class TitleBlacklist {
 			( $action == 'new-account' && $user->isAllowed( 'tboverride-account' ) );
 	}
 }
+
+class_alias( 'TitleBlacklist', 'MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklist' );
