@@ -35,7 +35,7 @@ class TitleBlacklist {
 	protected static $instance = null;
 
 	/** Blacklist format */
-	public const VERSION = 3;
+	public const VERSION = 4;
 
 	/**
 	 * Get an instance of this class
@@ -370,3 +370,5 @@ class TitleBlacklist {
 			( $action == 'new-account' && $user->isAllowed( 'tboverride-account' ) );
 	}
 }
+
+class_alias( TitleBlacklist::class, 'TitleBlacklist' );

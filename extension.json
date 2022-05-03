@@ -52,6 +52,10 @@
 			"i18n/api"
 		]
 	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklist": "includes/TitleBlacklist.php",
+		"TitleBlacklist": "includes/TitleBlacklist.php"
+	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\TitleBlacklist\\": "includes/"
 	},
