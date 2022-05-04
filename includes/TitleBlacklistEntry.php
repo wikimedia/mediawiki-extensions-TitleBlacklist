@@ -302,3 +302,5 @@ class TitleBlacklistEntry {
 		return $message ?: "titleblacklist-forbidden-{$operation}";
 	}
 }
+
+class_alias( 'TitleBlacklistEntry', 'MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklistEntry' );
