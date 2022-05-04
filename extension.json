@@ -54,7 +54,9 @@
 	},
 	"AutoloadClasses": {
 		"MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklist": "includes/TitleBlacklist.php",
-		"TitleBlacklist": "includes/TitleBlacklist.php"
+		"TitleBlacklist": "includes/TitleBlacklist.php",
+		"MediaWiki\\Extension\\TitleBlacklist\\TitleBlacklistEntry": "includes/TitleBlacklistEntry.php",
+		"TitleBlacklistEntry": "includes/TitleBlacklistEntry.php"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\TitleBlacklist\\": "includes/"
