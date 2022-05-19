@@ -3,12 +3,13 @@
 		"authors": [
 			"Artsiom91",
 			"Tomato Cream",
-			"Chadyka"
+			"Chadyka",
+			"No Sleep till Krupki"
 		]
 	},
 	"action-tboverride": "абыходзіць спіс забароненых назваў або імёнаў удзельнікаў",
 	"action-tboverride-account": "абыходзіць спіс забароненых імёнаў удзельнікаў",
-	"action-titleblacklistlog": "прагляд журнала забароненых назваў",
+	"action-titleblacklistlog": "праглядаць журнал забароненых назваў",
 	"log-name-titleblacklist": "Журнал спісу забароненых назваў",
 	"log-description-titleblacklist": "Гэта журнал, які адсочвае спрацоўванні спісу забароненых назваў.",
 	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|выклікаў|выклікала}} трапленне ў спіс забароненых назваў пры спробе стварыць рахунак «$3», назва якога супадае з выразам «$4».",
@@ -25,5 +26,5 @@
 	"titleblacklist-warning": "<strong>Увага: гэтую старонку могуць правіць толькі адміністратары і іншыя ўдзельнікі з правам <code>tboverride</code>, бо яна адпавядае наступнаму запісу забароненых назваў:</strong><br /><code>$1</code>",
 	"right-tboverride": "Абыход спісу забароненых назваў або імёнаў удзельнікаў",
 	"right-tboverride-account": "Абыход спісу забароненых імёнаў удзельнікаў",
-	"right-titleblacklistlog": "прагляд журнала забароненых назваў"
+	"right-titleblacklistlog": "Прагляд журнала забароненых назваў"
 }
