@@ -22,7 +22,7 @@
 	"action-titleblacklistlog": "afficher le journal de la liste des titres interdits",
 	"log-name-titleblacklist": "Journal de la liste des titres interdits",
 	"log-description-titleblacklist": "Ces événements tracent les occurrences avec la liste des titres interdits.",
-	"logentry-titleblacklist-hit-username": "$1{{GENDER:$2|}} a généré une occurrence avec la liste des titres interdits en essayant de créer le compte $3 qui correspond à $4.",
+	"logentry-titleblacklist-hit-username": "$1{{GENDER:$2|}} a produit une occurrence dans la liste des titres interdits en essayant de créer le compte $3 qui correspond à $4.",
 	"titleblacklist-desc": "Permet aux administrateurs d’interdire la création de pages et de comptes utilisateur en fonction d’une [[MediaWiki:Titleblacklist|liste de titres interdits]] et d’une [[MediaWiki:Titlewhitelist|liste de titres autorisés]].",
 	"titleblacklist": "# Ceci est la liste des titres interdits. Les titres et les noms d’utilisateurs qui correspondent à une expression rationnelle présente sur cette page ne peuvent pas être créés.\n# Utilisez « # » pour insérer des commentaires.\n# Par défaut, les entrées ne sont pas sensibles à la casse.",
 	"titlewhitelist": "# Ceci est la liste des titres autorisés. Utilisez « # » pour insérer des commentaires.\n# Par défaut, les entrées ne sont pas sensibles à la casse.",
