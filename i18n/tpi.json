@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"action-tboverride": "go antap no larim nem o lis bilong yusanem",
+	"action-tboverride-account": "go antap lis bilong no larim yusanem",
+	"action-titleblacklistlog": "lukim log bilong lis bilong no larim nem",
+	"log-name-titleblacklist": "Log bilong no larim nem",
+	"log-description-titleblacklist": "Dispela samting bin lukim long ol hit lis bilong no larim nem.",
+	"logentry-titleblacklist-hit-username": "$1 {{GENDER:$2|mekim}} hit bilong lis bilong no larim nem wanim traim mekim akaun $3 masis $4.",
+	"titleblacklist-desc": "Larim ol admin long no larim mekim bilong ol pes na akaun bilong yusa long [[MediaWiki:Titleblacklist|lis bilong no larim]] na [[MediaWiki:Titlewhitelist|larim]] nem",
+	"titleblacklist": "# Dispela i stap lis bilong no larim nem. Nem na yusanem masis sampela tok long hia no save bin mekim.\n# Yusim \"#\" long ol toktok.\n# Dispela i stap wokim bilong narakain kes",
+	"titlewhitelist": "# Dispela i stap lis bilong larim nem. \n# Yusim \"#\" long ol toktok.\n# Dispela i stap wokim bilong narakain kes",
+	"titleblacklist-forbidden-edit": "Pes \"$2\" bin tambu na yu no larim mekim dispela pes.\nEm masim dispela tok long lis bilong no larim nem: <code>$1</code>",
+	"titleblacklist-forbidden-move": "\"$2\" no save muvim long \"$3\", bikos nem \"$3\" i bin tambu na yu no larim mekim dispela pes.\nEm masim dispela tok long lis bilong no larim nem: <code>$1</code>",
+	"titleblacklist-forbidden-upload": "Nem bilong fail \"$2\" i bin tambu na yu no larim mekim dispela fail.\nEm masim dispela tok long lis bilong no larim nem: <code>$1</code>",
+	"titleblacklist-forbidden-new-account": "Yusanem \"$2\" i bin tambu na yu no larim mekim akaun igat dispela nem.\nEm masim dispela tok long lis bilong no larim nem: <code>$1</code>",
+	"titleblacklist-invalid": "Dispela {{PLURAL:$1|lain}} long lis bilong no larim nem {{PLURAL:$1|i stap}} no wokim gutpela;\nplis fiksim {{PLURAL:$1|em}} bipo sevim:",
+	"titleblacklist-override": "Go antap lis bilong no larim nem sapos em masis",
+	"titleblacklist-override-help": "Yusa i save larim save setim dispela long abrus i go sek bilong lis bilong no larim nem.",
+	"titleblacklist-warning": "<strong>Lukaut: Dispela pes i save tasol save senisim bilong ol admin na ol narapela yusa igat rait bilong <code>tbgo antap</code> bikos em masim dispela tok long list bilong no larim nem:</strong><br /><code>$1</code>",
+	"right-tboverride": "Override the disallowed titles or usernames list",
+	"right-tboverride-account": "Go antap lis bilong no larim nem",
+	"right-titleblacklistlog": "Lukim log bilong lis bilong no larim nem"
+}
