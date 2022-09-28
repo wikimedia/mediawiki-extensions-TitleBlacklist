@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
+			"Eleassar",
 			"Pinky sl"
 		]
 	},
-	"titleblacklist-desc": "Omogoča administratorjem preprečiti ustvarjanje strani in uporabniških računov glede na [[MediaWiki:Titleblacklist|seznam nedovoljenih]] in [[MediaWiki:Titlewhitelist|seznam dovoljenih]] naslovov",
+	"titleblacklist-desc": "Administratorjem omogoča preprečitev ustvarjanja strani in uporabniških računov glede na [[MediaWiki:Titleblacklist|seznam nedovoljenih]] in [[MediaWiki:Titlewhitelist|seznam dovoljenih]] naslovov",
 	"titleblacklist": "# To je seznam nedovoljenih naslovov. Naslovov in uporabniških imen, ki ustrezajo regularnim izrazom tukaj, ni mogoče ustvariti.\n# Uporabite »#« za pripombe. \n# Po privzetem seznam ni občutljiv na velikost črk",
 	"titlewhitelist": "# To je seznam dovoljenih naslovov. Uporabite »#« za pripombe. \n# Po privzetem seznam ni občutljiv na velikost črk",
 	"titleblacklist-forbidden-edit": "Naslov »$2« je bil preprečen pred ustvarjanjem.\nUstreza naslednjemu vnosu na seznamu nedovoljenih naslovov: <code>$1</code>",
