@@ -243,7 +243,6 @@ class TitleBlacklistEntry {
 		}
 		// Return result
 		if ( $regex ) {
-			// @phan-suppress-next-line SecurityCheck-ReDoS
 			return new TitleBlacklistEntry( $regex, $options, $raw, $source );
 		} else {
 			return null;
