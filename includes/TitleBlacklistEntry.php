@@ -308,5 +308,3 @@ class TitleBlacklistEntry {
 		return $message ?: "titleblacklist-forbidden-{$operation}";
 	}
 }
-
-class_alias( TitleBlacklistEntry::class, 'TitleBlacklistEntry' );
