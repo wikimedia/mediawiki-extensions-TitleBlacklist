@@ -10,9 +10,9 @@ namespace MediaWiki\Extension\TitleBlacklist;
 
 use ApiMessage;
 use ApiResult;
-use EditPage;
 use Html;
 use ManualLogEntry;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditFilterHook;
 use MediaWiki\Hook\MovePageCheckPermissionsHook;
 use MediaWiki\Hook\TitleGetEditNoticesHook;
