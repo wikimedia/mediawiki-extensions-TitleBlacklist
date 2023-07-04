@@ -1,15 +1,4 @@
 <?php
-/**
- * Test the TitleBlacklist API.
- *
- * This wants to run with phpunit.php, like so:
- * cd $IP/tests/phpunit
- * php phpunit.php ../../extensions/TitleBlacklist/tests/ApiQueryTitleBlacklistTest.php
- *
- * The blacklist file is `testSource` and shared by all tests.
- *
- * Ian Baker <ian@wikimedia.org>
- */
 
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
 
