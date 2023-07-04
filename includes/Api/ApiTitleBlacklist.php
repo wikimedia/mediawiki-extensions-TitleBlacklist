@@ -30,15 +30,15 @@ use Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
- * Query module check a title against the blacklist
+ * Module to check a title against the blacklist
  *
  * @ingroup API
  * @ingroup Extensions
  */
-class ApiQueryTitleBlacklist extends ApiBase {
+class ApiTitleBlacklist extends ApiBase {
 
-	public function __construct( $query, $moduleName ) {
-		parent::__construct( $query, $moduleName, 'tb' );
+	public function __construct( $mainModule, $moduleName ) {
+		parent::__construct( $mainModule, $moduleName, 'tb' );
 	}
 
 	public function execute() {

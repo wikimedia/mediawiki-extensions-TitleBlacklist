@@ -44,7 +44,7 @@
 		}
 	},
 	"APIModules": {
-		"titleblacklist": "MediaWiki\\Extension\\TitleBlacklist\\Api\\ApiQueryTitleBlacklist"
+		"titleblacklist": "MediaWiki\\Extension\\TitleBlacklist\\Api\\ApiTitleBlacklist"
 	},
 	"MessagesDirs": {
 		"TitleBlacklist": [

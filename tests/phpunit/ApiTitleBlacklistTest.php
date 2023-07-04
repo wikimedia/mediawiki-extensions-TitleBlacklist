@@ -4,9 +4,9 @@ use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
 
 /**
  * @group medium
- * @covers \MediaWiki\Extension\TitleBlacklist\Api\ApiQueryTitleBlacklist
+ * @covers \MediaWiki\Extension\TitleBlacklist\Api\ApiTitleBlacklist
  */
-class ApiQueryTitleBlacklistTest extends ApiTestCase {
+class ApiTitleBlacklistTest extends ApiTestCase {
 
 	protected function setUp(): void {
 		parent::setUp();
