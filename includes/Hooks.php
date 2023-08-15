@@ -282,16 +282,4 @@ class Hooks implements
 			$logEntry->publish( $logid );
 		}
 	}
-
-	/**
-	 * External Lua library for Scribunto
-	 *
-	 * @param string $engine
-	 * @param array &$extraLibraries
-	 */
-	public static function onScribuntoExternalLibraries( $engine, array &$extraLibraries ) {
-		if ( $engine == 'lua' ) {
-			$extraLibraries['mw.ext.TitleBlacklist'] = Scribunto_LuaTitleBlacklistLibrary::class;
-		}
-	}
 }
