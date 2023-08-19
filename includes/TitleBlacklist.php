@@ -11,9 +11,9 @@ namespace MediaWiki\Extension\TitleBlacklist;
 
 use BadMethodCallException;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use ObjectCache;
 use TextContent;
-use Title;
 use User;
 use Wikimedia\AtEase\AtEase;
 

@@ -20,12 +20,12 @@ use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Storage\EditResult;
 use MediaWiki\Storage\Hook\PageSaveCompleteHook;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MessageSpecifier;
 use RequestContext;
 use Status;
 use StatusValue;
-use Title;
 use User;
 use WikiPage;
 
