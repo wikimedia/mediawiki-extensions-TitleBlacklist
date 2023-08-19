@@ -26,7 +26,7 @@ namespace MediaWiki\Extension\TitleBlacklist\Api;
 use ApiBase;
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklistEntry;
-use Title;
+use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
