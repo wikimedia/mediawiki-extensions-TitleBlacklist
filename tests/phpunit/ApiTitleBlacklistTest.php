@@ -4,6 +4,7 @@ use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
 
 /**
  * @group medium
+ * @group Database
  * @covers \MediaWiki\Extension\TitleBlacklist\Api\ApiTitleBlacklist
  */
 class ApiTitleBlacklistTest extends ApiTestCase {
