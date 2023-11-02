@@ -76,7 +76,7 @@ class Hooks implements
 		$result = ApiMessage::create(
 			wfMessage(
 				$errmsg,
-				htmlspecialchars( $blacklisted->getRaw() ),
+				wfEscapeWikiText( $blacklisted->getRaw() ),
 				$title->getFullText()
 			),
 			'titleblacklist-forbidden',
@@ -149,7 +149,7 @@ class Hooks implements
 		if ( $blacklisted instanceof TitleBlacklistEntry ) {
 			$status->fatal( ApiMessage::create( [
 				$blacklisted->getErrorMessage( 'move' ),
-				$blacklisted->getRaw(),
+				wfEscapeWikiText( $blacklisted->getRaw() ),
 				$oldTitle->getFullText(),
 				$newTitle->getFullText()
 			] ) );
@@ -190,7 +190,7 @@ class Hooks implements
 		];
 		ApiResult::setIndexedTagName( $params, 'param' );
 		return StatusValue::newFatal( ApiMessage::create(
-			[ $message, $blacklisted->getRaw(), $userName ],
+			[ $message, wfEscapeWikiText( $blacklisted->getRaw() ), $userName ],
 			'titleblacklist-forbidden',
 			[
 				'message' => [
