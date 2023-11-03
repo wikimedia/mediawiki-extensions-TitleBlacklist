@@ -16,6 +16,7 @@ use MediaWiki\Hook\EditFilterHook;
 use MediaWiki\Hook\MovePageCheckPermissionsHook;
 use MediaWiki\Hook\TitleGetEditNoticesHook;
 use MediaWiki\Html\Html;
+use MediaWiki\Permissions\GrantsInfo;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Status\Status;
@@ -41,6 +42,16 @@ class Hooks implements
 	GetUserPermissionsErrorsExpensiveHook,
 	PageSaveCompleteHook
 {
+
+	public static function onRegistration() {
+		global $wgGrantRiskGroups;
+		// Make sure the risk rating is at least 'security'. TitleBlacklist adds the
+		// tboverride-account right to the createaccount grant, which makes it possible
+		// to use it for social engineering attacks with restricted usernames.
+		if ( $wgGrantRiskGroups['createaccount'] !== GrantsInfo::RISK_INTERNAL ) {
+			$wgGrantRiskGroups['createaccount'] = GrantsInfo::RISK_SECURITY;
+		}
+	}
 
 	/**
 	 * getUserPermissionsErrorsExpensive hook
