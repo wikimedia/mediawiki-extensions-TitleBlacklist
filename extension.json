@@ -60,18 +60,10 @@
 			"scripts": "mediawiki.api.titleblacklist.js",
 			"dependencies": [
 				"mediawiki.api"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			]
 		},
 		"ext.titleblacklist.visualEditor": {
-			"scripts": "ve-titleblacklist/ve.init.mw.TitleBlacklistSaveErrorHandler.js",
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"scripts": "ve-titleblacklist/ve.init.mw.TitleBlacklistSaveErrorHandler.js"
 		}
 	},
 	"attributes": {
