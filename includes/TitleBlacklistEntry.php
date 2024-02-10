@@ -10,8 +10,8 @@
 namespace MediaWiki\Extension\TitleBlacklist;
 
 use CoreParserFunctions;
-use Exception;
 use ExtensionRegistry;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\Extension\AntiSpoof\AntiSpoof;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\AtEase\AtEase;
@@ -84,7 +84,7 @@ class TitleBlacklistEntry {
 		}
 
 		if ( !is_array( $wgTitleBlacklistUsernameSources ) ) {
-			throw new Exception(
+			throw new ConfigException(
 				'$wgTitleBlacklistUsernameSources must be "*", false or an array' );
 		}
 
