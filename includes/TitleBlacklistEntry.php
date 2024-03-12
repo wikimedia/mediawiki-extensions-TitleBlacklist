@@ -128,7 +128,7 @@ class TitleBlacklistEntry {
 
 			if ( $status->isOK() ) {
 				// Remove version from return value
-				list( , $title ) = explode( ':', $status->getValue(), 2 );
+				[ , $title ] = explode( ':', $status->getValue(), 2 );
 			} else {
 				wfDebugLog( 'TitleBlacklist', 'AntiSpoof could not normalize "' . $title . '" ' .
 					$status->getMessage( false, false, 'en' )->text() . '.'
