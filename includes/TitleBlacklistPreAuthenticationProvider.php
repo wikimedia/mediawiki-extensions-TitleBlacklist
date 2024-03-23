@@ -55,7 +55,7 @@ class TitleBlacklistPreAuthenticationProvider extends AbstractPreAuthenticationP
 		$sv = StatusValue::newGood();
 		$creator = RequestContext::getMain()->getUser();
 
-		if ( !$autocreate && empty( $options['creating'] ) || $this->blockAutoAccountCreation ) {
+		if ( ( !$autocreate && empty( $options['creating'] ) ) || $this->blockAutoAccountCreation ) {
 			$sv->merge( Hooks::testUserName(
 				$user->getName(), $creator, true, (bool)$autocreate
 			) );
