@@ -13,7 +13,6 @@ use BadMethodCallException;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use ObjectCache;
 use TextContent;
 use Wikimedia\AtEase\AtEase;
 
@@ -297,7 +296,8 @@ class TitleBlacklist {
 		// FIXME: This is a hack to use Memcached where possible (incl. WMF),
 		// but have CACHE_DB as fallback (instead of no cache).
 		// This might be a good candidate for T248005.
-		$cache = ObjectCache::getInstance( $wgMessageCacheType );
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getObjectCacheFactory()->getInstance( $wgMessageCacheType );
 
 		// Globally shared
 		$key = $cache->makeGlobalKey( 'title_blacklist_source', md5( $url ) );
