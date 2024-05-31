@@ -62,7 +62,7 @@
 
 	/**
 	 * @class mw.Api
-	 * @mixins mw.Api.plugin.titleblacklist
+	 * @mixes mw.Api.plugin.titleblacklist
 	 */
 
 }() );
