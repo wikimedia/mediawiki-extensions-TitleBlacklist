@@ -11,6 +11,7 @@ namespace MediaWiki\Extension\TitleBlacklist;
 use ApiMessage;
 use ApiResult;
 use ManualLogEntry;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditFilterHook;
 use MediaWiki\Hook\MovePageCheckPermissionsHook;
@@ -26,7 +27,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MessageSpecifier;
-use RequestContext;
 use StatusValue;
 use WikiPage;
 

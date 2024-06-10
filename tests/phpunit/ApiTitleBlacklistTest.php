@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
+use MediaWiki\Tests\Api\ApiTestCase;
 
 /**
  * @group medium
