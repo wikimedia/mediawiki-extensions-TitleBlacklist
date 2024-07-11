@@ -4,6 +4,8 @@
 			"Умар"
 		]
 	},
+	"action-tboverride": "дихкина агӀонийн йа декъашхойн цӀерийн могӀам тергал ца йар",
+	"action-tboverride-account": "йихкина декъашхойн цӀерийн могӀам тергал ца бар",
 	"action-titleblacklistlog": "магийна йоцу цӀерийн журнале хьажар",
 	"log-name-titleblacklist": "Магийна йоцу цӀерийн журнал",
 	"log-description-titleblacklist": "Магийна йоцу цӀерш чохь йолу могӀам.",
