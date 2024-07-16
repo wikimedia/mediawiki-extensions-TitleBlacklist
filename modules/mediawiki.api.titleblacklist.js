@@ -25,7 +25,11 @@
 			this.get( {
 				action: 'titleblacklist',
 				tbaction: 'create',
-				tbtitle: title.toString()
+				tbtitle: title.toString(),
+				errorformat: 'html',
+				errorlang: mw.config.get( 'wgUserLanguage' ),
+				errorsuselocal: '',
+				formatversion: 2
 			} )
 				.done( function ( data ) {
 					var result;

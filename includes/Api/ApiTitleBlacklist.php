@@ -72,7 +72,12 @@ class ApiTitleBlacklist extends ApiBase {
 			$res->addValue( 'titleblacklist', 'result', 'blacklisted' );
 			// there aren't any messages for create(talk|page), using edit for those instead
 			$message = $blacklisted->getErrorMessage( $action !== 'create' ? $action : 'edit' );
-			$res->addValue( 'titleblacklist', 'reason', $this->msg( $message, $result )->page( $title )->text() );
+			$messageObj = $this->msg( $message, $result )->page( $title );
+			if ( $this->getErrorFormatter()->getFormat() === 'html' ) {
+				$res->addValue( 'titleblacklist', 'reason', $messageObj->parse() );
+			} else {
+				$res->addValue( 'titleblacklist', 'reason', $messageObj->text() );
+			}
 			$res->addValue( 'titleblacklist', 'message', $message );
 			$res->addValue( 'titleblacklist', 'line', htmlspecialchars( $blacklisted->getRaw() ) );
 		} else {
