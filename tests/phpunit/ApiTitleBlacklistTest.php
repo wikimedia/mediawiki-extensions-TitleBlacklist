@@ -14,7 +14,7 @@ class ApiTitleBlacklistTest extends ApiTestCase {
 		parent::setUp();
 
 		TitleBlacklist::destroySingleton();
-		$this->setMwGlobals( 'wgTitleBlacklistSources', [
+		$this->overrideConfigValue( 'TitleBlacklistSources', [
 			[
 				'type' => 'file',
 				'src'  => __DIR__ . '/testSource.txt',
