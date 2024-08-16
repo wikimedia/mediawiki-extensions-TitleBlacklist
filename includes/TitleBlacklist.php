@@ -219,29 +219,26 @@ class TitleBlacklist {
 	public function isBlacklisted( $title, $action = 'edit' ) {
 		if ( !( $title instanceof Title ) ) {
 			$title = Title::newFromText( $title );
-			if ( !( $title instanceof Title ) ) {
+			if ( !$title ) {
 				// The fact that the page name is invalid will stop whatever
 				// action is going through. No sense in doing more work here.
 				return false;
 			}
 		}
-		$blacklist = $this->getBlacklist();
-		$autoconfirmedItem = false;
-		foreach ( $blacklist as $item ) {
+
+		$autoconfirmedItem = null;
+		foreach ( $this->getBlacklist() as $item ) {
 			if ( $item->matches( $title->getFullText(), $action ) ) {
 				if ( $this->isWhitelisted( $title, $action ) ) {
 					return false;
 				}
-				$params = $item->getParams();
-				if ( !isset( $params['autoconfirmed'] ) ) {
+				if ( !isset( $item->getParams()['autoconfirmed'] ) ) {
 					return $item;
 				}
-				if ( !$autoconfirmedItem ) {
-					$autoconfirmedItem = $item;
-				}
+				$autoconfirmedItem ??= $item;
 			}
 		}
-		return $autoconfirmedItem;
+		return $autoconfirmedItem ?? false;
 	}
 
 	/**
