@@ -38,13 +38,9 @@ class TitleBlacklist {
 
 	/**
 	 * Get an instance of this class
-	 *
-	 * @return TitleBlacklist
 	 */
-	public static function singleton() {
-		if ( self::$instance === null ) {
-			self::$instance = new self;
-		}
+	public static function singleton(): self {
+		self::$instance ??= new self();
 		return self::$instance;
 	}
 
@@ -123,23 +119,31 @@ class TitleBlacklist {
 	/**
 	 * Get the text of a blacklist from a specified source
 	 *
-	 * @param array $source A blacklist source from $wgTitleBlacklistSources
+	 * @param array{type: string, src: ?string} $source A blacklist source from $wgTitleBlacklistSources
 	 * @return string The content of the blacklist source as a string
 	 */
 	private static function getBlacklistText( $source ) {
-		if ( !is_array( $source ) || count( $source ) <= 0 ) {
+		if ( !is_array( $source ) || !isset( $source['type'] ) ) {
 			// Return empty string in error case
 			return '';
 		}
 
-		if ( $source['type'] == 'message' ) {
+		if ( $source['type'] === 'message' ) {
 			return wfMessage( 'titleblacklist' )->inContentLanguage()->text();
-		} elseif ( $source['type'] == 'localpage' && count( $source ) >= 2 ) {
-			$title = Title::newFromText( $source['src'] );
-			if ( $title === null ) {
+		}
+
+		$src = $source['src'] ?? null;
+		// All following types require the "src" element in the array
+		if ( !$src ) {
+			return '';
+		}
+
+		if ( $source['type'] === 'localpage' ) {
+			$title = Title::newFromText( $src );
+			if ( !$title ) {
 				return '';
 			}
-			if ( $title->getNamespace() == NS_MEDIAWIKI ) {
+			if ( $title->inNamespace( NS_MEDIAWIKI ) ) {
 				$msg = wfMessage( $title->getText() )->inContentLanguage();
 				return $msg->isDisabled() ? '' : $msg->text();
 			} else {
@@ -149,13 +153,10 @@ class TitleBlacklist {
 					return ( $content instanceof TextContent ) ? $content->getText() : "";
 				}
 			}
-		} elseif ( $source['type'] == 'url' && count( $source ) >= 2 ) {
-			return self::getHttp( $source['src'] );
-		} elseif ( $source['type'] == 'file' && count( $source ) >= 2 ) {
-			if ( !file_exists( $source['src'] ) ) {
-				return '';
-			}
-			return file_get_contents( $source['src'] );
+		} elseif ( $source['type'] === 'url' ) {
+			return self::getHttp( $src );
+		} elseif ( $source['type'] === 'file' ) {
+			return file_exists( $src ) ? file_get_contents( $src ) : '';
 		}
 
 		return '';
