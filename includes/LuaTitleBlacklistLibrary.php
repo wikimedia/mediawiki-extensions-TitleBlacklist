@@ -5,7 +5,7 @@ namespace MediaWiki\Extension\TitleBlacklist;
 use MediaWiki\Extension\Scribunto\Engines\LuaCommon\LibraryBase;
 use MediaWiki\MediaWikiServices;
 
-class Scribunto_LuaTitleBlacklistLibrary extends LibraryBase {
+class LuaTitleBlacklistLibrary extends LibraryBase {
 	public function register() {
 		$lib = [
 			'test' => [ $this, 'test' ],
