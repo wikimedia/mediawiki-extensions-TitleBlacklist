@@ -29,6 +29,14 @@ class Scribunto_LuaTitleBlacklistLibrary extends LibraryBase {
 			$title = MediaWikiServices::getInstance()->getTitleFormatter()->getPrefixedText( $page );
 		}
 		$entry = TitleBlacklist::singleton()->isBlacklisted( $title, $action );
+
+		// check if not whitelisted
+		$whitelist = TitleBlacklist::singleton()->isWhitelisted( $title, $action );
+		if ( $whitelist ) {
+			// page is whitelisted, don't continue and return a null object
+			return [ null ];
+		}
+
 		if ( $entry ) {
 			return [ [
 				'params' => $entry->getParams(),
