@@ -253,6 +253,9 @@ class TitleBlacklist {
 	public function isWhitelisted( $title, $action = 'edit' ) {
 		if ( !( $title instanceof Title ) ) {
 			$title = Title::newFromText( $title );
+			if ( !$title ) {
+				return false;
+			}
 		}
 		$whitelist = $this->getWhitelist();
 		foreach ( $whitelist as $item ) {
