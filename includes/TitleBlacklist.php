@@ -10,10 +10,10 @@
 namespace MediaWiki\Extension\TitleBlacklist;
 
 use BadMethodCallException;
+use MediaWiki\Content\TextContent;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use TextContent;
 use Wikimedia\AtEase\AtEase;
 
 /**

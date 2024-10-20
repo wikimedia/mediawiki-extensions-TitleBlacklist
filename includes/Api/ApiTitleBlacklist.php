@@ -23,7 +23,7 @@
 
 namespace MediaWiki\Extension\TitleBlacklist\Api;
 
-use ApiBase;
+use MediaWiki\Api\ApiBase;
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklist;
 use MediaWiki\Extension\TitleBlacklist\TitleBlacklistEntry;
 use MediaWiki\Title\Title;
