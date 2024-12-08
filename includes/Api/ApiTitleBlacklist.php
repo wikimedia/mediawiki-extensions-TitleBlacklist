@@ -87,6 +87,7 @@ class ApiTitleBlacklist extends ApiBase {
 		}
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		return [
 			'title' => [
