@@ -230,7 +230,7 @@ class Hooks implements
 	public function onEditFilter( $editor, $text, $section, &$error, $summary ) {
 		$title = $editor->getTitle();
 
-		if ( $title->getNamespace() == NS_MEDIAWIKI && $title->getDBkey() == 'Titleblacklist' ) {
+		if ( $title->getNamespace() === NS_MEDIAWIKI && $title->getDBkey() === 'Titleblacklist' ) {
 			$blackList = TitleBlacklist::singleton();
 			$bl = TitleBlacklist::parseBlacklist( $text, 'page' );
 			$ok = $blackList->validate( $bl );
