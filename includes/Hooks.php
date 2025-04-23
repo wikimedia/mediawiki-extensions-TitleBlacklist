@@ -8,7 +8,6 @@
 
 namespace MediaWiki\Extension\TitleBlacklist;
 
-use ManualLogEntry;
 use MediaWiki\Api\ApiMessage;
 use MediaWiki\Api\ApiResult;
 use MediaWiki\Context\RequestContext;
@@ -17,7 +16,9 @@ use MediaWiki\Hook\EditFilterHook;
 use MediaWiki\Hook\MovePageCheckPermissionsHook;
 use MediaWiki\Hook\TitleGetEditNoticesHook;
 use MediaWiki\Html\Html;
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\MainConfigNames;
+use MediaWiki\Page\WikiPage;
 use MediaWiki\Permissions\GrantsInfo;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Revision\RevisionRecord;
@@ -30,7 +31,6 @@ use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use StatusValue;
 use Wikimedia\Message\MessageSpecifier;
-use WikiPage;
 
 /**
  * Hooks for the TitleBlacklist class
