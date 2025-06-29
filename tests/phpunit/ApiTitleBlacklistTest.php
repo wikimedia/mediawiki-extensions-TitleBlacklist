@@ -106,11 +106,9 @@ class ApiTitleBlacklistTest extends ApiTestCase {
 	 * Tests integration with the AntiSpoof extension
 	 */
 	public function testAntiSpoofIntegration() {
-		$this->markTestSkippedIfExtensionNotLoaded( 'AntiSpoof' );
-
 		$listed = $this->doApiRequest( [
 			'action' => 'titleblacklist',
-			'tbtitle' => 'AVVVV',
+			'tbtitle' => 'Aɳn',
 			'tbaction' => 'create',
 			'tbnooverride' => true,
 		] );

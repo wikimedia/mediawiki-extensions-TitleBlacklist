@@ -10,11 +10,10 @@
 namespace MediaWiki\Extension\TitleBlacklist;
 
 use MediaWiki\Config\ConfigException;
-use MediaWiki\Extension\AntiSpoof\AntiSpoof;
-use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\CoreParserFunctions;
-use MediaWiki\Registration\ExtensionRegistry;
+use UtfNormal\Validator;
+use Wikimedia\Equivset\Equivset;
 
 /**
  * Represents a title blacklist entry
@@ -49,6 +48,43 @@ class TitleBlacklistEntry {
 	 * @var string
 	 */
 	private $mSource;
+
+	/**
+	 * Equivset used for antispoof normalization
+	 */
+	private static ?Equivset $equivset = null;
+	private static ?array $translateMap = null;
+
+	/**
+	 * Perform a level of normalization similar to Antispoof but without checking for mixed-script cases
+	 * and without relying on Antispoof being installed.
+	 */
+	public static function normalizeAntispoof( string $title ): string {
+		// Convert to NFKD
+		$title = Validator::toNFKD( $title );
+		// Strip combining characters and punctuation
+		// We intentionally deviate from AntiSpoof in not stripping spaces; those are handled below
+		if ( !self::$translateMap ) {
+			$ignorePunct = '!"#$%&\'()*+,-.';
+			self::$translateMap = [];
+			foreach ( str_split( $ignorePunct ) as $punc ) {
+				self::$translateMap[$punc] = "";
+			}
+			for ( $i = 0x0300; $i <= 0x036F; $i += 1 ) {
+				self::$translateMap[mb_chr( $i )] = "";
+			}
+		}
+		$title = strtr( $title, self::$translateMap );
+
+		// Now equivset normalize
+		self::$equivset ??= new Equivset();
+		$title = self::$equivset->normalize( $title );
+
+		// Copy random special cases hardcoded in antispoof
+		$title = str_replace( 'VV', 'W', $title );
+		$title = str_replace( 'RN', 'M', $title );
+		return $title;
+	}
 
 	/**
 	 * @param string $regex Regular expression to match
@@ -117,32 +153,26 @@ class TitleBlacklistEntry {
 			return false;
 		}
 
-		if ( isset( $this->mParams['antispoof'] )
-			&& ExtensionRegistry::getInstance()->isLoaded( 'AntiSpoof' )
-		) {
+		if ( isset( $this->mParams['antispoof'] ) ) {
 			if ( $action === 'edit' ) {
 				// Use process cache for frequently edited pages
 				$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-				$status = $cache->getWithSetCallback(
-					$cache->makeKey( 'titleblacklist', 'normalized-unicode-status', md5( $title ) ),
+				$title = $cache->getWithSetCallback(
+					$cache->makeKey( 'titleblacklist', 'normalized-unicode', md5( $title ) ),
 					$cache::TTL_MONTH,
 					static function () use ( $title ) {
-						return AntiSpoof::checkUnicodeStringStatus( $title );
+						return static::normalizeAntispoof( $title );
 					},
 					[ 'pcTTL' => $cache::TTL_PROC_LONG ]
 				);
 			} else {
-				$status = AntiSpoof::checkUnicodeStringStatus( $title );
+				$title = static::normalizeAntispoof( $title );
 			}
-
-			if ( $status->isOK() ) {
-				// Remove version from return value
-				[ , $title ] = explode( ':', $status->getValue(), 2 );
-			} else {
-				LoggerFactory::getInstance( 'TitleBlacklist' )->debug(
-					'AntiSpoof could not normalize "' . $title . '" ' .
-						$status->getMessage( false, false, 'en' )->text() . '.'
-				);
+			// Also strip spaces from the title, unless the regex itself contains spaces
+			// so `.*john.*doe <antispoof>` still matches `j o h n d o e`, but the common
+			// mistake `.*john doe.* <antispoof>` still matches something.
+			if ( !str_contains( $this->mRegex, ' ' ) ) {
+				$title = str_replace( ' ', '', $title );
 			}
 		}
 
