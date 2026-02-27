@@ -30,7 +30,7 @@
 		"titleblacklist": "titleblacklistlog"
 	},
 	"LogActionsHandlers": {
-		"titleblacklist/*": "LogFormatter"
+		"titleblacklist/*": "MediaWiki\\Logging\\LogFormatter"
 	},
 	"GrantPermissions": {
 		"createaccount": {
