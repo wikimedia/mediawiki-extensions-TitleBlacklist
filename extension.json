@@ -82,7 +82,7 @@
 		"getUserPermissionsErrorsExpensive": "TitleBlacklistHookHandler",
 		"TitleGetEditNotices": "TitleBlacklistHookHandler",
 		"MovePageCheckPermissions": "TitleBlacklistHookHandler",
-		"EditFilter": "TitleBlacklistHookHandler",
+		"MultiContentSave": "TitleBlacklistHookHandler",
 		"PageSaveComplete": "TitleBlacklistHookHandler",
 		"ScribuntoExternalLibraries": "TitleBlacklistScribuntoHookHandler"
 	},
