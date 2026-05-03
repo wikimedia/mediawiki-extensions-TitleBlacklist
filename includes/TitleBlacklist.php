@@ -346,9 +346,7 @@ class TitleBlacklist {
 			[
 				'lockTSE' => 30,
 				'staleTTL' => WANObjectCache::TTL_DAY,
-				'busyValue' => static function ( $oldValue ) {
-					return $oldValue ?? '';
-				},
+				'busyValue' => '',
 			]
 		);
 	}
