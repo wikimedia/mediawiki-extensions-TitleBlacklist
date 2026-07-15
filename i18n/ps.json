@@ -4,6 +4,8 @@
 			"شاه زمان پټان"
 		]
 	},
+	"action-tboverride": "نه‌منل‌کېدونکو سرليکونو يا کارن‌نومونو لړليک له سره جوړول",
+	"action-tboverride-account": "نه‌منل‌کېدونکو کارن‌نومونو نوملړ له سره جوړول",
 	"action-titleblacklistlog": "نه‌منل‌کېدونکو سرليکونو لړليک يادښت کتل",
 	"log-name-titleblacklist": "نه‌منل‌کېدونکو سرليکونو لړليک يادښت",
 	"titleblacklist-desc": "پازوالانو ته اجازه ورکوي چې د [[MediaWiki:Titleblacklist|منع شوو]] او [[MediaWiki:Titlewhitelist|اجازه ورکړل شويو]] سرليکونو لړليکونو سره سم د مخونو او کارن گڼونونو جوړولو مخه ونيسي",
