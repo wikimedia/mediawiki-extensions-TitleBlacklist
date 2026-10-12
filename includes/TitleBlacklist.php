@@ -11,6 +11,7 @@ namespace MediaWiki\Extension\TitleBlacklist;
 
 use BadMethodCallException;
 use MediaWiki\Content\TextContent;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -86,8 +87,8 @@ class TitleBlacklist {
 					);
 				}
 
-				wfDebugLog( 'TitleBlacklist-cache',
-					'Regenerated blacklist with ' . count( $blacklist ) . ' entries.' );
+				LoggerFactory::getInstance( 'TitleBlacklist' )
+					->info( 'Regenerated title_blacklist_entries with ' . count( $blacklist ) . ' entries' );
 				return $blacklist;
 			},
 			[
@@ -304,42 +305,34 @@ class TitleBlacklist {
 		global $wgTitleBlacklistCaching;
 
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$key = $cache->makeGlobalKey( 'title_blacklist_source', md5( $url ) );
 		$caller = __METHOD__;
 
 		return $cache->getWithSetCallback(
-			$key,
+			$cache->makeGlobalKey( 'title_blacklist_source', md5( $url ) ),
 			$wgTitleBlacklistCaching['expiry'],
 			static function ( $oldValue, &$ttl ) use ( $url, $caller ) {
 				$httpRequestFactory = MediaWikiServices::getInstance()
 					->getHttpRequestFactory();
-
 				$result = $httpRequestFactory->get( $url, [], $caller );
 
-				// Retry once on transient failure (T423162)
-				if ( $result === null ) {
-					usleep( 50_000 );
-					$result = $httpRequestFactory->get( $url, [], $caller );
-				}
-
-				if ( is_string( $result ) ) {
-					return $result;
-				}
-
-				// All attempts failed
-				wfDebugLog( 'TitleBlacklist-cache',
-					"Error loading title blacklist from $url" );
-
-				// If we have a previous cached value, keep using it
-				if ( is_string( $oldValue ) ) {
+				if ( !is_string( $result ) ) {
+					// Transient failure, retry again in a minute (T423162)
 					$ttl = WANObjectCache::TTL_MINUTE;
-					wfDebugLog( 'TitleBlacklist-cache',
-						"Using previously cached value for $url" );
-					return $oldValue;
+
+					LoggerFactory::getInstance( 'TitleBlacklist' )
+						->warning( "Error loading titles from $url" );
+
+					if ( is_string( $oldValue ) ) {
+						LoggerFactory::getInstance( 'TitleBlacklist' )
+							->info( 'Reuse previously cached title_blacklist_source' );
+						return $oldValue;
+					}
+
+					// No previous value
+					return '';
 				}
 
-				// No previous value at all
-				return '';
+				return $result;
 			},
 			[
 				'lockTSE' => 30,
