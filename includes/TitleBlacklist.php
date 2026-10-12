@@ -93,7 +93,6 @@ class TitleBlacklist {
 			[
 				'version' => self::VERSION,
 				'lockTSE' => 30,
-				'staleTTL' => WANObjectCache::TTL_DAY,
 			]
 		);
 	}
@@ -117,7 +116,6 @@ class TitleBlacklist {
 			[
 				'version' => self::VERSION,
 				'lockTSE' => 30,
-				'staleTTL' => WANObjectCache::TTL_DAY,
 			]
 		);
 	}
