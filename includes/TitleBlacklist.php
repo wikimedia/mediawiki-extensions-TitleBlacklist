@@ -335,8 +335,11 @@ class TitleBlacklist {
 				return $result;
 			},
 			[
-				'lockTSE' => 30,
-				'staleTTL' => WANObjectCache::TTL_DAY,
+				// Unlike the other data sources, this comes from a remote wiki and may thus
+				// intermittently fail. This key is refreshed every few minutes by default
+				// ($wgTitleBlacklistCaching['expiry']), but we keep the old value for a full
+				// day for use as a fallback.
+				'lockTSE' => WANObjectCache::TTL_DAY,
 				'busyValue' => '',
 			]
 		);
