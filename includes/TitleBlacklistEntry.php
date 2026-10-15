@@ -11,13 +11,10 @@ namespace MediaWiki\Extension\TitleBlacklist;
 
 use MediaWiki\Config\ConfigException;
 use MediaWiki\Extension\AntiSpoof\AntiSpoof;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\CoreParserFunctions;
 use MediaWiki\Registration\ExtensionRegistry;
-
-/**
- * @ingroup Extensions
- */
 
 /**
  * Represents a title blacklist entry
@@ -142,8 +139,9 @@ class TitleBlacklistEntry {
 				// Remove version from return value
 				[ , $title ] = explode( ':', $status->getValue(), 2 );
 			} else {
-				wfDebugLog( 'TitleBlacklist', 'AntiSpoof could not normalize "' . $title . '" ' .
-					$status->getMessage( false, false, 'en' )->text() . '.'
+				LoggerFactory::getInstance( 'TitleBlacklist' )->debug(
+					'AntiSpoof could not normalize "' . $title . '" ' .
+						$status->getMessage( false, false, 'en' )->text() . '.'
 				);
 			}
 		}
